@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Models Patch - Cloud Machine Learning Engine v1.0.8+20181009</title>
+  <title>Models Patch - Cloud Machine Learning Engine v1.0.10+20190621</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.10+20190621</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -189,10 +189,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../projects_operations-delete/">Operations Delete</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../projects_operations-get/">Operations Get</a>
                 </li>
                 <li class="">
@@ -216,7 +212,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning Engine v1.0.8+20181009</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.10+20190621</a>
       </nav>
 
       
@@ -280,13 +276,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     manual-scaling:
       nodes: integer
     name: string
+    package-uris: [string]
+    prediction-class: string
     python-version: string
     runtime-version: string
+    service-account: string
     state: string
   description: string
   etag: string
   labels: { string: string }
   name: string
+  online-prediction-console-logging: boolean
   online-prediction-logging: boolean
   regions: [string]
 
@@ -295,7 +295,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .default-version.auto-scaling    min-nodes=78</code></p>
+<p><code>-r .default-version.auto-scaling    min-nodes=50</code></p>
 <ul>
 <li>
 <p>Optional. The minimum number of nodes to allocate for this model. These
@@ -326,22 +326,24 @@ update_body.json:
 &lt;/pre&gt;
 HTTP request:
 &lt;pre&gt;
-PATCH https://ml.googleapis.com/v1/{name=projects/<em>/models/</em>/versions/*}?update_mask=autoScaling.minNodes -d @./update_body.json
+PATCH
+https://ml.googleapis.com/v1/{name=projects/<em>/models/</em>/versions/*}?update_mask=autoScaling.minNodes
+-d @./update_body.json
 &lt;/pre&gt;</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    create-time=clita</code></p>
+<p><code>..    create-time=ipsum</code></p>
 <ul>
 <li>Output only. The time the version was created.</li>
 </ul>
 </li>
 <li>
-<p><code>deployment-uri=diam</code></p>
+<p><code>deployment-uri=ut</code></p>
 <ul>
 <li>
-<p>Required. The Google Cloud Storage location of the trained model used to
+<p>Required. The Cloud Storage location of the trained model used to
     create the version. See the
     <a href="../ml-engine/docs/tensorflow/deploying-models">guide to model
     deployment</a> for more
@@ -352,11 +354,11 @@ the model service uses the specified location as the source of the model.
 Once deployed, the model version is hosted by the prediction service, so
 this location is useful only as a historical record.
 The total number of model files can&#39;t exceed 1000.
-<em> <code>description=justo</code>
+* <code>description=dolor</code>
     - Optional. The description specified for the version when it was created.
-</em> <code>error-message=est</code>
+* <code>error-message=sea</code>
     - Output only. The details of a failure or a cancellation.
-<em> <code>etag=clita</code>
+* <code>etag=ut</code>
     - <code>etag</code> is used for optimistic concurrency control as a way to help
 prevent simultaneous updates of a model from overwriting each other.
 It is strongly suggested that systems make use of the <code>etag</code> in the
@@ -364,38 +366,45 @@ read-modify-write cycle to perform model updates in order to avoid race
 conditions: An <code>etag</code> is returned in the response to <code>GetVersion</code>, and
 systems are expected to put that etag in the request to <code>UpdateVersion</code> to
 ensure that their change will be applied to the model as intended.
-</em> <code>framework=invidunt</code>
-    - Optional. The machine learning framework Cloud ML Engine uses to train
+* <code>framework=eirmod</code>
+    - Optional. The machine learning framework AI Platform uses to train
 this version of the model. Valid values are <code>TENSORFLOW</code>, <code>SCIKIT_LEARN</code>,
-<code>XGBOOST</code>. If you do not specify a framework, Cloud ML Engine
+<code>XGBOOST</code>. If you do not specify a framework, AI Platform
 will analyze files in the deployment_uri to determine a framework. If you
 choose <code>SCIKIT_LEARN</code> or <code>XGBOOST</code>, you must also set the runtime version
-of the model to 1.4 or greater.
-* <code>is-default=false</code>
+of the model to 1.4 or greater.</p>
+<p>Do <strong>not</strong> specify a framework if you&#39;re deploying a <a href="../ml-engine/docs/tensorflow/custom-prediction-routines">custom
+prediction routine</a>.
+* <code>is-default=true</code>
     - Output only. If true, this version will be used to handle prediction
 requests that do not specify a version.</p>
 <p>You can change the default version by calling
 <a href="../ml-engine/reference/rest/v1/projects.models.versions/setDefault">projects.methods.versions.setDefault</a>.
-<em> <code>labels=key=dolores</code>
+* <code>labels=key=voluptua.</code>
     - Optional. One or more labels that you can add, to organize your model
 versions. Each label is a key-value pair, where both the key and the value
 are arbitrary strings that you supply.
 For more information, see the documentation on
 &lt;a href=&#34;/ml-engine/docs/tensorflow/resource-labels&#34;&gt;using labels&lt;/a&gt;.
     - the value will be associated with the given <code>key</code>
-</em> <code>last-use-time=eos</code>
+* <code>last-use-time=dolor</code>
     - Output only. The time the version was last used for prediction.
-<em> <code>machine-type=voluptua.</code>
+* <code>machine-type=et</code>
     - Optional. The type of machine on which to serve the model. Currently only
 applies to online prediction service.
-The following are currently supported and will be deprecated in
-Beta release.
-  mls1-highmem-1    1 core    2 Gb RAM
-  mls1-highcpu-4    4 core    2 Gb RAM
-The following are available in Beta:
-  mls1-c1-m2        1 core    2 Gb RAM   Default
-  mls1-c4-m2        4 core    2 Gb RAM
-</em> <code>manual-scaling    nodes=82</code>
+&lt;dl&gt;
+  &lt;dt&gt;mls1-c1-m2&lt;/dt&gt;
+  &lt;dd&gt;
+  The &lt;b&gt;default&lt;/b&gt; machine type, with 1 core and 2 GB RAM. The deprecated
+  name for this machine type is &#34;mls1-highmem-1&#34;.
+  &lt;/dd&gt;
+  &lt;dt&gt;mls1-c4-m2&lt;/dt&gt;
+  &lt;dd&gt;
+  In &lt;b&gt;Beta&lt;/b&gt;. This machine type has 4 cores and 2 GB RAM. The
+  deprecated name for this machine type is &#34;mls1-highcpu-4&#34;.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+* <code>manual-scaling    nodes=16</code>
     - The number of nodes to allocate for this model. These nodes are always up,
 starting from the time the model is deployed, so the cost of operating
 this model will be proportional to <code>nodes</code> * number of hours since
@@ -404,25 +413,92 @@ last billing cycle plus the cost for each prediction performed.</p>
 </ul>
 </li>
 <li>
-<p><code>..    name=sed</code></p>
+<p><code>..    name=vero</code></p>
 <ul>
 <li>
 <p>Required.The name specified for the version when it was created.</p>
 <p>The version name must be unique within the model it is created in.
-<em> <code>python-version=aliquyam</code>
+* <code>package-uris=ut</code>
+    - Optional. Cloud Storage paths (<code>gs://…</code>) of packages for <a href="../ml-engine/docs/tensorflow/custom-prediction-routines">custom
+prediction routines</a>
+or <a href="../ml-engine/docs/scikit/exporting-for-prediction#custom-pipeline-code">scikit-learn pipelines with custom
+code</a>.</p>
+<p>For a custom prediction routine, one of these packages must contain your
+Predictor class (see
+<a href="#Version.FIELDS.prediction_class"><code>predictionClass</code></a>). Additionally,
+include any dependencies used by your Predictor or scikit-learn pipeline
+uses that are not already included in your selected <a href="../ml-engine/docs/tensorflow/runtime-version-list">runtime
+version</a>.</p>
+<p>If you specify this field, you must also set
+<a href="#Version.FIELDS.runtime_version"><code>runtimeVersion</code></a> to 1.4 or greater.
+    - Each invocation of this argument appends the given value to the array.
+* <code>prediction-class=sed</code>
+    - Optional. The fully qualified name
+(&lt;var&gt;module_name&lt;/var&gt;.&lt;var&gt;class_name&lt;/var&gt;) of a class that implements
+the Predictor interface described in this reference field. The module
+containing this class should be included in a package provided to the
+<a href="#Version.FIELDS.package_uris"><code>packageUris</code> field</a>.</p>
+<p>Specify this field if and only if you are deploying a <a href="../ml-engine/docs/tensorflow/custom-prediction-routines">custom prediction
+routine (beta)</a>.
+If you specify this field, you must set
+<a href="#Version.FIELDS.runtime_version"><code>runtimeVersion</code></a> to 1.4 or greater.</p>
+<p>The following code sample provides the Predictor interface:</p>
+<p>```py
+class Predictor(object):
+&#34;&#34;&#34;Interface for constructing custom predictors.&#34;&#34;&#34;</p>
+<p>def predict(self, instances, **kwargs):
+    &#34;&#34;&#34;Performs custom prediction.</p>
+<pre><code>Instances are the decoded values from the request. They have already
+been deserialized from JSON.
+
+Args:
+    instances: A list of prediction input instances.
+    **kwargs: A dictionary of keyword args provided as additional
+        fields on the predict request body.
+
+Returns:
+    A list of outputs containing the prediction results. This list must
+    be JSON serializable.
+&amp;#34;&amp;#34;&amp;#34;
+raise NotImplementedError()
+</code></pre>
+<p>@classmethod
+def from_path(cls, model_dir):
+    &#34;&#34;&#34;Creates an instance of Predictor using the given path.</p>
+<pre><code>Loading of the predictor should be done in this method.
+
+Args:
+    model_dir: The local directory that contains the exported model
+        file along with any additional files uploaded when creating the
+        version resource.
+
+Returns:
+    An instance implementing this Predictor class.
+&amp;#34;&amp;#34;&amp;#34;
+raise NotImplementedError()
+</code></pre>
+<p>```</p>
+<p>Learn more about <a href="../ml-engine/docs/tensorflow/custom-prediction-routines">the Predictor interface and custom prediction
+routines</a>.
+* <code>python-version=et</code>
     - Optional. The version of Python used in prediction. If not set, the default
 version is &#39;2.7&#39;. Python &#39;3.5&#39; is available when <code>runtime_version</code> is set
 to &#39;1.4&#39; and above. Python &#39;2.7&#39; works with all supported runtime versions.
-</em> <code>runtime-version=ea</code>
-    - Optional. The Google Cloud ML runtime version to use for this deployment.
-If not set, Google Cloud ML will choose a version.
-* <code>state=ea</code>
+* <code>runtime-version=ipsum</code>
+    - Optional. The AI Platform runtime version to use for this deployment.
+If not set, AI Platform uses the default stable version, 1.0. For more
+information, see the
+<a href="../ml-engine/docs/runtime-version-list">runtime version list</a> and
+<a href="../ml-engine/docs/versioning">how to manage runtime versions</a>.
+* <code>service-account=justo</code>
+    - Optional. Specifies the service account for resource access control.
+* <code>state=dolore</code>
     - Output only. The state of a version.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    description=et</code></p>
+<p><code>..    description=vero</code></p>
 <ul>
 <li>Optional. The description specified for the model when it was created.</li>
 </ul>
@@ -437,7 +513,7 @@ If not set, Google Cloud ML will choose a version.
     ensure that their change will be applied to the model as intended.</li>
 </ul>
 </li>
-<li><code>labels=key=diam</code><ul>
+<li><code>labels=key=takimata</code><ul>
 <li>Optional. One or more labels that you can add, to organize your models.
     Each label is a key-value pair, where both the key and the value are
     arbitrary strings that you supply.
@@ -446,23 +522,37 @@ If not set, Google Cloud ML will choose a version.
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>name=kasd</code><ul>
+<li><code>name=et</code><ul>
 <li>
 <p>Required. The name specified for the model when it was created.</p>
 <p>The model name must be unique within the project it is created in.
-<em> <code>online-prediction-logging=false</code>
-    - Optional. If true, enables StackDriver Logging for online prediction.
-Default is false.
-</em> <code>regions=rebum.</code>
+* <code>online-prediction-console-logging=false</code>
+    - Optional. If true, online prediction nodes send <code>stderr</code> and <code>stdout</code>
+streams to Stackdriver Logging. These can be more verbose than the standard
+access logs (see <code>onlinePredictionLogging</code>) and can incur higher cost.
+However, they are helpful for debugging. Note that
+<a href="../stackdriver/pricing">Stackdriver logs may incur a cost</a>, especially if
+your project receives prediction requests at a high QPS. Estimate your
+costs before enabling this option.</p>
+<p>Default is false.
+* <code>online-prediction-logging=false</code>
+    - Optional. If true, online prediction access logs are sent to StackDriver
+Logging. These logs are like standard server access logs, containing
+information like timestamp and latency for each request. Note that
+<a href="../stackdriver/pricing">Stackdriver logs may incur a cost</a>, especially if
+your project receives prediction requests at a high queries per second rate
+(QPS). Estimate your costs before enabling this option.</p>
+<p>Default is false.
+* <code>regions=sed</code>
     - Optional. The list of regions where the model is going to be deployed.
 Currently only one region per model is supported.
 Defaults to &#39;us-central1&#39; if nothing is set.
 See the &lt;a href=&#34;/ml-engine/docs/tensorflow/regions&#34;&gt;available regions&lt;/a&gt;
-for ML Engine services.
+for AI Platform services.
 Note:
-<em>   No matter where a model is deployed, it can always be accessed by
+*   No matter where a model is deployed, it can always be accessed by
     users from anywhere, both for online and batch prediction.
-</em>   The region for a batch prediction job is set by the region field when
+*   The region for a batch prediction job is set by the region field when
     submitting the batch prediction job and does not take its value from
     this field.
     - Each invocation of this argument appends the given value to the array.</p>
@@ -603,7 +693,7 @@ request body would specify the new value, as follows:
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

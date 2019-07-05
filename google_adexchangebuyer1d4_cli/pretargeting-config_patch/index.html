@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - Ad Exchange Buyer v1.0.8+20180823</title>
+  <title>Patch - Ad Exchange Buyer v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -322,7 +322,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href="..">Ad Exchange Buyer v1.0.10+20190614</a>
       </nav>
 
       
@@ -399,7 +399,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    billing-id=aliquyam</code><ul>
+<li><code>-r .    billing-id=ea</code><ul>
 <li>The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically.</li>
 </ul>
 </li>
@@ -407,98 +407,98 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The config id; generated automatically. Leave this field blank for insert requests.</li>
 </ul>
 </li>
-<li><code>config-name=ea</code><ul>
+<li><code>config-name=et</code><ul>
 <li>The name of the config. Must be unique. Required for all requests.</li>
 </ul>
 </li>
-<li><code>creative-type=et</code><ul>
+<li><code>creative-type=dolor</code><ul>
 <li>List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-content-labels=dolor</code><ul>
+<li><code>excluded-content-labels=diam</code><ul>
 <li>Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-geo-criteria-ids=diam</code><ul>
+<li><code>excluded-geo-criteria-ids=kasd</code><ul>
 <li>Requests containing any of these geo criteria ids will not match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-user-lists=kasd</code><ul>
+<li><code>excluded-user-lists=invidunt</code><ul>
 <li>Requests containing any of these users list ids will not match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-verticals=invidunt</code><ul>
+<li><code>excluded-verticals=rebum.</code><ul>
 <li>Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>geo-criteria-ids=rebum.</code><ul>
+<li><code>geo-criteria-ids=lorem</code><ul>
 <li>Requests containing any of these geo criteria ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>is-active=true</code><ul>
+<li><code>is-active=false</code><ul>
 <li>Whether this config is active. Required for all requests.</li>
 </ul>
 </li>
-<li><code>kind=clita</code><ul>
+<li><code>kind=invidunt</code><ul>
 <li>The kind of the resource, i.e. &#34;adexchangebuyer#pretargetingConfig&#34;.</li>
 </ul>
 </li>
-<li><code>languages=invidunt</code><ul>
+<li><code>languages=eirmod</code><ul>
 <li>Request containing any of these language codes will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>minimum-viewability-decile=11</code><ul>
+<li><code>minimum-viewability-decile=24</code><ul>
 <li>Requests where the predicted viewability is below the specified decile will not match. E.g. if the buyer sets this value to 5, requests from slots where the predicted viewability is below 50% will not match. If the predicted viewability is unknown this field will be ignored.</li>
 </ul>
 </li>
-<li><code>mobile-carriers=at</code><ul>
+<li><code>mobile-carriers=consetetur</code><ul>
 <li>Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-devices=consetetur</code><ul>
+<li><code>mobile-devices=et</code><ul>
 <li>Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-operating-system-versions=et</code><ul>
+<li><code>mobile-operating-system-versions=sed</code><ul>
 <li>Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>platforms=sed</code><ul>
+<li><code>platforms=sit</code><ul>
 <li>Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>supported-creative-attributes=sit</code><ul>
+<li><code>supported-creative-attributes=takimata</code><ul>
 <li>Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from pretargetable-creative-attributes.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>user-identifier-data-required=takimata</code><ul>
+<li><code>user-identifier-data-required=elitr</code><ul>
 <li>Requests containing the specified type of user data will match. Possible values are HOSTED_MATCH_DATA, which means the request is cookie-targetable and has a match in the buyer&#39;s hosted match table, and COOKIE_OR_IDFA, which means the request has either a targetable cookie or an iOS IDFA.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>user-lists=elitr</code><ul>
+<li><code>user-lists=nonumy</code><ul>
 <li>Requests containing any of these user list ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>vendor-types=nonumy</code><ul>
+<li><code>vendor-types=rebum.</code><ul>
 <li>Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>verticals=rebum.</code><ul>
+<li><code>verticals=lorem</code><ul>
 <li>Requests containing any of these vertical ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -589,7 +589,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Synthesize - Texttospeech v1.0.8+20181005</title>
+  <title>Synthesize - Texttospeech v1.0.10+20190628</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Texttospeech v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Texttospeech v1.0.10+20190628</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -105,7 +105,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Texttospeech v1.0.8+20181005</a>
+        <a href="..">Texttospeech v1.0.10+20190628</a>
       </nav>
 
       
@@ -147,6 +147,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>SynthesizeSpeechRequest:
   audio-config:
     audio-encoding: string
+    effects-profile-id: [string]
     pitch: number
     sample-rate-hertz: integer
     speaking-rate: number
@@ -164,46 +165,57 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .audio-config    audio-encoding=eirmod</code><ul>
-<li>Required. The format of the requested audio byte stream.</li>
+<li>Required. The format of the audio byte stream.</li>
 </ul>
 </li>
-<li><code>pitch=0.533265573605</code><ul>
-<li>Optional speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20
-    semitones from the original pitch. -20 means decrease 20 semitones from the
-    original pitch.</li>
+<li><code>effects-profile-id=sit</code><ul>
+<li>Optional. Input only. An identifier which selects &#39;audio effects&#39; profiles
+    that are applied on (post synthesized) text to speech. Effects are applied
+    on top of each other in the order they are given. See
+    <a href="https://cloud.google.com/text-to-speech/docs/audio-profiles">audio
+    profiles</a> for
+    current supported profile ids.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>sample-rate-hertz=36</code><ul>
-<li>The synthesis sample rate (in hertz) for this audio. Optional.  If this is
-    different from the voice&#39;s natural sample rate, then the synthesizer will
-    honor this request by converting to the desired sample rate (which might
-    result in worse audio quality), unless the specified sample rate is not
-    supported for the encoding chosen, in which case it will fail the request
-    and return google.rpc.Code.INVALID_ARGUMENT.</li>
+<li><code>pitch=0.365848359249</code><ul>
+<li>Optional. Input only. Speaking pitch, in the range [-20.0, 20.0]. 20 means
+    increase 20 semitones from the original pitch. -20 means decrease 20
+    semitones from the original pitch.</li>
 </ul>
 </li>
-<li><code>speaking-rate=0.585787353902</code><ul>
-<li>Optional speaking rate/speed, in the range [0.25, 4.0]. 1.0 is the normal
-    native speed supported by the specific voice. 2.0 is twice as fast, and
-    0.5 is half as fast. If unset(0.0), defaults to the native 1.0 speed. Any
-    other values &lt; 0.25 or &gt; 4.0 will return an error.</li>
+<li><code>sample-rate-hertz=59</code><ul>
+<li>The synthesis sample rate (in hertz) for this audio. Optional. When this is
+    specified in SynthesizeSpeechRequest, if this is different from the voice&#39;s
+    natural sample rate, then the synthesizer will honor this request by
+    converting to the desired sample rate (which might result in worse audio
+    quality), unless the specified sample rate is not supported for the
+    encoding chosen, in which case it will fail the request and return
+    google.rpc.Code.INVALID_ARGUMENT.</li>
+</ul>
+</li>
+<li><code>speaking-rate=0.165687283689</code><ul>
+<li>Optional. Input only. Speaking rate/speed, in the range [0.25, 4.0]. 1.0 is
+    the normal native speed supported by the specific voice. 2.0 is twice as
+    fast, and 0.5 is half as fast. If unset(0.0), defaults to the native 1.0
+    speed. Any other values &lt; 0.25 or &gt; 4.0 will return an error.</li>
 </ul>
 </li>
 <li>
-<p><code>volume-gain-db=0.165687283689</code></p>
+<p><code>volume-gain-db=0.824373746908</code></p>
 <ul>
-<li>Optional volume gain (in dB) of the normal native volume supported by the
-    specific voice, in the range [-96.0, 16.0]. If unset, or set to a value of
-    0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB)
-    will play at approximately half the amplitude of the normal native signal
-    amplitude. A value of +6.0 (dB) will play at approximately twice the
-    amplitude of the normal native signal amplitude. Strongly recommend not to
-    exceed +10 (dB) as there&#39;s usually no effective increase in loudness for
-    any value greater than that.</li>
+<li>Optional. Input only. Volume gain (in dB) of the normal native volume
+    supported by the specific voice, in the range [-96.0, 16.0]. If unset, or
+    set to a value of 0.0 (dB), will play at normal native signal amplitude. A
+    value of -6.0 (dB) will play at approximately half the amplitude of the
+    normal native signal amplitude. A value of +6.0 (dB) will play at
+    approximately twice the amplitude of the normal native signal amplitude.
+    Strongly recommend not to exceed +10 (dB) as there&#39;s usually no effective
+    increase in loudness for any value greater than that.</li>
 </ul>
 </li>
 <li>
-<p><code>..input    ssml=dolores</code></p>
+<p><code>..input    ssml=kasd</code></p>
 <ul>
 <li>The SSML document to be synthesized. The SSML document must be valid
     and well-formed. Otherwise the RPC will fail and return
@@ -212,13 +224,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>text=kasd</code></p>
+<p><code>text=accusam</code></p>
 <ul>
 <li>The raw text to be synthesized.</li>
 </ul>
 </li>
 <li>
-<p><code>..voice    language-code=accusam</code></p>
+<p><code>..voice    language-code=takimata</code></p>
 <ul>
 <li>The language (and optionally also the region) of the voice expressed as a
     <a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP-47</a> language tag, e.g.
@@ -233,12 +245,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     Bokmal) instead of &#34;no&#34; (Norwegian)&#34;.</li>
 </ul>
 </li>
-<li><code>name=takimata</code><ul>
+<li><code>name=justo</code><ul>
 <li>The name of the voice. Optional; if not set, the service will choose a
     voice based on the other parameters such as language_code and gender.</li>
 </ul>
 </li>
-<li><code>ssml-gender=justo</code><ul>
+<li><code>ssml-gender=amet.</code><ul>
 <li>The preferred gender of the voice. Optional; if not set, the service will
     choose a voice based on the other parameters such as language_code and
     name. Note that this is only a preference, not requirement; if a
@@ -356,7 +368,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

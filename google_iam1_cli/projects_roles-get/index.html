@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Roles Get - iam v1.0.8+20181005</title>
+  <title>Roles Get - iam v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> iam v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-disable/">Service Accounts Disable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-enable/">Service Accounts Enable</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-get/">Service Accounts Get</a>
                 </li>
                 <li class="">
@@ -190,6 +198,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-patch/">Service Accounts Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-set-iam-policy/">Service Accounts Set Iam Policy</a>
                 </li>
                 <li class="">
@@ -203,6 +215,10 @@
                 <li class="">
                     
     <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-undelete/">Service Accounts Undelete</a>
                 </li>
                 <li class="">
                     
@@ -240,7 +256,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.8+20181005</a>
+        <a href="..">iam v1.0.10+20190627</a>
       </nav>
 
       
@@ -277,10 +293,39 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>The resource name of the role in one of the following formats:
-    <code>roles/{ROLE_NAME}</code>
-    <code>organizations/{ORGANIZATION_ID}/roles/{ROLE_NAME}</code>
-    <code>projects/{PROJECT_ID}/roles/{ROLE_NAME}</code></li>
+<li>
+<p>The <code>name</code> parameter&#39;s value depends on the target resource for the
+    request, namely
+    <a href="../iam/reference/rest/v1/roles"><code>roles</code></a>,
+    <a href="../iam/reference/rest/v1/projects.roles"><code>projects</code></a>, or
+    <a href="../iam/reference/rest/v1/organizations.roles"><code>organizations</code></a>. Each
+    resource type&#39;s <code>name</code> value format is described below:</p>
+<ul>
+<li>
+<p><a href="../iam/reference/rest/v1/roles/get"><code>roles.get()</code></a>: <code>roles/{ROLE_NAME}</code>.
+  This method returns results from all
+  <a href="../iam/docs/understanding-roles#predefined_roles">predefined roles</a> in
+  Cloud IAM. Example request URL:
+  <code>https://iam.googleapis.com/v1/roles/{ROLE_NAME}</code></p>
+</li>
+<li>
+<p><a href="../iam/reference/rest/v1/projects.roles/get"><code>projects.roles.get()</code></a>:
+  <code>projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method returns only
+  <a href="../iam/docs/understanding-custom-roles">custom roles</a> that have been
+  created at the project level. Example request URL:
+  <code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+</li>
+<li>
+<p><a href="../iam/reference/rest/v1/organizations.roles/get"><code>organizations.roles.get()</code></a>:
+  <code>organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method
+  returns only <a href="../iam/docs/understanding-custom-roles">custom roles</a> that
+  have been created at the organization level. Example request URL:
+  <code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+</li>
+</ul>
+<p>Note: Wildcard (*) values are invalid; you must specify a complete project
+ID or organization ID.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -385,7 +430,7 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

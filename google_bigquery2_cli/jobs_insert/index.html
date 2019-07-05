@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - bigquery v1.0.8+20181005</title>
+  <title>Insert - bigquery v1.0.10+20190630</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.10+20190630</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -143,6 +143,29 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Models</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../models_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
                 <li class="">
@@ -152,6 +175,33 @@
                 <li class="">
                     
     <a class="" href="../projects_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Routines</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../routines_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -212,7 +262,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.8+20181005</a>
+        <a href="..">bigquery v1.0.10+20190630</a>
       </nav>
 
       
@@ -310,13 +360,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       destination-table-properties:
         description: string
         friendly-name: string
+        labels: { string: string }
       encoding: string
       field-delimiter: string
+      hive-partitioning-mode: string
+      hive-partitioning-options:
+        mode: string
+        source-uri-prefix: string
       ignore-unknown-values: boolean
       max-bad-records: integer
       null-marker: string
       projection-fields: [string]
       quote: string
+      range-partitioning:
+        field: string
+        range:
+          end: string
+          interval: string
+          start: string
       schema-inline: string
       schema-inline-format: string
       schema-update-options: [string]
@@ -351,6 +412,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       preserve-nulls: boolean
       priority: string
       query: string
+      range-partitioning:
+        field: string
+        range:
+          end: string
+          interval: string
+          start: string
       schema-update-options: [string]
       time-partitioning:
         expiration-ms: string
@@ -374,16 +441,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     end-time: string
     extract:
       destination-uri-file-counts: [string]
+      input-bytes: string
     load:
       bad-records: string
       input-file-bytes: string
       input-files: string
       output-bytes: string
       output-rows: string
+    num-child-jobs: string
+    parent-job-id: string
     query:
       billing-tier: integer
       cache-hit: boolean
       ddl-operation-performed: string
+      ddl-target-routine:
+        dataset-id: string
+        project-id: string
+        routine-id: string
       ddl-target-table:
         dataset-id: string
         project-id: string
@@ -398,11 +472,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       statement-type: string
       total-bytes-billed: string
       total-bytes-processed: string
+      total-bytes-processed-accuracy: string
       total-partitions-processed: string
       total-slot-ms: string
     quota-deferments: [string]
+    reservation-id: string
     start-time: string
     total-bytes-processed: string
+    total-slot-ms: string
   status:
     error-result:
       debug-info: string
@@ -416,34 +493,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .configuration.copy    create-disposition=eirmod</code><ul>
+<li><code>-r .configuration.copy    create-disposition=aliquyam</code><ul>
 <li>[Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table. CREATE_NEVER: The table must already exist. If it does not, a &#39;notFound&#39; error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
 <li>
-<p><code>destination-encryption-configuration    kms-key-name=dolore</code></p>
+<p><code>destination-encryption-configuration    kms-key-name=accusam</code></p>
 <ul>
 <li>[Optional] Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table. The BigQuery Service Account associated with your project requires access to this encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-table    dataset-id=invidunt</code></p>
-<ul>
-<li>[Required] The ID of the dataset containing this table.</li>
-</ul>
-</li>
-<li><code>project-id=aliquyam</code><ul>
-<li>[Required] The ID of the project containing this table.</li>
-</ul>
-</li>
-<li>
-<p><code>table-id=accusam</code></p>
-<ul>
-<li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
-</ul>
-</li>
-<li>
-<p><code>..source-table    dataset-id=lorem</code></p>
+<p><code>..destination-table    dataset-id=lorem</code></p>
 <ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
@@ -459,7 +520,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    write-disposition=duo</code></p>
+<p><code>..source-table    dataset-id=duo</code></p>
+<ul>
+<li>[Required] The ID of the dataset containing this table.</li>
+</ul>
+</li>
+<li><code>project-id=et</code><ul>
+<li>[Required] The ID of the project containing this table.</li>
+</ul>
+</li>
+<li>
+<p><code>table-id=eirmod</code></p>
+<ul>
+<li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
+</ul>
+</li>
+<li>
+<p><code>..    write-disposition=sanctus</code></p>
 <ul>
 <li>[Optional] Specifies the action that occurs if the destination table already exists. The following values are supported: WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data. WRITE_APPEND: If the table already exists, BigQuery appends the data to the table. WRITE_EMPTY: If the table already exists and contains data, a &#39;duplicate&#39; error is returned in the job result. The default value is WRITE_EMPTY. Each action is atomic and only occurs if BigQuery is able to complete the job successfully. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
@@ -470,56 +547,56 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] If set, don&#39;t actually run this job. A valid query will return a mostly empty response with some processing statistics, while an invalid query will return the same error it would if it wasn&#39;t a dry run. Behavior of non-query jobs is undefined.</li>
 </ul>
 </li>
-<li><code>extract    compression=eirmod</code><ul>
+<li><code>extract    compression=amet</code><ul>
 <li>[Optional] The compression type to use for exported files. Possible values include GZIP, DEFLATE, SNAPPY, and NONE. The default value is NONE. DEFLATE and SNAPPY are only supported for Avro.</li>
 </ul>
 </li>
-<li><code>destination-format=sanctus</code><ul>
+<li><code>destination-format=et</code><ul>
 <li>[Optional] The exported file format. Possible values include CSV, NEWLINE_DELIMITED_JSON and AVRO. The default value is CSV. Tables with nested or repeated fields cannot be exported as CSV.</li>
 </ul>
 </li>
-<li><code>destination-uri=et</code><ul>
+<li><code>destination-uri=consetetur</code><ul>
 <li>[Pick one] DEPRECATED: Use destinationUris instead, passing only one URI as necessary. The fully-qualified Google Cloud Storage URI where the extracted table should be written.</li>
 </ul>
 </li>
-<li><code>destination-uris=amet</code><ul>
+<li><code>destination-uris=ut</code><ul>
 <li>[Pick one] A list of fully-qualified Google Cloud Storage URIs where the extracted table should be written.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>field-delimiter=et</code><ul>
+<li><code>field-delimiter=ea</code><ul>
 <li>[Optional] Delimiter to use between fields in the exported data. Default is &#39;,&#39;</li>
 </ul>
 </li>
-<li><code>print-header=true</code><ul>
+<li><code>print-header=false</code><ul>
 <li>[Optional] Whether to print out a header row in the results. Default is true.</li>
 </ul>
 </li>
-<li><code>source-table    dataset-id=ut</code><ul>
+<li><code>source-table    dataset-id=dolor</code><ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=ea</code><ul>
+<li><code>project-id=dolor</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=sed</code></p>
+<p><code>table-id=dolor</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>...    job-timeout-ms=dolor</code></p>
+<p><code>...    job-timeout-ms=et</code></p>
 <ul>
 <li>[Optional] Job timeout in milliseconds. If this time limit is exceeded, BigQuery may attempt to terminate the job.</li>
 </ul>
 </li>
-<li><code>job-type=dolor</code><ul>
+<li><code>job-type=consetetur</code><ul>
 <li>[Output-only] The type of the job. Can be QUERY, LOAD, EXTRACT, COPY or UNKNOWN.</li>
 </ul>
 </li>
-<li><code>labels=key=dolor</code><ul>
+<li><code>labels=key=amet.</code><ul>
 <li>The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and each label in the list must have a different key.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -532,76 +609,97 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. The default value is false.</li>
 </ul>
 </li>
-<li><code>autodetect=false</code><ul>
+<li><code>autodetect=true</code><ul>
 <li>[Optional] Indicates if we should automatically infer the options and schema for CSV and JSON sources.</li>
 </ul>
 </li>
 <li>
-<p><code>clustering    fields=voluptua.</code></p>
+<p><code>clustering    fields=justo</code></p>
 <ul>
 <li>[Repeated] One or more fields on which data should be clustered. Only top-level, non-repeated, simple-type fields are supported. When you cluster a table using multiple columns, the order of columns you specify is important. The order of the specified columns determines the sort order of the data.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    create-disposition=lorem</code></p>
+<p><code>..    create-disposition=sit</code></p>
 <ul>
 <li>[Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table. CREATE_NEVER: The table must already exist. If it does not, a &#39;notFound&#39; error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
 <li>
-<p><code>destination-encryption-configuration    kms-key-name=gubergren</code></p>
+<p><code>destination-encryption-configuration    kms-key-name=vero</code></p>
 <ul>
 <li>[Optional] Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table. The BigQuery Service Account associated with your project requires access to this encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-table    dataset-id=justo</code></p>
+<p><code>..destination-table    dataset-id=diam</code></p>
 <ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=sit</code><ul>
+<li><code>project-id=rebum.</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=vero</code></p>
+<p><code>table-id=consetetur</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-table-properties    description=diam</code></p>
+<p><code>..destination-table-properties    description=sadipscing</code></p>
 <ul>
 <li>[Optional] The description for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the current description is provided, the job will fail.</li>
 </ul>
 </li>
-<li>
-<p><code>friendly-name=rebum.</code></p>
-<ul>
+<li><code>friendly-name=vero</code><ul>
 <li>[Optional] The friendly name for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the current friendly name is provided, the job will fail.</li>
 </ul>
 </li>
 <li>
-<p><code>..    encoding=consetetur</code></p>
+<p><code>labels=key=sadipscing</code></p>
+<ul>
+<li>[Optional] The labels associated with this table. You can use these to organize and group your tables. This will only be used if the destination table is newly created. If the table already exists and labels are different than the current labels are provided, the job will fail.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li>
+<p><code>..    encoding=invidunt</code></p>
 <ul>
 <li>[Optional] The character encoding of the data. The supported values are UTF-8 or ISO-8859-1. The default value is UTF-8. BigQuery decodes the data after the raw, binary data has been split using the values of the quote and fieldDelimiter properties.</li>
 </ul>
 </li>
-<li><code>field-delimiter=sadipscing</code><ul>
+<li><code>field-delimiter=consetetur</code><ul>
 <li>[Optional] The separator for fields in a CSV file. The separator can be any ISO-8859-1 single-byte character. To use a character in the range 128-255, you must encode the character as UTF8. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. BigQuery also supports the escape sequence &#34;\t&#34; to specify a tab separator. The default value is a comma (&#39;,&#39;).</li>
 </ul>
 </li>
-<li><code>ignore-unknown-values=false</code><ul>
+<li><code>hive-partitioning-mode=dolore</code><ul>
+<li>[Optional, Trusted Tester] If hive partitioning is enabled, which mode to use. Two modes are supported: - AUTO: automatically infer partition key name(s) and type(s). - STRINGS: automatic infer partition key name(s). All types are strings. Not all storage formats support hive partitioning -- requesting hive partitioning on an unsupported format will lead to an error.</li>
+</ul>
+</li>
+<li><code>hive-partitioning-options    mode=duo</code><ul>
+<li>[Optional, Trusted Tester] When set, what mode of hive partitioning to use when reading data. Two modes are supported. (1) AUTO: automatically infer partition key name(s) and type(s). (2) STRINGS: automatically infer partition key name(s). All types are interpreted as strings. Not all storage formats support hive partitioning. Requesting hive partitioning on an unsupported format will lead to an error. Currently supported types include: AVRO, CSV, JSON, ORC and Parquet.</li>
+</ul>
+</li>
+<li>
+<p><code>source-uri-prefix=aliquyam</code></p>
+<ul>
+<li>[Optional, Trusted Tester] When hive partition detection is requested, a common prefix for all source uris should be supplied. The prefix must end immediately before the partition key encoding begins. For example, consider files following this data layout. gs://bucket/path_to_table/dt=2019-01-01/country=BR/id=7/file.avro gs://bucket/path_to_table/dt=2018-12-31/country=CA/id=3/file.avro When hive partitioning is requested with either AUTO or STRINGS detection, the common prefix can be either of gs://bucket/path_to_table or gs://bucket/path_to_table/ (trailing slash does not matter).</li>
+</ul>
+</li>
+<li>
+<p><code>..    ignore-unknown-values=true</code></p>
+<ul>
 <li>[Optional] Indicates if BigQuery should allow extra values that are not represented in the table schema. If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false. The sourceFormat property determines what BigQuery treats as an extra value: CSV: Trailing columns JSON: Named values that don&#39;t match any column names</li>
 </ul>
 </li>
-<li><code>max-bad-records=6</code><ul>
+<li><code>max-bad-records=84</code><ul>
 <li>[Optional] The maximum number of bad records that BigQuery can ignore when running the job. If the number of bad records exceeds this value, an invalid error is returned in the job result. This is only valid for CSV and JSON. The default value is 0, which requires that all records are valid.</li>
 </ul>
 </li>
-<li><code>null-marker=invidunt</code><ul>
+<li><code>null-marker=clita</code><ul>
 <li>[Optional] Specifies a string that represents a null value in a CSV file. For example, if you specify &#34;\N&#34;, BigQuery interprets &#34;\N&#34; as a null value when loading a CSV file. The default value is the empty string. If you set this property to a custom value, BigQuery throws an error if an empty string is present for all data types except for STRING and BYTE. For STRING and BYTE columns, BigQuery interprets the empty string as an empty value.</li>
 </ul>
 </li>
@@ -610,37 +708,57 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>quote=dolore</code><ul>
+<li><code>quote=takimata</code><ul>
 <li>[Optional] The value that is used to quote data sections in a CSV file. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. The default value is a double-quote (&#39;&#34;&#39;). If your data does not contain quoted sections, set the property value to an empty string. If your data contains quoted newline characters, you must also set the allowQuotedNewlines property to true.</li>
 </ul>
 </li>
-<li><code>schema-inline=duo</code><ul>
+<li><code>range-partitioning    field=nonumy</code><ul>
+<li>[TrustedTester] [Required] The table is partitioned by this field. The field must be a top-level NULLABLE/REQUIRED field. The only supported type is INTEGER/INT64.</li>
+</ul>
+</li>
+<li><code>range    end=kasd</code><ul>
+<li>[TrustedTester] [Required] The end of range partitioning, exclusive.</li>
+</ul>
+</li>
+<li><code>interval=sanctus</code><ul>
+<li>[TrustedTester] [Required] The width of each interval.</li>
+</ul>
+</li>
+<li>
+<p><code>start=takimata</code></p>
+<ul>
+<li>[TrustedTester] [Required] The start of range partitioning, inclusive.</li>
+</ul>
+</li>
+<li>
+<p><code>...    schema-inline=at</code></p>
+<ul>
 <li>[Deprecated] The inline schema. For CSV schemas, specify as &#34;Field1:Type1[,Field2:Type2]*&#34;. For example, &#34;foo:STRING, bar:INTEGER, baz:FLOAT&#34;.</li>
 </ul>
 </li>
-<li><code>schema-inline-format=aliquyam</code><ul>
+<li><code>schema-inline-format=labore</code><ul>
 <li>[Deprecated] The format of the schemaInline property.</li>
 </ul>
 </li>
-<li><code>schema-update-options=lorem</code><ul>
+<li><code>schema-update-options=invidunt</code><ul>
 <li>Allows the schema of the destination table to be updated as a side effect of the load job if a schema is autodetected or supplied in the job configuration. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>skip-leading-rows=84</code><ul>
+<li><code>skip-leading-rows=35</code><ul>
 <li>[Optional] The number of rows at the top of a CSV file that BigQuery will skip when loading the data. The default value is 0. This property is useful if you have header rows in the file that should be skipped.</li>
 </ul>
 </li>
-<li><code>source-format=clita</code><ul>
+<li><code>source-format=sadipscing</code><ul>
 <li>[Optional] The format of the data files. For CSV files, specify &#34;CSV&#34;. For datastore backups, specify &#34;DATASTORE_BACKUP&#34;. For newline-delimited JSON, specify &#34;NEWLINE_DELIMITED_JSON&#34;. For Avro, specify &#34;AVRO&#34;. For parquet, specify &#34;PARQUET&#34;. For orc, specify &#34;ORC&#34;. The default value is CSV.</li>
 </ul>
 </li>
-<li><code>source-uris=consetetur</code><ul>
+<li><code>source-uris=rebum.</code><ul>
 <li>[Required] The fully-qualified URIs that point to your data in Google Cloud. For Google Cloud Storage URIs: Each URI can contain one &#39;<em>&#39; wildcard character and it must come after the &#39;bucket&#39; name. Size limits related to load jobs apply to external data sources. For Google Cloud Bigtable URIs: Exactly one URI can be specified and it has be a fully specified and valid HTTPS URL for a Google Cloud Bigtable table. For Google Cloud Datastore backups: Exactly one URI can be specified. Also, the &#39;</em>&#39; wildcard character is not allowed.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>time-partitioning    expiration-ms=takimata</code><ul>
+<li><code>time-partitioning    expiration-ms=dolore</code><ul>
 <li>[Optional] Number of milliseconds for which to keep the storage for partitions in the table. The storage in a partition will have an expiration time of its partition time plus this value.</li>
 </ul>
 </li>
@@ -649,11 +767,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>require-partition-filter=true</code><ul>
-<li>[Beta] [Optional] If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.</li>
+<li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>type=sanctus</code></p>
+<p><code>type=aliquyam</code></p>
 <ul>
 <li>[Required] The only type supported is DAY, which will generate one partition per day.</li>
 </ul>
@@ -661,62 +779,62 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    use-avro-logical-types=false</code></p>
 <ul>
-<li>If sourceFormat is set to &#34;AVRO&#34;, indicates whether to enable interpreting logical types into their corresponding types (ie. TIMESTAMP), instead of only using their raw types (ie. INTEGER). The default value will be true once this feature launches, but can be set now in preparation.</li>
+<li>[Optional] If sourceFormat is set to &#34;AVRO&#34;, indicates whether to enable interpreting logical types into their corresponding types (ie. TIMESTAMP), instead of only using their raw types (ie. INTEGER).</li>
 </ul>
 </li>
 <li>
-<p><code>write-disposition=at</code></p>
+<p><code>write-disposition=eirmod</code></p>
 <ul>
 <li>[Optional] Specifies the action that occurs if the destination table already exists. The following values are supported: WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data. WRITE_APPEND: If the table already exists, BigQuery appends the data to the table. WRITE_EMPTY: If the table already exists and contains data, a &#39;duplicate&#39; error is returned in the job result. The default value is WRITE_APPEND. Each action is atomic and only occurs if BigQuery is able to complete the job successfully. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
 <li>
-<p><code>..query    allow-large-results=false</code></p>
+<p><code>..query    allow-large-results=true</code></p>
 <ul>
 <li>[Optional] If true and query uses legacy SQL dialect, allows the query to produce arbitrarily large result tables at a slight cost in performance. Requires destinationTable to be set. For standard SQL queries, this flag is ignored and large results are always allowed. However, you must still set destinationTable when result size exceeds the allowed maximum response size.</li>
 </ul>
 </li>
 <li>
-<p><code>clustering    fields=invidunt</code></p>
+<p><code>clustering    fields=labore</code></p>
 <ul>
 <li>[Repeated] One or more fields on which data should be clustered. Only top-level, non-repeated, simple-type fields are supported. When you cluster a table using multiple columns, the order of columns you specify is important. The order of the specified columns determines the sort order of the data.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    create-disposition=ea</code></p>
+<p><code>..    create-disposition=sed</code></p>
 <ul>
 <li>[Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table. CREATE_NEVER: The table must already exist. If it does not, a &#39;notFound&#39; error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
-<li><code>default-dataset    dataset-id=sadipscing</code><ul>
+<li><code>default-dataset    dataset-id=ea</code><ul>
 <li>[Required] A unique ID for this dataset, without the project name. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=rebum.</code></p>
+<p><code>project-id=gubergren</code></p>
 <ul>
 <li>[Optional] The ID of the project containing this dataset.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-encryption-configuration    kms-key-name=dolore</code></p>
+<p><code>..destination-encryption-configuration    kms-key-name=aliquyam</code></p>
 <ul>
 <li>[Optional] Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table. The BigQuery Service Account associated with your project requires access to this encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-table    dataset-id=nonumy</code></p>
+<p><code>..destination-table    dataset-id=eos</code></p>
 <ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=sed</code><ul>
+<li><code>project-id=tempor</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=aliquyam</code></p>
+<p><code>table-id=sea</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
@@ -727,60 +845,80 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] If true and query uses legacy SQL dialect, flattens all nested and repeated fields in the query results. allowLargeResults must be true if this is set to false. For standard SQL queries, this flag is ignored and results are never flattened.</li>
 </ul>
 </li>
-<li><code>maximum-billing-tier=61</code><ul>
+<li><code>maximum-billing-tier=47</code><ul>
 <li>[Optional] Limits the billing tier for this job. Queries that have resource usage beyond this tier will fail (without incurring a charge). If unspecified, this will be set to your project default.</li>
 </ul>
 </li>
-<li><code>maximum-bytes-billed=consetetur</code><ul>
+<li><code>maximum-bytes-billed=aliquyam</code><ul>
 <li>[Optional] Limits the bytes billed for this job. Queries that will have bytes billed beyond this limit will fail (without incurring a charge). If unspecified, this will be set to your project default.</li>
 </ul>
 </li>
-<li><code>parameter-mode=labore</code><ul>
+<li><code>parameter-mode=dolores</code><ul>
 <li>Standard SQL only. Set to POSITIONAL to use positional (?) query parameters or to NAMED to use named (@myparam) query parameters in this query.</li>
 </ul>
 </li>
-<li><code>preserve-nulls=true</code><ul>
+<li><code>preserve-nulls=false</code><ul>
 <li>[Deprecated] This property is deprecated.</li>
 </ul>
 </li>
-<li><code>priority=ea</code><ul>
+<li><code>priority=diam</code><ul>
 <li>[Optional] Specifies a priority for the query. Possible values include INTERACTIVE and BATCH. The default value is INTERACTIVE.</li>
 </ul>
 </li>
-<li><code>query=gubergren</code><ul>
+<li><code>query=ut</code><ul>
 <li>[Required] SQL query text to execute. The useLegacySql field can be used to indicate whether the query uses legacy SQL or standard SQL.</li>
 </ul>
 </li>
-<li><code>schema-update-options=aliquyam</code><ul>
+<li><code>range-partitioning    field=justo</code><ul>
+<li>[TrustedTester] [Required] The table is partitioned by this field. The field must be a top-level NULLABLE/REQUIRED field. The only supported type is INTEGER/INT64.</li>
+</ul>
+</li>
+<li><code>range    end=est</code><ul>
+<li>[TrustedTester] [Required] The end of range partitioning, exclusive.</li>
+</ul>
+</li>
+<li><code>interval=amet</code><ul>
+<li>[TrustedTester] [Required] The width of each interval.</li>
+</ul>
+</li>
+<li>
+<p><code>start=accusam</code></p>
+<ul>
+<li>[TrustedTester] [Required] The start of range partitioning, inclusive.</li>
+</ul>
+</li>
+<li>
+<p><code>...    schema-update-options=clita</code></p>
+<ul>
 <li>Allows the schema of the destination table to be updated as a side effect of the query job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>time-partitioning    expiration-ms=eos</code><ul>
+<li><code>time-partitioning    expiration-ms=diam</code><ul>
 <li>[Optional] Number of milliseconds for which to keep the storage for partitions in the table. The storage in a partition will have an expiration time of its partition time plus this value.</li>
 </ul>
 </li>
-<li><code>field=tempor</code><ul>
+<li><code>field=justo</code><ul>
 <li>[Beta] [Optional] If not set, the table is partitioned by pseudo column, referenced via either &#39;_PARTITIONTIME&#39; as TIMESTAMP type, or &#39;_PARTITIONDATE&#39; as DATE type. If field is specified, the table is instead partitioned by this field. The field must be a top-level TIMESTAMP or DATE field. Its mode must be NULLABLE or REQUIRED.</li>
 </ul>
 </li>
 <li><code>require-partition-filter=false</code><ul>
-<li>[Beta] [Optional] If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.</li>
+<li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>type=labore</code></p>
+<p><code>type=clita</code></p>
 <ul>
 <li>[Required] The only type supported is DAY, which will generate one partition per day.</li>
 </ul>
 </li>
 <li>
-<p><code>..    use-legacy-sql=false</code></p>
+<p><code>..    use-legacy-sql=true</code></p>
 <ul>
 <li>Specifies whether to use BigQuery&#39;s legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery&#39;s standard SQL: https://cloud.google.com/bigquery/sql-reference/ When useLegacySql is set to false, the value of flattenResults is ignored; query will be run as if flattenResults is false.</li>
 </ul>
 </li>
-<li><code>use-query-cache=true</code><ul>
+<li><code>use-query-cache=false</code><ul>
 <li>[Optional] Whether to look for the result in the query cache. The query cache is a best-effort cache that will be flushed whenever tables in the query are modified. Moreover, the query cache is only available when a query does not have a destination table specified. The default value is true.</li>
 </ul>
 </li>
@@ -791,207 +929,247 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    etag=sit</code></p>
+<p><code>...    etag=eos</code></p>
 <ul>
 <li>[Output-only] A hash of this resource.</li>
 </ul>
 </li>
-<li><code>id=diam</code><ul>
+<li><code>id=voluptua.</code><ul>
 <li>[Output-only] Opaque ID field of the job</li>
 </ul>
 </li>
-<li><code>job-reference    job-id=ut</code><ul>
+<li><code>job-reference    job-id=duo</code><ul>
 <li>[Required] The ID of the job. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
-<li><code>location=justo</code><ul>
-<li>The geographic location of the job. Required except for US and EU. See details at https://cloud.google.com/bigquery/docs/dataset-locations#specifying_your_location.</li>
+<li><code>location=sed</code><ul>
+<li>The geographic location of the job. See details at https://cloud.google.com/bigquery/docs/locations#specifying_your_location.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=est</code></p>
+<p><code>project-id=aliquyam</code></p>
 <ul>
 <li>[Required] The ID of the project containing this job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    kind=amet</code></p>
+<p><code>..    kind=ea</code></p>
 <ul>
 <li>[Output-only] The type of the resource.</li>
 </ul>
 </li>
-<li><code>self-link=accusam</code><ul>
+<li><code>self-link=ea</code><ul>
 <li>[Output-only] A URL that can be used to access this resource again.</li>
 </ul>
 </li>
-<li><code>statistics    completion-ratio=0.87399646162</code><ul>
+<li><code>statistics    completion-ratio=0.275209736017</code><ul>
 <li>[TrustedTester] [Output-only] Job progress (0.0 -&gt; 1.0) for LOAD and EXTRACT jobs.</li>
 </ul>
 </li>
-<li><code>creation-time=diam</code><ul>
+<li><code>creation-time=dolor</code><ul>
 <li>[Output-only] Creation time of this job, in milliseconds since the epoch. This field will be present on all jobs.</li>
 </ul>
 </li>
-<li><code>end-time=justo</code><ul>
+<li><code>end-time=diam</code><ul>
 <li>[Output-only] End time of this job, in milliseconds since the epoch. This field will be present whenever a job is in the DONE state.</li>
 </ul>
 </li>
-<li>
-<p><code>extract    destination-uri-file-counts=est</code></p>
-<ul>
+<li><code>extract    destination-uri-file-counts=kasd</code><ul>
 <li>[Output-only] Number of files per destination URI or URI pattern specified in the extract configuration. These values will be in the same order as the URIs specified in the &#39;destinationUris&#39; field.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..load    bad-records=clita</code></p>
+<p><code>input-bytes=invidunt</code></p>
+<ul>
+<li>[Output-only] Number of user bytes extracted into the result. This is the byte count as computed by BigQuery for billing purposes.</li>
+</ul>
+</li>
+<li>
+<p><code>..load    bad-records=rebum.</code></p>
 <ul>
 <li>[Output-only] The number of bad records encountered. Note that if the job has failed because of more bad records encountered than the maximum allowed in the load job configuration, then this number can be less than the total number of bad records present in the input data.</li>
 </ul>
 </li>
-<li><code>input-file-bytes=invidunt</code><ul>
+<li><code>input-file-bytes=lorem</code><ul>
 <li>[Output-only] Number of bytes of source data in a load job.</li>
 </ul>
 </li>
-<li><code>input-files=ut</code><ul>
+<li><code>input-files=clita</code><ul>
 <li>[Output-only] Number of source files in a load job.</li>
 </ul>
 </li>
-<li><code>output-bytes=dolores</code><ul>
+<li><code>output-bytes=invidunt</code><ul>
 <li>[Output-only] Size of the loaded data in bytes. Note that while a load job is in the running state, this value may change.</li>
 </ul>
 </li>
 <li>
-<p><code>output-rows=eos</code></p>
+<p><code>output-rows=eirmod</code></p>
 <ul>
 <li>[Output-only] Number of rows imported in a load job. Note that while an import job is in the running state, this value may change.</li>
 </ul>
 </li>
 <li>
-<p><code>..query    billing-tier=23</code></p>
+<p><code>..    num-child-jobs=at</code></p>
 <ul>
+<li>[Output-only] Number of child jobs executed.</li>
+</ul>
+</li>
+<li><code>parent-job-id=consetetur</code><ul>
+<li>[Output-only] If this is a child job, the id of the parent.</li>
+</ul>
+</li>
+<li><code>query    billing-tier=79</code><ul>
 <li>[Output-only] Billing tier for the job.</li>
 </ul>
 </li>
-<li><code>cache-hit=true</code><ul>
+<li><code>cache-hit=false</code><ul>
 <li>[Output-only] Whether the query result was fetched from the query cache.</li>
 </ul>
 </li>
-<li><code>ddl-operation-performed=sed</code><ul>
+<li><code>ddl-operation-performed=sit</code><ul>
 <li>The DDL operation performed, possibly dependent on the pre-existence of the DDL target. Possible values (new values might be added in the future): &#34;CREATE&#34;: The query created the DDL target. &#34;SKIP&#34;: No-op. Example cases: the query is CREATE TABLE IF NOT EXISTS while the table already exists, or the query is DROP TABLE IF EXISTS while the table does not exist. &#34;REPLACE&#34;: The query replaced the DDL target. Example case: the query is CREATE OR REPLACE TABLE, and the table already exists. &#34;DROP&#34;: The query deleted the DDL target.</li>
 </ul>
 </li>
-<li><code>ddl-target-table    dataset-id=aliquyam</code><ul>
+<li><code>ddl-target-routine    dataset-id=takimata</code><ul>
+<li>[Required] The ID of the dataset containing this routine.</li>
+</ul>
+</li>
+<li><code>project-id=elitr</code><ul>
+<li>[Required] The ID of the project containing this routine.</li>
+</ul>
+</li>
+<li>
+<p><code>routine-id=nonumy</code></p>
+<ul>
+<li>[Required] The ID of the routine. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.</li>
+</ul>
+</li>
+<li>
+<p><code>..ddl-target-table    dataset-id=rebum.</code></p>
+<ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=ea</code><ul>
+<li><code>project-id=lorem</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=ea</code></p>
+<p><code>table-id=lorem</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>..    estimated-bytes-processed=et</code></p>
+<p><code>..    estimated-bytes-processed=diam</code></p>
 <ul>
 <li>[Output-only] The original estimate of bytes processed for the job.</li>
 </ul>
 </li>
-<li><code>model-training    current-iteration=53</code><ul>
+<li><code>model-training    current-iteration=65</code><ul>
 <li>[Output-only, Beta] Index of current ML training iteration. Updated during create model query job to show job progress.</li>
 </ul>
 </li>
 <li>
-<p><code>expected-total-iterations=diam</code></p>
+<p><code>expected-total-iterations=ut</code></p>
 <ul>
 <li>[Output-only, Beta] Expected number of iterations for the create model query job specified as num_iterations in the input query. The actual total number of iterations may be less than this number due to early stop.</li>
 </ul>
 </li>
 <li>
-<p><code>..    model-training-current-iteration=39</code></p>
+<p><code>..    model-training-current-iteration=50</code></p>
 <ul>
 <li>[Output-only, Beta] Deprecated; do not use.</li>
 </ul>
 </li>
-<li><code>model-training-expected-total-iteration=invidunt</code><ul>
+<li><code>model-training-expected-total-iteration=ipsum</code><ul>
 <li>[Output-only, Beta] Deprecated; do not use.</li>
 </ul>
 </li>
-<li><code>num-dml-affected-rows=rebum.</code><ul>
+<li><code>num-dml-affected-rows=ut</code><ul>
 <li>[Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE.</li>
 </ul>
 </li>
-<li><code>statement-type=lorem</code><ul>
-<li>The type of query statement, if valid. Possible values (new values might be added in the future): &#34;SELECT&#34;: SELECT query. &#34;INSERT&#34;: INSERT query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;UPDATE&#34;: UPDATE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;DELETE&#34;: DELETE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;MERGE&#34;: MERGE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;CREATE_TABLE&#34;: CREATE [OR REPLACE] TABLE without AS SELECT. &#34;CREATE_TABLE_AS_SELECT&#34;: CREATE [OR REPLACE] TABLE ... AS SELECT ... &#34;DROP_TABLE&#34;: DROP TABLE query. &#34;CREATE_VIEW&#34;: CREATE [OR REPLACE] VIEW ... AS SELECT ... &#34;DROP_VIEW&#34;: DROP VIEW query.</li>
+<li><code>statement-type=dolor</code><ul>
+<li>The type of query statement, if valid. Possible values (new values might be added in the future): &#34;SELECT&#34;: SELECT query. &#34;INSERT&#34;: INSERT query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language. &#34;UPDATE&#34;: UPDATE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language. &#34;DELETE&#34;: DELETE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language. &#34;MERGE&#34;: MERGE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language. &#34;ALTER_TABLE&#34;: ALTER TABLE query. &#34;ALTER_VIEW&#34;: ALTER VIEW query. &#34;CREATE_FUNCTION&#34;: CREATE FUNCTION query. &#34;CREATE_MODEL&#34;: CREATE [OR REPLACE] MODEL ... AS SELECT ... . &#34;CREATE_PROCEDURE&#34;: CREATE PROCEDURE query. &#34;CREATE_TABLE&#34;: CREATE [OR REPLACE] TABLE without AS SELECT. &#34;CREATE_TABLE_AS_SELECT&#34;: CREATE [OR REPLACE] TABLE ... AS SELECT ... . &#34;CREATE_VIEW&#34;: CREATE [OR REPLACE] VIEW ... AS SELECT ... . &#34;DROP_FUNCTION&#34; : DROP FUNCTION query. &#34;DROP_PROCEDURE&#34;: DROP PROCEDURE query. &#34;DROP_TABLE&#34;: DROP TABLE query. &#34;DROP_VIEW&#34;: DROP VIEW query.</li>
 </ul>
 </li>
-<li><code>total-bytes-billed=clita</code><ul>
+<li><code>total-bytes-billed=sea</code><ul>
 <li>[Output-only] Total bytes billed for the job.</li>
 </ul>
 </li>
-<li><code>total-bytes-processed=invidunt</code><ul>
+<li><code>total-bytes-processed=ut</code><ul>
 <li>[Output-only] Total bytes processed for the job.</li>
 </ul>
 </li>
-<li><code>total-partitions-processed=eirmod</code><ul>
+<li><code>total-bytes-processed-accuracy=eirmod</code><ul>
+<li>[Output-only] For dry-run jobs, totalBytesProcessed is an estimate and this field specifies the accuracy of the estimate. Possible values can be: UNKNOWN: accuracy of the estimate is unknown. PRECISE: estimate is precise. LOWER_BOUND: estimate is lower bound of what the query would cost. UPPER_BOUND: estimate is upper bound of what the query would cost.</li>
+</ul>
+</li>
+<li><code>total-partitions-processed=sanctus</code><ul>
 <li>[Output-only] Total number of partitions processed from all partitioned tables referenced in the job.</li>
 </ul>
 </li>
 <li>
-<p><code>total-slot-ms=at</code></p>
+<p><code>total-slot-ms=voluptua.</code></p>
 <ul>
 <li>[Output-only] Slot-milliseconds for the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    quota-deferments=consetetur</code></p>
+<p><code>..    quota-deferments=dolor</code></p>
 <ul>
 <li>[Output-only] Quotas which delayed this job&#39;s start time.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>reservation-id=et</code><ul>
+<li>[Output-only] Name of the primary reservation assigned to this job. Note that this could be different than reservations reported in the reservation usage field if parent reservations were used to execute this job.</li>
 </ul>
 </li>
 <li><code>start-time=et</code><ul>
 <li>[Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to either RUNNING or DONE.</li>
 </ul>
 </li>
-<li>
-<p><code>total-bytes-processed=sed</code></p>
-<ul>
+<li><code>total-bytes-processed=vero</code><ul>
 <li>[Output-only] [Deprecated] Use the bytes processed in the query statistics instead.</li>
 </ul>
 </li>
 <li>
-<p><code>..status.error-result    debug-info=sit</code></p>
+<p><code>total-slot-ms=ut</code></p>
+<ul>
+<li>[Output-only] Slot-milliseconds for the job.</li>
+</ul>
+</li>
+<li>
+<p><code>..status.error-result    debug-info=sed</code></p>
 <ul>
 <li>Debugging information. This property is internal to Google and should not be used.</li>
 </ul>
 </li>
-<li><code>location=takimata</code><ul>
+<li><code>location=et</code><ul>
 <li>Specifies where the error occurred, if present.</li>
 </ul>
 </li>
-<li><code>message=elitr</code><ul>
+<li><code>message=ipsum</code><ul>
 <li>A human-readable description of the error.</li>
 </ul>
 </li>
 <li>
-<p><code>reason=nonumy</code></p>
+<p><code>reason=justo</code></p>
 <ul>
 <li>A short error code that summarizes the error.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=rebum.</code></p>
+<p><code>..    state=dolore</code></p>
 <ul>
 <li>[Output-only] Running state of the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    user-email=lorem</code></p>
+<p><code>..    user-email=vero</code></p>
 <ul>
 <li>[Output-only] Email address of the user who ran the job.</li>
 </ul>
@@ -1102,7 +1280,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Export - SQL Admin v1.0.8+20180917</title>
+  <title>Export - SQL Admin v1.0.10+20190607</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> SQL Admin v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> SQL Admin v1.0.10+20190607</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -318,7 +318,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">SQL Admin v1.0.8+20180917</a>
+        <a href="..">SQL Admin v1.0.10+20190607</a>
       </nav>
 
       
@@ -375,6 +375,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     file-type: string
     kind: string
     sql-export-options:
+      mysql-export-options:
+        master-data: integer
       schema-only: boolean
       tables: [string]
     uri: string
@@ -384,44 +386,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .export-context.csv-export-options    select-query=et</code></p>
+<p><code>-r .export-context.csv-export-options    select-query=amet</code></p>
 <ul>
 <li>The select query used to extract the data.</li>
 </ul>
 </li>
 <li>
-<p><code>..    databases=amet</code></p>
+<p><code>..    databases=et</code></p>
 <ul>
 <li>Databases to be exported.
     MySQL instances: If fileType is SQL and no database is specified, all databases are exported, except for the mysql system database. If fileType is CSV, you can specify one database, either by using this property or by using the csvExportOptions.selectQuery property, which takes precedence over this property.
-    PostgreSQL instances: If fileType is SQL, you must specify one database to be exported. A fileType of CSV is not supported for PostgreSQL instances.</li>
+    PostgreSQL instances: Specify exactly one database to be exported. If fileType is CSV, this database must match the database used in the csvExportOptions.selectQuery property.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>file-type=et</code><ul>
+<li><code>file-type=consetetur</code><ul>
 <li>The file type for the specified uri.
     SQL: The file contains SQL statements.
-    CSV: The file contains CSV data.
-    CSV is not supported for PostgreSQL instances.</li>
+    CSV: The file contains CSV data.</li>
 </ul>
 </li>
-<li><code>kind=consetetur</code><ul>
+<li><code>kind=ut</code><ul>
 <li>This is always sql#exportContext.</li>
 </ul>
 </li>
-<li><code>sql-export-options    schema-only=true</code><ul>
+<li>
+<p><code>sql-export-options.mysql-export-options    master-data=85</code></p>
+<ul>
+<li>Option to include SQL statement required to set up replication. If set to 1, the dump file includes a CHANGE MASTER TO statement with the binary log coordinates. If set to 2, the CHANGE MASTER TO statement is written as a SQL comment, and has no effect. All other values are ignored.</li>
+</ul>
+</li>
+<li>
+<p><code>..    schema-only=false</code></p>
+<ul>
 <li>Export only schemas.</li>
 </ul>
 </li>
 <li>
-<p><code>tables=ea</code></p>
+<p><code>tables=dolor</code></p>
 <ul>
 <li>Tables to export, or that were exported, from the specified database. If you specify tables, specify one and only one database. For PostgreSQL instances, you can specify only one table.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    uri=sed</code></p>
+<p><code>..    uri=dolor</code></p>
 <ul>
 <li>The path to the file in Google Cloud Storage where the export will be stored. The URI is in the form gs://bucketName/fileName. If the file already exists, the requests succeeds, but the operation fails. If fileType is SQL and the filename ends with .gz, the contents are compressed.</li>
 </ul>
@@ -512,7 +521,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

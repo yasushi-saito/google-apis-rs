@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Clusters Node Pools Create - Container v1.0.8+20180917</title>
+  <title>Locations Clusters Node Pools Create - Container v1.0.10+20190610</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Container v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> Container v1.0.10+20190610</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,6 +58,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_aggregated-usable-subnetworks-list/">Aggregated Usable Subnetworks List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-clusters-complete-ip-rotation/">Locations Clusters Complete Ip Rotation</a>
                 </li>
                 <li class="">
@@ -71,6 +75,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-get/">Locations Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-get-jwks/">Locations Clusters Get Jwks</a>
                 </li>
                 <li class="">
                     
@@ -183,6 +191,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-update-master/">Locations Clusters Update Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-well-known-get-openid-configuration/">Locations Clusters Well Known Get Openid Configuration</a>
                 </li>
                 <li class="">
                     
@@ -333,7 +345,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Container v1.0.8+20180917</a>
+        <a href="..">Container v1.0.10+20190610</a>
       </nav>
 
       
@@ -408,7 +420,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       upgrade-options:
         auto-upgrade-start-time: string
         description: string
+    max-pods-constraint:
+      max-pods-per-node: string
     name: string
+    pod-ipv4-cidr-size: integer
     self-link: string
     status: string
     status-message: string
@@ -430,32 +445,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Is autoscaling enabled for this node pool.</li>
 </ul>
 </li>
-<li><code>max-node-count=82</code><ul>
+<li><code>max-node-count=61</code><ul>
 <li>Maximum number of nodes in the NodePool. Must be &gt;= min_node_count. There
     has to enough quota to scale up the cluster.</li>
 </ul>
 </li>
 <li>
-<p><code>min-node-count=19</code></p>
+<p><code>min-node-count=88</code></p>
 <ul>
 <li>Minimum number of nodes in the NodePool. Must be &gt;= 1 and &lt;=
     max_node_count.</li>
 </ul>
 </li>
 <li>
-<p><code>..config    disk-size-gb=96</code></p>
+<p><code>..config    disk-size-gb=94</code></p>
 <ul>
 <li>
 <p>Size of the disk attached to each node, specified in GB.
     The smallest allowed disk size is 10GB.</p>
 <p>If unspecified, the default disk size is 100GB.
-* <code>disk-type=et</code>
+* <code>disk-type=takimata</code>
     - Type of the disk attached to each node (e.g. &#39;pd-standard&#39; or &#39;pd-ssd&#39;)</p>
 <p>If unspecified, the default disk type is &#39;pd-standard&#39;
-<em> <code>image-type=clita</code>
+* <code>image-type=at</code>
     - The image type to use for this node. Note that for a given image type,
 the latest version of it will be used.
-</em> <code>labels=key=consetetur</code>
+* <code>labels=key=labore</code>
     - The map of Kubernetes labels (key/value pairs) to be applied to each node.
 These will added in addition to any default label(s) that
 Kubernetes may apply to the node.
@@ -465,19 +480,19 @@ and conflicts should be avoided.
 For more information, including usage and the valid values, see:
 https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
     - the value will be associated with the given <code>key</code>
-* <code>local-ssd-count=43</code>
+* <code>local-ssd-count=64</code>
     - The number of local SSD disks to be attached to the node.</p>
 <p>The limit for this value is dependant upon the maximum number of
 disks available on a machine per zone. See:
 https://cloud.google.com/compute/docs/disks/local-ssd#local_ssd_limits
 for more information.
-* <code>machine-type=nonumy</code>
+* <code>machine-type=ea</code>
     - The name of a Google Compute Engine <a href="../compute/docs/machine-types">machine
 type</a> (e.g.
 <code>n1-standard-1</code>).</p>
 <p>If unspecified, the default machine type is
 <code>n1-standard-1</code>.
-* <code>metadata=key=kasd</code>
+* <code>metadata=key=sadipscing</code>
     - The metadata key/value pairs assigned to instances in the cluster.</p>
 <p>Keys must conform to the regexp [a-zA-Z0-9-_]+ and be less than 128 bytes
 in length. These are reflected as part of a URL in the metadata server.
@@ -487,19 +502,27 @@ metadata keys for the project or be one of the reserved keys:
  &#34;cluster-name&#34;
  &#34;cluster-uid&#34;
  &#34;configure-sh&#34;
+ &#34;containerd-configure-sh&#34;
  &#34;enable-os-login&#34;
  &#34;gci-update-strategy&#34;
  &#34;gci-ensure-gke-docker&#34;
  &#34;instance-template&#34;
  &#34;kube-env&#34;
  &#34;startup-script&#34;
- &#34;user-data&#34;</p>
+ &#34;user-data&#34;
+ &#34;disable-address-manager&#34;
+ &#34;windows-startup-script-ps1&#34;
+ &#34;common-psm1&#34;
+ &#34;k8s-node-setup-psm1&#34;
+ &#34;install-ssh-psm1&#34;
+ &#34;user-profile-psm1&#34;
+ &#34;serial-port-logging-enable&#34;</p>
 <p>Values are free-form strings, and only have meaning as interpreted by
 the image running in the instance. The only restriction placed on them is
 that each value&#39;s size must be less than or equal to 32 KB.</p>
 <p>The total size of all keys and values must be less than 512 KB.
     - the value will be associated with the given <code>key</code>
-<em> <code>min-cpu-platform=sanctus</code>
+* <code>min-cpu-platform=rebum.</code>
     - Minimum CPU platform to be used by this instance. The instance may be
 scheduled on the specified or newer CPU platform. Applicable values are the
 friendly names of CPU platforms, such as
@@ -507,7 +530,7 @@ friendly names of CPU platforms, such as
 &lt;code&gt;minCpuPlatform: &amp;quot;Intel Sandy Bridge&amp;quot;&lt;/code&gt;. For more
 information, read <a href="https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform">how to specify min CPU
 platform</a>
-</em> <code>oauth-scopes=takimata</code>
+* <code>oauth-scopes=dolore</code>
     - The set of Google API scopes to be made available on all of the
 node VMs under the &#34;default&#34; service account.</p>
 <p>The following scopes are recommended, but not required, and by default are
@@ -522,14 +545,14 @@ communicating with <strong>gcr.io</strong>
 <p>If unspecified, no scopes are added, unless Cloud Logging or Cloud
 Monitoring are enabled, in which case their required scopes will be added.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>preemptible=true</code>
+* <code>preemptible=true</code>
     - Whether the nodes are created as preemptible VM instances. See:
 https://cloud.google.com/compute/docs/instances/preemptible for more
 information about preemptible VM instances.
-</em> <code>service-account=labore</code>
+* <code>service-account=sed</code>
     - The Google Cloud Platform Service Account to be used by the node VMs. If
 no Service Account is specified, the &#34;default&#34; service account is used.
-* <code>tags=invidunt</code>
+* <code>tags=aliquyam</code>
     - The list of instance tags applied to all nodes. Tags are used to identify
 valid sources or targets for network firewalls and are specified by
 the client during cluster or node pool creation. Each tag within the list
@@ -539,7 +562,7 @@ must comply with RFC1035.
 </ul>
 </li>
 <li>
-<p><code>..    initial-node-count=35</code></p>
+<p><code>..    initial-node-count=48</code></p>
 <ul>
 <li>The initial node count for the pool. You must ensure that your
     Compute Engine &lt;a href=&#34;/compute/docs/resource-quotas&#34;&gt;resource quota&lt;/a&gt;
@@ -547,79 +570,89 @@ must comply with RFC1035.
     firewall and routes quota.</li>
 </ul>
 </li>
-<li><code>instance-group-urls=sadipscing</code><ul>
+<li><code>instance-group-urls=eirmod</code><ul>
 <li>[Output only] The resource URLs of the <a href="../compute/docs/instance-groups/creating-groups-of-managed-instances">managed instance
     groups</a>
     associated with this node pool.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>management    auto-repair=false</code><ul>
+<li><code>management    auto-repair=true</code><ul>
 <li>A flag that specifies whether the node auto-repair is enabled for the node
     pool. If enabled, the nodes in this node pool will be monitored and, if
     they fail health checks too many times, an automatic repair action will be
     triggered.</li>
 </ul>
 </li>
-<li><code>auto-upgrade=true</code><ul>
+<li><code>auto-upgrade=false</code><ul>
 <li>A flag that specifies whether node auto-upgrade is enabled for the node
     pool. If enabled, node auto-upgrade helps keep the nodes in your node pool
     up to date with the latest release version of Kubernetes.</li>
 </ul>
 </li>
-<li><code>upgrade-options    auto-upgrade-start-time=nonumy</code><ul>
+<li><code>upgrade-options    auto-upgrade-start-time=sed</code><ul>
 <li>[Output only] This field is set when upgrades are about to commence
     with the approximate start time for the upgrades, in
     <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC3339</a> text format.</li>
 </ul>
 </li>
 <li>
-<p><code>description=sed</code></p>
+<p><code>description=ea</code></p>
 <ul>
 <li>[Output only] This field is set when upgrades are about to commence
     with the description of the upgrade.</li>
 </ul>
 </li>
 <li>
-<p><code>...    name=aliquyam</code></p>
+<p><code>...max-pods-constraint    max-pods-per-node=gubergren</code></p>
+<ul>
+<li>Constraint enforced on the max num of pods per node.</li>
+</ul>
+</li>
+<li>
+<p><code>..    name=aliquyam</code></p>
 <ul>
 <li>The name of the node pool.</li>
 </ul>
 </li>
-<li><code>self-link=sit</code><ul>
+<li><code>pod-ipv4-cidr-size=77</code><ul>
+<li>[Output only] The pod CIDR block size per node in this node pool.</li>
+</ul>
+</li>
+<li><code>self-link=tempor</code><ul>
 <li>[Output only] Server-defined URL for the resource.</li>
 </ul>
 </li>
-<li><code>status=eirmod</code><ul>
+<li><code>status=sea</code><ul>
 <li>[Output only] The status of the nodes in this pool instance.</li>
 </ul>
 </li>
-<li><code>status-message=consetetur</code><ul>
+<li><code>status-message=labore</code><ul>
 <li>[Output only] Additional information about the current status of this
     node pool instance, if available.</li>
 </ul>
 </li>
 <li>
-<p><code>version=labore</code></p>
+<p><code>version=ipsum</code></p>
 <ul>
 <li>The version of the Kubernetes of this node.</li>
 </ul>
 </li>
 <li>
-<p><code>..    parent=sed</code></p>
+<p><code>..    parent=aliquyam</code></p>
 <ul>
 <li>The parent (project, location, cluster id) where the node pool will be
     created. Specified in the format
     &#39;projects/<em>/locations/</em>/clusters/*&#39;.</li>
 </ul>
 </li>
-<li><code>project-id=ea</code><ul>
+<li><code>project-id=dolores</code><ul>
 <li>Deprecated. The Google Developers Console <a href="https://developers.google.com/console/help/new/#projectnumber">project ID or project
     number</a>.
     This field has been deprecated and replaced by the parent field.</li>
 </ul>
 </li>
-<li><code>zone=gubergren</code><ul>
+<li><code>zone=sit</code><ul>
 <li>Deprecated. The name of the Google Compute Engine
     <a href="../compute/docs/zones#available">zone</a> in which the cluster
     resides.
@@ -736,7 +769,7 @@ must comply with RFC1035.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

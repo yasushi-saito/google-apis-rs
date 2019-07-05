@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Companies Patch - Cloud Talent Solution v1.0.8+20181008</title>
+  <title>Companies Patch - Cloud Talent Solution v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_client-events-create/">Client Events Create</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_companies-create/">Companies Create</a>
@@ -149,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Talent Solution v1.0.8+20181008</a>
+        <a href="..">Cloud Talent Solution v1.0.10+20190702</a>
       </nav>
 
       
@@ -246,21 +250,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .company    career-site-uri=lorem</code></p>
+<p><code>-r .company    career-site-uri=erat</code></p>
 <ul>
 <li>
 <p>Optional.</p>
 <p>The URI to employer&#39;s career site or careers page on the employer&#39;s web
 site, for example, &#34;https://careers.google.com&#34;.
-<em> <code>derived-info.headquarters-location.lat-lng    latitude=0.795720263212</code>
+* <code>derived-info.headquarters-location.lat-lng    latitude=0.0673002722736</code>
     - The latitude in degrees. It must be in the range [-90.0, +90.0].
-</em> <code>longitude=0.313727897996</code>
+* <code>longitude=0.525443427037</code>
     - The longitude in degrees. It must be in the range [-180.0, +180.0].</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    location-type=aliquyam</code></p>
+<p><code>..    location-type=eirmod</code></p>
 <ul>
 <li>The type of a location, which corresponds to the address lines field of
     PostalAddress. For example, &#34;Downtown, Atlanta, GA, USA&#34; has a type of
@@ -269,7 +273,7 @@ site, for example, &#34;https://careers.google.com&#34;.
 </ul>
 </li>
 <li>
-<p><code>postal-address    address-lines=sea</code></p>
+<p><code>postal-address    address-lines=elitr</code></p>
 <ul>
 <li>
 <p>Unstructured address lines describing the lower levels of an address.</p>
@@ -292,7 +296,7 @@ then geocoding is the recommended way to handle completely unstructured
 addresses (as opposed to guessing which parts of the address should be
 localities or administrative areas).
     - Each invocation of this argument appends the given value to the array.
-<em> <code>administrative-area=lorem</code>
+* <code>administrative-area=amet</code>
     - Optional. Highest administrative subdivision which is used for postal
 addresses of a country or region.
 For example, this can be a state, a province, an oblast, or a prefecture.
@@ -300,7 +304,7 @@ Specifically, for Spain this is the province and not the autonomous
 community (e.g. &#34;Barcelona&#34; and not &#34;Catalonia&#34;).
 Many countries don&#39;t use an administrative area in postal addresses. E.g.
 in Switzerland this should be left unpopulated.
-</em> <code>language-code=eos</code>
+* <code>language-code=no</code>
     - Optional. BCP-47 language code of the contents of this address (if
 known). This is often the UI language of the input form or is expected
 to match one of the languages used in the address&#39; country/region, or their
@@ -311,84 +315,84 @@ other non-formatting related operations.</p>
 <p>If this value is not known, it should be omitted (rather than specifying a
 possibly incorrect default).</p>
 <p>Examples: &#34;zh-Hant&#34;, &#34;ja&#34;, &#34;ja-Latn&#34;, &#34;en&#34;.
-<em> <code>locality=erat</code>
+* <code>locality=labore</code>
     - Optional. Generally refers to the city/town portion of the address.
 Examples: US city, IT comune, UK post town.
 In regions of the world where localities are not well defined or do not fit
 into this structure well, leave locality empty and use address_lines.
-</em> <code>organization=sadipscing</code>
+* <code>organization=eirmod</code>
     - Optional. The name of the organization at the address.
-<em> <code>postal-code=dolor</code>
+* <code>postal-code=dolore</code>
     - Optional. Postal code of the address. Not all countries use or require
 postal codes to be present, but where they are used, they may trigger
 additional validation with other parts of the address (e.g. state/zip
 validation in the U.S.A.).
-</em> <code>recipients=eirmod</code>
+* <code>recipients=invidunt</code>
     - Optional. The recipient at the address.
 This field may, under certain circumstances, contain multiline information.
 For example, it might contain &#34;care of&#34; information.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>region-code=elitr</code>
+* <code>region-code=aliquyam</code>
     - Required. CLDR region code of the country/region of the address. This
 is never inferred and it is up to the user to ensure the value is
 correct. See http://cldr.unicode.org/ and
 http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html
 for details. Example: &#34;CH&#34; for Switzerland.
-</em> <code>revision=4</code>
+* <code>revision=28</code>
     - The schema revision of the <code>PostalAddress</code>. This must be set to 0, which is
 the latest revision.</p>
 <p>All new revisions <strong>must</strong> be backward compatible with old revisions.
-<em> <code>sorting-code=no</code>
+* <code>sorting-code=lorem</code>
     - Optional. Additional, country-specific, sorting code. This is not used
 in most regions. Where it is used, the value is either a string like
 &#34;CEDEX&#34;, optionally followed by a number (e.g. &#34;CEDEX 7&#34;), or just a number
 alone, representing the &#34;sector code&#34; (Jamaica), &#34;delivery area indicator&#34;
 (Malawi) or &#34;post office indicator&#34; (e.g. Côte d&#39;Ivoire).
-</em> <code>sublocality=labore</code>
+* <code>sublocality=sea</code>
     - Optional. Sublocality of the address.
 For example, this can be neighborhoods, boroughs, districts.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    radius-in-miles=0.61974554549</code></p>
+<p><code>..    radius-in-miles=0.798238825565</code></p>
 <ul>
-<li>Radius in meters of the job location. This value is derived from the
+<li>Radius in miles of the job location. This value is derived from the
     location bounding box in which a circle with the specified radius
-    centered from LatLng coves the area associated with the job location.
+    centered from LatLng covers the area associated with the job location.
     For example, currently, &#34;Mountain View, CA, USA&#34; has a radius of
     6.17 miles.</li>
 </ul>
 </li>
 <li>
-<p><code>...    display-name=dolore</code></p>
+<p><code>...    display-name=duo</code></p>
 <ul>
 <li>
 <p>Required.</p>
 <p>The display name of the company, for example, &#34;Google, LLC&#34;.
-* <code>eeo-text=invidunt</code>
+* <code>eeo-text=et</code>
     - Optional.</p>
 <p>Equal Employment Opportunity legal disclaimer text to be
 associated with all jobs, and typically to be displayed in all
 roles.</p>
 <p>The maximum number of allowed characters is 500.
-* <code>external-id=aliquyam</code>
+* <code>external-id=eirmod</code>
     - Required.</p>
 <p>Client side company identifier, used to uniquely identify the
 company.</p>
 <p>The maximum number of allowed characters is 255.
-* <code>headquarters-address=accusam</code>
+* <code>headquarters-address=sanctus</code>
     - Optional.</p>
 <p>The street address of the company&#39;s main headquarters, which may be
 different from the job location. The service attempts
 to geolocate the provided address, and populates a more specific
 location wherever possible in DerivedInfo.headquarters_location.
-* <code>hiring-agency=false</code>
+* <code>hiring-agency=true</code>
     - Optional.</p>
 <p>Set to true if it is the hiring agency that post jobs for other
 employers.</p>
 <p>Defaults to false if not provided.
-* <code>image-uri=sea</code>
+* <code>image-uri=amet</code>
     - Optional.</p>
 <p>A URI that hosts the employer&#39;s company logo.
 * <code>keyword-searchable-job-custom-attributes=et</code>
@@ -400,20 +404,20 @@ of the values matches the search keyword. Custom field values with
 parenthesis, brackets and special symbols won&#39;t be properly searchable,
 and those keyword queries need to be surrounded by quotes.
     - Each invocation of this argument appends the given value to the array.
-* <code>name=duo</code>
+* <code>name=consetetur</code>
     - Required during company update.</p>
 <p>The resource name for a company. This is generated by the service when a
 company is created.</p>
 <p>The format is &#34;projects/{project_id}/companies/{company_id}&#34;, for example,
 &#34;projects/api-test-project/companies/foo&#34;.
-* <code>size=et</code>
+* <code>size=ut</code>
     - Optional.</p>
 <p>The employer&#39;s company size.
-<em> <code>suspended=true</code>
+* <code>suspended=true</code>
     - Output only. Indicates whether a company is flagged to be suspended from
 public availability by the service when job content appears suspicious,
 abusive, or spammy.
-</em> <code>website-uri=sanctus</code>
+* <code>website-uri=sed</code>
     - Optional.</p>
 <p>The URI representing the company&#39;s primary web site or home page,
 for example, &#34;https://www.google.com&#34;.</p>
@@ -422,7 +426,7 @@ for example, &#34;https://www.google.com&#34;.</p>
 </ul>
 </li>
 <li>
-<p><code>..    update-mask=et</code></p>
+<p><code>..    update-mask=dolor</code></p>
 <ul>
 <li>
 <p>Optional but strongly recommended for the best service
@@ -544,7 +548,7 @@ top level fields of Company are supported.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Functions Create - Cloud Functions v1.0.8+20181002</title>
+  <title>Locations Functions Create - Cloud Functions v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Functions v1.0.8+20181002</a>
+        <a href=".." class="icon icon-home"> Cloud Functions v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -121,11 +121,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-functions-get-iam-policy/">Locations Functions Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-functions-list/">Locations Functions List</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../projects_locations-functions-patch/">Locations Functions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-functions-set-iam-policy/">Locations Functions Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-functions-test-iam-permissions/">Locations Functions Test Iam Permissions</a>
                 </li>
                 <li class="">
                     
@@ -144,7 +156,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Functions v1.0.8+20181002</a>
+        <a href="..">Cloud Functions v1.0.10+20190620</a>
       </nav>
 
       
@@ -218,6 +230,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   timeout: string
   update-time: string
   version-id: string
+  vpc-connector: string
 
 </code></pre>
 
@@ -241,17 +254,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     in <code>source_location</code>.</li>
 </ul>
 </li>
+<li><code>environment-variables=key=et</code><ul>
+<li>Environment variables that shall be available during function execution.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
 <li>
-<p><code>environment-variables=key=et</code></p>
+<p><code>event-trigger    event-type=dolores</code></p>
 <ul>
 <li>
-<p><strong>Beta Feature</strong></p>
-<p>Environment variables that shall be available during function execution.
-    - the value will be associated with the given <code>key</code>
-* <code>event-trigger    event-type=dolores</code>
-    - Required. The type of event to observe. For example:
-<code>providers/cloud.storage/eventTypes/object.change</code> and
-<code>providers/cloud.pubsub/eventTypes/topic.publish</code>.</p>
+<p>Required. The type of event to observe. For example:
+    <code>providers/cloud.storage/eventTypes/object.change</code> and
+    <code>providers/cloud.pubsub/eventTypes/topic.publish</code>.</p>
 <p>Event types match pattern <code>providers/*/eventTypes/*.*</code>.
 The pattern contains:</p>
 <ol>
@@ -306,8 +320,7 @@ event types in the <code>google.storage</code> namespace.</p>
 </li>
 <li><code>max-instances=100</code><ul>
 <li>The limit on the maximum number of function instances that may coexist at a
-    given time. This feature is currently in alpha, available only for
-    whitelisted users.</li>
+    given time.</li>
 </ul>
 </li>
 <li><code>name=erat</code><ul>
@@ -327,25 +340,42 @@ event types in the <code>google.storage</code> namespace.</p>
     <code>projects/{project}/global/networks/{network}</code> or <code>{network}</code>, where
     {project} is a project id where the network is defined, and {network} is
     the short name of the network.</p>
+<p>This field is mutually exclusive with <code>vpc_connector</code> and will be replaced
+by it.</p>
 <p>See <a href="https://cloud.google.com/compute/docs/vpc">the VPC documentation</a> for
 more information on connecting Cloud projects.</p>
 <p>This feature is currently in alpha, available only for whitelisted users.
-<em> <code>runtime=sea</code>
-    - The runtime in which the function is going to run. If empty, defaults to
-Node.js 6.
-</em> <code>service-account-email=nonumy</code>
-    - Output only. The email of the function&#39;s service account.
-<em> <code>source-archive-url=dolores</code>
-    - The Google Cloud Storage URL, starting with gs://, pointing to the zip
-archive which contains the function.
-</em> <code>source-repository    deployed-url=gubergren</code>
-    - Output only. The URL pointing to the hosted repository where the function
+* <code>runtime=sea</code>
+    - Required. The runtime in which the function is going to run. Choices:</p>
+<ul>
+<li><code>nodejs6</code>: Node.js 6</li>
+<li><code>nodejs8</code>: Node.js 8</li>
+<li><code>nodejs10</code>: Node.js 10</li>
+<li><code>python37</code>: Python 3.7</li>
+<li><code>go111</code>: Go 1.11</li>
+<li><code>service-account-email=nonumy</code><ul>
+<li>The email of the function&#39;s service account. If empty, defaults to
+{project_id}@appspot.gserviceaccount.com.</li>
+</ul>
+</li>
+<li><code>source-archive-url=dolores</code><ul>
+<li>The Google Cloud Storage URL, starting with gs://, pointing to the zip
+archive which contains the function.</li>
+</ul>
+</li>
+<li><code>source-repository    deployed-url=gubergren</code><ul>
+<li>Output only. The URL pointing to the hosted repository where the function
 were defined at the time of deployment. It always points to a specific
-commit in the format described above.
-* <code>url=sadipscing</code>
-    - The URL pointing to the hosted repository where the function is defined.
+commit in the format described above.</li>
+</ul>
+</li>
+<li><code>url=sadipscing</code><ul>
+<li>The URL pointing to the hosted repository where the function is defined.
 There are supported Cloud Source Repository URLs in the following
-formats:</p>
+formats:</li>
+</ul>
+</li>
+</ul>
 <p>To refer to a specific commit:
 <code>https://source.developers.google.com/projects/*/repos/*/revisions/*/paths/*</code>
 To refer to a moveable alias (branch):
@@ -382,6 +412,20 @@ To refer to a specific fixed alias (tag):
 <li>Output only.
     The version identifier of the Cloud Function. Each deployment attempt
     results in a new version of a function being created.</li>
+</ul>
+</li>
+<li><code>vpc-connector=et</code><ul>
+<li>
+<p>The VPC Network Connector that this cloud function can connect to. It can
+    be either the fully-qualified URI, or the short name of the network
+    connector resource. The format of this field is
+    <code>projects/*/locations/*/connectors/*</code></p>
+<p>This field is mutually exclusive with <code>network</code> field and will eventually
+replace it.</p>
+<p>See <a href="https://cloud.google.com/compute/docs/vpc">the VPC documentation</a> for
+more information on connecting Cloud projects.</p>
+<p>This feature is currently in alpha, available only for whitelisted users.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -494,7 +538,7 @@ To refer to a specific fixed alias (tag):
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

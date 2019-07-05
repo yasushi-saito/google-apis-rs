@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Dlp Jobs Create - DLP v1.0.8+20181009</title>
+  <title>Dlp Jobs Create - DLP v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -236,6 +236,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_job-triggers-activate/">Job Triggers Activate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_job-triggers-create/">Job Triggers Create</a>
                 </li>
                 <li class="">
@@ -253,6 +257,10 @@
                 <li class="">
                     
     <a class="" href="../projects_job-triggers-patch/">Job Triggers Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-content-deidentify/">Locations Content Deidentify</a>
                 </li>
                 <li class="">
                     
@@ -287,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.8+20181009</a>
+        <a href="..">DLP v1.0.10+20190629</a>
       </nav>
 
       
@@ -410,7 +418,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .inspect-job.inspect-config    content-options=rebum.</code><ul>
+<li><code>-r .inspect-job.inspect-config    content-options=dolore</code><ul>
 <li>List of options defining data content to scan.
     If empty, text, images, and other content will be included.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
@@ -425,23 +433,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     included in the response; see Finding.quote.</li>
 </ul>
 </li>
-<li><code>limits    max-findings-per-item=72</code><ul>
+<li><code>limits    max-findings-per-item=19</code><ul>
 <li>Max number of findings that will be returned for each item scanned.
     When set within <code>InspectDataSourceRequest</code>,
-    the maximum returned is 1000 regardless if this is set higher.
+    the maximum returned is 2000 regardless if this is set higher.
     When set within <code>InspectContentRequest</code>, this field is ignored.</li>
 </ul>
 </li>
 <li>
-<p><code>max-findings-per-request=19</code></p>
+<p><code>max-findings-per-request=48</code></p>
 <ul>
 <li>Max number of findings that will be returned per request/job.
-    When set within <code>InspectContentRequest</code>, the maximum returned is 1000
+    When set within <code>InspectContentRequest</code>, the maximum returned is 2000
     regardless if this is set higher.</li>
 </ul>
 </li>
 <li>
-<p><code>..    min-likelihood=sit</code></p>
+<p><code>..    min-likelihood=eirmod</code></p>
 <ul>
 <li>Only returns findings equal or above this threshold. The default is
     POSSIBLE.
@@ -449,21 +457,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    inspect-template-name=eirmod</code></p>
+<p><code>..    inspect-template-name=consetetur</code></p>
 <ul>
 <li>If provided, will be used as the default for all values in InspectConfig.
     <code>inspect_config</code> will be merged into the values persisted as part of the
     template.</li>
 </ul>
 </li>
-<li><code>storage-config.big-query-options    rows-limit=consetetur</code><ul>
+<li><code>storage-config.big-query-options    rows-limit=labore</code><ul>
 <li>Max number of rows to scan. If the table has more rows than this value, the
     rest of the rows are omitted. If not set, or if set to 0, all rows will be
     scanned. Only one of rows_limit and rows_limit_percent can be specified.
     Cannot be used in conjunction with TimespanConfig.</li>
 </ul>
 </li>
-<li><code>rows-limit-percent=16</code><ul>
+<li><code>rows-limit-percent=71</code><ul>
 <li>Max percentage of rows to scan. The rest are omitted. The number of rows
     scanned is rounded down. Must be between 0 and 100, inclusively. Both 0 and
     100 means no limit. Defaults to 0. Only one of rows_limit and
@@ -471,46 +479,46 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     TimespanConfig.</li>
 </ul>
 </li>
-<li><code>sample-method=sed</code><ul>
+<li><code>sample-method=ea</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>table-reference    dataset-id=ea</code><ul>
+<li><code>table-reference    dataset-id=gubergren</code><ul>
 <li>Dataset ID of the table.</li>
 </ul>
 </li>
-<li><code>project-id=gubergren</code><ul>
+<li><code>project-id=aliquyam</code><ul>
 <li>The Google Cloud Platform project ID of the project containing the table.
     If omitted, project ID is inferred from the API call.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=aliquyam</code></p>
+<p><code>table-id=eos</code></p>
 <ul>
 <li>Name of the table.</li>
 </ul>
 </li>
 <li>
-<p><code>...cloud-storage-options    bytes-limit-per-file=eos</code></p>
+<p><code>...cloud-storage-options    bytes-limit-per-file=tempor</code></p>
 <ul>
 <li>Max number of bytes to scan from a file. If a scanned file&#39;s size is bigger
     than this value then the rest of the bytes are omitted. Only one
     of bytes_limit_per_file and bytes_limit_per_file_percent can be specified.</li>
 </ul>
 </li>
-<li><code>bytes-limit-per-file-percent=63</code><ul>
+<li><code>bytes-limit-per-file-percent=42</code><ul>
 <li>Max percentage of bytes to scan from a file. The rest are omitted. The
     number of bytes scanned is rounded down. Must be between 0 and 100,
     inclusively. Both 0 and 100 means no limit. Defaults to 0. Only one
     of bytes_limit_per_file and bytes_limit_per_file_percent can be specified.</li>
 </ul>
 </li>
-<li><code>file-set.regex-file-set    bucket-name=sea</code><ul>
+<li><code>file-set.regex-file-set    bucket-name=labore</code><ul>
 <li>The name of a Cloud Storage bucket. Required.</li>
 </ul>
 </li>
 <li>
-<p><code>exclude-regex=labore</code></p>
+<p><code>exclude-regex=ipsum</code></p>
 <ul>
 <li>
 <p>A list of regular expressions matching file paths to exclude. All files in
@@ -520,7 +528,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <a href="https://github.com/google/re2/wiki/Syntax">syntax</a>; a guide can be found
 under the google/re2 repository on GitHub.
     - Each invocation of this argument appends the given value to the array.
-* <code>include-regex=ipsum</code>
+* <code>include-regex=aliquyam</code>
     - A list of regular expressions matching file paths to include. All files in
 the bucket that match at least one of these regular expressions will be
 included in the set of files, except for those that also match an item in
@@ -534,48 +542,56 @@ under the google/re2 repository on GitHub.
 </ul>
 </li>
 <li>
-<p><code>..    url=aliquyam</code></p>
+<p><code>..    url=dolores</code></p>
 <ul>
-<li>The Cloud Storage url of the file(s) to scan, in the format
-    <code>gs://&amp;lt;bucket&amp;gt;/&amp;lt;path&amp;gt;</code>. Trailing wildcard in the path is allowed. Exactly
-    one of <code>url</code> or <code>regex_file_set</code> must be set.</li>
+<li>
+<p>The Cloud Storage url of the file(s) to scan, in the format
+    <code>gs://&amp;lt;bucket&amp;gt;/&amp;lt;path&amp;gt;</code>. Trailing wildcard in the path is allowed.</p>
+<p>If the url ends in a trailing slash, the bucket or directory represented
+by the url will be scanned non-recursively (content in sub-directories
+will not be scanned). This means that <code>gs://mybucket/</code> is equivalent to
+<code>gs://mybucket/*</code>, and <code>gs://mybucket/directory/</code> is equivalent to
+<code>gs://mybucket/directory/*</code>.</p>
+<p>Exactly one of <code>url</code> or <code>regex_file_set</code> must be set.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>..    file-types=dolores</code></p>
+<p><code>..    file-types=sit</code></p>
 <ul>
 <li>List of file type groups to include in the scan.
     If empty, all files are scanned and available data format processors
-    are applied.</li>
+    are applied. In addition, the binary content of the selected files
+    is always scanned as well.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>files-limit-percent=3</code><ul>
+<li><code>files-limit-percent=60</code><ul>
 <li>Limits the number of files to scan to this percentage of the input FileSet.
     Number of files scanned is rounded down. Must be between 0 and 100,
     inclusively. Both 0 and 100 means no limit. Defaults to 0.</li>
 </ul>
 </li>
 <li>
-<p><code>sample-method=diam</code></p>
+<p><code>sample-method=ut</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..datastore-options.kind    name=ut</code></p>
+<p><code>..datastore-options.kind    name=justo</code></p>
 <ul>
 <li>The name of the kind.</li>
 </ul>
 </li>
 <li>
-<p><code>..partition-id    namespace-id=justo</code></p>
+<p><code>..partition-id    namespace-id=est</code></p>
 <ul>
 <li>If not empty, the ID of the namespace to which the entities belong.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=est</code></p>
+<p><code>project-id=amet</code></p>
 <ul>
 <li>The ID of the project to which the entities belong.</li>
 </ul>
@@ -589,38 +605,38 @@ under the google/re2 repository on GitHub.
     time of the execution of the last run of the JobTrigger.</li>
 </ul>
 </li>
-<li><code>end-time=accusam</code><ul>
+<li><code>end-time=clita</code><ul>
 <li>Exclude files or rows newer than this value.
     If set to zero, no upper time limit is applied.</li>
 </ul>
 </li>
-<li><code>start-time=clita</code><ul>
+<li><code>start-time=diam</code><ul>
 <li>Exclude files or rows older than this value.</li>
 </ul>
 </li>
 <li>
-<p><code>timestamp-field    name=diam</code></p>
+<p><code>timestamp-field    name=justo</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>.....    job-id=justo</code></p>
+<p><code>.....    job-id=est</code></p>
 <ul>
 <li>The job id can contain uppercase and lowercase letters,
     numbers, and hyphens; that is, it must match the regular
-    expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
+    expression: <code>[a-zA-Z\\d-_]+</code>. The maximum length is 100
     characters. Can be empty to allow the system to generate one.</li>
 </ul>
 </li>
 <li>
-<p><code>risk-job.privacy-metric.categorical-stats-config.field    name=est</code></p>
+<p><code>risk-job.privacy-metric.categorical-stats-config.field    name=clita</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>...delta-presence-estimation-config    region-code=clita</code></p>
+<p><code>...delta-presence-estimation-config    region-code=invidunt</code></p>
 <ul>
 <li>ISO 3166-1 alpha-2 region code to use in the statistical modeling.
     Required if no column is tagged with a region-specific InfoType (like
@@ -628,13 +644,13 @@ under the google/re2 repository on GitHub.
 </ul>
 </li>
 <li>
-<p><code>..k-anonymity-config.entity-id.field    name=invidunt</code></p>
+<p><code>..k-anonymity-config.entity-id.field    name=ut</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>....k-map-estimation-config    region-code=ut</code></p>
+<p><code>....k-map-estimation-config    region-code=dolores</code></p>
 <ul>
 <li>ISO 3166-1 alpha-2 region code to use in the statistical modeling.
     Required if no column is tagged with a region-specific InfoType (like
@@ -642,29 +658,29 @@ under the google/re2 repository on GitHub.
 </ul>
 </li>
 <li>
-<p><code>..l-diversity-config.sensitive-attribute    name=dolores</code></p>
+<p><code>..l-diversity-config.sensitive-attribute    name=eos</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>...numerical-stats-config.field    name=eos</code></p>
+<p><code>...numerical-stats-config.field    name=voluptua.</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>....source-table    dataset-id=voluptua.</code></p>
+<p><code>....source-table    dataset-id=duo</code></p>
 <ul>
 <li>Dataset ID of the table.</li>
 </ul>
 </li>
-<li><code>project-id=duo</code><ul>
+<li><code>project-id=sed</code><ul>
 <li>The Google Cloud Platform project ID of the project containing the table.
     If omitted, project ID is inferred from the API call.</li>
 </ul>
 </li>
-<li><code>table-id=sed</code><ul>
+<li><code>table-id=aliquyam</code><ul>
 <li>Name of the table.</li>
 </ul>
 </li>
@@ -778,7 +794,7 @@ under the google/re2 repository on GitHub.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

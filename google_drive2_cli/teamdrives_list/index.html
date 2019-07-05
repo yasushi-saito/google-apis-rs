@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - drive v1.0.8+20181004</title>
+  <title>List - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -443,7 +478,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -472,7 +507,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists the user&#39;s Team Drives.</p>
+                <p>Deprecated use drives.list instead.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -498,27 +533,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Page token for Team Drives.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p use-domain-admin-access=boolean</strong></p>
-<ul>
-<li>Issue the request as a domain administrator; if set to true, then all Team Drives of the domain in which the requester is an administrator are returned.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p q=string</strong></p>
 <ul>
 <li>Query string for searching Team Drives.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Page token for Team Drives.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of Team Drives to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p use-domain-admin-access=boolean</strong></p>
+<ul>
+<li>Issue the request as a domain administrator; if set to true, then all Team Drives of the domain in which the requester is an administrator are returned.</li>
 </ul>
 </li>
 </ul>
@@ -588,7 +623,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

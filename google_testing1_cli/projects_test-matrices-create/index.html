@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Test Matrices Create - testing v1.0.8+20181011</title>
+  <title>Test Matrices Create - testing v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> testing v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> testing v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -130,7 +130,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">testing v1.0.8+20181011</a>
+        <a href="..">testing v1.0.10+20190627</a>
       </nav>
 
       
@@ -159,7 +159,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Request to run a matrix of tests according to the given specifications.
+                <p>Creates and runs a matrix of tests according to the given specifications.
 Unsupported environments will be returned in the state UNSUPPORTED.
 Matrices are limited to at most 200 supported executions.</p>
 <p>May return any of the following canonical error codes:</p>
@@ -192,11 +192,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       android-version-ids: [string]
       locales: [string]
       orientations: [string]
+  flaky-test-attempts: integer
   invalid-matrix-details: string
+  outcome-summary: string
   project-id: string
   result-storage:
     google-cloud-storage:
       gcs-path: string
+    results-url: string
     tool-results-execution:
       execution-id: string
       history-id: string
@@ -210,6 +213,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     android-instrumentation-test:
       app-apk:
         gcs-path: string
+      app-bundle:
+        bundle-location:
+          gcs-path: string
       app-package-id: string
       orchestrator-option: string
       test-apk:
@@ -220,6 +226,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     android-robo-test:
       app-apk:
         gcs-path: string
+      app-bundle:
+        bundle-location:
+          gcs-path: string
       app-initial-activity: string
       app-package-id: string
       max-depth: integer
@@ -229,15 +238,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     android-test-loop:
       app-apk:
         gcs-path: string
+      app-bundle:
+        bundle-location:
+          gcs-path: string
       app-package-id: string
       scenario-labels: [string]
       scenarios: [integer]
-    auto-google-login: boolean
     disable-performance-metrics: boolean
     disable-video-recording: boolean
     ios-test-setup:
       network-profile: string
     ios-xc-test:
+      app-bundle-id: string
       tests-zip:
         gcs-path: string
       xcode-version: string
@@ -256,126 +268,126 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>-r .client-info    name=sit</code></p>
 <ul>
-<li>Client name, such as gcloud.
-    Required</li>
+<li>Required. Client name, such as gcloud.</li>
 </ul>
 </li>
 <li>
 <p><code>..environment-matrix.android-matrix    android-model-ids=stet</code></p>
 <ul>
-<li>The ids of the set of Android device to be used.
-    Use the EnvironmentDiscoveryService to get supported options.
-    Required</li>
+<li>Required. The ids of the set of Android device to be used.
+    Use the TestEnvironmentDiscoveryService to get supported options.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>android-version-ids=sed</code><ul>
-<li>The ids of the set of Android OS version to be used.
-    Use the EnvironmentDiscoveryService to get supported options.
-    Required</li>
+<li>Required. The ids of the set of Android OS version to be used.
+    Use the TestEnvironmentDiscoveryService to get supported options.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>locales=et</code><ul>
-<li>The set of locales the test device will enable for testing.
-    Use the EnvironmentDiscoveryService to get supported options.
-    Required</li>
+<li>Required. The set of locales the test device will enable for testing.
+    Use the TestEnvironmentDiscoveryService to get supported options.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
 <p><code>orientations=dolores</code></p>
 <ul>
-<li>The set of orientations to test with.
-    Use the EnvironmentDiscoveryService to get supported options.
-    Required</li>
+<li>Required. The set of orientations to test with.
+    Use the TestEnvironmentDiscoveryService to get supported options.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>...    invalid-matrix-details=kasd</code></p>
+<p><code>...    flaky-test-attempts=38</code></p>
 <ul>
-<li>Describes why the matrix is considered invalid.
-    Only useful for matrices in the INVALID state.
-    @OutputOnly</li>
-</ul>
+<li>
+<p>The number of times a TestExecution should be re-attempted if one or more
+    of its test cases fail for any reason.
+    The maximum number of reruns allowed is 10.</p>
+<p>Default is 0, which implies no reruns.
+* <code>invalid-matrix-details=accusam</code>
+    - Output only. Describes why the matrix is considered invalid.
+Only useful for matrices in the INVALID state.
+* <code>outcome-summary=takimata</code>
+    - Output Only. The overall outcome of the test.
+Only set when the test matrix state is FINISHED.
+* <code>project-id=justo</code>
+    - The cloud project that owns the test matrix.
+* <code>result-storage.google-cloud-storage    gcs-path=amet.</code>
+    - Required. The path to a directory in GCS that will
+eventually contain the results for this test.
+The requesting user must have write access on the bucket in the supplied
+path.</p>
 </li>
-<li><code>project-id=accusam</code><ul>
-<li>The cloud project that owns the test matrix.
-    @OutputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>result-storage.google-cloud-storage    gcs-path=takimata</code></p>
+<p><code>..    results-url=erat</code></p>
 <ul>
-<li>The path to a directory in GCS that will
-    eventually contain the results for this test.
-    The requesting user must have write access on the bucket in the supplied
-    path.
-    Required</li>
+<li>Output only. URL to the results in the Firebase Web Console.</li>
+</ul>
+</li>
+<li><code>tool-results-execution    execution-id=labore</code><ul>
+<li>Output only. A tool results execution ID.</li>
+</ul>
+</li>
+<li><code>history-id=sea</code><ul>
+<li>Output only. A tool results history ID.</li>
 </ul>
 </li>
 <li>
-<p><code>..tool-results-execution    execution-id=justo</code></p>
+<p><code>project-id=nonumy</code></p>
 <ul>
-<li>A tool results execution ID.
-    @OutputOnly</li>
-</ul>
-</li>
-<li><code>history-id=amet.</code><ul>
-<li>A tool results history ID.
-    @OutputOnly</li>
+<li>Output only. The cloud project that owns the tool results execution.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=erat</code></p>
+<p><code>..tool-results-history    history-id=dolores</code></p>
 <ul>
-<li>The cloud project that owns the tool results execution.
-    @OutputOnly</li>
+<li>Required. A tool results history ID.</li>
 </ul>
 </li>
 <li>
-<p><code>..tool-results-history    history-id=labore</code></p>
+<p><code>project-id=gubergren</code></p>
 <ul>
-<li>A tool results history ID.
-    Required</li>
+<li>Required. The cloud project that owns the tool results history.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=sea</code></p>
+<p><code>...    state=sadipscing</code></p>
 <ul>
-<li>The cloud project that owns the tool results history.
-    Required</li>
+<li>Output only. Indicates the current progress of the test matrix.</li>
+</ul>
+</li>
+<li><code>test-matrix-id=aliquyam</code><ul>
+<li>Output only. Unique id set by the service.</li>
 </ul>
 </li>
 <li>
-<p><code>...    state=nonumy</code></p>
-<ul>
-<li>Indicates the current progress of the test matrix (e.g., FINISHED)
-    @OutputOnly</li>
-</ul>
-</li>
-<li><code>test-matrix-id=dolores</code><ul>
-<li>Unique id set by the service.
-    @OutputOnly</li>
-</ul>
-</li>
-<li>
-<p><code>test-specification.android-instrumentation-test.app-apk    gcs-path=gubergren</code></p>
+<p><code>test-specification.android-instrumentation-test.app-apk    gcs-path=ea</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>..    app-package-id=sadipscing</code></p>
+<p><code>..app-bundle.bundle-location    gcs-path=no</code></p>
 <ul>
-<li>The java package for the application under test.
-    Optional, default is determined by examining the application&#39;s manifest.</li>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>orchestrator-option=aliquyam</code></p>
+<p><code>...    app-package-id=justo</code></p>
+<ul>
+<li>The java package for the application under test.
+    The default value is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li>
+<p><code>orchestrator-option=justo</code></p>
 <ul>
 <li>
 <p>The option of whether running each test within its own invocation of
@@ -391,27 +403,27 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>See
 &lt;https://developer.android.com/training/testing/junit-runner.html#using-android-test-orchestrator&gt;
 for more information about Android Test Orchestrator.</p>
-<p>Optional. If not set, the test will be run without the orchestrator.
-* <code>test-apk    gcs-path=ea</code>
+<p>If not set, the test will be run without the orchestrator.
+* <code>test-apk    gcs-path=et</code>
     - A path to a file in Google Cloud Storage.
 Example: gs://build-app-1414623860166/app-debug-unaligned.apk</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    test-package-id=no</code></p>
+<p><code>..    test-package-id=et</code></p>
 <ul>
 <li>The java package for the test to be executed.
-    Optional, default is determined by examining the application&#39;s manifest.</li>
+    The default value is determined by examining the application&#39;s manifest.</li>
 </ul>
 </li>
-<li><code>test-runner-class=justo</code><ul>
+<li><code>test-runner-class=diam</code><ul>
 <li>The InstrumentationTestRunner class.
-    Optional, default is determined by examining the application&#39;s manifest.</li>
+    The default value is determined by examining the application&#39;s manifest.</li>
 </ul>
 </li>
 <li>
-<p><code>test-targets=justo</code></p>
+<p><code>test-targets=ipsum</code></p>
 <ul>
 <li>
 <p>Each target must be fully qualified with the package name or class name,
@@ -421,139 +433,144 @@ Example: gs://build-app-1414623860166/app-debug-unaligned.apk</p>
 <li>&#34;class package_name.class_name&#34;</li>
 <li>&#34;class package_name.class_name#method_name&#34;</li>
 </ul>
-<p>Optional, if empty, all targets in the module will be run.
+<p>If empty, all targets in the module will be run.
     - Each invocation of this argument appends the given value to the array.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..android-robo-test.app-apk    gcs-path=et</code></p>
+<p><code>..android-robo-test.app-apk    gcs-path=lorem</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>..    app-initial-activity=et</code></p>
+<p><code>..app-bundle.bundle-location    gcs-path=et</code></p>
 <ul>
-<li>The initial activity that should be used to start the app.
-    Optional</li>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
-<li><code>app-package-id=diam</code><ul>
+<li>
+<p><code>...    app-initial-activity=duo</code></p>
+<ul>
+<li>The initial activity that should be used to start the app.</li>
+</ul>
+</li>
+<li><code>app-package-id=aliquyam</code><ul>
 <li>The java package for the application under test.
-    Optional, default is determined by examining the application&#39;s manifest.</li>
+    The default value is determined by examining the application&#39;s manifest.</li>
 </ul>
 </li>
-<li><code>max-depth=46</code><ul>
+<li><code>max-depth=92</code><ul>
 <li>The max depth of the traversal stack Robo can explore. Needs to be at least
     2 to make Robo explore the app beyond the first activity.
-    Default is 50.
-    Optional</li>
+    Default is 50.</li>
 </ul>
 </li>
-<li><code>max-steps=96</code><ul>
+<li><code>max-steps=46</code><ul>
 <li>The max number of steps Robo can execute.
-    Default is no limit.
-    Optional</li>
+    Default is no limit.</li>
 </ul>
 </li>
 <li>
-<p><code>robo-script    gcs-path=et</code></p>
+<p><code>robo-script    gcs-path=eos</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>...android-test-loop.app-apk    gcs-path=duo</code></p>
+<p><code>...android-test-loop.app-apk    gcs-path=erat</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>..    app-package-id=aliquyam</code></p>
+<p><code>..app-bundle.bundle-location    gcs-path=sadipscing</code></p>
+<ul>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
+</ul>
+</li>
+<li>
+<p><code>...    app-package-id=dolor</code></p>
 <ul>
 <li>The java package for the application under test.
-    Optional, default is determined by examining the application&#39;s manifest.</li>
+    The default is determined by examining the application&#39;s manifest.</li>
 </ul>
 </li>
-<li><code>scenario-labels=sea</code><ul>
+<li><code>scenario-labels=eirmod</code><ul>
 <li>The list of scenario labels that should be run during the test.
     The scenario labels should map to labels defined in the application&#39;s
     manifest. For example, player_experience and
     com.google.test.loops.player_experience add all of the loops labeled in the
     manifest with the com.google.test.loops.player_experience name to the
     execution.
-    Optional. Scenarios can also be specified in the scenarios field.</li>
+    Scenarios can also be specified in the scenarios field.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>scenarios=46</code></p>
+<p><code>scenarios=58</code></p>
 <ul>
 <li>The list of scenarios that should be run during the test.
-    Optional, default is all test loops, derived from the application&#39;s
+    The default is all test loops, derived from the application&#39;s
     manifest.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    auto-google-login=false</code></p>
+<p><code>..    disable-performance-metrics=false</code></p>
 <ul>
-<li>Enables automatic Google account login.
-    If set, the service will automatically generate a Google test account and
-    add it to the device, before executing the test. Note that test accounts
-    might be reused.
-    Many applications show their full set of functionalities when an account is
-    present on the device. Logging into the device with these generated
-    accounts allows testing more functionalities.
-    Default is false.
-    Optional</li>
-</ul>
-</li>
-<li><code>disable-performance-metrics=false</code><ul>
-<li>Disables performance metrics recording; may reduce test latency.</li>
+<li>Disables performance metrics recording. May reduce test latency.</li>
 </ul>
 </li>
 <li><code>disable-video-recording=false</code><ul>
-<li>Disables video recording; may reduce test latency.</li>
+<li>Disables video recording. May reduce test latency.</li>
 </ul>
 </li>
 <li>
-<p><code>ios-test-setup    network-profile=dolor</code></p>
+<p><code>ios-test-setup    network-profile=labore</code></p>
 <ul>
-<li>Optional. The network traffic profile used for running the test.
+<li>The network traffic profile used for running the test.
     Available network profiles can be queried by using the
     NETWORK_CONFIGURATION environment type when calling
     TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.</li>
 </ul>
 </li>
 <li>
-<p><code>..ios-xc-test.tests-zip    gcs-path=eirmod</code></p>
+<p><code>..ios-xc-test    app-bundle-id=eirmod</code></p>
+<ul>
+<li>Output only. The bundle id for the application under test.</li>
+</ul>
+</li>
+<li>
+<p><code>tests-zip    gcs-path=dolore</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>..    xcode-version=elitr</code></p>
+<p><code>..    xcode-version=invidunt</code></p>
 <ul>
-<li>Optional. The Xcode version that should be used for the test.
-    Use the EnvironmentDiscoveryService to get supported options.
+<li>The Xcode version that should be used for the test.
+    Use the TestEnvironmentDiscoveryService to get supported options.
     Defaults to the latest Xcode version Firebase Test Lab supports.</li>
 </ul>
 </li>
 <li>
-<p><code>xctestrun    gcs-path=amet</code></p>
+<p><code>xctestrun    gcs-path=aliquyam</code></p>
 <ul>
 <li>A path to a file in Google Cloud Storage.
     Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
 </ul>
 </li>
 <li>
-<p><code>...test-setup    directories-to-pull=no</code></p>
+<p><code>...test-setup    directories-to-pull=accusam</code></p>
 <ul>
 <li>
 <p>List of directories on the device to upload to GCS at the end of the test;
@@ -562,11 +579,10 @@ Example: gs://build-app-1414623860166/app-debug-unaligned.apk</p>
 <p>Note: The paths /sdcard and /data will be made available and treated as
 implicit path substitutions. E.g. if /sdcard on a particular device does
 not map to external storage, the system will replace it with the external
-storage path prefix for that device.</p>
-<p>Optional
+storage path prefix for that device.
     - Each invocation of this argument appends the given value to the array.
-* <code>network-profile=labore</code>
-    - Optional. The network traffic profile used for running the test.
+* <code>network-profile=lorem</code>
+    - The network traffic profile used for running the test.
 Available network profiles can be queried by using the
 NETWORK_CONFIGURATION environment type when calling
 TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.</p>
@@ -574,18 +590,17 @@ TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.</p>
 </ul>
 </li>
 <li>
-<p><code>..    test-timeout=eirmod</code></p>
+<p><code>..    test-timeout=sea</code></p>
 <ul>
 <li>Max time a test execution is allowed to run before it is
     automatically cancelled.
-    Optional, default is 5 min.</li>
+    The default value is 5 min.</li>
 </ul>
 </li>
 <li>
-<p><code>..    timestamp=dolore</code></p>
+<p><code>..    timestamp=et</code></p>
 <ul>
-<li>The time this test matrix was initially created.
-    @OutputOnly</li>
+<li>Output only. The time this test matrix was initially created.</li>
 </ul>
 </li>
 </ul>
@@ -714,7 +729,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

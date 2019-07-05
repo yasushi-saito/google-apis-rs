@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/activities_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/activities_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,31 +29,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/captions_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/captions_download/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/captions_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/captions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/captions_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,7 +63,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channel-banners_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,25 +73,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channel-sections_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channel-sections_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channel-sections_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channel-sections_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -101,13 +101,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channels_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/channels_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,19 +117,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comment-threads_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comment-threads_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comment-threads_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -139,37 +139,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_mark-as-spam/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_set-moderation-status/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/comments_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -179,7 +179,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/guide-categories_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -189,7 +189,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/i18n-languages_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -199,7 +199,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/i18n-regions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -209,43 +209,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_bind/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_control/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_transition/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-broadcasts_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -255,13 +255,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-bans_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-bans_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -271,19 +271,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-messages_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-messages_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-messages_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -293,19 +293,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-moderators_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-moderators_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-chat-moderators_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -315,25 +315,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-streams_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-streams_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-streams_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/live-streams_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -343,25 +343,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlist-items_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlist-items_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlist-items_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlist-items_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -371,25 +371,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlists_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlists_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlists_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/playlists_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -399,7 +399,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/search_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -409,7 +409,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/sponsors_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -419,19 +419,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/subscriptions_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/subscriptions_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/subscriptions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -441,7 +441,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/super-chat-events_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -451,7 +451,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/thumbnails_set/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -461,7 +461,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/video-abuse-report-reasons_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -471,7 +471,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/video-categories_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -481,43 +481,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_get-rating/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_rate/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_report-abuse/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/videos_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -527,13 +527,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/watermarks_set/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-youtube3-cli/watermarks_unset/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

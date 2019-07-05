@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Configs Waiters Create - Cloud RuntimeConfig v1.0.8+20181008</title>
+  <title>Configs Waiters Create - Cloud RuntimeConfig v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud RuntimeConfig v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud RuntimeConfig v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -184,7 +184,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud RuntimeConfig v1.0.8+20181008</a>
+        <a href="..">Cloud RuntimeConfig v1.0.10+20190624</a>
       </nav>
 
       
@@ -276,9 +276,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     for one of its conditions to be met.</p>
 <p>If true, the waiter has finished. If the waiter finished due to a timeout
 or failure, <code>error</code> will be set.
-<em> <code>error    code=80</code>
+* <code>error    code=80</code>
     - The status code, which should be an enum value of google.rpc.Code.
-</em> <code>message=et</code>
+* <code>message=et</code>
     - A developer-facing error message, which should be in English. Any
 user-facing error message should be localized and sent in the
 google.rpc.Status.details field, or localized by the client.</p>
@@ -310,10 +310,10 @@ the <code>[CONFIG_NAME]</code> must be a valid RuntimeConfig resource, the
 <code>[WAITER_NAME]</code> must match RFC 1035 segment specification, and the length
 of <code>[WAITER_NAME]</code> must be less than 64 bytes.</p>
 <p>After you create a Waiter resource, you cannot change the resource name.
-<em> <code>success.cardinality    number=96</code>
+* <code>success.cardinality    number=96</code>
     - The number variables under the <code>path</code> that must exist to meet this
 condition. Defaults to 1 if not specified.
-</em> <code>path=et</code>
+* <code>path=et</code>
     - The root of the variable subtree to monitor. For example, <code>/foo</code>.</p>
 </li>
 </ul>
@@ -456,7 +456,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Generate Access Token - IAM Credentials v1.0.8+20181004</title>
+  <title>Service Accounts Generate Access Token - IAM Credentials v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> IAM Credentials v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> IAM Credentials v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -113,7 +113,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">IAM Credentials v1.0.8+20181004</a>
+        <a href="..">IAM Credentials v1.0.10+20190620</a>
       </nav>
 
       
@@ -152,7 +152,8 @@ You can set the scope for this method like this: <code>iamcredentials1 --scope &
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
 <li>The resource name of the service account for which the credentials
     are requested, in the following format:
-    <code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>.</li>
+    <code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>. The <code>-</code> wildcard
+    character is required; replacing it with a project ID is invalid.</li>
 </ul>
 </li>
 </ul>
@@ -178,14 +179,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     on the service account that is specified in the <code>name</code> field of the
     request.</p>
 <p>The delegates must have the following format:
-<code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>
+<code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>. The <code>-</code> wildcard
+character is required; replacing it with a project ID is invalid.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>lifetime=sit</code>
+* <code>lifetime=sit</code>
     - The desired lifetime duration of the access token in seconds.
 Must be set to a value less than or equal to 3600 (1 hour). If a value is
 not specified, the token&#39;s lifetime will be set to a default value of one
 hour.
-</em> <code>scope=stet</code>
+* <code>scope=stet</code>
     - Code to identify the scopes to be included in the OAuth 2.0 access token.
 See https://developers.google.com/identity/protocols/googlescopes for more
 information.
@@ -304,7 +306,7 @@ At least one value required.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

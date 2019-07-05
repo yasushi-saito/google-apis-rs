@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Create - Cloud Tasks v1.0.8+20180913</title>
+  <title>Locations Queues Tasks Create - Cloud Tasks v1.0.10+20190618</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.8+20180913</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.10+20190618</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -165,7 +165,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.8+20180913</a>
+        <a href="..">Cloud Tasks v1.0.10+20190618</a>
       </nav>
 
       
@@ -197,8 +197,7 @@
                 <p>Creates a task and adds it to a queue.</p>
 <p>Tasks cannot be updated after creation; there is no UpdateTask command.</p>
 <ul>
-<li>For App Engine queues, the maximum task size is
-  100KB.</li>
+<li>The maximum task size is 100KB.</li>
 </ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
@@ -235,6 +234,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       relative-uri: string
     create-time: string
     dispatch-count: integer
+    dispatch-deadline: string
     first-attempt:
       dispatch-time: string
       response-status:
@@ -242,6 +242,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         message: string
       response-time: string
       schedule-time: string
+    http-request:
+      body: string
+      headers: { string: string }
+      http-method: string
+      oauth-token:
+        scope: string
+        service-account-email: string
+      oidc-token:
+        audience: string
+        service-account-email: string
+      url: string
     last-attempt:
       dispatch-time: string
       response-status:
@@ -259,7 +270,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    response-view=lorem</code></p>
+<p><code>-r .    response-view=erat</code></p>
 <ul>
 <li>
 <p>The response_view specifies which subset of the Task will be
@@ -272,7 +283,7 @@ contains.</p>
 <p>Authorization for FULL requires
 <code>cloudtasks.tasks.fullView</code> <a href="https://cloud.google.com/iam/">Google IAM</a>
 permission on the Task resource.
-* <code>task.app-engine-http-request.app-engine-routing    host=eos</code>
+* <code>task.app-engine-http-request.app-engine-routing    host=sadipscing</code>
     - Output only. The host that the task is sent to.</p>
 <p>The host is constructed from the domain name of the app associated with
 the queue&#39;s project ID (for example &lt;app-id&gt;.appspot.com), and the
@@ -280,17 +291,21 @@ service, version,
 and instance. Tasks which were created using
 the App Engine SDK might have a custom domain name.</p>
 <p>For more information, see
-<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.
-* <code>instance=erat</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">How Requests are
+Routed</a>.
+* <code>instance=dolor</code>
     - App instance.</p>
 <p>By default, the task is sent to an instance which is available when
 the task is attempted.</p>
 <p>Requests can only be sent to a specific instance if
-<a href="https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
+<a href="https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine
+Standard</a>.
 App Engine Flex does not support instances. For more information, see
-<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
-and <a href="https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
-* <code>service=sadipscing</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request
+routing</a>
+and <a href="https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request
+routing</a>.
+* <code>service=eirmod</code>
     - App service.</p>
 <p>By default, the task is sent to the service which is the default
 service when the task is attempted.</p>
@@ -305,7 +320,7 @@ host is not parsable, then
 service,
 version, and
 instance are the empty string.
-* <code>version=dolor</code>
+* <code>version=elitr</code>
     - App version.</p>
 <p>By default, the task is sent to the version which is the default
 version when the task is attempted.</p>
@@ -324,13 +339,13 @@ instance are the empty string.</p>
 </ul>
 </li>
 <li>
-<p><code>..    body=eirmod</code></p>
+<p><code>..    body=amet</code></p>
 <ul>
 <li>
 <p>HTTP request body.</p>
 <p>A request body is allowed only if the HTTP method is POST or PUT. It is
 an error to set a body on a task with an incompatible HttpMethod.
-* <code>headers=key=elitr</code>
+* <code>headers=key=no</code>
     - HTTP request headers.</p>
 <p>This map contains the header field names and values.
 Headers can be set when the
@@ -363,23 +378,26 @@ Tasks sets the following headers:</p>
 </ul>
 <p>In addition, Cloud Tasks sets some headers when the task is dispatched,
 such as headers containing information about the task; see
-<a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/creating-handlers#reading_request_headers">request headers</a>.
+<a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/creating-handlers#reading_request_headers">request
+headers</a>.
 These headers are set only when the task is dispatched, so they are not
 visible when the task is returned in a Cloud Tasks response.</p>
 <p>Although there is no specific limit for the maximum number of headers or
 the size, there is a limit on the maximum size of the Task. For more
 information, see the CreateTask documentation.
     - the value will be associated with the given <code>key</code>
-* <code>http-method=amet</code>
+* <code>http-method=labore</code>
     - The HTTP method to use for the request. The default is POST.</p>
 <p>The app&#39;s request handler for the task&#39;s target URL must be able to handle
 HTTP requests with this http_method, otherwise the task attempt will fail
 with error code 405 (Method Not Allowed). See
-<a href="https://cloud.google.com/appengine/docs/java/taskqueue/push/creating-handlers#writing_a_push_task_request_handler">Writing a push task request handler</a>
+<a href="https://cloud.google.com/appengine/docs/java/taskqueue/push/creating-handlers#writing_a_push_task_request_handler">Writing a push task request
+handler</a>
 and the documentation for the request handlers in the language your app is
 written in e.g.
-<a href="https://cloud.google.com/appengine/docs/python/tools/webapp/requesthandlerclass">Python Request Handler</a>.
-* <code>relative-uri=no</code>
+<a href="https://cloud.google.com/appengine/docs/python/tools/webapp/requesthandlerclass">Python Request
+Handler</a>.
+* <code>relative-uri=eirmod</code>
     - The relative URI.</p>
 <p>The relative URI must begin with &#34;/&#34; and must be a valid HTTP relative URI.
 It can contain a path and query string arguments.
@@ -389,48 +407,54 @@ No spaces are allowed, and the maximum length allowed is 2083 characters.</p>
 </ul>
 </li>
 <li>
-<p><code>..    create-time=labore</code></p>
+<p><code>..    create-time=dolore</code></p>
 <ul>
 <li>
 <p>Output only. The time that the task was created.</p>
 <p><code>create_time</code> will be truncated to the nearest second.
-* <code>dispatch-count=62</code>
+* <code>dispatch-count=64</code>
     - Output only. The number of attempts dispatched.</p>
-<p>This count includes tasks which have been dispatched but haven&#39;t
+<p>This count includes attempts which have been dispatched but haven&#39;t
 received a response.
-* <code>first-attempt    dispatch-time=dolore</code>
+* <code>dispatch-deadline=aliquyam</code>
+    - The deadline for requests sent to the worker. If the worker does not
+respond by this deadline then the request is cancelled and the attempt
+is marked as a <code>DEADLINE_EXCEEDED</code> failure. Cloud Tasks will retry the
+task according to the RetryConfig.</p>
+<p>Note that when the request is cancelled, Cloud Tasks will stop listing for
+the response, but whether the worker stops processing depends on the
+worker. For example, if the worker is stuck, it may not react to cancelled
+requests.</p>
+<p>The default and maximum values depend on the type of request:</p>
+<ul>
+<li>
+<p>For HTTP tasks, the default is 10 minutes. The deadline
+  must be in the interval [15 seconds, 30 minutes].</p>
+</li>
+<li>
+<p>For App Engine tasks, 0 indicates that the
+  request has the default deadline. The default deadline depends on the
+  <a href="https://cloud.google.com/appengine/docs/standard/go/how-instances-are-managed#instance_scaling">scaling
+  type</a>
+  of the service: 10 minutes for standard apps with automatic scaling, 24
+  hours for standard apps with manual and basic scaling, and 60 minutes for
+  flex apps. If the request deadline is set, it must be in the interval [15
+  seconds, 24 hours 15 seconds]. Regardless of the task&#39;s
+  <code>dispatch_deadline</code>, the app handler will not run for longer than than
+  the service&#39;s timeout. We recommend setting the <code>dispatch_deadline</code> to
+  at most a few seconds more than the app handler&#39;s timeout. For more
+  information see
+  <a href="https://cloud.google.com/tasks/docs/creating-appengine-handlers#timeouts">Timeouts</a>.</p>
+</li>
+</ul>
+<p><code>dispatch_deadline</code> will be truncated to the nearest millisecond. The
+deadline is an approximate deadline.
+* <code>first-attempt    dispatch-time=accusam</code>
     - Output only. The time that this attempt was dispatched.</p>
 <p><code>dispatch_time</code> will be truncated to the nearest microsecond.
-<em> <code>response-status    code=64</code>
+* <code>response-status    code=45</code>
     - The status code, which should be an enum value of google.rpc.Code.
-</em> <code>message=aliquyam</code>
-    - A developer-facing error message, which should be in English. Any
-user-facing error message should be localized and sent in the
-google.rpc.Status.details field, or localized by the client.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>..    response-time=accusam</code></p>
-<ul>
-<li>
-<p>Output only. The time that this attempt response was received.</p>
-<p><code>response_time</code> will be truncated to the nearest microsecond.
-* <code>schedule-time=lorem</code>
-    - Output only. The time that this attempt was scheduled.</p>
-<p><code>schedule_time</code> will be truncated to the nearest microsecond.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>..last-attempt    dispatch-time=sea</code></p>
-<ul>
-<li>
-<p>Output only. The time that this attempt was dispatched.</p>
-<p><code>dispatch_time</code> will be truncated to the nearest microsecond.
-<em> <code>response-status    code=80</code>
-    - The status code, which should be an enum value of google.rpc.Code.
-</em> <code>message=duo</code>
+* <code>message=sea</code>
     - A developer-facing error message, which should be in English. Any
 user-facing error message should be localized and sent in the
 google.rpc.Status.details field, or localized by the client.</p>
@@ -443,14 +467,120 @@ google.rpc.Status.details field, or localized by the client.</p>
 <li>
 <p>Output only. The time that this attempt response was received.</p>
 <p><code>response_time</code> will be truncated to the nearest microsecond.
-* <code>schedule-time=eirmod</code>
+* <code>schedule-time=duo</code>
     - Output only. The time that this attempt was scheduled.</p>
 <p><code>schedule_time</code> will be truncated to the nearest microsecond.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    name=sanctus</code></p>
+<p><code>..http-request    body=et</code></p>
+<ul>
+<li>
+<p>HTTP request body.</p>
+<p>A request body is allowed only if the
+HTTP method is POST, PUT, or PATCH. It is an
+error to set body on a task with an incompatible HttpMethod.
+* <code>headers=key=eirmod</code>
+    - HTTP request headers.</p>
+<p>This map contains the header field names and values.
+Headers can be set when the
+task is created.</p>
+<p>These headers represent a subset of the headers that will accompany the
+task&#39;s HTTP request. Some HTTP request headers will be ignored or replaced.</p>
+<p>A partial list of headers that will be ignored or replaced is:</p>
+<ul>
+<li>Host: This will be computed by Cloud Tasks and derived from
+  HttpRequest.url.</li>
+<li>Content-Length: This will be computed by Cloud Tasks.</li>
+<li>User-Agent: This will be set to <code>&amp;#34;Google-Cloud-Tasks&amp;#34;</code>.</li>
+<li>X-Google-*: Google use only.</li>
+<li>X-AppEngine-*: Google use only.</li>
+</ul>
+<p><code>Content-Type</code> won&#39;t be set by Cloud Tasks. You can explicitly set
+<code>Content-Type</code> to a media type when the
+ task is created.
+ For example, <code>Content-Type</code> can be set to <code>&amp;#34;application/octet-stream&amp;#34;</code> or
+ <code>&amp;#34;application/json&amp;#34;</code>.</p>
+<p>Headers which can have multiple values (according to RFC2616) can be
+specified using comma-separated values.</p>
+<p>The size of the headers must be less than 80KB.
+    - the value will be associated with the given <code>key</code>
+* <code>http-method=sanctus</code>
+    - The HTTP method to use for the request. The default is POST.
+* <code>oauth-token    scope=et</code>
+    - OAuth scope to be used for generating OAuth access token.
+If not specified, &#34;https://www.googleapis.com/auth/cloud-platform&#34;
+will be used.
+* <code>service-account-email=amet</code>
+    - <a href="https://cloud.google.com/iam/docs/service-accounts">Service account email</a>
+to be used for generating OAuth token.
+The service account must be within the same project as the queue. The
+caller must have iam.serviceAccounts.actAs permission for the service
+account.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..oidc-token    audience=et</code></p>
+<ul>
+<li>Audience to be used when generating OIDC token. If not specified, the URI
+    specified in target will be used.</li>
+</ul>
+</li>
+<li>
+<p><code>service-account-email=consetetur</code></p>
+<ul>
+<li><a href="https://cloud.google.com/iam/docs/service-accounts">Service account email</a>
+    to be used for generating OIDC token.
+    The service account must be within the same project as the queue. The
+    caller must have iam.serviceAccounts.actAs permission for the service
+    account.</li>
+</ul>
+</li>
+<li>
+<p><code>..    url=ut</code></p>
+<ul>
+<li>
+<p>Required. The full url path that the request will be sent to.</p>
+<p>This string must begin with either &#34;http://&#34; or &#34;https://&#34;. Some examples
+are: <code>http://acme.com</code> and <code>https://acme.com/sales:8080</code>. Cloud Tasks will
+encode some characters for safety and compatibility. The maximum allowed
+URL length is 2083 characters after encoding.</p>
+<p>The <code>Location</code> header response from a redirect response [<code>300</code> - <code>399</code>]
+may be followed. The redirect is not counted as a separate attempt.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..last-attempt    dispatch-time=ea</code></p>
+<ul>
+<li>
+<p>Output only. The time that this attempt was dispatched.</p>
+<p><code>dispatch_time</code> will be truncated to the nearest microsecond.
+* <code>response-status    code=21</code>
+    - The status code, which should be an enum value of google.rpc.Code.
+* <code>message=dolor</code>
+    - A developer-facing error message, which should be in English. Any
+user-facing error message should be localized and sent in the
+google.rpc.Status.details field, or localized by the client.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    response-time=dolor</code></p>
+<ul>
+<li>
+<p>Output only. The time that this attempt response was received.</p>
+<p><code>response_time</code> will be truncated to the nearest microsecond.
+* <code>schedule-time=dolor</code>
+    - Output only. The time that this attempt was scheduled.</p>
+<p><code>schedule_time</code> will be truncated to the nearest microsecond.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    name=et</code></p>
 <ul>
 <li>
 <p>Optionally caller-specified in CreateTask.</p>
@@ -461,7 +591,8 @@ google.rpc.Status.details field, or localized by the client.</p>
 <li><code>PROJECT_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]),
    hyphens (-), colons (:), or periods (.).
    For more information, see
-   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying projects</a></li>
+   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying
+   projects</a></li>
 <li><code>LOCATION_ID</code> is the canonical ID for the task&#39;s location.
    The list of available locations can be obtained by calling
    ListLocations.
@@ -470,18 +601,18 @@ google.rpc.Status.details field, or localized by the client.</p>
   hyphens (-). The maximum length is 100 characters.</li>
 <li><code>TASK_ID</code> can contain only letters ([A-Za-z]), numbers ([0-9]),
   hyphens (-), or underscores (_). The maximum length is 500 characters.</li>
-<li><code>response-count=79</code><ul>
+<li><code>response-count=5</code><ul>
 <li>Output only. The number of attempts which have received a response.</li>
 </ul>
 </li>
-<li><code>schedule-time=amet</code><ul>
+<li><code>schedule-time=amet.</code><ul>
 <li>The time when the task is scheduled to be attempted.</li>
 </ul>
 </li>
 </ul>
 <p>For App Engine queues, this is when the task will be attempted or retried.</p>
 <p><code>schedule_time</code> will be truncated to the nearest microsecond.
-* <code>view=et</code>
+* <code>view=voluptua.</code>
     - Output only. The view specifies which subset of the Task has
 been returned.</p>
 </li>
@@ -597,7 +728,7 @@ been returned.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

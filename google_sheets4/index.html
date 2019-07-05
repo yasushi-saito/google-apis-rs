@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_sheets4` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_sheets4"><title>google_sheets4 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_sheets4/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_sheets4</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_sheets4's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_sheets4', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_sheets4/lib.rs.html#5-10876' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_sheets4</a></span></h1><div class='docblock'><p>This documentation was generated from <em>Sheets</em> crate version <em>1.0.9+20190625</em>, where <em>20190625</em> is the exact revision of the <em>sheets:v4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>Sheets</em> <em>v4</em> API can be found at the
+<a href="https://developers.google.com/sheets/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sheets4">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Sheets.html">hub</a> ... </p>
+<ul>
+<li><a href="struct.Spreadsheet.html">spreadsheets</a></li>
+<li><a href="struct.SpreadsheetBatchUpdateCall.html"><em>batch update</em></a>, <a href="struct.SpreadsheetCreateCall.html"><em>create</em></a>, <a href="struct.SpreadsheetDeveloperMetadataGetCall.html"><em>developer metadata get</em></a>, <a href="struct.SpreadsheetDeveloperMetadataSearchCall.html"><em>developer metadata search</em></a>, <a href="struct.SpreadsheetGetCall.html"><em>get</em></a>, <a href="struct.SpreadsheetGetByDataFilterCall.html"><em>get by data filter</em></a>, <a href="struct.SpreadsheetSheetCopyToCall.html"><em>sheets copy to</em></a>, <a href="struct.SpreadsheetValueAppendCall.html"><em>values append</em></a>, <a href="struct.SpreadsheetValueBatchClearCall.html"><em>values batch clear</em></a>, <a href="struct.SpreadsheetValueBatchClearByDataFilterCall.html"><em>values batch clear by data filter</em></a>, <a href="struct.SpreadsheetValueBatchGetCall.html"><em>values batch get</em></a>, <a href="struct.SpreadsheetValueBatchGetByDataFilterCall.html"><em>values batch get by data filter</em></a>, <a href="struct.SpreadsheetValueBatchUpdateCall.html"><em>values batch update</em></a>, <a href="struct.SpreadsheetValueBatchUpdateByDataFilterCall.html"><em>values batch update by data filter</em></a>, <a href="struct.SpreadsheetValueClearCall.html"><em>values clear</em></a>, <a href="struct.SpreadsheetValueGetCall.html"><em>values get</em></a> and <a href="struct.SpreadsheetValueUpdateCall.html"><em>values update</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.Sheets.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">get_by_data_filter</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">create</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_clear</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_append</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">sheets_copy_to</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_clear</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_get_by_data_filter</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_clear_by_data_filter</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_batch_update_by_data_filter</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">batch_update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">developer_metadata_search</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">developer_metadata_get</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-sheets4 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_sheets4</span> <span class="kw">as</span> <span class="ident">sheets4</span>;
+<span class="kw">use</span> <span class="ident">sheets4</span>::<span class="ident">ValueRange</span>;
+<span class="kw">use</span> <span class="ident">sheets4</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">sheets4</span>::<span class="ident">Sheets</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">Sheets</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// As the method needs a request, you would usually fill it with the desired information</span>
+<span class="comment">// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">req</span> <span class="op">=</span> <span class="ident">ValueRange</span>::<span class="ident">default</span>();
+ 
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">spreadsheets</span>().<span class="ident">values_append</span>(<span class="ident">req</span>, <span class="string">&quot;spreadsheetId&quot;</span>, <span class="string">&quot;range&quot;</span>)
+             .<span class="ident">value_input_option</span>(<span class="string">&quot;justo&quot;</span>)
+             .<span class="ident">response_value_render_option</span>(<span class="string">&quot;amet.&quot;</span>)
+             .<span class="ident">response_date_time_render_option</span>(<span class="string">&quot;erat&quot;</span>)
+             .<span class="ident">insert_data_option</span>(<span class="string">&quot;labore&quot;</span>)
+             .<span class="ident">include_values_in_response</span>(<span class="bool-val">true</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.AddBandingRequest.html" title='google_sheets4::AddBandingRequest struct'>AddBandingRequest</a></td><td class='docblock-short'><p>Adds a new banded range to the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddBandingResponse.html" title='google_sheets4::AddBandingResponse struct'>AddBandingResponse</a></td><td class='docblock-short'><p>The result of adding a banded range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddChartRequest.html" title='google_sheets4::AddChartRequest struct'>AddChartRequest</a></td><td class='docblock-short'><p>Adds a chart to a sheet in the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddChartResponse.html" title='google_sheets4::AddChartResponse struct'>AddChartResponse</a></td><td class='docblock-short'><p>The result of adding a chart to a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddConditionalFormatRuleRequest.html" title='google_sheets4::AddConditionalFormatRuleRequest struct'>AddConditionalFormatRuleRequest</a></td><td class='docblock-short'><p>Adds a new conditional format rule at the given index.
+All subsequent rules' indexes are incremented.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddDimensionGroupRequest.html" title='google_sheets4::AddDimensionGroupRequest struct'>AddDimensionGroupRequest</a></td><td class='docblock-short'><p>Creates a group over the specified range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddDimensionGroupResponse.html" title='google_sheets4::AddDimensionGroupResponse struct'>AddDimensionGroupResponse</a></td><td class='docblock-short'><p>The result of adding a group.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddFilterViewRequest.html" title='google_sheets4::AddFilterViewRequest struct'>AddFilterViewRequest</a></td><td class='docblock-short'><p>Adds a filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddFilterViewResponse.html" title='google_sheets4::AddFilterViewResponse struct'>AddFilterViewResponse</a></td><td class='docblock-short'><p>The result of adding a filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddNamedRangeRequest.html" title='google_sheets4::AddNamedRangeRequest struct'>AddNamedRangeRequest</a></td><td class='docblock-short'><p>Adds a named range to the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddNamedRangeResponse.html" title='google_sheets4::AddNamedRangeResponse struct'>AddNamedRangeResponse</a></td><td class='docblock-short'><p>The result of adding a named range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddProtectedRangeRequest.html" title='google_sheets4::AddProtectedRangeRequest struct'>AddProtectedRangeRequest</a></td><td class='docblock-short'><p>Adds a new protected range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddProtectedRangeResponse.html" title='google_sheets4::AddProtectedRangeResponse struct'>AddProtectedRangeResponse</a></td><td class='docblock-short'><p>The result of adding a new protected range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddSheetRequest.html" title='google_sheets4::AddSheetRequest struct'>AddSheetRequest</a></td><td class='docblock-short'><p>Adds a new sheet.
+When a sheet is added at a given index,
+all subsequent sheets' indexes are incremented.
+To add an object sheet, use AddChartRequest instead and specify
+EmbeddedObjectPosition.sheetId or
+EmbeddedObjectPosition.newSheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddSheetResponse.html" title='google_sheets4::AddSheetResponse struct'>AddSheetResponse</a></td><td class='docblock-short'><p>The result of adding a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AppendCellsRequest.html" title='google_sheets4::AppendCellsRequest struct'>AppendCellsRequest</a></td><td class='docblock-short'><p>Adds new cells after the last row with data in a sheet,
+inserting new rows into the sheet if necessary.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AppendDimensionRequest.html" title='google_sheets4::AppendDimensionRequest struct'>AppendDimensionRequest</a></td><td class='docblock-short'><p>Appends rows or columns to the end of a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AppendValuesResponse.html" title='google_sheets4::AppendValuesResponse struct'>AppendValuesResponse</a></td><td class='docblock-short'><p>The response when updating a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AutoFillRequest.html" title='google_sheets4::AutoFillRequest struct'>AutoFillRequest</a></td><td class='docblock-short'><p>Fills in more data based on existing data.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AutoResizeDimensionsRequest.html" title='google_sheets4::AutoResizeDimensionsRequest struct'>AutoResizeDimensionsRequest</a></td><td class='docblock-short'><p>Automatically resizes one or more dimensions based on the contents
+of the cells in that dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BandedRange.html" title='google_sheets4::BandedRange struct'>BandedRange</a></td><td class='docblock-short'><p>A banded (alternating colors) range in a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BandingProperties.html" title='google_sheets4::BandingProperties struct'>BandingProperties</a></td><td class='docblock-short'><p>Properties referring a single dimension (either row or column). If both
+BandedRange.row_properties and BandedRange.column_properties are
+set, the fill colors are applied to cells according to the following rules:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BasicChartAxis.html" title='google_sheets4::BasicChartAxis struct'>BasicChartAxis</a></td><td class='docblock-short'><p>An axis of the chart.
+A chart may not have more than one axis per
+axis position.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BasicChartDomain.html" title='google_sheets4::BasicChartDomain struct'>BasicChartDomain</a></td><td class='docblock-short'><p>The domain of a chart.
+For example, if charting stock prices over time, this would be the date.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BasicChartSeries.html" title='google_sheets4::BasicChartSeries struct'>BasicChartSeries</a></td><td class='docblock-short'><p>A single series of data in a chart.
+For example, if charting stock prices over time, multiple series may exist,
+one for the &quot;Open Price&quot;, &quot;High Price&quot;, &quot;Low Price&quot; and &quot;Close Price&quot;.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BasicChartSpec.html" title='google_sheets4::BasicChartSpec struct'>BasicChartSpec</a></td><td class='docblock-short'><p>The specification for a basic chart.  See BasicChartType for the list
+of charts this supports.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BasicFilter.html" title='google_sheets4::BasicFilter struct'>BasicFilter</a></td><td class='docblock-short'><p>The default filter associated with a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchClearValuesByDataFilterRequest.html" title='google_sheets4::BatchClearValuesByDataFilterRequest struct'>BatchClearValuesByDataFilterRequest</a></td><td class='docblock-short'><p>The request for clearing more than one range selected by a
+DataFilter in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchClearValuesByDataFilterResponse.html" title='google_sheets4::BatchClearValuesByDataFilterResponse struct'>BatchClearValuesByDataFilterResponse</a></td><td class='docblock-short'><p>The response when clearing a range of values selected with
+DataFilters in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchClearValuesRequest.html" title='google_sheets4::BatchClearValuesRequest struct'>BatchClearValuesRequest</a></td><td class='docblock-short'><p>The request for clearing more than one range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchClearValuesResponse.html" title='google_sheets4::BatchClearValuesResponse struct'>BatchClearValuesResponse</a></td><td class='docblock-short'><p>The response when clearing a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchGetValuesByDataFilterRequest.html" title='google_sheets4::BatchGetValuesByDataFilterRequest struct'>BatchGetValuesByDataFilterRequest</a></td><td class='docblock-short'><p>The request for retrieving a range of values in a spreadsheet selected by a
+set of DataFilters.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchGetValuesByDataFilterResponse.html" title='google_sheets4::BatchGetValuesByDataFilterResponse struct'>BatchGetValuesByDataFilterResponse</a></td><td class='docblock-short'><p>The response when retrieving more than one range of values in a spreadsheet
+selected by DataFilters.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchGetValuesResponse.html" title='google_sheets4::BatchGetValuesResponse struct'>BatchGetValuesResponse</a></td><td class='docblock-short'><p>The response when retrieving more than one range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateSpreadsheetRequest.html" title='google_sheets4::BatchUpdateSpreadsheetRequest struct'>BatchUpdateSpreadsheetRequest</a></td><td class='docblock-short'><p>The request for updating any aspect of a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateSpreadsheetResponse.html" title='google_sheets4::BatchUpdateSpreadsheetResponse struct'>BatchUpdateSpreadsheetResponse</a></td><td class='docblock-short'><p>The reply for batch updating a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateValuesByDataFilterRequest.html" title='google_sheets4::BatchUpdateValuesByDataFilterRequest struct'>BatchUpdateValuesByDataFilterRequest</a></td><td class='docblock-short'><p>The request for updating more than one range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateValuesByDataFilterResponse.html" title='google_sheets4::BatchUpdateValuesByDataFilterResponse struct'>BatchUpdateValuesByDataFilterResponse</a></td><td class='docblock-short'><p>The response when updating a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateValuesRequest.html" title='google_sheets4::BatchUpdateValuesRequest struct'>BatchUpdateValuesRequest</a></td><td class='docblock-short'><p>The request for updating more than one range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateValuesResponse.html" title='google_sheets4::BatchUpdateValuesResponse struct'>BatchUpdateValuesResponse</a></td><td class='docblock-short'><p>The response when updating a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BooleanCondition.html" title='google_sheets4::BooleanCondition struct'>BooleanCondition</a></td><td class='docblock-short'><p>A condition that can evaluate to true or false.
+BooleanConditions are used by conditional formatting,
+data validation, and the criteria in filters.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BooleanRule.html" title='google_sheets4::BooleanRule struct'>BooleanRule</a></td><td class='docblock-short'><p>A rule that may or may not match, depending on the condition.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Border.html" title='google_sheets4::Border struct'>Border</a></td><td class='docblock-short'><p>A border along a cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Borders.html" title='google_sheets4::Borders struct'>Borders</a></td><td class='docblock-short'><p>The borders of the cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BubbleChartSpec.html" title='google_sheets4::BubbleChartSpec struct'>BubbleChartSpec</a></td><td class='docblock-short'><p>A <a href="/chart/interactive/docs/gallery/bubblechart">bubble chart</a>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CandlestickChartSpec.html" title='google_sheets4::CandlestickChartSpec struct'>CandlestickChartSpec</a></td><td class='docblock-short'><p>A <a href="/chart/interactive/docs/gallery/candlestickchart">candlestick
+chart</a>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CandlestickData.html" title='google_sheets4::CandlestickData struct'>CandlestickData</a></td><td class='docblock-short'><p>The Candlestick chart data, each containing the low, open, close, and high
+values for a series.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CandlestickDomain.html" title='google_sheets4::CandlestickDomain struct'>CandlestickDomain</a></td><td class='docblock-short'><p>The domain of a CandlestickChart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CandlestickSeries.html" title='google_sheets4::CandlestickSeries struct'>CandlestickSeries</a></td><td class='docblock-short'><p>The series of a CandlestickData.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CellData.html" title='google_sheets4::CellData struct'>CellData</a></td><td class='docblock-short'><p>Data about a specific cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CellFormat.html" title='google_sheets4::CellFormat struct'>CellFormat</a></td><td class='docblock-short'><p>The format of a cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ChartData.html" title='google_sheets4::ChartData struct'>ChartData</a></td><td class='docblock-short'><p>The data included in a domain or series.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ChartSourceRange.html" title='google_sheets4::ChartSourceRange struct'>ChartSourceRange</a></td><td class='docblock-short'><p>Source ranges for a chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ChartSpec.html" title='google_sheets4::ChartSpec struct'>ChartSpec</a></td><td class='docblock-short'><p>The specifications of a chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_sheets4::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ClearBasicFilterRequest.html" title='google_sheets4::ClearBasicFilterRequest struct'>ClearBasicFilterRequest</a></td><td class='docblock-short'><p>Clears the basic filter, if any exists on the sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ClearValuesRequest.html" title='google_sheets4::ClearValuesRequest struct'>ClearValuesRequest</a></td><td class='docblock-short'><p>The request for clearing a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ClearValuesResponse.html" title='google_sheets4::ClearValuesResponse struct'>ClearValuesResponse</a></td><td class='docblock-short'><p>The response when clearing a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Color.html" title='google_sheets4::Color struct'>Color</a></td><td class='docblock-short'><p>Represents a color in the RGBA color space. This representation is designed
+for simplicity of conversion to/from color representations in various
+languages over compactness; for example, the fields of this representation
+can be trivially provided to the constructor of &quot;java.awt.Color&quot; in Java; it
+can also be trivially provided to UIColor's &quot;+colorWithRed:green:blue:alpha&quot;
+method in iOS; and, with just a little work, it can be easily formatted into
+a CSS &quot;rgba()&quot; string in JavaScript, as well.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ConditionValue.html" title='google_sheets4::ConditionValue struct'>ConditionValue</a></td><td class='docblock-short'><p>The value of the condition.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ConditionalFormatRule.html" title='google_sheets4::ConditionalFormatRule struct'>ConditionalFormatRule</a></td><td class='docblock-short'><p>A rule describing a conditional format.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_sheets4::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CopyPasteRequest.html" title='google_sheets4::CopyPasteRequest struct'>CopyPasteRequest</a></td><td class='docblock-short'><p>Copies data from the source to the destination.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CopySheetToAnotherSpreadsheetRequest.html" title='google_sheets4::CopySheetToAnotherSpreadsheetRequest struct'>CopySheetToAnotherSpreadsheetRequest</a></td><td class='docblock-short'><p>The request to copy a sheet across spreadsheets.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateDeveloperMetadataRequest.html" title='google_sheets4::CreateDeveloperMetadataRequest struct'>CreateDeveloperMetadataRequest</a></td><td class='docblock-short'><p>A request to create developer metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateDeveloperMetadataResponse.html" title='google_sheets4::CreateDeveloperMetadataResponse struct'>CreateDeveloperMetadataResponse</a></td><td class='docblock-short'><p>The response from creating developer metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CutPasteRequest.html" title='google_sheets4::CutPasteRequest struct'>CutPasteRequest</a></td><td class='docblock-short'><p>Moves data from the source to the destination.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DataFilter.html" title='google_sheets4::DataFilter struct'>DataFilter</a></td><td class='docblock-short'><p>Filter that describes what data should be selected or returned from a
+request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DataFilterValueRange.html" title='google_sheets4::DataFilterValueRange struct'>DataFilterValueRange</a></td><td class='docblock-short'><p>A range of values whose location is specified by a DataFilter.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DataValidationRule.html" title='google_sheets4::DataValidationRule struct'>DataValidationRule</a></td><td class='docblock-short'><p>A data validation rule.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateTimeRule.html" title='google_sheets4::DateTimeRule struct'>DateTimeRule</a></td><td class='docblock-short'><p>Allows you to organize the date-time values in a source data column into
+buckets based on selected parts of their date or time values. For example,
+consider a pivot table showing sales transactions by date:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_sheets4::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteBandingRequest.html" title='google_sheets4::DeleteBandingRequest struct'>DeleteBandingRequest</a></td><td class='docblock-short'><p>Removes the banded range with the given ID from the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteConditionalFormatRuleRequest.html" title='google_sheets4::DeleteConditionalFormatRuleRequest struct'>DeleteConditionalFormatRuleRequest</a></td><td class='docblock-short'><p>Deletes a conditional format rule at the given index.
+All subsequent rules' indexes are decremented.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteConditionalFormatRuleResponse.html" title='google_sheets4::DeleteConditionalFormatRuleResponse struct'>DeleteConditionalFormatRuleResponse</a></td><td class='docblock-short'><p>The result of deleting a conditional format rule.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteDeveloperMetadataRequest.html" title='google_sheets4::DeleteDeveloperMetadataRequest struct'>DeleteDeveloperMetadataRequest</a></td><td class='docblock-short'><p>A request to delete developer metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteDeveloperMetadataResponse.html" title='google_sheets4::DeleteDeveloperMetadataResponse struct'>DeleteDeveloperMetadataResponse</a></td><td class='docblock-short'><p>The response from deleting developer metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteDimensionGroupRequest.html" title='google_sheets4::DeleteDimensionGroupRequest struct'>DeleteDimensionGroupRequest</a></td><td class='docblock-short'><p>Deletes a group over the specified range by decrementing the depth of the
+dimensions in the range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteDimensionGroupResponse.html" title='google_sheets4::DeleteDimensionGroupResponse struct'>DeleteDimensionGroupResponse</a></td><td class='docblock-short'><p>The result of deleting a group.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteDimensionRequest.html" title='google_sheets4::DeleteDimensionRequest struct'>DeleteDimensionRequest</a></td><td class='docblock-short'><p>Deletes the dimensions from the sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteEmbeddedObjectRequest.html" title='google_sheets4::DeleteEmbeddedObjectRequest struct'>DeleteEmbeddedObjectRequest</a></td><td class='docblock-short'><p>Deletes the embedded object with the given ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteFilterViewRequest.html" title='google_sheets4::DeleteFilterViewRequest struct'>DeleteFilterViewRequest</a></td><td class='docblock-short'><p>Deletes a particular filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteNamedRangeRequest.html" title='google_sheets4::DeleteNamedRangeRequest struct'>DeleteNamedRangeRequest</a></td><td class='docblock-short'><p>Removes the named range with the given ID from the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteProtectedRangeRequest.html" title='google_sheets4::DeleteProtectedRangeRequest struct'>DeleteProtectedRangeRequest</a></td><td class='docblock-short'><p>Deletes the protected range with the given ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteRangeRequest.html" title='google_sheets4::DeleteRangeRequest struct'>DeleteRangeRequest</a></td><td class='docblock-short'><p>Deletes a range of cells, shifting other cells into the deleted area.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteSheetRequest.html" title='google_sheets4::DeleteSheetRequest struct'>DeleteSheetRequest</a></td><td class='docblock-short'><p>Deletes the requested sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeveloperMetadata.html" title='google_sheets4::DeveloperMetadata struct'>DeveloperMetadata</a></td><td class='docblock-short'><p>Developer metadata associated with a location or object in a spreadsheet.
+Developer metadata may be used to associate arbitrary data with various
+parts of a spreadsheet and will remain associated at those locations as they
+move around and the spreadsheet is edited.  For example, if developer
+metadata is associated with row 5 and another row is then subsequently
+inserted above row 5, that original metadata will still be associated with
+the row it was first associated with (what is now row 6). If the associated
+object is deleted its metadata is deleted too.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeveloperMetadataLocation.html" title='google_sheets4::DeveloperMetadataLocation struct'>DeveloperMetadataLocation</a></td><td class='docblock-short'><p>A location where metadata may be associated in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeveloperMetadataLookup.html" title='google_sheets4::DeveloperMetadataLookup struct'>DeveloperMetadataLookup</a></td><td class='docblock-short'><p>Selects DeveloperMetadata that matches all of the specified fields.  For
+example, if only a metadata ID is specified this considers the
+DeveloperMetadata with that particular unique ID. If a metadata key is
+specified, this considers all developer metadata with that key.  If a
+key, visibility, and location type are all specified, this considers all
+developer metadata with that key and visibility that are associated with a
+location of that type.  In general, this
+selects all DeveloperMetadata that matches the intersection of all the
+specified fields; any field or combination of fields may be specified.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DimensionGroup.html" title='google_sheets4::DimensionGroup struct'>DimensionGroup</a></td><td class='docblock-short'><p>A group over an interval of rows or columns on a sheet, which can contain or
+be contained within other groups. A group can be collapsed or expanded as a
+unit on the sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DimensionProperties.html" title='google_sheets4::DimensionProperties struct'>DimensionProperties</a></td><td class='docblock-short'><p>Properties about a dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DimensionRange.html" title='google_sheets4::DimensionRange struct'>DimensionRange</a></td><td class='docblock-short'><p>A range along a single dimension on a sheet.
+All indexes are zero-based.
+Indexes are half open: the start index is inclusive
+and the end index is exclusive.
+Missing indexes indicate the range is unbounded on that side.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_sheets4::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.DuplicateFilterViewRequest.html" title='google_sheets4::DuplicateFilterViewRequest struct'>DuplicateFilterViewRequest</a></td><td class='docblock-short'><p>Duplicates a particular filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DuplicateFilterViewResponse.html" title='google_sheets4::DuplicateFilterViewResponse struct'>DuplicateFilterViewResponse</a></td><td class='docblock-short'><p>The result of a filter view being duplicated.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DuplicateSheetRequest.html" title='google_sheets4::DuplicateSheetRequest struct'>DuplicateSheetRequest</a></td><td class='docblock-short'><p>Duplicates the contents of a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DuplicateSheetResponse.html" title='google_sheets4::DuplicateSheetResponse struct'>DuplicateSheetResponse</a></td><td class='docblock-short'><p>The result of duplicating a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Editors.html" title='google_sheets4::Editors struct'>Editors</a></td><td class='docblock-short'><p>The editors of a protected range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedChart.html" title='google_sheets4::EmbeddedChart struct'>EmbeddedChart</a></td><td class='docblock-short'><p>A chart embedded in a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedObjectPosition.html" title='google_sheets4::EmbeddedObjectPosition struct'>EmbeddedObjectPosition</a></td><td class='docblock-short'><p>The position of an embedded object such as a chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_sheets4::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorValue.html" title='google_sheets4::ErrorValue struct'>ErrorValue</a></td><td class='docblock-short'><p>An error in a cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ExtendedValue.html" title='google_sheets4::ExtendedValue struct'>ExtendedValue</a></td><td class='docblock-short'><p>The kinds of value that a cell in a spreadsheet can have.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FilterCriteria.html" title='google_sheets4::FilterCriteria struct'>FilterCriteria</a></td><td class='docblock-short'><p>Criteria for showing/hiding rows in a filter or filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FilterView.html" title='google_sheets4::FilterView struct'>FilterView</a></td><td class='docblock-short'><p>A filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FindReplaceRequest.html" title='google_sheets4::FindReplaceRequest struct'>FindReplaceRequest</a></td><td class='docblock-short'><p>Finds and replaces data in cells over a range, sheet, or all sheets.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FindReplaceResponse.html" title='google_sheets4::FindReplaceResponse struct'>FindReplaceResponse</a></td><td class='docblock-short'><p>The result of the find/replace.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetSpreadsheetByDataFilterRequest.html" title='google_sheets4::GetSpreadsheetByDataFilterRequest struct'>GetSpreadsheetByDataFilterRequest</a></td><td class='docblock-short'><p>The request for retrieving a Spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GradientRule.html" title='google_sheets4::GradientRule struct'>GradientRule</a></td><td class='docblock-short'><p>A rule that applies a gradient color scale format, based on
+the interpolation points listed. The format of a cell will vary
+based on its contents as compared to the values of the interpolation
+points.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GridCoordinate.html" title='google_sheets4::GridCoordinate struct'>GridCoordinate</a></td><td class='docblock-short'><p>A coordinate in a sheet.
+All indexes are zero-based.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GridData.html" title='google_sheets4::GridData struct'>GridData</a></td><td class='docblock-short'><p>Data in the grid, as well as metadata about the dimensions.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GridProperties.html" title='google_sheets4::GridProperties struct'>GridProperties</a></td><td class='docblock-short'><p>Properties of a grid.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GridRange.html" title='google_sheets4::GridRange struct'>GridRange</a></td><td class='docblock-short'><p>A range on a sheet.
+All indexes are zero-based.
+Indexes are half open, e.g the start index is inclusive
+and the end index is exclusive -- [start_index, end_index).
+Missing indexes indicate the range is unbounded on that side.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.HistogramChartSpec.html" title='google_sheets4::HistogramChartSpec struct'>HistogramChartSpec</a></td><td class='docblock-short'><p>A <a href="/chart/interactive/docs/gallery/histogram">histogram chart</a>.
+A histogram chart groups data items into bins, displaying each bin as a
+column of stacked items.  Histograms are used to display the distribution
+of a dataset.  Each column of items represents a range into which those
+items fall.  The number of bins can be chosen automatically or specified
+explicitly.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.HistogramRule.html" title='google_sheets4::HistogramRule struct'>HistogramRule</a></td><td class='docblock-short'><p>Allows you to organize the numeric values in a source data column into
+buckets of a constant size. All values from HistogramRule.start to
+HistogramRule.end are placed into groups of size
+HistogramRule.interval. In addition, all values below
+HistogramRule.start are placed in one group, and all values above
+HistogramRule.end are placed in another. Only
+HistogramRule.interval is required, though if HistogramRule.start
+and HistogramRule.end are both provided, HistogramRule.start must
+be less than HistogramRule.end. For example, a pivot table showing
+average purchase amount by age that has 50+ rows:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.HistogramSeries.html" title='google_sheets4::HistogramSeries struct'>HistogramSeries</a></td><td class='docblock-short'><p>A histogram series containing the series color and data.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertDimensionRequest.html" title='google_sheets4::InsertDimensionRequest struct'>InsertDimensionRequest</a></td><td class='docblock-short'><p>Inserts rows or columns in a sheet at a particular index.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertRangeRequest.html" title='google_sheets4::InsertRangeRequest struct'>InsertRangeRequest</a></td><td class='docblock-short'><p>Inserts cells into a range, shifting the existing cells over or down.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InterpolationPoint.html" title='google_sheets4::InterpolationPoint struct'>InterpolationPoint</a></td><td class='docblock-short'><p>A single interpolation point on a gradient conditional format.
+These pin the gradient color scale according to the color,
+type and value chosen.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.IterativeCalculationSettings.html" title='google_sheets4::IterativeCalculationSettings struct'>IterativeCalculationSettings</a></td><td class='docblock-short'><p>Settings to control how circular dependencies are resolved with iterative
+calculation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_sheets4::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LineStyle.html" title='google_sheets4::LineStyle struct'>LineStyle</a></td><td class='docblock-short'><p>Properties that describe the style of a line.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ManualRule.html" title='google_sheets4::ManualRule struct'>ManualRule</a></td><td class='docblock-short'><p>Allows you to manually organize the values in a source data column into
+buckets with names of your choosing. For example, a pivot table that
+aggregates population by state:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ManualRuleGroup.html" title='google_sheets4::ManualRuleGroup struct'>ManualRuleGroup</a></td><td class='docblock-short'><p>A group name and a list of items from the source data that should be placed
+in the group with this name.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MatchedDeveloperMetadata.html" title='google_sheets4::MatchedDeveloperMetadata struct'>MatchedDeveloperMetadata</a></td><td class='docblock-short'><p>A developer metadata entry and the data filters specified in the original
+request that matched it.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MatchedValueRange.html" title='google_sheets4::MatchedValueRange struct'>MatchedValueRange</a></td><td class='docblock-short'><p>A value range that was matched by one or more data filers.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MergeCellsRequest.html" title='google_sheets4::MergeCellsRequest struct'>MergeCellsRequest</a></td><td class='docblock-short'><p>Merges all cells in the range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_sheets4::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MoveDimensionRequest.html" title='google_sheets4::MoveDimensionRequest struct'>MoveDimensionRequest</a></td><td class='docblock-short'><p>Moves one or more rows or columns.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_sheets4::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedRange.html" title='google_sheets4::NamedRange struct'>NamedRange</a></td><td class='docblock-short'><p>A named range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NumberFormat.html" title='google_sheets4::NumberFormat struct'>NumberFormat</a></td><td class='docblock-short'><p>The number format of a cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrgChartSpec.html" title='google_sheets4::OrgChartSpec struct'>OrgChartSpec</a></td><td class='docblock-short'><p>An <a href="/chart/interactive/docs/gallery/orgchart">org chart</a>.
+Org charts require a unique set of labels in labels and may
+optionally include parent_labels and tooltips.
+parent_labels contain, for each node, the label identifying the parent
+node.  tooltips contain, for each node, an optional tooltip.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OverlayPosition.html" title='google_sheets4::OverlayPosition struct'>OverlayPosition</a></td><td class='docblock-short'><p>The location an object is overlaid on top of a grid.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Padding.html" title='google_sheets4::Padding struct'>Padding</a></td><td class='docblock-short'><p>The amount of padding around the cell, in pixels.
+When updating padding, every field must be specified.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PasteDataRequest.html" title='google_sheets4::PasteDataRequest struct'>PasteDataRequest</a></td><td class='docblock-short'><p>Inserts data into the spreadsheet starting at the specified coordinate.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PieChartSpec.html" title='google_sheets4::PieChartSpec struct'>PieChartSpec</a></td><td class='docblock-short'><p>A <a href="/chart/interactive/docs/gallery/piechart">pie chart</a>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotFilterCriteria.html" title='google_sheets4::PivotFilterCriteria struct'>PivotFilterCriteria</a></td><td class='docblock-short'><p>Criteria for showing/hiding rows in a pivot table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotGroup.html" title='google_sheets4::PivotGroup struct'>PivotGroup</a></td><td class='docblock-short'><p>A single grouping (either row or column) in a pivot table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotGroupRule.html" title='google_sheets4::PivotGroupRule struct'>PivotGroupRule</a></td><td class='docblock-short'><p>An optional setting on a PivotGroup that defines buckets for the values
+in the source data column rather than breaking out each individual value.
+Only one PivotGroup with a group rule may be added for each column in
+the source data, though on any given column you may add both a
+PivotGroup that has a rule and a PivotGroup that does not.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotGroupSortValueBucket.html" title='google_sheets4::PivotGroupSortValueBucket struct'>PivotGroupSortValueBucket</a></td><td class='docblock-short'><p>Information about which values in a pivot group should be used for sorting.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotGroupValueMetadata.html" title='google_sheets4::PivotGroupValueMetadata struct'>PivotGroupValueMetadata</a></td><td class='docblock-short'><p>Metadata about a value in a pivot grouping.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotTable.html" title='google_sheets4::PivotTable struct'>PivotTable</a></td><td class='docblock-short'><p>A pivot table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotValue.html" title='google_sheets4::PivotValue struct'>PivotValue</a></td><td class='docblock-short'><p>The definition of how a value in a pivot table should be calculated.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProtectedRange.html" title='google_sheets4::ProtectedRange struct'>ProtectedRange</a></td><td class='docblock-short'><p>A protected range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RandomizeRangeRequest.html" title='google_sheets4::RandomizeRangeRequest struct'>RandomizeRangeRequest</a></td><td class='docblock-short'><p>Randomizes the order of the rows in a range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_sheets4::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.RepeatCellRequest.html" title='google_sheets4::RepeatCellRequest struct'>RepeatCellRequest</a></td><td class='docblock-short'><p>Updates all cells in the range to the values in the given Cell object.
+Only the fields listed in the fields field are updated; others are
+unchanged.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Request.html" title='google_sheets4::Request struct'>Request</a></td><td class='docblock-short'><p>A single kind of update to apply to a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Response.html" title='google_sheets4::Response struct'>Response</a></td><td class='docblock-short'><p>A single response from an update.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_sheets4::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RowData.html" title='google_sheets4::RowData struct'>RowData</a></td><td class='docblock-short'><p>Data about each cell in a row.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchDeveloperMetadataRequest.html" title='google_sheets4::SearchDeveloperMetadataRequest struct'>SearchDeveloperMetadataRequest</a></td><td class='docblock-short'><p>A request to retrieve all developer metadata matching the set of specified
+criteria.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchDeveloperMetadataResponse.html" title='google_sheets4::SearchDeveloperMetadataResponse struct'>SearchDeveloperMetadataResponse</a></td><td class='docblock-short'><p>A reply to a developer metadata search request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_sheets4::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_sheets4::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.SetBasicFilterRequest.html" title='google_sheets4::SetBasicFilterRequest struct'>SetBasicFilterRequest</a></td><td class='docblock-short'><p>Sets the basic filter associated with a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SetDataValidationRequest.html" title='google_sheets4::SetDataValidationRequest struct'>SetDataValidationRequest</a></td><td class='docblock-short'><p>Sets a data validation rule to every cell in the range.
+To clear validation in a range, call this with no rule specified.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Sheet.html" title='google_sheets4::Sheet struct'>Sheet</a></td><td class='docblock-short'><p>A sheet in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SheetProperties.html" title='google_sheets4::SheetProperties struct'>SheetProperties</a></td><td class='docblock-short'><p>Properties of a sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Sheets.html" title='google_sheets4::Sheets struct'>Sheets</a></td><td class='docblock-short'><p>Central instance to access all Sheets related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SortRangeRequest.html" title='google_sheets4::SortRangeRequest struct'>SortRangeRequest</a></td><td class='docblock-short'><p>Sorts data in rows based on a sort order per column.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SortSpec.html" title='google_sheets4::SortSpec struct'>SortSpec</a></td><td class='docblock-short'><p>A sort order associated with a specific column or row.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SourceAndDestination.html" title='google_sheets4::SourceAndDestination struct'>SourceAndDestination</a></td><td class='docblock-short'><p>A combination of a source range and how to extend that source.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Spreadsheet.html" title='google_sheets4::Spreadsheet struct'>Spreadsheet</a></td><td class='docblock-short'><p>Resource that represents a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetBatchUpdateCall.html" title='google_sheets4::SpreadsheetBatchUpdateCall struct'>SpreadsheetBatchUpdateCall</a></td><td class='docblock-short'><p>Applies one or more updates to the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetCreateCall.html" title='google_sheets4::SpreadsheetCreateCall struct'>SpreadsheetCreateCall</a></td><td class='docblock-short'><p>Creates a spreadsheet, returning the newly created spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetDeveloperMetadataGetCall.html" title='google_sheets4::SpreadsheetDeveloperMetadataGetCall struct'>SpreadsheetDeveloperMetadataGetCall</a></td><td class='docblock-short'><p>Returns the developer metadata with the specified ID.
+The caller must specify the spreadsheet ID and the developer metadata's
+unique metadataId.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetDeveloperMetadataSearchCall.html" title='google_sheets4::SpreadsheetDeveloperMetadataSearchCall struct'>SpreadsheetDeveloperMetadataSearchCall</a></td><td class='docblock-short'><p>Returns all developer metadata matching the specified DataFilter.
+If the provided DataFilter represents a DeveloperMetadataLookup object,
+this will return all DeveloperMetadata entries selected by it. If the
+DataFilter represents a location in a spreadsheet, this will return all
+developer metadata associated with locations intersecting that region.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetGetByDataFilterCall.html" title='google_sheets4::SpreadsheetGetByDataFilterCall struct'>SpreadsheetGetByDataFilterCall</a></td><td class='docblock-short'><p>Returns the spreadsheet at the given ID.
+The caller must specify the spreadsheet ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetGetCall.html" title='google_sheets4::SpreadsheetGetCall struct'>SpreadsheetGetCall</a></td><td class='docblock-short'><p>Returns the spreadsheet at the given ID.
+The caller must specify the spreadsheet ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetMethods.html" title='google_sheets4::SpreadsheetMethods struct'>SpreadsheetMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>spreadsheet</em> resources.
+It is not used directly, but through the <code>Sheets</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetProperties.html" title='google_sheets4::SpreadsheetProperties struct'>SpreadsheetProperties</a></td><td class='docblock-short'><p>Properties of a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetSheetCopyToCall.html" title='google_sheets4::SpreadsheetSheetCopyToCall struct'>SpreadsheetSheetCopyToCall</a></td><td class='docblock-short'><p>Copies a single sheet from a spreadsheet to another spreadsheet.
+Returns the properties of the newly created sheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueAppendCall.html" title='google_sheets4::SpreadsheetValueAppendCall struct'>SpreadsheetValueAppendCall</a></td><td class='docblock-short'><p>Appends values to a spreadsheet. The input range is used to search for
+existing data and find a &quot;table&quot; within that range. Values will be
+appended to the next row of the table, starting with the first column of
+the table. See the
+<a href="/sheets/api/guides/values#appending_values">guide</a>
+and
+<a href="/sheets/api/samples/writing#append_values">sample code</a>
+for specific details of how tables are detected and data is appended.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchClearByDataFilterCall.html" title='google_sheets4::SpreadsheetValueBatchClearByDataFilterCall struct'>SpreadsheetValueBatchClearByDataFilterCall</a></td><td class='docblock-short'><p>Clears one or more ranges of values from a spreadsheet.
+The caller must specify the spreadsheet ID and one or more
+DataFilters. Ranges matching any of the specified data
+filters will be cleared.  Only values are cleared -- all other properties
+of the cell (such as formatting, data validation, etc..) are kept.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchClearCall.html" title='google_sheets4::SpreadsheetValueBatchClearCall struct'>SpreadsheetValueBatchClearCall</a></td><td class='docblock-short'><p>Clears one or more ranges of values from a spreadsheet.
+The caller must specify the spreadsheet ID and one or more ranges.
+Only values are cleared -- all other properties of the cell (such as
+formatting, data validation, etc..) are kept.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchGetByDataFilterCall.html" title='google_sheets4::SpreadsheetValueBatchGetByDataFilterCall struct'>SpreadsheetValueBatchGetByDataFilterCall</a></td><td class='docblock-short'><p>Returns one or more ranges of values that match the specified data filters.
+The caller must specify the spreadsheet ID and one or more
+DataFilters.  Ranges that match any of the data filters in
+the request will be returned.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchGetCall.html" title='google_sheets4::SpreadsheetValueBatchGetCall struct'>SpreadsheetValueBatchGetCall</a></td><td class='docblock-short'><p>Returns one or more ranges of values from a spreadsheet.
+The caller must specify the spreadsheet ID and one or more ranges.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchUpdateByDataFilterCall.html" title='google_sheets4::SpreadsheetValueBatchUpdateByDataFilterCall struct'>SpreadsheetValueBatchUpdateByDataFilterCall</a></td><td class='docblock-short'><p>Sets values in one or more ranges of a spreadsheet.
+The caller must specify the spreadsheet ID,
+a valueInputOption, and one or more
+DataFilterValueRanges.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueBatchUpdateCall.html" title='google_sheets4::SpreadsheetValueBatchUpdateCall struct'>SpreadsheetValueBatchUpdateCall</a></td><td class='docblock-short'><p>Sets values in one or more ranges of a spreadsheet.
+The caller must specify the spreadsheet ID,
+a valueInputOption, and one or more
+ValueRanges.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueClearCall.html" title='google_sheets4::SpreadsheetValueClearCall struct'>SpreadsheetValueClearCall</a></td><td class='docblock-short'><p>Clears values from a spreadsheet.
+The caller must specify the spreadsheet ID and range.
+Only values are cleared -- all other properties of the cell (such as
+formatting, data validation, etc..) are kept.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueGetCall.html" title='google_sheets4::SpreadsheetValueGetCall struct'>SpreadsheetValueGetCall</a></td><td class='docblock-short'><p>Returns a range of values from a spreadsheet.
+The caller must specify the spreadsheet ID and a range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SpreadsheetValueUpdateCall.html" title='google_sheets4::SpreadsheetValueUpdateCall struct'>SpreadsheetValueUpdateCall</a></td><td class='docblock-short'><p>Sets values in a range of a spreadsheet.
+The caller must specify the spreadsheet ID, range, and
+a valueInputOption.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextFormat.html" title='google_sheets4::TextFormat struct'>TextFormat</a></td><td class='docblock-short'><p>The format of a run of text in a cell.
+Absent values indicate that the field isn't specified.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextFormatRun.html" title='google_sheets4::TextFormatRun struct'>TextFormatRun</a></td><td class='docblock-short'><p>A run of a text format. The format of this run continues until the start
+index of the next run.
+When updating, all fields must be set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextPosition.html" title='google_sheets4::TextPosition struct'>TextPosition</a></td><td class='docblock-short'><p>Position settings for text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextRotation.html" title='google_sheets4::TextRotation struct'>TextRotation</a></td><td class='docblock-short'><p>The rotation applied to text in a cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextToColumnsRequest.html" title='google_sheets4::TextToColumnsRequest struct'>TextToColumnsRequest</a></td><td class='docblock-short'><p>Splits a column of text into multiple columns,
+based on a delimiter in each cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TreemapChartColorScale.html" title='google_sheets4::TreemapChartColorScale struct'>TreemapChartColorScale</a></td><td class='docblock-short'><p>A color scale for a treemap chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TreemapChartSpec.html" title='google_sheets4::TreemapChartSpec struct'>TreemapChartSpec</a></td><td class='docblock-short'><p>A <a href="/chart/interactive/docs/gallery/treemap">Treemap chart</a>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UnmergeCellsRequest.html" title='google_sheets4::UnmergeCellsRequest struct'>UnmergeCellsRequest</a></td><td class='docblock-short'><p>Unmerges cells in the given range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateBandingRequest.html" title='google_sheets4::UpdateBandingRequest struct'>UpdateBandingRequest</a></td><td class='docblock-short'><p>Updates properties of the supplied banded range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateBordersRequest.html" title='google_sheets4::UpdateBordersRequest struct'>UpdateBordersRequest</a></td><td class='docblock-short'><p>Updates the borders of a range.
+If a field is not set in the request, that means the border remains as-is.
+For example, with two subsequent UpdateBordersRequest:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateCellsRequest.html" title='google_sheets4::UpdateCellsRequest struct'>UpdateCellsRequest</a></td><td class='docblock-short'><p>Updates all cells in a range with new data.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateChartSpecRequest.html" title='google_sheets4::UpdateChartSpecRequest struct'>UpdateChartSpecRequest</a></td><td class='docblock-short'><p>Updates a chart's specifications.
+(This does not move or resize a chart. To move or resize a chart, use
+UpdateEmbeddedObjectPositionRequest.)</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateConditionalFormatRuleRequest.html" title='google_sheets4::UpdateConditionalFormatRuleRequest struct'>UpdateConditionalFormatRuleRequest</a></td><td class='docblock-short'><p>Updates a conditional format rule at the given index,
+or moves a conditional format rule to another index.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateConditionalFormatRuleResponse.html" title='google_sheets4::UpdateConditionalFormatRuleResponse struct'>UpdateConditionalFormatRuleResponse</a></td><td class='docblock-short'><p>The result of updating a conditional format rule.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateDeveloperMetadataRequest.html" title='google_sheets4::UpdateDeveloperMetadataRequest struct'>UpdateDeveloperMetadataRequest</a></td><td class='docblock-short'><p>A request to update properties of developer metadata.
+Updates the properties of the developer metadata selected by the filters to
+the values provided in the DeveloperMetadata resource.  Callers must
+specify the properties they wish to update in the fields parameter, as well
+as specify at least one DataFilter matching the metadata they wish to
+update.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateDeveloperMetadataResponse.html" title='google_sheets4::UpdateDeveloperMetadataResponse struct'>UpdateDeveloperMetadataResponse</a></td><td class='docblock-short'><p>The response from updating developer metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateDimensionGroupRequest.html" title='google_sheets4::UpdateDimensionGroupRequest struct'>UpdateDimensionGroupRequest</a></td><td class='docblock-short'><p>Updates the state of the specified group.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateDimensionPropertiesRequest.html" title='google_sheets4::UpdateDimensionPropertiesRequest struct'>UpdateDimensionPropertiesRequest</a></td><td class='docblock-short'><p>Updates properties of dimensions within the specified range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateEmbeddedObjectPositionRequest.html" title='google_sheets4::UpdateEmbeddedObjectPositionRequest struct'>UpdateEmbeddedObjectPositionRequest</a></td><td class='docblock-short'><p>Update an embedded object's position (such as a moving or resizing a
+chart or image).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateEmbeddedObjectPositionResponse.html" title='google_sheets4::UpdateEmbeddedObjectPositionResponse struct'>UpdateEmbeddedObjectPositionResponse</a></td><td class='docblock-short'><p>The result of updating an embedded object's position.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateFilterViewRequest.html" title='google_sheets4::UpdateFilterViewRequest struct'>UpdateFilterViewRequest</a></td><td class='docblock-short'><p>Updates properties of the filter view.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateNamedRangeRequest.html" title='google_sheets4::UpdateNamedRangeRequest struct'>UpdateNamedRangeRequest</a></td><td class='docblock-short'><p>Updates properties of the named range with the specified
+namedRangeId.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateProtectedRangeRequest.html" title='google_sheets4::UpdateProtectedRangeRequest struct'>UpdateProtectedRangeRequest</a></td><td class='docblock-short'><p>Updates an existing protected range with the specified
+protectedRangeId.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateSheetPropertiesRequest.html" title='google_sheets4::UpdateSheetPropertiesRequest struct'>UpdateSheetPropertiesRequest</a></td><td class='docblock-short'><p>Updates properties of the sheet with the specified
+sheetId.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateSpreadsheetPropertiesRequest.html" title='google_sheets4::UpdateSpreadsheetPropertiesRequest struct'>UpdateSpreadsheetPropertiesRequest</a></td><td class='docblock-short'><p>Updates properties of a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateValuesByDataFilterResponse.html" title='google_sheets4::UpdateValuesByDataFilterResponse struct'>UpdateValuesByDataFilterResponse</a></td><td class='docblock-short'><p>The response when updating a range of values by a data filter in a
+spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateValuesResponse.html" title='google_sheets4::UpdateValuesResponse struct'>UpdateValuesResponse</a></td><td class='docblock-short'><p>The response when updating a range of values in a spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ValueRange.html" title='google_sheets4::ValueRange struct'>ValueRange</a></td><td class='docblock-short'><p>Data within a range of the spreadsheet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WaterfallChartColumnStyle.html" title='google_sheets4::WaterfallChartColumnStyle struct'>WaterfallChartColumnStyle</a></td><td class='docblock-short'><p>Styles for a waterfall chart column.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WaterfallChartCustomSubtotal.html" title='google_sheets4::WaterfallChartCustomSubtotal struct'>WaterfallChartCustomSubtotal</a></td><td class='docblock-short'><p>A custom subtotal column for a waterfall chart series.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WaterfallChartDomain.html" title='google_sheets4::WaterfallChartDomain struct'>WaterfallChartDomain</a></td><td class='docblock-short'><p>The domain of a waterfall chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WaterfallChartSeries.html" title='google_sheets4::WaterfallChartSeries struct'>WaterfallChartSeries</a></td><td class='docblock-short'><p>A single series of data for a waterfall chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WaterfallChartSpec.html" title='google_sheets4::WaterfallChartSpec struct'>WaterfallChartSpec</a></td><td class='docblock-short'><p>A waterfall chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_sheets4::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_sheets4::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_sheets4::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_sheets4::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_sheets4::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_sheets4::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_sheets4::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_sheets4::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_sheets4::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_sheets4::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_sheets4::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_sheets4::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_sheets4::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_sheets4::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_sheets4::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_sheets4::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_sheets4::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_sheets4";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

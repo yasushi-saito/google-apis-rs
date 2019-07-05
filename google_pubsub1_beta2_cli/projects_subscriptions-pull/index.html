@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Pull - Pubsub v1.0.8+20181001</title>
+  <title>Subscriptions Pull - Pubsub v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -173,7 +173,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.8+20181001</a>
+        <a href="..">Pubsub v1.0.10+20190625</a>
       </nav>
 
       
@@ -233,12 +233,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    max-messages=20</code><ul>
+<li><code>-r .    max-messages=82</code><ul>
 <li>The maximum number of messages returned for this request. The Pub/Sub
     system may return fewer than the number specified.</li>
 </ul>
 </li>
-<li><code>return-immediately=true</code><ul>
+<li><code>return-immediately=false</code><ul>
 <li>If this is specified as true the system will respond immediately even if
     it is not able to return a message in the <code>Pull</code> response. Otherwise the
     system is allowed to wait until at least one message is available rather
@@ -356,7 +356,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Batch Create - Photos Library v1.0.8+20181004</title>
+  <title>Batch Create - Photos Library v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Photos Library v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Photos Library v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -62,6 +62,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../albums_batch-add-media-items/">Batch Add Media Items</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_batch-remove-media-items/">Batch Remove Media Items</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../albums_create/">Create</a>
                 </li>
                 <li class="">
@@ -75,6 +83,10 @@
                 <li class="">
                     
     <a class="" href="../albums_share/">Share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_unshare/">Unshare</a>
                 </li>
     </ul>
 	    </li>
@@ -110,6 +122,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../media-items_batch-get/">Batch Get</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../media-items_get/">Get</a>
                 </li>
                 <li class="">
@@ -137,6 +153,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../shared-albums_leave/">Leave</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../shared-albums_list/">List</a>
                 </li>
     </ul>
@@ -152,7 +172,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Photos Library v1.0.8+20181004</a>
+        <a href="..">Photos Library v1.0.10+20190702</a>
       </nav>
 
       
@@ -186,8 +206,9 @@
 Step 1, uploading the raw bytes to a Google Server, see
 &lt;a href=&#34;/photos/library/guides/upload-media&#34;&gt;Uploading media&lt;/a&gt;.</p>
 <p>This call adds the media item to the library. If an album <code>id</code> is
-specified, the call adds the media item to the album too. By default, the
-media item will be added to the end of the library or album.</p>
+specified, the call adds the media item to the album too. Each album can
+contain up to 20,000 media items. By default, the media item will be added
+to the end of the library or album.</p>
 <p>If an album <code>id</code> and position are both defined, the media item is
 added to the album at the specified position.</p>
 <p>If the call contains multiple media items, they&#39;re added at the specified
@@ -219,21 +240,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    album-id=lorem</code><ul>
+<li><code>-r .    album-id=duo</code><ul>
 <li>Identifier of the album where the media items are added. The media items
     are also added to the user&#39;s library. This is an optional field.</li>
 </ul>
 </li>
-<li><code>album-position    position=et</code><ul>
+<li><code>album-position    position=aliquyam</code><ul>
 <li>Type of position, for a media or enrichment item.</li>
 </ul>
 </li>
-<li><code>relative-enrichment-item-id=duo</code><ul>
+<li><code>relative-enrichment-item-id=sea</code><ul>
 <li>The enrichment item to which the position is relative to.
     Only used when position type is AFTER_ENRICHMENT_ITEM.</li>
 </ul>
 </li>
-<li><code>relative-media-item-id=aliquyam</code><ul>
+<li><code>relative-media-item-id=lorem</code><ul>
 <li>The media item to which the position is relative to.
     Only used when position type is AFTER_MEDIA_ITEM.</li>
 </ul>
@@ -335,10 +356,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../media-items_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../media-items_batch-get/" class="btn btn-neutral float-right" title="Batch Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../albums_share/" class="btn btn-neutral" title="Share"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../albums_unshare/" class="btn btn-neutral" title="Unshare"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -348,7 +369,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -368,10 +389,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/photoslibrary1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../albums_share/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../albums_unshare/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../media-items_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../media-items_batch-get/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

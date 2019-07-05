@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Cancel - Cloud Video Intelligence v1.0.8+20180920</title>
+  <title>Cancel - Cloud Video Intelligence v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Video Intelligence v1.0.8+20180920</a>
+        <a href=".." class="icon icon-home"> Cloud Video Intelligence v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -67,15 +67,6 @@
     <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
     
 
-    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-        
-        </ul>
-    
-
     <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
     
 
@@ -94,7 +85,38 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../operations_list/">List</a>
+    <a class="" href="../operations_projects-locations-operations-cancel/">Projects Locations Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operations_projects-locations-operations-delete/">Projects Locations Operations Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operations_projects-locations-operations-get/">Projects Locations Operations Get</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-cancel/">Locations Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-delete/">Locations Operations Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-get/">Locations Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-list/">Locations Operations List</a>
                 </li>
     </ul>
 	    </li>
@@ -120,7 +142,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Video Intelligence v1.0.8+20180920</a>
+        <a href="..">Cloud Video Intelligence v1.0.10+20190626</a>
       </nav>
 
       
@@ -169,23 +191,6 @@ You can set the scope for this method like this: <code>videointelligence1 --scop
 <li>The name of the operation resource to be cancelled.</li>
 </ul>
 </li>
-</ul>
-<h1 id="required-request-value">Required Request Value</h1>
-<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
-In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
-<p>For example, a structure like this:</p>
-<pre><code>GoogleLongrunning_CancelOperationRequest:
-
-</code></pre>
-
-<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
-<h3 id="about-cursors">About Cursors</h3>
-<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
-<ul>
-<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
-<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
-<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
-<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
 </ul>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
@@ -288,7 +293,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

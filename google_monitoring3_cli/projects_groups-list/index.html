@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Groups List - Monitoring v1.0.8+20181009</title>
+  <title>Groups List - Monitoring v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -238,7 +238,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.8+20181009</a>
+        <a href="..">Monitoring v1.0.10+20190629</a>
       </nav>
 
       
@@ -301,18 +301,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p children-of-group=string</strong></p>
-<ul>
-<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns groups whose parentName field contains the group name. If no groups have this parent, the results are empty.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>A positive number that is the maximum number of results to return.</li>
@@ -325,9 +313,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p descendants-of-group=string</strong></p>
 <ul>
 <li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns the descendants of the specified group. This is a superset of the results returned by the childrenOfGroup filter, and includes children-of-children, and so forth.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p children-of-group=string</strong></p>
+<ul>
+<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns groups whose parentName field contains the group name. If no groups have this parent, the results are empty.</li>
 </ul>
 </li>
 </ul>
@@ -421,7 +421,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

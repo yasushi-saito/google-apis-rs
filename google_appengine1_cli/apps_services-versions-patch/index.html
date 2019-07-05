@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Services Versions Patch - appengine v1.0.8+20181005</title>
+  <title>Services Versions Patch - appengine v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -248,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.8+20181005</a>
+        <a href="..">appengine v1.0.10+20190624</a>
       </nav>
 
       
@@ -403,6 +403,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     forwarded-ports: [string]
     instance-tag: string
     name: string
+    session-affinity: boolean
     subnetwork-name: string
   nobuild-files-regex: string
   readiness-check:
@@ -420,162 +421,165 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   runtime: string
   runtime-api-version: string
   runtime-channel: string
+  runtime-main-executable-path: string
   serving-status: string
   threadsafe: boolean
   version-url: string
   vm: boolean
+  vpc-access-connector:
+    name: string
   zones: [string]
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .api-config    auth-fail-action=ipsum</code><ul>
+<li><code>-r .api-config    auth-fail-action=eirmod</code><ul>
 <li>Action to take when users access resources that require authentication. Defaults to redirect.</li>
 </ul>
 </li>
-<li><code>login=ut</code><ul>
+<li><code>login=sanctus</code><ul>
 <li>Level of login required to access this resource. Defaults to optional.</li>
 </ul>
 </li>
-<li><code>script=dolor</code><ul>
+<li><code>script=voluptua.</code><ul>
 <li>Path to the script from the application root directory.</li>
 </ul>
 </li>
-<li><code>security-level=sea</code><ul>
+<li><code>security-level=dolor</code><ul>
 <li>Security (HTTPS) enforcement for this URL.</li>
 </ul>
 </li>
 <li>
-<p><code>url=ut</code></p>
+<p><code>url=et</code></p>
 <ul>
 <li>URL to serve the endpoint at.</li>
 </ul>
 </li>
 <li>
-<p><code>..automatic-scaling    cool-down-period=eirmod</code></p>
+<p><code>..automatic-scaling    cool-down-period=et</code></p>
 <ul>
 <li>The time period that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait before it starts collecting information from a new instance. This prevents the autoscaler from collecting information when the instance is initializing, during which the collected usage would not be reliable. Only applicable in the App Engine flexible environment.</li>
 </ul>
 </li>
-<li><code>cpu-utilization    aggregation-window-length=sanctus</code><ul>
+<li><code>cpu-utilization    aggregation-window-length=vero</code><ul>
 <li>Period of time over which CPU utilization is calculated.</li>
 </ul>
 </li>
 <li>
-<p><code>target-utilization=0.735189875377</code></p>
+<p><code>target-utilization=0.647784933763</code></p>
 <ul>
 <li>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..disk-utilization    target-read-bytes-per-second=2</code></p>
+<p><code>..disk-utilization    target-read-bytes-per-second=71</code></p>
 <ul>
 <li>Target bytes read per second.</li>
 </ul>
 </li>
-<li><code>target-read-ops-per-second=79</code><ul>
+<li><code>target-read-ops-per-second=80</code><ul>
 <li>Target ops read per seconds.</li>
 </ul>
 </li>
-<li><code>target-write-bytes-per-second=16</code><ul>
+<li><code>target-write-bytes-per-second=46</code><ul>
 <li>Target bytes written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-write-ops-per-second=75</code></p>
+<p><code>target-write-ops-per-second=81</code></p>
 <ul>
 <li>Target ops written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..    max-concurrent-requests=65</code></p>
+<p><code>..    max-concurrent-requests=67</code></p>
 <ul>
 <li>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.Defaults to a runtime-specific value.</li>
 </ul>
 </li>
-<li><code>max-idle-instances=71</code><ul>
+<li><code>max-idle-instances=75</code><ul>
 <li>Maximum number of idle instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>max-pending-latency=et</code><ul>
+<li><code>max-pending-latency=dolor</code><ul>
 <li>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>max-total-instances=46</code><ul>
+<li><code>max-total-instances=43</code><ul>
 <li>Maximum number of instances that should be started to handle requests for this version.</li>
 </ul>
 </li>
-<li><code>min-idle-instances=81</code><ul>
+<li><code>min-idle-instances=80</code><ul>
 <li>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.</li>
 </ul>
 </li>
-<li><code>min-pending-latency=dolore</code><ul>
+<li><code>min-pending-latency=nonumy</code><ul>
 <li>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>min-total-instances=75</code><ul>
+<li><code>min-total-instances=17</code><ul>
 <li>Minimum number of running instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>network-utilization    target-received-bytes-per-second=2</code><ul>
+<li><code>network-utilization    target-received-bytes-per-second=72</code><ul>
 <li>Target bytes received per second.</li>
 </ul>
 </li>
-<li><code>target-received-packets-per-second=43</code><ul>
+<li><code>target-received-packets-per-second=91</code><ul>
 <li>Target packets received per second.</li>
 </ul>
 </li>
-<li><code>target-sent-bytes-per-second=80</code><ul>
+<li><code>target-sent-bytes-per-second=63</code><ul>
 <li>Target bytes sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-sent-packets-per-second=10</code></p>
+<p><code>target-sent-packets-per-second=86</code></p>
 <ul>
 <li>Target packets sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-utilization    target-concurrent-requests=17</code></p>
+<p><code>..request-utilization    target-concurrent-requests=15</code></p>
 <ul>
 <li>Target number of concurrent requests.</li>
 </ul>
 </li>
 <li>
-<p><code>target-request-count-per-second=72</code></p>
+<p><code>target-request-count-per-second=19</code></p>
 <ul>
 <li>Target requests per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..standard-scheduler-settings    max-instances=91</code></p>
+<p><code>..standard-scheduler-settings    max-instances=7</code></p>
 <ul>
 <li>Maximum number of instances to run for this version. Set to zero to disable max_instances configuration.</li>
 </ul>
 </li>
-<li><code>min-instances=63</code><ul>
+<li><code>min-instances=55</code><ul>
 <li>Minimum number of instances to run for this version. Set to zero to disable min_instances configuration.</li>
 </ul>
 </li>
-<li><code>target-cpu-utilization=0.858884522272</code><ul>
+<li><code>target-cpu-utilization=0.912030282652</code><ul>
 <li>Target CPU utilization ratio to maintain when scaling.</li>
 </ul>
 </li>
 <li>
-<p><code>target-throughput-utilization=0.156922986241</code></p>
+<p><code>target-throughput-utilization=0.577475425569</code></p>
 <ul>
 <li>Target throughput utilization ratio to maintain when scaling</li>
 </ul>
 </li>
 <li>
-<p><code>...basic-scaling    idle-timeout=aliquyam</code></p>
+<p><code>...basic-scaling    idle-timeout=at</code></p>
 <ul>
 <li>Duration of time after the last request that an instance must wait before the instance is shut down.</li>
 </ul>
 </li>
 <li>
-<p><code>max-instances=7</code></p>
+<p><code>max-instances=92</code></p>
 <ul>
 <li>Maximum number of instances to create for this version.</li>
 </ul>
@@ -587,191 +591,195 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>create-time=sea</code><ul>
+<li><code>create-time=diam</code><ul>
 <li>Time that this version was created.@OutputOnly</li>
 </ul>
 </li>
-<li><code>created-by=elitr</code><ul>
+<li><code>created-by=accusam</code><ul>
 <li>Email address of the user who created this version.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-expiration=at</code><ul>
+<li><code>default-expiration=dolores</code><ul>
 <li>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding StaticFilesHandler (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#StaticFilesHandler) does not specify its own expiration time.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>deployment.cloud-build-options    app-yaml-path=sea</code><ul>
+<li><code>deployment.cloud-build-options    app-yaml-path=consetetur</code><ul>
 <li>Path to the yaml file used in deployment, used to determine runtime configuration details.Required for flexible environment builds.See https://cloud.google.com/appengine/docs/standard/python/config/appref for more details.</li>
 </ul>
 </li>
 <li>
-<p><code>cloud-build-timeout=consetetur</code></p>
+<p><code>cloud-build-timeout=dolor</code></p>
 <ul>
 <li>The Cloud Build timeout used as part of any dependent builds performed by version creation. Defaults to 10 minutes.</li>
 </ul>
 </li>
 <li>
-<p><code>..container    image=diam</code></p>
+<p><code>..container    image=aliquyam</code></p>
 <ul>
 <li>URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>..zip    files-count=79</code></p>
+<p><code>..zip    files-count=7</code></p>
 <ul>
 <li>An estimate of the number of files in a zip for a zip deployment. If set, must be greater than or equal to the actual number of files. Used for optimizing performance; if not provided, deployment may be slow.</li>
 </ul>
 </li>
 <li>
-<p><code>source-url=dolores</code></p>
+<p><code>source-url=ea</code></p>
 <ul>
 <li>URL of the zip file to deploy from. Must be a URL to a resource in Google Cloud Storage in the form &#39;http(s)://storage.googleapis.com/&lt;bucket&gt;/&lt;object&gt;&#39;.</li>
 </ul>
 </li>
 <li>
-<p><code>...    disk-usage-bytes=consetetur</code></p>
+<p><code>...    disk-usage-bytes=et</code></p>
 <ul>
 <li>Total size in bytes of all the files that are included in this version and currently hosted on the App Engine disk.@OutputOnly</li>
 </ul>
 </li>
-<li><code>endpoints-api-service    config-id=dolor</code><ul>
+<li><code>endpoints-api-service    config-id=stet</code><ul>
 <li>Endpoints service configuration ID as specified by the Service Management API. For example &#34;2016-09-19r1&#34;.By default, the rollout strategy for Endpoints is RolloutStrategy.FIXED. This means that Endpoints starts up with a particular configuration ID. When a new configuration is rolled out, Endpoints must be given the new configuration ID. The config_id field is used to give the configuration ID and is required in this case.Endpoints also has a rollout strategy called RolloutStrategy.MANAGED. When using this, Endpoints fetches the latest configuration and does not need the configuration ID. In this case, config_id must be omitted.</li>
 </ul>
 </li>
-<li><code>disable-trace-sampling=false</code><ul>
+<li><code>disable-trace-sampling=true</code><ul>
 <li>Enable or disable trace sampling. By default, this is set to false for enabled.</li>
 </ul>
 </li>
-<li><code>name=elitr</code><ul>
+<li><code>name=dolor</code><ul>
 <li>Endpoints service name which is the name of the &#34;service&#34; resource in the Service Management API. For example &#34;myapi.endpoints.myproject.cloud.goog&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>rollout-strategy=ea</code></p>
+<p><code>rollout-strategy=sanctus</code></p>
 <ul>
 <li>Endpoints rollout strategy. If FIXED, config_id must be specified. If MANAGED, config_id must be omitted.</li>
 </ul>
 </li>
 <li>
-<p><code>..entrypoint    shell=et</code></p>
+<p><code>..entrypoint    shell=dolore</code></p>
 <ul>
 <li>The format should be a shell command that can be fed to bash -c.</li>
 </ul>
 </li>
 <li>
-<p><code>..    env=stet</code></p>
+<p><code>..    env=lorem</code></p>
 <ul>
 <li>App Engine execution environment for this version.Defaults to standard.</li>
 </ul>
 </li>
-<li><code>env-variables=key=sed</code><ul>
+<li><code>env-variables=key=consetetur</code><ul>
 <li>Environment variables available to the application.Only returned in GET requests if view=FULL is set.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=dolor</code><ul>
+<li><code>health-check    check-interval=consetetur</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>disable-health-check=true</code><ul>
+<li><code>disable-health-check=false</code><ul>
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=68</code><ul>
+<li><code>healthy-threshold=65</code><ul>
 <li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=lorem</code><ul>
+<li><code>host=gubergren</code><ul>
 <li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=5</code><ul>
+<li><code>restart-threshold=28</code><ul>
 <li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=consetetur</code><ul>
+<li><code>timeout=sadipscing</code><ul>
 <li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>unhealthy-threshold=11</code></p>
+<p><code>unhealthy-threshold=28</code></p>
 <ul>
 <li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=labore</code></p>
+<p><code>..    id=magna</code></p>
 <ul>
 <li>Relative name of the version within the service. Example: v1. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
 </ul>
 </li>
-<li><code>inbound-services=gubergren</code><ul>
+<li><code>inbound-services=lorem</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=et</code><ul>
+<li><code>instance-class=rebum.</code><ul>
 <li>Instance class that is used to run this version. Valid values are:
     AutomaticScaling: F1, F2, F4, F4_1G
     ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
 </ul>
 </li>
-<li><code>liveness-check    check-interval=sadipscing</code><ul>
+<li><code>liveness-check    check-interval=et</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>failure-threshold=28</code><ul>
+<li><code>failure-threshold=37</code><ul>
 <li>Number of consecutive failed checks required before considering the VM unhealthy.</li>
 </ul>
 </li>
-<li><code>host=magna</code><ul>
+<li><code>host=eos</code><ul>
 <li>Host header to send when performing a HTTP Liveness check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>initial-delay=lorem</code><ul>
+<li><code>initial-delay=dolores</code><ul>
 <li>The initial delay before starting to execute the checks.</li>
 </ul>
 </li>
-<li><code>path=rebum.</code><ul>
+<li><code>path=vero</code><ul>
 <li>The request path.</li>
 </ul>
 </li>
-<li><code>success-threshold=30</code><ul>
+<li><code>success-threshold=5</code><ul>
 <li>Number of consecutive successful checks required before considering the VM healthy.</li>
 </ul>
 </li>
 <li>
-<p><code>timeout=clita</code></p>
+<p><code>timeout=vero</code></p>
 <ul>
 <li>Time before the check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>..manual-scaling    instances=77</code></p>
+<p><code>..manual-scaling    instances=5</code></p>
 <ul>
 <li>Number of instances to assign to the service at the start. This number can later be altered by using the Modules API (https://cloud.google.com/appengine/docs/python/modules/functions) set_num_instances() function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=dolores</code></p>
+<p><code>..    name=eos</code></p>
 <ul>
 <li>Full path to the Version resource in the API. Example: apps/myapp/services/default/versions/v1.@OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=vero</code><ul>
+<li><code>network    forwarded-ports=justo</code><ul>
 <li>List of ports, or port pairs, to forward from the virtual machine to the application container. Only applicable in the App Engine flexible environment.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=consetetur</code><ul>
+<li><code>instance-tag=tempor</code><ul>
 <li>Tag to apply to the instance during creation. Only applicable in the App Engine flexible environment.</li>
 </ul>
 </li>
-<li><code>name=vero</code><ul>
+<li><code>name=gubergren</code><ul>
 <li>Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default.</li>
 </ul>
 </li>
+<li><code>session-affinity=false</code><ul>
+<li>Enable session affinity. Only applicable in the App Engine flexible environment.</li>
+</ul>
+</li>
 <li>
-<p><code>subnetwork-name=consetetur</code></p>
+<p><code>subnetwork-name=amet.</code></p>
 <ul>
 <li>Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.If a subnetwork name is specified, a network name will also be required unless it is for the default network.
     If the network that the instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
@@ -780,72 +788,76 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=eos</code></p>
+<p><code>..    nobuild-files-regex=dolore</code></p>
 <ul>
 <li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>readiness-check    app-start-timeout=justo</code><ul>
+<li><code>readiness-check    app-start-timeout=magna</code><ul>
 <li>A maximum time limit on application initialization, measured from moment the application successfully replies to a healthcheck until it is ready to serve traffic.</li>
 </ul>
 </li>
-<li><code>check-interval=tempor</code><ul>
+<li><code>check-interval=elitr</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>failure-threshold=40</code><ul>
+<li><code>failure-threshold=19</code><ul>
 <li>Number of consecutive failed checks required before removing traffic.</li>
 </ul>
 </li>
-<li><code>host=dolore</code><ul>
+<li><code>host=ipsum</code><ul>
 <li>Host header to send when performing a HTTP Readiness check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>path=amet.</code><ul>
+<li><code>path=invidunt</code><ul>
 <li>The request path.</li>
 </ul>
 </li>
-<li><code>success-threshold=68</code><ul>
+<li><code>success-threshold=79</code><ul>
 <li>Number of consecutive successful checks required before receiving traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>timeout=magna</code></p>
+<p><code>timeout=labore</code></p>
 <ul>
 <li>Time before the check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>..resources    cpu=0.073479543813</code></p>
+<p><code>..resources    cpu=0.222067161538</code></p>
 <ul>
 <li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.189075671793</code><ul>
+<li><code>disk-gb=0.602964310645</code><ul>
 <li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.966361549129</code></p>
+<p><code>memory-gb=0.0804305296888</code></p>
 <ul>
 <li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=invidunt</code></p>
+<p><code>..    runtime=diam</code></p>
 <ul>
 <li>Desired runtime. Example: python27.</li>
 </ul>
 </li>
-<li><code>runtime-api-version=accusam</code><ul>
+<li><code>runtime-api-version=magna</code><ul>
 <li>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at https://cloud.google.com/appengine/docs/standard/&lt;language&gt;/config/appref</li>
 </ul>
 </li>
-<li><code>runtime-channel=labore</code><ul>
+<li><code>runtime-channel=dolor</code><ul>
 <li>The channel of the runtime to use. Only available for some runtimes. Defaults to the default channel.</li>
 </ul>
 </li>
-<li><code>serving-status=diam</code><ul>
+<li><code>runtime-main-executable-path=lorem</code><ul>
+<li>The path or name of the app&#39;s main executable.</li>
+</ul>
+</li>
+<li><code>serving-status=dolor</code><ul>
 <li>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an invalid value. Defaults to SERVING.</li>
 </ul>
 </li>
@@ -853,16 +865,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether multiple requests can be dispatched to this version at once.</li>
 </ul>
 </li>
-<li><code>version-url=sed</code><ul>
+<li><code>version-url=nonumy</code><ul>
 <li>Serving URL for this version. Example: &#34;https://myversion-dot-myservice-dot-myapp.appspot.com&#34;@OutputOnly</li>
 </ul>
 </li>
-<li><code>vm=false</code><ul>
+<li><code>vm=true</code><ul>
 <li>Whether to deploy this version in a container on a virtual machine.</li>
 </ul>
 </li>
-<li><code>zones=magna</code><ul>
-<li>The Google Compute Engine zones that are supported by this version in the App Engine flexible environment.</li>
+<li>
+<p><code>vpc-access-connector    name=dolores</code></p>
+<ul>
+<li>Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.</li>
+</ul>
+</li>
+<li>
+<p><code>..    zones=consetetur</code></p>
+<ul>
+<li>The Google Compute Engine zones that are supported by this version in the App Engine flexible environment. Deprecated.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -984,7 +1004,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

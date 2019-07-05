@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Transfer Configs Schedule Runs - BigQuery Data Transfer v1.0.8+20181008</title>
+  <title>Transfer Configs Schedule Runs - BigQuery Data Transfer v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -130,6 +130,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-transfer-configs-start-manual-runs/">Locations Transfer Configs Start Manual Runs</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_transfer-configs-create/">Transfer Configs Create</a>
                 </li>
                 <li class="">
@@ -192,6 +196,10 @@
 
     </ul>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../projects_transfer-configs-start-manual-runs/">Transfer Configs Start Manual Runs</a>
+                </li>
     </ul>
 	    </li>
           
@@ -205,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">BigQuery Data Transfer v1.0.8+20181008</a>
+        <a href="..">BigQuery Data Transfer v1.0.10+20190629</a>
       </nav>
 
       
@@ -237,7 +245,8 @@
                 <p>Creates transfer runs for a time range [start_time, end_time].
 For each date - or whatever granularity the data source supports - in the
 range, one transfer run is created.
-Note that runs are created per UTC time in the time range.</p>
+Note that runs are created per UTC time in the time range.
+DEPRECATED: use StartManualTransferRuns instead.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -266,12 +275,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    end-time=duo</code><ul>
+<li><code>-r .    end-time=consetetur</code><ul>
 <li>End time of the range of transfer runs. For example,
     <code>&amp;#34;2017-05-30T00:00:00+00:00&amp;#34;</code>.</li>
 </ul>
 </li>
-<li><code>start-time=et</code><ul>
+<li><code>start-time=amet.</code><ul>
 <li>Start time of the range of transfer runs. For example,
     <code>&amp;#34;2017-05-25T00:00:00+00:00&amp;#34;</code>.</li>
 </ul>
@@ -373,6 +382,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../projects_transfer-configs-start-manual-runs/" class="btn btn-neutral float-right" title="Transfer Configs Start Manual Runs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
       
         <a href="../projects_transfer-configs-runs-transfer-logs-list/" class="btn btn-neutral" title="Transfer Configs Runs Transfer Logs List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
@@ -384,7 +395,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -406,6 +417,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       
         <span><a href="../projects_transfer-configs-runs-transfer-logs-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../projects_transfer-configs-start-manual-runs/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

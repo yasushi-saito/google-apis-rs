@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - drive v1.0.8+20181004</title>
+  <title>List - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -446,7 +481,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -475,7 +510,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists a file&#39;s or Team Drive&#39;s permissions.</p>
+                <p>Lists a file&#39;s or shared drive&#39;s permissions.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -491,7 +526,7 @@ You can set the scope for this method like this: <code>drive2 --scope &lt;scope&
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;file-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID for the file or Team Drive.</li>
+<li>The ID for the file or shared drive.</li>
 </ul>
 </li>
 </ul>
@@ -512,12 +547,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of permissions to return per page. When not set for files in a Team Drive, at most 100 results will be returned. When not set for files that are not in a Team Drive, the entire list will be returned.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The token for continuing a previous list request on the next page. This should be set to the value of &#39;nextPageToken&#39; from the previous response.</li>
@@ -526,13 +555,25 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p supports-team-drives=boolean</strong></p>
 <ul>
-<li>Whether the requesting application supports Team Drives.</li>
+<li>Deprecated use supportsAllDrives instead.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p use-domain-admin-access=boolean</strong></p>
 <ul>
-<li>Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.</li>
+<li>Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-all-drives=boolean</strong></p>
+<ul>
+<li>Deprecated - Whether the requesting application supports both My Drives and shared drives. This parameter will only be effective until June 1, 2020. Afterwards all applications are assumed to support shared drives.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of permissions to return per page. When not set for files in a shared drive, at most 100 results will be returned. When not set for files that are not in a shared drive, the entire list will be returned.</li>
 </ul>
 </li>
 </ul>
@@ -602,7 +643,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

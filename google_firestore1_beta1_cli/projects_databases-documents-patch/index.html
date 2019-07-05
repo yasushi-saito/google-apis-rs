@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Databases Documents Patch - Firestore v1.0.8+20181001</title>
+  <title>Databases Documents Patch - Firestore v1.0.10+20190419</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firestore v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Firestore v1.0.10+20190419</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -172,7 +172,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firestore v1.0.8+20181001</a>
+        <a href="..">Firestore v1.0.10+20190419</a>
       </nav>
 
       
@@ -237,10 +237,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>This value increases monotonically when a document is deleted then
 recreated. It can also be compared to values from other documents and
 the <code>read_time</code> of a query.
-<em> <code>name=eirmod</code>
+* <code>name=eirmod</code>
     - The resource name of the document, for example
 <code>projects/{project_id}/databases/{database_id}/documents/{document_path}</code>.
-</em> <code>update-time=dolore</code>
+* <code>update-time=dolore</code>
     - Output only. The time at which the document was last changed.</p>
 <p>This value is initially set to the <code>create_time</code> then increases
 monotonically with each change to the document. It can also be
@@ -274,14 +274,14 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p mask-field-paths=string</strong></p>
+<p><strong>-p current-document-exists=boolean</strong></p>
 <ul>
-<li>The list of field paths in the mask. See Document.fields for a field
-    path syntax reference.</li>
+<li>When set to <code>true</code>, the target document must exist.
+    When set to <code>false</code>, the target document must not exist.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p update-mask-field-paths=string</strong></p>
+<p><strong>-p mask-field-paths=string</strong></p>
 <ul>
 <li>The list of field paths in the mask. See Document.fields for a field
     path syntax reference.</li>
@@ -295,10 +295,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p current-document-exists=boolean</strong></p>
+<p><strong>-p update-mask-field-paths=string</strong></p>
 <ul>
-<li>When set to <code>true</code>, the target document must exist.
-    When set to <code>false</code>, the target document must not exist.</li>
+<li>The list of field paths in the mask. See Document.fields for a field
+    path syntax reference.</li>
 </ul>
 </li>
 </ul>
@@ -392,7 +392,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

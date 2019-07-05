@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - directory v1.0.8+20180917</title>
+  <title>Watch - directory v1.0.10+20190214</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> directory v1.0.10+20190214</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -678,7 +678,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.8+20180917</a>
+        <a href="..">directory v1.0.10+20190214</a>
       </nav>
 
       
@@ -736,44 +736,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=et</code><ul>
+<li><code>-r .    address=eirmod</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=tempor</code><ul>
+<li><code>expiration=ea</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=justo</code><ul>
+<li><code>id=ea</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=takimata</code><ul>
-<li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
+<li><code>kind=et</code><ul>
+<li>Identifies this as a notification channel used to watch for changes to a resource, which is &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=invidunt</code><ul>
+<li><code>params=key=sanctus</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>payload=true</code><ul>
+<li><code>payload=false</code><ul>
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=dolor</code><ul>
+<li><code>resource-id=eos</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=voluptua.</code><ul>
+<li><code>resource-uri=tempor</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=et</code><ul>
+<li><code>token=sea</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=elitr</code><ul>
+<li><code>type=ea</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -809,15 +809,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p domain=string</strong></p>
-<ul>
-<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
 <li>Column to use for sorting results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p domain=string</strong></p>
+<ul>
+<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
 </ul>
 </li>
 <li>
@@ -833,15 +833,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p custom-field-mask=string</strong></p>
+<ul>
+<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return. Default is 100. Max allowed is 500</li>
 </ul>
 </li>
 <li>
-<p><strong>-p custom-field-mask=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+<li>Whether to return results in ascending or descending order.</li>
 </ul>
 </li>
 <li>
@@ -851,9 +857,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p event=string</strong></p>
 <ul>
-<li>Whether to return results in ascending or descending order.</li>
+<li>Event on which subscription is intended (if subscribing)</li>
 </ul>
 </li>
 <li>
@@ -866,12 +872,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p query=string</strong></p>
 <ul>
 <li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
-</ul>
-</li>
-<li>
-<p><strong>-p event=string</strong></p>
-<ul>
-<li>Event on which subscription is intended (if subscribing)</li>
 </ul>
 </li>
 </ul>
@@ -941,7 +941,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

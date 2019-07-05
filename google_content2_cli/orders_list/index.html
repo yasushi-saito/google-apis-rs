@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Shopping Content v1.0.8+20181009</title>
+  <title>List - Shopping Content v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -576,7 +576,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.8+20181009</a>
+        <a href="..">Shopping Content v1.0.10+20190702</a>
       </nav>
 
       
@@ -647,6 +647,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>
+<p>Order results by placement date in descending or ascending order.</p>
+<p>Acceptable values are:
+- placedDateAsc
+- placedDateDesc</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The token returned by the previous request.</li>
@@ -655,20 +672,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p statuses=string</strong></p>
 <ul>
-<li>Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
-    Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>The ordering of the returned list. The only supported value are placedDate desc and placedDate asc for now, which returns orders sorted by placement date. &#34;placedDate desc&#34; stands for listing orders by placement date, from oldest to most recent. &#34;placedDate asc&#34; stands for listing orders by placement date, from most recent to oldest. In future releases we&#39;ll support other sorting criteria.</li>
+<li>Obtains orders that match any of the specified statuses. Please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped, partiallyDelivered, delivered, partiallyReturned, returned, and canceled.</li>
 </ul>
 </li>
 <li>
@@ -744,7 +748,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

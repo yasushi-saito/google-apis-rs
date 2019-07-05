@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Regions Jobs Patch - Dataproc v1.0.8+20181005</title>
+  <title>Regions Jobs Patch - Dataproc v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dataproc v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Dataproc v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,18 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-get-iam-policy/">Locations Autoscaling Policies Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-set-iam-policy/">Locations Autoscaling Policies Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-test-iam-permissions/">Locations Autoscaling Policies Test Iam Permissions</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_locations-workflow-templates-create/">Locations Workflow Templates Create</a>
@@ -95,6 +107,18 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-workflow-templates-update/">Locations Workflow Templates Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-get-iam-policy/">Regions Autoscaling Policies Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-set-iam-policy/">Regions Autoscaling Policies Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-test-iam-permissions/">Regions Autoscaling Policies Test Iam Permissions</a>
                 </li>
                 <li class="">
                     
@@ -276,7 +300,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dataproc v1.0.8+20181005</a>
+        <a href="..">Dataproc v1.0.10+20190620</a>
       </nav>
 
       
@@ -350,6 +374,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     query-list:
       queries: [string]
     script-variables: { string: string }
+  job-uuid: string
   labels: { string: string }
   pig-job:
     continue-on-failure: boolean
@@ -408,80 +433,80 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    driver-control-files-uri=et</code><ul>
+<li><code>-r .    driver-control-files-uri=sit</code><ul>
 <li>Output only. If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri.</li>
 </ul>
 </li>
-<li><code>driver-output-resource-uri=aliquyam</code><ul>
+<li><code>driver-output-resource-uri=sit</code><ul>
 <li>Output only. A URI pointing to the location of the stdout of the job&#39;s driver program.</li>
 </ul>
 </li>
-<li><code>hadoop-job    archive-uris=nonumy</code><ul>
+<li><code>hadoop-job    archive-uris=dolores</code><ul>
 <li>Optional. HCFS URIs of archives to be extracted in the working directory of Hadoop drivers and tasks. Supported file types: .jar, .tar, .tar.gz, .tgz, or .zip.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>args=sit</code><ul>
+<li><code>args=et</code><ul>
 <li>Optional. The arguments to pass to the driver. Do not include arguments, such as -libjars or -Dfoo=bar, that can be set as job properties, since a collision may occur that causes an incorrect job submission.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>file-uris=aliquyam</code><ul>
+<li><code>file-uris=sanctus</code><ul>
 <li>Optional. HCFS (Hadoop Compatible Filesystem) URIs of files to be copied to the working directory of Hadoop drivers and distributed tasks. Useful for naively parallel tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>jar-file-uris=sadipscing</code><ul>
+<li><code>jar-file-uris=takimata</code><ul>
 <li>Optional. Jar file URIs to add to the CLASSPATHs of the Hadoop driver and tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>logging-config    driver-log-levels=key=magna</code></p>
+<p><code>logging-config    driver-log-levels=key=kasd</code></p>
 <ul>
 <li>The per-package log levels for the driver. This may include &#34;root&#34; package name to configure rootLogger. Examples:  &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache = DEBUG&#39;</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    main-class=gubergren</code></p>
+<p><code>..    main-class=ut</code></p>
 <ul>
 <li>The name of the driver&#39;s main class. The jar file containing the class must be in the default CLASSPATH or specified in jar_file_uris.</li>
 </ul>
 </li>
-<li><code>main-jar-file-uri=sit</code><ul>
+<li><code>main-jar-file-uri=sadipscing</code><ul>
 <li>The HCFS URI of the jar file containing the main class. Examples:  &#39;gs://foo-bucket/analytics-binaries/extract-useful-metrics-mr.jar&#39;  &#39;hdfs:/tmp/test-samples/custom-wordcount.jar&#39;  &#39;file:///home/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar&#39;</li>
 </ul>
 </li>
 <li>
-<p><code>properties=key=gubergren</code></p>
+<p><code>properties=key=et</code></p>
 <ul>
 <li>Optional. A mapping of property names to values, used to configure Hadoop. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/hadoop/conf/*-site and classes in user code.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..hive-job    continue-on-failure=true</code></p>
+<p><code>..hive-job    continue-on-failure=false</code></p>
 <ul>
 <li>Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</li>
 </ul>
 </li>
-<li><code>jar-file-uris=amet</code><ul>
+<li><code>jar-file-uris=ipsum</code><ul>
 <li>Optional. HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>properties=key=eirmod</code><ul>
+<li><code>properties=key=dolor</code><ul>
 <li>Optional. A mapping of property names and values, used to configure Hive. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/hadoop/conf/*-site.xml, /etc/hive/conf/hive-site.xml, and classes in user code.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>query-file-uri=sanctus</code><ul>
+<li><code>query-file-uri=elitr</code><ul>
 <li>The HCFS URI of the script that contains Hive queries.</li>
 </ul>
 </li>
 <li>
-<p><code>query-list    queries=lorem</code></p>
+<p><code>query-list    queries=magna</code></p>
 <ul>
 <li>
 <p>Required. The queries to execute. You do not need to terminate a query with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of an Cloud Dataproc API snippet that uses a QueryList to specify a HiveJob:
@@ -501,15 +526,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    script-variables=key=amet.</code></p>
+<p><code>..    script-variables=key=aliquyam</code></p>
 <ul>
 <li>Optional. Mapping of query variable names to values (equivalent to the Hive command: SET name=&#34;value&#34;;).</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    labels=key=diam</code></p>
+<p><code>..    job-uuid=kasd</code></p>
 <ul>
+<li>Output only. A UUID that uniquely identifies a job within the project over time. This is in contrast to a user-settable reference.job_id that may be reused over time.</li>
+</ul>
+</li>
+<li><code>labels=key=duo</code><ul>
 <li>Optional. The labels to associate with this job. Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). Label values may be empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be associated with a job.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -518,31 +547,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</li>
 </ul>
 </li>
-<li><code>jar-file-uris=sadipscing</code><ul>
+<li><code>jar-file-uris=sit</code><ul>
 <li>Optional. HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapReduce (MR) tasks. Can contain Pig UDFs.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>logging-config    driver-log-levels=key=lorem</code></p>
+<p><code>logging-config    driver-log-levels=key=eirmod</code></p>
 <ul>
 <li>The per-package log levels for the driver. This may include &#34;root&#34; package name to configure rootLogger. Examples:  &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache = DEBUG&#39;</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    properties=key=sed</code></p>
+<p><code>..    properties=key=no</code></p>
 <ul>
 <li>Optional. A mapping of property names to values, used to configure Pig. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/hadoop/conf/*-site.xml, /etc/pig/conf/pig.properties, and classes in user code.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>query-file-uri=sit</code><ul>
+<li><code>query-file-uri=lorem</code><ul>
 <li>The HCFS URI of the script that contains the Pig queries.</li>
 </ul>
 </li>
 <li>
-<p><code>query-list    queries=dolore</code></p>
+<p><code>query-list    queries=sed</code></p>
 <ul>
 <li>
 <p>Required. The queries to execute. You do not need to terminate a query with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of an Cloud Dataproc API snippet that uses a QueryList to specify a HiveJob:
@@ -562,162 +591,162 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    script-variables=key=et</code></p>
+<p><code>..    script-variables=key=tempor</code></p>
 <ul>
 <li>Optional. Mapping of query variable names to values (equivalent to the Pig command: name=[value]).</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..placement    cluster-name=at</code></p>
+<p><code>..placement    cluster-name=clita</code></p>
 <ul>
 <li>Required. The name of the cluster where the job will be submitted.</li>
 </ul>
 </li>
 <li>
-<p><code>cluster-uuid=sit</code></p>
+<p><code>cluster-uuid=kasd</code></p>
 <ul>
 <li>Output only. A cluster UUID generated by the Cloud Dataproc service when the job is submitted.</li>
 </ul>
 </li>
 <li>
-<p><code>..pyspark-job    archive-uris=ut</code></p>
+<p><code>..pyspark-job    archive-uris=elitr</code></p>
 <ul>
 <li>Optional. HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>args=diam</code><ul>
+<li><code>args=et</code><ul>
 <li>Optional. The arguments to pass to the driver. Do not include arguments, such as --conf, that can be set as job properties, since a collision may occur that causes an incorrect job submission.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>file-uris=tempor</code><ul>
+<li><code>file-uris=vero</code><ul>
 <li>Optional. HCFS URIs of files to be copied to the working directory of Python drivers and distributed tasks. Useful for naively parallel tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>jar-file-uris=et</code><ul>
+<li><code>jar-file-uris=sadipscing</code><ul>
 <li>Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Python driver and tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>logging-config    driver-log-levels=key=erat</code></p>
+<p><code>logging-config    driver-log-levels=key=sed</code></p>
 <ul>
 <li>The per-package log levels for the driver. This may include &#34;root&#34; package name to configure rootLogger. Examples:  &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache = DEBUG&#39;</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    main-python-file-uri=dolores</code></p>
+<p><code>..    main-python-file-uri=vero</code></p>
 <ul>
 <li>Required. The HCFS URI of the main Python file to use as the driver. Must be a .py file.</li>
 </ul>
 </li>
-<li><code>properties=key=kasd</code><ul>
+<li><code>properties=key=nonumy</code><ul>
 <li>Optional. A mapping of property names to values, used to configure PySpark. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>python-file-uris=et</code></p>
+<p><code>python-file-uris=magna</code></p>
 <ul>
 <li>Optional. HCFS file URIs of Python files to pass to the PySpark framework. Supported file types: .py, .egg, and .zip.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..reference    job-id=clita</code></p>
+<p><code>..reference    job-id=ea</code></p>
 <ul>
-<li>Optional. The job ID, which must be unique within the project. The job ID is generated by the server upon job submission or provided by the user as a means to perform retries without creating duplicate jobs. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or hyphens (-). The maximum length is 100 characters.</li>
+<li>Optional. The job ID, which must be unique within the project.The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or hyphens (-). The maximum length is 100 characters.If not specified by the caller, the job ID will be provided by the server.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=sed</code></p>
+<p><code>project-id=sea</code></p>
 <ul>
 <li>Required. The ID of the Google Cloud Platform project that the job belongs to.</li>
 </ul>
 </li>
 <li>
-<p><code>..scheduling    max-failures-per-hour=83</code></p>
+<p><code>..scheduling    max-failures-per-hour=51</code></p>
 <ul>
 <li>Optional. Maximum number of times per hour a driver may be restarted as a result of driver terminating with non-zero code before job is reported failed.A job may be reported as thrashing if driver exits with non-zero code 4 times within 10 minute window.Maximum value is 10.</li>
 </ul>
 </li>
 <li>
-<p><code>..spark-job    archive-uris=clita</code></p>
+<p><code>..spark-job    archive-uris=labore</code></p>
 <ul>
 <li>Optional. HCFS URIs of archives to be extracted in the working directory of Spark drivers and tasks. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>args=eos</code><ul>
+<li><code>args=lorem</code><ul>
 <li>Optional. The arguments to pass to the driver. Do not include arguments, such as --conf, that can be set as job properties, since a collision may occur that causes an incorrect job submission.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>file-uris=amet</code><ul>
+<li><code>file-uris=aliquyam</code><ul>
 <li>Optional. HCFS URIs of files to be copied to the working directory of Spark drivers and distributed tasks. Useful for naively parallel tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>jar-file-uris=sed</code><ul>
+<li><code>jar-file-uris=sanctus</code><ul>
 <li>Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Spark driver and tasks.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>logging-config    driver-log-levels=key=takimata</code></p>
+<p><code>logging-config    driver-log-levels=key=et</code></p>
 <ul>
 <li>The per-package log levels for the driver. This may include &#34;root&#34; package name to configure rootLogger. Examples:  &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache = DEBUG&#39;</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    main-class=sit</code></p>
+<p><code>..    main-class=consetetur</code></p>
 <ul>
 <li>The name of the driver&#39;s main class. The jar file that contains the class must be in the default CLASSPATH or specified in jar_file_uris.</li>
 </ul>
 </li>
-<li><code>main-jar-file-uri=labore</code><ul>
+<li><code>main-jar-file-uri=et</code><ul>
 <li>The HCFS URI of the jar file that contains the main class.</li>
 </ul>
 </li>
 <li>
-<p><code>properties=key=nonumy</code></p>
+<p><code>properties=key=justo</code></p>
 <ul>
 <li>Optional. A mapping of property names to values, used to configure Spark. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..spark-sql-job    jar-file-uris=erat</code></p>
+<p><code>..spark-sql-job    jar-file-uris=kasd</code></p>
 <ul>
 <li>Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>logging-config    driver-log-levels=key=gubergren</code></p>
+<p><code>logging-config    driver-log-levels=key=kasd</code></p>
 <ul>
 <li>The per-package log levels for the driver. This may include &#34;root&#34; package name to configure rootLogger. Examples:  &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache = DEBUG&#39;</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    properties=key=erat</code></p>
+<p><code>..    properties=key=ipsum</code></p>
 <ul>
 <li>Optional. A mapping of property names to values, used to configure Spark SQL&#39;s SparkConf. Properties that conflict with values set by the Cloud Dataproc API may be overwritten.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>query-file-uri=et</code><ul>
+<li><code>query-file-uri=eos</code><ul>
 <li>The HCFS URI of the script that contains SQL queries.</li>
 </ul>
 </li>
 <li>
-<p><code>query-list    queries=amet</code></p>
+<p><code>query-list    queries=nonumy</code></p>
 <ul>
 <li>
 <p>Required. The queries to execute. You do not need to terminate a query with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of an Cloud Dataproc API snippet that uses a QueryList to specify a HiveJob:
@@ -737,7 +766,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    script-variables=key=lorem</code></p>
+<p><code>..    script-variables=key=sanctus</code></p>
 <ul>
 <li>Optional. Mapping of query variable names to values (equivalent to the Spark SQL command: SET name=&#34;value&#34;;).</li>
 <li>the value will be associated with the given <code>key</code></li>
@@ -749,15 +778,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Output only. Optional job state details, such as an error description if the state is &lt;code&gt;ERROR&lt;/code&gt;.</li>
 </ul>
 </li>
-<li><code>state=rebum.</code><ul>
+<li><code>state=labore</code><ul>
 <li>Output only. A state message specifying the overall job state.</li>
 </ul>
 </li>
-<li><code>state-start-time=justo</code><ul>
+<li><code>state-start-time=erat</code><ul>
 <li>Output only. The time when this state was entered.</li>
 </ul>
 </li>
-<li><code>substate=labore</code><ul>
+<li><code>substate=erat</code><ul>
 <li>Output only. Additional state information, which includes status reported by the agent.</li>
 </ul>
 </li>
@@ -881,7 +910,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

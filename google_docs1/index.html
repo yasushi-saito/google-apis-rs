@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_docs1` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_docs1"><title>google_docs1 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_docs1/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_docs1</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_docs1's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_docs1', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_docs1/lib.rs.html#5-4930' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_docs1</a></span></h1><div class='docblock'><p>This documentation was generated from <em>Docs</em> crate version <em>1.0.9+20190627</em>, where <em>20190627</em> is the exact revision of the <em>docs:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>Docs</em> <em>v1</em> API can be found at the
+<a href="https://developers.google.com/docs/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/docs1">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Docs.html">hub</a> ... </p>
+<ul>
+<li><a href="struct.Document.html">documents</a></li>
+<li><a href="struct.DocumentBatchUpdateCall.html"><em>batch update</em></a>, <a href="struct.DocumentCreateCall.html"><em>create</em></a> and <a href="struct.DocumentGetCall.html"><em>get</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.Docs.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">documents</span>().<span class="ident">create</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">documents</span>().<span class="ident">get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">documents</span>().<span class="ident">batch_update</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-docs1 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_docs1</span> <span class="kw">as</span> <span class="ident">docs1</span>;
+<span class="kw">use</span> <span class="ident">docs1</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">docs1</span>::<span class="ident">Docs</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">Docs</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">documents</span>().<span class="ident">get</span>(<span class="string">&quot;documentId&quot;</span>)
+             .<span class="ident">suggestions_view_mode</span>(<span class="string">&quot;sed&quot;</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.AutoText.html" title='google_docs1::AutoText struct'>AutoText</a></td><td class='docblock-short'><p>A ParagraphElement representing a
+spot in the text that is dynamically replaced with content that can change
+over time, like a page number.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Background.html" title='google_docs1::Background struct'>Background</a></td><td class='docblock-short'><p>Represents the background of a document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BackgroundSuggestionState.html" title='google_docs1::BackgroundSuggestionState struct'>BackgroundSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base Background have been changed in this suggestion.
+For any field set to true, the Backgound has a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateDocumentRequest.html" title='google_docs1::BatchUpdateDocumentRequest struct'>BatchUpdateDocumentRequest</a></td><td class='docblock-short'><p>Request message for BatchUpdateDocument.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchUpdateDocumentResponse.html" title='google_docs1::BatchUpdateDocumentResponse struct'>BatchUpdateDocumentResponse</a></td><td class='docblock-short'><p>Response message from a BatchUpdateDocument request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Body.html" title='google_docs1::Body struct'>Body</a></td><td class='docblock-short'><p>The document body.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Bullet.html" title='google_docs1::Bullet struct'>Bullet</a></td><td class='docblock-short'><p>Describes the bullet of a paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BulletSuggestionState.html" title='google_docs1::BulletSuggestionState struct'>BulletSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+Bullet have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_docs1::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Color.html" title='google_docs1::Color struct'>Color</a></td><td class='docblock-short'><p>A solid color.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ColumnBreak.html" title='google_docs1::ColumnBreak struct'>ColumnBreak</a></td><td class='docblock-short'><p>A ParagraphElement representing a
+column break. A column break makes the subsequent text start at the top of
+the next column.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_docs1::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateNamedRangeRequest.html" title='google_docs1::CreateNamedRangeRequest struct'>CreateNamedRangeRequest</a></td><td class='docblock-short'><p>Creates a NamedRange referencing the given
+range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateNamedRangeResponse.html" title='google_docs1::CreateNamedRangeResponse struct'>CreateNamedRangeResponse</a></td><td class='docblock-short'><p>The result of creating a named range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateParagraphBulletsRequest.html" title='google_docs1::CreateParagraphBulletsRequest struct'>CreateParagraphBulletsRequest</a></td><td class='docblock-short'><p>Creates bullets for all of the paragraphs that overlap with the given range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CropProperties.html" title='google_docs1::CropProperties struct'>CropProperties</a></td><td class='docblock-short'><p>The crop properties of an image.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CropPropertiesSuggestionState.html" title='google_docs1::CropPropertiesSuggestionState struct'>CropPropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base CropProperties have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_docs1::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteContentRangeRequest.html" title='google_docs1::DeleteContentRangeRequest struct'>DeleteContentRangeRequest</a></td><td class='docblock-short'><p>Deletes content from the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteNamedRangeRequest.html" title='google_docs1::DeleteNamedRangeRequest struct'>DeleteNamedRangeRequest</a></td><td class='docblock-short'><p>Deletes a NamedRange.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteParagraphBulletsRequest.html" title='google_docs1::DeleteParagraphBulletsRequest struct'>DeleteParagraphBulletsRequest</a></td><td class='docblock-short'><p>Deletes bullets from all of the paragraphs that overlap with the given range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeletePositionedObjectRequest.html" title='google_docs1::DeletePositionedObjectRequest struct'>DeletePositionedObjectRequest</a></td><td class='docblock-short'><p>Deletes a PositionedObject from the
+document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteTableColumnRequest.html" title='google_docs1::DeleteTableColumnRequest struct'>DeleteTableColumnRequest</a></td><td class='docblock-short'><p>Deletes a column from a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeleteTableRowRequest.html" title='google_docs1::DeleteTableRowRequest struct'>DeleteTableRowRequest</a></td><td class='docblock-short'><p>Deletes a row from a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Dimension.html" title='google_docs1::Dimension struct'>Dimension</a></td><td class='docblock-short'><p>A magnitude in a single direction in the specified units.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Docs.html" title='google_docs1::Docs struct'>Docs</a></td><td class='docblock-short'><p>Central instance to access all Docs related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Document.html" title='google_docs1::Document struct'>Document</a></td><td class='docblock-short'><p>A Google Docs document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentBatchUpdateCall.html" title='google_docs1::DocumentBatchUpdateCall struct'>DocumentBatchUpdateCall</a></td><td class='docblock-short'><p>Applies one or more updates to the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentCreateCall.html" title='google_docs1::DocumentCreateCall struct'>DocumentCreateCall</a></td><td class='docblock-short'><p>Creates a blank document using the title given in the request. Other fields
+in the request, including any provided content, are ignored.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentGetCall.html" title='google_docs1::DocumentGetCall struct'>DocumentGetCall</a></td><td class='docblock-short'><p>Gets the latest version of the specified document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentMethods.html" title='google_docs1::DocumentMethods struct'>DocumentMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>document</em> resources.
+It is not used directly, but through the <code>Docs</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentStyle.html" title='google_docs1::DocumentStyle struct'>DocumentStyle</a></td><td class='docblock-short'><p>The style of the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DocumentStyleSuggestionState.html" title='google_docs1::DocumentStyleSuggestionState struct'>DocumentStyleSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base DocumentStyle have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_docs1::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedDrawingProperties.html" title='google_docs1::EmbeddedDrawingProperties struct'>EmbeddedDrawingProperties</a></td><td class='docblock-short'><p>The properties of an embedded drawing.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedDrawingPropertiesSuggestionState.html" title='google_docs1::EmbeddedDrawingPropertiesSuggestionState struct'>EmbeddedDrawingPropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+EmbeddedDrawingProperties
+have been changed in this suggestion. For any field set to true, there is a
+new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedObject.html" title='google_docs1::EmbeddedObject struct'>EmbeddedObject</a></td><td class='docblock-short'><p>An embedded object in the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedObjectBorder.html" title='google_docs1::EmbeddedObjectBorder struct'>EmbeddedObjectBorder</a></td><td class='docblock-short'><p>A border around an EmbeddedObject.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedObjectBorderSuggestionState.html" title='google_docs1::EmbeddedObjectBorderSuggestionState struct'>EmbeddedObjectBorderSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base EmbeddedObjectBorder have been changed in this
+suggestion. For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EmbeddedObjectSuggestionState.html" title='google_docs1::EmbeddedObjectSuggestionState struct'>EmbeddedObjectSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base EmbeddedObject have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EndOfSegmentLocation.html" title='google_docs1::EndOfSegmentLocation struct'>EndOfSegmentLocation</a></td><td class='docblock-short'><p>Location at the end of a body, header, footer or footnote. The location is
+immediately before the last newline in the document segment.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Equation.html" title='google_docs1::Equation struct'>Equation</a></td><td class='docblock-short'><p>A ParagraphElement representing an
+equation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_docs1::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Footer.html" title='google_docs1::Footer struct'>Footer</a></td><td class='docblock-short'><p>A document footer.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Footnote.html" title='google_docs1::Footnote struct'>Footnote</a></td><td class='docblock-short'><p>A document footnote.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FootnoteReference.html" title='google_docs1::FootnoteReference struct'>FootnoteReference</a></td><td class='docblock-short'><p>A ParagraphElement representing a
+footnote reference. A footnote reference is the inline content rendered with
+a number and is used to identify the footnote.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Header.html" title='google_docs1::Header struct'>Header</a></td><td class='docblock-short'><p>A document header.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.HorizontalRule.html" title='google_docs1::HorizontalRule struct'>HorizontalRule</a></td><td class='docblock-short'><p>A ParagraphElement representing a
+horizontal line.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ImageProperties.html" title='google_docs1::ImageProperties struct'>ImageProperties</a></td><td class='docblock-short'><p>The properties of an image.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ImagePropertiesSuggestionState.html" title='google_docs1::ImagePropertiesSuggestionState struct'>ImagePropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base ImageProperties have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InlineObject.html" title='google_docs1::InlineObject struct'>InlineObject</a></td><td class='docblock-short'><p>An object that appears inline with text. An InlineObject contains
+an EmbeddedObject such as an image.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InlineObjectElement.html" title='google_docs1::InlineObjectElement struct'>InlineObjectElement</a></td><td class='docblock-short'><p>A ParagraphElement that contains
+an InlineObject.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InlineObjectProperties.html" title='google_docs1::InlineObjectProperties struct'>InlineObjectProperties</a></td><td class='docblock-short'><p>Properties of an InlineObject.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InlineObjectPropertiesSuggestionState.html" title='google_docs1::InlineObjectPropertiesSuggestionState struct'>InlineObjectPropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+InlineObjectProperties have
+been changed in this suggestion. For any field set to true, there is a new
+suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertInlineImageRequest.html" title='google_docs1::InsertInlineImageRequest struct'>InsertInlineImageRequest</a></td><td class='docblock-short'><p>Inserts an InlineObject containing an
+image at the given location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertInlineImageResponse.html" title='google_docs1::InsertInlineImageResponse struct'>InsertInlineImageResponse</a></td><td class='docblock-short'><p>The result of inserting an inline image.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertInlineSheetsChartResponse.html" title='google_docs1::InsertInlineSheetsChartResponse struct'>InsertInlineSheetsChartResponse</a></td><td class='docblock-short'><p>The result of inserting an embedded Google Sheets chart.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertPageBreakRequest.html" title='google_docs1::InsertPageBreakRequest struct'>InsertPageBreakRequest</a></td><td class='docblock-short'><p>Inserts a page break followed by a newline at the specified location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertTableColumnRequest.html" title='google_docs1::InsertTableColumnRequest struct'>InsertTableColumnRequest</a></td><td class='docblock-short'><p>Inserts an empty column into a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertTableRequest.html" title='google_docs1::InsertTableRequest struct'>InsertTableRequest</a></td><td class='docblock-short'><p>Inserts a table at the specified location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertTableRowRequest.html" title='google_docs1::InsertTableRowRequest struct'>InsertTableRowRequest</a></td><td class='docblock-short'><p>Inserts an empty row into a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InsertTextRequest.html" title='google_docs1::InsertTextRequest struct'>InsertTextRequest</a></td><td class='docblock-short'><p>Inserts text at the specified location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_docs1::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Link.html" title='google_docs1::Link struct'>Link</a></td><td class='docblock-short'><p>A reference to another portion of a document or an external URL resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LinkedContentReference.html" title='google_docs1::LinkedContentReference struct'>LinkedContentReference</a></td><td class='docblock-short'><p>A reference to the external linked source content.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LinkedContentReferenceSuggestionState.html" title='google_docs1::LinkedContentReferenceSuggestionState struct'>LinkedContentReferenceSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+LinkedContentReference have
+been changed in this suggestion. For any field set to true, there is a new
+suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.List.html" title='google_docs1::List struct'>List</a></td><td class='docblock-short'><p>A List represents the list attributes for a group of paragraphs that all
+belong to the same list. A paragraph that is part of a list has a reference
+to the list's ID in its bullet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListProperties.html" title='google_docs1::ListProperties struct'>ListProperties</a></td><td class='docblock-short'><p>The properties of a list which describe the look
+and feel of bullets belonging to paragraphs associated with a list.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListPropertiesSuggestionState.html" title='google_docs1::ListPropertiesSuggestionState struct'>ListPropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base ListProperties have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Location.html" title='google_docs1::Location struct'>Location</a></td><td class='docblock-short'><p>A particular location in the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_docs1::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_docs1::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedRange.html" title='google_docs1::NamedRange struct'>NamedRange</a></td><td class='docblock-short'><p>A collection of Ranges with the same named range
+ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedRanges.html" title='google_docs1::NamedRanges struct'>NamedRanges</a></td><td class='docblock-short'><p>A collection of all the NamedRanges in the
+document that share a given name.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedStyle.html" title='google_docs1::NamedStyle struct'>NamedStyle</a></td><td class='docblock-short'><p>A named style. Paragraphs in the document can inherit their
+TextStyle and
+ParagraphStyle from this named style
+when they have the same named style type.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedStyleSuggestionState.html" title='google_docs1::NamedStyleSuggestionState struct'>NamedStyleSuggestionState</a></td><td class='docblock-short'><p>A suggestion state of a NamedStyle message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedStyles.html" title='google_docs1::NamedStyles struct'>NamedStyles</a></td><td class='docblock-short'><p>The named styles. Paragraphs in the document can inherit their
+TextStyle and
+ParagraphStyle from these named styles.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NamedStylesSuggestionState.html" title='google_docs1::NamedStylesSuggestionState struct'>NamedStylesSuggestionState</a></td><td class='docblock-short'><p>The suggestion state of a NamedStyles
+message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NestingLevel.html" title='google_docs1::NestingLevel struct'>NestingLevel</a></td><td class='docblock-short'><p>Contains properties describing the look and feel of a list bullet at a given
+level of nesting.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NestingLevelSuggestionState.html" title='google_docs1::NestingLevelSuggestionState struct'>NestingLevelSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base NestingLevel have been changed in this suggestion. For
+any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ObjectReferences.html" title='google_docs1::ObjectReferences struct'>ObjectReferences</a></td><td class='docblock-short'><p>A collection of object IDs.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OptionalColor.html" title='google_docs1::OptionalColor struct'>OptionalColor</a></td><td class='docblock-short'><p>A color that can either be fully opaque or fully transparent.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PageBreak.html" title='google_docs1::PageBreak struct'>PageBreak</a></td><td class='docblock-short'><p>A ParagraphElement representing a
+page break. A page break makes the subsequent text start at the top of the
+next page.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Paragraph.html" title='google_docs1::Paragraph struct'>Paragraph</a></td><td class='docblock-short'><p>A StructuralElement representing a
+paragraph. A paragraph is a range of content that is terminated with a
+newline character.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParagraphBorder.html" title='google_docs1::ParagraphBorder struct'>ParagraphBorder</a></td><td class='docblock-short'><p>A border around a paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParagraphElement.html" title='google_docs1::ParagraphElement struct'>ParagraphElement</a></td><td class='docblock-short'><p>A ParagraphElement describes content within a
+Paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParagraphStyle.html" title='google_docs1::ParagraphStyle struct'>ParagraphStyle</a></td><td class='docblock-short'><p>Styles that apply to a whole paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParagraphStyleSuggestionState.html" title='google_docs1::ParagraphStyleSuggestionState struct'>ParagraphStyleSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base ParagraphStyle have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PositionedObject.html" title='google_docs1::PositionedObject struct'>PositionedObject</a></td><td class='docblock-short'><p>An object that is tethered to a Paragraph
+and positioned relative to the beginning of the paragraph. A PositionedObject
+contains an EmbeddedObject such as an
+image.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PositionedObjectPositioning.html" title='google_docs1::PositionedObjectPositioning struct'>PositionedObjectPositioning</a></td><td class='docblock-short'><p>The positioning of a PositionedObject. The positioned object is positioned
+relative to the beginning of the Paragraph
+it is tethered to.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PositionedObjectPositioningSuggestionState.html" title='google_docs1::PositionedObjectPositioningSuggestionState struct'>PositionedObjectPositioningSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+PositionedObjectPositioning have been changed in this
+suggestion. For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PositionedObjectProperties.html" title='google_docs1::PositionedObjectProperties struct'>PositionedObjectProperties</a></td><td class='docblock-short'><p>Properties of a PositionedObject.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PositionedObjectPropertiesSuggestionState.html" title='google_docs1::PositionedObjectPropertiesSuggestionState struct'>PositionedObjectPropertiesSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base
+PositionedObjectProperties
+have been changed in this suggestion. For any field set to true, there is a
+new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Range.html" title='google_docs1::Range struct'>Range</a></td><td class='docblock-short'><p>Specifies a contiguous range of text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_docs1::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ReplaceAllTextRequest.html" title='google_docs1::ReplaceAllTextRequest struct'>ReplaceAllTextRequest</a></td><td class='docblock-short'><p>Replaces all instances of text matching a criteria with replace text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReplaceAllTextResponse.html" title='google_docs1::ReplaceAllTextResponse struct'>ReplaceAllTextResponse</a></td><td class='docblock-short'><p>The result of replacing text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Request.html" title='google_docs1::Request struct'>Request</a></td><td class='docblock-short'><p>A single update to apply to a document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Response.html" title='google_docs1::Response struct'>Response</a></td><td class='docblock-short'><p>A single response from an update.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_docs1::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RgbColor.html" title='google_docs1::RgbColor struct'>RgbColor</a></td><td class='docblock-short'><p>An RGB color.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SectionBreak.html" title='google_docs1::SectionBreak struct'>SectionBreak</a></td><td class='docblock-short'><p>A StructuralElement representing a
+section break. A section is a range of content which has the same
+SectionStyle. A section break represents
+the start of a new section, and the section style applies to the section
+after the section break.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SectionColumnProperties.html" title='google_docs1::SectionColumnProperties struct'>SectionColumnProperties</a></td><td class='docblock-short'><p>Properties that apply to a section's column.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SectionStyle.html" title='google_docs1::SectionStyle struct'>SectionStyle</a></td><td class='docblock-short'><p>The styling that applies to a section.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_docs1::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_docs1::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Shading.html" title='google_docs1::Shading struct'>Shading</a></td><td class='docblock-short'><p>The shading of a paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ShadingSuggestionState.html" title='google_docs1::ShadingSuggestionState struct'>ShadingSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base Shading have been changed in this
+suggested change. For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SheetsChartReference.html" title='google_docs1::SheetsChartReference struct'>SheetsChartReference</a></td><td class='docblock-short'><p>A reference to a linked chart embedded from Google Sheets.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SheetsChartReferenceSuggestionState.html" title='google_docs1::SheetsChartReferenceSuggestionState struct'>SheetsChartReferenceSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base SheetsChartReference have been changed in this
+suggestion. For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Size.html" title='google_docs1::Size struct'>Size</a></td><td class='docblock-short'><p>A width and height.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SizeSuggestionState.html" title='google_docs1::SizeSuggestionState struct'>SizeSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base Size have been changed in this suggestion.
+For any field set to true, the Size has
+a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.StructuralElement.html" title='google_docs1::StructuralElement struct'>StructuralElement</a></td><td class='docblock-short'><p>A StructuralElement describes content that provides structure to the
+document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SubstringMatchCriteria.html" title='google_docs1::SubstringMatchCriteria struct'>SubstringMatchCriteria</a></td><td class='docblock-short'><p>A criteria that matches a specific string of text in the document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedBullet.html" title='google_docs1::SuggestedBullet struct'>SuggestedBullet</a></td><td class='docblock-short'><p>A suggested change to a Bullet.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedDocumentStyle.html" title='google_docs1::SuggestedDocumentStyle struct'>SuggestedDocumentStyle</a></td><td class='docblock-short'><p>A suggested change to the DocumentStyle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedInlineObjectProperties.html" title='google_docs1::SuggestedInlineObjectProperties struct'>SuggestedInlineObjectProperties</a></td><td class='docblock-short'><p>A suggested change to InlineObjectProperties.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedListProperties.html" title='google_docs1::SuggestedListProperties struct'>SuggestedListProperties</a></td><td class='docblock-short'><p>A suggested change to ListProperties.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedNamedStyles.html" title='google_docs1::SuggestedNamedStyles struct'>SuggestedNamedStyles</a></td><td class='docblock-short'><p>A suggested change to the NamedStyles.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedParagraphStyle.html" title='google_docs1::SuggestedParagraphStyle struct'>SuggestedParagraphStyle</a></td><td class='docblock-short'><p>A suggested change to a
+ParagraphStyle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedPositionedObjectProperties.html" title='google_docs1::SuggestedPositionedObjectProperties struct'>SuggestedPositionedObjectProperties</a></td><td class='docblock-short'><p>A suggested change to PositionedObjectProperties.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedTableCellStyle.html" title='google_docs1::SuggestedTableCellStyle struct'>SuggestedTableCellStyle</a></td><td class='docblock-short'><p>A suggested change to a TableCellStyle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedTableRowStyle.html" title='google_docs1::SuggestedTableRowStyle struct'>SuggestedTableRowStyle</a></td><td class='docblock-short'><p>A suggested change to a
+TableRowStyle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SuggestedTextStyle.html" title='google_docs1::SuggestedTextStyle struct'>SuggestedTextStyle</a></td><td class='docblock-short'><p>A suggested change to a TextStyle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TabStop.html" title='google_docs1::TabStop struct'>TabStop</a></td><td class='docblock-short'><p>A tab stop within a paragraph.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Table.html" title='google_docs1::Table struct'>Table</a></td><td class='docblock-short'><p>A StructuralElement representing a
+table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableCell.html" title='google_docs1::TableCell struct'>TableCell</a></td><td class='docblock-short'><p>The contents and style of a cell in a Table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableCellBorder.html" title='google_docs1::TableCellBorder struct'>TableCellBorder</a></td><td class='docblock-short'><p>A border around a table cell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableCellLocation.html" title='google_docs1::TableCellLocation struct'>TableCellLocation</a></td><td class='docblock-short'><p>Location of a single cell within a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableCellStyle.html" title='google_docs1::TableCellStyle struct'>TableCellStyle</a></td><td class='docblock-short'><p>The style of a TableCell.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableCellStyleSuggestionState.html" title='google_docs1::TableCellStyleSuggestionState struct'>TableCellStyleSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base TableCellStyle have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableColumnProperties.html" title='google_docs1::TableColumnProperties struct'>TableColumnProperties</a></td><td class='docblock-short'><p>The properties of a column in a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableOfContents.html" title='google_docs1::TableOfContents struct'>TableOfContents</a></td><td class='docblock-short'><p>A StructuralElement representing
+a table of contents.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableRow.html" title='google_docs1::TableRow struct'>TableRow</a></td><td class='docblock-short'><p>The contents and style of a row in a Table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableRowStyle.html" title='google_docs1::TableRowStyle struct'>TableRowStyle</a></td><td class='docblock-short'><p>Styles that apply to a table row.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableRowStyleSuggestionState.html" title='google_docs1::TableRowStyleSuggestionState struct'>TableRowStyleSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base TableRowStyle have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TableStyle.html" title='google_docs1::TableStyle struct'>TableStyle</a></td><td class='docblock-short'><p>Styles that apply to a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextRun.html" title='google_docs1::TextRun struct'>TextRun</a></td><td class='docblock-short'><p>A ParagraphElement that represents a
+run of text that all has the same styling.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextStyle.html" title='google_docs1::TextStyle struct'>TextStyle</a></td><td class='docblock-short'><p>Represents the styling that can be applied to text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextStyleSuggestionState.html" title='google_docs1::TextStyleSuggestionState struct'>TextStyleSuggestionState</a></td><td class='docblock-short'><p>A mask that indicates which of the fields on the base TextStyle have been changed in this suggestion.
+For any field set to true, there is a new suggested value.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateParagraphStyleRequest.html" title='google_docs1::UpdateParagraphStyleRequest struct'>UpdateParagraphStyleRequest</a></td><td class='docblock-short'><p>Update the styling of all paragraphs that overlap with the given range.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateTableColumnPropertiesRequest.html" title='google_docs1::UpdateTableColumnPropertiesRequest struct'>UpdateTableColumnPropertiesRequest</a></td><td class='docblock-short'><p>Updates the
+TableColumnProperties of columns
+in a table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateTableRowStyleRequest.html" title='google_docs1::UpdateTableRowStyleRequest struct'>UpdateTableRowStyleRequest</a></td><td class='docblock-short'><p>Updates the TableRowStyle of rows in a
+table.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UpdateTextStyleRequest.html" title='google_docs1::UpdateTextStyleRequest struct'>UpdateTextStyleRequest</a></td><td class='docblock-short'><p>Update the styling of text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WeightedFontFamily.html" title='google_docs1::WeightedFontFamily struct'>WeightedFontFamily</a></td><td class='docblock-short'><p>Represents a font family and weight of text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.WriteControl.html" title='google_docs1::WriteControl struct'>WriteControl</a></td><td class='docblock-short'><p>Provides control over how write requests are executed.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_docs1::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_docs1::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_docs1::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_docs1::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_docs1::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_docs1::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_docs1::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_docs1::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_docs1::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_docs1::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_docs1::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_docs1::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_docs1::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_docs1::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_docs1::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_docs1::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_docs1::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_docs1";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Perimeters Patch - Access Context Manager v1.0.8+20181010</title>
+  <title>Service Perimeters Patch - Access Context Manager v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Access Context Manager v1.0.8+20181010</a>
+        <a href=".." class="icon icon-home"> Access Context Manager v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -167,7 +167,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Access Context Manager v1.0.8+20181010</a>
+        <a href="..">Access Context Manager v1.0.10+20190626</a>
       </nav>
 
       
@@ -225,9 +225,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   perimeter-type: string
   status:
     access-levels: [string]
+    bridge-service-restriction:
+      allowed-services: [string]
+      enable-restriction: boolean
+    ingress-service-restriction:
+      allowed-services: [string]
+      enable-restriction: boolean
     resources: [string]
     restricted-services: [string]
     unrestricted-services: [string]
+    vpc-service-restriction:
+      allowed-services: [string]
+      enable-restriction: boolean
   title: string
   update-time: string
 
@@ -235,22 +244,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=lorem</code><ul>
+<li><code>-r .    create-time=elitr</code><ul>
 <li>Output only. Time the <code>ServicePerimeter</code> was created in UTC.</li>
 </ul>
 </li>
-<li><code>description=eos</code><ul>
+<li><code>description=amet</code><ul>
 <li>Description of the <code>ServicePerimeter</code> and its use. Does not affect
     behavior.</li>
 </ul>
 </li>
-<li><code>name=erat</code><ul>
+<li><code>name=no</code><ul>
 <li>Required. Resource name for the ServicePerimeter.  The <code>short_name</code>
     component must begin with a letter and only include alphanumeric and &#39;_&#39;.
     Format: <code>accessPolicies/{policy_id}/servicePerimeters/{short_name}</code></li>
 </ul>
 </li>
-<li><code>perimeter-type=sadipscing</code><ul>
+<li><code>perimeter-type=labore</code><ul>
 <li>Perimeter type indicator. A single project is
     allowed to be a member of single regular perimeter, but multiple service
     perimeter bridges. A project cannot be a included in a perimeter bridge
@@ -259,64 +268,88 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     empty.</li>
 </ul>
 </li>
-<li><code>status    access-levels=dolor</code><ul>
+<li><code>status    access-levels=eirmod</code><ul>
 <li>A list of <code>AccessLevel</code> resource names that allow resources within the
     <code>ServicePerimeter</code> to be accessed from the internet. <code>AccessLevels</code> listed
     must be in the same policy as this <code>ServicePerimeter</code>. Referencing a
     nonexistent <code>AccessLevel</code> is a syntax error. If no <code>AccessLevel</code> names are
-    listed, resources within the perimeter can only be accessed via GCP calls with
-    request origins within the perimeter. Example:
+    listed, resources within the perimeter can only be accessed via GCP calls
+    with request origins within the perimeter. Example:
     <code>&amp;#34;accessPolicies/MY_POLICY/accessLevels/MY_LEVEL&amp;#34;</code>.
     For Service Perimeter Bridge, must be empty.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>resources=eirmod</code><ul>
+<li><code>bridge-service-restriction    allowed-services=dolore</code><ul>
+<li>The list of APIs usable through the Bridge Perimeter. Must be empty
+    unless &#39;enable_restriction&#39; is True.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>enable-restriction=true</code></p>
+<ul>
+<li>Whether to restrict the set of APIs callable through the Bridge Service
+    Perimeter.</li>
+</ul>
+</li>
+<li>
+<p><code>..ingress-service-restriction    allowed-services=aliquyam</code></p>
+<ul>
+<li>The list of APIs usable with a valid Access Level. Must be empty unless
+    &#39;enable_restriction&#39; is True.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>enable-restriction=false</code></p>
+<ul>
+<li>Whether to restrict the set of APIs callable outside the Service
+    Perimeter via Access Levels.</li>
+</ul>
+</li>
+<li>
+<p><code>..    resources=lorem</code></p>
+<ul>
 <li>A list of GCP resources that are inside of the service perimeter.
     Currently only projects are allowed. Format: <code>projects/{project_number}</code></li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
+<li><code>restricted-services=sea</code><ul>
+<li>GCP services that are subject to the Service Perimeter restrictions. Must
+    contain a list of services. For example, if
+    <code>storage.googleapis.com</code> is specified, access to the storage buckets
+    inside the perimeter must meet the perimeter&#39;s access restrictions.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
 <li>
-<p><code>restricted-services=elitr</code></p>
+<p><code>unrestricted-services=et</code></p>
 <ul>
 <li>
-<p>GCP services that are subject to the Service Perimeter restrictions. May
-    contain a list of services or a single wildcard &#34;*&#34;. For example, if
-    <code>storage.googleapis.com</code> is specified, access to the storage buckets
-    inside the perimeter must meet the perimeter&#39;s access restrictions.</p>
-<p>Wildcard means that unless explicitly specified by &#34;unrestricted_services&#34;
-list, any service is treated as restricted. One of the fields
-&#34;restricted_services&#34;, &#34;unrestricted_services&#34; must contain a wildcard &#34;<em>&#34;,
-otherwise the Service Perimeter specification is invalid. It also means
-that both field being empty is invalid as well. &#34;restricted_services&#34; can
-be empty if and only if &#34;unrestricted_services&#34; list contains a &#34;</em>&#34;
-wildcard.
-    - Each invocation of this argument appends the given value to the array.
-<em> <code>unrestricted-services=amet</code>
-    - GCP services that are not subject to the Service Perimeter restrictions.
-May contain a list of services or a single wildcard &#34;</em>&#34;. For example, if
-<code>logging.googleapis.com</code> is unrestricted, users can access logs inside the
-perimeter as if the perimeter doesn&#39;t exist, and it also means VMs inside the perimeter
-can access logs outside the perimeter.</p>
+<p>GCP services that are not subject to the Service Perimeter
+    restrictions. Deprecated. Must be set to a single wildcard &#34;*&#34;.</p>
 <p>The wildcard means that unless explicitly specified by
-&#34;restricted_services&#34; list, any service is treated as unrestricted. One of
-the fields &#34;restricted_services&#34;, &#34;unrestricted_services&#34; must contain a
-wildcard &#34;<em>&#34;, otherwise the Service Perimeter specification is invalid. It
-also means that both field being empty is invalid as well.
-&#34;unrestricted_services&#34; can be empty if and only if &#34;restricted_services&#34;
-list contains a &#34;</em>&#34; wildcard.
-    - Each invocation of this argument appends the given value to the array.</p>
+&#34;restricted_services&#34; list, any service is treated as unrestricted.
+    - Each invocation of this argument appends the given value to the array.
+* <code>vpc-service-restriction    allowed-services=duo</code>
+    - The list of APIs usable within the Service Perimeter. Must be empty
+unless &#39;enable_restriction&#39; is True.
+    - Each invocation of this argument appends the given value to the array.
+* <code>enable-restriction=true</code>
+    - Whether to restrict API calls within the Service Perimeter to the list of
+APIs specified in &#39;allowed_services&#39;.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    title=no</code></p>
+<p><code>...    title=eirmod</code></p>
 <ul>
 <li>Human readable title. Must be unique within the Policy.</li>
 </ul>
 </li>
-<li><code>update-time=labore</code><ul>
+<li><code>update-time=sanctus</code><ul>
 <li>Output only. Time the <code>ServicePerimeter</code> was updated in UTC.</li>
 </ul>
 </li>
@@ -440,7 +473,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

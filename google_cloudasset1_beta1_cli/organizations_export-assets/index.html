@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Export Assets - Cloud Asset v1.0.8+20181008</title>
+  <title>Export Assets - Cloud Asset v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Asset v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Asset v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -50,6 +50,21 @@
             <li class="toctree-l1">
 		
     <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Folders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../folders_export-assets/">Export Assets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_operations-get/">Operations Get</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -124,7 +139,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Asset v1.0.8+20181008</a>
+        <a href="..">Cloud Asset v1.0.10+20190625</a>
       </nav>
 
       
@@ -164,9 +179,10 @@ You can set the scope for this method like this: <code>cloudasset1-beta1 --scope
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;parent&gt;</strong> <em>(string)</em><ul>
-<li>Required. The relative name of the root asset. This can only be an organization
-    number (such as &#34;organizations/123&#34;), a project ID (such as
-    &#34;projects/my-project-id&#34;), or a project number (such as &#34;projects/12345&#34;).</li>
+<li>Required. The relative name of the root asset. This can only be an
+    organization number (such as &#34;organizations/123&#34;), a project ID (such as
+    &#34;projects/my-project-id&#34;), a project number (such as &#34;projects/12345&#34;), or
+    a folder number (such as &#34;folders/123&#34;).</li>
 </ul>
 </li>
 </ul>
@@ -180,33 +196,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   output-config:
     gcs-destination:
       uri: string
+      uri-prefix: string
   read-time: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    asset-types=eirmod</code><ul>
+<li><code>-r .    asset-types=dolores</code><ul>
 <li>A list of asset types of which to take a snapshot for. For example:
-    &#34;google.compute.disk&#34;. If specified, only matching assets will be returned.</li>
+    &#34;google.compute.Disk&#34;. If specified, only matching assets will be returned.
+    See <a href="https://cloud.google.com/resource-manager/docs/cloud-asset-inventory/overview">Introduction to Cloud Asset
+    Inventory</a>
+    for all supported asset types.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>content-type=sit</code><ul>
+<li><code>content-type=kasd</code><ul>
 <li>Asset content type. If not specified, no content but the asset name will be
     returned.</li>
 </ul>
 </li>
-<li>
-<p><code>output-config.gcs-destination    uri=stet</code></p>
-<ul>
-<li>The path of the Cloud Storage objects. It&#39;s the same path that is used by
-     gsutil. For example: &#34;gs://bucket_name/object_path&#34;. See <a href="https://cloud.google.com/storage/docs/viewing-editing-metadata">Viewing and Editing Object Metadata</a>
+<li><code>output-config.gcs-destination    uri=accusam</code><ul>
+<li>The uri of the Cloud Storage object. It&#39;s the same uri that is used by
+    gsutil. For example: &#34;gs://bucket_name/object_name&#34;. See <a href="https://cloud.google.com/storage/docs/viewing-editing-metadata">Viewing and
+    Editing Object
+    Metadata</a>
     for more information.</li>
 </ul>
 </li>
 <li>
-<p><code>...    read-time=sed</code></p>
+<p><code>uri-prefix=takimata</code></p>
+<ul>
+<li>The uri prefix of all generated Cloud Storage objects. For example:
+    &#34;gs://bucket_name/object_name_prefix&#34;. Each object uri is in format:
+    &#34;gs://bucket_name/object_name_prefix/&lt;asset type&gt;/&lt;shard number&gt; and only
+    contains assets for that type. &lt;shard number&gt; starts from 0. For example:
+    &#34;gs://bucket_name/object_name_prefix/google.compute.disk/0&#34; is the first
+    shard of output objects containing all google.compute.disk assets.
+    An INVALID_ARGUMENT error will be returned if file with the same name
+    &#34;gs://bucket_name/object_name_prefix&#34; already exists.</li>
+</ul>
+</li>
+<li>
+<p><code>...    read-time=justo</code></p>
 <ul>
 <li>Timestamp to take an asset snapshot. This can only be set to a timestamp
     between 2018-10-02 UTC (inclusive) and the current time. If not specified,
@@ -325,7 +358,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

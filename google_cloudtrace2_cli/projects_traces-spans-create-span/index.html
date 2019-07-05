@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Traces Spans Create Span - Cloud Trace v1.0.8+20181004</title>
+  <title>Traces Spans Create Span - Cloud Trace v1.0.10+20190622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Trace v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Cloud Trace v1.0.10+20190622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -101,7 +101,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Trace v1.0.8+20181004</a>
+        <a href="..">Cloud Trace v1.0.10+20190622</a>
       </nav>
 
       
@@ -245,17 +245,17 @@ shortened string might be less than the size limit.</p>
 <p>it is a 32-character hexadecimal encoding of a 16-byte array.</p>
 <p>[SPAN_ID] is a unique identifier for a span within a trace; it
 is a 16-character hexadecimal encoding of an 8-byte array.
-<em> <code>parent-span-id=accusam</code>
+* <code>parent-span-id=accusam</code>
     - The [SPAN_ID] of this span&#39;s parent span. If this is a root span,
 then this field must be empty.
-</em> <code>same-process-as-parent-span=true</code>
+* <code>same-process-as-parent-span=true</code>
     - (Optional) Set this parameter to indicate whether this span is in
 the same process as its parent. If you do not set this parameter,
 Stackdriver Trace is unable to take advantage of this helpful
 information.
-<em> <code>span-id=justo</code>
+* <code>span-id=justo</code>
     - The [SPAN_ID] portion of the span&#39;s resource name.
-</em> <code>stack-trace.stack-frames    dropped-frames-count=100</code>
+* <code>stack-trace.stack-frames    dropped-frames-count=100</code>
     - The number of stack frames that were dropped because there
 were too many stack frames.
 If this value is 0, then no stack frames were dropped.</p>
@@ -416,7 +416,7 @@ to that stack trace by only setting <code>stackTraceHashId</code>.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

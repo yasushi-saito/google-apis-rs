@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-deidentify/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-export/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-import/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-search-for-instances/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-search-for-series/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-search-for-studies/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-store-instances/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-retrieve-metadata/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-retrieve-study/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-search-for-instances/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-search-for-series/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-frames-retrieve-frames/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-frames-retrieve-rendered/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-retrieve-instance/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-retrieve-metadata/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-instances-retrieve-rendered/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-retrieve-metadata/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-retrieve-series/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-series-search-for-instances/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-studies-store-instances/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-dicom-stores-test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-export/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir--observation-lastn/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir--patient-everything/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir--resource-purge/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-capabilities/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-conditional-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-conditional-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-conditional-update/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-execute-bundle/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-history/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-read/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-search/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-update/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-fhir-vread/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-import/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-fhir-stores-test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-ingest/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-messages-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-hl7-v2-stores-test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-operations-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-operations-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-patch/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-datasets-test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-healthcare1_beta1-cli/projects_locations-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

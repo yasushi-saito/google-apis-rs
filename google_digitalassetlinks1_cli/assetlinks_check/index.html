@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Check - digitalassetlinks v1.0.8+20181009</title>
+  <title>Check - digitalassetlinks v1.0.10+20190619</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> digitalassetlinks v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> digitalassetlinks v1.0.10+20190619</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -96,7 +96,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">digitalassetlinks v1.0.8+20181009</a>
+        <a href="..">digitalassetlinks v1.0.10+20190619</a>
       </nav>
 
       
@@ -139,10 +139,11 @@ decide if the operation should be allowed.</p>
 an HTTPS website or an Android app, the API will ensure that any
 statements used to generate the response have been made in a secure way by
 the owner of that asset.  Conversely, if the source asset is an insecure
-HTTP website (that is, the URL starts with <code>http://</code> instead of <code>https://</code>),
-the API cannot verify its statements securely, and it is not possible to
-ensure that the website&#39;s statements have not been altered by a third
-party.  For more information, see the <a href="https://github.com/google/digitalassetlinks/blob/master/well-known/details.md">Digital Asset Links technical design
+HTTP website (that is, the URL starts with <code>http://</code> instead of
+<code>https://</code>), the API cannot verify its statements securely, and it is not
+possible to ensure that the website&#39;s statements have not been altered by a
+third party.  For more information, see the <a href="https://github.com/google/digitalassetlinks/blob/master/well-known/details.md">Digital Asset Links technical
+design
 specification</a>.</p>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
@@ -161,51 +162,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p target-web-site=string</strong></p>
-<ul>
-<li>
-<p>Web assets are identified by a URL that contains only the scheme, hostname
-    and port parts.  The format is</p>
-<pre><code>http[s]://&amp;lt;hostname&amp;gt;[:&amp;lt;port&amp;gt;]
-</code></pre>
-<p>Hostnames must be fully qualified: they must end in a single period
-(&#34;<code>.</code>&#34;).</p>
-<p>Only the schemes &#34;http&#34; and &#34;https&#34; are currently allowed.</p>
-<p>Port numbers are given as a decimal number, and they must be omitted if the
-standard port numbers are used: 80 for http and 443 for https.</p>
-<p>We call this limited URL the &#34;site&#34;.  All URLs that share the same scheme,
-hostname and port are considered to be a part of the site and thus belong
-to the web asset.</p>
-<p>Example: the asset with the site <code>https://www.google.com</code> contains all
-these URLs:</p>
-<ul>
-<li><code>https://www.google.com/</code></li>
-<li><code>https://www.google.com:443/</code></li>
-<li><code>https://www.google.com/foo</code></li>
-<li><code>https://www.google.com/foo?bar</code></li>
-<li><code>https://www.google.com/foo#bar</code></li>
-<li><code>https://user@password:www.google.com/</code></li>
-</ul>
-<p>But it does not contain these URLs:</p>
-<ul>
-<li><code>http://www.google.com/</code>       (wrong scheme)</li>
-<li><code>https://google.com/</code>          (hostname does not match)</li>
-<li><code>https://www.google.com:444/</code>  (port does not match)
-REQUIRED</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p source-android-app-package-name=string</strong></p>
-<ul>
-<li>Android App assets are naturally identified by their Java package name.
-    For example, the Google Maps app uses the package name
-    <code>com.google.android.apps.maps</code>.
-    REQUIRED</li>
-</ul>
-</li>
-<li>
 <p><strong>-p relation=string</strong></p>
 <ul>
 <li>
@@ -221,6 +177,40 @@ relation strings must match exactly.</p>
 <p>Example: A query with relation <code>delegate_permission/common.handle_all_urls</code>
 matches an asset link with relation
 <code>delegate_permission/common.handle_all_urls</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p source-android-app-package-name=string</strong></p>
+<ul>
+<li>Android App assets are naturally identified by their Java package name.
+    For example, the Google Maps app uses the package name
+    <code>com.google.android.apps.maps</code>.
+    REQUIRED</li>
+</ul>
+</li>
+<li>
+<p><strong>-p target-android-app-certificate-sha256-fingerprint=string</strong></p>
+<ul>
+<li>
+<p>The uppercase SHA-265 fingerprint of the certificate.  From the PEM
+     certificate, it can be acquired like this:</p>
+<pre><code>$ keytool -printcert -file $CERTFILE | grep SHA256:
+SHA256: 14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83: \
+    42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5
+</code></pre>
+<p>or like this:</p>
+<pre><code>$ openssl x509 -in $CERTFILE -noout -fingerprint -sha256
+SHA256 Fingerprint=14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64: \
+    16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5
+</code></pre>
+<p>In this example, the contents of this field would be <code>14:6D:E9:83:C5:73:
+06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:
+44:E5</code>.</p>
+<p>If these tools are not available to you, you can convert the PEM
+certificate into the DER format, compute the SHA-256 hash of that string
+and represent the result as a hexstring (that is, uppercase hexadecimal
+representations of each octet, separated by colons).</p>
 </li>
 </ul>
 </li>
@@ -247,15 +237,6 @@ certificate into the DER format, compute the SHA-256 hash of that string
 and represent the result as a hexstring (that is, uppercase hexadecimal
 representations of each octet, separated by colons).</p>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p target-android-app-package-name=string</strong></p>
-<ul>
-<li>Android App assets are naturally identified by their Java package name.
-    For example, the Google Maps app uses the package name
-    <code>com.google.android.apps.maps</code>.
-    REQUIRED</li>
 </ul>
 </li>
 <li>
@@ -295,27 +276,47 @@ REQUIRED</li>
 </ul>
 </li>
 <li>
-<p><strong>-p target-android-app-certificate-sha256-fingerprint=string</strong></p>
+<p><strong>-p target-android-app-package-name=string</strong></p>
+<ul>
+<li>Android App assets are naturally identified by their Java package name.
+    For example, the Google Maps app uses the package name
+    <code>com.google.android.apps.maps</code>.
+    REQUIRED</li>
+</ul>
+</li>
+<li>
+<p><strong>-p target-web-site=string</strong></p>
 <ul>
 <li>
-<p>The uppercase SHA-265 fingerprint of the certificate.  From the PEM
-     certificate, it can be acquired like this:</p>
-<pre><code>$ keytool -printcert -file $CERTFILE | grep SHA256:
-SHA256: 14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83: \
-    42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5
+<p>Web assets are identified by a URL that contains only the scheme, hostname
+    and port parts.  The format is</p>
+<pre><code>http[s]://&amp;lt;hostname&amp;gt;[:&amp;lt;port&amp;gt;]
 </code></pre>
-<p>or like this:</p>
-<pre><code>$ openssl x509 -in $CERTFILE -noout -fingerprint -sha256
-SHA256 Fingerprint=14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64: \
-    16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5
-</code></pre>
-<p>In this example, the contents of this field would be <code>14:6D:E9:83:C5:73:
-06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:
-44:E5</code>.</p>
-<p>If these tools are not available to you, you can convert the PEM
-certificate into the DER format, compute the SHA-256 hash of that string
-and represent the result as a hexstring (that is, uppercase hexadecimal
-representations of each octet, separated by colons).</p>
+<p>Hostnames must be fully qualified: they must end in a single period
+(&#34;<code>.</code>&#34;).</p>
+<p>Only the schemes &#34;http&#34; and &#34;https&#34; are currently allowed.</p>
+<p>Port numbers are given as a decimal number, and they must be omitted if the
+standard port numbers are used: 80 for http and 443 for https.</p>
+<p>We call this limited URL the &#34;site&#34;.  All URLs that share the same scheme,
+hostname and port are considered to be a part of the site and thus belong
+to the web asset.</p>
+<p>Example: the asset with the site <code>https://www.google.com</code> contains all
+these URLs:</p>
+<ul>
+<li><code>https://www.google.com/</code></li>
+<li><code>https://www.google.com:443/</code></li>
+<li><code>https://www.google.com/foo</code></li>
+<li><code>https://www.google.com/foo?bar</code></li>
+<li><code>https://www.google.com/foo#bar</code></li>
+<li><code>https://user@password:www.google.com/</code></li>
+</ul>
+<p>But it does not contain these URLs:</p>
+<ul>
+<li><code>http://www.google.com/</code>       (wrong scheme)</li>
+<li><code>https://google.com/</code>          (hostname does not match)</li>
+<li><code>https://www.google.com:444/</code>  (port does not match)
+REQUIRED</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -410,7 +411,7 @@ representations of each octet, separated by colons).</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

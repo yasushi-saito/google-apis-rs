@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks List - Cloud Tasks v1.0.8+20180913</title>
+  <title>Locations Queues Tasks List - Cloud Tasks v1.0.10+20190618</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.8+20180913</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.10+20190618</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -159,7 +159,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.8+20180913</a>
+        <a href="..">Cloud Tasks v1.0.10+20190618</a>
       </nav>
 
       
@@ -227,16 +227,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>
-<p>A token identifying the page of results to return.</p>
-<p>To request the first page results, page_token must be empty. To
-request the next page of results, page_token must be the value of
-next_page_token returned
-from the previous call to ListTasks
-method.</p>
-<p>The page token is valid for only 2 hours.</p>
+<p>Maximum page size.</p>
+<p>Fewer tasks than requested might be returned, even if more tasks exist; use
+next_page_token in the response to
+determine if more tasks exist.</p>
+<p>The maximum page size is 1000. If unspecified, the page size will be the
+maximum.</p>
 </li>
 </ul>
 </li>
@@ -258,15 +257,16 @@ permission on the Task resource.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
 <li>
-<p>Requested page size. Fewer tasks than requested might be returned.</p>
-<p>The maximum page size is 1000. If unspecified, the page size will
-be the maximum. Fewer tasks than requested might be returned,
-even if more tasks exist; use
-next_page_token in the
-response to determine if more tasks exist.</p>
+<p>A token identifying the page of results to return.</p>
+<p>To request the first page results, page_token must be empty. To
+request the next page of results, page_token must be the value of
+next_page_token returned
+from the previous call to ListTasks
+method.</p>
+<p>The page token is valid for only 2 hours.</p>
 </li>
 </ul>
 </li>
@@ -361,7 +361,7 @@ response to determine if more tasks exist.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Longrunningrecognize - Speech v1.0.8+20181005</title>
+  <title>Longrunningrecognize - Speech v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Speech v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Speech v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -63,6 +63,21 @@
                 <li class="">
                     
     <a class="" href="../operations_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-get/">Locations Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-list/">Locations Operations List</a>
                 </li>
     </ul>
 	    </li>
@@ -113,7 +128,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Speech v1.0.8+20181005</a>
+        <a href="..">Speech v1.0.10+20190627</a>
       </nav>
 
       
@@ -145,7 +160,9 @@
                 <p>Performs asynchronous speech recognition: receive results via the
 google.longrunning.Operations interface. Returns either an
 <code>Operation.error</code> or an <code>Operation.response</code> which contains
-a <code>LongRunningRecognizeResponse</code> message.</p>
+a <code>LongRunningRecognizeResponse</code> message.
+For more information on asynchronous speech recognition, see the
+<a href="https://cloud.google.com/speech-to-text/docs/async-recognize">how-to</a>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -159,11 +176,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     content: string
     uri: string
   config:
+    audio-channel-count: integer
     enable-automatic-punctuation: boolean
+    enable-separate-recognition-per-channel: boolean
     enable-word-time-offsets: boolean
     encoding: string
     language-code: string
     max-alternatives: integer
+    metadata:
+      audio-topic: string
+      industry-naics-code-of-audio: integer
+      interaction-type: string
+      microphone-distance: string
+      obfuscated-id: string
+      original-media-type: string
+      original-mime-type: string
+      recording-device-name: string
+      recording-device-type: string
     model: string
     profanity-filter: boolean
     sample-rate-hertz: integer
@@ -175,7 +204,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <ul>
 <li><code>-r .audio    content=eirmod</code><ul>
 <li>The audio data bytes encoded as specified in
-    <code>RecognitionConfig</code>. Note: as with all bytes fields, protobuffers use a
+    <code>RecognitionConfig</code>. Note: as with all bytes fields, proto buffers use a
     pure binary representation, whereas JSON representations use base64.</li>
 </ul>
 </li>
@@ -192,8 +221,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..config    enable-automatic-punctuation=false</code></p>
+<p><code>..config    audio-channel-count=36</code></p>
 <ul>
+<li><em>Optional</em> The number of channels in the input audio data.
+    ONLY set this for MULTI-CHANNEL recognition.
+    Valid values for LINEAR16 and FLAC are <code>1</code>-<code>8</code>.
+    Valid values for OGG_OPUS are &#39;1&#39;-&#39;254&#39;.
+    Valid value for MULAW, AMR, AMR_WB and SPEEX_WITH_HEADER_BYTE is only <code>1</code>.
+    If <code>0</code> or omitted, defaults to one channel (mono).
+    Note: We only recognize the first channel by default.
+    To perform independent recognition on each channel set
+    <code>enable_separate_recognition_per_channel</code> to &#39;true&#39;.</li>
+</ul>
+</li>
+<li><code>enable-automatic-punctuation=true</code><ul>
 <li><em>Optional</em> If &#39;true&#39;, adds punctuation to recognition result hypotheses.
     This feature is only available in select languages. Setting this for
     requests in other languages has no effect at all.
@@ -203,6 +244,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     premium feature.</li>
 </ul>
 </li>
+<li><code>enable-separate-recognition-per-channel=false</code><ul>
+<li>This needs to be set to <code>true</code> explicitly and <code>audio_channel_count</code> &gt; 1
+    to get each channel recognized separately. The recognition result will
+    contain a <code>channel_tag</code> field to state which channel that result belongs
+    to. If this is not true, we will only recognize the first channel. The
+    request is billed cumulatively for all channels recognized:
+    <code>audio_channel_count</code> multiplied by the length of the audio.</li>
+</ul>
+</li>
 <li><code>enable-word-time-offsets=true</code><ul>
 <li><em>Optional</em> If <code>true</code>, the top result includes a list of words and
     the start and end time offsets (timestamps) for those words. If
@@ -210,13 +260,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     <code>false</code>.</li>
 </ul>
 </li>
-<li><code>encoding=et</code><ul>
+<li><code>encoding=kasd</code><ul>
 <li>Encoding of audio data sent in all <code>RecognitionAudio</code> messages.
     This field is optional for <code>FLAC</code> and <code>WAV</code> audio files and required
     for all other audio formats. For details, see AudioEncoding.</li>
 </ul>
 </li>
-<li><code>language-code=dolores</code><ul>
+<li><code>language-code=accusam</code><ul>
 <li><em>Required</em> The language of the supplied audio as a
     <a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP-47</a> language tag.
     Example: &#34;en-US&#34;.
@@ -224,7 +274,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     for a list of the currently supported language codes.</li>
 </ul>
 </li>
-<li><code>max-alternatives=38</code><ul>
+<li><code>max-alternatives=93</code><ul>
 <li><em>Optional</em> Maximum number of recognition hypotheses to be returned.
     Specifically, the maximum number of <code>SpeechRecognitionAlternative</code> messages
     within each <code>SpeechRecognitionResult</code>.
@@ -233,7 +283,57 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     one. If omitted, will return a maximum of one.</li>
 </ul>
 </li>
-<li><code>model=accusam</code><ul>
+<li><code>metadata    audio-topic=justo</code><ul>
+<li>Description of the content. Eg. &#34;Recordings of federal supreme court
+    hearings from 2012&#34;.</li>
+</ul>
+</li>
+<li><code>industry-naics-code-of-audio=100</code><ul>
+<li>The industry vertical to which this speech recognition request most
+    closely applies. This is most indicative of the topics contained
+    in the audio.  Use the 6-digit NAICS code to identify the industry
+    vertical - see https://www.naics.com/search/.</li>
+</ul>
+</li>
+<li><code>interaction-type=erat</code><ul>
+<li>The use case most closely describing the audio content to be recognized.</li>
+</ul>
+</li>
+<li><code>microphone-distance=labore</code><ul>
+<li>The audio type that most closely describes the audio being recognized.</li>
+</ul>
+</li>
+<li><code>obfuscated-id=sea</code><ul>
+<li>Obfuscated (privacy-protected) ID of the user, to identify number of
+    unique users using the service.</li>
+</ul>
+</li>
+<li><code>original-media-type=nonumy</code><ul>
+<li>The original media the speech was recorded on.</li>
+</ul>
+</li>
+<li><code>original-mime-type=dolores</code><ul>
+<li>Mime type of the original audio file.  For example <code>audio/m4a</code>,
+    <code>audio/x-alaw-basic</code>, <code>audio/mp3</code>, <code>audio/3gpp</code>.
+    A list of possible audio mime types is maintained at
+    http://www.iana.org/assignments/media-types/media-types.xhtml#audio</li>
+</ul>
+</li>
+<li><code>recording-device-name=gubergren</code><ul>
+<li>The device used to make the recording.  Examples &#39;Nexus 5X&#39; or
+    &#39;Polycom SoundStation IP 6000&#39; or &#39;POTS&#39; or &#39;VoIP&#39; or
+    &#39;Cardioid Microphone&#39;.</li>
+</ul>
+</li>
+<li>
+<p><code>recording-device-type=sadipscing</code></p>
+<ul>
+<li>The type of device the speech was recorded with.</li>
+</ul>
+</li>
+<li>
+<p><code>..    model=aliquyam</code></p>
+<ul>
 <li><em>Optional</em> Which model to select for the given request. Select the model
     best suited to your domain to get best results. If a model is not
     explicitly specified, then we auto-select a model based on the parameters
@@ -268,40 +368,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     &lt;/table&gt;</li>
 </ul>
 </li>
-<li><code>profanity-filter=true</code><ul>
+<li><code>profanity-filter=false</code><ul>
 <li><em>Optional</em> If set to <code>true</code>, the server will attempt to filter out
     profanities, replacing all but the initial character in each filtered word
     with asterisks, e.g. &#34;f***&#34;. If set to <code>false</code> or omitted, profanities
     won&#39;t be filtered out.</li>
 </ul>
 </li>
-<li><code>sample-rate-hertz=31</code><ul>
+<li><code>sample-rate-hertz=40</code><ul>
 <li>Sample rate in Hertz of the audio data sent in all
     <code>RecognitionAudio</code> messages. Valid values are: 8000-48000.
     16000 is optimal. For best results, set the sampling rate of the audio
     source to 16000 Hz. If that&#39;s not possible, use the native sample rate of
     the audio source (instead of re-sampling).
-    This field is optional for <code>FLAC</code> and <code>WAV</code> audio files and required
-    for all other audio formats. For details, see AudioEncoding.</li>
+    This field is optional for FLAC and WAV audio files, but is
+    required for all other audio formats. For details, see AudioEncoding.</li>
 </ul>
 </li>
 <li><code>use-enhanced=true</code><ul>
 <li>
 <p><em>Optional</em> Set to true to use an enhanced model for speech recognition.
     If <code>use_enhanced</code> is set to true and the <code>model</code> field is not set, then
-    an appropriate enhanced model is chosen if:</p>
-<ol>
-<li>project is eligible for requesting enhanced models</li>
-<li>an enhanced model exists for the audio</li>
-</ol>
+    an appropriate enhanced model is chosen if an enhanced model exists for
+    the audio.</p>
 <p>If <code>use_enhanced</code> is true and an enhanced version of the specified model
 does not exist, then the speech is recognized using the standard version
 of the specified model.</p>
-<p>Enhanced speech models require that you opt-in to data logging using
-instructions in the
-<a href="../speech-to-text/docs/enable-data-logging">documentation</a>. If you set
-<code>use_enhanced</code> to true and you have not enabled audio logging, then you
-will receive an error.</p>
 </li>
 </ul>
 </li>
@@ -405,7 +497,7 @@ will receive an error.</p>
         <a href="../speech_recognize/" class="btn btn-neutral float-right" title="Recognize">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../operations_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-operations-list/" class="btn btn-neutral" title="Locations Operations List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -415,7 +507,7 @@ will receive an error.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -435,7 +527,7 @@ will receive an error.</p>
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/speech1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../operations_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-operations-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../speech_recognize/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Vision (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Vision v1.0.8+20181001</title>
+  <title>Home - Vision v1.0.10+20190628</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Vision v1.0.8+20181001</a>
+        <a href="." class="icon icon-home"> Vision v1.0.10+20190628</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,6 +79,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="files_annotate/">Annotate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="files_async-batch-annotate/">Async Batch Annotate</a>
                 </li>
     </ul>
@@ -91,6 +95,10 @@
                 <li class="">
                     
     <a class="" href="images_annotate/">Annotate</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="images_async-batch-annotate/">Async Batch Annotate</a>
                 </li>
     </ul>
 	    </li>
@@ -129,6 +137,93 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="projects_locations-operations-get/">Locations Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-add-product/">Locations Product Sets Add Product</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-create/">Locations Product Sets Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-delete/">Locations Product Sets Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-get/">Locations Product Sets Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-import/">Locations Product Sets Import</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-list/">Locations Product Sets List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-patch/">Locations Product Sets Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-products-list/">Locations Product Sets Products List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-product-sets-remove-product/">Locations Product Sets Remove Product</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-create/">Locations Products Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-delete/">Locations Products Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-get/">Locations Products Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-list/">Locations Products List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-patch/">Locations Products Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-reference-images-create/">Locations Products Reference Images Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-reference-images-delete/">Locations Products Reference Images Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-reference-images-get/">Locations Products Reference Images Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-products-reference-images-list/">Locations Products Reference Images List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_operations-get/">Operations Get</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -139,7 +234,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Vision v1.0.8+20181001</a>
+        <a href=".">Vision v1.0.10+20190628</a>
       </nav>
 
       
@@ -183,12 +278,14 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/vision1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Vision</em> API at revision <em>20181001</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Vision</em> API at revision <em>20190628</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">vision1 [options]
         files
+                annotate (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 async-batch-annotate (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         images
                 annotate (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                async-batch-annotate (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         locations
                 operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         operations
@@ -196,6 +293,27 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        projects
+                locations-operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-add-product &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-import &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-products-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-product-sets-remove-product &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-reference-images-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-reference-images-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-reference-images-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-products-reference-images-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
   vision1 --help
 
 Configuration:
@@ -260,7 +378,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="files_async-batch-annotate/" class="btn btn-neutral float-right" title="Async Batch Annotate">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="files_annotate/" class="btn btn-neutral float-right" title="Annotate">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -271,7 +389,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -292,7 +410,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="files_async-batch-annotate/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="files_annotate/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -303,5 +421,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:47:18
+Build Date UTC : 2019-07-05 11:12:10
 -->

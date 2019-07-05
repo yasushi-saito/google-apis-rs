@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Ad Exchange Buyer v1.0.8+20180823</title>
+  <title>Insert - Ad Exchange Buyer v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -216,7 +216,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href="..">Ad Exchange Buyer v1.0.10+20190614</a>
       </nav>
 
       
@@ -257,6 +257,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>Creative:
   html-snippet: string
   account-id: integer
+  ad-technology-providers:
+    detected-provider-ids: [string]
+    has-unidentified-provider: boolean
   advertiser-id: [string]
   advertiser-name: string
   agency-id: string
@@ -290,7 +293,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       width: integer
     price: string
     star-rating: number
-    store: string
   product-categories: [integer]
   restricted-categories: [integer]
   sensitive-categories: [integer]
@@ -312,99 +314,112 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Account id.</li>
 </ul>
 </li>
-<li><code>advertiser-id=et</code><ul>
+<li><code>ad-technology-providers    detected-provider-ids=et</code><ul>
+<li>No description provided.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>has-unidentified-provider=false</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..    advertiser-id=aliquyam</code></p>
+<ul>
 <li>Detected advertiser id, if any. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>advertiser-name=duo</code><ul>
+<li><code>advertiser-name=sea</code><ul>
 <li>The name of the company being advertised in the creative.</li>
 </ul>
 </li>
-<li><code>agency-id=aliquyam</code><ul>
+<li><code>agency-id=lorem</code><ul>
 <li>The agency id for this creative.</li>
 </ul>
 </li>
-<li><code>api-upload-timestamp=sea</code><ul>
+<li><code>api-upload-timestamp=eos</code><ul>
 <li>The last upload timestamp of this creative if it was uploaded via API. Read-only. The value of this field is generated, and will be ignored for uploads. (formatted RFC 3339 timestamp).</li>
 </ul>
 </li>
-<li><code>attribute=46</code><ul>
+<li><code>attribute=20</code><ul>
 <li>All attributes for the ads that may be shown from this snippet.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>buyer-creative-id=eos</code><ul>
+<li><code>buyer-creative-id=sadipscing</code><ul>
 <li>A buyer-specific id identifying the creative in this ad.</li>
 </ul>
 </li>
-<li><code>click-through-url=erat</code><ul>
+<li><code>click-through-url=dolor</code><ul>
 <li>The set of destination urls for the snippet.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>filtering-reasons    date=sadipscing</code></p>
+<p><code>filtering-reasons    date=eirmod</code></p>
 <ul>
 <li>The date in ISO 8601 format for the data. The data is collected from 00:00:00 to 23:59:59 in PST.</li>
 </ul>
 </li>
 <li>
-<p><code>..    height=53</code></p>
+<p><code>..    height=58</code></p>
 <ul>
 <li>Ad height.</li>
 </ul>
 </li>
-<li><code>impression-tracking-url=eirmod</code><ul>
+<li><code>impression-tracking-url=amet</code><ul>
 <li>The set of urls to be called to record an impression.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=no</code><ul>
 <li>Resource type.</li>
 </ul>
 </li>
-<li><code>native-ad    advertiser=amet</code><ul>
+<li><code>native-ad    advertiser=labore</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>app-icon    height=41</code><ul>
+<li><code>app-icon    height=62</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=labore</code><ul>
+<li><code>url=dolore</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>width=62</code></p>
+<p><code>width=64</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    body=dolore</code></p>
+<p><code>..    body=aliquyam</code></p>
 <ul>
 <li>A long description of the ad.</li>
 </ul>
 </li>
-<li><code>call-to-action=invidunt</code><ul>
+<li><code>call-to-action=accusam</code><ul>
 <li>A label for the button that the user is supposed to click.</li>
 </ul>
 </li>
-<li><code>click-tracking-url=aliquyam</code><ul>
+<li><code>click-tracking-url=lorem</code><ul>
 <li>The URL to use for click tracking.</li>
 </ul>
 </li>
-<li><code>headline=accusam</code><ul>
+<li><code>headline=sea</code><ul>
 <li>A short title for the ad.</li>
 </ul>
 </li>
-<li><code>image    height=45</code><ul>
+<li><code>image    height=80</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=sea</code><ul>
+<li><code>url=duo</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
@@ -415,22 +430,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    impression-tracking-url=duo</code></p>
+<p><code>..    impression-tracking-url=eirmod</code></p>
 <ul>
 <li>The URLs are called when the impression is rendered.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>logo    height=80</code><ul>
+<li><code>logo    height=43</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=eirmod</code><ul>
+<li><code>url=et</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>width=43</code></p>
+<p><code>width=55</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
@@ -441,38 +456,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The price of the promoted app including the currency info.</li>
 </ul>
 </li>
-<li><code>star-rating=0.549609244211</code><ul>
+<li>
+<p><code>star-rating=0.555410189379</code></p>
+<ul>
 <li>The app rating in the app store. Must be in the range [0-5].</li>
 </ul>
 </li>
 <li>
-<p><code>store=et</code></p>
-<ul>
-<li>The URL to the app store to purchase/download the promoted app.</li>
-</ul>
-</li>
-<li>
-<p><code>..    product-categories=56</code></p>
+<p><code>..    product-categories=65</code></p>
 <ul>
 <li>Detected product categories, if any. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>restricted-categories=65</code><ul>
+<li><code>restricted-categories=85</code><ul>
 <li>All restricted categories for the ads that may be shown from this snippet.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>sensitive-categories=85</code><ul>
+<li><code>sensitive-categories=21</code><ul>
 <li>Detected sensitive categories, if any. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>status=sed</code><ul>
+<li><code>status=dolor</code><ul>
 <li>Creative serving status. Read-only. This field should not be set in requests.</li>
 </ul>
 </li>
-<li><code>vendor-type=98</code><ul>
+<li><code>vendor-type=53</code><ul>
 <li>All vendor types for the ads that may be shown from this snippet.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -481,11 +492,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The version for this creative. Read-only. This field should not be set in requests.</li>
 </ul>
 </li>
-<li><code>video-url=dolor</code><ul>
+<li><code>video-url=et</code><ul>
 <li>The URL to fetch a video ad. If set, HTMLSnippet and the nativeAd should not be set.</li>
 </ul>
 </li>
-<li><code>width=78</code><ul>
+<li><code>width=5</code><ul>
 <li>Ad width.</li>
 </ul>
 </li>
@@ -575,7 +586,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

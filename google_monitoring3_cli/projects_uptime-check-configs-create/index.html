@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Uptime Check Configs Create - Monitoring v1.0.8+20181009</title>
+  <title>Uptime Check Configs Create - Monitoring v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -244,7 +244,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.8+20181009</a>
+        <a href="..">Monitoring v1.0.10+20190629</a>
       </nav>
 
       
@@ -304,7 +304,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     path: string
     port: integer
     use-ssl: boolean
-  is-internal: boolean
   monitored-resource:
     labels: { string: string }
     type: string
@@ -322,22 +321,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    display-name=consetetur</code><ul>
+<li><code>-r .    display-name=amet.</code><ul>
 <li>A human-friendly name for the uptime check configuration. The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however, uniqueness is not enforced. Required.</li>
 </ul>
 </li>
-<li><code>http-check.auth-info    password=amet.</code><ul>
+<li><code>http-check.auth-info    password=voluptua.</code><ul>
 <li>The password to authenticate.</li>
 </ul>
 </li>
 <li>
-<p><code>username=voluptua.</code></p>
+<p><code>username=lorem</code></p>
 <ul>
 <li>The username to authenticate.</li>
 </ul>
 </li>
 <li>
-<p><code>..    headers=key=lorem</code></p>
+<p><code>..    headers=key=gubergren</code></p>
 <ul>
 <li>The list of headers to send as part of the uptime check request. If two headers have the same key and different values, they should be entered as a single header, with the value being a comma-separated list of all the desired values as described at https://www.w3.org/Protocols/rfc2616/rfc2616.txt (page 31). Entering two separate headers with the same key in a Create call will cause the first to be overwritten by the second. The maximum number of headers allowed is 100.</li>
 <li>the value will be associated with the given <code>key</code></li>
@@ -347,11 +346,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Boolean specifiying whether to encrypt the header information. Encryption should be specified for any headers related to authentication that you do not wish to be seen when retrieving the configuration. The server will be responsible for encrypting the headers. On Get/List calls, if mask_headers is set to True then the headers will be obscured with <strong>*</strong>*.</li>
 </ul>
 </li>
-<li><code>path=justo</code><ul>
-<li>The path to the page to run the check against. Will be combined with the host (specified within the MonitoredResource) and port to construct the full URL. Optional (defaults to &#34;/&#34;).</li>
+<li><code>path=sit</code><ul>
+<li>The path to the page to run the check against. Will be combined with the host (specified within the MonitoredResource) and port to construct the full URL. Optional (defaults to &#34;/&#34;). If the provided path does not begin with &#34;/&#34;, it will be prepended automatically.</li>
 </ul>
 </li>
-<li><code>port=49</code><ul>
+<li><code>port=75</code><ul>
 <li>The port to the page to run the check against. Will be combined with host (specified within the MonitoredResource) and path to construct the full URL. Optional (defaults to 80 without SSL, or 443 with SSL).</li>
 </ul>
 </li>
@@ -362,12 +361,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    is-internal=true</code></p>
+<p><code>..monitored-resource    labels=key=rebum.</code></p>
 <ul>
-<li>Denotes whether this is a check that egresses from InternalCheckers.</li>
-</ul>
-</li>
-<li><code>monitored-resource    labels=key=rebum.</code><ul>
 <li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels &#34;project_id&#34;, &#34;instance_id&#34;, and &#34;zone&#34;.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -385,7 +380,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>period=vero</code><ul>
-<li>How often, in seconds, the uptime check is performed. Currently, the only supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes), and 900s (15 minutes). Optional, defaults to 300s.</li>
+<li>How often, in seconds, the uptime check is performed. Currently, the only supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes), and 900s (15 minutes). Optional, defaults to 60s.</li>
 </ul>
 </li>
 <li><code>resource-group    group-id=sadipscing</code><ul>
@@ -401,7 +396,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    selected-regions=consetetur</code></p>
 <ul>
-<li>The list of regions from which the check will be run. If this field is specified, enough regions to include a minimum of 3 locations must be provided, or an error message is returned. Not specifying this field will result in uptime checks running from all regions.</li>
+<li>The list of regions from which the check will be run. Some regions contain one location, and others contain more than one. If this field is specified, enough regions to include a minimum of 3 locations must be provided, or an error message is returned. Not specifying this field will result in uptime checks running from all regions.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -527,7 +522,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

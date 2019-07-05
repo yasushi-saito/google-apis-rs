@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Zones Clusters Update - Container v1.0.8+20180917</title>
+  <title>Zones Clusters Update - Container v1.0.10+20190610</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Container v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> Container v1.0.10+20190610</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,6 +58,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_aggregated-usable-subnetworks-list/">Aggregated Usable Subnetworks List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-clusters-complete-ip-rotation/">Locations Clusters Complete Ip Rotation</a>
                 </li>
                 <li class="">
@@ -71,6 +75,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-get/">Locations Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-get-jwks/">Locations Clusters Get Jwks</a>
                 </li>
                 <li class="">
                     
@@ -159,6 +167,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-update-master/">Locations Clusters Update Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-well-known-get-openid-configuration/">Locations Clusters Well Known Get Openid Configuration</a>
                 </li>
                 <li class="">
                     
@@ -333,7 +345,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Container v1.0.8+20180917</a>
+        <a href="..">Container v1.0.10+20190610</a>
       </nav>
 
       
@@ -408,6 +420,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         disabled: boolean
     desired-image-type: string
     desired-locations: [string]
+    desired-logging-service: string
     desired-master-authorized-networks-config:
       enabled: boolean
     desired-master-version: string
@@ -418,18 +431,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       min-node-count: integer
     desired-node-pool-id: string
     desired-node-version: string
+    desired-resource-usage-export-config:
+      bigquery-destination:
+        dataset-id: string
+      consumption-metering-config:
+        enabled: boolean
+      enable-network-egress-metering: boolean
   zone: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    cluster-id=accusam</code><ul>
+<li><code>-r .    cluster-id=invidunt</code><ul>
 <li>Deprecated. The name of the cluster to upgrade.
     This field has been deprecated and replaced by the name field.</li>
 </ul>
 </li>
-<li><code>name=diam</code><ul>
+<li><code>name=amet</code><ul>
 <li>The name (project, location, cluster) of the cluster to update.
     Specified in the format &#39;projects/<em>/locations/</em>/clusters/*&#39;.</li>
 </ul>
@@ -441,7 +460,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>update.desired-addons-config.horizontal-pod-autoscaling    disabled=false</code></p>
+<p><code>update.desired-addons-config.horizontal-pod-autoscaling    disabled=true</code></p>
 <ul>
 <li>Whether the Horizontal Pod Autoscaling feature is enabled in the cluster.
     When enabled, it ensures that a Heapster pod is running in the cluster,
@@ -457,42 +476,53 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..kubernetes-dashboard    disabled=false</code></p>
+<p><code>..kubernetes-dashboard    disabled=true</code></p>
 <ul>
 <li>Whether the Kubernetes Dashboard is enabled for this cluster.</li>
 </ul>
 </li>
 <li>
-<p><code>..network-policy-config    disabled=false</code></p>
+<p><code>..network-policy-config    disabled=true</code></p>
 <ul>
 <li>Whether NetworkPolicy is enabled for this cluster.</li>
 </ul>
 </li>
 <li>
-<p><code>...    desired-image-type=eirmod</code></p>
+<p><code>...    desired-image-type=sit</code></p>
 <ul>
 <li>The desired image type for the node pool.
     NOTE: Set the &#34;desired_node_pool&#34; field as well.</li>
 </ul>
 </li>
 <li>
-<p><code>desired-locations=sed</code></p>
+<p><code>desired-locations=justo</code></p>
 <ul>
 <li>
 <p>The desired list of Google Compute Engine
-    <a href="../compute/docs/zones#available">locations</a> in which the cluster&#39;s nodes
+    <a href="../compute/docs/zones#available">zones</a> in which the cluster&#39;s nodes
     should be located. Changing the locations a cluster is in will result
     in nodes being either created or removed from the cluster, depending on
     whether locations are being added or removed.</p>
 <p>This list must always include the cluster&#39;s primary zone.
     - Each invocation of this argument appends the given value to the array.
-* <code>desired-master-authorized-networks-config    enabled=false</code>
-    - Whether or not master authorized networks is enabled.</p>
+* <code>desired-logging-service=gubergren</code>
+    - The logging service the cluster should use to write logs.
+Currently available options:</p>
+<ul>
+<li>&#34;logging.googleapis.com/kubernetes&#34; - the Google Cloud Logging
+service with Kubernetes-native resource model in Stackdriver</li>
+<li>&#34;logging.googleapis.com&#34; - the Google Cloud Logging service</li>
+<li>&#34;none&#34; - no logs will be exported from the cluster</li>
+<li><code>desired-master-authorized-networks-config    enabled=false</code><ul>
+<li>Whether or not master authorized networks is enabled.</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    desired-master-version=sanctus</code></p>
+<p><code>..    desired-master-version=amet.</code></p>
 <ul>
 <li>
 <p>The Kubernetes version to change the master to.</p>
@@ -512,19 +542,21 @@ Currently available options:</li>
 </ul>
 </li>
 <li>
-<p>&#34;monitoring.googleapis.com&#34; - the Google Cloud Monitoring service</p>
+<p>&#34;monitoring.googleapis.com/kubernetes&#34; - the Google Cloud Monitoring
+service with Kubernetes-native resource model in Stackdriver</p>
 </li>
+<li>&#34;monitoring.googleapis.com&#34; - the Google Cloud Monitoring service</li>
 <li>&#34;none&#34; - no metrics will be exported from the cluster</li>
 <li><code>desired-node-pool-autoscaling    enabled=false</code><ul>
 <li>Is autoscaling enabled for this node pool.</li>
 </ul>
 </li>
-<li><code>max-node-count=67</code><ul>
+<li><code>max-node-count=14</code><ul>
 <li>Maximum number of nodes in the NodePool. Must be &gt;= min_node_count. There
 has to enough quota to scale up the cluster.</li>
 </ul>
 </li>
-<li><code>min-node-count=31</code><ul>
+<li><code>min-node-count=68</code><ul>
 <li>Minimum number of nodes in the NodePool. Must be &gt;= 1 and &lt;=
 max_node_count.</li>
 </ul>
@@ -534,7 +566,7 @@ max_node_count.</li>
 </ul>
 </li>
 <li>
-<p><code>..    desired-node-pool-id=ipsum</code></p>
+<p><code>..    desired-node-pool-id=amet.</code></p>
 <ul>
 <li>The node pool to be upgraded. This field is mandatory if
     &#34;desired_node_version&#34;, &#34;desired_image_family&#34; or
@@ -543,7 +575,7 @@ max_node_count.</li>
 </ul>
 </li>
 <li>
-<p><code>desired-node-version=diam</code></p>
+<p><code>desired-node-version=eirmod</code></p>
 <ul>
 <li>
 <p>The Kubernetes version to change the nodes to (typically an
@@ -556,12 +588,31 @@ Kubernetes Engine or version aliases, which have the following behavior:</p>
 <li>&#34;1.X.Y&#34;: picks the highest valid gke.N patch in the 1.X.Y version</li>
 <li>&#34;1.X.Y-gke.N&#34;: picks an explicit Kubernetes version</li>
 <li>&#34;-&#34;: picks the Kubernetes master version</li>
+<li><code>desired-resource-usage-export-config.bigquery-destination    dataset-id=ea</code><ul>
+<li>The ID of a BigQuery Dataset.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    zone=sed</code></p>
+<p><code>..consumption-metering-config    enabled=true</code></p>
+<ul>
+<li>Whether to enable consumption metering for this cluster. If enabled, a
+    second BigQuery table will be created to hold resource consumption
+    records.</li>
+</ul>
+</li>
+<li>
+<p><code>..    enable-network-egress-metering=true</code></p>
+<ul>
+<li>Whether to enable network egress metering for this cluster. If enabled, a
+    daemonset will be created in the cluster to meter network egress traffic.</li>
+</ul>
+</li>
+<li>
+<p><code>...    zone=sanctus</code></p>
 <ul>
 <li>Deprecated. The name of the Google Compute Engine
     <a href="../compute/docs/zones#available">zone</a> in which the cluster
@@ -679,7 +730,7 @@ Kubernetes Engine or version aliases, which have the following behavior:</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

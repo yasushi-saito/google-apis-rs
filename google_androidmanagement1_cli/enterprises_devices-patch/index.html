@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Devices Patch - Android Management v1.0.8+20181001</title>
+  <title>Devices Patch - Android Management v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Management v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Android Management v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -161,6 +161,26 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../enterprises_web-apps-create/">Web Apps Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-delete/">Web Apps Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-get/">Web Apps Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-list/">Web Apps List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-patch/">Web Apps Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../enterprises_web-tokens-create/">Web Tokens Create</a>
                 </li>
     </ul>
@@ -187,7 +207,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Management v1.0.8+20181001</a>
+        <a href="..">Android Management v1.0.10+20190624</a>
       </nav>
 
       
@@ -294,6 +314,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     primary-language-code: string
     security-patch-level: string
   state: string
+  system-properties: { string: string }
   user:
     account-identifier: string
   user-name: string
@@ -556,14 +577,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The state to be applied to the device. This field can be modified by a patch request. Note that when calling enterprises.devices.patch, ACTIVE and DISABLED are the only allowable values. To enter the device into a DELETED state, call enterprises.devices.delete.</li>
 </ul>
 </li>
+<li><code>system-properties=key=justo</code><ul>
+<li>Map of selected system properties name and value related to the device.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
 <li>
-<p><code>user    account-identifier=justo</code></p>
+<p><code>user    account-identifier=sit</code></p>
 <ul>
 <li>A unique identifier you create for this user, such as user342 or asset#44418. This field must be set when the user is created and can&#39;t be updated. This field must not contain personally identifiable information (PII). This identifier must be 1024 characters or less; otherwise, the update policy request will fail.</li>
 </ul>
 </li>
 <li>
-<p><code>..    user-name=sit</code></p>
+<p><code>..    user-name=vero</code></p>
 <ul>
 <li>The resource name of the user that owns this device in the form enterprises/{enterpriseId}/users/{userId}.</li>
 </ul>
@@ -688,7 +714,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

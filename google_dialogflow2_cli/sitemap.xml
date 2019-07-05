@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,218 +12,230 @@
     
         
     <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-batch-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-batch-update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-entities-batch-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-entities-batch-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-entities-batch-update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-entity-types-patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-export/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-import/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-batch-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-batch-update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-intents-patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-restore/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-search/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-contexts-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-contexts-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-contexts-get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-contexts-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-contexts-patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-delete-contexts/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-detect-intent/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-entity-types-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-entity-types-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-entity-types-get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-entity-types-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-sessions-entity-types-patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_agent-train/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_delete-agent/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_get-agent/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dialogflow2-cli/projects_operations-get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

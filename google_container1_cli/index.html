@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Container (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Container v1.0.8+20180917</title>
+  <title>Home - Container v1.0.10+20190610</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Container v1.0.8+20180917</a>
+        <a href="." class="icon icon-home"> Container v1.0.10+20190610</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,6 +79,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="projects_aggregated-usable-subnetworks-list/">Aggregated Usable Subnetworks List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_locations-clusters-complete-ip-rotation/">Locations Clusters Complete Ip Rotation</a>
                 </li>
                 <li class="">
@@ -92,6 +96,10 @@
                 <li class="">
                     
     <a class="" href="projects_locations-clusters-get/">Locations Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-clusters-get-jwks/">Locations Clusters Get Jwks</a>
                 </li>
                 <li class="">
                     
@@ -180,6 +188,10 @@
                 <li class="">
                     
     <a class="" href="projects_locations-clusters-update-master/">Locations Clusters Update Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-clusters-well-known-get-openid-configuration/">Locations Clusters Well Known Get Openid Configuration</a>
                 </li>
                 <li class="">
                     
@@ -330,7 +342,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Container v1.0.8+20180917</a>
+        <a href=".">Container v1.0.10+20190610</a>
       </nav>
 
       
@@ -374,13 +386,15 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Container</em> API at revision <em>20180917</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Container</em> API at revision <em>20190610</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">container1 [options]
         projects
+                aggregated-usable-subnetworks-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-complete-ip-rotation &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-clusters-get-jwks &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-node-pools-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-node-pools-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -403,6 +417,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 locations-clusters-start-ip-rotation &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-update &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-clusters-update-master &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-clusters-well-known-get-openid-configuration &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-get-server-config &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-operations-cancel &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -501,7 +516,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="projects_locations-clusters-complete-ip-rotation/" class="btn btn-neutral float-right" title="Locations Clusters Complete Ip Rotation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="projects_aggregated-usable-subnetworks-list/" class="btn btn-neutral float-right" title="Aggregated Usable Subnetworks List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -512,7 +527,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -533,7 +548,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="projects_locations-clusters-complete-ip-rotation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="projects_aggregated-usable-subnetworks-list/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -544,5 +559,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:48:11
+Build Date UTC : 2019-07-05 11:12:50
 -->

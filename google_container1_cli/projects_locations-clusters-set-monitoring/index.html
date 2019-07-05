@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Clusters Set Monitoring - Container v1.0.8+20180917</title>
+  <title>Locations Clusters Set Monitoring - Container v1.0.10+20190610</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Container v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> Container v1.0.10+20190610</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,6 +58,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_aggregated-usable-subnetworks-list/">Aggregated Usable Subnetworks List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-clusters-complete-ip-rotation/">Locations Clusters Complete Ip Rotation</a>
                 </li>
                 <li class="">
@@ -71,6 +75,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-get/">Locations Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-get-jwks/">Locations Clusters Get Jwks</a>
                 </li>
                 <li class="">
                     
@@ -183,6 +191,10 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-clusters-update-master/">Locations Clusters Update Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-clusters-well-known-get-openid-configuration/">Locations Clusters Well Known Get Openid Configuration</a>
                 </li>
                 <li class="">
                     
@@ -333,7 +345,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Container v1.0.8+20180917</a>
+        <a href="..">Container v1.0.10+20190610</a>
       </nav>
 
       
@@ -390,30 +402,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    cluster-id=takimata</code><ul>
+<li><code>-r .    cluster-id=aliquyam</code><ul>
 <li>Deprecated. The name of the cluster to upgrade.
     This field has been deprecated and replaced by the name field.</li>
 </ul>
 </li>
-<li><code>monitoring-service=et</code><ul>
+<li><code>monitoring-service=elitr</code><ul>
 <li>
 <p>The monitoring service the cluster should use to write metrics.
     Currently available options:</p>
 <ul>
+<li>&#34;monitoring.googleapis.com/kubernetes&#34; - the Google Cloud Monitoring
+service with Kubernetes-native resource model in Stackdriver</li>
 <li>&#34;monitoring.googleapis.com&#34; - the Google Cloud Monitoring service</li>
 <li>&#34;none&#34; - no metrics will be exported from the cluster</li>
-<li><code>name=nonumy</code><ul>
+<li><code>name=consetetur</code><ul>
 <li>The name (project, location, cluster) of the cluster to set monitoring.
 Specified in the format &#39;projects/<em>/locations/</em>/clusters/*&#39;.</li>
 </ul>
 </li>
-<li><code>project-id=et</code><ul>
+<li><code>project-id=sea</code><ul>
 <li>Deprecated. The Google Developers Console <a href="https://support.google.com/cloud/answer/6158840">project ID or project
 number</a>.
 This field has been deprecated and replaced by the name field.</li>
 </ul>
 </li>
-<li><code>zone=sed</code><ul>
+<li><code>zone=elitr</code><ul>
 <li>Deprecated. The name of the Google Compute Engine
 <a href="../compute/docs/zones#available">zone</a> in which the cluster
 resides.
@@ -534,7 +548,7 @@ This field has been deprecated and replaced by the name field.</li>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

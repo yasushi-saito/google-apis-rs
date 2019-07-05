@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Jobs Patch - Cloud Machine Learning Engine v1.0.8+20181009</title>
+  <title>Jobs Patch - Cloud Machine Learning Engine v1.0.10+20190621</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.10+20190621</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -189,10 +189,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../projects_operations-delete/">Operations Delete</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../projects_operations-get/">Operations Get</a>
                 </li>
                 <li class="">
@@ -216,7 +212,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning Engine v1.0.8+20181009</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.10+20190621</a>
       </nav>
 
       
@@ -270,9 +266,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   job-id: string
   labels: { string: string }
   prediction-input:
-    accelerator:
-      count: string
-      type: string
     batch-size: string
     data-format: string
     input-paths: [string]
@@ -299,12 +292,26 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       enable-trial-early-stopping: boolean
       goal: string
       hyperparameter-metric-tag: string
+      max-failed-trials: integer
       max-parallel-trials: integer
       max-trials: integer
       resume-previous-job-id: string
     job-dir: string
+    master-config:
+      accelerator-config:
+        count: string
+        type: string
+      image-uri: string
+      tpu-tf-version: string
     master-type: string
+    max-running-time: string
     package-uris: [string]
+    parameter-server-config:
+      accelerator-config:
+        count: string
+        type: string
+      image-uri: string
+      tpu-tf-version: string
     parameter-server-count: int64
     parameter-server-type: string
     python-module: string
@@ -312,30 +319,43 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     region: string
     runtime-version: string
     scale-tier: string
+    worker-config:
+      accelerator-config:
+        count: string
+        type: string
+      image-uri: string
+      tpu-tf-version: string
     worker-count: int64
     worker-type: string
   training-output:
+    built-in-algorithm-output:
+      framework: string
+      model-path: string
+      python-version: string
+      runtime-version: string
     completed-trial-count: int64
     consumed-ml-units: number
+    hyperparameter-metric-tag: string
+    is-built-in-algorithm-job: boolean
     is-hyperparameter-tuning-job: boolean
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=et</code><ul>
+<li><code>-r .    create-time=voluptua.</code><ul>
 <li>Output only. When the job was created.</li>
 </ul>
 </li>
-<li><code>end-time=duo</code><ul>
+<li><code>end-time=lorem</code><ul>
 <li>Output only. When the job processing was completed.</li>
 </ul>
 </li>
-<li><code>error-message=et</code><ul>
+<li><code>error-message=gubergren</code><ul>
 <li>Output only. The details of a failure or a cancellation.</li>
 </ul>
 </li>
-<li><code>etag=eirmod</code><ul>
+<li><code>etag=justo</code><ul>
 <li><code>etag</code> is used for optimistic concurrency control as a way to help
     prevent simultaneous updates of a job from overwriting each other.
     It is strongly suggested that systems make use of the <code>etag</code> in the
@@ -345,11 +365,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     ensure that their change will be applied to the same version of the job.</li>
 </ul>
 </li>
-<li><code>job-id=sanctus</code><ul>
+<li><code>job-id=sit</code><ul>
 <li>Required. The user-specified id of the job.</li>
 </ul>
 </li>
-<li><code>labels=key=et</code><ul>
+<li><code>labels=key=vero</code><ul>
 <li>Optional. One or more labels that you can add, to organize your jobs.
     Each label is a key-value pair, where both the key and the value are
     arbitrary strings that you supply.
@@ -358,62 +378,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>prediction-input.accelerator    count=amet</code><ul>
-<li>The number of accelerators to attach to each machine running the job.</li>
-</ul>
-</li>
-<li>
-<p><code>type=et</code></p>
-<ul>
-<li>The available types of accelerators.</li>
-</ul>
-</li>
-<li>
-<p><code>..    batch-size=consetetur</code></p>
-<ul>
+<li><code>prediction-input    batch-size=diam</code><ul>
 <li>Optional. Number of records per batch, defaults to 64.
     The service will buffer batch_size number of records in memory before
     invoking one Tensorflow prediction call internally. So take the record
     size and memory available into consideration when setting this parameter.</li>
 </ul>
 </li>
-<li><code>data-format=ut</code><ul>
+<li><code>data-format=rebum.</code><ul>
 <li>Required. The format of the input data files.</li>
 </ul>
 </li>
-<li><code>input-paths=ea</code><ul>
-<li>Required. The Google Cloud Storage location of the input data files.
-    May contain wildcards.</li>
+<li><code>input-paths=consetetur</code><ul>
+<li>Required. The Cloud Storage location of the input data files. May contain
+    &lt;a href=&#34;/storage/docs/gsutil/addlhelp/WildcardNames&#34;&gt;wildcards&lt;/a&gt;.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>max-worker-count=-80</code><ul>
+<li><code>max-worker-count=-44</code><ul>
 <li>Optional. The maximum number of workers to be used for parallel processing.
     Defaults to 10 if not specified.</li>
 </ul>
 </li>
 <li>
-<p><code>model-name=dolor</code></p>
+<p><code>model-name=vero</code></p>
 <ul>
 <li>
 <p>Use this field if you want to use the default version for the specified
     model. The string must use the following format:</p>
 <p><code>&amp;#34;projects/YOUR_PROJECT/models/YOUR_MODEL&amp;#34;</code>
-<em> <code>output-data-format=dolor</code>
+* <code>output-data-format=sadipscing</code>
     - Optional. Format of the output data files, defaults to JSON.
-</em> <code>output-path=dolor</code>
+* <code>output-path=invidunt</code>
     - Required. The output Google Cloud Storage location.
-<em> <code>region=et</code>
+* <code>region=consetetur</code>
     - Required. The Google Compute Engine region to run the prediction job in.
 See the &lt;a href=&#34;/ml-engine/docs/tensorflow/regions&#34;&gt;available regions&lt;/a&gt;
-for ML Engine services.
-</em> <code>runtime-version=consetetur</code>
-    - Optional. The Google Cloud ML runtime version to use for this batch
-prediction. If not set, Google Cloud ML will pick the runtime version used
+for AI Platform services.
+* <code>runtime-version=dolore</code>
+    - Optional. The AI Platform runtime version to use for this batch
+prediction. If not set, AI Platform will pick the runtime version used
 during the CreateVersion request for this model version, or choose the
 latest stable version when model version information is not available
 such as when the model is specified by uri.
-* <code>signature-name=amet.</code>
+* <code>signature-name=duo</code>
     - Optional. The name of the signature defined in the SavedModel to use for
 this job. Please refer to
 <a href="https://tensorflow.github.io/serving/serving_basic.html">SavedModel</a>
@@ -421,10 +429,10 @@ for information about how to use signatures.</p>
 <p>Defaults to
 <a href="https://www.tensorflow.org/api_docs/python/tf/saved_model/signature_constants">DEFAULT_SERVING_SIGNATURE_DEF_KEY</a>
 , which is &#34;serving_default&#34;.
-<em> <code>uri=voluptua.</code>
+* <code>uri=aliquyam</code>
     - Use this field if you want to specify a Google Cloud Storage path for
 the model to use.
-</em> <code>version-name=lorem</code>
+* <code>version-name=lorem</code>
     - Use this field if you want to specify a version of the model to use. The
 string is formatted the same way as <code>model_version</code>, with the addition
 of the version information:</p>
@@ -433,66 +441,72 @@ of the version information:</p>
 </ul>
 </li>
 <li>
-<p><code>..prediction-output    error-count=-11</code></p>
+<p><code>..prediction-output    error-count=-17</code></p>
 <ul>
 <li>The number of data instances which resulted in errors.</li>
 </ul>
 </li>
-<li><code>node-hours=0.804989036339</code><ul>
+<li><code>node-hours=0.877582930428</code><ul>
 <li>Node hours used by the batch prediction job.</li>
 </ul>
 </li>
-<li><code>output-path=sit</code><ul>
+<li><code>output-path=consetetur</code><ul>
 <li>The output Google Cloud Storage location provided at the job creation time.</li>
 </ul>
 </li>
 <li>
-<p><code>prediction-count=-26</code></p>
+<p><code>prediction-count=-58</code></p>
 <ul>
 <li>The number of generated predictions.</li>
 </ul>
 </li>
 <li>
-<p><code>..    start-time=diam</code></p>
+<p><code>..    start-time=nonumy</code></p>
 <ul>
 <li>Output only. When the job processing was started.</li>
 </ul>
 </li>
-<li><code>state=rebum.</code><ul>
+<li><code>state=kasd</code><ul>
 <li>Output only. The detailed state of a job.</li>
 </ul>
 </li>
-<li><code>training-input    args=consetetur</code><ul>
+<li><code>training-input    args=sanctus</code><ul>
 <li>Optional. Command line arguments to pass to the program.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>hyperparameters    algorithm=sadipscing</code><ul>
+<li><code>hyperparameters    algorithm=takimata</code><ul>
 <li>Optional. The search algorithm specified for the hyperparameter
     tuning job.
-    Uses the default CloudML Engine hyperparameter tuning
+    Uses the default AI Platform hyperparameter tuning
     algorithm if unspecified.</li>
 </ul>
 </li>
-<li><code>enable-trial-early-stopping=false</code><ul>
+<li><code>enable-trial-early-stopping=true</code><ul>
 <li>Optional. Indicates if the hyperparameter tuning job enables auto trial
     early stopping.</li>
 </ul>
 </li>
 <li>
-<p><code>goal=sadipscing</code></p>
+<p><code>goal=labore</code></p>
 <ul>
 <li>
 <p>Required. The type of goal to use for tuning. Available types are
     <code>MAXIMIZE</code> and <code>MINIMIZE</code>.</p>
 <p>Defaults to <code>MAXIMIZE</code>.
-<em> <code>hyperparameter-metric-tag=invidunt</code>
-    - Optional. The Tensorflow summary tag name to use for optimizing trials. For
-current versions of Tensorflow, this tag name should exactly match what is
-shown in Tensorboard, including all scopes.  For versions of Tensorflow
+* <code>hyperparameter-metric-tag=invidunt</code>
+    - Optional. The TensorFlow summary tag name to use for optimizing trials. For
+current versions of TensorFlow, this tag name should exactly match what is
+shown in TensorBoard, including all scopes.  For versions of TensorFlow
 prior to 0.12, this should be only the tag passed to tf.Summary.
 By default, &#34;training/hptuning/metric&#34; will be used.
-</em> <code>max-parallel-trials=5</code>
+* <code>max-failed-trials=35</code>
+    - Optional. The number of failed trials that need to be seen before failing
+the hyperparameter tuning job. You can specify this field to override the
+default failing criteria for AI Platform hyperparameter tuning jobs.</p>
+<p>Defaults to zero, which means the service decides when a hyperparameter
+job should fail.
+* <code>max-parallel-trials=6</code>
     - Optional. The number of training trials to run concurrently.
 You can reduce the time it takes to perform hyperparameter tuning by adding
 trials in parallel. However, each trail only benefits from the information
@@ -501,11 +515,11 @@ the results of trials running at the same time, which could reduce the
 quality of the overall optimization.</p>
 <p>Each trial will use the same scale tier and machine types.</p>
 <p>Defaults to one.
-* <code>max-trials=17</code>
+* <code>max-trials=35</code>
     - Optional. How many training trials should be attempted to optimize
 the specified hyperparameters.</p>
 <p>Defaults to one.
-* <code>resume-previous-job-id=duo</code>
+* <code>resume-previous-job-id=dolore</code>
     - Optional. The prior hyperparameter tuning job id that users hope to
 continue with. The job id will be used to find the corresponding vizier
 study guid and resume the study.</p>
@@ -513,7 +527,7 @@ study guid and resume the study.</p>
 </ul>
 </li>
 <li>
-<p><code>..    job-dir=aliquyam</code></p>
+<p><code>..    job-dir=nonumy</code></p>
 <ul>
 <li>Optional. A Google Cloud Storage path in which to store training outputs
     and other data needed for training. This path is passed to your TensorFlow
@@ -521,8 +535,34 @@ study guid and resume the study.</p>
     this field is that Cloud ML validates the path for use in training.</li>
 </ul>
 </li>
+<li><code>master-config.accelerator-config    count=sed</code><ul>
+<li>The number of accelerators to attach to each machine running the job.</li>
+</ul>
+</li>
 <li>
-<p><code>master-type=lorem</code></p>
+<p><code>type=aliquyam</code></p>
+<ul>
+<li>The type of accelerator to use.</li>
+</ul>
+</li>
+<li>
+<p><code>..    image-uri=sit</code></p>
+<ul>
+<li>The Docker image to run on the replica. This image must be in Container
+    Registry. Learn more about <a href="../ml-engine/docs/distributed-training-containers">configuring custom
+    containers</a>.</li>
+</ul>
+</li>
+<li>
+<p><code>tpu-tf-version=eirmod</code></p>
+<ul>
+<li>TensorFlow version used in the custom container. This field is required if
+    the replica is a TPU worker that uses a custom container. Otherwise, do not
+    specify this field.</li>
+</ul>
+</li>
+<li>
+<p><code>..    master-type=consetetur</code></p>
 <ul>
 <li>
 <p>Optional. Specifies the type of virtual machine to use for your training
@@ -586,26 +626,22 @@ study guid and resume the study.</p>
   &lt;dt&gt;standard_v100&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to &lt;i&gt;standard&lt;/i&gt; that
-  also includes a single NVIDIA Tesla V100 GPU. The availability of these
-  GPUs is in the &lt;i&gt;Beta&lt;/i&gt; launch stage.
+  also includes a single NVIDIA Tesla V100 GPU.
   &lt;/dd&gt;
   &lt;dt&gt;large_model_v100&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to &lt;i&gt;large_model&lt;/i&gt; that
-  also includes a single NVIDIA Tesla V100 GPU. The availability of these
-  GPUs is in the &lt;i&gt;Beta&lt;/i&gt; launch stage.
+  also includes a single NVIDIA Tesla V100 GPU.
   &lt;/dd&gt;
   &lt;dt&gt;complex_model_m_v100&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to &lt;i&gt;complex_model_m&lt;/i&gt; that
-  also includes four NVIDIA Tesla V100 GPUs. The availability of these
-  GPUs is in the &lt;i&gt;Beta&lt;/i&gt; launch stage.
+  also includes four NVIDIA Tesla V100 GPUs.
   &lt;/dd&gt;
   &lt;dt&gt;complex_model_l_v100&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to &lt;i&gt;complex_model_l&lt;/i&gt; that
-  also includes eight NVIDIA Tesla V100 GPUs. The availability of these
-  GPUs is in the &lt;i&gt;Beta&lt;/i&gt; launch stage.
+  also includes eight NVIDIA Tesla V100 GPUs.
   &lt;/dd&gt;
   &lt;dt&gt;cloud_tpu&lt;/dt&gt;
   &lt;dd&gt;
@@ -614,69 +650,195 @@ study guid and resume the study.</p>
   your model&lt;/a&gt;.
   &lt;/dd&gt;
 &lt;/dl&gt;</p>
+<p>You may also use certain Compute Engine machine types directly in this
+field. The following types are supported:</p>
+<ul>
+<li><code>n1-standard-4</code></li>
+<li><code>n1-standard-8</code></li>
+<li><code>n1-standard-16</code></li>
+<li><code>n1-standard-32</code></li>
+<li><code>n1-standard-64</code></li>
+<li><code>n1-standard-96</code></li>
+<li><code>n1-highmem-2</code></li>
+<li><code>n1-highmem-4</code></li>
+<li><code>n1-highmem-8</code></li>
+<li><code>n1-highmem-16</code></li>
+<li><code>n1-highmem-32</code></li>
+<li><code>n1-highmem-64</code></li>
+<li><code>n1-highmem-96</code></li>
+<li><code>n1-highcpu-16</code></li>
+<li><code>n1-highcpu-32</code></li>
+<li><code>n1-highcpu-64</code></li>
+<li><code>n1-highcpu-96</code></li>
+</ul>
+<p>See more about <a href="../ml-engine/docs/tensorflow/machine-types#compute-engine-machine-types">using Compute Engine machine
+types</a>.</p>
 <p>You must set this value when <code>scaleTier</code> is set to <code>CUSTOM</code>.
-<em> <code>package-uris=et</code>
+* <code>max-running-time=labore</code>
+    - Optional. The maximum job running time. The default is 7 days.
+* <code>package-uris=sed</code>
     - Required. The Google Cloud Storage location of the packages with
 the training program and any additional dependencies.
 The maximum number of package URIs is 100.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>parameter-server-count=-13</code>
-    - Optional. The number of parameter server replicas to use for the training
-job. Each replica in the cluster will be of the type specified in
-<code>parameter_server_type</code>.</p>
+* <code>parameter-server-config.accelerator-config    count=ea</code>
+    - The number of accelerators to attach to each machine running the job.
+* <code>type=gubergren</code>
+    - The type of accelerator to use.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    image-uri=aliquyam</code></p>
+<ul>
+<li>The Docker image to run on the replica. This image must be in Container
+    Registry. Learn more about <a href="../ml-engine/docs/distributed-training-containers">configuring custom
+    containers</a>.</li>
+</ul>
+</li>
+<li>
+<p><code>tpu-tf-version=eos</code></p>
+<ul>
+<li>TensorFlow version used in the custom container. This field is required if
+    the replica is a TPU worker that uses a custom container. Otherwise, do not
+    specify this field.</li>
+</ul>
+</li>
+<li>
+<p><code>..    parameter-server-count=-38</code></p>
+<ul>
+<li>
+<p>Optional. The number of parameter server replicas to use for the training
+    job. Each replica in the cluster will be of the type specified in
+    <code>parameter_server_type</code>.</p>
 <p>This value can only be used when <code>scale_tier</code> is set to <code>CUSTOM</code>.If you
-set this value, you must also set <code>parameter_server_type</code>.
-* <code>parameter-server-type=consetetur</code>
+set this value, you must also set <code>parameter_server_type</code>.</p>
+<p>The default value is zero.
+* <code>parameter-server-type=sea</code>
     - Optional. Specifies the type of virtual machine to use for your training
 job&#39;s parameter server.</p>
 <p>The supported values are the same as those described in the entry for
 <code>master_type</code>.</p>
+<p>This value must be consistent with the category of machine type that
+<code>masterType</code> uses. In other words, both must be AI Platform machine
+types or both must be Compute Engine machine types.</p>
 <p>This value must be present when <code>scaleTier</code> is set to <code>CUSTOM</code> and
 <code>parameter_server_count</code> is greater than zero.
-<em> <code>python-module=takimata</code>
+* <code>python-module=labore</code>
     - Required. The Python module name to run after installing the packages.
-</em> <code>python-version=nonumy</code>
+* <code>python-version=ipsum</code>
     - Optional. The version of Python used in training. If not set, the default
 version is &#39;2.7&#39;. Python &#39;3.5&#39; is available when <code>runtime_version</code> is set
-to &#39;1.4&#39; and above. Python &#39;2.7&#39; works with all supported runtime versions.
-<em> <code>region=kasd</code>
+to &#39;1.4&#39; and above. Python &#39;2.7&#39; works with all supported
+&lt;a href=&#34;/ml-engine/docs/runtime-version-list&#34;&gt;runtime versions&lt;/a&gt;.
+* <code>region=aliquyam</code>
     - Required. The Google Compute Engine region to run the training job in.
 See the &lt;a href=&#34;/ml-engine/docs/tensorflow/regions&#34;&gt;available regions&lt;/a&gt;
-for ML Engine services.
-</em> <code>runtime-version=sanctus</code>
-    - Optional. The Google Cloud ML runtime version to use for training.  If not
-set, Google Cloud ML will choose a stable version, which is defined in the
-documentation of runtime version list.
-<em> <code>scale-tier=takimata</code>
+for AI Platform services.
+* <code>runtime-version=dolores</code>
+    - Optional. The AI Platform runtime version to use for training. If not
+set, AI Platform uses the default stable version, 1.0. For more
+information, see the
+&lt;a href=&#34;/ml-engine/docs/runtime-version-list&#34;&gt;runtime version list&lt;/a&gt;
+and
+&lt;a href=&#34;/ml-engine/docs/versioning&#34;&gt;how to manage runtime versions&lt;/a&gt;.
+* <code>scale-tier=sit</code>
     - Required. Specifies the machine types, the number of replicas for workers
 and parameter servers.
-</em> <code>worker-count=-27</code>
-    - Optional. The number of worker replicas to use for the training job. Each
-replica in the cluster will be of the type specified in <code>worker_type</code>.</p>
+* <code>worker-config.accelerator-config    count=diam</code>
+    - The number of accelerators to attach to each machine running the job.
+* <code>type=ut</code>
+    - The type of accelerator to use.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    image-uri=justo</code></p>
+<ul>
+<li>The Docker image to run on the replica. This image must be in Container
+    Registry. Learn more about <a href="../ml-engine/docs/distributed-training-containers">configuring custom
+    containers</a>.</li>
+</ul>
+</li>
+<li>
+<p><code>tpu-tf-version=est</code></p>
+<ul>
+<li>TensorFlow version used in the custom container. This field is required if
+    the replica is a TPU worker that uses a custom container. Otherwise, do not
+    specify this field.</li>
+</ul>
+</li>
+<li>
+<p><code>..    worker-count=-46</code></p>
+<ul>
+<li>
+<p>Optional. The number of worker replicas to use for the training job. Each
+    replica in the cluster will be of the type specified in <code>worker_type</code>.</p>
 <p>This value can only be used when <code>scale_tier</code> is set to <code>CUSTOM</code>. If you
-set this value, you must also set <code>worker_type</code>.
-* <code>worker-type=labore</code>
+set this value, you must also set <code>worker_type</code>.</p>
+<p>The default value is zero.
+* <code>worker-type=accusam</code>
     - Optional. Specifies the type of virtual machine to use for your training
 job&#39;s worker nodes.</p>
 <p>The supported values are the same as those described in the entry for
 <code>masterType</code>.</p>
+<p>This value must be consistent with the category of machine type that
+<code>masterType</code> uses. In other words, both must be AI Platform machine
+types or both must be Compute Engine machine types.</p>
+<p>If you use <code>cloud_tpu</code> for this value, see special instructions for
+<a href="../ml-engine/docs/tensorflow/using-tpus#configuring_a_custom_tpu_machine">configuring a custom TPU
+machine</a>.</p>
 <p>This value must be present when <code>scaleTier</code> is set to <code>CUSTOM</code> and
 <code>workerCount</code> is greater than zero.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..training-output    completed-trial-count=-37</code></p>
+<p><code>..training-output.built-in-algorithm-output    framework=clita</code></p>
+<ul>
+<li>Framework on which the built-in algorithm was trained.</li>
+</ul>
+</li>
+<li><code>model-path=diam</code><ul>
+<li>The Cloud Storage path to the <code>model/</code> directory where the training job
+    saves the trained model. Only set for successful jobs that don&#39;t use
+    hyperparameter tuning.</li>
+</ul>
+</li>
+<li><code>python-version=justo</code><ul>
+<li>Python version on which the built-in algorithm was trained.</li>
+</ul>
+</li>
+<li>
+<p><code>runtime-version=est</code></p>
+<ul>
+<li>AI Platform runtime version on which the built-in algorithm was
+    trained.</li>
+</ul>
+</li>
+<li>
+<p><code>..    completed-trial-count=-63</code></p>
 <ul>
 <li>The number of hyperparameter tuning trials that completed successfully.
     Only set for hyperparameter tuning jobs.</li>
 </ul>
 </li>
-<li><code>consumed-ml-units=0.347300286445</code><ul>
+<li><code>consumed-ml-units=0.636549512895</code><ul>
 <li>The amount of ML units consumed by the job.</li>
 </ul>
 </li>
-<li><code>is-hyperparameter-tuning-job=false</code><ul>
+<li><code>hyperparameter-metric-tag=ut</code><ul>
+<li>The TensorFlow summary tag name used for optimizing hyperparameter tuning
+    trials. See
+    <a href="#HyperparameterSpec.FIELDS.hyperparameter_metric_tag"><code>HyperparameterSpec.hyperparameterMetricTag</code></a>
+    for more information. Only set for hyperparameter tuning jobs.</li>
+</ul>
+</li>
+<li><code>is-built-in-algorithm-job=true</code><ul>
+<li>Whether this job is a built-in Algorithm job.</li>
+</ul>
+</li>
+<li><code>is-hyperparameter-tuning-job=true</code><ul>
 <li>Whether this job is a hyperparameter tuning job.</li>
 </ul>
 </li>
@@ -818,7 +980,7 @@ recalculated.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

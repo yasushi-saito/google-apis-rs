@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Regions Workflow Templates Update - Dataproc v1.0.8+20181005</title>
+  <title>Regions Workflow Templates Update - Dataproc v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dataproc v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Dataproc v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,18 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-get-iam-policy/">Locations Autoscaling Policies Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-set-iam-policy/">Locations Autoscaling Policies Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-autoscaling-policies-test-iam-permissions/">Locations Autoscaling Policies Test Iam Permissions</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_locations-workflow-templates-create/">Locations Workflow Templates Create</a>
@@ -95,6 +107,18 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-workflow-templates-update/">Locations Workflow Templates Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-get-iam-policy/">Regions Autoscaling Policies Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-set-iam-policy/">Regions Autoscaling Policies Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_regions-autoscaling-policies-test-iam-permissions/">Regions Autoscaling Policies Test Iam Permissions</a>
                 </li>
                 <li class="">
                     
@@ -273,7 +297,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dataproc v1.0.8+20181005</a>
+        <a href="..">Dataproc v1.0.10+20190620</a>
       </nav>
 
       
@@ -368,8 +392,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
             instance-group-manager-name: string
             instance-template-name: string
           num-instances: integer
+        security-config:
+          kerberos-config:
+            cross-realm-trust-admin-server: string
+            cross-realm-trust-kdc: string
+            cross-realm-trust-realm: string
+            cross-realm-trust-shared-password-uri: string
+            enable-kerberos: boolean
+            kdc-db-key-uri: string
+            key-password-uri: string
+            keystore-password-uri: string
+            keystore-uri: string
+            kms-key-uri: string
+            root-principal-password-uri: string
+            tgt-lifetime-hours: integer
+            truststore-password-uri: string
+            truststore-uri: string
         software-config:
           image-version: string
+          optional-components: [string]
           properties: { string: string }
         worker-config:
           disk-config:
@@ -392,75 +433,75 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=duo</code><ul>
+<li><code>-r .    create-time=dolore</code><ul>
 <li>Output only. The time template was created.</li>
 </ul>
 </li>
-<li><code>id=tempor</code><ul>
+<li><code>id=dolore</code><ul>
 <li>Required. The template id.The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between 3 and 50 characters.</li>
 </ul>
 </li>
-<li><code>labels=key=consetetur</code><ul>
+<li><code>labels=key=stet</code><ul>
 <li>Optional. The labels to associate with this template. These labels will be propagated to all jobs and clusters created by the workflow instance.Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).Label values may be empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).No more than 32 labels can be associated with a template.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>name=eirmod</code><ul>
+<li><code>name=et</code><ul>
 <li>Output only. The &#34;resource name&#34; of the template, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}/workflowTemplates/{template_id}</li>
 </ul>
 </li>
-<li><code>placement.cluster-selector    cluster-labels=key=aliquyam</code><ul>
+<li><code>placement.cluster-selector    cluster-labels=key=labore</code><ul>
 <li>Required. The cluster labels. Cluster must have all labels to match.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>zone=no</code></p>
+<p><code>zone=amet</code></p>
 <ul>
 <li>Optional. The zone where workflow process executes. This parameter does not affect the selection of the cluster.If unspecified, the zone of the first cluster matching the selector is used.</li>
 </ul>
 </li>
 <li>
-<p><code>..managed-cluster    cluster-name=aliquyam</code></p>
+<p><code>..managed-cluster    cluster-name=invidunt</code></p>
 <ul>
 <li>Required. The cluster name prefix. A unique cluster name will be formed by appending a random suffix.The name must contain only lower-case letters (a-z), numbers (0-9), and hyphens (-). Must begin with a letter. Cannot begin or end with hyphen. Must consist of between 2 and 35 characters.</li>
 </ul>
 </li>
-<li><code>config    config-bucket=accusam</code><ul>
-<li>Optional. A Cloud Storage staging bucket used for sharing generated SSH keys and config. If you do not specify a staging bucket, Cloud Dataproc will determine an appropriate Cloud Storage location (US, ASIA, or EU) for your cluster&#39;s staging bucket according to the Google Compute Engine zone where your cluster is deployed, and then it will create and manage this project-level, per-location bucket for you.</li>
+<li><code>config    config-bucket=dolore</code><ul>
+<li>Optional. A Google Cloud Storage bucket used to stage job dependencies, config files, and job driver console output. If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster&#39;s staging bucket according to the Google Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket (see Cloud Dataproc staging bucket).</li>
 </ul>
 </li>
 <li>
-<p><code>encryption-config    gce-pd-kms-key-name=sed</code></p>
+<p><code>encryption-config    gce-pd-kms-key-name=dolor</code></p>
 <ul>
 <li>Optional. The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.</li>
 </ul>
 </li>
 <li>
-<p><code>..gce-cluster-config    internal-ip-only=false</code></p>
+<p><code>..gce-cluster-config    internal-ip-only=true</code></p>
 <ul>
 <li>Optional. If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.</li>
 </ul>
 </li>
-<li><code>metadata=key=amet.</code><ul>
+<li><code>metadata=key=et</code><ul>
 <li>The Compute Engine metadata entries to add to all instances (see Project and instance metadata (https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>network-uri=clita</code><ul>
+<li><code>network-uri=kasd</code><ul>
 <li>Optional. The Compute Engine network to be used for machine communications. Cannot be specified with subnetwork_uri. If neither network_uri nor subnetwork_uri is specified, the &#34;default&#34; network of the project is used, if it exists. Cannot be a &#34;Custom Subnet Network&#34; (see Using Subnetworks for more information).A full URL, partial URI, or short name are valid. Examples:
     https://www.googleapis.com/compute/v1/projects/[project_id]/regions/global/default
     projects/[project_id]/regions/global/default
     default</li>
 </ul>
 </li>
-<li><code>service-account=clita</code><ul>
+<li><code>service-account=sed</code><ul>
 <li>Optional. The service account of the instances. Defaults to the default Compute Engine service account. Custom service accounts need permissions equivalent to the following IAM roles:
     roles/logging.logWriter
     roles/storage.objectAdmin(see https://cloud.google.com/compute/docs/access/service-accounts#custom_service_accounts for more information). Example: [account_id]@[project_id].iam.gserviceaccount.com</li>
 </ul>
 </li>
-<li><code>service-account-scopes=est</code><ul>
+<li><code>service-account-scopes=tempor</code><ul>
 <li>Optional. The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included:
     https://www.googleapis.com/auth/cloud.useraccounts.readonly
     https://www.googleapis.com/auth/devstorage.read_write
@@ -472,20 +513,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>subnetwork-uri=sit</code><ul>
+<li><code>subnetwork-uri=diam</code><ul>
 <li>Optional. The Compute Engine subnetwork to be used for machine communications. Cannot be specified with network_uri.A full URL, partial URI, or short name are valid. Examples:
-    https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/sub0
-    projects/[project_id]/regions/us-east1/sub0
+    https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/subnetworks/sub0
+    projects/[project_id]/regions/us-east1/subnetworks/sub0
     sub0</li>
 </ul>
 </li>
-<li><code>tags=ipsum</code><ul>
+<li><code>tags=takimata</code><ul>
 <li>The Compute Engine tags to add to all instances (see Tagging instances).</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>zone-uri=dolore</code></p>
+<p><code>zone-uri=lorem</code></p>
 <ul>
 <li>Optional. The zone where the Compute Engine cluster will be located. On a create request, it is required in the &#34;global&#34; region. If omitted in a non-global Cloud Dataproc region, the service will pick a zone in the corresponding Compute Engine region. On a get request, zone will always be present.A full URL, partial URI, or short name are valid. Examples:
     https://www.googleapis.com/compute/v1/projects/[project_id]/zones/[zone]
@@ -494,28 +535,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..master-config.disk-config    boot-disk-size-gb=57</code></p>
+<p><code>..master-config.disk-config    boot-disk-size-gb=98</code></p>
 <ul>
 <li>Optional. Size in GB of the boot disk (default is 500GB).</li>
 </ul>
 </li>
-<li><code>boot-disk-type=ipsum</code><ul>
+<li><code>boot-disk-type=amet.</code><ul>
 <li>Optional. Type of the boot disk (default is &#34;pd-standard&#34;). Valid values: &#34;pd-ssd&#34; (Persistent Disk Solid State Drive) or &#34;pd-standard&#34; (Persistent Disk Hard Disk Drive).</li>
 </ul>
 </li>
 <li>
-<p><code>num-local-ssds=56</code></p>
+<p><code>num-local-ssds=72</code></p>
 <ul>
 <li>Optional. Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS (https://hadoop.apache.org/docs/r1.2.1/hdfs_user_guide.html) data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
 </ul>
 </li>
 <li>
-<p><code>..    image-uri=ea</code></p>
+<p><code>..    image-uri=sea</code></p>
 <ul>
 <li>Optional. The Compute Engine image resource used for cluster instances. It can be specified or may be inferred from SoftwareConfig.image_version.</li>
 </ul>
 </li>
-<li><code>instance-names=dolor</code><ul>
+<li><code>instance-names=consetetur</code><ul>
 <li>Output only. The list of instance names. Cloud Dataproc derives the names from cluster_name, num_instances, and the instance group.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -524,52 +565,52 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Optional. Specifies that this instance group contains preemptible instances.</li>
 </ul>
 </li>
-<li><code>machine-type-uri=sadipscing</code><ul>
+<li><code>machine-type-uri=voluptua.</code><ul>
 <li>Optional. The Compute Engine machine type used for cluster instances.A full URL, partial URI, or short name are valid. Examples:
     https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
     projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
     n1-standard-2Auto Zone Exception: If you are using the Cloud Dataproc Auto Zone Placement feature, you must use the short name of the machine type resource, for example, n1-standard-2.</li>
 </ul>
 </li>
-<li><code>managed-group-config    instance-group-manager-name=ipsum</code><ul>
+<li><code>managed-group-config    instance-group-manager-name=at</code><ul>
 <li>Output only. The name of the Instance Group Manager for this group.</li>
 </ul>
 </li>
 <li>
-<p><code>instance-template-name=et</code></p>
+<p><code>instance-template-name=sanctus</code></p>
 <ul>
 <li>Output only. The name of the Instance Template used for the Managed Instance Group.</li>
 </ul>
 </li>
 <li>
-<p><code>..    num-instances=13</code></p>
+<p><code>..    num-instances=53</code></p>
 <ul>
 <li>Optional. The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..secondary-worker-config.disk-config    boot-disk-size-gb=100</code></p>
+<p><code>..secondary-worker-config.disk-config    boot-disk-size-gb=99</code></p>
 <ul>
 <li>Optional. Size in GB of the boot disk (default is 500GB).</li>
 </ul>
 </li>
-<li><code>boot-disk-type=sit</code><ul>
+<li><code>boot-disk-type=magna</code><ul>
 <li>Optional. Type of the boot disk (default is &#34;pd-standard&#34;). Valid values: &#34;pd-ssd&#34; (Persistent Disk Solid State Drive) or &#34;pd-standard&#34; (Persistent Disk Hard Disk Drive).</li>
 </ul>
 </li>
 <li>
-<p><code>num-local-ssds=98</code></p>
+<p><code>num-local-ssds=49</code></p>
 <ul>
 <li>Optional. Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS (https://hadoop.apache.org/docs/r1.2.1/hdfs_user_guide.html) data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
 </ul>
 </li>
 <li>
-<p><code>..    image-uri=et</code></p>
+<p><code>..    image-uri=clita</code></p>
 <ul>
 <li>Optional. The Compute Engine image resource used for cluster instances. It can be specified or may be inferred from SoftwareConfig.image_version.</li>
 </ul>
 </li>
-<li><code>instance-names=amet</code><ul>
+<li><code>instance-names=stet</code><ul>
 <li>Output only. The list of instance names. Cloud Dataproc derives the names from cluster_name, num_instances, and the instance group.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -578,39 +619,104 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Optional. Specifies that this instance group contains preemptible instances.</li>
 </ul>
 </li>
-<li><code>machine-type-uri=vero</code><ul>
+<li><code>machine-type-uri=eirmod</code><ul>
 <li>Optional. The Compute Engine machine type used for cluster instances.A full URL, partial URI, or short name are valid. Examples:
     https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
     projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
     n1-standard-2Auto Zone Exception: If you are using the Cloud Dataproc Auto Zone Placement feature, you must use the short name of the machine type resource, for example, n1-standard-2.</li>
 </ul>
 </li>
-<li><code>managed-group-config    instance-group-manager-name=nonumy</code><ul>
+<li><code>managed-group-config    instance-group-manager-name=elitr</code><ul>
 <li>Output only. The name of the Instance Group Manager for this group.</li>
 </ul>
 </li>
 <li>
-<p><code>instance-template-name=accusam</code></p>
+<p><code>instance-template-name=gubergren</code></p>
 <ul>
 <li>Output only. The name of the Instance Template used for the Managed Instance Group.</li>
 </ul>
 </li>
 <li>
-<p><code>..    num-instances=95</code></p>
+<p><code>..    num-instances=3</code></p>
 <ul>
 <li>Optional. The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..software-config    image-version=sit</code></p>
+<p><code>..security-config.kerberos-config    cross-realm-trust-admin-server=et</code></p>
 <ul>
-<li>Optional. The version of software inside the cluster. It must be one of the supported Cloud Dataproc Versions, such as &#34;1.2&#34; (including a subminor version, such as &#34;1.2.29&#34;), or the &#34;preview&#34; version. If unspecified, it defaults to the latest version.</li>
+<li>Optional. The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.</li>
+</ul>
+</li>
+<li><code>cross-realm-trust-kdc=sea</code><ul>
+<li>Optional. The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.</li>
+</ul>
+</li>
+<li><code>cross-realm-trust-realm=justo</code><ul>
+<li>Optional. The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.</li>
+</ul>
+</li>
+<li><code>cross-realm-trust-shared-password-uri=dolore</code><ul>
+<li>Optional. The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.</li>
+</ul>
+</li>
+<li><code>enable-kerberos=true</code><ul>
+<li>Optional. Flag to indicate whether to Kerberize the cluster.</li>
+</ul>
+</li>
+<li><code>kdc-db-key-uri=dolor</code><ul>
+<li>Optional. The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.</li>
+</ul>
+</li>
+<li><code>key-password-uri=tempor</code><ul>
+<li>Optional. The Cloud Storage URI of a KMS encrypted file containing the password to the user provided key. For the self-signed certificate, this password is generated by Dataproc.</li>
+</ul>
+</li>
+<li><code>keystore-password-uri=ipsum</code><ul>
+<li>Optional. The Cloud Storage URI of a KMS encrypted file containing the password to the user provided keystore. For the self-signed certificate, this password is generated by Dataproc.</li>
+</ul>
+</li>
+<li><code>keystore-uri=est</code><ul>
+<li>Optional. The Cloud Storage URI of the keystore file used for SSL encryption. If not provided, Dataproc will provide a self-signed certificate.</li>
+</ul>
+</li>
+<li><code>kms-key-uri=et</code><ul>
+<li>Required. The uri of the KMS key used to encrypt various sensitive files.</li>
+</ul>
+</li>
+<li><code>root-principal-password-uri=no</code><ul>
+<li>Required. The Cloud Storage URI of a KMS encrypted file containing the root principal password.</li>
+</ul>
+</li>
+<li><code>tgt-lifetime-hours=72</code><ul>
+<li>Optional. The lifetime of the ticket granting ticket, in hours. If not specified, or user specifies 0, then default value 10 will be used.</li>
+</ul>
+</li>
+<li><code>truststore-password-uri=kasd</code><ul>
+<li>Optional. The Cloud Storage URI of a KMS encrypted file containing the password to the user provided truststore. For the self-signed certificate, this password is generated by Dataproc.</li>
 </ul>
 </li>
 <li>
-<p><code>properties=key=erat</code></p>
+<p><code>truststore-uri=ipsum</code></p>
 <ul>
-<li>Optional. The properties to set on daemon config files.Property keys are specified in prefix:property format, such as core:fs.defaultFS. The following are supported prefixes and their mappings:
+<li>Optional. The Cloud Storage URI of the truststore file used for SSL encryption. If not provided, Dataproc will provide a self-signed certificate.</li>
+</ul>
+</li>
+<li>
+<p><code>...software-config    image-version=sadipscing</code></p>
+<ul>
+<li>Optional. The version of software inside the cluster. It must be one of the supported Cloud Dataproc Versions, such as &#34;1.2&#34; (including a subminor version, such as &#34;1.2.29&#34;), or the &#34;preview&#34; version. If unspecified, it defaults to the latest Debian version.</li>
+</ul>
+</li>
+<li><code>optional-components=sea</code><ul>
+<li>The set of optional components to activate on the cluster.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>properties=key=eos</code></p>
+<ul>
+<li>Optional. The properties to set on daemon config files.Property keys are specified in prefix:property format, for example core:hadoop.tmp.dir. The following are supported prefixes and their mappings:
     capacity-scheduler: capacity-scheduler.xml
     core: core-site.xml
     distcp: distcp-default.xml
@@ -624,28 +730,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..worker-config.disk-config    boot-disk-size-gb=76</code></p>
+<p><code>..worker-config.disk-config    boot-disk-size-gb=48</code></p>
 <ul>
 <li>Optional. Size in GB of the boot disk (default is 500GB).</li>
 </ul>
 </li>
-<li><code>boot-disk-type=accusam</code><ul>
+<li><code>boot-disk-type=lorem</code><ul>
 <li>Optional. Type of the boot disk (default is &#34;pd-standard&#34;). Valid values: &#34;pd-ssd&#34; (Persistent Disk Solid State Drive) or &#34;pd-standard&#34; (Persistent Disk Hard Disk Drive).</li>
 </ul>
 </li>
 <li>
-<p><code>num-local-ssds=27</code></p>
+<p><code>num-local-ssds=4</code></p>
 <ul>
 <li>Optional. Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS (https://hadoop.apache.org/docs/r1.2.1/hdfs_user_guide.html) data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
 </ul>
 </li>
 <li>
-<p><code>..    image-uri=clita</code></p>
+<p><code>..    image-uri=lorem</code></p>
 <ul>
 <li>Optional. The Compute Engine image resource used for cluster instances. It can be specified or may be inferred from SoftwareConfig.image_version.</li>
 </ul>
 </li>
-<li><code>instance-names=tempor</code><ul>
+<li><code>instance-names=kasd</code><ul>
 <li>Output only. The list of instance names. Cloud Dataproc derives the names from cluster_name, num_instances, and the instance group.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -654,7 +760,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Optional. Specifies that this instance group contains preemptible instances.</li>
 </ul>
 </li>
-<li><code>machine-type-uri=kasd</code><ul>
+<li><code>machine-type-uri=dolor</code><ul>
 <li>Optional. The Compute Engine machine type used for cluster instances.A full URL, partial URI, or short name are valid. Examples:
     https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
     projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2
@@ -666,31 +772,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>instance-template-name=ut</code></p>
+<p><code>instance-template-name=no</code></p>
 <ul>
 <li>Output only. The name of the Instance Template used for the Managed Instance Group.</li>
 </ul>
 </li>
 <li>
-<p><code>..    num-instances=72</code></p>
+<p><code>..    num-instances=62</code></p>
 <ul>
 <li>Optional. The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
 </ul>
 </li>
 <li>
-<p><code>...    labels=key=eos</code></p>
+<p><code>...    labels=key=dolor</code></p>
 <ul>
 <li>Optional. The labels to associate with this cluster.Label keys must be between 1 and 63 characters long, and must conform to the following PCRE regular expression: \p{Ll}\p{Lo}{0,62}Label values must be between 1 and 63 characters long, and must conform to the following PCRE regular expression: \p{Ll}\p{Lo}\p{N}_-{0,63}No more than 32 labels can be associated with a given cluster.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>...    update-time=elitr</code></p>
+<p><code>...    update-time=et</code></p>
 <ul>
 <li>Output only. The time template was last updated.</li>
 </ul>
 </li>
-<li><code>version=63</code><ul>
+<li><code>version=97</code><ul>
 <li>Optional. Used to perform a consistent read-modify-write.This field should be left blank for a CreateWorkflowTemplate request. It is required for an UpdateWorkflowTemplate request, and must match the current server version. A typical update template flow would fetch the current template with a GetWorkflowTemplate request, which will return the current template with the version field filled in with the current server version. The user updates other fields in the template, then returns it as part of the UpdateWorkflowTemplate request.</li>
 </ul>
 </li>
@@ -802,7 +908,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

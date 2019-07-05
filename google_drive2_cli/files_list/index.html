@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - drive v1.0.8+20181004</title>
+  <title>List - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -443,7 +478,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -504,6 +539,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p include-items-from-all-drives=boolean</strong></p>
+<ul>
+<li>Deprecated - Whether both My Drive and shared drive items should be included in results. This parameter will only be effective until June 1, 2020. Afterwards shared drive items will be included in the results.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p corpus=string</strong></p>
 <ul>
 <li>The body of items (files/documents) to which the query applies. Deprecated: use &#39;corpora&#39; instead.</li>
@@ -512,7 +553,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p team-drive-id=string</strong></p>
 <ul>
-<li>ID of Team Drive to search.</li>
+<li>Deprecated use driveId instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Deprecated use supportsAllDrives instead.</li>
 </ul>
 </li>
 <li>
@@ -522,21 +569,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p supports-team-drives=boolean</strong></p>
-<ul>
-<li>Whether the requesting application supports Team Drives.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Page token for files.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p corpora=string</strong></p>
 <ul>
-<li>The maximum number of files to return per page. Partial or empty result pages are possible even before the end of the files list has been reached.</li>
+<li>Bodies of items (files/documents) to which the query applies. Supported bodies are &#39;default&#39;, &#39;domain&#39;, &#39;drive&#39; and &#39;allDrives&#39;. Prefer &#39;default&#39; or &#39;drive&#39; to &#39;allDrives&#39; for efficiency.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-all-drives=boolean</strong></p>
+<ul>
+<li>Deprecated - Whether the requesting application supports both My Drives and shared drives. This parameter will only be effective until June 1, 2020. Afterwards all applications are assumed to support shared drives.</li>
 </ul>
 </li>
 <li>
@@ -546,21 +593,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p corpora=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Comma-separated list of bodies of items (files/documents) to which the query applies. Supported bodies are &#39;default&#39;, &#39;domain&#39;, &#39;teamDrive&#39; and &#39;allTeamDrives&#39;. &#39;allTeamDrives&#39; must be combined with &#39;default&#39;; all other values must be used in isolation. Prefer &#39;default&#39; or &#39;teamDrive&#39; to &#39;allTeamDrives&#39; for efficiency.</li>
+<li>The maximum number of files to return per page. Partial or empty result pages are possible even before the end of the files list has been reached.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p drive-id=string</strong></p>
+<ul>
+<li>ID of the shared drive to search.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-team-drive-items=boolean</strong></p>
+<ul>
+<li>Deprecated use includeItemsFromAllDrives instead.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>This parameter is deprecated and has no function.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p include-team-drive-items=boolean</strong></p>
-<ul>
-<li>Whether Team Drive items should be included in results.</li>
 </ul>
 </li>
 <li>
@@ -636,7 +689,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

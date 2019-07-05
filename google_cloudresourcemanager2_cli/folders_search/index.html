@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - Cloud Resource Manager v1.0.8+20181008</title>
+  <title>Search - Cloud Resource Manager v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -145,7 +145,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.8+20181008</a>
+        <a href="..">Cloud Resource Manager v1.0.10+20190701</a>
       </nav>
 
       
@@ -200,18 +200,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    page-size=20</code><ul>
+<li><code>-r .    page-size=66</code><ul>
 <li>The maximum number of folders to return in the response.
     This field is optional.</li>
 </ul>
 </li>
-<li><code>page-token=labore</code><ul>
+<li><code>page-token=sea</code><ul>
 <li>A pagination token returned from a previous call to <code>SearchFolders</code>
     that indicates from where search should continue.
     This field is optional.</li>
 </ul>
 </li>
-<li><code>query=sea</code><ul>
+<li><code>query=nonumy</code><ul>
 <li>
 <p>Search criteria used to select the Folders to return.
     If no search criteria is specified then all accessible folders will be
@@ -222,36 +222,18 @@ can be used along with the suffix wildcard symbol <code>*</code>.</p>
 <p>The displayName field in a query expression should use escaped quotes
 for values that include whitespace to prevent unexpected behavior.</p>
 <p>Some example queries are:</p>
-<table>
-<thead>
-<tr>
-<th>Query</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>displayName=Test*</td>
-<td>Folders whose display name starts with &#34;Test&#34;.</td>
-</tr>
-<tr>
-<td>lifecycleState=ACTIVE</td>
-<td>Folders whose lifecycleState is ACTIVE.</td>
-</tr>
-<tr>
-<td>parent=folders/123</td>
-<td>Folders whose parent is &#34;folders/123&#34;.</td>
-</tr>
-<tr>
-<td>parent=folders/123 AND lifecycleState=ACTIVE</td>
-<td>Active folders whose parent is &#34;folders/123&#34;.</td>
-</tr>
-<tr>
-<td>displayName=\&#34;Test String\&#34;</td>
-<td>Folders whose display name includes both &#34;Test&#34; and &#34;String&#34;.</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Query <code>displayName=Test*</code> returns Folder resources whose display name
+starts with &#34;Test&#34;.</li>
+<li>Query <code>lifecycleState=ACTIVE</code> returns Folder resources with
+<code>lifecycleState</code> set to <code>ACTIVE</code>.</li>
+<li>Query <code>parent=folders/123</code> returns Folder resources that have
+<code>folders/123</code> as a parent resource.</li>
+<li>Query <code>parent=folders/123 AND lifecycleState=ACTIVE</code> returns active
+Folder resources that have <code>folders/123</code> as a parent resource.</li>
+<li>Query <code>displayName=\\&amp;#34;Test String\\&amp;#34;</code> returns Folder resources with
+display names that include both &#34;Test&#34; and &#34;String&#34;.</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -365,7 +347,7 @@ for values that include whitespace to prevent unexpected behavior.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

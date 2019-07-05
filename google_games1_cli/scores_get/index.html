@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get - Games v1.0.8+20181004</title>
+  <title>Get - Games v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Games v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Games v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -397,7 +397,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Games v1.0.8+20181004</a>
+        <a href="..">Games v1.0.10+20190627</a>
       </nav>
 
       
@@ -429,11 +429,7 @@
                 <p>Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, leaderboardId can be set to ALL to retrieve data for all leaderboards in a given time span.
 NOTE: You cannot ask for &#39;ALL&#39; leaderboards and &#39;ALL&#39; timeSpans in the same request; only one parameter may be set to &#39;ALL&#39;.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
-<ul>
-<li><em>https://www.googleapis.com/auth/games</em></li>
-<li><em>https://www.googleapis.com/auth/plus.login</em></li>
-</ul>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/games</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/games</em>.
 You can set the scope for this method like this: <code>games1 --scope &lt;scope&gt; scores get ...</code></p>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
@@ -468,18 +464,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than the specified maxResults.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The token returned by the previous request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p include-rank-type=string</strong></p>
 <ul>
 <li>The types of ranks to return. If the parameter is omitted, no ranks will be returned.</li>
@@ -489,6 +473,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p language=string</strong></p>
 <ul>
 <li>The preferred language to use for strings returned by this method.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The token returned by the previous request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than the specified maxResults.</li>
 </ul>
 </li>
 </ul>
@@ -558,7 +554,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

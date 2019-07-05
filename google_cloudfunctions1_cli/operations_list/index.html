@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Cloud Functions v1.0.8+20181002</title>
+  <title>List - Cloud Functions v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Functions v1.0.8+20181002</a>
+        <a href=".." class="icon icon-home"> Cloud Functions v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -112,11 +112,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-functions-get-iam-policy/">Locations Functions Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-functions-list/">Locations Functions List</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../projects_locations-functions-patch/">Locations Functions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-functions-set-iam-policy/">Locations Functions Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-functions-test-iam-permissions/">Locations Functions Test Iam Permissions</a>
                 </li>
                 <li class="">
                     
@@ -135,7 +147,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Functions v1.0.8+20181002</a>
+        <a href="..">Cloud Functions v1.0.10+20190620</a>
       </nav>
 
       
@@ -200,21 +212,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>The standard list filter.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p name=string</strong></p>
 <ul>
-<li>The name of the operation&#39;s parent resource.</li>
+<li>Must not be set.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The standard list page token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>Required. A filter for matching the requested operations.&lt;br&gt;&lt;br&gt; The supported formats of &lt;b&gt;filter&lt;/b&gt; are:&lt;br&gt; To query for specific function: &lt;code&gt;project:<em>,location:</em>,function:<em>&lt;/code&gt;&lt;br&gt; To query for all of the latest operations for a project: &lt;code&gt;project:</em>,latest:true&lt;/code&gt;</li>
 </ul>
 </li>
 </ul>
@@ -308,7 +320,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

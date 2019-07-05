@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metric Descriptors Create - Monitoring v1.0.8+20181009</title>
+  <title>Metric Descriptors Create - Monitoring v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -244,7 +244,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.8+20181009</a>
+        <a href="..">Monitoring v1.0.10+20190629</a>
       </nav>
 
       
@@ -297,6 +297,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>MetricDescriptor:
   description: string
   display-name: string
+  launch-stage: string
   metadata:
     ingest-delay: string
     launch-stage: string
@@ -319,32 +320,36 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example &#34;Request count&#34;. This field is optional but it is recommended to be set for any metrics associated with user-visible concepts, such as Quota.</li>
 </ul>
 </li>
-<li><code>metadata    ingest-delay=amet</code><ul>
+<li><code>launch-stage=amet</code><ul>
+<li>Optional. The launch stage of the metric definition.</li>
+</ul>
+</li>
+<li><code>metadata    ingest-delay=no</code><ul>
 <li>The delay of data points caused by ingestion. Data points older than this age are guaranteed to be ingested and available to be read, excluding data loss due to errors.</li>
 </ul>
 </li>
-<li><code>launch-stage=no</code><ul>
-<li>The launch stage of the metric definition.</li>
+<li><code>launch-stage=labore</code><ul>
+<li>Deprecated. Please use the MetricDescriptor.launch_stage instead. The launch stage of the metric definition.</li>
 </ul>
 </li>
 <li>
-<p><code>sample-period=labore</code></p>
+<p><code>sample-period=eirmod</code></p>
 <ul>
 <li>The sampling period of metric data points. For metrics which are written periodically, consecutive data points are stored at this time interval, excluding data loss due to errors. Metrics with a higher granularity have a smaller sampling period.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metric-kind=eirmod</code></p>
+<p><code>..    metric-kind=dolore</code></p>
 <ul>
 <li>Whether the metric records instantaneous values, changes to a value, etc. Some combinations of metric_kind and value_type might not be supported.</li>
 </ul>
 </li>
-<li><code>name=dolore</code><ul>
+<li><code>name=invidunt</code><ul>
 <li>The resource name of the metric descriptor.</li>
 </ul>
 </li>
 <li>
-<p><code>type=invidunt</code></p>
+<p><code>type=aliquyam</code></p>
 <ul>
 <li>The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined metric types have the DNS name custom.googleapis.com or external.googleapis.com. Metric types should use a natural hierarchical grouping. For example:
     &#34;custom.googleapis.com/invoice/paid/amount&#34;
@@ -353,7 +358,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>unit=aliquyam</code></p>
+<p><code>unit=accusam</code></p>
 <ul>
 <li>
 <p>The unit in which the metric value is reported. It is only applicable if the value_type is INT64, DOUBLE, or DISTRIBUTION. The supported units are a subset of The Unified Code for Units of Measure (http://unitsofmeasure.org/ucum.html) standard:Basic units (UNIT)
@@ -396,7 +401,7 @@ Annotation is just a comment if it follows a UNIT and is  equivalent to 1 if it 
 NAME is a sequence of non-blank printable ASCII characters not  containing &#39;{&#39; or &#39;}&#39;.
 1 represents dimensionless value 1, such as in 1/s.
 % represents dimensionless value 1/100, and annotates values giving  a percentage.
-* <code>value-type=accusam</code>
+* <code>value-type=lorem</code>
     - Whether the measurement is an integer, a floating-point number, etc. Some combinations of metric_kind and value_type might not be supported.</p>
 </li>
 </ul>
@@ -511,7 +516,7 @@ NAME is a sequence of non-blank printable ASCII characters not  containing &#39;
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with plusDomains (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - plusDomains v1.0.8+20181007</title>
+  <title>Home - plusDomains v1.0.10+20190616</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> plusDomains v1.0.8+20181007</a>
+        <a href="." class="icon icon-home"> plusDomains v1.0.10+20190616</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -83,10 +83,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="activities_insert/">Insert</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="activities_list/">List</a>
                 </li>
     </ul>
@@ -109,35 +105,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="circles_add-people/">Add People</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_get/">Get</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_insert/">Insert</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="circles_list/">List</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_patch/">Patch</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_remove/">Remove</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_remove-people/">Remove People</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="circles_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -149,10 +117,6 @@
                 <li class="">
                     
     <a class="" href="comments_get/">Get</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="comments_insert/">Insert</a>
                 </li>
                 <li class="">
                     
@@ -188,10 +152,6 @@
                     
     <a class="" href="people_list-by-activity/">List By Activity</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="people_list-by-circle/">List By Circle</a>
-                </li>
     </ul>
 	    </li>
           
@@ -205,7 +165,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">plusDomains v1.0.8+20181007</a>
+        <a href=".">plusDomains v1.0.10+20190616</a>
       </nav>
 
       
@@ -249,26 +209,17 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/plusdomains1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>plusDomains</em> API at revision <em>20181007</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>plusDomains</em> API at revision <em>20190616</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">plusdomains1 [options]
         activities
                 get &lt;activity-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                insert &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;user-id&gt; &lt;collection&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         audiences
                 list &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         circles
-                add-people &lt;circle-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                get &lt;circle-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                insert &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                patch &lt;circle-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                remove &lt;circle-id&gt; [-p &lt;v&gt;]...
-                remove-people &lt;circle-id&gt; [-p &lt;v&gt;]...
-                update &lt;circle-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         comments
                 get &lt;comment-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                insert &lt;activity-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;activity-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         media
                 insert &lt;user-id&gt; &lt;collection&gt; (-r &lt;kv&gt;)... (-u (simple|resumable) -f &lt;file&gt; [-m &lt;mime&gt;]) [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -276,7 +227,6 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 get &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;user-id&gt; &lt;collection&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list-by-activity &lt;activity-id&gt; &lt;collection&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                list-by-circle &lt;circle-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
   plusdomains1 --help
 
 Configuration:
@@ -352,7 +302,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -384,5 +334,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:49:55
+Build Date UTC : 2019-07-05 11:13:45
 -->

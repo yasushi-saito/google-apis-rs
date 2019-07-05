@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud Asset (protocol v1beta1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud Asset v1.0.8+20181008</title>
+  <title>Home - Cloud Asset v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud Asset v1.0.8+20181008</a>
+        <a href="." class="icon icon-home"> Cloud Asset v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,6 +70,21 @@
     <li class="toctree-l2"><a href="#debugging">Debugging</a></li>
     
 
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Folders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="folders_export-assets/">Export Assets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="folders_operations-get/">Operations Get</a>
+                </li>
     </ul>
 	    </li>
           
@@ -121,7 +136,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud Asset v1.0.8+20181008</a>
+        <a href=".">Cloud Asset v1.0.10+20190625</a>
       </nav>
 
       
@@ -157,7 +172,7 @@ DO NOT EDIT !
 capabilities. Errors will be printed to standard error, and cause the program's exit code to be non-zero.</p>
 <p>If data-structures are requested, these will be returned as pretty-printed JSON, to be useful as input to other tools.</p>
 <p>Everything else about the <em>Cloud Asset</em> API can be found at the
-<a href="https://console.cloud.google.com/apis/api/cloudasset.googleapis.com/overview">official documentation site</a>.</p>
+<a href="https://cloud.google.com/resource-manager/docs/cloud-asset-inventory/quickstart-cloud-asset-inventory">official documentation site</a>.</p>
 <h1 id="installation-and-source-code">Installation and Source Code</h1>
 <p>Install the command-line interface with cargo using:</p>
 <pre><code class="bash">cargo install google-cloudasset1_beta1-cli
@@ -165,8 +180,11 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudasset1_beta1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud Asset</em> API at revision <em>20181008</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Cloud Asset</em> API at revision <em>20190625</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">cloudasset1-beta1 [options]
+        folders
+                export-assets &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         organizations
                 batch-get-assets-history &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 export-assets &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -239,7 +257,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="organizations_batch-get-assets-history/" class="btn btn-neutral float-right" title="Batch Get Assets History">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="folders_export-assets/" class="btn btn-neutral float-right" title="Export Assets">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -250,7 +268,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -271,7 +289,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="organizations_batch-get-assets-history/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="folders_export-assets/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -282,5 +300,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:48:59
+Build Date UTC : 2019-07-05 11:13:17
 -->

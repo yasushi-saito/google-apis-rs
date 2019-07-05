@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Siterestrict List - customsearch v1.0.8+20181001</title>
+  <title>Siterestrict List - customsearch v1.0.10+20181001</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> customsearch v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> customsearch v1.0.10+20181001</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -92,7 +92,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">customsearch v1.0.8+20181001</a>
+        <a href="..">customsearch v1.0.10+20181001</a>
       </nav>
 
       
@@ -146,63 +146,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p site-search-filter=string</strong></p>
-<ul>
-<li>Controls whether to include or exclude results from the site named in the as_sitesearch parameter</li>
-</ul>
-</li>
-<li>
-<p><strong>-p site-search=string</strong></p>
-<ul>
-<li>Specifies all search results should be pages from a given site</li>
-</ul>
-</li>
-<li>
-<p><strong>-p lr=string</strong></p>
-<ul>
-<li>The language restriction for the search results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p rights=string</strong></p>
-<ul>
-<li>Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of these.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p img-dominant-color=string</strong></p>
-<ul>
-<li>Returns images of a specific dominant color: red, orange, yellow, green, teal, blue, purple, pink, white, gray, black and brown.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start=integer</strong></p>
-<ul>
-<li>The index of the first result to return</li>
-</ul>
-</li>
-<li>
-<p><strong>-p file-type=string</strong></p>
-<ul>
-<li>Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ...</li>
-</ul>
-</li>
-<li>
-<p><strong>-p exclude-terms=string</strong></p>
-<ul>
-<li>Identifies a word or phrase that should not appear in any documents in the search results</li>
-</ul>
-</li>
-<li>
 <p><strong>-p link-site=string</strong></p>
 <ul>
 <li>Specifies that all search results should contain a link to a particular URL</li>
-</ul>
-</li>
-<li>
-<p><strong>-p cx=string</strong></p>
-<ul>
-<li>The custom search engine ID to scope this search query</li>
 </ul>
 </li>
 <li>
@@ -212,87 +158,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p low-range=string</strong></p>
+<p><strong>-p img-size=string</strong></p>
 <ul>
-<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
-</ul>
-</li>
-<li>
-<p><strong>-p or-terms=string</strong></p>
-<ul>
-<li>Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional search terms</li>
-</ul>
-</li>
-<li>
-<p><strong>-p hq=string</strong></p>
-<ul>
-<li>Appends the extra query terms to the query.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p num=integer</strong></p>
-<ul>
-<li>Number of search results to return</li>
-</ul>
-</li>
-<li>
-<p><strong>-p exact-terms=string</strong></p>
-<ul>
-<li>Identifies a phrase that all documents in the search results must contain</li>
-</ul>
-</li>
-<li>
-<p><strong>-p safe=string</strong></p>
-<ul>
-<li>Search safety level</li>
-</ul>
-</li>
-<li>
-<p><strong>-p high-range=string</strong></p>
-<ul>
-<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
-</ul>
-</li>
-<li>
-<p><strong>-p img-color-type=string</strong></p>
-<ul>
-<li>Returns black and white, grayscale, or color images: mono, gray, and color.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p c2coff=string</strong></p>
-<ul>
-<li>Turns off the translation between zh-CN and zh-TW.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>Controls turning on or off the duplicate content filter.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort=string</strong></p>
-<ul>
-<li>The sort expression to apply to the results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p cr=string</strong></p>
-<ul>
-<li>Country restrict(s).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p date-restrict=string</strong></p>
-<ul>
-<li>Specifies all search results are from a time period</li>
-</ul>
-</li>
-<li>
-<p><strong>-p googlehost=string</strong></p>
-<ul>
-<li>The local Google domain to use to perform the search.</li>
+<li>Returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge.</li>
 </ul>
 </li>
 <li>
@@ -302,15 +170,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p hl=string</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>Sets the user interface language.</li>
+<li>Controls turning on or off the duplicate content filter.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p gl=string</strong></p>
+<p><strong>-p cr=string</strong></p>
 <ul>
-<li>Geolocation of end user.</li>
+<li>Country restrict(s).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start=integer</strong></p>
+<ul>
+<li>The index of the first result to return</li>
 </ul>
 </li>
 <li>
@@ -320,9 +194,135 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p img-size=string</strong></p>
+<p><strong>-p or-terms=string</strong></p>
 <ul>
-<li>Returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge.</li>
+<li>Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional search terms</li>
+</ul>
+</li>
+<li>
+<p><strong>-p low-range=string</strong></p>
+<ul>
+<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
+</ul>
+</li>
+<li>
+<p><strong>-p gl=string</strong></p>
+<ul>
+<li>Geolocation of end user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p file-type=string</strong></p>
+<ul>
+<li>Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ...</li>
+</ul>
+</li>
+<li>
+<p><strong>-p hl=string</strong></p>
+<ul>
+<li>Sets the user interface language.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cx=string</strong></p>
+<ul>
+<li>The custom search engine ID to scope this search query</li>
+</ul>
+</li>
+<li>
+<p><strong>-p img-dominant-color=string</strong></p>
+<ul>
+<li>Returns images of a specific dominant color: red, orange, yellow, green, teal, blue, purple, pink, white, gray, black and brown.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p img-color-type=string</strong></p>
+<ul>
+<li>Returns black and white, grayscale, or color images: mono, gray, and color.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p site-search=string</strong></p>
+<ul>
+<li>Specifies all search results should be pages from a given site</li>
+</ul>
+</li>
+<li>
+<p><strong>-p num=integer</strong></p>
+<ul>
+<li>Number of search results to return</li>
+</ul>
+</li>
+<li>
+<p><strong>-p high-range=string</strong></p>
+<ul>
+<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
+</ul>
+</li>
+<li>
+<p><strong>-p exclude-terms=string</strong></p>
+<ul>
+<li>Identifies a word or phrase that should not appear in any documents in the search results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p site-search-filter=string</strong></p>
+<ul>
+<li>Controls whether to include or exclude results from the site named in the as_sitesearch parameter</li>
+</ul>
+</li>
+<li>
+<p><strong>-p rights=string</strong></p>
+<ul>
+<li>Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of these.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p lr=string</strong></p>
+<ul>
+<li>The language restriction for the search results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p safe=string</strong></p>
+<ul>
+<li>Search safety level</li>
+</ul>
+</li>
+<li>
+<p><strong>-p c2coff=string</strong></p>
+<ul>
+<li>Turns off the translation between zh-CN and zh-TW.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p googlehost=string</strong></p>
+<ul>
+<li>The local Google domain to use to perform the search.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p hq=string</strong></p>
+<ul>
+<li>Appends the extra query terms to the query.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p exact-terms=string</strong></p>
+<ul>
+<li>Identifies a phrase that all documents in the search results must contain</li>
+</ul>
+</li>
+<li>
+<p><strong>-p date-restrict=string</strong></p>
+<ul>
+<li>Specifies all search results are from a time period</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort=string</strong></p>
+<ul>
+<li>The sort expression to apply to the results</li>
 </ul>
 </li>
 </ul>
@@ -390,7 +390,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

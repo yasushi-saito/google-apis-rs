@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Annotations List - books v1.0.8+20180824</title>
+  <title>Annotations List - books v1.0.10+20181212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> books v1.0.8+20180824</a>
+        <a href=".." class="icon icon-home"> books v1.0.10+20181212</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -372,7 +372,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">books v1.0.8+20180824</a>
+        <a href="..">books v1.0.10+20181212</a>
       </nav>
 
       
@@ -423,39 +423,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p source=string</strong></p>
-<ul>
-<li>String to identify the originator of this request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p updated-min=string</strong></p>
 <ul>
 <li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p volume-id=string</strong></p>
-<ul>
-<li>The volume to restrict annotations to.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p layer-ids=string</strong></p>
-<ul>
-<li>The layer ID(s) to limit annotation by.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p updated-max=string</strong></p>
-<ul>
-<li>RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).</li>
 </ul>
 </li>
 <li>
@@ -465,9 +435,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p volume-id=string</strong></p>
+<ul>
+<li>The volume to restrict annotations to.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return</li>
+</ul>
+</li>
+<li>
+<p><strong>-p layer-ids=string</strong></p>
+<ul>
+<li>The layer ID(s) to limit annotation by.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p updated-max=string</strong></p>
+<ul>
+<li>RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).</li>
 </ul>
 </li>
 <li>
@@ -480,6 +474,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p layer-id=string</strong></p>
 <ul>
 <li>The layer ID to limit annotation by.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p source=string</strong></p>
+<ul>
+<li>String to identify the originator of this request.</li>
 </ul>
 </li>
 </ul>
@@ -549,7 +549,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

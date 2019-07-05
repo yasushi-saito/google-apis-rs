@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Environments Patch - Cloud Composer v1.0.8+20181001</title>
+  <title>Locations Environments Patch - Cloud Composer v1.0.10+20190613</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Composer v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Cloud Composer v1.0.10+20190613</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -105,6 +105,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-image-versions-list/">Locations Image Versions List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-operations-delete/">Locations Operations Delete</a>
                 </li>
                 <li class="">
@@ -128,7 +132,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Composer v1.0.8+20181001</a>
+        <a href="..">Cloud Composer v1.0.10+20190613</a>
       </nav>
 
       
@@ -194,6 +198,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       env-variables: { string: string }
       image-version: string
       pypi-packages: { string: string }
+      python-version: string
   create-time: string
   labels: { string: string }
   name: string
@@ -205,10 +210,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .config    airflow-uri=justo</code><ul>
+<li><code>-r .config    airflow-uri=et</code><ul>
 <li>Output only.
     The URI of the Apache Airflow Web UI hosted within this environment (see
-    <a href="../composer/docs/how-to/accessing/airflow-web-interface">Airflow web interface</a>).</li>
+    <a href="../composer/docs/how-to/accessing/airflow-web-interface">Airflow web
+    interface</a>).</li>
 </ul>
 </li>
 <li><code>dag-gcs-prefix=et</code><ul>
@@ -219,24 +225,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     this environment reside in a simulated directory with the given prefix.</li>
 </ul>
 </li>
-<li><code>gke-cluster=et</code><ul>
+<li><code>gke-cluster=diam</code><ul>
 <li>Output only.
     The Kubernetes Engine cluster used to run this environment.</li>
 </ul>
 </li>
-<li><code>node-config    disk-size-gb=60</code><ul>
+<li><code>node-config    disk-size-gb=46</code><ul>
 <li>Optional. The disk size in GB used for node VMs. Minimum size is 20GB.
     If unspecified, defaults to 100GB. Cannot be updated.</li>
 </ul>
 </li>
 <li>
-<p><code>location=ipsum</code></p>
+<p><code>location=lorem</code></p>
 <ul>
 <li>
 <p>Optional. The Compute Engine <a href="../compute/docs/regions-zones">zone</a> in which
     to deploy the VMs used to run the Apache Airflow software, specified as a
-    <a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-    For example: &#34;projects/{projectId}/zones/{zoneId}&#34;.</p>
+    <a href="../apis/design/resource_names#relative_resource_name">relative resource
+    name</a>. For example:
+    &#34;projects/{projectId}/zones/{zoneId}&#34;.</p>
 <p>This <code>location</code> must belong to the enclosing environment&#39;s project and
 location. If both this field and <code>nodeConfig.machineType</code> are specified,
 <code>nodeConfig.machineType</code> must belong to this <code>location</code>; if both are
@@ -245,12 +252,12 @@ corresponding to the Cloud Composer location, and propagate that choice to
 both fields. If only one field (<code>location</code> or <code>nodeConfig.machineType</code>) is
 specified, the location information from the specified field will be
 propagated to the unspecified field.
-* <code>machine-type=lorem</code>
+* <code>machine-type=et</code>
     - Optional. The Compute Engine
 <a href="../compute/docs/machine-types">machine type</a> used for cluster instances,
 specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example:
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
 &#34;projects/{projectId}/zones/{zoneId}/machineTypes/{machineTypeId}&#34;.</p>
 <p>The <code>machineType</code> must belong to the enclosing environment&#39;s project and
 location. If both this field and <code>nodeConfig.location</code> are specified,
@@ -262,35 +269,36 @@ specified, the location information from the specified field will be
 propagated to the unspecified field.</p>
 <p>If this field is unspecified, the <code>machineTypeId</code> defaults
 to &#34;n1-standard-1&#34;.
-* <code>network=et</code>
+* <code>network=duo</code>
     - Optional. The Compute Engine network to be used for machine
 communications, specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example: &#34;projects/{projectId}/global/networks/{networkId}&#34;.</p>
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
+&#34;projects/{projectId}/global/networks/{networkId}&#34;.</p>
 <p><a href="../vpc/docs/shared-vpc">Shared VPC</a> is not currently supported. The
 network must belong to the environment&#39;s project. If unspecified, the
 &#34;default&#34; network ID in the environment&#39;s project is used.  If a
 <a href="../vpc/docs/vpc#vpc_networks_and_subnets">Custom Subnet Network</a>
 is provided, <code>nodeConfig.subnetwork</code> must also be provided.
-<em> <code>oauth-scopes=duo</code>
+* <code>oauth-scopes=aliquyam</code>
     - Optional. The set of Google API scopes to be made available on all
 node VMs. If <code>oauth_scopes</code> is empty, defaults to
 [&#34;https://www.googleapis.com/auth/cloud-platform&#34;]. Cannot be updated.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>service-account=aliquyam</code>
+* <code>service-account=sea</code>
     - Optional. The Google Cloud Platform Service Account to be used by the node
 VMs. If a service account is not specified, the &#34;default&#34; Compute Engine
 service account is used. Cannot be updated.
-* <code>subnetwork=sea</code>
+* <code>subnetwork=lorem</code>
     - Optional. The Compute Engine subnetwork to be used for machine
 communications, specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example:
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
 &#34;projects/{projectId}/regions/{regionId}/subnetworks/{subnetworkId}&#34;</p>
 <p>If a subnetwork is provided, <code>nodeConfig.network</code> must also be provided,
 and the subnetwork must belong to the enclosing environment&#39;s project and
 location.
-* <code>tags=lorem</code>
+* <code>tags=eos</code>
     - Optional. The list of instance tags applied to all node VMs. Tags are used
 to identify valid sources or targets for network firewalls. Each tag within
 the list must comply with <a href="https://www.ietf.org/rfc/rfc1035.txt">RFC1035</a>.
@@ -300,31 +308,31 @@ Cannot be updated.
 </ul>
 </li>
 <li>
-<p><code>..    node-count=26</code></p>
+<p><code>..    node-count=20</code></p>
 <ul>
 <li>The number of nodes in the Kubernetes Engine cluster that will be
     used to run this environment.</li>
 </ul>
 </li>
 <li>
-<p><code>software-config    airflow-config-overrides=key=erat</code></p>
+<p><code>software-config    airflow-config-overrides=key=sadipscing</code></p>
 <ul>
 <li>
 <p>Optional. Apache Airflow configuration properties to override.</p>
-<p>Property keys contain the section and property names, separated by a hyphen,
-for example &#34;core-dags_are_paused_at_creation&#34;. Section names must not
-contain hyphens (&#34;-&#34;), opening square brackets (&#34;[&#34;),  or closing square
-brackets (&#34;]&#34;). The property name must not be empty and must not contain
-an equals sign (&#34;=&#34;) or semicolon (&#34;;&#34;). Section and property names must
-not contain a period (&#34;.&#34;). Apache Airflow configuration property names
-must be written in <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>.
-Property values can contain any character, and can be written in any
-lower/upper case format.</p>
+<p>Property keys contain the section and property names, separated by a
+hyphen, for example &#34;core-dags_are_paused_at_creation&#34;. Section names must
+not contain hyphens (&#34;-&#34;), opening square brackets (&#34;[&#34;),  or closing
+square brackets (&#34;]&#34;). The property name must not be empty and must not
+contain an equals sign (&#34;=&#34;) or semicolon (&#34;;&#34;). Section and property names
+must not contain a period (&#34;.&#34;). Apache Airflow configuration property
+names must be written in
+<a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>. Property values can
+contain any character, and can be written in any lower/upper case format.</p>
 <p>Certain Apache Airflow configuration property values are
 <a href="../composer/docs/how-to/managing/setting-airflow-configurations#airflow_configuration_blacklists">blacklisted</a>,
 and cannot be overridden.
     - the value will be associated with the given <code>key</code>
-* <code>env-variables=key=sadipscing</code>
+* <code>env-variables=key=dolor</code>
     - Optional. Additional environment variables to provide to the Apache Airflow
 scheduler, worker, and webserver processes.</p>
 <p>Environment variable names must match the regular expression
@@ -349,21 +357,28 @@ following reserved names:</p>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>image-version=dolor</code><ul>
-<li>Output only.
-The version of the software running in the environment.
+<li><code>image-version=eirmod</code><ul>
+<li>The version of the software running in the environment.
 This encapsulates both the version of Cloud Composer functionality and the
 version of Apache Airflow. It must match the regular expression
-<code>composer-[0-9]+\.[0-9]+(\.[0-9]+)?-airflow-[0-9]+\.[0-9]+(\.[0-9]+.*)?</code>.</li>
+<code>composer-([0-9]+\.[0-9]+\.[0-9]+|latest)-airflow-[0-9]+\.[0-9]+(\.[0-9]+.*)?</code>.
+When used as input, the server also checks if the provided version is
+supported and denies the request for an unsupported version.</li>
 </ul>
 </li>
 </ul>
 <p>The Cloud Composer portion of the version is a
-<a href="https://semver.org">semantic version</a>. The portion of the image version
-following <em>airflow-</em> is an official Apache Airflow repository
+<a href="https://semver.org">semantic version</a> or <code>latest</code>. When the patch version
+is omitted, the current Cloud Composer patch version is selected.
+When <code>latest</code> is provided instead of an explicit version number,
+the server replaces <code>latest</code> with the current Cloud Composer version
+and stores that version number in the same field.</p>
+<p>The portion of the image version that follows &lt;em&gt;airflow-&lt;/em&gt; is an
+official Apache Airflow repository
 <a href="https://github.com/apache/incubator-airflow/releases">release name</a>.</p>
-<p>See also <a href="../composer/docs/release-notes">Release Notes</a>.
-* <code>pypi-packages=key=eirmod</code>
+<p>See also <a href="../composer/docs/concepts/versioning/composer-versions">Version
+List</a>.
+* <code>pypi-packages=key=elitr</code>
     - Optional. Custom Python Package Index (PyPI) packages to be installed in
 the environment.</p>
 <p>Keys refer to the lowercase package name such as &#34;numpy&#34;
@@ -371,18 +386,23 @@ and values are the lowercase extras and version specifier such as
 &#34;==1.12.0&#34;, &#34;[devel,gcp_api]&#34;, or &#34;[devel]&gt;=1.8.2, &lt;1.9.2&#34;. To specify a
 package without pinning it to a version specifier, use the empty string as
 the value.
-    - the value will be associated with the given <code>key</code></p>
+    - the value will be associated with the given <code>key</code>
+* <code>python-version=amet</code>
+    - Optional. The major version of Python used to run the Apache Airflow
+scheduler, worker, and webserver processes.</p>
+<p>Can be set to &#39;2&#39; or &#39;3&#39;. If not specified, the default is &#39;2&#39;. Cannot be
+updated.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>...    create-time=elitr</code></p>
+<p><code>...    create-time=no</code></p>
 <ul>
 <li>Output only.
     The time at which this environment was created.</li>
 </ul>
 </li>
-<li><code>labels=key=amet</code><ul>
+<li><code>labels=key=labore</code><ul>
 <li>
 <p>Optional. User-defined labels for this environment.
     The labels map can contain no more than 64 entries. Entries of the labels
@@ -395,21 +415,21 @@ size.<ul>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>name=no</code><ul>
+<li><code>name=eirmod</code><ul>
 <li>The resource name of the environment, in the form:
 &#34;projects/{projectId}/locations/{locationId}/environments/{environmentId}&#34;</li>
 </ul>
 </li>
-<li><code>state=labore</code><ul>
+<li><code>state=dolore</code><ul>
 <li>The current state of the environment.</li>
 </ul>
 </li>
-<li><code>update-time=eirmod</code><ul>
+<li><code>update-time=invidunt</code><ul>
 <li>Output only.
 The time at which this environment was last modified.</li>
 </ul>
 </li>
-<li><code>uuid=dolore</code><ul>
+<li><code>uuid=aliquyam</code><ul>
 <li>Output only.
 The UUID (Universally Unique IDentifier) associated with this environment.
 This value is generated when the environment is created.</li>
@@ -541,7 +561,8 @@ the patch environment would be the following:</p>
  &lt;tr&gt;
  &lt;td&gt;config.nodeCount&lt;/td&gt;
  &lt;td&gt;Horizontally scale the number of nodes in the environment. An integer
- greater than or equal to 3 must be provided in the <code>config.nodeCount</code> field.
+ greater than or equal to 3 must be provided in the <code>config.nodeCount</code>
+ field.
  &lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
@@ -653,7 +674,7 @@ the patch environment would be the following:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_locations-operations-delete/" class="btn btn-neutral float-right" title="Locations Operations Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_locations-image-versions-list/" class="btn btn-neutral float-right" title="Locations Image Versions List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../projects_locations-environments-list/" class="btn btn-neutral" title="Locations Environments List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -666,7 +687,7 @@ the patch environment would be the following:</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -689,7 +710,7 @@ the patch environment would be the following:</p>
         <span><a href="../projects_locations-environments-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_locations-operations-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_locations-image-versions-list/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

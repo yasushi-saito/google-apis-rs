@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Agent Sessions Detect Intent - Dialogflow v1.0.8+20181009</title>
+  <title>Agent Sessions Detect Intent - Dialogflow v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dialogflow v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Dialogflow v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_agent/">Agent</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_agent-entity-types-batch-delete/">Agent Entity Types Batch Delete</a>
@@ -218,6 +222,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_delete-agent/">Delete Agent</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_get-agent/">Get Agent</a>
                 </li>
                 <li class="">
@@ -237,7 +245,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dialogflow v1.0.8+20181009</a>
+        <a href="..">Dialogflow v1.0.10+20190629</a>
       </nav>
 
       
@@ -271,7 +279,11 @@ as a result. This method is not idempotent, because it may cause contexts
 and session entity types to be updated, which in turn might affect
 results of future queries.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/dialogflow</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>dialogflow2 --scope &lt;scope&gt; projects agent-sessions-detect-intent ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
@@ -291,12 +303,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>GoogleCloudDialogflowV2DetectIntentRequest:
   input-audio: string
+  output-audio-config:
+    audio-encoding: string
+    sample-rate-hertz: integer
+    synthesize-speech-config:
+      effects-profile-id: [string]
+      pitch: number
+      speaking-rate: number
+      voice:
+        name: string
+        ssml-gender: string
+      volume-gain-db: number
   query-input:
     audio-config:
       audio-encoding: string
       language-code: string
+      model-variant: string
       phrase-hints: [string]
       sample-rate-hertz: integer
+      single-utterance: boolean
     event:
       language-code: string
       name: string
@@ -308,89 +333,167 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       latitude: number
       longitude: number
     reset-contexts: boolean
+    sentiment-analysis-request-config:
+      analyze-query-text-sentiment: boolean
     time-zone: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    input-audio=et</code><ul>
+<li><code>-r .    input-audio=lorem</code><ul>
 <li>Optional. The natural language speech audio to be processed. This field
     should be populated iff <code>query_input</code> is set to an input audio config.
     A single request can contain up to 1 minute of speech audio data.</li>
 </ul>
 </li>
-<li><code>query-input.audio-config    audio-encoding=consetetur</code><ul>
-<li>Required. Audio encoding of the audio content to process.</li>
+<li><code>output-audio-config    audio-encoding=gubergren</code><ul>
+<li>Required. Audio encoding of the synthesized audio content.</li>
 </ul>
 </li>
-<li><code>language-code=ut</code><ul>
-<li>Required. The language of the supplied audio. Dialogflow does not do
-    translations. See <a href="https://dialogflow.com/docs/languages">Language
-    Support</a> for a list of the
-    currently supported language codes. Note that queries in the same session
-    do not necessarily need to specify the same language.</li>
+<li><code>sample-rate-hertz=81</code><ul>
+<li>Optional. The synthesis sample rate (in hertz) for this audio. If not
+    provided, then the synthesizer will use the default sample rate based on
+    the audio encoding. If this is different from the voice&#39;s natural sample
+    rate, then the synthesizer will honor this request by converting to the
+    desired sample rate (which might result in worse audio quality).</li>
 </ul>
 </li>
-<li><code>phrase-hints=ea</code><ul>
-<li>Optional. The collection of phrase hints which are used to boost accuracy
-    of speech recognition.
-    Refer to
-    <a href="https://cloud.google.com/speech-to-text/docs/basics#phrase-hints">Cloud Speech API
-    documentation</a>
-    for more details.</li>
+<li><code>synthesize-speech-config    effects-profile-id=sit</code><ul>
+<li>Optional. An identifier which selects &#39;audio effects&#39; profiles that are
+    applied on (post synthesized) text to speech. Effects are applied on top of
+    each other in the order they are given.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li>
-<p><code>sample-rate-hertz=21</code></p>
-<ul>
-<li>Required. Sample rate (in Hertz) of the audio content sent in the query.
-    Refer to
-    <a href="https://cloud.google.com/speech-to-text/docs/basics">Cloud Speech API
-    documentation</a> for
-    more details.</li>
+<li><code>pitch=0.752180990981</code><ul>
+<li>Optional. Speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20
+    semitones from the original pitch. -20 means decrease 20 semitones from the
+    original pitch.</li>
+</ul>
+</li>
+<li><code>speaking-rate=0.728870793678</code><ul>
+<li>Optional. Speaking rate/speed, in the range [0.25, 4.0]. 1.0 is the normal
+    native speed supported by the specific voice. 2.0 is twice as fast, and
+    0.5 is half as fast. If unset(0.0), defaults to the native 1.0 speed. Any
+    other values &lt; 0.25 or &gt; 4.0 will return an error.</li>
+</ul>
+</li>
+<li><code>voice    name=rebum.</code><ul>
+<li>Optional. The name of the voice. If not set, the service will choose a
+    voice based on the other parameters such as language_code and gender.</li>
 </ul>
 </li>
 <li>
-<p><code>..event    language-code=dolor</code></p>
+<p><code>ssml-gender=consetetur</code></p>
 <ul>
-<li>Required. The language of this query. See <a href="https://dialogflow.com/docs/languages">Language
-    Support</a> for a list of the
-    currently supported language codes. Note that queries in the same session
-    do not necessarily need to specify the same language.</li>
+<li>Optional. The preferred gender of the voice. If not set, the service will
+    choose a voice based on the other parameters such as language_code and
+    name. Note that this is only a preference, not requirement. If a
+    voice of the appropriate gender is not available, the synthesizer should
+    substitute a voice with a different gender rather than failing the request.</li>
 </ul>
 </li>
 <li>
-<p><code>name=dolor</code></p>
+<p><code>..    volume-gain-db=0.568975580071</code></p>
+<ul>
+<li>Optional. Volume gain (in dB) of the normal native volume supported by the
+    specific voice, in the range [-96.0, 16.0]. If unset, or set to a value of
+    0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB)
+    will play at approximately half the amplitude of the normal native signal
+    amplitude. A value of +6.0 (dB) will play at approximately twice the
+    amplitude of the normal native signal amplitude. We strongly recommend not
+    to exceed +10 (dB) as there&#39;s usually no effective increase in loudness for
+    any value greater than that.</li>
+</ul>
+</li>
+<li>
+<p><code>...query-input.audio-config    audio-encoding=vero</code></p>
+<ul>
+<li>Required. Audio encoding of the audio content to process.</li>
+</ul>
+</li>
+<li><code>language-code=sadipscing</code><ul>
+<li>Required. The language of the supplied audio. Dialogflow does not do
+    translations. See <a href="https://cloud.google.com/dialogflow/docs/reference/language">Language
+    Support</a>
+    for a list of the currently supported language codes. Note that queries in
+    the same session do not necessarily need to specify the same language.</li>
+</ul>
+</li>
+<li><code>model-variant=invidunt</code><ul>
+<li>Optional. Which variant of the Speech model to use.</li>
+</ul>
+</li>
+<li>
+<p><code>phrase-hints=consetetur</code></p>
+<ul>
+<li>
+<p>Optional. A list of strings containing words and phrases that the speech
+    recognizer should recognize with higher likelihood.</p>
+<p>See <a href="https://cloud.google.com/speech-to-text/docs/basics#phrase-hints">the Cloud Speech
+documentation</a>
+for more details.
+    - Each invocation of this argument appends the given value to the array.
+* <code>sample-rate-hertz=17</code>
+    - Required. Sample rate (in Hertz) of the audio content sent in the query.
+Refer to
+<a href="https://cloud.google.com/speech-to-text/docs/basics">Cloud Speech API
+documentation</a> for
+more details.
+* <code>single-utterance=true</code>
+    - Optional. If <code>false</code> (default), recognition does not cease until the
+client closes the stream.
+If <code>true</code>, the recognizer will detect a single spoken utterance in input
+audio. Recognition ceases when it detects the audio&#39;s voice has
+stopped or paused. In this case, once a detected intent is received, the
+client should close the stream and start a new request with a new stream as
+needed.
+Note: This setting is relevant only for streaming methods.
+Note: When specified, InputAudioConfig.single_utterance takes precedence
+over StreamingDetectIntentRequest.single_utterance.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..event    language-code=aliquyam</code></p>
+<ul>
+<li>Required. The language of this query. See <a href="https://cloud.google.com/dialogflow/docs/reference/language">Language
+    Support</a>
+    for a list of the currently supported language codes. Note that queries in
+    the same session do not necessarily need to specify the same language.</li>
+</ul>
+</li>
+<li>
+<p><code>name=lorem</code></p>
 <ul>
 <li>Required. The unique identifier of the event.</li>
 </ul>
 </li>
 <li>
-<p><code>..text    language-code=dolor</code></p>
+<p><code>..text    language-code=et</code></p>
 <ul>
-<li>Required. The language of this conversational query. See <a href="https://dialogflow.com/docs/languages">Language
-    Support</a> for a list of the
-    currently supported language codes. Note that queries in the same session
-    do not necessarily need to specify the same language.</li>
+<li>Required. The language of this conversational query. See <a href="https://cloud.google.com/dialogflow/docs/reference/language">Language
+    Support</a>
+    for a list of the currently supported language codes. Note that queries in
+    the same session do not necessarily need to specify the same language.</li>
 </ul>
 </li>
 <li>
-<p><code>text=et</code></p>
+<p><code>text=clita</code></p>
 <ul>
 <li>Required. The UTF-8 encoded natural language text to be processed.
-    Text length must not exceed 256 bytes.</li>
+    Text length must not exceed 256 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>...query-params.geo-location    latitude=0.0504342224178</code></p>
+<p><code>...query-params.geo-location    latitude=0.55453533791</code></p>
 <ul>
 <li>The latitude in degrees. It must be in the range [-90.0, +90.0].</li>
 </ul>
 </li>
 <li>
-<p><code>longitude=0.494659563181</code></p>
+<p><code>longitude=0.427055674413</code></p>
 <ul>
 <li>The longitude in degrees. It must be in the range [-180.0, +180.0].</li>
 </ul>
@@ -402,7 +505,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     before the new ones are activated.</li>
 </ul>
 </li>
-<li><code>time-zone=lorem</code><ul>
+<li>
+<p><code>sentiment-analysis-request-config    analyze-query-text-sentiment=true</code></p>
+<ul>
+<li>Optional. Instructs the service to perform sentiment analysis on
+    <code>query_text</code>. If not provided, sentiment analysis is not performed on
+    <code>query_text</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>..    time-zone=sanctus</code></p>
+<ul>
 <li>Optional. The time zone of this conversational query from the
     <a href="https://www.iana.org/time-zones">time zone database</a>, e.g.,
     America/New_York, Europe/Paris. If not provided, the time zone specified in
@@ -519,7 +632,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

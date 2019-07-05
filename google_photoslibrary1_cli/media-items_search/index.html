@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - Photos Library v1.0.8+20181004</title>
+  <title>Search - Photos Library v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Photos Library v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Photos Library v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -62,6 +62,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../albums_batch-add-media-items/">Batch Add Media Items</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_batch-remove-media-items/">Batch Remove Media Items</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../albums_create/">Create</a>
                 </li>
                 <li class="">
@@ -76,6 +84,10 @@
                     
     <a class="" href="../albums_share/">Share</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../albums_unshare/">Unshare</a>
+                </li>
     </ul>
 	    </li>
           
@@ -86,6 +98,10 @@
                 <li class="">
                     
     <a class="" href="../media-items_batch-create/">Batch Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../media-items_batch-get/">Batch Get</a>
                 </li>
                 <li class="">
                     
@@ -137,6 +153,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../shared-albums_leave/">Leave</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../shared-albums_list/">List</a>
                 </li>
     </ul>
@@ -152,7 +172,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Photos Library v1.0.8+20181004</a>
+        <a href="..">Photos Library v1.0.10+20190702</a>
       </nav>
 
       
@@ -185,9 +205,9 @@
 If no filters are set, then all media items in the user&#39;s library are
 returned.
 If an album is set, all media items in the specified album are returned.
-If filters are specified, media items that match the filters from the user&#39;s
-library are listed.
-If you set both the album and the filters, the request results in an error.</p>
+If filters are specified, media items that match the filters from the
+user&#39;s library are listed. If you set both the album and the filters, the
+request results in an error.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -208,6 +228,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       excluded-content-categories: [string]
       included-content-categories: [string]
     exclude-non-app-created-data: boolean
+    feature-filter:
+      included-features: [string]
     include-archived-media: boolean
     media-type-filter:
       media-types: [string]
@@ -218,12 +240,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    album-id=sea</code><ul>
+<li><code>-r .    album-id=eos</code><ul>
 <li>Identifier of an album. If populated, lists all media items in
     specified album. Can&#39;t set in conjunction with any filters.</li>
 </ul>
 </li>
-<li><code>filters.content-filter    excluded-content-categories=lorem</code><ul>
+<li><code>filters.content-filter    excluded-content-categories=erat</code><ul>
 <li>The set of categories which are not to be included in the media item search
     results. The items in the set are ORed. There&#39;s a maximum of 10
     <code>excludedContentCategories</code> per request.</li>
@@ -231,7 +253,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>included-content-categories=eos</code></p>
+<p><code>included-content-categories=sadipscing</code></p>
 <ul>
 <li>The set of categories to be included in the media item search results.
     The items in the set are ORed. There&#39;s a maximum of 10
@@ -240,20 +262,30 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    exclude-non-app-created-data=false</code></p>
+<p><code>..    exclude-non-app-created-data=true</code></p>
 <ul>
 <li>If set, the results exclude media items that were not created by this app.
     Defaults to false (all media items are returned). This field is ignored if
     the photoslibrary.readonly.appcreateddata scope is used.</li>
 </ul>
 </li>
-<li><code>include-archived-media=false</code><ul>
+<li>
+<p><code>feature-filter    included-features=eirmod</code></p>
+<ul>
+<li>The set of features to be included in the media item search results.
+    The items in the set are ORed and may match any of the specified features.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>..    include-archived-media=true</code></p>
+<ul>
 <li>If set, the results include media items that the user has archived.
     Defaults to false (archived media items aren&#39;t included).</li>
 </ul>
 </li>
 <li>
-<p><code>media-type-filter    media-types=dolor</code></p>
+<p><code>media-type-filter    media-types=amet</code></p>
 <ul>
 <li>The types of media items to be included. This field should be populated
     with only one media type. If you specify multiple media types, it results
@@ -262,14 +294,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    page-size=62</code></p>
+<p><code>...    page-size=41</code></p>
 <ul>
 <li>Maximum number of media items to return in the response. The default number
     of media items to return at a time is 25. The maximum
     <code>pageSize</code> is 100.</li>
 </ul>
 </li>
-<li><code>page-token=elitr</code><ul>
+<li><code>page-token=labore</code><ul>
 <li>A continuation token to get the next page of the results. Adding this to
     the request returns the rows after the <code>pageToken</code>. The <code>pageToken</code> should
     be the value returned in the <code>nextPageToken</code> parameter in the response to
@@ -386,7 +418,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

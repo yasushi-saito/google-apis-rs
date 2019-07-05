@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - storage v1.0.8+20180905</title>
+  <title>Insert - storage v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
+        <a href=".." class="icon icon-home"> storage v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -321,6 +321,26 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_hmac-keys-create/">Hmac Keys Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-delete/">Hmac Keys Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-get/">Hmac Keys Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-list/">Hmac Keys List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-update/">Hmac Keys Update</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-account-get/">Service Account Get</a>
                 </li>
     </ul>
@@ -336,7 +356,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.8+20180905</a>
+        <a href="..">storage v1.0.10+20190624</a>
       </nav>
 
       
@@ -426,31 +446,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    bucket=sanctus</code><ul>
+<li><code>-r .    bucket=tempor</code><ul>
 <li>The name of the bucket containing this object.</li>
 </ul>
 </li>
-<li><code>cache-control=lorem</code><ul>
+<li><code>cache-control=et</code><ul>
 <li>Cache-Control directive for the object data. If omitted, and the object is accessible to all anonymous users, the default will be public, max-age=3600.</li>
 </ul>
 </li>
-<li><code>component-count=100</code><ul>
+<li><code>component-count=20</code><ul>
 <li>Number of underlying components that make up this object. Components are accumulated by compose operations.</li>
 </ul>
 </li>
-<li><code>content-disposition=diam</code><ul>
+<li><code>content-disposition=dolores</code><ul>
 <li>Content-Disposition of the object data.</li>
 </ul>
 </li>
-<li><code>content-encoding=eirmod</code><ul>
+<li><code>content-encoding=kasd</code><ul>
 <li>Content-Encoding of the object data.</li>
 </ul>
 </li>
-<li><code>content-language=sadipscing</code><ul>
+<li><code>content-language=et</code><ul>
 <li>Content-Language of the object data.</li>
 </ul>
 </li>
-<li><code>content-type=lorem</code><ul>
+<li><code>content-type=clita</code><ul>
 <li>Content-Type of the object data. If an object is stored without a Content-Type, it is served as application/octet-stream.</li>
 </ul>
 </li>
@@ -458,18 +478,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c checksum, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>customer-encryption    encryption-algorithm=sit</code><ul>
+<li><code>customer-encryption    encryption-algorithm=dolores</code><ul>
 <li>The encryption algorithm.</li>
 </ul>
 </li>
 <li>
-<p><code>key-sha256=dolore</code></p>
+<p><code>key-sha256=clita</code></p>
 <ul>
 <li>SHA256 hash value of the encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=et</code></p>
+<p><code>..    etag=eos</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the object.</li>
 </ul>
@@ -478,23 +498,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether an object is under event-based hold. Event-based hold is a way to retain objects until an event occurs, which is signified by the hold&#39;s release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any). One sample use case of this flag is for banks to hold loan documents for at least 3 years after loan is paid in full. Here, bucket-level retention is 3 years and the event is the loan being paid in full. In this example, these objects will be held intact for any number of years until the event has occurred (event-based hold on the object is released) and then 3 more years after that. That means retention duration of the objects begins from the moment event-based hold transitioned from true to false.</li>
 </ul>
 </li>
-<li><code>generation=sit</code><ul>
+<li><code>generation=sed</code><ul>
 <li>The content generation of this object. Used for object versioning.</li>
 </ul>
 </li>
-<li><code>id=ut</code><ul>
+<li><code>id=takimata</code><ul>
 <li>The ID of the object, including the bucket name, object name, and generation number.</li>
 </ul>
 </li>
-<li><code>kind=diam</code><ul>
+<li><code>kind=sit</code><ul>
 <li>The kind of item this is. For objects, this is always storage#object.</li>
 </ul>
 </li>
-<li><code>kms-key-name=tempor</code><ul>
+<li><code>kms-key-name=labore</code><ul>
 <li>Cloud KMS Key used to encrypt this object, if the object is encrypted by such a key.</li>
 </ul>
 </li>
-<li><code>md5-hash=et</code><ul>
+<li><code>md5-hash=nonumy</code><ul>
 <li>MD5 hash of the data; encoded using base64. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
@@ -502,12 +522,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Media download link.</li>
 </ul>
 </li>
-<li><code>metadata=key=dolores</code><ul>
+<li><code>metadata=key=gubergren</code><ul>
 <li>User-provided metadata, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>metageneration=kasd</code><ul>
+<li><code>metageneration=erat</code><ul>
 <li>The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object.</li>
 </ul>
 </li>
@@ -515,35 +535,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The name of the object. Required if not specified by URL parameter.</li>
 </ul>
 </li>
-<li><code>owner    entity=clita</code><ul>
+<li><code>owner    entity=amet</code><ul>
 <li>The entity, in the form user-userId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=sed</code></p>
+<p><code>entity-id=lorem</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    retention-expiration-time=dolores</code></p>
+<p><code>..    retention-expiration-time=voluptua.</code></p>
 <ul>
 <li>A server-determined value that specifies the earliest time that the object&#39;s retention period expires. This value is in RFC 3339 format. Note 1: This field is not provided for objects with an active event-based hold, since retention expiration is unknown until the hold is removed. Note 2: This value can be provided even when temporary hold is set (so that the user can reason about policy without having to first unset the temporary hold).</li>
 </ul>
 </li>
-<li><code>self-link=clita</code><ul>
+<li><code>self-link=rebum.</code><ul>
 <li>The link to this object.</li>
 </ul>
 </li>
-<li><code>size=eos</code><ul>
+<li><code>size=justo</code><ul>
 <li>Content-Length of the data in bytes.</li>
 </ul>
 </li>
-<li><code>storage-class=amet</code><ul>
+<li><code>storage-class=labore</code><ul>
 <li>Storage class of the object.</li>
 </ul>
 </li>
-<li><code>temporary-hold=false</code><ul>
+<li><code>temporary-hold=true</code><ul>
 <li>Whether an object is under temporary hold. While this flag is set to true, the object is protected against deletion and overwrites. A common use case of this flag is regulatory investigations where objects need to be retained while the investigation is ongoing. Note that unlike event-based hold, temporary hold does not impact retention expiration time of an object.</li>
 </ul>
 </li>
@@ -551,15 +571,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The creation time of the object in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>time-deleted=sit</code><ul>
+<li><code>time-deleted=dolor</code><ul>
 <li>The deletion time of the object in RFC 3339 format. Will be returned if and only if this version of the object has been deleted.</li>
 </ul>
 </li>
-<li><code>time-storage-class-updated=labore</code><ul>
+<li><code>time-storage-class-updated=takimata</code><ul>
 <li>The time at which the object&#39;s storage class was last changed. When the object is initially created, it will be set to timeCreated.</li>
 </ul>
 </li>
-<li><code>updated=nonumy</code><ul>
+<li><code>updated=voluptua.</code><ul>
 <li>The modification time of the object metadata in RFC 3339 format.</li>
 </ul>
 </li>
@@ -615,39 +635,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p user-project=string</strong></p>
-<ul>
-<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-generation-not-match=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p predefined-acl=string</strong></p>
-<ul>
-<li>Apply a predefined set of access controls to this object.</li>
+<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
 </ul>
 </li>
 <li>
@@ -657,15 +653,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p content-encoding=string</strong></p>
 <ul>
 <li>If set, sets the contentEncoding property of the final object to this value. Setting this parameter is equivalent to setting the contentEncoding metadata property. This can be useful when uploading an object with uploadType=media to indicate the encoding of the content being uploaded.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
+<p><strong>-p provisional-user-project=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+<li>The project to be billed for this request if the target bucket is requester-pays bucket.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to this object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.</li>
 </ul>
 </li>
 </ul>
@@ -735,7 +761,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

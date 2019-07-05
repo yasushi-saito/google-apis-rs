@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_cloudresourcemanager1` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_cloudresourcemanager1"><title>google_cloudresourcemanager1 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_cloudresourcemanager1/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_cloudresourcemanager1</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_cloudresourcemanager1's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_cloudresourcemanager1', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_cloudresourcemanager1/lib.rs.html#5-13459' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_cloudresourcemanager1</a></span></h1><div class='docblock'><p>This documentation was generated from <em>Cloud Resource Manager</em> crate version <em>1.0.9+20190701</em>, where <em>20190701</em> is the exact revision of the <em>cloudresourcemanager:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>Cloud Resource Manager</em> <em>v1</em> API can be found at the
+<a href="https://cloud.google.com/resource-manager">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.CloudResourceManager.html">hub</a> ... </p>
+<ul>
+<li>folders</li>
+<li><a href="struct.FolderClearOrgPolicyCall.html"><em>clear org policy</em></a>, <a href="struct.FolderGetEffectiveOrgPolicyCall.html"><em>get effective org policy</em></a>, <a href="struct.FolderGetOrgPolicyCall.html"><em>get org policy</em></a>, <a href="struct.FolderListAvailableOrgPolicyConstraintCall.html"><em>list available org policy constraints</em></a>, <a href="struct.FolderListOrgPolicyCall.html"><em>list org policies</em></a> and <a href="struct.FolderSetOrgPolicyCall.html"><em>set org policy</em></a></li>
+<li><a href="struct.Lien.html">liens</a></li>
+<li><a href="struct.LienCreateCall.html"><em>create</em></a>, <a href="struct.LienDeleteCall.html"><em>delete</em></a>, <a href="struct.LienGetCall.html"><em>get</em></a> and <a href="struct.LienListCall.html"><em>list</em></a></li>
+<li><a href="struct.Operation.html">operations</a></li>
+<li><a href="struct.OperationGetCall.html"><em>get</em></a></li>
+<li><a href="struct.Organization.html">organizations</a></li>
+<li><a href="struct.OrganizationClearOrgPolicyCall.html"><em>clear org policy</em></a>, <a href="struct.OrganizationGetCall.html"><em>get</em></a>, <a href="struct.OrganizationGetEffectiveOrgPolicyCall.html"><em>get effective org policy</em></a>, <a href="struct.OrganizationGetIamPolicyCall.html"><em>get iam policy</em></a>, <a href="struct.OrganizationGetOrgPolicyCall.html"><em>get org policy</em></a>, <a href="struct.OrganizationListAvailableOrgPolicyConstraintCall.html"><em>list available org policy constraints</em></a>, <a href="struct.OrganizationListOrgPolicyCall.html"><em>list org policies</em></a>, <a href="struct.OrganizationSearchCall.html"><em>search</em></a>, <a href="struct.OrganizationSetIamPolicyCall.html"><em>set iam policy</em></a>, <a href="struct.OrganizationSetOrgPolicyCall.html"><em>set org policy</em></a> and <a href="struct.OrganizationTestIamPermissionCall.html"><em>test iam permissions</em></a></li>
+<li><a href="struct.Project.html">projects</a></li>
+<li><a href="struct.ProjectClearOrgPolicyCall.html"><em>clear org policy</em></a>, <a href="struct.ProjectCreateCall.html"><em>create</em></a>, <a href="struct.ProjectDeleteCall.html"><em>delete</em></a>, <a href="struct.ProjectGetCall.html"><em>get</em></a>, <a href="struct.ProjectGetAncestryCall.html"><em>get ancestry</em></a>, <a href="struct.ProjectGetEffectiveOrgPolicyCall.html"><em>get effective org policy</em></a>, <a href="struct.ProjectGetIamPolicyCall.html"><em>get iam policy</em></a>, <a href="struct.ProjectGetOrgPolicyCall.html"><em>get org policy</em></a>, <a href="struct.ProjectListCall.html"><em>list</em></a>, <a href="struct.ProjectListAvailableOrgPolicyConstraintCall.html"><em>list available org policy constraints</em></a>, <a href="struct.ProjectListOrgPolicyCall.html"><em>list org policies</em></a>, <a href="struct.ProjectSetIamPolicyCall.html"><em>set iam policy</em></a>, <a href="struct.ProjectSetOrgPolicyCall.html"><em>set org policy</em></a>, <a href="struct.ProjectTestIamPermissionCall.html"><em>test iam permissions</em></a>, <a href="struct.ProjectUndeleteCall.html"><em>undelete</em></a> and <a href="struct.ProjectUpdateCall.html"><em>update</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.CloudResourceManager.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">test_iam_permissions</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">undelete</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">list_org_policies</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">get_effective_org_policy</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">get_ancestry</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">get_iam_policy</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">delete</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">list</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">create</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">set_iam_policy</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">get_org_policy</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">set_org_policy</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">list_available_org_policy_constraints</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">clear_org_policy</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-cloudresourcemanager1 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_cloudresourcemanager1</span> <span class="kw">as</span> <span class="ident">cloudresourcemanager1</span>;
+<span class="kw">use</span> <span class="ident">cloudresourcemanager1</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">cloudresourcemanager1</span>::<span class="ident">CloudResourceManager</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">CloudResourceManager</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">list</span>()
+             .<span class="ident">page_token</span>(<span class="string">&quot;sed&quot;</span>)
+             .<span class="ident">page_size</span>(<span class="op">-</span><span class="number">85</span>)
+             .<span class="ident">filter</span>(<span class="string">&quot;dolores&quot;</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.Ancestor.html" title='google_cloudresourcemanager1::Ancestor struct'>Ancestor</a></td><td class='docblock-short'><p>Identifying information for a single ancestor of a project.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AuditConfig.html" title='google_cloudresourcemanager1::AuditConfig struct'>AuditConfig</a></td><td class='docblock-short'><p>Specifies the audit configuration for a service.
+The configuration determines which permission types are logged, and what
+identities, if any, are exempted from logging.
+An AuditConfig must have one or more AuditLogConfigs.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AuditLogConfig.html" title='google_cloudresourcemanager1::AuditLogConfig struct'>AuditLogConfig</a></td><td class='docblock-short'><p>Provides the configuration for logging a type of permissions.
+Example:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Binding.html" title='google_cloudresourcemanager1::Binding struct'>Binding</a></td><td class='docblock-short'><p>Associates <code>members</code> with a <code>role</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BooleanConstraint.html" title='google_cloudresourcemanager1::BooleanConstraint struct'>BooleanConstraint</a></td><td class='docblock-short'><p>A <code>Constraint</code> that is either enforced or not.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BooleanPolicy.html" title='google_cloudresourcemanager1::BooleanPolicy struct'>BooleanPolicy</a></td><td class='docblock-short'><p>Used in <code>policy_type</code> to specify how <code>boolean_policy</code> will behave at this
+resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_cloudresourcemanager1::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ClearOrgPolicyRequest.html" title='google_cloudresourcemanager1::ClearOrgPolicyRequest struct'>ClearOrgPolicyRequest</a></td><td class='docblock-short'><p>The request sent to the ClearOrgPolicy method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CloudResourceManager.html" title='google_cloudresourcemanager1::CloudResourceManager struct'>CloudResourceManager</a></td><td class='docblock-short'><p>Central instance to access all CloudResourceManager related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Constraint.html" title='google_cloudresourcemanager1::Constraint struct'>Constraint</a></td><td class='docblock-short'><p>A <code>Constraint</code> describes a way in which a resource's configuration can be
+restricted. For example, it controls which cloud services can be activated
+across an organization, or whether a Compute Engine instance can have
+serial port connections established. <code>Constraints</code> can be configured by the
+organization's policy adminstrator to fit the needs of the organzation by
+setting Policies for <code>Constraints</code> at different locations in the
+organization's resource hierarchy. Policies are inherited down the resource
+hierarchy from higher levels, but can also be overridden. For details about
+the inheritance rules please read about
+Policies.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_cloudresourcemanager1::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_cloudresourcemanager1::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_cloudresourcemanager1::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Empty.html" title='google_cloudresourcemanager1::Empty struct'>Empty</a></td><td class='docblock-short'><p>A generic empty message that you can re-use to avoid defining duplicated
+empty messages in your APIs. A typical example is to use it as the request
+or the response type of an API method. For instance:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_cloudresourcemanager1::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Expr.html" title='google_cloudresourcemanager1::Expr struct'>Expr</a></td><td class='docblock-short'><p>Represents an expression text. Example:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderClearOrgPolicyCall.html" title='google_cloudresourcemanager1::FolderClearOrgPolicyCall struct'>FolderClearOrgPolicyCall</a></td><td class='docblock-short'><p>Clears a <code>Policy</code> from a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderGetEffectiveOrgPolicyCall.html" title='google_cloudresourcemanager1::FolderGetEffectiveOrgPolicyCall struct'>FolderGetEffectiveOrgPolicyCall</a></td><td class='docblock-short'><p>Gets the effective <code>Policy</code> on a resource. This is the result of merging
+<code>Policies</code> in the resource hierarchy. The returned <code>Policy</code> will not have
+an <code>etag</code>set because it is a computed <code>Policy</code> across multiple resources.
+Subtrees of Resource Manager resource hierarchy with 'under:' prefix will
+not be expanded.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderGetOrgPolicyCall.html" title='google_cloudresourcemanager1::FolderGetOrgPolicyCall struct'>FolderGetOrgPolicyCall</a></td><td class='docblock-short'><p>Gets a <code>Policy</code> on a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderListAvailableOrgPolicyConstraintCall.html" title='google_cloudresourcemanager1::FolderListAvailableOrgPolicyConstraintCall struct'>FolderListAvailableOrgPolicyConstraintCall</a></td><td class='docblock-short'><p>Lists <code>Constraints</code> that could be applied on the specified resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderListOrgPolicyCall.html" title='google_cloudresourcemanager1::FolderListOrgPolicyCall struct'>FolderListOrgPolicyCall</a></td><td class='docblock-short'><p>Lists all the <code>Policies</code> set for a particular resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderMethods.html" title='google_cloudresourcemanager1::FolderMethods struct'>FolderMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>folder</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FolderSetOrgPolicyCall.html" title='google_cloudresourcemanager1::FolderSetOrgPolicyCall struct'>FolderSetOrgPolicyCall</a></td><td class='docblock-short'><p>Updates the specified <code>Policy</code> on the resource. Creates a new <code>Policy</code> for
+that <code>Constraint</code> on the resource if one does not exist.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetAncestryRequest.html" title='google_cloudresourcemanager1::GetAncestryRequest struct'>GetAncestryRequest</a></td><td class='docblock-short'><p>The request sent to the
+GetAncestry
+method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetAncestryResponse.html" title='google_cloudresourcemanager1::GetAncestryResponse struct'>GetAncestryResponse</a></td><td class='docblock-short'><p>Response from the GetAncestry method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetEffectiveOrgPolicyRequest.html" title='google_cloudresourcemanager1::GetEffectiveOrgPolicyRequest struct'>GetEffectiveOrgPolicyRequest</a></td><td class='docblock-short'><p>The request sent to the GetEffectiveOrgPolicy method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetIamPolicyRequest.html" title='google_cloudresourcemanager1::GetIamPolicyRequest struct'>GetIamPolicyRequest</a></td><td class='docblock-short'><p>Request message for <code>GetIamPolicy</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetOrgPolicyRequest.html" title='google_cloudresourcemanager1::GetOrgPolicyRequest struct'>GetOrgPolicyRequest</a></td><td class='docblock-short'><p>The request sent to the GetOrgPolicy method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetPolicyOptions.html" title='google_cloudresourcemanager1::GetPolicyOptions struct'>GetPolicyOptions</a></td><td class='docblock-short'><p>Encapsulates settings provided to GetIamPolicy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_cloudresourcemanager1::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Lien.html" title='google_cloudresourcemanager1::Lien struct'>Lien</a></td><td class='docblock-short'><p>A Lien represents an encumbrance on the actions that can be performed on a
+resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LienCreateCall.html" title='google_cloudresourcemanager1::LienCreateCall struct'>LienCreateCall</a></td><td class='docblock-short'><p>Create a Lien which applies to the resource denoted by the <code>parent</code> field.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LienDeleteCall.html" title='google_cloudresourcemanager1::LienDeleteCall struct'>LienDeleteCall</a></td><td class='docblock-short'><p>Delete a Lien by <code>name</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LienGetCall.html" title='google_cloudresourcemanager1::LienGetCall struct'>LienGetCall</a></td><td class='docblock-short'><p>Retrieve a Lien by <code>name</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LienListCall.html" title='google_cloudresourcemanager1::LienListCall struct'>LienListCall</a></td><td class='docblock-short'><p>List all Liens applied to the <code>parent</code> resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LienMethods.html" title='google_cloudresourcemanager1::LienMethods struct'>LienMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>lien</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListAvailableOrgPolicyConstraintsRequest.html" title='google_cloudresourcemanager1::ListAvailableOrgPolicyConstraintsRequest struct'>ListAvailableOrgPolicyConstraintsRequest</a></td><td class='docblock-short'><p>The request sent to the [ListAvailableOrgPolicyConstraints]
+google.cloud.OrgPolicy.v1.ListAvailableOrgPolicyConstraints] method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListAvailableOrgPolicyConstraintsResponse.html" title='google_cloudresourcemanager1::ListAvailableOrgPolicyConstraintsResponse struct'>ListAvailableOrgPolicyConstraintsResponse</a></td><td class='docblock-short'><p>The response returned from the ListAvailableOrgPolicyConstraints method.
+Returns all <code>Constraints</code> that could be set at this level of the hierarchy
+(contrast with the response from <code>ListPolicies</code>, which returns all policies
+which are set).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListConstraint.html" title='google_cloudresourcemanager1::ListConstraint struct'>ListConstraint</a></td><td class='docblock-short'><p>A <code>Constraint</code> that allows or disallows a list of string values, which are
+configured by an Organization's policy administrator with a <code>Policy</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListLiensResponse.html" title='google_cloudresourcemanager1::ListLiensResponse struct'>ListLiensResponse</a></td><td class='docblock-short'><p>The response message for Liens.ListLiens.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListOrgPoliciesRequest.html" title='google_cloudresourcemanager1::ListOrgPoliciesRequest struct'>ListOrgPoliciesRequest</a></td><td class='docblock-short'><p>The request sent to the ListOrgPolicies method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListOrgPoliciesResponse.html" title='google_cloudresourcemanager1::ListOrgPoliciesResponse struct'>ListOrgPoliciesResponse</a></td><td class='docblock-short'><p>The response returned from the ListOrgPolicies method. It will be empty
+if no <code>Policies</code> are set on the resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListPolicy.html" title='google_cloudresourcemanager1::ListPolicy struct'>ListPolicy</a></td><td class='docblock-short'><p>Used in <code>policy_type</code> to specify how <code>list_policy</code> behaves at this
+resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListProjectsResponse.html" title='google_cloudresourcemanager1::ListProjectsResponse struct'>ListProjectsResponse</a></td><td class='docblock-short'><p>A page of the response received from the
+ListProjects
+method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_cloudresourcemanager1::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_cloudresourcemanager1::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Operation.html" title='google_cloudresourcemanager1::Operation struct'>Operation</a></td><td class='docblock-short'><p>This resource represents a long-running operation that is the result of a
+network API call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OperationGetCall.html" title='google_cloudresourcemanager1::OperationGetCall struct'>OperationGetCall</a></td><td class='docblock-short'><p>Gets the latest state of a long-running operation.  Clients can use this
+method to poll the operation result at intervals as recommended by the API
+service.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OperationMethods.html" title='google_cloudresourcemanager1::OperationMethods struct'>OperationMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>operation</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrgPolicy.html" title='google_cloudresourcemanager1::OrgPolicy struct'>OrgPolicy</a></td><td class='docblock-short'><p>Defines a Cloud Organization <code>Policy</code> which is used to specify <code>Constraints</code>
+for configurations of Cloud Platform resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Organization.html" title='google_cloudresourcemanager1::Organization struct'>Organization</a></td><td class='docblock-short'><p>The root node in the resource hierarchy to which a particular entity's
+(e.g., company) resources belong.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationClearOrgPolicyCall.html" title='google_cloudresourcemanager1::OrganizationClearOrgPolicyCall struct'>OrganizationClearOrgPolicyCall</a></td><td class='docblock-short'><p>Clears a <code>Policy</code> from a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationGetCall.html" title='google_cloudresourcemanager1::OrganizationGetCall struct'>OrganizationGetCall</a></td><td class='docblock-short'><p>Fetches an Organization resource identified by the specified resource name.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationGetEffectiveOrgPolicyCall.html" title='google_cloudresourcemanager1::OrganizationGetEffectiveOrgPolicyCall struct'>OrganizationGetEffectiveOrgPolicyCall</a></td><td class='docblock-short'><p>Gets the effective <code>Policy</code> on a resource. This is the result of merging
+<code>Policies</code> in the resource hierarchy. The returned <code>Policy</code> will not have
+an <code>etag</code>set because it is a computed <code>Policy</code> across multiple resources.
+Subtrees of Resource Manager resource hierarchy with 'under:' prefix will
+not be expanded.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationGetIamPolicyCall.html" title='google_cloudresourcemanager1::OrganizationGetIamPolicyCall struct'>OrganizationGetIamPolicyCall</a></td><td class='docblock-short'><p>Gets the access control policy for an Organization resource. May be empty
+if no such policy or resource exists. The <code>resource</code> field should be the
+organization's resource name, e.g. &quot;organizations/123&quot;.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationGetOrgPolicyCall.html" title='google_cloudresourcemanager1::OrganizationGetOrgPolicyCall struct'>OrganizationGetOrgPolicyCall</a></td><td class='docblock-short'><p>Gets a <code>Policy</code> on a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationListAvailableOrgPolicyConstraintCall.html" title='google_cloudresourcemanager1::OrganizationListAvailableOrgPolicyConstraintCall struct'>OrganizationListAvailableOrgPolicyConstraintCall</a></td><td class='docblock-short'><p>Lists <code>Constraints</code> that could be applied on the specified resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationListOrgPolicyCall.html" title='google_cloudresourcemanager1::OrganizationListOrgPolicyCall struct'>OrganizationListOrgPolicyCall</a></td><td class='docblock-short'><p>Lists all the <code>Policies</code> set for a particular resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationMethods.html" title='google_cloudresourcemanager1::OrganizationMethods struct'>OrganizationMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>organization</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationOwner.html" title='google_cloudresourcemanager1::OrganizationOwner struct'>OrganizationOwner</a></td><td class='docblock-short'><p>The entity that owns an Organization. The lifetime of the Organization and
+all of its descendants are bound to the <code>OrganizationOwner</code>. If the
+<code>OrganizationOwner</code> is deleted, the Organization and all its descendants will
+be deleted.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationSearchCall.html" title='google_cloudresourcemanager1::OrganizationSearchCall struct'>OrganizationSearchCall</a></td><td class='docblock-short'><p>Searches Organization resources that are visible to the user and satisfy
+the specified filter. This method returns Organizations in an unspecified
+order. New Organizations do not necessarily appear at the end of the
+results.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationSetIamPolicyCall.html" title='google_cloudresourcemanager1::OrganizationSetIamPolicyCall struct'>OrganizationSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the access control policy on an Organization resource. Replaces any
+existing policy. The <code>resource</code> field should be the organization's resource
+name, e.g. &quot;organizations/123&quot;.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationSetOrgPolicyCall.html" title='google_cloudresourcemanager1::OrganizationSetOrgPolicyCall struct'>OrganizationSetOrgPolicyCall</a></td><td class='docblock-short'><p>Updates the specified <code>Policy</code> on the resource. Creates a new <code>Policy</code> for
+that <code>Constraint</code> on the resource if one does not exist.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrganizationTestIamPermissionCall.html" title='google_cloudresourcemanager1::OrganizationTestIamPermissionCall struct'>OrganizationTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified Organization.
+The <code>resource</code> field should be the organization's resource name,
+e.g. &quot;organizations/123&quot;.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Policy.html" title='google_cloudresourcemanager1::Policy struct'>Policy</a></td><td class='docblock-short'><p>Defines an Identity and Access Management (IAM) policy. It is used to
+specify access control policies for Cloud Platform resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Project.html" title='google_cloudresourcemanager1::Project struct'>Project</a></td><td class='docblock-short'><p>A Project is a high-level Google Cloud Platform entity.  It is a
+container for ACLs, APIs, App Engine Apps, VMs, and other
+Google Cloud Platform resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectClearOrgPolicyCall.html" title='google_cloudresourcemanager1::ProjectClearOrgPolicyCall struct'>ProjectClearOrgPolicyCall</a></td><td class='docblock-short'><p>Clears a <code>Policy</code> from a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectCreateCall.html" title='google_cloudresourcemanager1::ProjectCreateCall struct'>ProjectCreateCall</a></td><td class='docblock-short'><p>Request that a new Project be created. The result is an Operation which
+can be used to track the creation process. It is automatically deleted
+after a few hours, so there is no need to call DeleteOperation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectDeleteCall.html" title='google_cloudresourcemanager1::ProjectDeleteCall struct'>ProjectDeleteCall</a></td><td class='docblock-short'><p>Marks the Project identified by the specified
+<code>project_id</code> (for example, <code>my-project-123</code>) for deletion.
+This method will only affect the Project if it has a lifecycle state of
+ACTIVE.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectGetAncestryCall.html" title='google_cloudresourcemanager1::ProjectGetAncestryCall struct'>ProjectGetAncestryCall</a></td><td class='docblock-short'><p>Gets a list of ancestors in the resource hierarchy for the Project
+identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectGetCall.html" title='google_cloudresourcemanager1::ProjectGetCall struct'>ProjectGetCall</a></td><td class='docblock-short'><p>Retrieves the Project identified by the specified
+<code>project_id</code> (for example, <code>my-project-123</code>).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectGetEffectiveOrgPolicyCall.html" title='google_cloudresourcemanager1::ProjectGetEffectiveOrgPolicyCall struct'>ProjectGetEffectiveOrgPolicyCall</a></td><td class='docblock-short'><p>Gets the effective <code>Policy</code> on a resource. This is the result of merging
+<code>Policies</code> in the resource hierarchy. The returned <code>Policy</code> will not have
+an <code>etag</code>set because it is a computed <code>Policy</code> across multiple resources.
+Subtrees of Resource Manager resource hierarchy with 'under:' prefix will
+not be expanded.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectGetIamPolicyCall.html" title='google_cloudresourcemanager1::ProjectGetIamPolicyCall struct'>ProjectGetIamPolicyCall</a></td><td class='docblock-short'><p>Returns the IAM access control policy for the specified Project.
+Permission is denied if the policy or the resource does not exist.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectGetOrgPolicyCall.html" title='google_cloudresourcemanager1::ProjectGetOrgPolicyCall struct'>ProjectGetOrgPolicyCall</a></td><td class='docblock-short'><p>Gets a <code>Policy</code> on a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectListAvailableOrgPolicyConstraintCall.html" title='google_cloudresourcemanager1::ProjectListAvailableOrgPolicyConstraintCall struct'>ProjectListAvailableOrgPolicyConstraintCall</a></td><td class='docblock-short'><p>Lists <code>Constraints</code> that could be applied on the specified resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectListCall.html" title='google_cloudresourcemanager1::ProjectListCall struct'>ProjectListCall</a></td><td class='docblock-short'><p>Lists Projects that the caller has the <code>resourcemanager.projects.get</code>
+permission on and satisfy the specified filter.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectListOrgPolicyCall.html" title='google_cloudresourcemanager1::ProjectListOrgPolicyCall struct'>ProjectListOrgPolicyCall</a></td><td class='docblock-short'><p>Lists all the <code>Policies</code> set for a particular resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectMethods.html" title='google_cloudresourcemanager1::ProjectMethods struct'>ProjectMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectSetIamPolicyCall.html" title='google_cloudresourcemanager1::ProjectSetIamPolicyCall struct'>ProjectSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the IAM access control policy for the specified Project. Overwrites
+any existing policy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectSetOrgPolicyCall.html" title='google_cloudresourcemanager1::ProjectSetOrgPolicyCall struct'>ProjectSetOrgPolicyCall</a></td><td class='docblock-short'><p>Updates the specified <code>Policy</code> on the resource. Creates a new <code>Policy</code> for
+that <code>Constraint</code> on the resource if one does not exist.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectTestIamPermissionCall.html" title='google_cloudresourcemanager1::ProjectTestIamPermissionCall struct'>ProjectTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified Project.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectUndeleteCall.html" title='google_cloudresourcemanager1::ProjectUndeleteCall struct'>ProjectUndeleteCall</a></td><td class='docblock-short'><p>Restores the Project identified by the specified
+<code>project_id</code> (for example, <code>my-project-123</code>).
+You can only use this method for a Project that has a lifecycle state of
+DELETE_REQUESTED.
+After deletion starts, the Project cannot be restored.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectUpdateCall.html" title='google_cloudresourcemanager1::ProjectUpdateCall struct'>ProjectUpdateCall</a></td><td class='docblock-short'><p>Updates the attributes of the Project identified by the specified
+<code>project_id</code> (for example, <code>my-project-123</code>).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_cloudresourcemanager1::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ResourceId.html" title='google_cloudresourcemanager1::ResourceId struct'>ResourceId</a></td><td class='docblock-short'><p>A container to reference an id for any resource type. A <code>resource</code> in Google
+Cloud Platform is a generic term for something you (a developer) may want to
+interact with through one of our API's. Some examples are an App Engine app,
+a Compute Engine instance, a Cloud SQL database, and so on.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RestoreDefault.html" title='google_cloudresourcemanager1::RestoreDefault struct'>RestoreDefault</a></td><td class='docblock-short'><p>Ignores policies set above this resource and restores the
+<code>constraint_default</code> enforcement behavior of the specific <code>Constraint</code> at
+this resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_cloudresourcemanager1::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchOrganizationsRequest.html" title='google_cloudresourcemanager1::SearchOrganizationsRequest struct'>SearchOrganizationsRequest</a></td><td class='docblock-short'><p>The request sent to the <code>SearchOrganizations</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchOrganizationsResponse.html" title='google_cloudresourcemanager1::SearchOrganizationsResponse struct'>SearchOrganizationsResponse</a></td><td class='docblock-short'><p>The response returned from the <code>SearchOrganizations</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_cloudresourcemanager1::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_cloudresourcemanager1::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.SetIamPolicyRequest.html" title='google_cloudresourcemanager1::SetIamPolicyRequest struct'>SetIamPolicyRequest</a></td><td class='docblock-short'><p>Request message for <code>SetIamPolicy</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SetOrgPolicyRequest.html" title='google_cloudresourcemanager1::SetOrgPolicyRequest struct'>SetOrgPolicyRequest</a></td><td class='docblock-short'><p>The request sent to the SetOrgPolicyRequest method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Status.html" title='google_cloudresourcemanager1::Status struct'>Status</a></td><td class='docblock-short'><p>The <code>Status</code> type defines a logical error model that is suitable for
+different programming environments, including REST APIs and RPC APIs. It is
+used by <a href="https://github.com/grpc">gRPC</a>. Each <code>Status</code> message contains
+three pieces of data: error code, error message, and error details.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TestIamPermissionsRequest.html" title='google_cloudresourcemanager1::TestIamPermissionsRequest struct'>TestIamPermissionsRequest</a></td><td class='docblock-short'><p>Request message for <code>TestIamPermissions</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TestIamPermissionsResponse.html" title='google_cloudresourcemanager1::TestIamPermissionsResponse struct'>TestIamPermissionsResponse</a></td><td class='docblock-short'><p>Response message for <code>TestIamPermissions</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UndeleteProjectRequest.html" title='google_cloudresourcemanager1::UndeleteProjectRequest struct'>UndeleteProjectRequest</a></td><td class='docblock-short'><p>The request sent to the UndeleteProject
+method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_cloudresourcemanager1::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_cloudresourcemanager1::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_cloudresourcemanager1::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_cloudresourcemanager1::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_cloudresourcemanager1::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_cloudresourcemanager1::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_cloudresourcemanager1::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_cloudresourcemanager1::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_cloudresourcemanager1::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_cloudresourcemanager1::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_cloudresourcemanager1::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_cloudresourcemanager1::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_cloudresourcemanager1::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_cloudresourcemanager1::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_cloudresourcemanager1::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_cloudresourcemanager1::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_cloudresourcemanager1::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_cloudresourcemanager1";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

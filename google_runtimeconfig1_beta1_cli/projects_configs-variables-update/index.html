@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Configs Variables Update - Cloud RuntimeConfig v1.0.8+20181008</title>
+  <title>Configs Variables Update - Cloud RuntimeConfig v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud RuntimeConfig v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud RuntimeConfig v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud RuntimeConfig v1.0.8+20181008</a>
+        <a href="..">Cloud RuntimeConfig v1.0.10+20190624</a>
       </nav>
 
       
@@ -250,7 +250,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>projects/[PROJECT_ID]/configs/[CONFIG_NAME]/variables/[VARIABLE_NAME]
 </code></pre>
 <p>The <code>[PROJECT_ID]</code> must be a valid project ID, <code>[CONFIG_NAME]</code> must be a
-valid RuntimeConfig reource and <code>[VARIABLE_NAME]</code> follows Unix file system
+valid RuntimeConfig resource and <code>[VARIABLE_NAME]</code> follows Unix file system
 file path naming.</p>
 <p>The <code>[VARIABLE_NAME]</code> can contain ASCII letters, numbers, slashes and
 dashes. Slashes are used as path element separators and are not part of the
@@ -260,20 +260,23 @@ character. Each path segment should match
 <a href="?:[_.A-Za-z0-9-]{0,62}[_.A-Za-z0-9]">0-9A-Za-z</a>? regular expression.
 The length of a <code>[VARIABLE_NAME]</code> must be less than 256 characters.</p>
 <p>Once you create a variable, you cannot change the variable name.
-<em> <code>state=dolores</code>
-    - [Ouput only] The current state of the variable. The variable state indicates
-the outcome of the <code>variables().watch</code> call and is visible through the
-<code>get</code> and <code>list</code> calls.
-</em> <code>text=gubergren</code>
+* <code>state=dolores</code>
+    - Output only. The current state of the variable. The variable state
+indicates the outcome of the <code>variables().watch</code> call and is visible
+through the <code>get</code> and <code>list</code> calls.
+* <code>text=gubergren</code>
     - The string value of the variable. The length of the value must be less
 than 4096 bytes. Empty values are also accepted. For example,
 <code>text: &amp;#34;my text value&amp;#34;</code>. The string must be valid UTF-8.
-<em> <code>update-time=sadipscing</code>
+* <code>update-time=sadipscing</code>
     - Output only. The time of the last variable update.
-</em> <code>value=aliquyam</code>
+Timestamp will be UTC timestamp.
+* <code>value=aliquyam</code>
     - The binary value of the variable. The length of the value must be less
 than 4096 bytes. Empty values are also accepted. The value must be
-base64 encoded. Only one of <code>value</code> or <code>text</code> can be set.</p>
+base64 encoded, and must comply with IETF RFC4648
+(https://www.ietf.org/rfc/rfc4648.txt). Only one of <code>value</code> or <code>text</code>
+can be set.</p>
 </li>
 </ul>
 </li>
@@ -387,7 +390,7 @@ base64 encoded. Only one of <code>value</code> or <code>text</code> can be set.<
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

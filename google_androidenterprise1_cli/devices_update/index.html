@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - Android Enterprise v1.0.8+20181003</title>
+  <title>Update - Android Enterprise v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.8+20181003</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Devices</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../devices_force-report-upload/">Force Report Upload</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../devices_get/">Get</a>
@@ -140,10 +144,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../enterprises_get-android-device-policy-config/">Get Android Device Policy Config</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../enterprises_get-service-account/">Get Service Account</a>
                 </li>
                 <li class="">
@@ -165,10 +165,6 @@
                 <li class="">
                     
     <a class="" href="../enterprises_set-account/">Set Account</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../enterprises_set-android-device-policy-config/">Set Android Device Policy Config</a>
                 </li>
                 <li class="">
                     
@@ -508,6 +504,37 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Webapps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../webapps_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -518,7 +545,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.8+20181003</a>
+        <a href="..">Android Enterprise v1.0.10+20190624</a>
       </nav>
 
       
@@ -577,25 +604,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   management-type: string
   policy:
     auto-update-policy: string
+    device-report-policy: string
     maintenance-window:
       duration-ms: string
       start-time-after-midnight-ms: string
     product-availability-policy: string
+  report:
+    last-updated-timestamp-millis: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    android-id=justo</code><ul>
+<li><code>-r .    android-id=erat</code><ul>
 <li>The Google Play Services Android ID for the device encoded as a lowercase hex string. For example, &#34;123456789abcdef0&#34;.</li>
 </ul>
 </li>
-<li><code>kind=amet.</code><ul>
+<li><code>kind=labore</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#device&#34;.</li>
 </ul>
 </li>
 <li>
-<p><code>management-type=erat</code></p>
+<p><code>management-type=sea</code></p>
 <ul>
 <li>
 <p>Identifies the extent to which the device is controlled by a managed Google Play EMM in various deployment configurations.</p>
@@ -604,19 +634,27 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 - &#34;managedProfile&#34;, a device that has a profile managed by the DPC (DPC is profile owner) in addition to a separate, personal profile that is unavailable to the DPC. 
 - &#34;containerApp&#34;, no longer used (deprecated). 
 - &#34;unmanagedProfile&#34;, a device that has been allowed (by the domain&#39;s admin, using the Admin Console to enable the privilege) to use managed Google Play, but the profile is itself not owned by a DPC.
-<em> <code>policy    auto-update-policy=labore</code>
+* <code>policy    auto-update-policy=nonumy</code>
     - The auto-update policy for apps installed on the device. &#34;choiceToTheUser&#34; allows the device&#39;s user to configure the app update policy. &#34;always&#34; enables auto updates. &#34;never&#34; disables auto updates. &#34;wifiOnly&#34; enables auto updates only when the device is connected to wifi.
-</em> <code>maintenance-window    duration-ms=sea</code>
+* <code>device-report-policy=dolores</code>
+    - Whether the device reports app states to the EMM. The default value is &#34;deviceReportDisabled&#34;.
+* <code>maintenance-window    duration-ms=gubergren</code>
     - Duration of the maintenance window, in milliseconds. The duration must be between 30 minutes and 24 hours (inclusive).
-* <code>start-time-after-midnight-ms=nonumy</code>
+* <code>start-time-after-midnight-ms=sadipscing</code>
     - Start time of the maintenance window, in milliseconds after midnight on the device. Windows can span midnight.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    product-availability-policy=dolores</code></p>
+<p><code>..    product-availability-policy=aliquyam</code></p>
 <ul>
 <li>The availability granted to the device for the specified products. &#34;all&#34; gives the device access to all products, regardless of approval status. &#34;all&#34; does not enable automatic visibility of &#34;alpha&#34; or &#34;beta&#34; tracks. &#34;whitelist&#34; grants the device access the products specified in productPolicy[]. Only products that are approved or products that were previously approved (products with revoked approval) by the enterprise can be whitelisted. If no value is provided, the availability set at the user level is applied by default.</li>
+</ul>
+</li>
+<li>
+<p><code>..report    last-updated-timestamp-millis=ea</code></p>
+<ul>
+<li>The timestamp of the last report update in milliseconds since epoch. This field will always be present.</li>
 </ul>
 </li>
 </ul>
@@ -718,7 +756,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

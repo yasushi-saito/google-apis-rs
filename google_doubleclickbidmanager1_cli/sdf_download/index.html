@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Download - DoubleClick Bid Manager v1.0.8+20180821</title>
+  <title>Download - DoubleClick Bid Manager v1.0.10+20190618</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DoubleClick Bid Manager v1.0.8+20180821</a>
+        <a href=".." class="icon icon-home"> DoubleClick Bid Manager v1.0.10+20190618</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -147,7 +147,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DoubleClick Bid Manager v1.0.8+20180821</a>
+        <a href="..">DoubleClick Bid Manager v1.0.10+20190618</a>
       </nav>
 
       
@@ -197,19 +197,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <ul>
 <li><code>-r .    file-types=sadipscing</code><ul>
 <li>
-<p>File types that will be returned.</p>
+<p>File types that will be returned. If INVENTORY_SOURCE is requested, no other file types may be requested.</p>
 <p>Acceptable values are:<br />
 - &#34;AD&#34; 
 - &#34;AD_GROUP&#34; 
 - &#34;CAMPAIGN&#34; 
 - &#34;INSERTION_ORDER&#34; 
+- &#34;INVENTORY_SOURCE&#34; 
 - &#34;LINE_ITEM&#34;
     - Each invocation of this argument appends the given value to the array.
-<em> <code>filter-ids=dolor</code>
+* <code>filter-ids=dolor</code>
     - The IDs of the specified filter type. This is used to filter entities to fetch. At least one ID must be specified.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>filter-type=eirmod</code>
-    - Filter type used to filter entities to fetch.
+* <code>filter-type=eirmod</code>
+    - Filter type used to filter entities to fetch. PARTNER_ID and INVENTORY_SOURCE_ID may only be used when downloading inventory sources.
 * <code>version=elitr</code>
     - SDF Version (column names, types, order) in which the entities will be returned. Default to 3.1.</p>
 </li>
@@ -299,7 +300,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

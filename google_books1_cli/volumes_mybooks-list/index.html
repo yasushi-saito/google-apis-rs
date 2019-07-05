@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Mybooks List - books v1.0.8+20180824</title>
+  <title>Mybooks List - books v1.0.10+20181212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> books v1.0.8+20180824</a>
+        <a href=".." class="icon icon-home"> books v1.0.10+20181212</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -372,7 +372,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">books v1.0.8+20180824</a>
+        <a href="..">books v1.0.10+20181212</a>
       </nav>
 
       
@@ -429,21 +429,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-index=integer</strong></p>
+<p><strong>-p processing-state=string</strong></p>
 <ul>
-<li>Index of the first result to return (starts at 0)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p locale=string</strong></p>
-<ul>
-<li>ISO-639-1 language and ISO-3166-1 country code. Ex:&#39;en_US&#39;. Used for generating recommendations.</li>
+<li>The processing state of the user uploaded volumes to be returned. Applicable only if the UPLOADED is specified in the acquireMethod.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p country=string</strong></p>
 <ul>
 <li>ISO-3166-1 code to override the IP-based location.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p locale=string</strong></p>
+<ul>
+<li>ISO-639-1 language and ISO-3166-1 country code. Ex:&#39;en_US&#39;. Used for generating recommendations.</li>
 </ul>
 </li>
 <li>
@@ -459,9 +459,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p processing-state=string</strong></p>
+<p><strong>-p start-index=integer</strong></p>
 <ul>
-<li>The processing state of the user uploaded volumes to be returned. Applicable only if the UPLOADED is specified in the acquireMethod.</li>
+<li>Index of the first result to return (starts at 0)</li>
 </ul>
 </li>
 </ul>
@@ -531,7 +531,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

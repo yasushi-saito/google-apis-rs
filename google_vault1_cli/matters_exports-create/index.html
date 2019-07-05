@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Exports Create - Vault v1.0.8+20180827</title>
+  <title>Exports Create - Vault v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Vault v1.0.8+20180827</a>
+        <a href=".." class="icon icon-home"> Vault v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -170,6 +170,22 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../matters_saved-queries-create/">Saved Queries Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-delete/">Saved Queries Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-get/">Saved Queries Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-list/">Saved Queries List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../matters_undelete/">Undelete</a>
                 </li>
                 <li class="">
@@ -189,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Vault v1.0.8+20180827</a>
+        <a href="..">Vault v1.0.10+20190614</a>
       </nav>
 
       
@@ -245,6 +261,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       export-format: string
     mail-options:
       export-format: string
+      show-confidential-mode-content: boolean
+    region: string
   id: string
   matter-id: string
   name: string
@@ -254,6 +272,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     corpus: string
     data-scope: string
     drive-options:
+      include-shared-drives: boolean
       include-team-drives: boolean
       version-date: string
     end-time: string
@@ -263,9 +282,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       include-rooms: boolean
     mail-options:
       exclude-drafts: boolean
+    method: string
     org-unit-info:
       org-unit-id: string
     search-method: string
+    shared-drive-info:
+      shared-drive-ids: [string]
     start-time: string
     team-drive-info:
       team-drive-ids: [string]
@@ -292,8 +314,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>export-options.drive-options    include-access-info=false</code></p>
 <ul>
 <li>Set to true to include access level information for users
-    with &lt;a href=&#34;https://support.google.com/vault/answer/6099459#metadata&#34;&gt;indirect access&lt;/a&gt;
-    to files.</li>
+    with &lt;a
+    href=&#34;https://support.google.com/vault/answer/6099459#metadata&#34;&gt;indirect
+    access&lt;/a&gt; to files.</li>
 </ul>
 </li>
 <li>
@@ -315,42 +338,58 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    id=sea</code></p>
+<p><code>show-confidential-mode-content=true</code></p>
+<ul>
+<li>Set to true to export confidential mode content.</li>
+</ul>
+</li>
+<li>
+<p><code>..    region=nonumy</code></p>
+<ul>
+<li>The requested export location.</li>
+</ul>
+</li>
+<li>
+<p><code>..    id=dolores</code></p>
 <ul>
 <li>Output only. The generated export ID.</li>
 </ul>
 </li>
-<li><code>matter-id=nonumy</code><ul>
+<li><code>matter-id=gubergren</code><ul>
 <li>Output only. The matter ID.</li>
 </ul>
 </li>
-<li><code>name=dolores</code><ul>
+<li><code>name=sadipscing</code><ul>
 <li>The export name.</li>
 </ul>
 </li>
 <li>
-<p><code>query.account-info    emails=gubergren</code></p>
+<p><code>query.account-info    emails=aliquyam</code></p>
 <ul>
 <li>A set of accounts to search.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    corpus=sadipscing</code></p>
+<p><code>..    corpus=ea</code></p>
 <ul>
 <li>The corpus to search.</li>
 </ul>
 </li>
-<li><code>data-scope=aliquyam</code><ul>
+<li><code>data-scope=no</code><ul>
 <li>The data source to search from.</li>
 </ul>
 </li>
-<li><code>drive-options    include-team-drives=false</code><ul>
+<li><code>drive-options    include-shared-drives=true</code><ul>
+<li>Set to true to include shared drive.</li>
+</ul>
+</li>
+<li><code>include-team-drives=true</code><ul>
 <li>Set to true to include Team Drive.</li>
 </ul>
 </li>
 <li>
-<p><code>version-date=no</code></p>
+<p><code>version-date=et</code></p>
 <ul>
 <li>Search the versions of the Drive file
     as of the reference date. These timestamps are in GMT and
@@ -358,21 +397,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    end-time=justo</code></p>
+<p><code>..    end-time=et</code></p>
 <ul>
 <li>The end time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
 <li>
-<p><code>hangouts-chat-info    room-id=justo</code></p>
+<p><code>hangouts-chat-info    room-id=diam</code></p>
 <ul>
 <li>A set of rooms to search.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..hangouts-chat-options    include-rooms=true</code></p>
+<p><code>..hangouts-chat-options    include-rooms=false</code></p>
 <ul>
 <li>Set to true to include rooms.</li>
 </ul>
@@ -384,25 +423,45 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..org-unit-info    org-unit-id=diam</code></p>
+<p><code>..    method=et</code></p>
 <ul>
-<li>Org unit to search, as provided by the
-    &lt;a href=&#34;https://developers.google.com/admin-sdk/directory/&#34;&gt;Admin SDK Directory API&lt;/a&gt;.</li>
+<li>The search method to use. This field is similar to the search_method field
+    but is introduced to support shared drives. It supports all
+    search method types. In case the search_method is TEAM_DRIVE the response
+    of this field will be SHARED_DRIVE only.</li>
 </ul>
 </li>
 <li>
-<p><code>..    search-method=ipsum</code></p>
+<p><code>org-unit-info    org-unit-id=duo</code></p>
+<ul>
+<li>Org unit to search, as provided by the
+    &lt;a href=&#34;https://developers.google.com/admin-sdk/directory/&#34;&gt;Admin SDK
+    Directory API&lt;/a&gt;.</li>
+</ul>
+</li>
+<li>
+<p><code>..    search-method=aliquyam</code></p>
 <ul>
 <li>The search method to use.</li>
 </ul>
 </li>
-<li><code>start-time=lorem</code><ul>
+<li>
+<p><code>shared-drive-info    shared-drive-ids=sea</code></p>
+<ul>
+<li>List of Shared drive ids, as provided by &lt;a
+    href=&#34;https://developers.google.com/drive&#34;&gt;Drive API&lt;/a&gt;.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>..    start-time=lorem</code></p>
+<ul>
 <li>The start time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
 <li>
-<p><code>team-drive-info    team-drive-ids=et</code></p>
+<p><code>team-drive-info    team-drive-ids=eos</code></p>
 <ul>
 <li>List of Team Drive ids, as provided by &lt;a
     href=&#34;https://developers.google.com/drive&#34;&gt;Drive API&lt;/a&gt;.</li>
@@ -410,15 +469,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    terms=duo</code></p>
+<p><code>..    terms=erat</code></p>
 <ul>
 <li>The corpus-specific
-    &lt;a href=&#34;https://support.google.com/vault/answer/2474474&#34;&gt;search operators&lt;/a&gt;
-    used to generate search results.</li>
+    &lt;a href=&#34;https://support.google.com/vault/answer/2474474&#34;&gt;search
+    operators&lt;/a&gt; used to generate search results.</li>
 </ul>
 </li>
 <li>
-<p><code>time-zone=aliquyam</code></p>
+<p><code>time-zone=sadipscing</code></p>
 <ul>
 <li>The time zone name.
     It should be an IANA TZ name, such as &#34;America/Los_Angeles&#34;.
@@ -428,35 +487,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..requester    display-name=sea</code></p>
+<p><code>..requester    display-name=dolor</code></p>
 <ul>
 <li>The displayed name of the user.</li>
 </ul>
 </li>
 <li>
-<p><code>email=lorem</code></p>
+<p><code>email=eirmod</code></p>
 <ul>
 <li>The email address of the user.</li>
 </ul>
 </li>
 <li>
-<p><code>..stats    exported-artifact-count=-75</code></p>
+<p><code>..stats    exported-artifact-count=-43</code></p>
 <ul>
 <li>The number of documents already processed by the export.</li>
 </ul>
 </li>
-<li><code>size-in-bytes=erat</code><ul>
+<li><code>size-in-bytes=amet</code><ul>
 <li>The size of export in bytes.</li>
 </ul>
 </li>
 <li>
-<p><code>total-artifact-count=-95</code></p>
+<p><code>total-artifact-count=-60</code></p>
 <ul>
 <li>The number of documents to be exported.</li>
 </ul>
 </li>
 <li>
-<p><code>..    status=dolor</code></p>
+<p><code>..    status=labore</code></p>
 <ul>
 <li>Output only. The export status.</li>
 </ul>
@@ -571,7 +630,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

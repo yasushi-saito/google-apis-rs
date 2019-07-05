@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Exclusions Create - Logging v1.0.8+20180929</title>
+  <title>Exclusions Create - Logging v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.8+20180929</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -437,7 +437,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.8+20180929</a>
+        <a href="..">Logging v1.0.10+20190629</a>
       </nav>
 
       
@@ -492,29 +492,39 @@ You can set the scope for this method like this: <code>logging2 --scope &lt;scop
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>LogExclusion:
+  create-time: string
   description: string
   disabled: boolean
   filter: string
   name: string
+  update-time: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    description=lorem</code><ul>
+<li><code>-r .    create-time=ea</code><ul>
+<li>Output only. The creation timestamp of the exclusion.This field may not be present for older exclusions.</li>
+</ul>
+</li>
+<li><code>description=sadipscing</code><ul>
 <li>Optional. A description of this exclusion.</li>
 </ul>
 </li>
-<li><code>disabled=true</code><ul>
-<li>Optional. If set to True, then this exclusion is disabled and it does not exclude any log entries. You can use exclusions.patch to change the value of this field.</li>
+<li><code>disabled=false</code><ul>
+<li>Optional. If set to True, then this exclusion is disabled and it does not exclude any log entries. You can update an exclusion to change the value of this field.</li>
 </ul>
 </li>
-<li><code>filter=clita</code><ul>
+<li><code>filter=dolore</code><ul>
 <li>Required. An advanced logs filter that matches the log entries to be excluded. By using the sample function, you can exclude less than 100% of the matching log entries. For example, the following filter matches 99% of low-severity log entries from load balancers:&#34;resource.type=http_load_balancer severity&lt;ERROR sample(insertId, 0.99)&#34;</li>
 </ul>
 </li>
-<li><code>name=consetetur</code><ul>
+<li><code>name=nonumy</code><ul>
 <li>Required. A client-assigned identifier, such as &#34;load-balancer-exclusion&#34;. Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods.</li>
+</ul>
+</li>
+<li><code>update-time=sed</code><ul>
+<li>Output only. The last update timestamp of the exclusion.This field may not be present for older exclusions.</li>
 </ul>
 </li>
 </ul>
@@ -627,7 +637,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

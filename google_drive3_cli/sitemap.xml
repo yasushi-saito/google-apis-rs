@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/about_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,19 +23,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/changes_get-start-page-token/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/changes_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/changes_watch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,7 +45,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/channels_stop/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,31 +55,77 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/comments_create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/comments_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/comments_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/comments_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/comments_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_create/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_hide/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_unhide/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/drives_update/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,61 +135,61 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_copy/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_empty-trash/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_export/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_generate-ids/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/files_watch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -153,31 +199,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/permissions_create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/permissions_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/permissions_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/permissions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/permissions_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -187,31 +233,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/replies_create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/replies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/replies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/replies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/replies_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -221,25 +267,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/revisions_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/revisions_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/revisions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/revisions_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -249,31 +295,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/teamdrives_create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/teamdrives_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/teamdrives_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/teamdrives_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-drive3-cli/teamdrives_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

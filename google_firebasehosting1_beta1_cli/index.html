@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Firebase Hosting (protocol v1beta1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Firebase Hosting v1.0.8+20181011</title>
+  <title>Home - Firebase Hosting v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Firebase Hosting v1.0.8+20181011</a>
+        <a href="." class="icon icon-home"> Firebase Hosting v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -99,11 +99,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="sites_get-config/">Get Config</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="sites_releases-create/">Releases Create</a>
                 </li>
                 <li class="">
                     
     <a class="" href="sites_releases-list/">Releases List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sites_update-config/">Update Config</a>
                 </li>
                 <li class="">
                     
@@ -138,7 +146,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Firebase Hosting v1.0.8+20181011</a>
+        <a href=".">Firebase Hosting v1.0.10+20190626</a>
       </nav>
 
       
@@ -182,7 +190,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/firebasehosting1_beta1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Firebase Hosting</em> API at revision <em>20181011</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Firebase Hosting</em> API at revision <em>20190626</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">firebasehosting1-beta1 [options]
         sites
                 domains-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -190,8 +198,10 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 domains-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 domains-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 domains-update &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get-config &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 releases-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 releases-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update-config &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 versions-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 versions-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 versions-files-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -272,7 +282,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -304,5 +314,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:48:33
+Build Date UTC : 2019-07-05 11:13:02
 -->

@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_photoslibrary1` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_photoslibrary1"><title>google_photoslibrary1 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_photoslibrary1/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_photoslibrary1</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_photoslibrary1's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_photoslibrary1', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_photoslibrary1/lib.rs.html#5-6405' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_photoslibrary1</a></span></h1><div class='docblock'><p>This documentation was generated from <em>Photos Library</em> crate version <em>1.0.9+20190702</em>, where <em>20190702</em> is the exact revision of the <em>photoslibrary:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>Photos Library</em> <em>v1</em> API can be found at the
+<a href="https://developers.google.com/photos/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/photoslibrary1">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.PhotosLibrary.html">hub</a> ... </p>
+<ul>
+<li><a href="struct.Album.html">albums</a></li>
+<li><a href="struct.AlbumAddEnrichmentCall.html"><em>add enrichment</em></a>, <a href="struct.AlbumBatchAddMediaItemCall.html"><em>batch add media items</em></a>, <a href="struct.AlbumBatchRemoveMediaItemCall.html"><em>batch remove media items</em></a>, <a href="struct.AlbumCreateCall.html"><em>create</em></a>, <a href="struct.AlbumGetCall.html"><em>get</em></a>, <a href="struct.AlbumListCall.html"><em>list</em></a>, <a href="struct.AlbumShareCall.html"><em>share</em></a> and <a href="struct.AlbumUnshareCall.html"><em>unshare</em></a></li>
+<li><a href="struct.MediaItem.html">media items</a></li>
+<li><a href="struct.MediaItemBatchCreateCall.html"><em>batch create</em></a>, <a href="struct.MediaItemBatchGetCall.html"><em>batch get</em></a>, <a href="struct.MediaItemGetCall.html"><em>get</em></a>, <a href="struct.MediaItemListCall.html"><em>list</em></a> and <a href="struct.MediaItemSearchCall.html"><em>search</em></a></li>
+<li>shared albums</li>
+<li><a href="struct.SharedAlbumGetCall.html"><em>get</em></a>, <a href="struct.SharedAlbumJoinCall.html"><em>join</em></a>, <a href="struct.SharedAlbumLeaveCall.html"><em>leave</em></a> and <a href="struct.SharedAlbumListCall.html"><em>list</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.PhotosLibrary.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">batch_remove_media_items</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">shared_albums</span>().<span class="ident">get</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">batch_add_media_items</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">add_enrichment</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">list</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">unshare</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">share</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">create</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">get</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-photoslibrary1 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_photoslibrary1</span> <span class="kw">as</span> <span class="ident">photoslibrary1</span>;
+<span class="kw">use</span> <span class="ident">photoslibrary1</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">photoslibrary1</span>::<span class="ident">PhotosLibrary</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">PhotosLibrary</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">albums</span>().<span class="ident">list</span>()
+             .<span class="ident">page_token</span>(<span class="string">&quot;sed&quot;</span>)
+             .<span class="ident">page_size</span>(<span class="op">-</span><span class="number">85</span>)
+             .<span class="ident">exclude_non_app_created_data</span>(<span class="bool-val">true</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.AddEnrichmentToAlbumRequest.html" title='google_photoslibrary1::AddEnrichmentToAlbumRequest struct'>AddEnrichmentToAlbumRequest</a></td><td class='docblock-short'><p>Request to add an enrichment to a specific album at a specific position.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AddEnrichmentToAlbumResponse.html" title='google_photoslibrary1::AddEnrichmentToAlbumResponse struct'>AddEnrichmentToAlbumResponse</a></td><td class='docblock-short'><p>The enrichment item that's created.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Album.html" title='google_photoslibrary1::Album struct'>Album</a></td><td class='docblock-short'><p>Representation of an album in Google Photos.
+Albums are containers for media items. If an album has been shared by the
+application, it contains an extra <code>shareInfo</code> property.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumAddEnrichmentCall.html" title='google_photoslibrary1::AlbumAddEnrichmentCall struct'>AlbumAddEnrichmentCall</a></td><td class='docblock-short'><p>Adds an enrichment at a specified position in a defined album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumBatchAddMediaItemCall.html" title='google_photoslibrary1::AlbumBatchAddMediaItemCall struct'>AlbumBatchAddMediaItemCall</a></td><td class='docblock-short'><p>Adds one or more media items in a user's Google Photos library to
+an album. The media items and albums must have been created by the
+developer via the API.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumBatchRemoveMediaItemCall.html" title='google_photoslibrary1::AlbumBatchRemoveMediaItemCall struct'>AlbumBatchRemoveMediaItemCall</a></td><td class='docblock-short'><p>Removes one or more media items from a specified album. The media items and
+the album must have been created by the developer via the API.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumCreateCall.html" title='google_photoslibrary1::AlbumCreateCall struct'>AlbumCreateCall</a></td><td class='docblock-short'><p>Creates an album in a user's Google Photos library.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumGetCall.html" title='google_photoslibrary1::AlbumGetCall struct'>AlbumGetCall</a></td><td class='docblock-short'><p>Returns the album based on the specified <code>albumId</code>.
+The <code>albumId</code> must be the ID of an album owned by the user or a shared
+album that the user has joined.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumListCall.html" title='google_photoslibrary1::AlbumListCall struct'>AlbumListCall</a></td><td class='docblock-short'><p>Lists all albums shown to a user in the Albums tab of the Google
+Photos app.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumMethods.html" title='google_photoslibrary1::AlbumMethods struct'>AlbumMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>album</em> resources.
+It is not used directly, but through the <code>PhotosLibrary</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumPosition.html" title='google_photoslibrary1::AlbumPosition struct'>AlbumPosition</a></td><td class='docblock-short'><p>Specifies a position in an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumShareCall.html" title='google_photoslibrary1::AlbumShareCall struct'>AlbumShareCall</a></td><td class='docblock-short'><p>Marks an album as shared and accessible to other users. This action can
+only be performed on albums which were created by the developer via the
+API.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AlbumUnshareCall.html" title='google_photoslibrary1::AlbumUnshareCall struct'>AlbumUnshareCall</a></td><td class='docblock-short'><p>Marks a previously shared album as private. This means that the album is
+no longer shared and all the non-owners will lose access to the album. All
+non-owner content will be removed from the album. If a non-owner has
+previously added the album to their library, they will retain all photos in
+their library. This action can only be performed on albums which were
+created by the developer via the API.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchAddMediaItemsToAlbumRequest.html" title='google_photoslibrary1::BatchAddMediaItemsToAlbumRequest struct'>BatchAddMediaItemsToAlbumRequest</a></td><td class='docblock-short'><p>Request to add media items to an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchAddMediaItemsToAlbumResponse.html" title='google_photoslibrary1::BatchAddMediaItemsToAlbumResponse struct'>BatchAddMediaItemsToAlbumResponse</a></td><td class='docblock-short'><p>Response for adding media items to an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchCreateMediaItemsRequest.html" title='google_photoslibrary1::BatchCreateMediaItemsRequest struct'>BatchCreateMediaItemsRequest</a></td><td class='docblock-short'><p>Request to create one or more media items in a user's Google Photos library.
+If an <code>albumid</code> is specified, the media items are also added to that album.
+<code>albumPosition</code> is optional and can only be specified if an <code>albumId</code> is set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchCreateMediaItemsResponse.html" title='google_photoslibrary1::BatchCreateMediaItemsResponse struct'>BatchCreateMediaItemsResponse</a></td><td class='docblock-short'><p>List of media items created.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchGetMediaItemsResponse.html" title='google_photoslibrary1::BatchGetMediaItemsResponse struct'>BatchGetMediaItemsResponse</a></td><td class='docblock-short'><p>Response to retrieve a list of media items.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchRemoveMediaItemsFromAlbumRequest.html" title='google_photoslibrary1::BatchRemoveMediaItemsFromAlbumRequest struct'>BatchRemoveMediaItemsFromAlbumRequest</a></td><td class='docblock-short'><p>Request to remove a list of media items from an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.BatchRemoveMediaItemsFromAlbumResponse.html" title='google_photoslibrary1::BatchRemoveMediaItemsFromAlbumResponse struct'>BatchRemoveMediaItemsFromAlbumResponse</a></td><td class='docblock-short'><p>Response for successfully removing all specified media items from the album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_photoslibrary1::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentFilter.html" title='google_photoslibrary1::ContentFilter struct'>ContentFilter</a></td><td class='docblock-short'><p>This filter allows you to return media items based on the content type.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_photoslibrary1::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContributorInfo.html" title='google_photoslibrary1::ContributorInfo struct'>ContributorInfo</a></td><td class='docblock-short'><p>Information about the user who added the media item. Note that this
+information is included only if the media item is within a shared album
+created by your app and you have the sharing scope.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateAlbumRequest.html" title='google_photoslibrary1::CreateAlbumRequest struct'>CreateAlbumRequest</a></td><td class='docblock-short'><p>Request to create an album in Google Photos.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Date.html" title='google_photoslibrary1::Date struct'>Date</a></td><td class='docblock-short'><p>Represents a whole calendar date. The day may be 0 to represent a year and month where the day isn't significant, such as a whole calendar month. The month may be 0 to represent a a day and a year where the month isn't signficant, like when you want to specify the same day in every month of a year or a specific year. The year may be 0 to represent a month and day independent of year, like an anniversary date.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateFilter.html" title='google_photoslibrary1::DateFilter struct'>DateFilter</a></td><td class='docblock-short'><p>This filter defines the allowed dates or date ranges for the media returned.
+It's possible to pick a set of specific dates and a set of date ranges.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateRange.html" title='google_photoslibrary1::DateRange struct'>DateRange</a></td><td class='docblock-short'><p>Defines a range of dates. Both dates must be of the same format. For more
+information, see <a href="#Date">Date</a></p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_photoslibrary1::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_photoslibrary1::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.EnrichmentItem.html" title='google_photoslibrary1::EnrichmentItem struct'>EnrichmentItem</a></td><td class='docblock-short'><p>An enrichment item.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_photoslibrary1::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FeatureFilter.html" title='google_photoslibrary1::FeatureFilter struct'>FeatureFilter</a></td><td class='docblock-short'><p>This filter defines the features that the media items should have.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Filters.html" title='google_photoslibrary1::Filters struct'>Filters</a></td><td class='docblock-short'><p>Filters that can be applied to a media item search.
+If multiple filter options are specified, they're treated as AND with each
+other.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JoinSharedAlbumRequest.html" title='google_photoslibrary1::JoinSharedAlbumRequest struct'>JoinSharedAlbumRequest</a></td><td class='docblock-short'><p>Request to join a shared album on behalf of the user. This uses a shareToken
+which can be acquired via the shareAlbum or listSharedAlbums calls.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JoinSharedAlbumResponse.html" title='google_photoslibrary1::JoinSharedAlbumResponse struct'>JoinSharedAlbumResponse</a></td><td class='docblock-short'><p>Response to successfully joining the shared album on behalf of the user.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_photoslibrary1::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LatLng.html" title='google_photoslibrary1::LatLng struct'>LatLng</a></td><td class='docblock-short'><p>An object representing a latitude/longitude pair. This is expressed as a pair
+of doubles representing degrees latitude and degrees longitude. Unless
+specified otherwise, this must conform to the
+<a href="http://www.unoosa.org/pdf/icg/2012/template/WGS_84.pdf">WGS84
+standard</a>. Values must be within normalized ranges.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LeaveSharedAlbumRequest.html" title='google_photoslibrary1::LeaveSharedAlbumRequest struct'>LeaveSharedAlbumRequest</a></td><td class='docblock-short'><p>Request to leave a shared album on behalf of the user. This uses a shareToken
+which can be acquired via the or listSharedAlbums or getAlbum calls.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LeaveSharedAlbumResponse.html" title='google_photoslibrary1::LeaveSharedAlbumResponse struct'>LeaveSharedAlbumResponse</a></td><td class='docblock-short'><p>Response to successfully leaving the shared album on behalf of the user.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListAlbumsResponse.html" title='google_photoslibrary1::ListAlbumsResponse struct'>ListAlbumsResponse</a></td><td class='docblock-short'><p>List of albums requested.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListMediaItemsResponse.html" title='google_photoslibrary1::ListMediaItemsResponse struct'>ListMediaItemsResponse</a></td><td class='docblock-short'><p>List of all media items from the user's Google Photos library.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListSharedAlbumsResponse.html" title='google_photoslibrary1::ListSharedAlbumsResponse struct'>ListSharedAlbumsResponse</a></td><td class='docblock-short'><p>List of shared albums requested.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Location.html" title='google_photoslibrary1::Location struct'>Location</a></td><td class='docblock-short'><p>Represents a physical location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.LocationEnrichment.html" title='google_photoslibrary1::LocationEnrichment struct'>LocationEnrichment</a></td><td class='docblock-short'><p>An enrichment containing a single location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MapEnrichment.html" title='google_photoslibrary1::MapEnrichment struct'>MapEnrichment</a></td><td class='docblock-short'><p>An enrichment containing a map, showing origin and destination locations.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItem.html" title='google_photoslibrary1::MediaItem struct'>MediaItem</a></td><td class='docblock-short'><p>Representation of a media item (such as a photo or video) in Google Photos.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemBatchCreateCall.html" title='google_photoslibrary1::MediaItemBatchCreateCall struct'>MediaItemBatchCreateCall</a></td><td class='docblock-short'><p>Creates one or more media items in a user's Google Photos library.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemBatchGetCall.html" title='google_photoslibrary1::MediaItemBatchGetCall struct'>MediaItemBatchGetCall</a></td><td class='docblock-short'><p>Returns the list of media items for the specified media item identifiers.
+Items are returned in the same order as the supplied identifiers.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemGetCall.html" title='google_photoslibrary1::MediaItemGetCall struct'>MediaItemGetCall</a></td><td class='docblock-short'><p>Returns the media item for the specified media item identifier.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemListCall.html" title='google_photoslibrary1::MediaItemListCall struct'>MediaItemListCall</a></td><td class='docblock-short'><p>List all media items from a user's Google Photos library.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemMethods.html" title='google_photoslibrary1::MediaItemMethods struct'>MediaItemMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>mediaItem</em> resources.
+It is not used directly, but through the <code>PhotosLibrary</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemResult.html" title='google_photoslibrary1::MediaItemResult struct'>MediaItemResult</a></td><td class='docblock-short'><p>Result of retrieving a media item.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaItemSearchCall.html" title='google_photoslibrary1::MediaItemSearchCall struct'>MediaItemSearchCall</a></td><td class='docblock-short'><p>Searches for media items in a user's Google Photos library.
+If no filters are set, then all media items in the user's library are
+returned.
+If an album is set, all media items in the specified album are returned.
+If filters are specified, media items that match the filters from the
+user's library are listed. If you set both the album and the filters, the
+request results in an error.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaMetadata.html" title='google_photoslibrary1::MediaMetadata struct'>MediaMetadata</a></td><td class='docblock-short'><p>Metadata for a media item.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MediaTypeFilter.html" title='google_photoslibrary1::MediaTypeFilter struct'>MediaTypeFilter</a></td><td class='docblock-short'><p>This filter defines the type of media items to be returned, for example,
+videos or photos. All the specified media types are treated as an OR when
+used together.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_photoslibrary1::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_photoslibrary1::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NewEnrichmentItem.html" title='google_photoslibrary1::NewEnrichmentItem struct'>NewEnrichmentItem</a></td><td class='docblock-short'><p>A new enrichment item to be added to an album, used by the
+<code>albums.addEnrichment</code> call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NewMediaItem.html" title='google_photoslibrary1::NewMediaItem struct'>NewMediaItem</a></td><td class='docblock-short'><p>New media item that's created in a user's Google Photos account.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NewMediaItemResult.html" title='google_photoslibrary1::NewMediaItemResult struct'>NewMediaItemResult</a></td><td class='docblock-short'><p>Result of creating a new media item.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Photo.html" title='google_photoslibrary1::Photo struct'>Photo</a></td><td class='docblock-short'><p>Metadata that is specific to a photo, such as, ISO, focal length and
+exposure time. Some of these fields may be null or not included.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PhotosLibrary.html" title='google_photoslibrary1::PhotosLibrary struct'>PhotosLibrary</a></td><td class='docblock-short'><p>Central instance to access all PhotosLibrary related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_photoslibrary1::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_photoslibrary1::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchMediaItemsRequest.html" title='google_photoslibrary1::SearchMediaItemsRequest struct'>SearchMediaItemsRequest</a></td><td class='docblock-short'><p>Request to search for media items in a user's library.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchMediaItemsResponse.html" title='google_photoslibrary1::SearchMediaItemsResponse struct'>SearchMediaItemsResponse</a></td><td class='docblock-short'><p>List of media items that match the search parameters.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_photoslibrary1::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_photoslibrary1::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ShareAlbumRequest.html" title='google_photoslibrary1::ShareAlbumRequest struct'>ShareAlbumRequest</a></td><td class='docblock-short'><p>Request to make an album shared in Google Photos.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ShareAlbumResponse.html" title='google_photoslibrary1::ShareAlbumResponse struct'>ShareAlbumResponse</a></td><td class='docblock-short'><p>Response to successfully sharing an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ShareInfo.html" title='google_photoslibrary1::ShareInfo struct'>ShareInfo</a></td><td class='docblock-short'><p>Information about albums that are shared. This information is only included
+if you created the album, it is shared and you have the sharing scope.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumGetCall.html" title='google_photoslibrary1::SharedAlbumGetCall struct'>SharedAlbumGetCall</a></td><td class='docblock-short'><p>Returns the album based on the specified <code>shareToken</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumJoinCall.html" title='google_photoslibrary1::SharedAlbumJoinCall struct'>SharedAlbumJoinCall</a></td><td class='docblock-short'><p>Joins a shared album on behalf of the Google Photos user.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumLeaveCall.html" title='google_photoslibrary1::SharedAlbumLeaveCall struct'>SharedAlbumLeaveCall</a></td><td class='docblock-short'><p>Leaves a previously-joined shared album on behalf of the Google Photos
+user. The user must not own this album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumListCall.html" title='google_photoslibrary1::SharedAlbumListCall struct'>SharedAlbumListCall</a></td><td class='docblock-short'><p>Lists all shared albums available in the Sharing tab of the
+user's Google Photos app.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumMethods.html" title='google_photoslibrary1::SharedAlbumMethods struct'>SharedAlbumMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>sharedAlbum</em> resources.
+It is not used directly, but through the <code>PhotosLibrary</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SharedAlbumOptions.html" title='google_photoslibrary1::SharedAlbumOptions struct'>SharedAlbumOptions</a></td><td class='docblock-short'><p>Options that control the sharing of an album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SimpleMediaItem.html" title='google_photoslibrary1::SimpleMediaItem struct'>SimpleMediaItem</a></td><td class='docblock-short'><p>A simple media item to be created in Google Photos via an upload token.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Status.html" title='google_photoslibrary1::Status struct'>Status</a></td><td class='docblock-short'><p>The <code>Status</code> type defines a logical error model that is suitable for
+different programming environments, including REST APIs and RPC APIs. It is
+used by <a href="https://github.com/grpc">gRPC</a>. Each <code>Status</code> message contains
+three pieces of data: error code, error message, and error details.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextEnrichment.html" title='google_photoslibrary1::TextEnrichment struct'>TextEnrichment</a></td><td class='docblock-short'><p>An enrichment containing text.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UnshareAlbumRequest.html" title='google_photoslibrary1::UnshareAlbumRequest struct'>UnshareAlbumRequest</a></td><td class='docblock-short'><p>Request to unshare a shared album in Google Photos.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UnshareAlbumResponse.html" title='google_photoslibrary1::UnshareAlbumResponse struct'>UnshareAlbumResponse</a></td><td class='docblock-short'><p>Response of a successful unshare of a shared album.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Video.html" title='google_photoslibrary1::Video struct'>Video</a></td><td class='docblock-short'><p>Metadata that is specific to a video, for example, fps and processing status.
+Some of these fields may be null or not included.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_photoslibrary1::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_photoslibrary1::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_photoslibrary1::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_photoslibrary1::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_photoslibrary1::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_photoslibrary1::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_photoslibrary1::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_photoslibrary1::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_photoslibrary1::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_photoslibrary1::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_photoslibrary1::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_photoslibrary1::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_photoslibrary1::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_photoslibrary1::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_photoslibrary1::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_photoslibrary1::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_photoslibrary1::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_photoslibrary1";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

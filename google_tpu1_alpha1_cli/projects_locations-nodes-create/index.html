@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Nodes Create - TPU v1.0.8+20181010</title>
+  <title>Locations Nodes Create - TPU v1.0.10+20190619</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> TPU v1.0.8+20181010</a>
+        <a href=".." class="icon icon-home"> TPU v1.0.10+20190619</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">TPU v1.0.8+20181010</a>
+        <a href="..">TPU v1.0.10+20190619</a>
       </nav>
 
       
@@ -223,6 +223,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   port: string
   scheduling-config:
     preemptible: boolean
+    reserved: boolean
   service-account: string
   state: string
   tensorflow-version: string
@@ -249,8 +250,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>create-time=stet</code><ul>
-<li>Output only.
-    The time when the node was created.</li>
+<li>Output only. The time when the node was created.</li>
 </ul>
 </li>
 <li><code>description=sed</code><ul>
@@ -262,14 +262,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>health-description=dolores</code><ul>
-<li>Output only.
-    If this field is populated, it contains a description of why the TPU Node
+<li>Output only. If this field is populated, it contains a description of why the TPU Node
     is unhealthy.</li>
 </ul>
 </li>
 <li><code>ip-address=kasd</code><ul>
-<li>Output only.
-    DEPRECATED! Use network_endpoints instead.
+<li>Output only. DEPRECATED! Use network_endpoints instead.
     The network address for the TPU Node as visible to Compute Engine
     instances.</li>
 </ul>
@@ -280,8 +278,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>name=takimata</code><ul>
-<li>Output only.
-    The immutable name of the TPU</li>
+<li>Output only. The immutable name of the TPU</li>
 </ul>
 </li>
 <li><code>network=justo</code><ul>
@@ -291,33 +288,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>port=amet.</code><ul>
-<li>Output only.
-    DEPRECATED! Use network_endpoints instead.
+<li>Output only. DEPRECATED! Use network_endpoints instead.
     The network port for the TPU Node as visible to Compute Engine instances.</li>
 </ul>
 </li>
-<li>
-<p><code>scheduling-config    preemptible=false</code></p>
-<ul>
+<li><code>scheduling-config    preemptible=false</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    service-account=labore</code></p>
+<p><code>reserved=true</code></p>
 <ul>
-<li>Output only.
-    The service account used to run the tensor flow services within the node.
+<li>Whether the node is created under a reservation.</li>
+</ul>
+</li>
+<li>
+<p><code>..    service-account=sea</code></p>
+<ul>
+<li>Output only. The service account used to run the tensor flow services within the node.
     To share resources, including Google Cloud Storage data, with the
     Tensorflow job running in the Node, this account must have permissions to
     that data.</li>
 </ul>
 </li>
-<li><code>state=sea</code><ul>
-<li>Output only.
-    The current state for the TPU Node.</li>
+<li><code>state=nonumy</code><ul>
+<li>Output only. The current state for the TPU Node.</li>
 </ul>
 </li>
-<li><code>tensorflow-version=nonumy</code><ul>
+<li><code>tensorflow-version=dolores</code><ul>
 <li>The version of Tensorflow running in the Node.
     Required.</li>
 </ul>
@@ -442,7 +440,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

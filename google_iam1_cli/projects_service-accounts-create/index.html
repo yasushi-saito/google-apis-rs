@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Create - iam v1.0.8+20181005</title>
+  <title>Service Accounts Create - iam v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> iam v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -171,6 +171,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-disable/">Service Accounts Disable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-enable/">Service Accounts Enable</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-get/">Service Accounts Get</a>
                 </li>
                 <li class="">
@@ -199,6 +207,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-patch/">Service Accounts Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-set-iam-policy/">Service Accounts Set Iam Policy</a>
                 </li>
                 <li class="">
@@ -212,6 +224,10 @@
                 <li class="">
                     
     <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-undelete/">Service Accounts Undelete</a>
                 </li>
                 <li class="">
                     
@@ -249,7 +265,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.8+20181005</a>
+        <a href="..">iam v1.0.10+20190627</a>
       </nav>
 
       
@@ -299,6 +315,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>CreateServiceAccountRequest:
   account-id: string
   service-account:
+    description: string
+    disabled: boolean
     display-name: string
     email: string
     etag: string
@@ -318,21 +336,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     <code>[a-z]([-a-z0-9]*[a-z0-9])</code> to comply with RFC1035.</li>
 </ul>
 </li>
-<li><code>service-account    display-name=duo</code><ul>
+<li><code>service-account    description=duo</code><ul>
+<li>Optional. A user-specified opaque description of the service account.
+    Must be less than or equal to 256 UTF-8 bytes.</li>
+</ul>
+</li>
+<li><code>disabled=true</code><ul>
+<li>@OutputOnly A bool indicate if the service account is disabled.
+    The field is currently in alpha phase.</li>
+</ul>
+</li>
+<li><code>display-name=eirmod</code><ul>
 <li>Optional. A user-specified name for the service account.
     Must be less than or equal to 100 UTF-8 bytes.</li>
 </ul>
 </li>
-<li><code>email=et</code><ul>
+<li><code>email=sanctus</code><ul>
 <li>@OutputOnly The email address of the service account.</li>
 </ul>
 </li>
-<li><code>etag=eirmod</code><ul>
+<li><code>etag=et</code><ul>
 <li>Optional. Note: <code>etag</code> is an inoperable legacy field that is only returned
     for backwards compatibility.</li>
 </ul>
 </li>
-<li><code>name=sanctus</code><ul>
+<li><code>name=amet</code><ul>
 <li>
 <p>The resource name of the service account in the following format:
     <code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.</p>
@@ -341,13 +369,13 @@ project from the <code>account</code> and the <code>ACCOUNT</code> value can be 
 address or the <code>unique_id</code> of the service account.</p>
 <p>In responses the resource name will always be in the format
 <code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.
-<em> <code>oauth2-client-id=et</code>
+* <code>oauth2-client-id=et</code>
     - @OutputOnly The OAuth2 client id for the service account.
 This is used in conjunction with the OAuth2 clientconfig API to make
 three legged OAuth2 (3LO) flows to access the data of Google users.
-</em> <code>project-id=amet</code>
+* <code>project-id=consetetur</code>
     - @OutputOnly The id of the project that owns the service account.
-* <code>unique-id=et</code>
+* <code>unique-id=ut</code>
     - @OutputOnly The unique and stable id of the service account.</p>
 </li>
 </ul>
@@ -462,7 +490,7 @@ three legged OAuth2 (3LO) flows to access the data of Google users.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

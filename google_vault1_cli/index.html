@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Vault (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Vault v1.0.8+20180827</title>
+  <title>Home - Vault v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Vault v1.0.8+20180827</a>
+        <a href="." class="icon icon-home"> Vault v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -167,6 +167,22 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="matters_saved-queries-create/">Saved Queries Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_saved-queries-delete/">Saved Queries Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_saved-queries-get/">Saved Queries Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_saved-queries-list/">Saved Queries List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="matters_undelete/">Undelete</a>
                 </li>
                 <li class="">
@@ -186,7 +202,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Vault v1.0.8+20180827</a>
+        <a href=".">Vault v1.0.10+20190614</a>
       </nav>
 
       
@@ -230,7 +246,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/vault1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Vault</em> API at revision <em>20180827</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Vault</em> API at revision <em>20190614</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">vault1 [options]
         matters
                 add-permissions &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -255,6 +271,10 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 remove-permissions &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 reopen &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                saved-queries-create &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                saved-queries-delete &lt;matter-id&gt; &lt;saved-query-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                saved-queries-get &lt;matter-id&gt; &lt;saved-query-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                saved-queries-list &lt;matter-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 undelete &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   vault1 --help
@@ -332,7 +352,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -364,5 +384,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:48:56
+Build Date UTC : 2019-07-05 11:13:15
 -->

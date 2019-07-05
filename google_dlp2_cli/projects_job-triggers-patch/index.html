@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Job Triggers Patch - DLP v1.0.8+20181009</title>
+  <title>Job Triggers Patch - DLP v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -212,6 +212,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_job-triggers-activate/">Job Triggers Activate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_job-triggers-create/">Job Triggers Create</a>
                 </li>
                 <li class="">
@@ -256,6 +260,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-content-deidentify/">Locations Content Deidentify</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_stored-info-types-create/">Stored Info Types Create</a>
                 </li>
                 <li class="">
@@ -287,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.8+20181009</a>
+        <a href="..">DLP v1.0.10+20190629</a>
       </nav>
 
       
@@ -392,50 +400,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .job-trigger    create-time=aliquyam</code><ul>
+<li><code>-r .job-trigger    create-time=elitr</code><ul>
 <li>The creation timestamp of a triggeredJob, output only field.</li>
 </ul>
 </li>
-<li><code>description=elitr</code><ul>
+<li><code>description=ea</code><ul>
 <li>User provided description (max 256 chars)</li>
 </ul>
 </li>
-<li><code>display-name=ea</code><ul>
+<li><code>display-name=et</code><ul>
 <li>Display name (max 100 chars)</li>
 </ul>
 </li>
-<li><code>inspect-job.inspect-config    content-options=et</code><ul>
+<li><code>inspect-job.inspect-config    content-options=stet</code><ul>
 <li>List of options defining data content to scan.
     If empty, text, images, and other content will be included.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>exclude-info-types=false</code><ul>
+<li><code>exclude-info-types=true</code><ul>
 <li>When true, excludes type information of the findings.</li>
 </ul>
 </li>
-<li><code>include-quote=true</code><ul>
+<li><code>include-quote=false</code><ul>
 <li>When true, a contextual quote from the data that triggered a finding is
     included in the response; see Finding.quote.</li>
 </ul>
 </li>
-<li><code>limits    max-findings-per-item=2</code><ul>
+<li><code>limits    max-findings-per-item=94</code><ul>
 <li>Max number of findings that will be returned for each item scanned.
     When set within <code>InspectDataSourceRequest</code>,
-    the maximum returned is 1000 regardless if this is set higher.
+    the maximum returned is 2000 regardless if this is set higher.
     When set within <code>InspectContentRequest</code>, this field is ignored.</li>
 </ul>
 </li>
 <li>
-<p><code>max-findings-per-request=94</code></p>
+<p><code>max-findings-per-request=68</code></p>
 <ul>
 <li>Max number of findings that will be returned per request/job.
-    When set within <code>InspectContentRequest</code>, the maximum returned is 1000
+    When set within <code>InspectContentRequest</code>, the maximum returned is 2000
     regardless if this is set higher.</li>
 </ul>
 </li>
 <li>
-<p><code>..    min-likelihood=dolore</code></p>
+<p><code>..    min-likelihood=lorem</code></p>
 <ul>
 <li>Only returns findings equal or above this threshold. The default is
     POSSIBLE.
@@ -443,7 +451,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    inspect-template-name=lorem</code></p>
+<p><code>..    inspect-template-name=consetetur</code></p>
 <ul>
 <li>If provided, will be used as the default for all values in InspectConfig.
     <code>inspect_config</code> will be merged into the values persisted as part of the
@@ -457,7 +465,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     Cannot be used in conjunction with TimespanConfig.</li>
 </ul>
 </li>
-<li><code>rows-limit-percent=55</code><ul>
+<li><code>rows-limit-percent=11</code><ul>
 <li>Max percentage of rows to scan. The rest are omitted. The number of rows
     scanned is rounded down. Must be between 0 and 100, inclusively. Both 0 and
     100 means no limit. Defaults to 0. Only one of rows_limit and
@@ -465,46 +473,46 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     TimespanConfig.</li>
 </ul>
 </li>
-<li><code>sample-method=eirmod</code><ul>
+<li><code>sample-method=labore</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>table-reference    dataset-id=labore</code><ul>
+<li><code>table-reference    dataset-id=gubergren</code><ul>
 <li>Dataset ID of the table.</li>
 </ul>
 </li>
-<li><code>project-id=gubergren</code><ul>
+<li><code>project-id=et</code><ul>
 <li>The Google Cloud Platform project ID of the project containing the table.
     If omitted, project ID is inferred from the API call.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=et</code></p>
+<p><code>table-id=sadipscing</code></p>
 <ul>
 <li>Name of the table.</li>
 </ul>
 </li>
 <li>
-<p><code>...cloud-storage-options    bytes-limit-per-file=sadipscing</code></p>
+<p><code>...cloud-storage-options    bytes-limit-per-file=accusam</code></p>
 <ul>
 <li>Max number of bytes to scan from a file. If a scanned file&#39;s size is bigger
     than this value then the rest of the bytes are omitted. Only one
     of bytes_limit_per_file and bytes_limit_per_file_percent can be specified.</li>
 </ul>
 </li>
-<li><code>bytes-limit-per-file-percent=28</code><ul>
+<li><code>bytes-limit-per-file-percent=69</code><ul>
 <li>Max percentage of bytes to scan from a file. The rest are omitted. The
     number of bytes scanned is rounded down. Must be between 0 and 100,
     inclusively. Both 0 and 100 means no limit. Defaults to 0. Only one
     of bytes_limit_per_file and bytes_limit_per_file_percent can be specified.</li>
 </ul>
 </li>
-<li><code>file-set.regex-file-set    bucket-name=magna</code><ul>
+<li><code>file-set.regex-file-set    bucket-name=lorem</code><ul>
 <li>The name of a Cloud Storage bucket. Required.</li>
 </ul>
 </li>
 <li>
-<p><code>exclude-regex=lorem</code></p>
+<p><code>exclude-regex=rebum.</code></p>
 <ul>
 <li>
 <p>A list of regular expressions matching file paths to exclude. All files in
@@ -514,7 +522,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <a href="https://github.com/google/re2/wiki/Syntax">syntax</a>; a guide can be found
 under the google/re2 repository on GitHub.
     - Each invocation of this argument appends the given value to the array.
-* <code>include-regex=rebum.</code>
+* <code>include-regex=et</code>
     - A list of regular expressions matching file paths to include. All files in
 the bucket that match at least one of these regular expressions will be
 included in the set of files, except for those that also match an item in
@@ -528,54 +536,62 @@ under the google/re2 repository on GitHub.
 </ul>
 </li>
 <li>
-<p><code>..    url=et</code></p>
+<p><code>..    url=clita</code></p>
 <ul>
-<li>The Cloud Storage url of the file(s) to scan, in the format
-    <code>gs://&amp;lt;bucket&amp;gt;/&amp;lt;path&amp;gt;</code>. Trailing wildcard in the path is allowed. Exactly
-    one of <code>url</code> or <code>regex_file_set</code> must be set.</li>
+<li>
+<p>The Cloud Storage url of the file(s) to scan, in the format
+    <code>gs://&amp;lt;bucket&amp;gt;/&amp;lt;path&amp;gt;</code>. Trailing wildcard in the path is allowed.</p>
+<p>If the url ends in a trailing slash, the bucket or directory represented
+by the url will be scanned non-recursively (content in sub-directories
+will not be scanned). This means that <code>gs://mybucket/</code> is equivalent to
+<code>gs://mybucket/*</code>, and <code>gs://mybucket/directory/</code> is equivalent to
+<code>gs://mybucket/directory/*</code>.</p>
+<p>Exactly one of <code>url</code> or <code>regex_file_set</code> must be set.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>..    file-types=clita</code></p>
+<p><code>..    file-types=eos</code></p>
 <ul>
 <li>List of file type groups to include in the scan.
     If empty, all files are scanned and available data format processors
-    are applied.</li>
+    are applied. In addition, the binary content of the selected files
+    is always scanned as well.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>files-limit-percent=77</code><ul>
+<li><code>files-limit-percent=32</code><ul>
 <li>Limits the number of files to scan to this percentage of the input FileSet.
     Number of files scanned is rounded down. Must be between 0 and 100,
     inclusively. Both 0 and 100 means no limit. Defaults to 0.</li>
 </ul>
 </li>
 <li>
-<p><code>sample-method=dolores</code></p>
+<p><code>sample-method=vero</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..datastore-options.kind    name=vero</code></p>
+<p><code>..datastore-options.kind    name=consetetur</code></p>
 <ul>
 <li>The name of the kind.</li>
 </ul>
 </li>
 <li>
-<p><code>..partition-id    namespace-id=consetetur</code></p>
+<p><code>..partition-id    namespace-id=vero</code></p>
 <ul>
 <li>If not empty, the ID of the namespace to which the entities belong.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=vero</code></p>
+<p><code>project-id=consetetur</code></p>
 <ul>
 <li>The ID of the project to which the entities belong.</li>
 </ul>
 </li>
 <li>
-<p><code>...timespan-config    enable-auto-population-of-timespan-config=false</code></p>
+<p><code>...timespan-config    enable-auto-population-of-timespan-config=true</code></p>
 <ul>
 <li>When the job is started by a JobTrigger we will automatically figure out
     a valid start_time to avoid scanning files that have not been modified
@@ -583,45 +599,45 @@ under the google/re2 repository on GitHub.
     time of the execution of the last run of the JobTrigger.</li>
 </ul>
 </li>
-<li><code>end-time=eos</code><ul>
+<li><code>end-time=justo</code><ul>
 <li>Exclude files or rows newer than this value.
     If set to zero, no upper time limit is applied.</li>
 </ul>
 </li>
-<li><code>start-time=justo</code><ul>
+<li><code>start-time=tempor</code><ul>
 <li>Exclude files or rows older than this value.</li>
 </ul>
 </li>
 <li>
-<p><code>timestamp-field    name=tempor</code></p>
+<p><code>timestamp-field    name=gubergren</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>.....    last-run-time=gubergren</code></p>
+<p><code>.....    last-run-time=dolore</code></p>
 <ul>
 <li>The timestamp of the last time this trigger executed, output only field.</li>
 </ul>
 </li>
-<li><code>name=dolore</code><ul>
+<li><code>name=amet.</code><ul>
 <li>Unique resource name for the triggeredJob, assigned by the service when the
     triggeredJob is created, for example
     <code>projects/dlp-test-project/triggeredJobs/53234423</code>.</li>
 </ul>
 </li>
-<li><code>status=amet.</code><ul>
+<li><code>status=dolore</code><ul>
 <li>A status for this trigger. [required]</li>
 </ul>
 </li>
 <li>
-<p><code>update-time=dolore</code></p>
+<p><code>update-time=magna</code></p>
 <ul>
 <li>The last update timestamp of a triggeredJob, output only field.</li>
 </ul>
 </li>
 <li>
-<p><code>..    update-mask=magna</code></p>
+<p><code>..    update-mask=elitr</code></p>
 <ul>
 <li>Mask to control which fields get updated.</li>
 </ul>
@@ -723,7 +739,7 @@ under the google/re2 repository on GitHub.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_stored-info-types-create/" class="btn btn-neutral float-right" title="Stored Info Types Create">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_locations-content-deidentify/" class="btn btn-neutral float-right" title="Locations Content Deidentify">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../projects_job-triggers-list/" class="btn btn-neutral" title="Job Triggers List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -736,7 +752,7 @@ under the google/re2 repository on GitHub.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -759,7 +775,7 @@ under the google/re2 repository on GitHub.
         <span><a href="../projects_job-triggers-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_stored-info-types-create/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_locations-content-deidentify/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Patch - Cloud Tasks v1.0.8+20180913</title>
+  <title>Locations Queues Patch - Cloud Tasks v1.0.10+20190618</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.8+20180913</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.10+20190618</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -168,7 +168,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.8+20180913</a>
+        <a href="..">Cloud Tasks v1.0.10+20190618</a>
       </nav>
 
       
@@ -206,8 +206,9 @@ it was dispatched or not.</p>
 <p>WARNING: Using this method may have unintended side effects if you are
 using an App Engine <code>queue.yaml</code> or <code>queue.xml</code> file to manage your queues.
 Read
-<a href="https://cloud.google.com/tasks/docs/queue-yaml">Overview of Queue Management and queue.yaml</a>
-before using this method.</p>
+<a href="https://cloud.google.com/tasks/docs/queue-yaml">Overview of Queue Management and
+queue.yaml</a> before using
+this method.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -225,7 +226,8 @@ You can set the scope for this method like this: <code>cloudtasks2-beta3 --scope
 <li><code>PROJECT_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]),
    hyphens (-), colons (:), or periods (.).
    For more information, see
-   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying projects</a></li>
+   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying
+   projects</a></li>
 <li><code>LOCATION_ID</code> is the canonical ID for the queue&#39;s location.
    The list of available locations can be obtained by calling
    ListLocations.
@@ -260,6 +262,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     max-doublings: integer
     max-retry-duration: string
     min-backoff: string
+  stackdriver-logging-config:
+    sampling-ratio: number
   state: string
 
 </code></pre>
@@ -267,7 +271,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .app-engine-http-queue.app-engine-routing-override    host=dolores</code></p>
+<p><code>-r .app-engine-http-queue.app-engine-routing-override    host=gubergren</code></p>
 <ul>
 <li>
 <p>Output only. The host that the task is sent to.</p>
@@ -277,17 +281,21 @@ service, version,
 and instance. Tasks which were created using
 the App Engine SDK might have a custom domain name.</p>
 <p>For more information, see
-<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.
-* <code>instance=gubergren</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">How Requests are
+Routed</a>.
+* <code>instance=sadipscing</code>
     - App instance.</p>
 <p>By default, the task is sent to an instance which is available when
 the task is attempted.</p>
 <p>Requests can only be sent to a specific instance if
-<a href="https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
+<a href="https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine
+Standard</a>.
 App Engine Flex does not support instances. For more information, see
-<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
-and <a href="https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
-* <code>service=sadipscing</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request
+routing</a>
+and <a href="https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request
+routing</a>.
+* <code>service=aliquyam</code>
     - App service.</p>
 <p>By default, the task is sent to the service which is the default
 service when the task is attempted.</p>
@@ -302,7 +310,7 @@ host is not parsable, then
 service,
 version, and
 instance are the empty string.
-* <code>version=aliquyam</code>
+* <code>version=ea</code>
     - App version.</p>
 <p>By default, the task is sent to the version which is the default
 version when the task is attempted.</p>
@@ -321,7 +329,7 @@ instance are the empty string.</p>
 </ul>
 </li>
 <li>
-<p><code>...    name=ea</code></p>
+<p><code>...    name=no</code></p>
 <ul>
 <li>
 <p>Caller-specified and required in CreateQueue,
@@ -333,14 +341,15 @@ instance are the empty string.</p>
 <li><code>PROJECT_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]),
    hyphens (-), colons (:), or periods (.).
    For more information, see
-   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying projects</a></li>
+   <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects">Identifying
+   projects</a></li>
 <li><code>LOCATION_ID</code> is the canonical ID for the queue&#39;s location.
    The list of available locations can be obtained by calling
    ListLocations.
    For more information, see https://cloud.google.com/about/locations/.</li>
 <li><code>QUEUE_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]), or
   hyphens (-). The maximum length is 100 characters.</li>
-<li><code>purge-time=no</code><ul>
+<li><code>purge-time=justo</code><ul>
 <li>Output only. The last time this queue was purged.</li>
 </ul>
 </li>
@@ -348,7 +357,8 @@ instance are the empty string.</p>
 <p>All tasks that were created before this time
 were purged.</p>
 <p>A queue can be purged using PurgeQueue, the
-<a href="https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/deleting-tasks-and-queues#purging_all_tasks_from_a_queue">App Engine Task Queue SDK, or the Cloud Console</a>.</p>
+<a href="https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/deleting-tasks-and-queues#purging_all_tasks_from_a_queue">App Engine Task Queue SDK, or the Cloud
+Console</a>.</p>
 <p>Purge time will be truncated to the nearest microsecond. Purge
 time will be unset if the queue has never been purged.
 * <code>rate-limits    max-burst-size=80</code>
@@ -384,7 +394,7 @@ is updated.</p>
 </ul>
 </li>
 <li>
-<p><code>max-concurrent-dispatches=80</code></p>
+<p><code>max-concurrent-dispatches=67</code></p>
 <ul>
 <li>
 <p>The maximum number of concurrent tasks that Cloud Tasks allows
@@ -395,8 +405,9 @@ is updated.</p>
 default.</p>
 <p>The maximum allowed value is 5,000.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#max_concurrent_requests">max_concurrent_requests in queue.yaml/xml</a>.
-* <code>max-dispatches-per-second=0.663748882844</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#max_concurrent_requests">max_concurrent_requests in
+queue.yaml/xml</a>.
+* <code>max-dispatches-per-second=0.832506532618</code>
     - The maximum rate at which tasks are dispatched from this queue.</p>
 <p>If unspecified when the queue is created, Cloud Tasks will pick the
 default.</p>
@@ -405,12 +416,13 @@ default.</p>
   is 500.</li>
 </ul>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#rate">rate in queue.yaml/xml</a>.</p>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#rate">rate in
+queue.yaml/xml</a>.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..retry-config    max-attempts=84</code></p>
+<p><code>..retry-config    max-attempts=60</code></p>
 <ul>
 <li>
 <p>Number of attempts per task.</p>
@@ -421,8 +433,9 @@ be &gt;= -1.</p>
 default.</p>
 <p>-1 indicates unlimited attempts.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">task_retry_limit in queue.yaml/xml</a>.
-* <code>max-backoff=diam</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">task_retry_limit in
+queue.yaml/xml</a>.
+* <code>max-backoff=ipsum</code>
     - A task will be scheduled for retry between
 min_backoff and
 max_backoff duration after it fails,
@@ -432,8 +445,9 @@ retried.</p>
 default.</p>
 <p><code>max_backoff</code> will be truncated to the nearest second.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">max_backoff_seconds in queue.yaml/xml</a>.
-* <code>max-doublings=46</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">max_backoff_seconds in
+queue.yaml/xml</a>.
+* <code>max-doublings=96</code>
     - The time between retries will double <code>max_doublings</code> times.</p>
 <p>A task&#39;s retry interval starts at
 min_backoff, then doubles
@@ -453,11 +467,12 @@ times. Thus, the requests will retry at 10s, 20s, 40s, 80s, 160s,
 <p>If unspecified when the queue is created, Cloud Tasks will pick the
 default.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">max_doublings in queue.yaml/xml</a>.
-<em> <code>max-retry-duration=lorem</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">max_doublings in
+queue.yaml/xml</a>.
+* <code>max-retry-duration=et</code>
     - If positive, <code>max_retry_duration</code> specifies the time limit for
 retrying a failed task, measured from when the task was first
-attempted. Once <code>max_retry_duration</code> time has passed </em>and* the
+attempted. Once <code>max_retry_duration</code> time has passed <em>and</em> the
 task has been attempted max_attempts
 times, no further attempts will be made and the task will be
 deleted.</p>
@@ -466,8 +481,9 @@ deleted.</p>
 default.</p>
 <p><code>max_retry_duration</code> will be truncated to the nearest second.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">task_age_limit in queue.yaml/xml</a>.
-* <code>min-backoff=et</code>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">task_age_limit in
+queue.yaml/xml</a>.
+* <code>min-backoff=duo</code>
     - A task will be scheduled for retry between
 min_backoff and
 max_backoff duration after it fails,
@@ -477,12 +493,22 @@ retried.</p>
 default.</p>
 <p><code>min_backoff</code> will be truncated to the nearest second.</p>
 <p>This field has the same meaning as
-<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">min_backoff_seconds in queue.yaml/xml</a>.</p>
+<a href="https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters">min_backoff_seconds in
+queue.yaml/xml</a>.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    state=duo</code></p>
+<p><code>..stackdriver-logging-config    sampling-ratio=0.69054137112</code></p>
+<ul>
+<li>Specifies the fraction of operations to write to
+    <a href="https://cloud.google.com/logging/docs/">Stackdriver Logging</a>.
+    This field may contain any value between 0.0 and 1.0, inclusive.
+    0.0 is the default and means that no operations are logged.</li>
+</ul>
+</li>
+<li>
+<p><code>..    state=sea</code></p>
 <ul>
 <li>
 <p>Output only. The state of the queue.</p>
@@ -617,7 +643,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

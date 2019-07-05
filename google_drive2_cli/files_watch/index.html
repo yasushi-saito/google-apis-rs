@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - drive v1.0.8+20181004</title>
+  <title>Watch - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -455,7 +490,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -525,44 +560,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=nonumy</code><ul>
+<li><code>-r .    address=sit</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=dolor</code><ul>
+<li><code>expiration=invidunt</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=diam</code><ul>
+<li><code>id=vero</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=no</code><ul>
-<li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
+<li><code>kind=sed</code><ul>
+<li>Identifies this as a notification channel used to watch for changes to a resource, which is &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=tempor</code><ul>
+<li><code>params=key=ut</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>payload=false</code><ul>
+<li><code>payload=true</code><ul>
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=et</code><ul>
+<li><code>resource-id=stet</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=ipsum</code><ul>
+<li><code>resource-uri=sanctus</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=gubergren</code><ul>
+<li><code>token=no</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=aliquyam</code><ul>
+<li><code>type=rebum.</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -593,21 +628,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Deprecated use supportsAllDrives instead.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>This parameter is deprecated and has no function.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p revision-id=string</strong></p>
-<ul>
-<li>Specifies the Revision ID that should be downloaded. Ignored unless alt=media is specified.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p update-viewed-date=boolean</strong></p>
-<ul>
-<li>Deprecated: Use files.update with modifiedDateBehavior=noChange, updateViewedDate=true and an empty request body.</li>
 </ul>
 </li>
 <li>
@@ -617,9 +646,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p supports-team-drives=boolean</strong></p>
+<p><strong>-p revision-id=string</strong></p>
 <ul>
-<li>Whether the requesting application supports Team Drives.</li>
+<li>Specifies the Revision ID that should be downloaded. Ignored unless alt=media is specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-all-drives=boolean</strong></p>
+<ul>
+<li>Deprecated - Whether the requesting application supports both My Drives and shared drives. This parameter will only be effective until June 1, 2020. Afterwards all applications are assumed to support shared drives.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-viewed-date=boolean</strong></p>
+<ul>
+<li>Deprecated: Use files.update with modifiedDateBehavior=noChange, updateViewedDate=true and an empty request body.</li>
 </ul>
 </li>
 </ul>
@@ -689,7 +730,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

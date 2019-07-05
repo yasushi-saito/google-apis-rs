@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Transfer Configs Patch - BigQuery Data Transfer v1.0.8+20181008</title>
+  <title>Locations Transfer Configs Patch - BigQuery Data Transfer v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -157,6 +157,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-transfer-configs-start-manual-runs/">Locations Transfer Configs Start Manual Runs</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_transfer-configs-create/">Transfer Configs Create</a>
                 </li>
                 <li class="">
@@ -195,6 +199,10 @@
                     
     <a class="" href="../projects_transfer-configs-schedule-runs/">Transfer Configs Schedule Runs</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../projects_transfer-configs-start-manual-runs/">Transfer Configs Start Manual Runs</a>
+                </li>
     </ul>
 	    </li>
           
@@ -208,7 +216,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">BigQuery Data Transfer v1.0.8+20181008</a>
+        <a href="..">BigQuery Data Transfer v1.0.10+20190629</a>
       </nav>
 
       
@@ -248,7 +256,7 @@ You can set the scope for this method like this: <code>bigquerydatatransfer1 --s
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
 <li>The resource name of the transfer config.
     Transfer config names have the form of
-    <code>projects/{project_id}/location/{region}/transferConfigs/{config_id}</code>.
+    <code>projects/{project_id}/locations/{region}/transferConfigs/{config_id}</code>.
     The name is automatically generated based on the config_id specified in
     CreateTransferConfigRequest along with project_id and region. If config_id
     is not provided, usually a uuid, even though it is not guaranteed or
@@ -270,6 +278,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   name: string
   next-run-time: string
   schedule: string
+  schedule-options:
+    disable-auto-scheduling: boolean
+    end-time: string
+    start-time: string
   state: string
   update-time: string
   user-id: string
@@ -278,7 +290,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    data-refresh-window-days=66</code><ul>
+<li><code>-r .    data-refresh-window-days=82</code><ul>
 <li>The number of days to look back to automatically refresh the data.
     For example, if <code>data_refresh_window_days = 10</code>, then every day
     BigQuery reingests data for [today-10, today-1], rather than ingesting data
@@ -287,15 +299,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     to use the default value.</li>
 </ul>
 </li>
-<li><code>data-source-id=sea</code><ul>
+<li><code>data-source-id=gubergren</code><ul>
 <li>Data source id. Cannot be changed once data transfer is created.</li>
 </ul>
 </li>
-<li><code>dataset-region=nonumy</code><ul>
+<li><code>dataset-region=sadipscing</code><ul>
 <li>Output only. Region in which BigQuery dataset is located.</li>
 </ul>
 </li>
-<li><code>destination-dataset-id=dolores</code><ul>
+<li><code>destination-dataset-id=aliquyam</code><ul>
 <li>The BigQuery target dataset id.</li>
 </ul>
 </li>
@@ -304,25 +316,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     for a given transfer.</li>
 </ul>
 </li>
-<li><code>display-name=sadipscing</code><ul>
+<li><code>display-name=no</code><ul>
 <li>User specified display name for the data transfer.</li>
 </ul>
 </li>
-<li><code>name=aliquyam</code><ul>
+<li><code>name=justo</code><ul>
 <li>The resource name of the transfer config.
     Transfer config names have the form of
-    <code>projects/{project_id}/location/{region}/transferConfigs/{config_id}</code>.
+    <code>projects/{project_id}/locations/{region}/transferConfigs/{config_id}</code>.
     The name is automatically generated based on the config_id specified in
     CreateTransferConfigRequest along with project_id and region. If config_id
     is not provided, usually a uuid, even though it is not guaranteed or
     required, will be generated for config_id.</li>
 </ul>
 </li>
-<li><code>next-run-time=ea</code><ul>
+<li><code>next-run-time=justo</code><ul>
 <li>Output only. Next time when data transfer will run.</li>
 </ul>
 </li>
-<li><code>schedule=no</code><ul>
+<li><code>schedule=et</code><ul>
 <li>Data transfer schedule.
     If the data source does not support a custom schedule, this should be
     empty. If it is empty, the default value for the data source will be
@@ -337,20 +349,42 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     NOTE: the granularity should be at least 8 hours, or less frequent.</li>
 </ul>
 </li>
-<li><code>state=justo</code><ul>
+<li><code>schedule-options    disable-auto-scheduling=true</code><ul>
+<li>If true, automatic scheduling of data transfer runs for this configuration
+    will be disabled. The runs can be started on ad-hoc basis using
+    StartManualTransferRuns API. When automatic scheduling is disabled, the
+    TransferConfig.schedule field will be ignored.</li>
+</ul>
+</li>
+<li><code>end-time=diam</code><ul>
+<li>Defines time to stop scheduling transfer runs. A transfer run cannot be
+    scheduled at or after the end time. The end time can be changed at any
+    moment. The time when a data transfer can be trigerred manually is not
+    limited by this option.</li>
+</ul>
+</li>
+<li>
+<p><code>start-time=ipsum</code></p>
+<ul>
+<li>Specifies time to start scheduling transfer runs. The first run will be
+    scheduled at or after the start time according to a recurrence pattern
+    defined in the schedule string. The start time can be changed at any
+    moment. The time when a data transfer can be trigerred manually is not
+    limited by this option.</li>
+</ul>
+</li>
+<li>
+<p><code>..    state=lorem</code></p>
+<ul>
 <li>Output only. State of the most recently updated transfer run.</li>
 </ul>
 </li>
-<li><code>update-time=justo</code><ul>
+<li><code>update-time=et</code><ul>
 <li>Output only. Data transfer modification time. Ignored by server on input.</li>
 </ul>
 </li>
-<li><code>user-id=et</code><ul>
-<li>Output only. Unique ID of the user on whose behalf transfer is done.
-    Applicable only to data sources that do not support service accounts.
-    When set to 0, the data source service account credentials are used.
-    May be negative. Note, that this identifier is not stable.
-    It may change over time even for the same user.</li>
+<li><code>user-id=duo</code><ul>
+<li>Deprecated. Unique ID of the user on whose behalf transfer is done.</li>
 </ul>
 </li>
 </ul>
@@ -379,12 +413,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p update-mask=string</strong></p>
-<ul>
-<li>Required list of fields to be updated in this request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p authorization-code=string</strong></p>
 <ul>
 <li>
@@ -406,6 +434,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   the user to copy the code and paste it in the application.</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p version-info=string</strong></p>
+<ul>
+<li>Optional version info. If users want to find a very recent access token,
+    that is, immediately after approving access, users have to set the
+    version_info claim in the token request. To obtain the version_info, users
+    must use the &#34;none+gsession&#34; response type. which be return a
+    version_info back in the authorization response which be be put in a JWT
+    claim in the token request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-mask=string</strong></p>
+<ul>
+<li>Required list of fields to be updated in this request.</li>
 </ul>
 </li>
 </ul>
@@ -499,7 +544,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

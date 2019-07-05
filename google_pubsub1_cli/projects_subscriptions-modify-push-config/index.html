@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Modify Push Config - Pubsub v1.0.8+20181001</title>
+  <title>Subscriptions Modify Push Config - Pubsub v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -221,7 +221,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.8+20181001</a>
+        <a href="..">Pubsub v1.0.10+20190625</a>
       </nav>
 
       
@@ -278,13 +278,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>ModifyPushConfigRequest:
   push-config:
     attributes: { string: string }
+    oidc-token:
+      audience: string
+      service-account-email: string
     push-endpoint: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .push-config    attributes=key=justo</code><ul>
+<li>
+<p><code>-r .push-config    attributes=key=et</code></p>
+<ul>
 <li>
 <p>Endpoint configuration attributes.</p>
 <p>Every endpoint has a set of API supported attributes that can be used to
@@ -306,13 +311,32 @@ created without this attribute.</p>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>push-endpoint=justo</code><ul>
+<li><code>oidc-token    audience=diam</code><ul>
+<li>Audience to be used when generating OIDC token. The audience claim
+identifies the recipients that the JWT is intended for. The audience
+value is a single case-sensitive string. Having multiple values (array)
+for the audience field is not supported. More info about the OIDC JWT
+token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3
+Note: if not specified, the Push endpoint URL will be used.</li>
+</ul>
+</li>
+<li><code>service-account-email=ipsum</code><ul>
+<li><a href="https://cloud.google.com/iam/docs/service-accounts">Service account
+email</a>
+to be used for generating the OIDC token. The caller (for
+CreateSubscription, UpdateSubscription, and ModifyPushConfig RPCs) must
+have the iam.serviceAccounts.actAs permission for the service account.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    push-endpoint=lorem</code></p>
+<ul>
 <li>A URL locating the endpoint to which messages should be pushed.
-For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</li>
-</ul>
-</li>
-</ul>
-</li>
+    For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</li>
 </ul>
 </li>
 </ul>
@@ -425,7 +449,7 @@ For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</l
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create Contact - People Service v1.0.8+20181010</title>
+  <title>Create Contact - People Service v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> People Service v1.0.8+20181010</a>
+        <a href=".." class="icon icon-home"> People Service v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -152,7 +152,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">People Service v1.0.8+20181010</a>
+        <a href="..">People Service v1.0.10+20190702</a>
       </nav>
 
       
@@ -210,17 +210,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><strong>DEPRECATED</strong> (Please use <code>person.ageRanges</code> instead)**</p>
 <p>The person&#39;s read-only age range.
-<em> <code>etag=justo</code>
+* <code>etag=justo</code>
     - The <a href="https://en.wikipedia.org/wiki/HTTP_ETag">HTTP entity tag</a> of the
 resource. Used for web cache validation.
-</em> <code>metadata    deleted=true</code>
+* <code>metadata    deleted=true</code>
     - True if the person resource has been deleted. Populated only for
 <a href="../people/api/rest/v1/people.connections/list"><code>connections.list</code></a> requests
 that include a sync token.
-<em> <code>linked-people-resource-names=et</code>
+* <code>linked-people-resource-names=et</code>
     - Resource names of people linked to this resource.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>object-type=et</code>
+* <code>object-type=et</code>
     - <strong>DEPRECATED</strong> (Please use
 <code>person.metadata.sources.profileMetadata.objectType</code> instead)</p>
 <p>The type of the person object.
@@ -363,7 +363,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

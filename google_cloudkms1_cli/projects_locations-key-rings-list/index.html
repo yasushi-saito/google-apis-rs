@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Key Rings List - Cloud KMS v1.0.8+20181005</title>
+  <title>Locations Key Rings List - Cloud KMS v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud KMS v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Cloud KMS v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -94,6 +94,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-key-rings-crypto-keys-crypto-key-versions-import/">Locations Key Rings Crypto Keys Crypto Key Versions Import</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-key-rings-crypto-keys-crypto-key-versions-list/">Locations Key Rings Crypto Keys Crypto Key Versions List</a>
                 </li>
                 <li class="">
@@ -148,6 +152,30 @@
                     
     <a class="" href="../projects_locations-key-rings-get-iam-policy/">Locations Key Rings Get Iam Policy</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-create/">Locations Key Rings Import Jobs Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-get/">Locations Key Rings Import Jobs Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-get-iam-policy/">Locations Key Rings Import Jobs Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-list/">Locations Key Rings Import Jobs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-set-iam-policy/">Locations Key Rings Import Jobs Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-test-iam-permissions/">Locations Key Rings Import Jobs Test Iam Permissions</a>
+                </li>
                 <li class=" current">
                     
     <a class="current" href="./">Locations Key Rings List</a>
@@ -195,7 +223,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud KMS v1.0.8+20181005</a>
+        <a href="..">Cloud KMS v1.0.10+20190626</a>
       </nav>
 
       
@@ -226,7 +254,11 @@
               
                 <p>Lists KeyRings.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/cloudkms</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>cloudkms1 --scope &lt;scope&gt; projects locations-key-rings-list ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
@@ -267,6 +299,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>Optional pagination token, returned earlier via
     ListKeyRingsResponse.next_page_token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>Optional. Only include resources that match the filter in the response
+    (https://cloud.google.com/kms/docs/sorting-and-filtering).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Optional. Specify how the results should be sorted. If not specified, the
+    results will be sorted in the default order
+    (https://cloud.google.com/kms/docs/sorting-and-filtering).</li>
 </ul>
 </li>
 </ul>
@@ -350,7 +397,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../projects_locations-key-rings-set-iam-policy/" class="btn btn-neutral float-right" title="Locations Key Rings Set Iam Policy">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_locations-key-rings-get-iam-policy/" class="btn btn-neutral" title="Locations Key Rings Get Iam Policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-key-rings-import-jobs-test-iam-permissions/" class="btn btn-neutral" title="Locations Key Rings Import Jobs Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -360,7 +407,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -380,7 +427,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudkms1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_locations-key-rings-get-iam-policy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-key-rings-import-jobs-test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects_locations-key-rings-set-iam-policy/" style="color: #fcfcfc">Next &raquo;</a></span>

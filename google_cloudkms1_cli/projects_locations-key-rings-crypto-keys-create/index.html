@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Key Rings Crypto Keys Create - Cloud KMS v1.0.8+20181005</title>
+  <title>Locations Key Rings Crypto Keys Create - Cloud KMS v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud KMS v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> Cloud KMS v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -121,6 +121,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-key-rings-crypto-keys-crypto-key-versions-import/">Locations Key Rings Crypto Keys Crypto Key Versions Import</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-key-rings-crypto-keys-crypto-key-versions-list/">Locations Key Rings Crypto Keys Crypto Key Versions List</a>
                 </li>
                 <li class="">
@@ -177,6 +181,30 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-key-rings-import-jobs-create/">Locations Key Rings Import Jobs Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-get/">Locations Key Rings Import Jobs Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-get-iam-policy/">Locations Key Rings Import Jobs Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-list/">Locations Key Rings Import Jobs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-set-iam-policy/">Locations Key Rings Import Jobs Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-key-rings-import-jobs-test-iam-permissions/">Locations Key Rings Import Jobs Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-key-rings-list/">Locations Key Rings List</a>
                 </li>
                 <li class="">
@@ -204,7 +232,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud KMS v1.0.8+20181005</a>
+        <a href="..">Cloud KMS v1.0.10+20190626</a>
       </nav>
 
       
@@ -238,7 +266,11 @@
 CryptoKey.version_template.algorithm
 are required.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/cloudkms</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>cloudkms1 --scope &lt;scope&gt; projects locations-key-rings-crypto-keys-create ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
@@ -267,6 +299,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     destroy-event-time: string
     destroy-time: string
     generate-time: string
+    import-failure-reason: string
+    import-job: string
+    import-time: string
     name: string
     protection-level: string
     state: string
@@ -311,10 +346,10 @@ do not affect next_rotation_time.</p>
 <p>Keys with purpose
 ENCRYPT_DECRYPT support
 automatic rotation. For other keys, this field must be omitted.
-<em> <code>primary    algorithm=kasd</code>
+* <code>primary    algorithm=kasd</code>
     - Output only. The CryptoKeyVersionAlgorithm that this
 CryptoKeyVersion supports.
-</em> <code>attestation    content=accusam</code>
+* <code>attestation    content=accusam</code>
     - Output only. The attestation data provided by the HSM when the key
 operation was performed.
 * <code>format=takimata</code>
@@ -345,43 +380,61 @@ operation was performed.
     generated.</li>
 </ul>
 </li>
-<li><code>name=sea</code><ul>
+<li><code>import-failure-reason=sea</code><ul>
+<li>Output only. The root cause of an import failure. Only present if
+    state is
+    IMPORT_FAILED.</li>
+</ul>
+</li>
+<li><code>import-job=nonumy</code><ul>
+<li>Output only. The name of the ImportJob used to import this
+    CryptoKeyVersion. Only present if the underlying key material was
+    imported.</li>
+</ul>
+</li>
+<li><code>import-time=dolores</code><ul>
+<li>Output only. The time at which this CryptoKeyVersion&#39;s key material
+    was imported.</li>
+</ul>
+</li>
+<li><code>name=gubergren</code><ul>
 <li>Output only. The resource name for this CryptoKeyVersion in the format
     <code>projects/*/locations/*/keyRings/*/cryptoKeys/*/cryptoKeyVersions/*</code>.</li>
 </ul>
 </li>
-<li><code>protection-level=nonumy</code><ul>
+<li><code>protection-level=sadipscing</code><ul>
 <li>Output only. The ProtectionLevel describing how crypto operations are
     performed with this CryptoKeyVersion.</li>
 </ul>
 </li>
 <li>
-<p><code>state=dolores</code></p>
+<p><code>state=aliquyam</code></p>
 <ul>
 <li>The current state of the CryptoKeyVersion.</li>
 </ul>
 </li>
 <li>
-<p><code>..    purpose=gubergren</code></p>
+<p><code>..    purpose=ea</code></p>
 <ul>
 <li>The immutable purpose of this CryptoKey.</li>
 </ul>
 </li>
-<li><code>rotation-period=sadipscing</code><ul>
+<li><code>rotation-period=no</code><ul>
 <li>
 <p>next_rotation_time will be advanced by this period when the service
-    automatically rotates a key. Must be at least one day.</p>
+    automatically rotates a key. Must be at least 24 hours and at most
+    876,000 hours.</p>
 <p>If rotation_period is set, next_rotation_time must also be set.</p>
 <p>Keys with purpose
 ENCRYPT_DECRYPT support
 automatic rotation. For other keys, this field must be omitted.
-* <code>version-template    algorithm=aliquyam</code>
+* <code>version-template    algorithm=justo</code>
     - Required. Algorithm to use
 when creating a CryptoKeyVersion based on this template.</p>
 <p>For backwards compatibility, GOOGLE_SYMMETRIC_ENCRYPTION is implied if both
 this field is omitted and CryptoKey.purpose is
 ENCRYPT_DECRYPT.
-* <code>protection-level=ea</code>
+* <code>protection-level=justo</code>
     - ProtectionLevel to use when creating a CryptoKeyVersion based on
 this template. Immutable. Defaults to SOFTWARE.</p>
 </li>
@@ -412,9 +465,21 @@ this template. Immutable. Defaults to SOFTWARE.</p>
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li><strong>-p crypto-key-id=string</strong><ul>
+<li>
+<p><strong>-p crypto-key-id=string</strong></p>
+<ul>
 <li>Required. It must be unique within a KeyRing and match the regular
     expression <code>[a-zA-Z0-9_-]{1,63}</code></li>
+</ul>
+</li>
+<li>
+<p><strong>-p skip-initial-version-creation=boolean</strong></p>
+<ul>
+<li>If set to true, the request will create a CryptoKey without any
+    CryptoKeyVersions. You must manually call
+    CreateCryptoKeyVersion or
+    ImportCryptoKeyVersion
+    before you can use this CryptoKey.</li>
 </ul>
 </li>
 </ul>
@@ -508,7 +573,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

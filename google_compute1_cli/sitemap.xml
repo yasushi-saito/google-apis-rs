@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/accelerator-types_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/accelerator-types_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/accelerator-types_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,31 +35,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/addresses_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/addresses_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/addresses_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/addresses_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/addresses_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -69,43 +69,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/autoscalers_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -115,49 +115,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_add-signed-url-key/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_delete-signed-url-key/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-buckets_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -167,67 +167,67 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_add-signed-url-key/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_delete-signed-url-key/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_get-health/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_set-security-policy/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/backend-services_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -237,19 +237,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disk-types_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disk-types_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disk-types_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -258,50 +258,80 @@
     
         
     <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_add-resource-policies/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_create-snapshot/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_remove-resource-policies/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_resize/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_set-labels/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/disks_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -311,37 +341,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/firewalls_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -351,37 +381,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/forwarding-rules_set-target/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -391,25 +421,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-addresses_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-addresses_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-addresses_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-addresses_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -419,31 +449,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-forwarding-rules_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-forwarding-rules_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-forwarding-rules_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-forwarding-rules_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-forwarding-rules_set-target/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -453,25 +483,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-operations_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-operations_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-operations_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/global-operations_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -481,37 +511,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/health-checks_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -521,37 +551,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/http-health-checks_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -561,37 +591,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/https-health-checks_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -601,43 +631,61 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_deprecate/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_get-from-family/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_set-labels/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/images_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -647,73 +695,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_abandon-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_delete-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_list-managed-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_patch/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_recreate-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_resize/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_set-instance-template/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-group-managers_set-target-pools/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -723,55 +777,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_add-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_list-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_remove-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-groups_set-named-ports/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -781,25 +835,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instance-templates_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -809,169 +881,211 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_add-access-config/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_attach-disk/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_delete-access-config/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_detach-disk/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_get-guest-attributes/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_get-serial-port-output/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_get-shielded-instance-identity/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_list-referrers/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_reset/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-deletion-protection/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-disk-auto-delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-labels/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-machine-resources/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-machine-type/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-metadata/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-min-cpu-platform/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-scheduling/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-service-account/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-shielded-instance-integrity-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_set-tags/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_simulate-maintenance-event/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_start/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_start-with-encryption-key/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_stop/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_update-access-config/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_update-network-interface/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/instances_update-shielded-instance-config/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -981,37 +1095,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-attachments_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1021,13 +1135,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-locations_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnect-locations_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1037,31 +1151,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_get-diagnostics/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/interconnects_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1071,13 +1191,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/license-codes_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/license-codes_test-iam-permissions/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1087,31 +1207,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/licenses_test-iam-permissions/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1121,19 +1253,77 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/machine-types_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/machine-types_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/machine-types_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_aggregated-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_attach-network-endpoints/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_detach-network-endpoints/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_insert/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_list-network-endpoints/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/network-endpoint-groups_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1143,49 +1333,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_add-peering/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_remove-peering/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/networks_switch-to-custom-mode/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1195,55 +1385,73 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_add-nodes/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_delete-nodes/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_list-nodes/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_set-node-template/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-groups_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1253,31 +1461,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-templates_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1287,19 +1513,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-types_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-types_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/node-types_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1309,79 +1535,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_disable-xpn-host/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_disable-xpn-resource/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_enable-xpn-host/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_enable-xpn-resource/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_get-xpn-host/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_get-xpn-resources/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_list-xpn-hosts/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_move-disk/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_move-instance/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_set-common-instance-metadata/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_set-default-network-tier/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/projects_set-usage-export-bucket/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1391,37 +1617,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-autoscalers_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1431,43 +1657,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_get-health/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-backend-services_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1477,25 +1703,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-commitments_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-commitments_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-commitments_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-commitments_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1505,13 +1731,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disk-types_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disk-types_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1520,50 +1746,62 @@
     
         
     <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_add-resource-policies/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_create-snapshot/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_remove-resource-policies/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_resize/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_set-labels/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-disks_test-iam-permissions/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1573,67 +1811,73 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_abandon-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_delete-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_list-managed-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_patch/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_recreate-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_resize/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_set-instance-template/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-group-managers_set-target-pools/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1643,25 +1887,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-groups_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-groups_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-groups_list-instances/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-instance-groups_set-named-ports/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1671,19 +1915,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-operations_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-operations_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/region-operations_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1693,13 +1937,123 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/regions_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/regions_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_aggregated-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_insert/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_resize/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/reservations_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_aggregated-list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_delete/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_get/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_insert/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_list/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/resource-policies_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1709,55 +2063,61 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_get-nat-mapping-info/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_get-router-status/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_preview/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routers_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1767,25 +2127,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routes_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routes_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routes_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/routes_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1795,55 +2155,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_add-rule/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_get-rule/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_patch-rule/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/security-policies_remove-rule/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1853,25 +2213,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_set-labels/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/snapshots_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1881,25 +2259,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-certificates_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-certificates_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-certificates_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-certificates_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1909,37 +2287,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_list-available-features/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/ssl-policies_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1949,55 +2327,73 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_expand-ip-cidr-range/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_get-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_list-usable/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_set-iam-policy/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_set-private-ip-google-access/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/subnetworks_test-iam-permissions/</loc>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2007,31 +2403,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-http-proxies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-http-proxies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-http-proxies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-http-proxies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-http-proxies_set-url-map/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2041,49 +2437,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_set-quic-override/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_set-ssl-certificates/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_set-ssl-policy/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-https-proxies_set-url-map/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2093,31 +2489,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-instances_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-instances_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-instances_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-instances_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-instances_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2127,67 +2523,67 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_add-health-check/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_add-instance/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_get-health/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_remove-health-check/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_remove-instance/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-pools_set-backup/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2197,49 +2593,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_set-backend-service/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_set-proxy-header/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_set-ssl-certificates/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-ssl-proxies_set-ssl-policy/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2249,37 +2645,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_set-backend-service/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-tcp-proxies_set-proxy-header/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2289,31 +2685,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-vpn-gateways_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-vpn-gateways_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-vpn-gateways_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-vpn-gateways_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/target-vpn-gateways_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2323,49 +2719,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_invalidate-cache/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_patch/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_update/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/url-maps_validate/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2375,31 +2771,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/vpn-tunnels_aggregated-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/vpn-tunnels_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/vpn-tunnels_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/vpn-tunnels_insert/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/vpn-tunnels_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2409,19 +2805,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/zone-operations_delete/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/zone-operations_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/zone-operations_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -2431,13 +2827,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/zones_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-compute1-cli/zones_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

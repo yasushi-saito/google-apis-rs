@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Policies Patch - Android Management v1.0.8+20181001</title>
+  <title>Policies Patch - Android Management v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Management v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Android Management v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -161,6 +161,26 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../enterprises_web-apps-create/">Web Apps Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-delete/">Web Apps Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-get/">Web Apps Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-list/">Web Apps List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../enterprises_web-apps-patch/">Web Apps Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../enterprises_web-tokens-create/">Web Tokens Create</a>
                 </li>
     </ul>
@@ -187,7 +207,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Management v1.0.8+20181001</a>
+        <a href="..">Android Management v1.0.10+20190624</a>
       </nav>
 
       
@@ -271,6 +291,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     default-message: string
     localized-messages: { string: string }
   maximum-time-to-lock: string
+  minimum-api-level: integer
   mobile-networks-config-disabled: boolean
   modify-accounts-disabled: boolean
   mount-physical-media-disabled: boolean
@@ -291,6 +312,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     password-minimum-symbols: integer
     password-minimum-upper-case: integer
     password-quality: string
+    password-scope: string
   permitted-input-methods:
     package-names: [string]
   play-store-mode: string
@@ -313,6 +335,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   sms-disabled: boolean
   status-bar-disabled: boolean
   status-reporting-settings:
+    application-reporting-settings:
+      include-removed-apps: boolean
     application-reports-enabled: boolean
     device-settings-enabled: boolean
     display-info-enabled: boolean
@@ -340,7 +364,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    account-types-with-management-disabled=nonumy</code><ul>
+<li><code>-r .    account-types-with-management-disabled=kasd</code><ul>
 <li>Account types that can&#39;t be managed by the user.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -349,28 +373,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether adding new users and profiles is disabled.</li>
 </ul>
 </li>
-<li><code>adjust-volume-disabled=true</code><ul>
+<li><code>adjust-volume-disabled=false</code><ul>
 <li>Whether adjusting the master volume is disabled.</li>
 </ul>
 </li>
-<li><code>always-on-vpn-package    lockdown-enabled=false</code><ul>
+<li><code>always-on-vpn-package    lockdown-enabled=true</code><ul>
 <li>Disallows networking when the VPN is not connected.</li>
 </ul>
 </li>
 <li>
-<p><code>package-name=at</code></p>
+<p><code>package-name=labore</code></p>
 <ul>
 <li>The package name of the VPN app.</li>
 </ul>
 </li>
 <li>
-<p><code>..    android-device-policy-tracks=labore</code></p>
+<p><code>..    android-device-policy-tracks=invidunt</code></p>
 <ul>
 <li>The app tracks for Android Device Policy the device can access. The device receives the latest version among all accessible tracks. If no tracks are specified, then the device only uses the production track.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>app-auto-update-policy=invidunt</code><ul>
+<li><code>app-auto-update-policy=ea</code><ul>
 <li>The app auto update policy, which controls when automatic app updates can be applied.</li>
 </ul>
 </li>
@@ -382,7 +406,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether applications other than the ones configured in applications are blocked from being installed. When set, applications that were installed under a previous policy but no longer appear in the policy are automatically uninstalled.</li>
 </ul>
 </li>
-<li><code>bluetooth-config-disabled=false</code><ul>
+<li><code>bluetooth-config-disabled=true</code><ul>
 <li>Whether configuring bluetooth is disabled.</li>
 </ul>
 </li>
@@ -394,7 +418,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether bluetooth is disabled. Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user.</li>
 </ul>
 </li>
-<li><code>camera-disabled=true</code><ul>
+<li><code>camera-disabled=false</code><ul>
 <li>Whether all cameras on the device are disabled.</li>
 </ul>
 </li>
@@ -402,7 +426,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether configuring cell broadcast is disabled.</li>
 </ul>
 </li>
-<li><code>create-windows-disabled=false</code><ul>
+<li><code>create-windows-disabled=true</code><ul>
 <li>Whether creating windows besides app windows is disabled.</li>
 </ul>
 </li>
@@ -410,31 +434,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether configuring user credentials is disabled.</li>
 </ul>
 </li>
-<li><code>data-roaming-disabled=true</code><ul>
+<li><code>data-roaming-disabled=false</code><ul>
 <li>Whether roaming data services are disabled.</li>
 </ul>
 </li>
-<li><code>debugging-features-allowed=false</code><ul>
+<li><code>debugging-features-allowed=true</code><ul>
 <li>Whether the user is allowed to enable debugging features.</li>
 </ul>
 </li>
-<li><code>default-permission-policy=sed</code><ul>
+<li><code>default-permission-policy=ea</code><ul>
 <li>The default permission policy for runtime permission requests.</li>
 </ul>
 </li>
-<li><code>device-owner-lock-screen-info    default-message=ea</code><ul>
+<li><code>device-owner-lock-screen-info    default-message=gubergren</code><ul>
 <li>The default message displayed if no localized message is specified or the user&#39;s locale doesn&#39;t match with any of the localized messages. A default message must be provided if any localized messages are provided.</li>
 </ul>
 </li>
 <li>
-<p><code>localized-messages=key=gubergren</code></p>
+<p><code>localized-messages=key=aliquyam</code></p>
 <ul>
 <li>A map containing &lt;locale, message&gt; pairs, where locale is a well-formed BCP 47 language (https://www.w3.org/International/articles/language-tags/) code, such as en-US, es-ES, or fr.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    encryption-policy=aliquyam</code></p>
+<p><code>..    encryption-policy=eos</code></p>
 <ul>
 <li>Whether encryption is enabled</li>
 </ul>
@@ -443,11 +467,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether app verification is force-enabled.</li>
 </ul>
 </li>
-<li><code>factory-reset-disabled=true</code><ul>
+<li><code>factory-reset-disabled=false</code><ul>
 <li>Whether factory resetting from settings is disabled.</li>
 </ul>
 </li>
-<li><code>frp-admin-emails=sea</code><ul>
+<li><code>frp-admin-emails=labore</code><ul>
 <li>Email addresses of device administrators for factory reset protection. When the device is factory reset, it will require one of these admins to log in with the Google account email and password to unlock the device. If no admins are specified, the device won&#39;t provide factory reset protection.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -456,11 +480,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the user is allowed to have fun. Controls whether the Easter egg game in Settings is disabled.</li>
 </ul>
 </li>
-<li><code>install-apps-disabled=false</code><ul>
+<li><code>install-apps-disabled=true</code><ul>
 <li>Whether user installation of apps is disabled.</li>
 </ul>
 </li>
-<li><code>install-unknown-sources-allowed=true</code><ul>
+<li><code>install-unknown-sources-allowed=false</code><ul>
 <li>Whether the user is allowed to enable the &#34;Unknown Sources&#34; setting, which allows installation of apps from unknown sources.</li>
 </ul>
 </li>
@@ -468,7 +492,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the keyguard is disabled.</li>
 </ul>
 </li>
-<li><code>keyguard-disabled-features=sit</code><ul>
+<li><code>keyguard-disabled-features=diam</code><ul>
 <li>Disabled keyguard customizations, such as widgets.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -477,32 +501,36 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the kiosk custom launcher is enabled. This replaces the home screen with a launcher that locks down the device to the apps installed via the applications setting. The apps appear on a single page in alphabetical order. It is recommended to also use status_bar_disabled to block access to device settings.</li>
 </ul>
 </li>
-<li><code>location-mode=ut</code><ul>
+<li><code>location-mode=justo</code><ul>
 <li>The degree of location detection enabled. The user may change the value unless the user is otherwise blocked from accessing device settings.</li>
 </ul>
 </li>
-<li><code>long-support-message    default-message=justo</code><ul>
+<li><code>long-support-message    default-message=est</code><ul>
 <li>The default message displayed if no localized message is specified or the user&#39;s locale doesn&#39;t match with any of the localized messages. A default message must be provided if any localized messages are provided.</li>
 </ul>
 </li>
 <li>
-<p><code>localized-messages=key=est</code></p>
+<p><code>localized-messages=key=amet</code></p>
 <ul>
 <li>A map containing &lt;locale, message&gt; pairs, where locale is a well-formed BCP 47 language (https://www.w3.org/International/articles/language-tags/) code, such as en-US, es-ES, or fr.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..    maximum-time-to-lock=amet</code></p>
+<p><code>..    maximum-time-to-lock=accusam</code></p>
 <ul>
 <li>Maximum time in milliseconds for user activity until the device locks. A value of 0 means there is no restriction.</li>
 </ul>
 </li>
-<li><code>mobile-networks-config-disabled=true</code><ul>
+<li><code>minimum-api-level=88</code><ul>
+<li>The minimum allowed Android API level.</li>
+</ul>
+</li>
+<li><code>mobile-networks-config-disabled=false</code><ul>
 <li>Whether configuring mobile networks is disabled.</li>
 </ul>
 </li>
-<li><code>modify-accounts-disabled=true</code><ul>
+<li><code>modify-accounts-disabled=false</code><ul>
 <li>Whether adding or removing accounts is disabled.</li>
 </ul>
 </li>
@@ -510,11 +538,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the user mounting physical external media is disabled.</li>
 </ul>
 </li>
-<li><code>name=justo</code><ul>
+<li><code>name=clita</code><ul>
 <li>The name of the policy in the form enterprises/{enterpriseId}/policies/{policyId}.</li>
 </ul>
 </li>
-<li><code>network-escape-hatch-enabled=false</code><ul>
+<li><code>network-escape-hatch-enabled=true</code><ul>
 <li>Whether the network escape hatch is enabled. If a network connection can&#39;t be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.</li>
 </ul>
 </li>
@@ -526,65 +554,69 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether using NFC to beam data from apps is disabled.</li>
 </ul>
 </li>
-<li><code>outgoing-calls-disabled=false</code><ul>
+<li><code>outgoing-calls-disabled=true</code><ul>
 <li>Whether outgoing calls are disabled.</li>
 </ul>
 </li>
-<li><code>password-requirements    maximum-failed-passwords-for-wipe=82</code><ul>
+<li><code>password-requirements    maximum-failed-passwords-for-wipe=23</code><ul>
 <li>Number of incorrect device-unlock passwords that can be entered before a device is wiped. A value of 0 means there is no restriction.</li>
 </ul>
 </li>
-<li><code>password-expiration-timeout=eos</code><ul>
+<li><code>password-expiration-timeout=duo</code><ul>
 <li>Password expiration timeout.</li>
 </ul>
 </li>
-<li><code>password-history-length=23</code><ul>
+<li><code>password-history-length=8</code><ul>
 <li>The length of the password history. After setting this field, the user won&#39;t be able to enter a new password that is the same as any password in the history. A value of 0 means there is no restriction.</li>
 </ul>
 </li>
-<li><code>password-minimum-length=82</code><ul>
+<li><code>password-minimum-length=70</code><ul>
 <li>The minimum allowed password length. A value of 0 means there is no restriction. Only enforced when password_quality is NUMERIC, NUMERIC_COMPLEX, ALPHABETIC, ALPHANUMERIC, or COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-letters=8</code><ul>
+<li><code>password-minimum-letters=34</code><ul>
 <li>Minimum number of letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-lower-case=70</code><ul>
+<li><code>password-minimum-lower-case=84</code><ul>
 <li>Minimum number of lower case letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-non-letter=34</code><ul>
+<li><code>password-minimum-non-letter=27</code><ul>
 <li>Minimum number of non-letter characters (numerical digits or symbols) required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-numeric=84</code><ul>
+<li><code>password-minimum-numeric=53</code><ul>
 <li>Minimum number of numerical digits required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-symbols=27</code><ul>
+<li><code>password-minimum-symbols=60</code><ul>
 <li>Minimum number of symbols required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-upper-case=53</code><ul>
+<li><code>password-minimum-upper-case=39</code><ul>
 <li>Minimum number of upper case letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li>
-<p><code>password-quality=diam</code></p>
-<ul>
+<li><code>password-quality=invidunt</code><ul>
 <li>The required password quality.</li>
 </ul>
 </li>
 <li>
-<p><code>..permitted-input-methods    package-names=kasd</code></p>
+<p><code>password-scope=rebum.</code></p>
+<ul>
+<li>The scope that the password requirement applies to.</li>
+</ul>
+</li>
+<li>
+<p><code>..permitted-input-methods    package-names=lorem</code></p>
 <ul>
 <li>A list of package names.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    play-store-mode=invidunt</code></p>
+<p><code>..    play-store-mode=clita</code></p>
 <ul>
 <li>This mode controls which apps are available to the user in the Play Store and the behavior on the device when apps are removed from the policy.</li>
 </ul>
@@ -593,21 +625,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Allows showing UI on a device for a user to choose a private key alias if there are no matching rules in ChoosePrivateKeyRules. For devices below Android P, setting this may leave enterprise keys vulnerable.</li>
 </ul>
 </li>
-<li><code>recommended-global-proxy    excluded-hosts=lorem</code><ul>
+<li><code>recommended-global-proxy    excluded-hosts=eirmod</code><ul>
 <li>For a direct proxy, the hosts for which the proxy is bypassed. The host names may contain wildcards such as *.example.com.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>host=clita</code><ul>
+<li><code>host=at</code><ul>
 <li>The host of the direct proxy.</li>
 </ul>
 </li>
-<li><code>pac-uri=invidunt</code><ul>
+<li><code>pac-uri=consetetur</code><ul>
 <li>The URI of the PAC script used to configure the proxy.</li>
 </ul>
 </li>
 <li>
-<p><code>port=11</code></p>
+<p><code>port=79</code></p>
 <ul>
 <li>The port of the direct proxy.</li>
 </ul>
@@ -618,7 +650,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether removing other users is disabled.</li>
 </ul>
 </li>
-<li><code>safe-boot-disabled=false</code><ul>
+<li><code>safe-boot-disabled=true</code><ul>
 <li>Whether rebooting the device into safe boot is disabled.</li>
 </ul>
 </li>
@@ -626,11 +658,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether screen capture is disabled.</li>
 </ul>
 </li>
-<li><code>set-user-icon-disabled=false</code><ul>
+<li><code>set-user-icon-disabled=true</code><ul>
 <li>Whether changing the user icon is disabled.</li>
 </ul>
 </li>
-<li><code>set-wallpaper-disabled=true</code><ul>
+<li><code>set-wallpaper-disabled=false</code><ul>
 <li>Whether changing the wallpaper is disabled.</li>
 </ul>
 </li>
@@ -638,12 +670,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether location sharing is disabled.</li>
 </ul>
 </li>
-<li><code>short-support-message    default-message=elitr</code><ul>
+<li><code>short-support-message    default-message=lorem</code><ul>
 <li>The default message displayed if no localized message is specified or the user&#39;s locale doesn&#39;t match with any of the localized messages. A default message must be provided if any localized messages are provided.</li>
 </ul>
 </li>
 <li>
-<p><code>localized-messages=key=nonumy</code></p>
+<p><code>localized-messages=key=lorem</code></p>
 <ul>
 <li>A map containing &lt;locale, message&gt; pairs, where locale is a well-formed BCP 47 language (https://www.w3.org/International/articles/language-tags/) code, such as en-US, es-ES, or fr.</li>
 <li>the value will be associated with the given <code>key</code></li>
@@ -663,11 +695,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the status bar is disabled. This disables notifications, quick settings, and other screen overlays that allow escape from full-screen mode.</li>
 </ul>
 </li>
-<li><code>status-reporting-settings    application-reports-enabled=true</code><ul>
+<li>
+<p><code>status-reporting-settings.application-reporting-settings    include-removed-apps=false</code></p>
+<ul>
+<li>Whether removed apps are included in application reports.</li>
+</ul>
+</li>
+<li>
+<p><code>..    application-reports-enabled=false</code></p>
+<ul>
 <li>Whether app reports are enabled.</li>
 </ul>
 </li>
-<li><code>device-settings-enabled=true</code><ul>
+<li><code>device-settings-enabled=false</code><ul>
 <li>Whether device settings reporting is enabled.</li>
 </ul>
 </li>
@@ -675,15 +715,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether displays reporting is enabled.</li>
 </ul>
 </li>
-<li><code>hardware-status-enabled=false</code><ul>
+<li><code>hardware-status-enabled=true</code><ul>
 <li>Whether hardware status reporting is enabled.</li>
 </ul>
 </li>
-<li><code>memory-info-enabled=false</code><ul>
+<li><code>memory-info-enabled=true</code><ul>
 <li>Whether memory reporting is enabled.</li>
 </ul>
 </li>
-<li><code>network-info-enabled=false</code><ul>
+<li><code>network-info-enabled=true</code><ul>
 <li>Whether network info reporting is enabled.</li>
 </ul>
 </li>
@@ -698,28 +738,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    stay-on-plugged-modes=ut</code></p>
+<p><code>..    stay-on-plugged-modes=dolor</code></p>
 <ul>
 <li>The battery plugged in modes for which the device stays on. When using this setting, it is recommended to clear maximum_time_to_lock so that the device doesn&#39;t lock itself while it stays on.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>system-update    end-minutes=62</code><ul>
+<li><code>system-update    end-minutes=79</code><ul>
 <li>If the type is WINDOWED, the end of the maintenance window, measured as the number of minutes after midnight in device&#39;s local time. This value must be between 0 and 1439, inclusive. If this value is less than start_minutes, then the maintenance window spans midnight. If the maintenance window specified is smaller than 30 minutes, the actual window is extended to 30 minutes beyond the start time.</li>
 </ul>
 </li>
-<li><code>start-minutes=93</code><ul>
+<li><code>start-minutes=16</code><ul>
 <li>If the type is WINDOWED, the start of the maintenance window, measured as the number of minutes after midnight in the device&#39;s local time. This value must be between 0 and 1439, inclusive.</li>
 </ul>
 </li>
 <li>
-<p><code>type=voluptua.</code></p>
+<p><code>type=vero</code></p>
 <ul>
 <li>The type of system update to configure.</li>
 </ul>
 </li>
 <li>
-<p><code>..    tethering-config-disabled=false</code></p>
+<p><code>..    tethering-config-disabled=true</code></p>
 <ul>
 <li>Whether configuring tethering and portable hotspots is disabled.</li>
 </ul>
@@ -728,19 +768,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether user uninstallation of applications is disabled.</li>
 </ul>
 </li>
-<li><code>unmute-microphone-disabled=false</code><ul>
+<li><code>unmute-microphone-disabled=true</code><ul>
 <li>Whether the microphone is muted and adjusting microphone volume is disabled.</li>
 </ul>
 </li>
-<li><code>usb-file-transfer-disabled=true</code><ul>
+<li><code>usb-file-transfer-disabled=false</code><ul>
 <li>Whether transferring files over USB is disabled.</li>
 </ul>
 </li>
 <li><code>usb-mass-storage-enabled=true</code><ul>
-<li>Whether USB storage is enabled.</li>
+<li>Whether USB storage is enabled. Deprecated.</li>
 </ul>
 </li>
-<li><code>version=sed</code><ul>
+<li><code>version=dolore</code><ul>
 <li>The version of the policy. This is a read-only field. The version is incremented each time the policy is updated.</li>
 </ul>
 </li>
@@ -752,8 +792,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether configuring Wi-Fi access points is disabled.</li>
 </ul>
 </li>
-<li><code>wifi-configs-lockdown-enabled=true</code><ul>
-<li>Whether Wi-Fi networks defined in Open Network Configuration are locked so they can&#39;t be edited by the user.</li>
+<li><code>wifi-configs-lockdown-enabled=false</code><ul>
+<li>DEPRECATED - Use wifi_config_disabled.</li>
 </ul>
 </li>
 </ul>
@@ -863,7 +903,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../enterprises_web-tokens-create/" class="btn btn-neutral float-right" title="Web Tokens Create">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../enterprises_web-apps-create/" class="btn btn-neutral float-right" title="Web Apps Create">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../enterprises_policies-list/" class="btn btn-neutral" title="Policies List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -876,7 +916,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -899,7 +939,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <span><a href="../enterprises_policies-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../enterprises_web-tokens-create/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../enterprises_web-apps-create/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

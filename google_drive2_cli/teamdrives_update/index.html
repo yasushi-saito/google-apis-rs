@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - drive v1.0.8+20181004</title>
+  <title>Update - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -455,7 +490,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -484,7 +519,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates a Team Drive&#39;s metadata</p>
+                <p>Deprecated use drives.update instead.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/drive</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/drive</em>.
@@ -543,31 +578,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .background-image-file    id=dolore</code><ul>
+<li><code>-r .background-image-file    id=diam</code><ul>
 <li>The ID of an image file in Drive to use for the background image.</li>
 </ul>
 </li>
-<li><code>width=0.59847089581</code><ul>
+<li><code>width=0.532753281882</code><ul>
 <li>The width of the cropped image in the closed range of 0 to 1. This value represents the width of the cropped image divided by the width of the entire image. The height is computed by applying a width to height aspect ratio of 80 to 9. The resulting image must be at least 1280 pixels wide and 144 pixels high.</li>
 </ul>
 </li>
-<li><code>x-coordinate=0.143370754963</code><ul>
+<li><code>x-coordinate=0.306880280761</code><ul>
 <li>The X coordinate of the upper left corner of the cropping area in the background image. This is a value in the closed range of 0 to 1. This value represents the horizontal distance from the left side of the entire image to the left side of the cropping area divided by the width of the entire image.</li>
 </ul>
 </li>
 <li>
-<p><code>y-coordinate=0.368567066399</code></p>
+<p><code>y-coordinate=0.963660219271</code></p>
 <ul>
 <li>The Y coordinate of the upper left corner of the cropping area in the background image. This is a value in the closed range of 0 to 1. This value represents the vertical distance from the top side of the entire image to the top side of the cropping area divided by the height of the entire image.</li>
 </ul>
 </li>
 <li>
-<p><code>..    background-image-link=et</code></p>
+<p><code>..    background-image-link=aliquyam</code></p>
 <ul>
 <li>A short-lived link to this Team Drive&#39;s background image.</li>
 </ul>
 </li>
-<li><code>capabilities    can-add-children=false</code><ul>
+<li><code>capabilities    can-add-children=true</code><ul>
 <li>Whether the current user can add children to folders in this Team Drive.</li>
 </ul>
 </li>
@@ -575,11 +610,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the current user can change the copyRequiresWriterPermission restriction of this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-change-domain-users-only-restriction=false</code><ul>
+<li><code>can-change-domain-users-only-restriction=true</code><ul>
 <li>Whether the current user can change the domainUsersOnly restriction of this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-change-team-drive-background=true</code><ul>
+<li><code>can-change-team-drive-background=false</code><ul>
 <li>Whether the current user can change the background of this Team Drive.</li>
 </ul>
 </li>
@@ -587,11 +622,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the current user can change the teamMembersOnly restriction of this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-comment=true</code><ul>
+<li><code>can-comment=false</code><ul>
 <li>Whether the current user can comment on files in this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-copy=false</code><ul>
+<li><code>can-copy=true</code><ul>
 <li>Whether the current user can copy files in this Team Drive.</li>
 </ul>
 </li>
@@ -607,11 +642,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the current user can download files in this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-edit=false</code><ul>
+<li><code>can-edit=true</code><ul>
 <li>Whether the current user can edit files in this Team Drive</li>
 </ul>
 </li>
-<li><code>can-list-children=true</code><ul>
+<li><code>can-list-children=false</code><ul>
 <li>Whether the current user can list the children of folders in this Team Drive.</li>
 </ul>
 </li>
@@ -623,11 +658,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the current user can read the revisions resource of files in this Team Drive.</li>
 </ul>
 </li>
-<li><code>can-remove-children=false</code><ul>
+<li><code>can-remove-children=true</code><ul>
 <li>Deprecated - use canDeleteChildren or canTrashChildren instead.</li>
 </ul>
 </li>
-<li><code>can-rename=true</code><ul>
+<li><code>can-rename=false</code><ul>
 <li>Whether the current user can rename files or folders in this Team Drive.</li>
 </ul>
 </li>
@@ -646,24 +681,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    color-rgb=sed</code></p>
+<p><code>..    color-rgb=et</code></p>
 <ul>
 <li>The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId.</li>
 </ul>
 </li>
-<li><code>created-date=eos</code><ul>
+<li><code>created-date=et</code><ul>
 <li>The time at which the Team Drive was created (RFC 3339 date-time).</li>
 </ul>
 </li>
-<li><code>id=sadipscing</code><ul>
+<li><code>id=sea</code><ul>
 <li>The ID of this Team Drive which is also the ID of the top level folder of this Team Drive.</li>
 </ul>
 </li>
-<li><code>kind=erat</code><ul>
+<li><code>kind=consetetur</code><ul>
 <li>This is always drive#teamDrive</li>
 </ul>
 </li>
-<li><code>name=dolores</code><ul>
+<li><code>name=amet.</code><ul>
 <li>The name of this Team Drive.</li>
 </ul>
 </li>
@@ -671,11 +706,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether administrative privileges on this Team Drive are required to modify restrictions.</li>
 </ul>
 </li>
-<li><code>copy-requires-writer-permission=false</code><ul>
+<li><code>copy-requires-writer-permission=true</code><ul>
 <li>Whether the options to copy, print, or download files inside this Team Drive, should be disabled for readers and commenters. When this restriction is set to true, it will override the similarly named field to true for any file inside this Team Drive.</li>
 </ul>
 </li>
-<li><code>domain-users-only=true</code><ul>
+<li><code>domain-users-only=false</code><ul>
 <li>Whether access to this Team Drive and items inside this Team Drive is restricted to users of the domain to which this Team Drive belongs. This restriction may be overridden by other sharing policies controlled outside of this Team Drive.</li>
 </ul>
 </li>
@@ -686,7 +721,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    theme-id=nonumy</code></p>
+<p><code>..    theme-id=dolore</code></p>
 <ul>
 <li>The ID of the theme from which the background image and color will be set. The set of possible teamDriveThemes can be retrieved from a drive.about.get response. When not specified on a drive.teamdrives.insert request, a random theme is chosen from which the background image and color are set. This is a write-only field; it can only be set on requests that don&#39;t set colorRgb or backgroundImageFile.</li>
 </ul>
@@ -785,7 +820,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

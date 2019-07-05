@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Createchargeinvoice - Shopping Content v1.0.8+20181009</title>
+  <title>Createchargeinvoice - Shopping Content v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -582,7 +582,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.8+20181009</a>
+        <a href="..">Shopping Content v1.0.10+20190702</a>
       </nav>
 
       
@@ -611,7 +611,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a charge invoice for a shipment group, and triggers a charge capture for non-facilitated payment orders.</p>
+                <p>Creates a charge invoice for a shipment group, and triggers a charge capture for orderinvoice enabled orders.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -669,47 +669,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    invoice-id=invidunt</code><ul>
+<li><code>-r .    invoice-id=at</code><ul>
 <li>[required] The ID of the invoice.</li>
 </ul>
 </li>
-<li><code>invoice-summary.customer-balance.pretax    currency=rebum.</code><ul>
-<li>The currency of the price.</li>
-</ul>
-</li>
-<li>
-<p><code>value=lorem</code></p>
-<ul>
-<li>The price represented as a number.</li>
-</ul>
-</li>
-<li>
-<p><code>..tax    currency=clita</code></p>
-<ul>
-<li>The currency of the price.</li>
-</ul>
-</li>
-<li>
-<p><code>value=invidunt</code></p>
-<ul>
-<li>The price represented as a number.</li>
-</ul>
-</li>
-<li>
-<p><code>...google-balance.pretax    currency=eirmod</code></p>
-<ul>
-<li>The currency of the price.</li>
-</ul>
-</li>
-<li>
-<p><code>value=at</code></p>
-<ul>
-<li>The price represented as a number.</li>
-</ul>
-</li>
-<li>
-<p><code>..tax    currency=consetetur</code></p>
-<ul>
+<li><code>invoice-summary.customer-balance.pretax    currency=consetetur</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
@@ -720,7 +684,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...merchant-balance.pretax    currency=sed</code></p>
+<p><code>..tax    currency=sed</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
@@ -732,7 +696,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..tax    currency=takimata</code></p>
+<p><code>...google-balance.pretax    currency=takimata</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
@@ -744,7 +708,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...product-total.pretax    currency=nonumy</code></p>
+<p><code>..tax    currency=nonumy</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
@@ -756,7 +720,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..tax    currency=lorem</code></p>
+<p><code>...merchant-balance.pretax    currency=lorem</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
@@ -768,13 +732,49 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>....    operation-id=diam</code></p>
+<p><code>..tax    currency=diam</code></p>
+<ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=ut</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>...product-total.pretax    currency=ut</code></p>
+<ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=amet.</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>..tax    currency=ipsum</code></p>
+<ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=ut</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>....    operation-id=dolor</code></p>
 <ul>
 <li>[required] The ID of the operation, unique across all operations for a given order.</li>
 </ul>
 </li>
-<li><code>shipment-group-id=ut</code><ul>
-<li>[required] ID of the shipment group.</li>
+<li><code>shipment-group-id=sea</code><ul>
+<li>[required] ID of the shipment group. It is assigned by the merchant in the shipLineItems method and is used to group multiple line items that have the same kind of shipping charges.</li>
 </ul>
 </li>
 </ul>
@@ -863,7 +863,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

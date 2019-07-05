@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Inspect Templates Create - DLP v1.0.8+20181009</title>
+  <title>Inspect Templates Create - DLP v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -236,6 +236,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_job-triggers-activate/">Job Triggers Activate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_job-triggers-create/">Job Triggers Create</a>
                 </li>
                 <li class="">
@@ -253,6 +257,10 @@
                 <li class="">
                     
     <a class="" href="../projects_job-triggers-patch/">Job Triggers Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-content-deidentify/">Locations Content Deidentify</a>
                 </li>
                 <li class="">
                     
@@ -287,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.8+20181009</a>
+        <a href="..">DLP v1.0.10+20190629</a>
       </nav>
 
       
@@ -356,19 +364,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .inspect-template    create-time=lorem</code><ul>
+<li><code>-r .inspect-template    create-time=clita</code><ul>
 <li>The creation timestamp of a inspectTemplate, output only field.</li>
 </ul>
 </li>
-<li><code>description=clita</code><ul>
+<li><code>description=invidunt</code><ul>
 <li>Short description (max 256 chars).</li>
 </ul>
 </li>
-<li><code>display-name=invidunt</code><ul>
+<li><code>display-name=eirmod</code><ul>
 <li>Display name (max 256 chars).</li>
 </ul>
 </li>
-<li><code>inspect-config    content-options=eirmod</code><ul>
+<li><code>inspect-config    content-options=at</code><ul>
 <li>List of options defining data content to scan.
     If empty, text, images, and other content will be included.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
@@ -378,28 +386,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>When true, excludes type information of the findings.</li>
 </ul>
 </li>
-<li><code>include-quote=false</code><ul>
+<li><code>include-quote=true</code><ul>
 <li>When true, a contextual quote from the data that triggered a finding is
     included in the response; see Finding.quote.</li>
 </ul>
 </li>
-<li><code>limits    max-findings-per-item=79</code><ul>
+<li><code>limits    max-findings-per-item=21</code><ul>
 <li>Max number of findings that will be returned for each item scanned.
     When set within <code>InspectDataSourceRequest</code>,
-    the maximum returned is 1000 regardless if this is set higher.
+    the maximum returned is 2000 regardless if this is set higher.
     When set within <code>InspectContentRequest</code>, this field is ignored.</li>
 </ul>
 </li>
 <li>
-<p><code>max-findings-per-request=21</code></p>
+<p><code>max-findings-per-request=54</code></p>
 <ul>
 <li>Max number of findings that will be returned per request/job.
-    When set within <code>InspectContentRequest</code>, the maximum returned is 1000
+    When set within <code>InspectContentRequest</code>, the maximum returned is 2000
     regardless if this is set higher.</li>
 </ul>
 </li>
 <li>
-<p><code>..    min-likelihood=sit</code></p>
+<p><code>..    min-likelihood=takimata</code></p>
 <ul>
 <li>Only returns findings equal or above this threshold. The default is
     POSSIBLE.
@@ -407,24 +415,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    name=takimata</code></p>
+<p><code>..    name=elitr</code></p>
 <ul>
 <li>
 <p>The template name. Output only.</p>
 <p>The template will have one of the following formats:
 <code>projects/PROJECT_ID/inspectTemplates/TEMPLATE_ID</code> OR
 <code>organizations/ORGANIZATION_ID/inspectTemplates/TEMPLATE_ID</code>
-* <code>update-time=elitr</code>
+* <code>update-time=nonumy</code>
     - The last update timestamp of a inspectTemplate, output only field.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    template-id=nonumy</code></p>
+<p><code>..    template-id=rebum.</code></p>
 <ul>
 <li>The template id can contain uppercase and lowercase letters,
     numbers, and hyphens; that is, it must match the regular
-    expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
+    expression: <code>[a-zA-Z\\d-_]+</code>. The maximum length is 100
     characters. Can be empty to allow the system to generate one.</li>
 </ul>
 </li>
@@ -538,7 +546,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

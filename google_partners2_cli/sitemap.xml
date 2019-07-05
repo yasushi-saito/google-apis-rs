@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/analytics_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,7 +23,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/client-messages_log/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -33,19 +33,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/companies_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/companies_leads-create/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/companies_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,7 +55,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/leads_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -65,19 +65,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/methods_get-partnersstatus/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/methods_update-companies/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/methods_update-leads/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,13 +87,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/offers_history-list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/offers_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -103,7 +103,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/user-events_log/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -113,7 +113,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/user-states_list/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,25 +123,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/users_create-company-relation/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/users_delete-company-relation/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/users_get/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-partners2-cli/users_update-profile/</loc>
-     <lastmod>2018-11-24</lastmod>
+     <lastmod>2019-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

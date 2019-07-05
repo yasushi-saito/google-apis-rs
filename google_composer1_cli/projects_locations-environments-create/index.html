@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Environments Create - Cloud Composer v1.0.8+20181001</title>
+  <title>Locations Environments Create - Cloud Composer v1.0.10+20190613</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Composer v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Cloud Composer v1.0.10+20190613</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -102,6 +102,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-image-versions-list/">Locations Image Versions List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-operations-delete/">Locations Operations Delete</a>
                 </li>
                 <li class="">
@@ -125,7 +129,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Composer v1.0.8+20181001</a>
+        <a href="..">Cloud Composer v1.0.10+20190613</a>
       </nav>
 
       
@@ -162,7 +166,8 @@ You can set the scope for this method like this: <code>composer1 --scope &lt;sco
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;parent&gt;</strong> <em>(string)</em><ul>
-<li>The parent must be of the form &#34;projects/{projectId}/locations/{locationId}&#34;.</li>
+<li>The parent must be of the form
+    &#34;projects/{projectId}/locations/{locationId}&#34;.</li>
 </ul>
 </li>
 </ul>
@@ -190,6 +195,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       env-variables: { string: string }
       image-version: string
       pypi-packages: { string: string }
+      python-version: string
   create-time: string
   labels: { string: string }
   name: string
@@ -204,7 +210,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li><code>-r .config    airflow-uri=eirmod</code><ul>
 <li>Output only.
     The URI of the Apache Airflow Web UI hosted within this environment (see
-    <a href="../composer/docs/how-to/accessing/airflow-web-interface">Airflow web interface</a>).</li>
+    <a href="../composer/docs/how-to/accessing/airflow-web-interface">Airflow web
+    interface</a>).</li>
 </ul>
 </li>
 <li><code>dag-gcs-prefix=sit</code><ul>
@@ -231,8 +238,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p>Optional. The Compute Engine <a href="../compute/docs/regions-zones">zone</a> in which
     to deploy the VMs used to run the Apache Airflow software, specified as a
-    <a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-    For example: &#34;projects/{projectId}/zones/{zoneId}&#34;.</p>
+    <a href="../apis/design/resource_names#relative_resource_name">relative resource
+    name</a>. For example:
+    &#34;projects/{projectId}/zones/{zoneId}&#34;.</p>
 <p>This <code>location</code> must belong to the enclosing environment&#39;s project and
 location. If both this field and <code>nodeConfig.machineType</code> are specified,
 <code>nodeConfig.machineType</code> must belong to this <code>location</code>; if both are
@@ -245,8 +253,8 @@ propagated to the unspecified field.
     - Optional. The Compute Engine
 <a href="../compute/docs/machine-types">machine type</a> used for cluster instances,
 specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example:
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
 &#34;projects/{projectId}/zones/{zoneId}/machineTypes/{machineTypeId}&#34;.</p>
 <p>The <code>machineType</code> must belong to the enclosing environment&#39;s project and
 location. If both this field and <code>nodeConfig.location</code> are specified,
@@ -261,27 +269,28 @@ to &#34;n1-standard-1&#34;.
 * <code>network=kasd</code>
     - Optional. The Compute Engine network to be used for machine
 communications, specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example: &#34;projects/{projectId}/global/networks/{networkId}&#34;.</p>
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
+&#34;projects/{projectId}/global/networks/{networkId}&#34;.</p>
 <p><a href="../vpc/docs/shared-vpc">Shared VPC</a> is not currently supported. The
 network must belong to the environment&#39;s project. If unspecified, the
 &#34;default&#34; network ID in the environment&#39;s project is used.  If a
 <a href="../vpc/docs/vpc#vpc_networks_and_subnets">Custom Subnet Network</a>
 is provided, <code>nodeConfig.subnetwork</code> must also be provided.
-<em> <code>oauth-scopes=accusam</code>
+* <code>oauth-scopes=accusam</code>
     - Optional. The set of Google API scopes to be made available on all
 node VMs. If <code>oauth_scopes</code> is empty, defaults to
 [&#34;https://www.googleapis.com/auth/cloud-platform&#34;]. Cannot be updated.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>service-account=takimata</code>
+* <code>service-account=takimata</code>
     - Optional. The Google Cloud Platform Service Account to be used by the node
 VMs. If a service account is not specified, the &#34;default&#34; Compute Engine
 service account is used. Cannot be updated.
 * <code>subnetwork=justo</code>
     - Optional. The Compute Engine subnetwork to be used for machine
 communications, specified as a
-<a href="../apis/design/resource_names#relative_resource_name">relative resource name</a>.
-For example:
+<a href="../apis/design/resource_names#relative_resource_name">relative resource
+name</a>. For example:
 &#34;projects/{projectId}/regions/{regionId}/subnetworks/{subnetworkId}&#34;</p>
 <p>If a subnetwork is provided, <code>nodeConfig.network</code> must also be provided,
 and the subnetwork must belong to the enclosing environment&#39;s project and
@@ -307,15 +316,15 @@ Cannot be updated.
 <ul>
 <li>
 <p>Optional. Apache Airflow configuration properties to override.</p>
-<p>Property keys contain the section and property names, separated by a hyphen,
-for example &#34;core-dags_are_paused_at_creation&#34;. Section names must not
-contain hyphens (&#34;-&#34;), opening square brackets (&#34;[&#34;),  or closing square
-brackets (&#34;]&#34;). The property name must not be empty and must not contain
-an equals sign (&#34;=&#34;) or semicolon (&#34;;&#34;). Section and property names must
-not contain a period (&#34;.&#34;). Apache Airflow configuration property names
-must be written in <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>.
-Property values can contain any character, and can be written in any
-lower/upper case format.</p>
+<p>Property keys contain the section and property names, separated by a
+hyphen, for example &#34;core-dags_are_paused_at_creation&#34;. Section names must
+not contain hyphens (&#34;-&#34;), opening square brackets (&#34;[&#34;),  or closing
+square brackets (&#34;]&#34;). The property name must not be empty and must not
+contain an equals sign (&#34;=&#34;) or semicolon (&#34;;&#34;). Section and property names
+must not contain a period (&#34;.&#34;). Apache Airflow configuration property
+names must be written in
+<a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>. Property values can
+contain any character, and can be written in any lower/upper case format.</p>
 <p>Certain Apache Airflow configuration property values are
 <a href="../composer/docs/how-to/managing/setting-airflow-configurations#airflow_configuration_blacklists">blacklisted</a>,
 and cannot be overridden.
@@ -346,19 +355,26 @@ following reserved names:</p>
 </ul>
 </li>
 <li><code>image-version=nonumy</code><ul>
-<li>Output only.
-The version of the software running in the environment.
+<li>The version of the software running in the environment.
 This encapsulates both the version of Cloud Composer functionality and the
 version of Apache Airflow. It must match the regular expression
-<code>composer-[0-9]+\.[0-9]+(\.[0-9]+)?-airflow-[0-9]+\.[0-9]+(\.[0-9]+.*)?</code>.</li>
+<code>composer-([0-9]+\.[0-9]+\.[0-9]+|latest)-airflow-[0-9]+\.[0-9]+(\.[0-9]+.*)?</code>.
+When used as input, the server also checks if the provided version is
+supported and denies the request for an unsupported version.</li>
 </ul>
 </li>
 </ul>
 <p>The Cloud Composer portion of the version is a
-<a href="https://semver.org">semantic version</a>. The portion of the image version
-following <em>airflow-</em> is an official Apache Airflow repository
+<a href="https://semver.org">semantic version</a> or <code>latest</code>. When the patch version
+is omitted, the current Cloud Composer patch version is selected.
+When <code>latest</code> is provided instead of an explicit version number,
+the server replaces <code>latest</code> with the current Cloud Composer version
+and stores that version number in the same field.</p>
+<p>The portion of the image version that follows &lt;em&gt;airflow-&lt;/em&gt; is an
+official Apache Airflow repository
 <a href="https://github.com/apache/incubator-airflow/releases">release name</a>.</p>
-<p>See also <a href="../composer/docs/release-notes">Release Notes</a>.
+<p>See also <a href="../composer/docs/concepts/versioning/composer-versions">Version
+List</a>.
 * <code>pypi-packages=key=dolores</code>
     - Optional. Custom Python Package Index (PyPI) packages to be installed in
 the environment.</p>
@@ -367,18 +383,23 @@ and values are the lowercase extras and version specifier such as
 &#34;==1.12.0&#34;, &#34;[devel,gcp_api]&#34;, or &#34;[devel]&gt;=1.8.2, &lt;1.9.2&#34;. To specify a
 package without pinning it to a version specifier, use the empty string as
 the value.
-    - the value will be associated with the given <code>key</code></p>
+    - the value will be associated with the given <code>key</code>
+* <code>python-version=gubergren</code>
+    - Optional. The major version of Python used to run the Apache Airflow
+scheduler, worker, and webserver processes.</p>
+<p>Can be set to &#39;2&#39; or &#39;3&#39;. If not specified, the default is &#39;2&#39;. Cannot be
+updated.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>...    create-time=gubergren</code></p>
+<p><code>...    create-time=sadipscing</code></p>
 <ul>
 <li>Output only.
     The time at which this environment was created.</li>
 </ul>
 </li>
-<li><code>labels=key=sadipscing</code><ul>
+<li><code>labels=key=aliquyam</code><ul>
 <li>
 <p>Optional. User-defined labels for this environment.
     The labels map can contain no more than 64 entries. Entries of the labels
@@ -391,16 +412,16 @@ size.<ul>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>name=aliquyam</code><ul>
+<li><code>name=ea</code><ul>
 <li>The resource name of the environment, in the form:
 &#34;projects/{projectId}/locations/{locationId}/environments/{environmentId}&#34;</li>
 </ul>
 </li>
-<li><code>state=ea</code><ul>
+<li><code>state=no</code><ul>
 <li>The current state of the environment.</li>
 </ul>
 </li>
-<li><code>update-time=no</code><ul>
+<li><code>update-time=justo</code><ul>
 <li>Output only.
 The time at which this environment was last modified.</li>
 </ul>
@@ -525,7 +546,7 @@ This value is generated when the environment is created.</li>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

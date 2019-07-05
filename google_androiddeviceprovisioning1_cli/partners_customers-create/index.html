@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Customers Create - Android Provisioning Partner v1.0.8+20181007</title>
+  <title>Customers Create - Android Provisioning Partner v1.0.10+20190622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Provisioning Partner v1.0.8+20181007</a>
+        <a href=".." class="icon icon-home"> Android Provisioning Partner v1.0.10+20190622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Provisioning Partner v1.0.8+20181007</a>
+        <a href="..">Android Provisioning Partner v1.0.10+20190622</a>
       </nav>
 
       
@@ -239,8 +239,9 @@
               
                 <p>Creates a customer for zero-touch enrollment. After the method returns
 successfully, admin and owner roles can manage devices and EMM configs
-by calling API methods or using their zero-touch enrollment portal. The API
-doesn&#39;t notify the customer that they have access.</p>
+by calling API methods or using their zero-touch enrollment portal.
+The customer receives an email that welcomes them to zero-touch enrollment
+and explains how to sign into the portal.</p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;parent&gt;</strong> <em>(string)</em><ul>
@@ -291,13 +292,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li><code>partners/[PARTNER_ID]/vendors/[VENDOR_ID]/customers/[CUSTOMER_ID]</code></li>
 </ul>
 <p>Assigned by the server.
-<em> <code>owner-emails=dolore</code>
+* <code>owner-emails=dolore</code>
     - Input only. Email address of customer&#39;s users in the owner role. At least
 one <code>owner_email</code> is required. Each email address must be associated with a
 Google Account. Owners share the same access as admins but can also add,
 delete, and edit your organization&#39;s portal users.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>terms-status=invidunt</code>
+* <code>terms-status=invidunt</code>
     - Output only. Whether any user from the company has accepted the latest
 Terms of Service (ToS). See
 TermsStatus.</p>
@@ -414,7 +415,7 @@ TermsStatus.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

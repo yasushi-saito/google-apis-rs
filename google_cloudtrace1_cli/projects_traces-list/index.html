@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Traces List - Cloud Trace v1.0.8+20181004</title>
+  <title>Traces List - Cloud Trace v1.0.10+20190622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Trace v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Cloud Trace v1.0.10+20190622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -99,7 +99,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Trace v1.0.8+20181004</a>
+        <a href="..">Cloud Trace v1.0.10+20190622</a>
       </nav>
 
       
@@ -161,25 +161,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>
-<p>Field used to sort the returned traces. Optional.
-    Can be one of the following:</p>
-<ul>
-<li><code>trace_id</code></li>
-<li><code>name</code> (<code>name</code> field of root span in the trace)</li>
-<li><code>duration</code> (difference between <code>end_time</code> and <code>start_time</code> fields of
-     the root span)</li>
-<li><code>start</code> (<code>start_time</code> field of the root span)</li>
-</ul>
-<p>Descending order can be specified by appending <code>desc</code> to the sort field
-(for example, <code>name desc</code>).</p>
-<p>Only one sort field is permitted.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>Maximum number of traces to return. If not specified or &lt;= 0, the
@@ -188,10 +169,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>Token identifying the page of results to return. If provided, use the
-    value of the <code>next_page_token</code> field from a previous request. Optional.</li>
+<li>End of the time interval (inclusive) during which the trace data was
+    collected from the application.</li>
 </ul>
 </li>
 <li>
@@ -232,6 +213,13 @@ Multiple terms are ANDed. Syntax:</p>
 </ul>
 </li>
 <li>
+<p><strong>-p start-time=string</strong></p>
+<ul>
+<li>Start of the time interval (inclusive) during which the trace data was
+    collected from the application.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p view=string</strong></p>
 <ul>
 <li>Type of data returned for traces in the list. Optional. Default is
@@ -239,17 +227,29 @@ Multiple terms are ANDed. Syntax:</p>
 </ul>
 </li>
 <li>
-<p><strong>-p end-time=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>End of the time interval (inclusive) during which the trace data was
-    collected from the application.</li>
+<li>
+<p>Field used to sort the returned traces. Optional.
+    Can be one of the following:</p>
+<ul>
+<li><code>trace_id</code></li>
+<li><code>name</code> (<code>name</code> field of root span in the trace)</li>
+<li><code>duration</code> (difference between <code>end_time</code> and <code>start_time</code> fields of
+     the root span)</li>
+<li><code>start</code> (<code>start_time</code> field of the root span)</li>
+</ul>
+<p>Descending order can be specified by appending <code>desc</code> to the sort field
+(for example, <code>name desc</code>).</p>
+<p>Only one sort field is permitted.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>-p start-time=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Start of the time interval (inclusive) during which the trace data was
-    collected from the application.</li>
+<li>Token identifying the page of results to return. If provided, use the
+    value of the <code>next_page_token</code> field from a previous request. Optional.</li>
 </ul>
 </li>
 </ul>
@@ -341,7 +341,7 @@ Multiple terms are ANDed. Syntax:</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

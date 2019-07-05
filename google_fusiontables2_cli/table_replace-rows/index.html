@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Replace Rows - fusiontables v1.0.8+20171117</title>
+  <title>Replace Rows - fusiontables v1.0.10+20171117</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> fusiontables v1.0.8+20171117</a>
+        <a href=".." class="icon icon-home"> fusiontables v1.0.10+20171117</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -261,7 +261,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">fusiontables v1.0.8+20171117</a>
+        <a href="..">fusiontables v1.0.10+20171117</a>
       </nav>
 
       
@@ -339,15 +339,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-line=integer</strong></p>
+<p><strong>-p end-line=integer</strong></p>
 <ul>
-<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p encoding=string</strong></p>
-<ul>
-<li>The encoding of the content. Default is UTF-8. Use &#39;auto-detect&#39; if you are unsure of the encoding.</li>
+<li>The index of the line up to which data will be imported. Default is to import the entire file. If endLine is negative, it is an offset from the end of the file; the imported content will exclude the last endLine lines.</li>
 </ul>
 </li>
 <li>
@@ -357,9 +351,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-line=integer</strong></p>
+<p><strong>-p encoding=string</strong></p>
 <ul>
-<li>The index of the line up to which data will be imported. Default is to import the entire file. If endLine is negative, it is an offset from the end of the file; the imported content will exclude the last endLine lines.</li>
+<li>The encoding of the content. Default is UTF-8. Use &#39;auto-detect&#39; if you are unsure of the encoding.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-line=integer</strong></p>
+<ul>
+<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
 </ul>
 </li>
 <li>
@@ -435,7 +435,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

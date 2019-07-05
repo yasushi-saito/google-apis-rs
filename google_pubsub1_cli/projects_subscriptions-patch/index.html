@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Patch - Pubsub v1.0.8+20181001</title>
+  <title>Subscriptions Patch - Pubsub v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.8+20181001</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -221,7 +221,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.8+20181001</a>
+        <a href="..">Pubsub v1.0.10+20190625</a>
       </nav>
 
       
@@ -279,11 +279,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>UpdateSubscriptionRequest:
   subscription:
     ack-deadline-seconds: integer
+    expiration-policy:
+      ttl: string
     labels: { string: string }
     message-retention-duration: string
     name: string
     push-config:
       attributes: { string: string }
+      oidc-token:
+        audience: string
+        service-account-email: string
       push-endpoint: string
     retain-acked-messages: boolean
     topic: string
@@ -294,14 +299,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .subscription    ack-deadline-seconds=67</code></p>
+<p><code>-r .subscription    ack-deadline-seconds=80</code></p>
 <ul>
 <li>
-<p>This value is the maximum time after a subscriber receives a message
-    before the subscriber should acknowledge the message. After message
-    delivery but before the ack deadline expires and before the message is
-    acknowledged, it is an outstanding message and will not be delivered
-    again during that time (on a best-effort basis).</p>
+<p>The approximate amount of time (on a best-effort basis) Pub/Sub waits for
+    the subscriber to acknowledge receipt before resending the message. In the
+    interval after the message is delivered and before it is acknowledged, it
+    is considered to be &lt;i&gt;outstanding&lt;/i&gt;. During that time period, the
+    message will not be redelivered (on a best-effort basis).</p>
 <p>For pull subscriptions, this value is used as the initial value for the ack
 deadline. To override this value for a given message, call
 <code>ModifyAckDeadline</code> with the corresponding <code>ack_id</code> if using
@@ -314,28 +319,47 @@ If this parameter is 0, a default value of 10 seconds is used.</p>
 the call to the push endpoint.</p>
 <p>If the subscriber never acknowledges the message, the Pub/Sub
 system will eventually redeliver the message.
-<em> <code>labels=key=et</code>
-    - See &lt;a href=&#34;/pubsub/docs/labels&#34;&gt; Creating and managing labels&lt;/a&gt;.
-    - the value will be associated with the given <code>key</code>
-</em> <code>message-retention-duration=diam</code>
-    - How long to retain unacknowledged messages in the subscription&#39;s backlog,
-from the moment a message is published.
-If <code>retain_acked_messages</code> is true, then this also configures the retention
-of acknowledged messages, and thus configures how far back in time a <code>Seek</code>
-can be done. Defaults to 7 days. Cannot be more than 7 days or less than 10
-minutes.&lt;br&gt;&lt;br&gt;
-&lt;b&gt;BETA:&lt;/b&gt; This feature is part of a beta release. This API might be
-changed in backward-incompatible ways and is not recommended for production
-use. It is not subject to any SLA or deprecation policy.
-<em> <code>name=ipsum</code>
-    - The name of the subscription. It must have the format
-<code>&amp;#34;projects/{project}/subscriptions/{subscription}&amp;#34;</code>. <code>{subscription}</code> must
-start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
-(<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>),
-plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters
-in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.
-</em> <code>push-config    attributes=key=lorem</code>
-    - Endpoint configuration attributes.</p>
+* <code>expiration-policy    ttl=duo</code>
+    - Specifies the &#34;time-to-live&#34; duration for an associated resource. The
+resource expires if it is not active for a period of <code>ttl</code>. The definition
+of &#34;activity&#34; depends on the type of the associated resource. The minimum
+and maximum allowed values for <code>ttl</code> depend on the type of the associated
+resource, as well. If <code>ttl</code> is not set, the associated resource never
+expires.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    labels=key=aliquyam</code></p>
+<ul>
+<li>See &lt;a href=&#34;https://cloud.google.com/pubsub/docs/labels&#34;&gt; Creating and
+    managing labels&lt;/a&gt;.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li><code>message-retention-duration=sea</code><ul>
+<li>How long to retain unacknowledged messages in the subscription&#39;s backlog,
+    from the moment a message is published.
+    If <code>retain_acked_messages</code> is true, then this also configures the retention
+    of acknowledged messages, and thus configures how far back in time a <code>Seek</code>
+    can be done. Defaults to 7 days. Cannot be more than 7 days or less than 10
+    minutes.</li>
+</ul>
+</li>
+<li><code>name=lorem</code><ul>
+<li>The name of the subscription. It must have the format
+    <code>&amp;#34;projects/{project}/subscriptions/{subscription}&amp;#34;</code>. <code>{subscription}</code> must
+    start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
+    (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>),
+    plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters
+    in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>push-config    attributes=key=eos</code></p>
+<ul>
+<li>
+<p>Endpoint configuration attributes.</p>
 <p>Every endpoint has a set of API supported attributes that can be used to
 control different aspects of the message delivery.</p>
 <p>The currently supported attribute is <code>x-goog-version</code>, which you can
@@ -355,9 +379,21 @@ created without this attribute.</p>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>push-endpoint=et</code><ul>
-<li>A URL locating the endpoint to which messages should be pushed.
-For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</li>
+<li><code>oidc-token    audience=erat</code><ul>
+<li>Audience to be used when generating OIDC token. The audience claim
+identifies the recipients that the JWT is intended for. The audience
+value is a single case-sensitive string. Having multiple values (array)
+for the audience field is not supported. More info about the OIDC JWT
+token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3
+Note: if not specified, the Push endpoint URL will be used.</li>
+</ul>
+</li>
+<li><code>service-account-email=sadipscing</code><ul>
+<li><a href="https://cloud.google.com/iam/docs/service-accounts">Service account
+email</a>
+to be used for generating the OIDC token. The caller (for
+CreateSubscription, UpdateSubscription, and ModifyPushConfig RPCs) must
+have the iam.serviceAccounts.actAs permission for the service account.</li>
 </ul>
 </li>
 </ul>
@@ -365,21 +401,26 @@ For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</l
 </ul>
 </li>
 <li>
-<p><code>..    retain-acked-messages=false</code></p>
+<p><code>..    push-endpoint=dolor</code></p>
+<ul>
+<li>A URL locating the endpoint to which messages should be pushed.
+    For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>..    retain-acked-messages=true</code></p>
 <ul>
 <li>Indicates whether to retain acknowledged messages. If true, then
     messages are not expunged from the subscription&#39;s backlog, even if they are
     acknowledged, until they fall out of the <code>message_retention_duration</code>
     window. This must be true if you would like to
-    &lt;a href=&#34;/pubsub/docs/replay-overview#seek_to_a_time&#34;&gt;Seek to a timestamp&lt;/a&gt;.
-    &lt;br&gt;&lt;br&gt;
-    &lt;b&gt;BETA:&lt;/b&gt; This feature is part of a beta release. This API might be
-    changed in backward-incompatible ways and is not recommended for production
-    use. It is not subject to any SLA or deprecation policy.</li>
+    &lt;a
+    href=&#34;https://cloud.google.com/pubsub/docs/replay-overview#seek_to_a_time&#34;&gt;
+    Seek to a timestamp&lt;/a&gt;.</li>
 </ul>
 </li>
 <li>
-<p><code>topic=aliquyam</code></p>
+<p><code>topic=elitr</code></p>
 <ul>
 <li>The name of the topic from which this subscription is receiving messages.
     Format is <code>projects/{project}/topics/{topic}</code>.
@@ -388,7 +429,7 @@ For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</l
 </ul>
 </li>
 <li>
-<p><code>..    update-mask=sea</code></p>
+<p><code>..    update-mask=amet</code></p>
 <ul>
 <li>Indicates which fields in the provided subscription to update.
     Must be specified and non-empty.</li>
@@ -504,7 +545,7 @@ For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</l
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

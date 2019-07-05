@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - classroom v1.0.8+20181009</title>
+  <title>Update - classroom v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -196,6 +196,26 @@
                     
     <a class="" href="../courses_teachers-list/">Teachers List</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../courses_topics-create/">Topics Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_topics-delete/">Topics Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_topics-get/">Topics Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_topics-list/">Topics List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_topics-patch/">Topics Patch</a>
+                </li>
                 <li class=" current">
                     
     <a class="current" href="./">Update</a>
@@ -318,7 +338,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.8+20181009</a>
+        <a href="..">classroom v1.0.10+20190701</a>
       </nav>
 
       
@@ -402,46 +422,46 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    alternate-link=nonumy</code></p>
+<p><code>-r .    alternate-link=dolor</code></p>
 <ul>
 <li>
 <p>Absolute link to this course in the Classroom web UI.</p>
 <p>Read-only.
-* <code>calendar-id=rebum.</code>
+* <code>calendar-id=sea</code>
     - The Calendar ID for a calendar that all course members can see, to which
 Classroom adds events for course work and announcements in the course.</p>
 <p>Read-only.
-* <code>course-group-email=lorem</code>
+* <code>course-group-email=ut</code>
     - The email address of a Google group containing all members of the course.
 This group does not accept email and can only be used for permissions.</p>
 <p>Read-only.
-<em> <code>course-state=lorem</code>
+* <code>course-state=eirmod</code>
     - State of the course.
 If unspecified, the default state is <code>PROVISIONED</code>.
-</em> <code>creation-time=diam</code>
+* <code>creation-time=sanctus</code>
     - Creation time of the course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.
-<em> <code>description=ut</code>
+* <code>description=voluptua.</code>
     - Optional description.
 For example, &#34;We&#39;ll be learning about the structure of living
 creatures from a combination of textbooks, guest lectures, and lab work.
 Expect to be excited!&#34;
 If set, this field must be a valid UTF-8 string and no longer than 30,000
 characters.
-</em> <code>description-heading=ut</code>
+* <code>description-heading=dolor</code>
     - Optional heading for the description.
 For example, &#34;Welcome to 10th Grade Biology.&#34;
 If set, this field must be a valid UTF-8 string and no longer than 3600
 characters.
-* <code>enrollment-code=amet.</code>
+* <code>enrollment-code=et</code>
     - Enrollment code to use when joining this course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.
 * <code>guardians-enabled=false</code>
     - Whether or not guardian notifications are enabled for this course.</p>
 <p>Read-only.
-* <code>id=ut</code>
+* <code>id=vero</code>
     - Identifier for this course assigned by Classroom.</p>
 <p>When
 creating a course,
@@ -450,12 +470,12 @@ alias string in the
 request to create a corresponding alias. The <code>id</code> is still assigned by
 Classroom and cannot be updated after the course is created.</p>
 <p>Specifying this field in a course update mask results in an error.
-<em> <code>name=dolor</code>
+* <code>name=ut</code>
     - Name of the course.
 For example, &#34;10th Grade Biology&#34;.
 The name is required. It must be between 1 and 750 characters and a valid
 UTF-8 string.
-</em> <code>owner-id=sea</code>
+* <code>owner-id=sed</code>
     - The identifier of the owner of a course.</p>
 <p>When specified as a parameter of a
 create course request, this
@@ -469,35 +489,35 @@ The identifier can be one of the following:</p>
 <p>This must be set in a create request. Admins can also specify this field
 in a patch course request to
 transfer ownership. In other contexts, it is read-only.
-<em> <code>room=ut</code>
+* <code>room=et</code>
     - Optional room location.
 For example, &#34;301&#34;.
 If set, this field must be a valid UTF-8 string and no longer than 650
 characters.
-</em> <code>section=eirmod</code>
+* <code>section=ipsum</code>
     - Section of the course.
 For example, &#34;Period 2&#34;.
 If set, this field must be a valid UTF-8 string and no longer than 2800
 characters.
-* <code>teacher-folder    alternate-link=sanctus</code>
+* <code>teacher-folder    alternate-link=justo</code>
     - URL that can be used to access the Drive folder.</p>
 <p>Read-only.
-<em> <code>id=voluptua.</code>
+* <code>id=dolore</code>
     - Drive API resource ID.
-</em> <code>title=dolor</code>
+* <code>title=vero</code>
     - Title of the Drive folder.</p>
 <p>Read-only.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    teacher-group-email=et</code></p>
+<p><code>..    teacher-group-email=dolor</code></p>
 <ul>
 <li>
 <p>The email address of a Google group containing all teachers of the course.
     This group does not accept email and can only be used for permissions.</p>
 <p>Read-only.
-* <code>update-time=et</code>
+* <code>update-time=takimata</code>
     - Time of the most recent update to this course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.</p>
@@ -604,7 +624,7 @@ Specifying this field in a course update mask results in an error.</p>
         <a href="../invitations_accept/" class="btn btn-neutral float-right" title="Accept">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../courses_teachers-list/" class="btn btn-neutral" title="Teachers List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../courses_topics-patch/" class="btn btn-neutral" title="Topics Patch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -614,7 +634,7 @@ Specifying this field in a course update mask results in an error.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -634,7 +654,7 @@ Specifying this field in a course update mask results in an error.</p>
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/classroom1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../courses_teachers-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../courses_topics-patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../invitations_accept/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - appengine v1.0.8+20181005</title>
+  <title>Patch - appengine v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -248,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.8+20181005</a>
+        <a href="..">appengine v1.0.10+20190624</a>
       </nav>
 
       
@@ -303,6 +303,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   default-hostname: string
   feature-settings:
     split-health-checks: boolean
+    use-container-optimized-os: boolean
   gcr-domain: string
   iap:
     enabled: boolean
@@ -318,30 +319,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auth-domain=amet</code><ul>
+<li><code>-r .    auth-domain=et</code><ul>
 <li>Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account.</li>
 </ul>
 </li>
-<li><code>code-bucket=et</code><ul>
+<li><code>code-bucket=consetetur</code><ul>
 <li>Google Cloud Storage bucket that can be used for storing files associated with this application. This bucket is associated with the application and can be used by the gcloud deployment commands.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-bucket=consetetur</code><ul>
+<li><code>default-bucket=ut</code><ul>
 <li>Google Cloud Storage bucket that can be used by this application to store content.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-cookie-expiration=ut</code><ul>
+<li><code>default-cookie-expiration=ea</code><ul>
 <li>Cookie expiration policy for this application.</li>
 </ul>
 </li>
-<li><code>default-hostname=ea</code><ul>
+<li><code>default-hostname=sed</code><ul>
 <li>Hostname used to reach this application, as resolved by App Engine.@OutputOnly</li>
 </ul>
 </li>
-<li>
-<p><code>feature-settings    split-health-checks=false</code></p>
-<ul>
+<li><code>feature-settings    split-health-checks=true</code><ul>
 <li>Boolean value indicating if split health checks should be used instead of the legacy health checks. At an app.yaml level, this means defaulting to &#39;readiness_check&#39; and &#39;liveness_check&#39; values instead of &#39;health_check&#39; ones. Once the legacy &#39;health_check&#39; behavior is deprecated, and this value is always true, this setting can be removed.</li>
+</ul>
+</li>
+<li>
+<p><code>use-container-optimized-os=true</code></p>
+<ul>
+<li>If true, use Container-Optimized OS (https://cloud.google.com/container-optimized-os/) base image for VMs, rather than a base Debian image.</li>
 </ul>
 </li>
 <li>
@@ -354,35 +359,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the serving infrastructure will authenticate and authorize all incoming requests.If true, the oauth2_client_id and oauth2_client_secret fields must be non-empty.</li>
 </ul>
 </li>
-<li><code>oauth2-client-id=dolor</code><ul>
+<li><code>oauth2-client-id=consetetur</code><ul>
 <li>OAuth2 client ID to use for the authentication flow.</li>
 </ul>
 </li>
-<li><code>oauth2-client-secret=et</code><ul>
+<li><code>oauth2-client-secret=amet.</code><ul>
 <li>OAuth2 client secret to use for the authentication flow.For security reasons, this value cannot be retrieved via the API. Instead, the SHA-256 hash of the value is returned in the oauth2_client_secret_sha256 field.@InputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>oauth2-client-secret-sha256=consetetur</code></p>
+<p><code>oauth2-client-secret-sha256=voluptua.</code></p>
 <ul>
 <li>Hex-encoded SHA-256 hash of the client secret.@OutputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=amet.</code></p>
+<p><code>..    id=lorem</code></p>
 <ul>
 <li>Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example: myapp.</li>
 </ul>
 </li>
-<li><code>location-id=voluptua.</code><ul>
+<li><code>location-id=gubergren</code><ul>
 <li>Location from which this application runs. Application instances run out of the data centers in the specified location, which is also where all of the application&#39;s end user content is stored.Defaults to us-central.View the list of supported locations (https://cloud.google.com/appengine/docs/locations).</li>
 </ul>
 </li>
-<li><code>name=lorem</code><ul>
+<li><code>name=justo</code><ul>
 <li>Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly</li>
 </ul>
 </li>
-<li><code>serving-status=gubergren</code><ul>
+<li><code>serving-status=sit</code><ul>
 <li>Serving status of this application.</li>
 </ul>
 </li>
@@ -506,7 +511,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

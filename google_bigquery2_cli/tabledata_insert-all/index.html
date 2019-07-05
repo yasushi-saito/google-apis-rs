@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert All - bigquery v1.0.8+20181005</title>
+  <title>Insert All - bigquery v1.0.10+20190630</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.10+20190630</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -116,6 +116,29 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Models</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../models_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../models_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
                 <li class="">
@@ -125,6 +148,33 @@
                 <li class="">
                     
     <a class="" href="../projects_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Routines</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../routines_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../routines_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -209,7 +259,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.8+20181005</a>
+        <a href="..">bigquery v1.0.10+20190630</a>
       </nav>
 
       
@@ -281,7 +331,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] Accept rows that contain values that do not match the schema. The unknown values are ignored. Default is false, which treats unknown values as errors.</li>
 </ul>
 </li>
-<li><code>kind=dolor</code><ul>
+<li><code>kind=dolores</code><ul>
 <li>The resource type of the response.</li>
 </ul>
 </li>
@@ -289,8 +339,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] Insert all valid rows of a request, even if invalid rows exist. The default value is false, which causes the entire request to fail if any invalid rows exist.</li>
 </ul>
 </li>
-<li><code>template-suffix=et</code><ul>
-<li>[Experimental] If specified, treats the destination table as a base template, and inserts the rows into an instance table named &#34;{destination}{templateSuffix}&#34;. BigQuery will manage creation of the instance table, using the schema of the base template table. See https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables for considerations when working with templates tables.</li>
+<li><code>template-suffix=consetetur</code><ul>
+<li>If specified, treats the destination table as a base template, and inserts the rows into an instance table named &#34;{destination}{templateSuffix}&#34;. BigQuery will manage creation of the instance table, using the schema of the base template table. See https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables for considerations when working with templates tables.</li>
 </ul>
 </li>
 </ul>
@@ -369,7 +419,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../tabledata_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../routines_update/" class="btn btn-neutral" title="Update"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -379,7 +429,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -399,7 +449,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../routines_update/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../tabledata_list/" style="color: #fcfcfc">Next &raquo;</a></span>

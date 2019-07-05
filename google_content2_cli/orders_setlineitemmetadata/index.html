@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Setlineitemmetadata - Shopping Content v1.0.8+20181009</title>
+  <title>Setlineitemmetadata - Shopping Content v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -582,7 +582,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.8+20181009</a>
+        <a href="..">Shopping Content v1.0.10+20190702</a>
       </nav>
 
       
@@ -611,7 +611,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Sets (overrides) merchant provided annotations on the line item.</p>
+                <p>Sets (or overrides if it already exists) merchant provided annotations in the form of key-value pairs. A common use case would be to supply us with additional structured information about a line item that cannot be provided via other methods. Submitted key-value pairs can be retrieved as part of the orders resource.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -640,15 +640,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    line-item-id=nonumy</code><ul>
+<li><code>-r .    line-item-id=dolores</code><ul>
 <li>The ID of the line item to set metadata. Either lineItemId or productId is required.</li>
 </ul>
 </li>
-<li><code>operation-id=takimata</code><ul>
+<li><code>operation-id=dolores</code><ul>
 <li>The ID of the operation. Unique across all operations for a given order.</li>
 </ul>
 </li>
-<li><code>product-id=dolores</code><ul>
+<li><code>product-id=et</code><ul>
 <li>The ID of the product to set metadata. This is the REST ID used in the products service. Either lineItemId or productId is required.</li>
 </ul>
 </li>
@@ -738,7 +738,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

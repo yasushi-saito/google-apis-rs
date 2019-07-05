@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Devices Unclaim - Android Provisioning Partner v1.0.8+20181007</title>
+  <title>Devices Unclaim - Android Provisioning Partner v1.0.10+20190622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Provisioning Partner v1.0.8+20181007</a>
+        <a href=".." class="icon icon-home"> Android Provisioning Partner v1.0.10+20190622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Provisioning Partner v1.0.8+20181007</a>
+        <a href="..">Android Provisioning Partner v1.0.10+20190622</a>
       </nav>
 
       
@@ -259,47 +259,58 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     model: string
     serial-number: string
   section-type: string
+  vacation-mode-days: integer
+  vacation-mode-expire-time: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    device-id=et</code><ul>
+<li><code>-r .    device-id=consetetur</code><ul>
 <li>The device ID returned by <code>ClaimDevice</code>.</li>
 </ul>
 </li>
-<li><code>device-identifier    imei=consetetur</code><ul>
+<li><code>device-identifier    imei=amet.</code><ul>
 <li>The device’s IMEI number. Validated on input.</li>
 </ul>
 </li>
-<li><code>manufacturer=amet.</code><ul>
+<li><code>manufacturer=voluptua.</code><ul>
 <li>The device manufacturer’s name. Matches the device&#39;s built-in
     value returned from <code>android.os.Build.MANUFACTURER</code>. Allowed values are
     listed in
     <a href="../zero-touch/resources/manufacturer-names#manufacturers-names">manufacturers</a>.</li>
 </ul>
 </li>
-<li><code>meid=voluptua.</code><ul>
+<li><code>meid=lorem</code><ul>
 <li>The device’s MEID number.</li>
 </ul>
 </li>
-<li><code>model=lorem</code><ul>
+<li><code>model=gubergren</code><ul>
 <li>The device model&#39;s name. Matches the device&#39;s built-in value returned from
     <code>android.os.Build.MODEL</code>. Allowed values are listed in
     <a href="../zero-touch/resources/manufacturer-names#model-names">models</a>.</li>
 </ul>
 </li>
 <li>
-<p><code>serial-number=gubergren</code></p>
+<p><code>serial-number=justo</code></p>
 <ul>
 <li>The manufacturer&#39;s serial number for the device. This value might not be
     unique across different device models.</li>
 </ul>
 </li>
 <li>
-<p><code>..    section-type=justo</code></p>
+<p><code>..    section-type=sit</code></p>
 <ul>
 <li>Required. The section type of the device&#39;s provisioning record.</li>
+</ul>
+</li>
+<li><code>vacation-mode-days=75</code><ul>
+<li>The duration of the vacation unlock starting from when the request is
+    processed. (1 day is treated as 24 hours)</li>
+</ul>
+</li>
+<li><code>vacation-mode-expire-time=diam</code><ul>
+<li>The expiration time of the vacation unlock.</li>
 </ul>
 </li>
 </ul>
@@ -412,7 +423,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

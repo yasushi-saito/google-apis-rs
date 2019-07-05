@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Write - Logging v1.0.8+20180929</title>
+  <title>Write - Logging v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.8+20180929</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -434,7 +434,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.8+20180929</a>
+        <a href="..">Logging v1.0.10+20190629</a>
       </nav>
 
       
@@ -494,12 +494,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Optional. If true, the request should expect normal response, but the entries won&#39;t be persisted nor exported. Useful for checking whether the logging API endpoints are working properly before sending valuable data.</li>
 </ul>
 </li>
-<li><code>labels=key=amet</code><ul>
+<li><code>labels=key=dolore</code><ul>
 <li>Optional. Default labels that are added to the labels field of all log entries in entries. If a log entry already has a label with the same key as a label in this parameter, then the log entry&#39;s label is not changed. See LogEntry.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>log-name=no</code><ul>
+<li><code>log-name=invidunt</code><ul>
 <li>Optional. A default log resource name that is assigned to all log entries in entries that do not specify a value for log_name:
     &#34;projects/[PROJECT_ID]/logs/[LOG_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]/logs/[LOG_ID]&#34;
@@ -511,16 +511,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     The permission &lt;code&gt;logging.logEntries.create&lt;/code&gt; is needed on each project, organization, billing account, or folder that is receiving new log entries, whether the resource is specified in &lt;code&gt;logName&lt;/code&gt; or in an individual log entry.</li>
 </ul>
 </li>
-<li><code>partial-success=true</code><ul>
+<li><code>partial-success=false</code><ul>
 <li>Optional. Whether valid entries should be written even if some other entries fail due to INVALID_ARGUMENT or PERMISSION_DENIED errors. If any entry is not written, then the response status is the error associated with one of the failed entries and the response includes error details keyed by the entries&#39; zero-based index in the entries.write method.</li>
 </ul>
 </li>
-<li><code>resource    labels=key=eirmod</code><ul>
+<li><code>resource    labels=key=accusam</code><ul>
 <li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels &#34;project_id&#34;, &#34;instance_id&#34;, and &#34;zone&#34;.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>type=dolore</code><ul>
+<li><code>type=lorem</code><ul>
 <li>Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Compute Engine VM instance is gce_instance.</li>
 </ul>
 </li>
@@ -634,7 +634,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

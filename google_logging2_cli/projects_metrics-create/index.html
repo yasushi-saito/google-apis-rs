@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metrics Create - Logging v1.0.8+20180929</title>
+  <title>Metrics Create - Logging v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.8+20180929</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -437,7 +437,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.8+20180929</a>
+        <a href="..">Logging v1.0.10+20190629</a>
       </nav>
 
       
@@ -501,12 +501,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       num-finite-buckets: integer
       offset: number
       width: number
+  create-time: string
   description: string
   filter: string
   label-extractors: { string: string }
   metric-descriptor:
     description: string
     display-name: string
+    launch-stage: string
     metadata:
       ingest-delay: string
       launch-stage: string
@@ -517,6 +519,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     unit: string
     value-type: string
   name: string
+  update-time: string
   value-extractor: string
   version: string
 
@@ -525,95 +528,103 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .bucket-options.explicit-buckets    bounds=0.780801418442</code></p>
+<p><code>-r .bucket-options.explicit-buckets    bounds=0.139540612974</code></p>
 <ul>
 <li>The values must be monotonically increasing.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..exponential-buckets    growth-factor=0.87399646162</code></p>
+<p><code>..exponential-buckets    growth-factor=0.858839541251</code></p>
 <ul>
 <li>Must be greater than 1.</li>
 </ul>
 </li>
-<li><code>num-finite-buckets=22</code><ul>
+<li><code>num-finite-buckets=50</code><ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>scale=0.3052778683</code></p>
+<p><code>scale=0.378784903851</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>..linear-buckets    num-finite-buckets=44</code></p>
+<p><code>..linear-buckets    num-finite-buckets=64</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
-<li><code>offset=0.379056915385</code><ul>
+<li><code>offset=0.113683921598</code><ul>
 <li>Lower bound of the first bucket.</li>
 </ul>
 </li>
 <li>
-<p><code>width=0.636549512895</code></p>
+<p><code>width=0.243025714914</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>...    description=ut</code></p>
+<p><code>...    create-time=consetetur</code></p>
 <ul>
-<li>Optional. A description of this metric, which is used in documentation.</li>
+<li>Output only. The creation timestamp of the metric.This field may not be present for older metrics.</li>
 </ul>
 </li>
-<li><code>filter=dolores</code><ul>
+<li><code>description=et</code><ul>
+<li>Optional. A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters.</li>
+</ul>
+</li>
+<li><code>filter=sed</code><ul>
 <li>Required. An advanced logs filter which is used to match log entries. Example:
     &#34;resource.type=gae_app AND severity&gt;=ERROR&#34;
     The maximum length of the filter is 20000 characters.</li>
 </ul>
 </li>
-<li><code>label-extractors=key=eos</code><ul>
+<li><code>label-extractors=key=sit</code><ul>
 <li>Optional. A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. Each label key specified in the LabelDescriptor must have an associated extractor expression in this map. The syntax of the extractor expression is the same as for the value_extractor field.The extracted value is converted to the type defined in the label descriptor. If the either the extraction or the type conversion fails, the label will have a default value. The default value for a string label is an empty string, for an integer label its 0, and for a boolean label its false.Note that there are upper bounds on the maximum number of labels and the number of active time series that are allowed in a project.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>metric-descriptor    description=voluptua.</code><ul>
+<li><code>metric-descriptor    description=takimata</code><ul>
 <li>A detailed description of the metric, which can be used in documentation.</li>
 </ul>
 </li>
-<li><code>display-name=duo</code><ul>
+<li><code>display-name=elitr</code><ul>
 <li>A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example &#34;Request count&#34;. This field is optional but it is recommended to be set for any metrics associated with user-visible concepts, such as Quota.</li>
 </ul>
 </li>
-<li><code>metadata    ingest-delay=sed</code><ul>
+<li><code>launch-stage=nonumy</code><ul>
+<li>Optional. The launch stage of the metric definition.</li>
+</ul>
+</li>
+<li><code>metadata    ingest-delay=rebum.</code><ul>
 <li>The delay of data points caused by ingestion. Data points older than this age are guaranteed to be ingested and available to be read, excluding data loss due to errors.</li>
 </ul>
 </li>
-<li><code>launch-stage=aliquyam</code><ul>
-<li>The launch stage of the metric definition.</li>
+<li><code>launch-stage=lorem</code><ul>
+<li>Deprecated. Please use the MetricDescriptor.launch_stage instead. The launch stage of the metric definition.</li>
 </ul>
 </li>
 <li>
-<p><code>sample-period=ea</code></p>
+<p><code>sample-period=lorem</code></p>
 <ul>
 <li>The sampling period of metric data points. For metrics which are written periodically, consecutive data points are stored at this time interval, excluding data loss due to errors. Metrics with a higher granularity have a smaller sampling period.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metric-kind=ea</code></p>
+<p><code>..    metric-kind=diam</code></p>
 <ul>
 <li>Whether the metric records instantaneous values, changes to a value, etc. Some combinations of metric_kind and value_type might not be supported.</li>
 </ul>
 </li>
-<li><code>name=et</code><ul>
+<li><code>name=ut</code><ul>
 <li>The resource name of the metric descriptor.</li>
 </ul>
 </li>
 <li>
-<p><code>type=dolor</code></p>
+<p><code>type=ut</code></p>
 <ul>
 <li>The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined metric types have the DNS name custom.googleapis.com or external.googleapis.com. Metric types should use a natural hierarchical grouping. For example:
     &#34;custom.googleapis.com/invoice/paid/amount&#34;
@@ -622,7 +633,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>unit=diam</code></p>
+<p><code>unit=amet.</code></p>
 <ul>
 <li>
 <p>The unit in which the metric value is reported. It is only applicable if the value_type is INT64, DOUBLE, or DISTRIBUTION. The supported units are a subset of The Unified Code for Units of Measure (http://unitsofmeasure.org/ucum.html) standard:Basic units (UNIT)
@@ -665,22 +676,26 @@ Annotation is just a comment if it follows a UNIT and is  equivalent to 1 if it 
 NAME is a sequence of non-blank printable ASCII characters not  containing &#39;{&#39; or &#39;}&#39;.
 1 represents dimensionless value 1, such as in 1/s.
 % represents dimensionless value 1/100, and annotates values giving  a percentage.
-* <code>value-type=kasd</code>
+* <code>value-type=ipsum</code>
     - Whether the measurement is an integer, a floating-point number, etc. Some combinations of metric_kind and value_type might not be supported.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    name=invidunt</code></p>
+<p><code>..    name=ut</code></p>
 <ul>
 <li>Required. The client-assigned metric identifier. Examples: &#34;error_count&#34;, &#34;nginx/requests&#34;.Metric identifiers are limited to 100 characters and can include only the following characters: A-Z, a-z, 0-9, and the special characters _-.,+!*&#39;,()%/. The forward-slash character (/) denotes a hierarchy of name pieces, and it cannot be the first character of the name.The metric identifier in this field must not be URL-encoded (https://en.wikipedia.org/wiki/Percent-encoding). However, when the metric identifier appears as the [METRIC_ID] part of a metric_name API parameter, then the metric identifier must be URL-encoded. Example: &#34;projects/my-project/metrics/nginx%2Frequests&#34;.</li>
 </ul>
 </li>
-<li><code>value-extractor=rebum.</code><ul>
+<li><code>update-time=dolor</code><ul>
+<li>Output only. The last update timestamp of the metric.This field may not be present for older metrics.</li>
+</ul>
+</li>
+<li><code>value-extractor=sea</code><ul>
 <li>Optional. A value_extractor is required when using a distribution logs-based metric to extract the values to record from a log entry. Two functions are supported for value extraction: EXTRACT(field) or REGEXP_EXTRACT(field, regex). The argument are:  1. field: The name of the log entry field from which the value is to be  extracted.  2. regex: A regular expression using the Google RE2 syntax  (https://github.com/google/re2/wiki/Syntax) with a single capture  group to extract data from the specified log entry field. The value  of the field is converted to a string before applying the regex.  It is an error to specify a regex that does not include exactly one  capture group.The result of the extraction must be convertible to a double type, as the distribution always records double values. If either the extraction or the conversion to double fails, then those values are not recorded in the distribution.Example: REGEXP_EXTRACT(jsonPayload.request, &#34;.<em>quantity=(\d+).</em>&#34;)</li>
 </ul>
 </li>
-<li><code>version=lorem</code><ul>
+<li><code>version=ut</code><ul>
 <li>Deprecated. The API version that created or updated this metric. The v2 format is used by default and cannot be changed.</li>
 </ul>
 </li>
@@ -794,7 +809,7 @@ NAME is a sequence of non-blank printable ASCII characters not  containing &#39;
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

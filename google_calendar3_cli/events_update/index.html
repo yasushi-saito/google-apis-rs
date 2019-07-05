@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - calendar v1.0.8+20181009</title>
+  <title>Update - calendar v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.8+20181009</a>
+        <a href="..">calendar v1.0.10+20190702</a>
       </nav>
 
       
@@ -530,7 +530,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>...    signature=sed</code></p>
 <ul>
 <li>The signature of the conference data.
-    Genereated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
+    Generated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
     Unset for a conference with a failed create request.
     Optional for a conference with a pending create request.</li>
 </ul>
@@ -854,9 +854,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p supports-attachments=boolean</strong></p>
+<p><strong>-p send-notifications=boolean</strong></p>
 <ul>
-<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
+<li>
+<p>Deprecated. Please use sendUpdates instead.</p>
+<p>Whether to send notifications about the event update (for example, description changes, etc.). Note that some emails might still be sent even if you set the value to false. The default is false.</p>
+</li>
 </ul>
 </li>
 <li>
@@ -872,12 +875,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p send-notifications=boolean</strong></p>
+<p><strong>-p supports-attachments=boolean</strong></p>
 <ul>
-<li>
-<p>Deprecated. Please use sendUpdates instead.</p>
-<p>Whether to send notifications about the event update (for example, description changes, etc.). Note that some emails might still be sent even if you set the value to false. The default is false.</p>
-</li>
+<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
 </ul>
 </li>
 <li>
@@ -953,7 +953,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

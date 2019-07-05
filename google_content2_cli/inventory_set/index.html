@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Set - Shopping Content v1.0.8+20181009</title>
+  <title>Set - Shopping Content v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -585,7 +585,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.8+20181009</a>
+        <a href="..">Shopping Content v1.0.10+20190702</a>
       </nav>
 
       
@@ -630,7 +630,7 @@ You can set the scope for this method like this: <code>content2 --scope &lt;scop
 </ul>
 </li>
 <li><strong>&lt;product-id&gt;</strong> <em>(string)</em><ul>
-<li>The REST id of the product for which to update price and availability.</li>
+<li>The REST ID of the product for which to update price and availability.</li>
 </ul>
 </li>
 </ul>
@@ -640,11 +640,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>InventorySetRequest:
   availability: string
+  custom-label0: string
+  custom-label1: string
+  custom-label2: string
+  custom-label3: string
+  custom-label4: string
   installment:
     amount:
       currency: string
       value: string
     months: string
+  instore-product-location: string
   loyalty-points:
     name: string
     points-value: string
@@ -670,85 +676,109 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The availability of the product.</li>
 </ul>
 </li>
-<li><code>installment.amount    currency=clita</code><ul>
+<li><code>custom-label0=clita</code><ul>
+<li>Custom label 0 for custom grouping of items in a Shopping campaign. Only supported for online products.</li>
+</ul>
+</li>
+<li><code>custom-label1=diam</code><ul>
+<li>Custom label 1 for custom grouping of items in a Shopping campaign. Only supported for online products.</li>
+</ul>
+</li>
+<li><code>custom-label2=justo</code><ul>
+<li>Custom label 2 for custom grouping of items in a Shopping campaign. Only supported for online products.</li>
+</ul>
+</li>
+<li><code>custom-label3=est</code><ul>
+<li>Custom label 3 for custom grouping of items in a Shopping campaign. Only supported for online products.</li>
+</ul>
+</li>
+<li><code>custom-label4=clita</code><ul>
+<li>Custom label 3 for custom grouping of items in a Shopping campaign. Only supported for online products.</li>
+</ul>
+</li>
+<li><code>installment.amount    currency=invidunt</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=diam</code></p>
+<p><code>value=ut</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    months=justo</code></p>
+<p><code>..    months=dolores</code></p>
 <ul>
 <li>The number of installments the buyer has to pay.</li>
 </ul>
 </li>
 <li>
-<p><code>..loyalty-points    name=est</code></p>
+<p><code>..    instore-product-location=eos</code></p>
 <ul>
+<li>The instore product location. Supported only for local products.</li>
+</ul>
+</li>
+<li><code>loyalty-points    name=voluptua.</code><ul>
 <li>Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or 24 Roman characters.</li>
 </ul>
 </li>
-<li><code>points-value=clita</code><ul>
+<li><code>points-value=duo</code><ul>
 <li>The retailer&#39;s loyalty points in absolute value.</li>
 </ul>
 </li>
 <li>
-<p><code>ratio=0.636549512895</code></p>
+<p><code>ratio=0.0858312730549</code></p>
 <ul>
 <li>The ratio of a point when converted to currency. Google assumes currency based on Merchant Center settings. If ratio is left out, it defaults to 1.0.</li>
 </ul>
 </li>
 <li>
-<p><code>..pickup    pickup-method=ut</code></p>
+<p><code>..pickup    pickup-method=aliquyam</code></p>
 <ul>
 <li>Whether store pickup is available for this offer and whether the pickup option should be shown as buy, reserve, or not supported. Only supported for local inventory. Unless the value is &#34;not supported&#34;, must be submitted together with pickupSla.</li>
 </ul>
 </li>
 <li>
-<p><code>pickup-sla=dolores</code></p>
+<p><code>pickup-sla=ea</code></p>
 <ul>
 <li>The expected date that an order will be ready for pickup, relative to when the order is placed. Only supported for local inventory. Must be submitted together with pickupMethod.</li>
 </ul>
 </li>
 <li>
-<p><code>..price    currency=eos</code></p>
+<p><code>..price    currency=ea</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=voluptua.</code></p>
+<p><code>value=et</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    quantity=82</code></p>
+<p><code>..    quantity=53</code></p>
 <ul>
 <li>The quantity of the product. Must be equal to or greater than zero. Supported only for local products.</li>
 </ul>
 </li>
-<li><code>sale-price    currency=sed</code><ul>
+<li><code>sale-price    currency=diam</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=aliquyam</code></p>
+<p><code>value=kasd</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    sale-price-effective-date=ea</code></p>
+<p><code>..    sale-price-effective-date=invidunt</code></p>
 <ul>
 <li>A date range represented by a pair of ISO 8601 dates separated by a space, comma, or slash. Both dates might be specified as &#39;null&#39; if undecided.</li>
 </ul>
 </li>
-<li><code>sell-on-google-quantity=84</code><ul>
+<li><code>sell-on-google-quantity=86</code><ul>
 <li>The quantity of the product that is available for selling on Google. Supported only for online products.</li>
 </ul>
 </li>
@@ -778,7 +808,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p dry-run=boolean</strong><ul>
-<li>Flag to run the request in dry-run mode.</li>
+<li>Flag to simulate a request like in a live environment. If set to true, dry-run mode checks the validity of the request and returns errors (if any).</li>
 </ul>
 </li>
 </ul>
@@ -848,7 +878,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

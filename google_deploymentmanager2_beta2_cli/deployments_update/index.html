@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - Deployment Manager v1.0.8+20160201</title>
+  <title>Update - Deployment Manager v1.0.10+20160201</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Deployment Manager v1.0.8+20160201</a>
+        <a href=".." class="icon icon-home"> Deployment Manager v1.0.10+20160201</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -176,7 +176,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Deployment Manager v1.0.8+20160201</a>
+        <a href="..">Deployment Manager v1.0.10+20160201</a>
       </nav>
 
       
@@ -273,13 +273,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>PREVIEW creates a deployment and creates &#34;shell&#34; resources but does not actually instantiate these resources. This allows you to preview what your deployment looks like. You can use this intent to preview updates to deployments or preview new deployments. You must provide a target.config with a configuration for this intent. After previewing a deployment, you can deploy your resources by making a request with the UPDATE intent or you can CANCEL the preview altogether. Note that the deployment will still exist after you cancel the preview and you must separately delete this deployment if you want to remove it.</p>
 <p>UPDATE performs an update to the underlying resources in a deployment. If you provide a populated target.config field with this request, Deployment Manager uses that configuration to perform an update. If you had previewed this update beforehand, and do not supply a target.config or provide an empty target.config, Deployment Manager uses the last previewed configuration.</p>
 <p>CANCEL cancels an update that is in PREVIEW or UPDATE but does not undo any changes already made.
-<em> <code>manifest=duo</code>
+* <code>manifest=duo</code>
     - [Output Only] URL of the manifest representing the last manifest that was successfully deployed.
-</em> <code>name=aliquyam</code>
+* <code>name=aliquyam</code>
     - Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression <a href="../[-a-z0-9]*[a-z0-9]">a-z</a>? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-<em> <code>state=sea</code>
+* <code>state=sea</code>
     - [Output Only] The current state of the deployment. This can be DEPLOYED, DEPLOYMENT_FAILED, PREVIEWING, UPDATING, and CANCELING.
-</em> <code>target    config=lorem</code>
+* <code>target    config=lorem</code>
     - The configuration to use for this deployment.</p>
 </li>
 </ul>
@@ -329,9 +329,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p create-policy=string</strong></p>
+<p><strong>-p update-policy=string</strong></p>
 <ul>
-<li>Sets the policy to use for creating new resources.</li>
+<li>Sets the policy to use for updating resources.</li>
 </ul>
 </li>
 <li>
@@ -341,9 +341,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p update-policy=string</strong></p>
+<p><strong>-p create-policy=string</strong></p>
 <ul>
-<li>Sets the policy to use for updating resources.</li>
+<li>Sets the policy to use for creating new resources.</li>
 </ul>
 </li>
 </ul>
@@ -413,7 +413,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

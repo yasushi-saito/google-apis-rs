@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - groupssettings v1.0.8+20180615</title>
+  <title>Patch - groupssettings v1.0.10+20190315</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> groupssettings v1.0.8+20180615</a>
+        <a href=".." class="icon icon-home"> groupssettings v1.0.10+20190315</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -105,7 +105,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">groupssettings v1.0.8+20180615</a>
+        <a href="..">groupssettings v1.0.10+20190315</a>
       </nav>
 
       
@@ -157,9 +157,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   archive-only: string
   custom-footer-text: string
   custom-reply-to: string
+  custom-roles-enabled-for-settings-to-be-merged: string
   default-message-deny-notification-text: string
   description: string
   email: string
+  enable-collaborative-inbox: string
   favorite-replies-on-top: string
   include-custom-footer: string
   include-in-global-address-list: string
@@ -177,17 +179,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   spam-moderation-level: string
   who-can-add: string
   who-can-add-references: string
+  who-can-approve-members: string
+  who-can-approve-messages: string
   who-can-assign-topics: string
+  who-can-assist-content: string
+  who-can-ban-users: string
   who-can-contact-owner: string
+  who-can-delete-any-post: string
+  who-can-delete-topics: string
+  who-can-discover-group: string
   who-can-enter-free-form-tags: string
+  who-can-hide-abuse: string
   who-can-invite: string
   who-can-join: string
   who-can-leave-group: string
+  who-can-lock-topics: string
+  who-can-make-topics-sticky: string
   who-can-mark-duplicate: string
   who-can-mark-favorite-reply-on-any-topic: string
   who-can-mark-favorite-reply-on-own-topic: string
   who-can-mark-no-response-needed: string
+  who-can-moderate-content: string
+  who-can-moderate-members: string
+  who-can-modify-members: string
   who-can-modify-tags-and-categories: string
+  who-can-move-topics-in: string
+  who-can-move-topics-out: string
+  who-can-post-announcements: string
   who-can-post-message: string
   who-can-take-topics: string
   who-can-unassign-topic: string
@@ -223,152 +241,224 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Default email to which reply to any message should go.</li>
 </ul>
 </li>
-<li><code>default-message-deny-notification-text=kasd</code><ul>
+<li><code>custom-roles-enabled-for-settings-to-be-merged=kasd</code><ul>
+<li>If any of the settings that will be merged have custom roles which is anything other than owners, managers, or group scopes.</li>
+</ul>
+</li>
+<li><code>default-message-deny-notification-text=accusam</code><ul>
 <li>Default message deny notification message</li>
 </ul>
 </li>
-<li><code>description=accusam</code><ul>
+<li><code>description=takimata</code><ul>
 <li>Description of the group</li>
 </ul>
 </li>
-<li><code>email=takimata</code><ul>
+<li><code>email=justo</code><ul>
 <li>Email id of the group</li>
 </ul>
 </li>
-<li><code>favorite-replies-on-top=justo</code><ul>
+<li><code>enable-collaborative-inbox=amet.</code><ul>
+<li>If a primary Collab Inbox feature is enabled.</li>
+</ul>
+</li>
+<li><code>favorite-replies-on-top=erat</code><ul>
 <li>If favorite replies should be displayed above other replies.</li>
 </ul>
 </li>
-<li><code>include-custom-footer=amet.</code><ul>
+<li><code>include-custom-footer=labore</code><ul>
 <li>Whether to include custom footer.</li>
 </ul>
 </li>
-<li><code>include-in-global-address-list=erat</code><ul>
+<li><code>include-in-global-address-list=sea</code><ul>
 <li>If this groups should be included in global address list or not.</li>
 </ul>
 </li>
-<li><code>is-archived=labore</code><ul>
+<li><code>is-archived=nonumy</code><ul>
 <li>If the contents of the group are archived.</li>
 </ul>
 </li>
-<li><code>kind=sea</code><ul>
+<li><code>kind=dolores</code><ul>
 <li>The type of the resource.</li>
 </ul>
 </li>
-<li><code>max-message-bytes=11</code><ul>
+<li><code>max-message-bytes=40</code><ul>
 <li>Maximum message size allowed.</li>
 </ul>
 </li>
-<li><code>members-can-post-as-the-group=dolores</code><ul>
+<li><code>members-can-post-as-the-group=sadipscing</code><ul>
 <li>Can members post using the group email address.</li>
 </ul>
 </li>
-<li><code>message-display-font=gubergren</code><ul>
+<li><code>message-display-font=aliquyam</code><ul>
 <li>Default message display font. Possible values are: DEFAULT_FONT FIXED_WIDTH_FONT</li>
 </ul>
 </li>
-<li><code>message-moderation-level=sadipscing</code><ul>
+<li><code>message-moderation-level=ea</code><ul>
 <li>Moderation level for messages. Possible values are: MODERATE_ALL_MESSAGES MODERATE_NON_MEMBERS MODERATE_NEW_MEMBERS MODERATE_NONE</li>
 </ul>
 </li>
-<li><code>name=aliquyam</code><ul>
+<li><code>name=no</code><ul>
 <li>Name of the Group</li>
 </ul>
 </li>
-<li><code>primary-language=ea</code><ul>
+<li><code>primary-language=justo</code><ul>
 <li>Primary language for the group.</li>
 </ul>
 </li>
-<li><code>reply-to=no</code><ul>
+<li><code>reply-to=justo</code><ul>
 <li>Whome should the default reply to a message go to. Possible values are: REPLY_TO_CUSTOM REPLY_TO_SENDER REPLY_TO_LIST REPLY_TO_OWNER REPLY_TO_IGNORE REPLY_TO_MANAGERS</li>
 </ul>
 </li>
-<li><code>send-message-deny-notification=justo</code><ul>
+<li><code>send-message-deny-notification=et</code><ul>
 <li>Should the member be notified if his message is denied by owner.</li>
 </ul>
 </li>
-<li><code>show-in-group-directory=justo</code><ul>
+<li><code>show-in-group-directory=et</code><ul>
 <li>Is the group listed in groups directory</li>
 </ul>
 </li>
-<li><code>spam-moderation-level=et</code><ul>
+<li><code>spam-moderation-level=diam</code><ul>
 <li>Moderation level for messages detected as spam. Possible values are: ALLOW MODERATE SILENTLY_MODERATE REJECT</li>
 </ul>
 </li>
-<li><code>who-can-add=et</code><ul>
+<li><code>who-can-add=ipsum</code><ul>
 <li>Permissions to add members. Possible values are: ALL_MANAGERS_CAN_ADD ALL_OWNERS_CAN_ADD ALL_MEMBERS_CAN_ADD NONE_CAN_ADD</li>
 </ul>
 </li>
-<li><code>who-can-add-references=diam</code><ul>
+<li><code>who-can-add-references=lorem</code><ul>
 <li>Permission to add references to a topic. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-assign-topics=ipsum</code><ul>
+<li><code>who-can-approve-members=et</code><ul>
+<li>Permission to approve members. Possible values are: ALL_OWNERS_CAN_APPROVE ALL_MANAGERS_CAN_APPROVE ALL_MEMBERS_CAN_APPROVE NONE_CAN_APPROVE</li>
+</ul>
+</li>
+<li><code>who-can-approve-messages=duo</code><ul>
+<li>Permission to approve pending messages in the moderation queue. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-assign-topics=aliquyam</code><ul>
 <li>Permission to assign topics in a forum to another user. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-contact-owner=lorem</code><ul>
+<li><code>who-can-assist-content=sea</code><ul>
+<li>Permission for content assistants. Possible values are: Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-ban-users=lorem</code><ul>
+<li>Permission to ban users. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-contact-owner=eos</code><ul>
 <li>Permission to contact owner of the group via web UI. Possible values are: ANYONE_CAN_CONTACT ALL_IN_DOMAIN_CAN_CONTACT ALL_MEMBERS_CAN_CONTACT ALL_MANAGERS_CAN_CONTACT</li>
 </ul>
 </li>
-<li><code>who-can-enter-free-form-tags=et</code><ul>
+<li><code>who-can-delete-any-post=erat</code><ul>
+<li>Permission to delete replies to topics. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-delete-topics=sadipscing</code><ul>
+<li>Permission to delete topics. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-discover-group=dolor</code><ul>
+<li>Permission for who can discover the group. Possible values are: ALL_MEMBERS_CAN_DISCOVER ALL_IN_DOMAIN_CAN_DISCOVER ANYONE_CAN_DISCOVER</li>
+</ul>
+</li>
+<li><code>who-can-enter-free-form-tags=eirmod</code><ul>
 <li>Permission to enter free form tags for topics in a forum. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-invite=duo</code><ul>
+<li><code>who-can-hide-abuse=elitr</code><ul>
+<li>Permission to hide posts by reporting them as abuse. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-invite=amet</code><ul>
 <li>Permissions to invite members. Possible values are: ALL_MEMBERS_CAN_INVITE ALL_MANAGERS_CAN_INVITE ALL_OWNERS_CAN_INVITE NONE_CAN_INVITE</li>
 </ul>
 </li>
-<li><code>who-can-join=aliquyam</code><ul>
+<li><code>who-can-join=no</code><ul>
 <li>Permissions to join the group. Possible values are: ANYONE_CAN_JOIN ALL_IN_DOMAIN_CAN_JOIN INVITED_CAN_JOIN CAN_REQUEST_TO_JOIN</li>
 </ul>
 </li>
-<li><code>who-can-leave-group=sea</code><ul>
+<li><code>who-can-leave-group=labore</code><ul>
 <li>Permission to leave the group. Possible values are: ALL_MANAGERS_CAN_LEAVE ALL_OWNERS_CAN_LEAVE ALL_MEMBERS_CAN_LEAVE NONE_CAN_LEAVE</li>
 </ul>
 </li>
-<li><code>who-can-mark-duplicate=lorem</code><ul>
+<li><code>who-can-lock-topics=eirmod</code><ul>
+<li>Permission to lock topics. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-make-topics-sticky=dolore</code><ul>
+<li>Permission to make topics appear at the top of the topic list. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-mark-duplicate=invidunt</code><ul>
 <li>Permission to mark a topic as a duplicate of another topic. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-mark-favorite-reply-on-any-topic=eos</code><ul>
+<li><code>who-can-mark-favorite-reply-on-any-topic=aliquyam</code><ul>
 <li>Permission to mark any other user&#39;s post as a favorite reply. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-mark-favorite-reply-on-own-topic=erat</code><ul>
+<li><code>who-can-mark-favorite-reply-on-own-topic=accusam</code><ul>
 <li>Permission to mark a post for a topic they started as a favorite reply. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-mark-no-response-needed=sadipscing</code><ul>
+<li><code>who-can-mark-no-response-needed=lorem</code><ul>
 <li>Permission to mark a topic as not needing a response. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-modify-tags-and-categories=dolor</code><ul>
+<li><code>who-can-moderate-content=sea</code><ul>
+<li>Permission for content moderation. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-moderate-members=et</code><ul>
+<li>Permission for membership moderation. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-modify-members=duo</code><ul>
+<li>Permission to modify members (change member roles). Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-modify-tags-and-categories=et</code><ul>
 <li>Permission to change tags and categories. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-post-message=eirmod</code><ul>
+<li><code>who-can-move-topics-in=eirmod</code><ul>
+<li>Permission to move topics into the group or forum. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-move-topics-out=sanctus</code><ul>
+<li>Permission to move topics out of the group or forum. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-post-announcements=et</code><ul>
+<li>Permission to post announcements, a special topic type. Possible values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
+</ul>
+</li>
+<li><code>who-can-post-message=amet</code><ul>
 <li>Permissions to post messages to the group. Possible values are: NONE_CAN_POST ALL_MANAGERS_CAN_POST ALL_MEMBERS_CAN_POST ALL_OWNERS_CAN_POST ALL_IN_DOMAIN_CAN_POST ANYONE_CAN_POST</li>
 </ul>
 </li>
-<li><code>who-can-take-topics=elitr</code><ul>
+<li><code>who-can-take-topics=et</code><ul>
 <li>Permission to take topics in a forum. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-unassign-topic=amet</code><ul>
+<li><code>who-can-unassign-topic=consetetur</code><ul>
 <li>Permission to unassign any topic in a forum. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-unmark-favorite-reply-on-any-topic=no</code><ul>
+<li><code>who-can-unmark-favorite-reply-on-any-topic=ut</code><ul>
 <li>Permission to unmark any post from a favorite reply. Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS</li>
 </ul>
 </li>
-<li><code>who-can-view-group=labore</code><ul>
+<li><code>who-can-view-group=ea</code><ul>
 <li>Permissions to view group. Possible values are: ANYONE_CAN_VIEW ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW ALL_OWNERS_CAN_VIEW</li>
 </ul>
 </li>
-<li><code>who-can-view-membership=eirmod</code><ul>
-<li>Permissions to view membership. Possible values are: ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW</li>
+<li><code>who-can-view-membership=sed</code><ul>
+<li>Permissions to view membership. Possible values are: ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW ALL_OWNERS_CAN_VIEW</li>
 </ul>
 </li>
 </ul>
@@ -457,7 +547,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

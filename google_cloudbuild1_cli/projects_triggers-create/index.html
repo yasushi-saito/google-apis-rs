@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Triggers Create - Cloud Build v1.0.8+20181011</title>
+  <title>Triggers Create - Cloud Build v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Build v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> Cloud Build v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -156,7 +156,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Build v1.0.8+20181011</a>
+        <a href="..">Cloud Build v1.0.10+20190702</a>
       </nav>
 
       
@@ -229,9 +229,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       secret-env: [string]
       source-provenance-hash: [string]
       substitution-option: string
+      worker-pool: string
     project-id: string
     results:
       artifact-manifest: string
+      artifact-timing:
+        end-time: string
+        start-time: string
       build-step-images: [string]
       build-step-outputs: [string]
       num-artifacts: string
@@ -269,10 +273,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   description: string
   disabled: boolean
   filename: string
+  github:
+    installation-id: string
+    name: string
+    owner: string
+    pull-request:
+      branch: string
+      comment-control: string
+    push:
+      branch: string
+      tag: string
   id: string
   ignored-files: [string]
   included-files: [string]
   substitutions: { string: string }
+  tags: [string]
   trigger-template:
     branch-name: string
     commit-sha: string
@@ -286,7 +301,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .build.artifacts    images=duo</code></p>
+<p><code>-r .build.artifacts    images=sanctus</code></p>
 <ul>
 <li>
 <p>A list of images to be pushed upon the successful completion of all build
@@ -302,37 +317,37 @@ results field.</p>
 Requirements</a>).</p>
 <p>Files in the workspace matching any path pattern will be uploaded to
 Cloud Storage with this location as a prefix.
-<em> <code>paths=eirmod</code>
+* <code>paths=amet</code>
     - Path globs used to match files in the build&#39;s workspace.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>timing    end-time=sanctus</code>
+* <code>timing    end-time=et</code>
     - End of time span.
-* <code>start-time=et</code>
+* <code>start-time=consetetur</code>
     - Start of time span.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>....    build-trigger-id=amet</code></p>
+<p><code>....    build-trigger-id=ut</code></p>
 <ul>
 <li>Output only. The ID of the <code>BuildTrigger</code> that triggered this build, if it
     was triggered automatically.</li>
 </ul>
 </li>
-<li><code>create-time=et</code><ul>
+<li><code>create-time=ea</code><ul>
 <li>Output only. Time at which the request to create the build was received.</li>
 </ul>
 </li>
 <li>
-<p><code>finish-time=consetetur</code></p>
+<p><code>finish-time=sed</code></p>
 <ul>
 <li>
 <p>Output only. Time at which execution of the build was finished.</p>
 <p>The difference between finish_time and start_time is the duration of the
 build&#39;s execution.
-<em> <code>id=ut</code>
+* <code>id=dolor</code>
     - Output only. Unique identifier of the build.
-</em> <code>images=ea</code>
+* <code>images=dolor</code>
     - A list of images to be pushed upon the successful completion of all build
 steps.</p>
 <p>The images are pushed using the builder service account&#39;s credentials.</p>
@@ -341,70 +356,86 @@ results field.</p>
 <p>If any of the images fail to be pushed, the build status is marked
 <code>FAILURE</code>.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>log-url=sed</code>
+* <code>log-url=dolor</code>
     - Output only. URL to logs for this build in Google Cloud Console.
-</em> <code>logs-bucket=dolor</code>
+* <code>logs-bucket=et</code>
     - Google Cloud Storage bucket where logs should be written (see
 <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name
 Requirements</a>).
 Logs file names will be of the format <code>${logs_bucket}/log-${build_id}.txt</code>.
-<em> <code>options    disk-size-gb=dolor</code>
-    - Requested disk size for the VM that runs the build. Note that this is </em>NOT<em>
+* <code>options    disk-size-gb=consetetur</code>
+    - Requested disk size for the VM that runs the build. Note that this is <em>NOT</em>
 &#34;disk free&#34;; some of the space will be used by the operating system and
 build utilities. Also note that this is the minimum disk size that will be
 allocated for the build -- the build may run with a larger disk than
 requested. At present, the maximum disk size is 1000GB; builds that request
 more than the maximum are rejected with an error.
-</em> <code>env=dolor</code>
+* <code>env=amet.</code>
     - A list of global environment variable definitions that will exist for all
 build steps in this build. If a variable is defined in both globally and in
 a build step, the variable will use the build step value.</p>
 <p>The elements are of the form &#34;KEY=VALUE&#34; for the environment variable &#34;KEY&#34;
 being given the value &#34;VALUE&#34;.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>log-streaming-option=et</code>
+* <code>log-streaming-option=voluptua.</code>
     - Option to define build log streaming behavior to Google Cloud
 Storage.
-</em> <code>logging=consetetur</code>
+* <code>logging=lorem</code>
     - Option to specify the logging mode, which determines where the logs are
 stored.
-<em> <code>machine-type=amet.</code>
+* <code>machine-type=gubergren</code>
     - Compute Engine machine type on which to run the build.
-</em> <code>requested-verify-option=voluptua.</code>
+* <code>requested-verify-option=justo</code>
     - Requested verifiability options.
-<em> <code>secret-env=lorem</code>
+* <code>secret-env=sit</code>
     - A list of global environment variables, which are encrypted using a Cloud
 Key Management Service crypto key. These values must be specified in the
 build&#39;s <code>Secret</code>. These variables will be available to all build steps
 in this build.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>source-provenance-hash=gubergren</code>
+* <code>source-provenance-hash=vero</code>
     - Requested hash for SourceProvenance.
     - Each invocation of this argument appends the given value to the array.
-* <code>substitution-option=justo</code>
+* <code>substitution-option=diam</code>
     - Option to specify behavior when there is an error in the substitution
-checks.</p>
+checks.
+* <code>worker-pool=rebum.</code>
+    - Option to specify a <code>WorkerPool</code> for the build. User specifies the pool
+with the format &#34;[WORKERPOOL_PROJECT_ID]/[WORKERPOOL_NAME]&#34;.
+This is an experimental field.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    project-id=sit</code></p>
+<p><code>..    project-id=consetetur</code></p>
 <ul>
 <li>Output only. ID of the project.</li>
 </ul>
 </li>
-<li><code>results    artifact-manifest=vero</code><ul>
+<li><code>results    artifact-manifest=sadipscing</code><ul>
 <li>Path to the artifact manifest. Only populated when artifacts are uploaded.</li>
 </ul>
 </li>
-<li><code>build-step-images=diam</code><ul>
+<li><code>artifact-timing    end-time=vero</code><ul>
+<li>End of time span.</li>
+</ul>
+</li>
+<li>
+<p><code>start-time=sadipscing</code></p>
+<ul>
+<li>Start of time span.</li>
+</ul>
+</li>
+<li>
+<p><code>..    build-step-images=invidunt</code></p>
+<ul>
 <li>List of build step digests, in the order corresponding to build step
     indices.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>build-step-outputs=rebum.</code></p>
+<p><code>build-step-outputs=consetetur</code></p>
 <ul>
 <li>
 <p>List of build step outputs, produced by builder images, in the order
@@ -413,54 +444,54 @@ checks.</p>
 can produce this output by writing to <code>$BUILDER_OUTPUT/output</code>.
 Only the first 4KB of data is stored.
     - Each invocation of this argument appends the given value to the array.
-* <code>num-artifacts=consetetur</code>
+* <code>num-artifacts=dolore</code>
     - Number of artifacts uploaded. Only populated when artifacts are uploaded.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..source.repo-source    branch-name=sadipscing</code></p>
+<p><code>..source.repo-source    branch-name=duo</code></p>
 <ul>
 <li>Name of the branch to build.</li>
 </ul>
 </li>
-<li><code>commit-sha=vero</code><ul>
+<li><code>commit-sha=aliquyam</code><ul>
 <li>Explicit commit SHA to build.</li>
 </ul>
 </li>
 <li>
-<p><code>dir=sadipscing</code></p>
+<p><code>dir=lorem</code></p>
 <ul>
 <li>
 <p>Directory, relative to the source root, in which to run the build.</p>
 <p>This must be a relative path. If a step&#39;s <code>dir</code> is specified and is an
 absolute path, this value is ignored for that step&#39;s execution.
-<em> <code>project-id=invidunt</code>
+* <code>project-id=et</code>
     - ID of the project that owns the Cloud Source Repository. If omitted, the
 project ID requesting the build is assumed.
-</em> <code>repo-name=consetetur</code>
+* <code>repo-name=clita</code>
     - Name of the Cloud Source Repository. If omitted, the name &#34;default&#34; is
 assumed.
-* <code>tag-name=dolore</code>
+* <code>tag-name=consetetur</code>
     - Name of the tag to build.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..storage-source    bucket=duo</code></p>
+<p><code>..storage-source    bucket=takimata</code></p>
 <ul>
 <li>Google Cloud Storage bucket containing the source (see
     <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name
     Requirements</a>).</li>
 </ul>
 </li>
-<li><code>generation=aliquyam</code><ul>
+<li><code>generation=nonumy</code><ul>
 <li>Google Cloud Storage generation for the object. If the generation is
     omitted, the latest generation will be used.</li>
 </ul>
 </li>
 <li>
-<p><code>object=lorem</code></p>
+<p><code>object=kasd</code></p>
 <ul>
 <li>
 <p>Google Cloud Storage object containing the source.</p>
@@ -470,48 +501,48 @@ build.</p>
 </ul>
 </li>
 <li>
-<p><code>...source-provenance.resolved-repo-source    branch-name=et</code></p>
+<p><code>...source-provenance.resolved-repo-source    branch-name=sanctus</code></p>
 <ul>
 <li>Name of the branch to build.</li>
 </ul>
 </li>
-<li><code>commit-sha=clita</code><ul>
+<li><code>commit-sha=takimata</code><ul>
 <li>Explicit commit SHA to build.</li>
 </ul>
 </li>
 <li>
-<p><code>dir=consetetur</code></p>
+<p><code>dir=at</code></p>
 <ul>
 <li>
 <p>Directory, relative to the source root, in which to run the build.</p>
 <p>This must be a relative path. If a step&#39;s <code>dir</code> is specified and is an
 absolute path, this value is ignored for that step&#39;s execution.
-<em> <code>project-id=takimata</code>
+* <code>project-id=labore</code>
     - ID of the project that owns the Cloud Source Repository. If omitted, the
 project ID requesting the build is assumed.
-</em> <code>repo-name=nonumy</code>
+* <code>repo-name=invidunt</code>
     - Name of the Cloud Source Repository. If omitted, the name &#34;default&#34; is
 assumed.
-* <code>tag-name=kasd</code>
+* <code>tag-name=ea</code>
     - Name of the tag to build.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..resolved-storage-source    bucket=sanctus</code></p>
+<p><code>..resolved-storage-source    bucket=sadipscing</code></p>
 <ul>
 <li>Google Cloud Storage bucket containing the source (see
     <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name
     Requirements</a>).</li>
 </ul>
 </li>
-<li><code>generation=takimata</code><ul>
+<li><code>generation=rebum.</code><ul>
 <li>Google Cloud Storage generation for the object. If the generation is
     omitted, the latest generation will be used.</li>
 </ul>
 </li>
 <li>
-<p><code>object=at</code></p>
+<p><code>object=dolore</code></p>
 <ul>
 <li>
 <p>Google Cloud Storage object containing the source.</p>
@@ -521,31 +552,31 @@ build.</p>
 </ul>
 </li>
 <li>
-<p><code>...    start-time=labore</code></p>
+<p><code>...    start-time=nonumy</code></p>
 <ul>
 <li>Output only. Time at which execution of the build was started.</li>
 </ul>
 </li>
-<li><code>status=invidunt</code><ul>
+<li><code>status=sed</code><ul>
 <li>Output only. Status of the build.</li>
 </ul>
 </li>
-<li><code>status-detail=ea</code><ul>
+<li><code>status-detail=aliquyam</code><ul>
 <li>Output only. Customer-readable message about the current status.</li>
 </ul>
 </li>
-<li><code>substitutions=key=sadipscing</code><ul>
+<li><code>substitutions=key=sit</code><ul>
 <li>Substitutions data for <code>Build</code> resource.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>tags=rebum.</code><ul>
+<li><code>tags=eirmod</code><ul>
 <li>Tags for annotation of a <code>Build</code>. These are not docker tags.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>timeout=dolore</code></p>
+<p><code>timeout=consetetur</code></p>
 <ul>
 <li>
 <p>Amount of time that this build should be allowed to run, to second
@@ -556,7 +587,7 @@ build.</p>
 </ul>
 </li>
 <li>
-<p><code>..    create-time=nonumy</code></p>
+<p><code>..    create-time=labore</code></p>
 <ul>
 <li>Output only. Time when the trigger was created.</li>
 </ul>
@@ -565,20 +596,64 @@ build.</p>
 <li>Human-readable description of this trigger.</li>
 </ul>
 </li>
-<li><code>disabled=false</code><ul>
+<li><code>disabled=true</code><ul>
 <li>If true, the trigger will never result in a build.</li>
 </ul>
 </li>
-<li><code>filename=sit</code><ul>
+<li><code>filename=gubergren</code><ul>
 <li>Path, from the source root, to a file whose contents is used for the
     template.</li>
 </ul>
 </li>
-<li><code>id=eirmod</code><ul>
+<li><code>github    installation-id=aliquyam</code><ul>
+<li>The installationID that emits the GitHub event.</li>
+</ul>
+</li>
+<li><code>name=eos</code><ul>
+<li>Name of the repository. For example: The name for
+    https://github.com/googlecloudplatform/cloud-builders is &#34;cloud-builders&#34;.</li>
+</ul>
+</li>
+<li><code>owner=tempor</code><ul>
+<li>Owner of the repository. For example: The owner for
+    https://github.com/googlecloudplatform/cloud-builders is
+    &#34;googlecloudplatform&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>pull-request    branch=sea</code></p>
+<ul>
+<li>
+<p>Regex of branches to match.</p>
+<p>The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax
+* <code>comment-control=labore</code>
+    - Whether to block builds on a &#34;/gcbrun&#34; comment from a repository owner or
+collaborator.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..push    branch=ipsum</code></p>
+<ul>
+<li>
+<p>Regexes of branches to match.</p>
+<p>The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax
+* <code>tag=aliquyam</code>
+    - Regexes of tags to match.</p>
+<p>The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>...    id=dolores</code></p>
+<ul>
 <li>Output only. Unique identifier of the trigger.</li>
 </ul>
 </li>
-<li><code>ignored-files=consetetur</code><ul>
+<li><code>ignored-files=sit</code><ul>
 <li>
 <p>ignored_files and included_files are file glob matches using
     http://godoc/pkg/path/filepath#Match extended with support for &#34;**&#34;.</p>
@@ -588,7 +663,7 @@ not used to determine whether or not to trigger a build.</p>
 any of the ignored_file globs. If the change has no files that are
 outside of the ignored_files globs, then we do not trigger a build.
     - Each invocation of this argument appends the given value to the array.
-* <code>included-files=labore</code>
+* <code>included-files=diam</code>
     - If any of the files altered in the commit pass the ignored_files
 filter and included_files is empty, then as far as this filter is
 concerned, we should trigger the build.</p>
@@ -597,24 +672,27 @@ filter and included_files is not empty, then we make sure that at
 least one of those files matches a included_files glob. If not,
 then we do not trigger a build.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>substitutions=key=sed</code>
+* <code>substitutions=key=ut</code>
     - Substitutions data for Build resource.
     - the value will be associated with the given <code>key</code>
-</em> <code>trigger-template    branch-name=ea</code>
+* <code>tags=justo</code>
+    - Tags for annotation of a <code>BuildTrigger</code>
+    - Each invocation of this argument appends the given value to the array.
+* <code>trigger-template    branch-name=est</code>
     - Name of the branch to build.
-<em> <code>commit-sha=gubergren</code>
+* <code>commit-sha=amet</code>
     - Explicit commit SHA to build.
-</em> <code>dir=aliquyam</code>
+* <code>dir=accusam</code>
     - Directory, relative to the source root, in which to run the build.</p>
 <p>This must be a relative path. If a step&#39;s <code>dir</code> is specified and is an
 absolute path, this value is ignored for that step&#39;s execution.
-<em> <code>project-id=eos</code>
+* <code>project-id=clita</code>
     - ID of the project that owns the Cloud Source Repository. If omitted, the
 project ID requesting the build is assumed.
-</em> <code>repo-name=tempor</code>
+* <code>repo-name=diam</code>
     - Name of the Cloud Source Repository. If omitted, the name &#34;default&#34; is
 assumed.
-* <code>tag-name=sea</code>
+* <code>tag-name=justo</code>
     - Name of the tag to build.</p>
 </li>
 </ul>
@@ -729,7 +807,7 @@ assumed.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

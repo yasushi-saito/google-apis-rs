@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Android Enterprise v1.0.8+20181003</title>
+  <title>List - Android Enterprise v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.8+20181003</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Devices</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../devices_force-report-upload/">Force Report Upload</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../devices_get/">Get</a>
@@ -113,10 +117,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../enterprises_get-android-device-policy-config/">Get Android Device Policy Config</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../enterprises_get-service-account/">Get Service Account</a>
                 </li>
                 <li class="">
@@ -138,10 +138,6 @@
                 <li class="">
                     
     <a class="" href="../enterprises_set-account/">Set Account</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../enterprises_set-android-device-policy-config/">Set Android Device Policy Config</a>
                 </li>
                 <li class="">
                     
@@ -499,6 +495,37 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Webapps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../webapps_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../webapps_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -509,7 +536,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.8+20181003</a>
+        <a href="..">Android Enterprise v1.0.10+20190624</a>
       </nav>
 
       
@@ -567,15 +594,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>A pagination token is contained in a request&#39;&#39;s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p query=string</strong></p>
-<ul>
-<li>The search query as typed in the Google Play store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not available in the store (e.g. unpublished apps).</li>
+<li>Specifies the maximum number of products that can be returned per request. If not specified, uses a default value of 100, which is also the maximum retrievable within a single response.</li>
 </ul>
 </li>
 <li>
@@ -585,15 +606,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Specifies the maximum number of products that can be returned per request. If not specified, uses a default value of 100, which is also the maximum retrievable within a single response.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p language=string</strong></p>
 <ul>
 <li>The BCP47 tag for the user&#39;s preferred language (e.g. &#34;en-US&#34;, &#34;de&#34;). Results are returned in the language best matching the preferred language.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p query=string</strong></p>
+<ul>
+<li>The search query as typed in the Google Play store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not available in the store (e.g. unpublished apps).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p token=string</strong></p>
+<ul>
+<li>A pagination token is contained in a request&#39;s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
 </ul>
 </li>
 </ul>
@@ -663,7 +690,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Jobs Search - Cloud Talent Solution v1.0.8+20181008</title>
+  <title>Jobs Search - Cloud Talent Solution v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_client-events-create/">Client Events Create</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_companies-create/">Companies Create</a>
@@ -149,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Talent Solution v1.0.8+20181008</a>
+        <a href="..">Cloud Talent Solution v1.0.10+20190702</a>
       </nav>
 
       
@@ -208,6 +212,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>SearchJobsRequest:
   disable-keyword-match: boolean
+  diversification-level: string
   enable-broadening: boolean
   histogram-facets:
     simple-histogram-facets: [string]
@@ -289,13 +294,23 @@ Company.keyword_searchable_custom_attributes if company specific
 globally matched custom field/attribute string values is needed. Enabling
 keyword match improves recall of subsequent search requests.</p>
 <p>Defaults to false.
-* <code>enable-broadening=false</code>
+* <code>diversification-level=consetetur</code>
+    - Optional.</p>
+<p>Controls whether highly similar jobs are returned next to each other in
+the search results. Jobs are identified as highly similar based on
+their titles, job categories, and locations. Highly similar results are
+clustered so that only one representative job of the cluster is
+displayed to the job seeker higher up in the results, with the other jobs
+being displayed lower down in the results.</p>
+<p>Defaults to DiversificationLevel.SIMPLE if no value
+is specified.
+* <code>enable-broadening=true</code>
     - Optional.</p>
 <p>Controls whether to broaden the search when it produces sparse results.
 Broadened queries append results to the end of the matching results
 list.</p>
 <p>Defaults to false.
-* <code>histogram-facets    simple-histogram-facets=rebum.</code>
+* <code>histogram-facets    simple-histogram-facets=sed</code>
     - Optional.</p>
 <p>Specifies the simple type of histogram facets, for example,
 <code>COMPANY_SIZE</code>, <code>EMPLOYMENT_TYPE</code> etc.
@@ -306,48 +321,48 @@ list.</p>
 <li>
 <p><code>..job-query.commute-filter    allow-imprecise-addresses=true</code></p>
 <ul>
-<li>Optional.
-    If <code>true</code>, jobs without street level addresses may also be returned.
-    For city level addresses, the city center is used. For state and coarser
-    level addresses, text matching is used.
-    If this field is set to <code>false</code> or is not specified, only jobs that include
-    street level addresses will be returned by commute search.</li>
-</ul>
-</li>
 <li>
-<p><code>commute-method=clita</code></p>
-<ul>
-<li>
-<p>Required.</p>
+<p>Optional.
+    If true, jobs without &#34;precise&#34; addresses (street level addresses or GPS
+    coordinates) might also be returned. For city and coarser level addresses,
+    text matching is used. If this field is set to false or is not specified,
+    only jobs that include precise addresses are returned by Commute
+    Search.</p>
+<p>Note: If <code>allow_imprecise_addresses</code> is set to true, Commute Search is not
+able to calculate accurate commute times to jobs with city level and
+coarser address information. Jobs with imprecise addresses will return a
+<code>travel_duration</code> time of 0 regardless of distance from the job seeker.
+* <code>commute-method=takimata</code>
+    - Required.</p>
 <p>The method of transportation for which to calculate the commute time.
-<em> <code>departure-time    hours=64</code>
+* <code>departure-time    hours=58</code>
     - Hours of day in 24 hour format. Should be from 0 to 23. An API may choose
 to allow the value &#34;24:00:00&#34; for scenarios like business closing time.
-</em> <code>minutes=11</code>
+* <code>minutes=10</code>
     - Minutes of hour of day. Must be from 0 to 59.
-<em> <code>nanos=24</code>
+* <code>nanos=86</code>
     - Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
-</em> <code>seconds=5</code>
+* <code>seconds=95</code>
     - Seconds of minutes of the time. Must normally be from 0 to 59. An API may
 allow the value 60 if it allows leap-seconds.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    road-traffic=et</code></p>
+<p><code>..    road-traffic=lorem</code></p>
 <ul>
 <li>
 <p>Optional.</p>
-<p>Specifies the traffic density to use when caculating commute time.
-<em> <code>start-coordinates    latitude=0.212469304768</code>
+<p>Specifies the traffic density to use when calculating commute time.
+* <code>start-coordinates    latitude=0.590957974431</code>
     - The latitude in degrees. It must be in the range [-90.0, +90.0].
-</em> <code>longitude=0.534968289199</code>
+* <code>longitude=0.644233227098</code>
     - The longitude in degrees. It must be in the range [-180.0, +180.0].</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    travel-duration=takimata</code></p>
+<p><code>..    travel-duration=ut</code></p>
 <ul>
 <li>
 <p>Required.</p>
@@ -357,7 +372,7 @@ allow the value 60 if it allows leap-seconds.</p>
 </ul>
 </li>
 <li>
-<p><code>..    company-display-names=elitr</code></p>
+<p><code>..    company-display-names=amet.</code></p>
 <ul>
 <li>
 <p>Optional.</p>
@@ -369,7 +384,7 @@ associated with any company.</p>
 associated with any of the specified companies.</p>
 <p>At most 20 company display name filters are allowed.
     - Each invocation of this argument appends the given value to the array.
-* <code>company-names=nonumy</code>
+* <code>company-names=ipsum</code>
     - Optional.</p>
 <p>This filter specifies the company entities to search against.</p>
 <p>If a value isn&#39;t specified, jobs are searched for against all
@@ -380,31 +395,32 @@ companies specified.</p>
 &#34;projects/api-test-project/companies/foo&#34;.</p>
 <p>At most 20 company filters are allowed.
     - Each invocation of this argument appends the given value to the array.
-* <code>compensation-filter    include-jobs-with-unspecified-compensation-range=true</code>
+* <code>compensation-filter    include-jobs-with-unspecified-compensation-range=false</code>
     - Optional.</p>
-<p>Whether to include jobs whose compensation range is unspecified.
-<em> <code>range.max-compensation    currency-code=lorem</code>
+<p>If set to true, jobs with unspecified compensation range fields are
+included.
+* <code>range.max-compensation    currency-code=dolor</code>
     - The 3-letter currency code defined in ISO 4217.
-</em> <code>nanos=51</code>
+* <code>nanos=92</code>
     - Number of nano (10^-9) units of the amount.
 The value must be between -999,999,999 and +999,999,999 inclusive.
 If <code>units</code> is positive, <code>nanos</code> must be positive or zero.
 If <code>units</code> is zero, <code>nanos</code> can be positive, zero, or negative.
 If <code>units</code> is negative, <code>nanos</code> must be negative or zero.
 For example $-1.75 is represented as <code>units</code>=-1 and <code>nanos</code>=-750,000,000.
-* <code>units=diam</code>
+* <code>units=ut</code>
     - The whole units of the amount.
 For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..min-compensation    currency-code=ut</code></p>
+<p><code>..min-compensation    currency-code=eirmod</code></p>
 <ul>
 <li>The 3-letter currency code defined in ISO 4217.</li>
 </ul>
 </li>
-<li><code>nanos=64</code><ul>
+<li><code>nanos=93</code><ul>
 <li>Number of nano (10^-9) units of the amount.
     The value must be between -999,999,999 and +999,999,999 inclusive.
     If <code>units</code> is positive, <code>nanos</code> must be positive or zero.
@@ -414,19 +430,19 @@ For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, 
 </ul>
 </li>
 <li>
-<p><code>units=amet.</code></p>
+<p><code>units=voluptua.</code></p>
 <ul>
 <li>The whole units of the amount.
     For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
 </ul>
 </li>
 <li>
-<p><code>...    type=ipsum</code></p>
+<p><code>...    type=dolor</code></p>
 <ul>
 <li>
 <p>Required.</p>
 <p>Type of filter.
-* <code>units=ut</code>
+* <code>units=et</code>
     - Required.</p>
 <p>Specify desired <code>base compensation entry&amp;#39;s</code>
 CompensationInfo.CompensationUnit.
@@ -435,7 +451,7 @@ CompensationInfo.CompensationUnit.
 </ul>
 </li>
 <li>
-<p><code>..    custom-attribute-filter=dolor</code></p>
+<p><code>..    custom-attribute-filter=et</code></p>
 <ul>
 <li>
 <p>Optional.</p>
@@ -450,9 +466,9 @@ quote (\&#34;) characters.</p>
 perform a case insensitive match and <code>EMPTY([field_name])</code> to filter on the
 existence of a key.</p>
 <p>Boolean expressions (AND/OR/NOT) are supported up to 3 levels of
-nesting (for example, &#34;((A AND B AND C) OR NOT D) AND E&#34;), a maximum of 50
+nesting (for example, &#34;((A AND B AND C) OR NOT D) AND E&#34;), a maximum of 100
 comparisons or functions are allowed in the expression. The expression
-must be &lt; 3000 characters in length.</p>
+must be &lt; 3000 bytes in length.</p>
 <p>Sample Query:
 <code>(LOWER(driving_license)=&amp;#34;class \&amp;#34;a\&amp;#34;&amp;#34; OR EMPTY(driving_license)) AND
 driving_years &amp;gt; 10</code>
@@ -471,7 +487,7 @@ employment type.</p>
 <p>If multiple values are specified, jobs in the search results include
 any of the specified employment types.
     - Each invocation of this argument appends the given value to the array.
-* <code>job-categories=eirmod</code>
+* <code>job-categories=sed</code>
     - Optional.</p>
 <p>The category filter specifies the categories of jobs to search against.
 See Category for more information.</p>
@@ -479,7 +495,7 @@ See Category for more information.</p>
 <p>If multiple values are specified, jobs from any of the specified
 categories are searched against.
     - Each invocation of this argument appends the given value to the array.
-* <code>language-codes=sanctus</code>
+* <code>language-codes=et</code>
     - Optional.</p>
 <p>This filter specifies the locale of jobs to search against,
 for example, &#34;en-US&#34;.</p>
@@ -490,15 +506,15 @@ For more information, see
 <a href="https://tools.ietf.org/html/bcp47">Tags for Identifying Languages</a>.</p>
 <p>At most 10 language code filters are allowed.
     - Each invocation of this argument appends the given value to the array.
-<em> <code>publish-time-range    end-time=voluptua.</code>
+* <code>publish-time-range    end-time=ipsum</code>
     - End of the period.
-</em> <code>start-time=dolor</code>
+* <code>start-time=justo</code>
     - Begin of the period.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    query=et</code></p>
+<p><code>..    query=dolore</code></p>
 <ul>
 <li>
 <p>Optional.</p>
@@ -509,13 +525,13 @@ location fields.</p>
 </ul>
 </li>
 <li>
-<p><code>..    job-view=et</code></p>
+<p><code>..    job-view=vero</code></p>
 <ul>
 <li>
 <p>Optional.</p>
 <p>The desired job attributes returned for jobs in the
 search response. Defaults to JobView.SMALL if no value is specified.
-* <code>offset=75</code>
+* <code>offset=2</code>
     - Optional.</p>
 <p>An integer that specifies the current offset (that is, starting result
 location, amongst the jobs deemed by the API as relevant) in search
@@ -524,36 +540,38 @@ results. This field is only considered if page_token is unset.</p>
 job, and 10 means to return from the 11th job. This can be used for
 pagination, (for example, pageSize = 10 and offset = 10 means to return
 from the second page).
-* <code>order-by=ut</code>
+* <code>order-by=takimata</code>
     - Optional.</p>
 <p>The criteria determining how search results are sorted. Default is
 &#34;relevance desc&#34;.</p>
 <p>Supported options are:</p>
 <ul>
-<li>&#34;relevance desc&#34;: By relevance descending, as determined by the API
+<li><code>&amp;#34;relevance desc&amp;#34;</code>: By relevance descending, as determined by the API
 algorithms. Relevance thresholding of query results is only available
 with this ordering.</li>
-<li>&#34;posting<code>_</code>publish<code>_</code>time desc&#34;: By Job.posting_publish_time descending.</li>
-<li>&#34;posting<code>_</code>update<code>_</code>time desc&#34;: By Job.posting_update_time descending.</li>
-<li>&#34;title&#34;: By Job.title ascending.</li>
-<li>&#34;title desc&#34;: By Job.title descending.</li>
-<li>&#34;annualized<code>_</code>base<code>_</code>compensation&#34;: By job&#39;s
+<li><code>&amp;#34;posting_publish_time desc&amp;#34;</code>: By Job.posting_publish_time
+descending.</li>
+<li><code>&amp;#34;posting_update_time desc&amp;#34;</code>: By Job.posting_update_time
+descending.</li>
+<li><code>&amp;#34;title&amp;#34;</code>: By Job.title ascending.</li>
+<li><code>&amp;#34;title desc&amp;#34;</code>: By Job.title descending.</li>
+<li><code>&amp;#34;annualized_base_compensation&amp;#34;</code>: By job&#39;s
 CompensationInfo.annualized_base_compensation_range ascending. Jobs
 whose annualized base compensation is unspecified are put at the end of
 search results.</li>
-<li>&#34;annualized<code>_</code>base<code>_</code>compensation desc&#34;: By job&#39;s
+<li><code>&amp;#34;annualized_base_compensation desc&amp;#34;</code>: By job&#39;s
 CompensationInfo.annualized_base_compensation_range descending. Jobs
 whose annualized base compensation is unspecified are put at the end of
 search results.</li>
-<li>&#34;annualized<code>_</code>total<code>_</code>compensation&#34;: By job&#39;s
+<li><code>&amp;#34;annualized_total_compensation&amp;#34;</code>: By job&#39;s
 CompensationInfo.annualized_total_compensation_range ascending. Jobs
 whose annualized base compensation is unspecified are put at the end of
 search results.</li>
-<li>&#34;annualized<code>_</code>total<code>_</code>compensation desc&#34;: By job&#39;s
+<li><code>&amp;#34;annualized_total_compensation desc&amp;#34;</code>: By job&#39;s
 CompensationInfo.annualized_total_compensation_range descending. Jobs
 whose annualized base compensation is unspecified are put at the end of
 search results.</li>
-<li><code>page-size=71</code><ul>
+<li><code>page-size=80</code><ul>
 <li>Optional.</li>
 </ul>
 </li>
@@ -561,15 +579,15 @@ search results.</li>
 <p>A limit on the number of jobs returned in the search results.
 Increasing this value above the default value of 10 can increase search
 response time. The value can be between 1 and 100.
-* <code>page-token=et</code>
+* <code>page-token=nonumy</code>
     - Optional.</p>
 <p>The token specifying the current offset within
 search results. See SearchJobsResponse.next_page_token for
 an explanation of how to obtain the next set of query results.
-* <code>request-metadata.device-info    device-type=ipsum</code>
+* <code>request-metadata.device-info    device-type=et</code>
     - Optional.</p>
 <p>Type of the device.
-* <code>id=justo</code>
+* <code>id=sed</code>
     - Optional.</p>
 <p>A device-specific ID. The ID must be a unique identifier that
 distinguishes the device from other devices.</p>
@@ -577,7 +595,7 @@ distinguishes the device from other devices.</p>
 </ul>
 </li>
 <li>
-<p><code>..    domain=dolore</code></p>
+<p><code>..    domain=no</code></p>
 <ul>
 <li>
 <p>Required.</p>
@@ -592,7 +610,7 @@ career site.</p>
 Any improvements to the model for a particular tenant site rely on this
 field being set correctly to a domain.</p>
 <p>The maximum number of allowed characters is 255.
-* <code>session-id=vero</code>
+* <code>session-id=invidunt</code>
     - Required.</p>
 <p>A unique session identification string. A session is defined as the
 duration of an end user&#39;s interaction with the service over a certain
@@ -603,7 +621,7 @@ providing it to the service.</p>
 that any improvements to the model for a particular tenant
 site, rely on this field being set correctly to some unique session_id.</p>
 <p>The maximum number of allowed characters is 255.
-* <code>user-id=dolor</code>
+* <code>user-id=rebum.</code>
     - Required.</p>
 <p>A unique user identification string, as determined by the client.
 To have the strongest positive impact on search quality
@@ -629,7 +647,7 @@ value to true if a client allows users to jump directly to a
 non-sequential search results page.</p>
 <p>Enabling this flag may adversely impact performance.</p>
 <p>Defaults to false.
-* <code>search-mode=et</code>
+* <code>search-mode=aliquyam</code>
     - Optional.</p>
 <p>Mode of a search.</p>
 <p>Defaults to SearchMode.JOB_SEARCH.</p>
@@ -746,7 +764,7 @@ non-sequential search results page.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

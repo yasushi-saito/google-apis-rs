@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances Databases Sessions Execute Streaming Sql - Spanner v1.0.8+20180920</title>
+  <title>Instances Databases Sessions Execute Streaming Sql - Spanner v1.0.10+20190613</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.8+20180920</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.10+20190613</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -123,6 +123,10 @@
                 <li class="">
                     
     <a class="" href="../projects_instances-databases-sessions-delete/">Instances Databases Sessions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_instances-databases-sessions-execute-batch-dml/">Instances Databases Sessions Execute Batch Dml</a>
                 </li>
                 <li class="">
                     
@@ -253,7 +257,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.8+20180920</a>
+        <a href="..">Spanner v1.0.10+20190613</a>
       </nav>
 
       
@@ -335,20 +339,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    partition-token=invidunt</code><ul>
+<li><code>-r .    partition-token=ut</code><ul>
 <li>If present, results will be restricted to the specified partition
     previously created using PartitionQuery().  There must be an exact
     match for the values of fields common to this message and the
     PartitionQueryRequest message used to create this partition_token.</li>
 </ul>
 </li>
-<li><code>query-mode=aliquyam</code><ul>
+<li><code>query-mode=ea</code><ul>
 <li>Used to control the amount of debugging information returned in
     ResultSetStats. If partition_token is set, query_mode can only
     be set to QueryMode.NORMAL.</li>
 </ul>
 </li>
-<li><code>resume-token=accusam</code><ul>
+<li><code>resume-token=sed</code><ul>
 <li>If this request is resuming a previously interrupted SQL statement
     execution, <code>resume_token</code> should be copied from the last
     PartialResultSet yielded before the interruption. Doing this
@@ -358,7 +362,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>seqno=lorem</code></p>
+<p><code>seqno=dolor</code></p>
 <ul>
 <li>
 <p>A per-transaction sequence number used to identify this request. This
@@ -369,9 +373,9 @@ transaction. If a request arrives for the first time with an out-of-order
 sequence number, the transaction may be aborted. Replays of previously
 handled requests will yield the same response as the first execution.</p>
 <p>Required for DML statements. Ignored for queries.
-<em> <code>sql=sea</code>
+* <code>sql=dolor</code>
     - Required. The SQL string.
-</em> <code>transaction.begin.read-only    exact-staleness=et</code>
+* <code>transaction.begin.read-only    exact-staleness=dolor</code>
     - Executes all reads at a timestamp that is <code>exact_staleness</code>
 old. The timestamp is chosen soon after the read is started.</p>
 <p>Guarantees that all writes that have committed more than the
@@ -381,7 +385,7 @@ local clock is substantially skewed from Cloud Spanner commit
 timestamps.</p>
 <p>Useful for reading at nearby replicas without the distributed
 timestamp negotiation overhead of <code>max_staleness</code>.
-* <code>max-staleness=duo</code>
+* <code>max-staleness=et</code>
     - Read data at a timestamp &gt;= <code>NOW - max_staleness</code>
 seconds. Guarantees that all writes that have committed more
 than the specified number of seconds ago are visible. Because
@@ -393,7 +397,7 @@ replica, while bounding the possible staleness if the local
 replica has fallen behind.</p>
 <p>Note that this option can only be used in single-use
 transactions.
-* <code>min-read-timestamp=et</code>
+* <code>min-read-timestamp=consetetur</code>
     - Executes all reads at a timestamp &gt;= <code>min_read_timestamp</code>.</p>
 <p>This is useful for requesting fresher data than some previous
 read, or data that is fresh enough to observe the effects of some
@@ -401,7 +405,7 @@ previously committed transaction whose timestamp is known.</p>
 <p>Note that this option can only be used in single-use transactions.</p>
 <p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
 Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
-* <code>read-timestamp=eirmod</code>
+* <code>read-timestamp=amet.</code>
     - Executes all reads at the given timestamp. Unlike other modes,
 reads at a specific timestamp are repeatable; the same read at
 the same timestamp always returns the same data. If the
@@ -412,22 +416,22 @@ for coordinating many reads against a consistent snapshot of the
 data.</p>
 <p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
 Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
-<em> <code>return-read-timestamp=false</code>
+* <code>return-read-timestamp=true</code>
     - If true, the Cloud Spanner-selected read timestamp is included in
 the Transaction message that describes the transaction.
-</em> <code>strong=true</code>
+* <code>strong=false</code>
     - Read at a timestamp where all previously committed transactions
 are visible.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>...    id=amet</code></p>
+<p><code>...    id=gubergren</code></p>
 <ul>
 <li>Execute the read or SQL query in a previously-started transaction.</li>
 </ul>
 </li>
-<li><code>single-use.read-only    exact-staleness=et</code><ul>
+<li><code>single-use.read-only    exact-staleness=justo</code><ul>
 <li>
 <p>Executes all reads at a timestamp that is <code>exact_staleness</code>
     old. The timestamp is chosen soon after the read is started.</p>
@@ -438,7 +442,7 @@ local clock is substantially skewed from Cloud Spanner commit
 timestamps.</p>
 <p>Useful for reading at nearby replicas without the distributed
 timestamp negotiation overhead of <code>max_staleness</code>.
-* <code>max-staleness=consetetur</code>
+* <code>max-staleness=sit</code>
     - Read data at a timestamp &gt;= <code>NOW - max_staleness</code>
 seconds. Guarantees that all writes that have committed more
 than the specified number of seconds ago are visible. Because
@@ -450,7 +454,7 @@ replica, while bounding the possible staleness if the local
 replica has fallen behind.</p>
 <p>Note that this option can only be used in single-use
 transactions.
-* <code>min-read-timestamp=ut</code>
+* <code>min-read-timestamp=vero</code>
     - Executes all reads at a timestamp &gt;= <code>min_read_timestamp</code>.</p>
 <p>This is useful for requesting fresher data than some previous
 read, or data that is fresh enough to observe the effects of some
@@ -458,7 +462,7 @@ previously committed transaction whose timestamp is known.</p>
 <p>Note that this option can only be used in single-use transactions.</p>
 <p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
 Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
-* <code>read-timestamp=ea</code>
+* <code>read-timestamp=diam</code>
     - Executes all reads at the given timestamp. Unlike other modes,
 reads at a specific timestamp are repeatable; the same read at
 the same timestamp always returns the same data. If the
@@ -469,10 +473,10 @@ for coordinating many reads against a consistent snapshot of the
 data.</p>
 <p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
 Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
-<em> <code>return-read-timestamp=false</code>
+* <code>return-read-timestamp=false</code>
     - If true, the Cloud Spanner-selected read timestamp is included in
 the Transaction message that describes the transaction.
-</em> <code>strong=true</code>
+* <code>strong=true</code>
     - Read at a timestamp where all previously committed transactions
 are visible.</p>
 </li>
@@ -588,7 +592,7 @@ are visible.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

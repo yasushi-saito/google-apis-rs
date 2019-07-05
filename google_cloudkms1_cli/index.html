@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud KMS (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud KMS v1.0.8+20181005</title>
+  <title>Home - Cloud KMS v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud KMS v1.0.8+20181005</a>
+        <a href="." class="icon icon-home"> Cloud KMS v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -115,6 +115,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_locations-key-rings-crypto-keys-crypto-key-versions-import/">Locations Key Rings Crypto Keys Crypto Key Versions Import</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_locations-key-rings-crypto-keys-crypto-key-versions-list/">Locations Key Rings Crypto Keys Crypto Key Versions List</a>
                 </li>
                 <li class="">
@@ -171,6 +175,30 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_locations-key-rings-import-jobs-create/">Locations Key Rings Import Jobs Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-key-rings-import-jobs-get/">Locations Key Rings Import Jobs Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-key-rings-import-jobs-get-iam-policy/">Locations Key Rings Import Jobs Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-key-rings-import-jobs-list/">Locations Key Rings Import Jobs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-key-rings-import-jobs-set-iam-policy/">Locations Key Rings Import Jobs Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-key-rings-import-jobs-test-iam-permissions/">Locations Key Rings Import Jobs Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_locations-key-rings-list/">Locations Key Rings List</a>
                 </li>
                 <li class="">
@@ -198,7 +226,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud KMS v1.0.8+20181005</a>
+        <a href=".">Cloud KMS v1.0.10+20190626</a>
       </nav>
 
       
@@ -242,7 +270,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudkms1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud KMS</em> API at revision <em>20181005</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Cloud KMS</em> API at revision <em>20190626</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">cloudkms1 [options]
         projects
                 locations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -254,6 +282,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 locations-key-rings-crypto-keys-crypto-key-versions-destroy &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-crypto-keys-crypto-key-versions-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-crypto-keys-crypto-key-versions-get-public-key &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-crypto-keys-crypto-key-versions-import &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-crypto-keys-crypto-key-versions-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-crypto-keys-crypto-key-versions-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-crypto-keys-crypto-key-versions-restore &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -268,6 +297,12 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 locations-key-rings-crypto-keys-update-primary-version &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-get-iam-policy &lt;resource&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-get-iam-policy &lt;resource&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-key-rings-import-jobs-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-key-rings-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -347,7 +382,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -379,5 +414,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:49:30
+Build Date UTC : 2019-07-05 11:13:32
 -->

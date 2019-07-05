@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - Photos Library v1.0.8+20181004</title>
+  <title>Create - Photos Library v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Photos Library v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Photos Library v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -59,6 +59,14 @@
                 <li class="">
                     
     <a class="" href="../albums_add-enrichment/">Add Enrichment</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_batch-add-media-items/">Batch Add Media Items</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_batch-remove-media-items/">Batch Remove Media Items</a>
                 </li>
                 <li class=" current">
                     
@@ -97,6 +105,10 @@
                     
     <a class="" href="../albums_share/">Share</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../albums_unshare/">Unshare</a>
+                </li>
     </ul>
 	    </li>
           
@@ -107,6 +119,10 @@
                 <li class="">
                     
     <a class="" href="../media-items_batch-create/">Batch Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../media-items_batch-get/">Batch Get</a>
                 </li>
                 <li class="">
                     
@@ -137,6 +153,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../shared-albums_leave/">Leave</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../shared-albums_list/">List</a>
                 </li>
     </ul>
@@ -152,7 +172,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Photos Library v1.0.8+20181004</a>
+        <a href="..">Photos Library v1.0.10+20190702</a>
       </nav>
 
       
@@ -216,50 +236,53 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .album    cover-photo-base-url=sea</code><ul>
+<li><code>-r .album    cover-photo-base-url=dolores</code><ul>
 <li>[Output only] A URL to the cover photo&#39;s bytes. This shouldn&#39;t be used as
-    is. Parameters should be appended to this URL before use. For example,
-    <code>&amp;#39;=w2048-h1024&amp;#39;</code> sets the dimensions of
-    the cover photo to have a width of 2048 px and height of 1024 px.</li>
+    is. Parameters should be appended to this URL before use. See the
+    <a href="https://developers.google.com/photos/library/guides/access-media-items#base-urls">developer
+    documentation</a>
+    for a complete list of supported parameters. For example,
+    <code>&amp;#39;=w2048-h1024&amp;#39;</code> sets the dimensions of the cover photo to have a width of
+    2048 px and height of 1024 px.</li>
 </ul>
 </li>
-<li><code>cover-photo-media-item-id=nonumy</code><ul>
+<li><code>cover-photo-media-item-id=gubergren</code><ul>
 <li>[Output only] Identifier for the media item associated with the cover
     photo.</li>
 </ul>
 </li>
-<li><code>id=dolores</code><ul>
+<li><code>id=sadipscing</code><ul>
 <li>[Ouput only] Identifier for the album. This is a persistent identifier that
     can be used between sessions to identify this album.</li>
 </ul>
 </li>
-<li><code>is-writeable=false</code><ul>
+<li><code>is-writeable=true</code><ul>
 <li>[Output only] True if you can create media items in this album.
     This field is based on the scopes granted and permissions of the album. If
     the scopes are changed or permissions of the album are changed, this field
     is updated.</li>
 </ul>
 </li>
-<li><code>media-items-count=-95</code><ul>
+<li><code>media-items-count=-66</code><ul>
 <li>[Output only] The number of media items in the album.</li>
 </ul>
 </li>
-<li><code>product-url=aliquyam</code><ul>
+<li><code>product-url=no</code><ul>
 <li>[Output only] Google Photos URL for the album. The user needs to be signed
     in to their Google Photos account to access this link.</li>
 </ul>
 </li>
-<li><code>share-info    is-joined=false</code><ul>
+<li><code>share-info    is-joined=true</code><ul>
 <li>True if the user has joined the album. This is always true for the owner
     of the shared album.</li>
 </ul>
 </li>
-<li><code>share-token=no</code><ul>
+<li><code>share-token=justo</code><ul>
 <li>A token that can be used by other users to join this shared album via the
     API.</li>
 </ul>
 </li>
-<li><code>shareable-url=justo</code><ul>
+<li><code>shareable-url=et</code><ul>
 <li>A link to the album that&#39;s now shared on the Google Photos website and app.
     Anyone with the link can access this shared album and see all of the items
     present in the album.</li>
@@ -278,7 +301,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    title=et</code></p>
+<p><code>...    title=ipsum</code></p>
 <ul>
 <li>Name of the album displayed to the user in their Google Photos account.
     This string shouldn&#39;t be more than 500 characters.</li>
@@ -384,7 +407,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../albums_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../albums_add-enrichment/" class="btn btn-neutral" title="Add Enrichment"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../albums_batch-remove-media-items/" class="btn btn-neutral" title="Batch Remove Media Items"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -394,7 +417,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -414,7 +437,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/photoslibrary1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../albums_add-enrichment/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../albums_batch-remove-media-items/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../albums_get/" style="color: #fcfcfc">Next &raquo;</a></span>

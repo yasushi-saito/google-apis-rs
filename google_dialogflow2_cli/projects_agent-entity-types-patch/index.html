@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Agent Entity Types Patch - Dialogflow v1.0.8+20181009</title>
+  <title>Agent Entity Types Patch - Dialogflow v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dialogflow v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Dialogflow v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_agent/">Agent</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_agent-entity-types-batch-delete/">Agent Entity Types Batch Delete</a>
@@ -221,6 +225,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_delete-agent/">Delete Agent</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_get-agent/">Get Agent</a>
                 </li>
                 <li class="">
@@ -240,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dialogflow v1.0.8+20181009</a>
+        <a href="..">Dialogflow v1.0.10+20190629</a>
       </nav>
 
       
@@ -271,16 +279,20 @@
               
                 <p>Updates the specified entity type.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/dialogflow</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>dialogflow2 --scope &lt;scope&gt; projects agent-entity-types-patch ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>Required for all methods except <code>create</code> (<code>create</code> populates the name
-    automatically.
-    The unique identifier of the entity type. Format:
-    <code>projects/&amp;lt;Project ID&amp;gt;/agent/entityTypes/&amp;lt;Entity Type ID&amp;gt;</code>.</li>
+<li>The unique identifier of the entity type.
+    Required for EntityTypes.UpdateEntityType and
+    EntityTypes.BatchUpdateEntityTypes methods.
+    Format: <code>projects/&amp;lt;Project ID&amp;gt;/agent/entityTypes/&amp;lt;Entity Type ID&amp;gt;</code>.</li>
 </ul>
 </li>
 </ul>
@@ -298,24 +310,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auto-expansion-mode=sea</code><ul>
+<li><code>-r .    auto-expansion-mode=diam</code><ul>
 <li>Optional. Indicates whether the entity type can be automatically
     expanded.</li>
 </ul>
 </li>
-<li><code>display-name=nonumy</code><ul>
+<li><code>display-name=ipsum</code><ul>
 <li>Required. The name of the entity type.</li>
 </ul>
 </li>
-<li><code>kind=dolores</code><ul>
+<li><code>kind=lorem</code><ul>
 <li>Required. Indicates the kind of entity type.</li>
 </ul>
 </li>
-<li><code>name=gubergren</code><ul>
-<li>Required for all methods except <code>create</code> (<code>create</code> populates the name
-    automatically.
-    The unique identifier of the entity type. Format:
-    <code>projects/&amp;lt;Project ID&amp;gt;/agent/entityTypes/&amp;lt;Entity Type ID&amp;gt;</code>.</li>
+<li><code>name=et</code><ul>
+<li>The unique identifier of the entity type.
+    Required for EntityTypes.UpdateEntityType and
+    EntityTypes.BatchUpdateEntityTypes methods.
+    Format: <code>projects/&amp;lt;Project ID&amp;gt;/agent/entityTypes/&amp;lt;Entity Type ID&amp;gt;</code>.</li>
 </ul>
 </li>
 </ul>
@@ -344,19 +356,20 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p update-mask=string</strong></p>
-<ul>
-<li>Optional. The mask to control which fields get updated.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p language-code=string</strong></p>
 <ul>
 <li>Optional. The language of entity synonyms defined in <code>entity_type</code>. If not
     specified, the agent&#39;s default language is used.
-    <a href="https://dialogflow.com/docs/reference/language">More than a dozen
-    languages</a> are supported.
-    Note: languages must be enabled in the agent, before they can be used.</li>
+    <a href="https://cloud.google.com/dialogflow/docs/reference/language">Many
+    languages</a>
+    are supported. Note: languages must be enabled in the agent before they can
+    be used.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-mask=string</strong></p>
+<ul>
+<li>Optional. The mask to control which fields get updated.</li>
 </ul>
 </li>
 </ul>
@@ -450,7 +463,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Batch Get Assets History - Cloud Asset v1.0.8+20181008</title>
+  <title>Batch Get Assets History - Cloud Asset v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Asset v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Asset v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -50,6 +50,21 @@
             <li class="toctree-l1">
 		
     <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Folders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../folders_export-assets/">Export Assets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_operations-get/">Operations Get</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -118,7 +133,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Asset v1.0.8+20181008</a>
+        <a href="..">Cloud Asset v1.0.10+20190625</a>
       </nav>
 
       
@@ -151,7 +166,9 @@
 For RESOURCE content, this API outputs history with asset in both
 non-delete or deleted status.
 For IAM_POLICY content, this API outputs history when the asset and its
-attached IAM POLICY both exist. This can create gaps in the output history.</p>
+attached IAM POLICY both exist. This can create gaps in the output history.
+If a specified asset does not exist, this API returns an INVALID_ARGUMENT
+error.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -187,7 +204,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p>A list of the full names of the assets. For example:
     <code>//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1</code>.
-    See <a href="https://cloud.google.com/apis/design/resource_names#full_resource_name">Resource Names</a>
+    See <a href="https://cloud.google.com/apis/design/resource_names#full_resource_name">Resource
+    Names</a>
     for more info.</p>
 <p>The request becomes a no-op if the asset name list is empty, and the max
 size of the asset name list is 100 in one request.</p>
@@ -197,20 +215,20 @@ size of the asset name list is 100 in one request.</p>
 <li>
 <p><strong>-p read-time-window-end-time=string</strong></p>
 <ul>
-<li>End time of the time window (exclusive).
+<li>End time of the time window (inclusive).
     Current timestamp if not specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p read-time-window-start-time=string</strong></p>
+<ul>
+<li>Start time of the time window (exclusive).</li>
 </ul>
 </li>
 <li>
 <p><strong>-p content-type=string</strong></p>
 <ul>
 <li>Required. The content type.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p read-time-window-start-time=string</strong></p>
-<ul>
-<li>Start time of the time window (inclusive).</li>
 </ul>
 </li>
 </ul>
@@ -294,7 +312,7 @@ size of the asset name list is 100 in one request.</p>
         <a href="../organizations_export-assets/" class="btn btn-neutral float-right" title="Export Assets">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../folders_operations-get/" class="btn btn-neutral" title="Operations Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -304,7 +322,7 @@ size of the asset name list is 100 in one request.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -324,7 +342,7 @@ size of the asset name list is 100 in one request.</p>
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudasset1_beta1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../folders_operations-get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../organizations_export-assets/" style="color: #fcfcfc">Next &raquo;</a></span>

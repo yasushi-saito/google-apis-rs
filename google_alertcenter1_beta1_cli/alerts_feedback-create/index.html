@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Feedback Create - AlertCenter v1.0.8+20181011</title>
+  <title>Feedback Create - AlertCenter v1.0.10+20190628</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AlertCenter v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> AlertCenter v1.0.10+20190628</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -65,6 +65,9 @@
     <a class="current" href="./">Feedback Create</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
+
     <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
     
 
@@ -100,6 +103,25 @@
                     
     <a class="" href="../alerts_list/">List</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../alerts_undelete/">Undelete</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Methods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../methods_get-settings/">Get Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../methods_update-settings/">Update Settings</a>
+                </li>
     </ul>
 	    </li>
           
@@ -113,7 +135,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AlertCenter v1.0.8+20181011</a>
+        <a href="..">AlertCenter v1.0.10+20190628</a>
       </nav>
 
       
@@ -142,12 +164,16 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a new alert feedback.</p>
+                <p>Creates new feedback for an alert. Attempting to create a feedback for
+a non-existent alert returns <code>NOT_FOUND</code> error.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/apps.alerts</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/apps.alerts</em>.
+You can set the scope for this method like this: <code>alertcenter1-beta1 --scope &lt;scope&gt; alerts feedback-create ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;alert-id&gt;</strong> <em>(string)</em><ul>
-<li>Required. The identifier of the alert this feedback belongs to.
-    Returns a NOT_FOUND error if no such alert.</li>
+<li>Required. The identifier of the alert this feedback belongs to.</li>
 </ul>
 </li>
 </ul>
@@ -172,7 +198,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>create-time=sit</code><ul>
-<li>Output only. The time this feedback was created. Assigned by the server.</li>
+<li>Output only. The time this feedback was created.</li>
 </ul>
 </li>
 <li><code>customer-id=stet</code><ul>
@@ -184,8 +210,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>feedback-id=et</code><ul>
-<li>Output only. A unique identifier for the feedback. When creating a new
-    feedback the system will assign one.</li>
+<li>Output only. The unique identifier for the feedback.</li>
 </ul>
 </li>
 <li><code>type=dolores</code><ul>
@@ -218,10 +243,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p customer-id=string</strong><ul>
-<li>Optional. The unique identifier of the Google account of the customer the
-    alert&#39;s feedback is associated with. This is obfuscated and not the
-    plain customer ID as stored internally. Inferred from the caller identity
-    if not provided.</li>
+<li>Optional. The unique identifier of the G Suite organization account of the
+    customer the alert is associated with.
+    Inferred from the caller identity if not provided.</li>
 </ul>
 </li>
 </ul>
@@ -315,7 +339,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

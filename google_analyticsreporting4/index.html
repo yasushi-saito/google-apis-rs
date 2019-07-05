@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_analyticsreporting4` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_analyticsreporting4"><title>google_analyticsreporting4 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_analyticsreporting4/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_analyticsreporting4</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_analyticsreporting4's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_analyticsreporting4', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_analyticsreporting4/lib.rs.html#5-2397' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_analyticsreporting4</a></span></h1><div class='docblock'><p>This documentation was generated from <em>AnalyticsReporting</em> crate version <em>1.0.9+20190625</em>, where <em>20190625</em> is the exact revision of the <em>analyticsreporting:v4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>AnalyticsReporting</em> <em>v4</em> API can be found at the
+<a href="https://developers.google.com/analytics/devguides/reporting/core/v4/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/analyticsreporting4">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.AnalyticsReporting.html">hub</a> ... </p>
+<ul>
+<li><a href="struct.Report.html">reports</a></li>
+<li><a href="struct.ReportBatchGetCall.html"><em>batch get</em></a></li>
+<li>user activity</li>
+<li><a href="struct.UserActivitySearchCall.html"><em>search</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.AnalyticsReporting.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">user_activity</span>().<span class="ident">search</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-analyticsreporting4 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_analyticsreporting4</span> <span class="kw">as</span> <span class="ident">analyticsreporting4</span>;
+<span class="kw">use</span> <span class="ident">analyticsreporting4</span>::<span class="ident">SearchUserActivityRequest</span>;
+<span class="kw">use</span> <span class="ident">analyticsreporting4</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">analyticsreporting4</span>::<span class="ident">AnalyticsReporting</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">AnalyticsReporting</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// As the method needs a request, you would usually fill it with the desired information</span>
+<span class="comment">// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">req</span> <span class="op">=</span> <span class="ident">SearchUserActivityRequest</span>::<span class="ident">default</span>();
+ 
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">user_activity</span>().<span class="ident">search</span>(<span class="ident">req</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.Activity.html" title='google_analyticsreporting4::Activity struct'>Activity</a></td><td class='docblock-short'><p>An Activity represents data for an activity of a user. Note that an
+Activity is different from a hit.
+A hit might result in multiple Activity's. For example, if a hit
+includes a transaction and a goal completion, there will be two
+Activity protos for this hit, one for ECOMMERCE and one for GOAL.
+Conversely, multiple hits can also construct one Activity. In classic
+e-commerce, data for one transaction might be sent through multiple hits.
+These hits will be merged into one ECOMMERCE Activity.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AnalyticsReporting.html" title='google_analyticsreporting4::AnalyticsReporting struct'>AnalyticsReporting</a></td><td class='docblock-short'><p>Central instance to access all AnalyticsReporting related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_analyticsreporting4::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Cohort.html" title='google_analyticsreporting4::Cohort struct'>Cohort</a></td><td class='docblock-short'><p>Defines a cohort. A cohort is a group of users who share a common
+characteristic. For example, all users with the same acquisition date
+belong to the same cohort.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CohortGroup.html" title='google_analyticsreporting4::CohortGroup struct'>CohortGroup</a></td><td class='docblock-short'><p>Defines a cohort group.
+For example:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ColumnHeader.html" title='google_analyticsreporting4::ColumnHeader struct'>ColumnHeader</a></td><td class='docblock-short'><p>Column headers.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_analyticsreporting4::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CustomDimension.html" title='google_analyticsreporting4::CustomDimension struct'>CustomDimension</a></td><td class='docblock-short'><p>Custom dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateRange.html" title='google_analyticsreporting4::DateRange struct'>DateRange</a></td><td class='docblock-short'><p>A contiguous set of days: startDate, startDate + 1 day, ..., endDate.
+The start and end dates are specified in
+<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> date format <code>YYYY-MM-DD</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateRangeValues.html" title='google_analyticsreporting4::DateRangeValues struct'>DateRangeValues</a></td><td class='docblock-short'><p>Used to return a list of metrics for a single DateRange / dimension
+combination</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_analyticsreporting4::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Dimension.html" title='google_analyticsreporting4::Dimension struct'>Dimension</a></td><td class='docblock-short'><p><a href="https://support.google.com/analytics/answer/1033861">Dimensions</a>
+are attributes of your data. For example, the dimension <code>ga:city</code>
+indicates the city, for example, &quot;Paris&quot; or &quot;New York&quot;, from which
+a session originates.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DimensionFilter.html" title='google_analyticsreporting4::DimensionFilter struct'>DimensionFilter</a></td><td class='docblock-short'><p>Dimension filter specifies the filtering options on a dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DimensionFilterClause.html" title='google_analyticsreporting4::DimensionFilterClause struct'>DimensionFilterClause</a></td><td class='docblock-short'><p>A group of dimension filters. Set the operator value to specify how
+the filters are logically combined.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_analyticsreporting4::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.DynamicSegment.html" title='google_analyticsreporting4::DynamicSegment struct'>DynamicSegment</a></td><td class='docblock-short'><p>Dynamic segment definition for defining the segment within the request.
+A segment can select users, sessions or both.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EcommerceData.html" title='google_analyticsreporting4::EcommerceData struct'>EcommerceData</a></td><td class='docblock-short'><p>E-commerce details associated with the user activity.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_analyticsreporting4::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.EventData.html" title='google_analyticsreporting4::EventData struct'>EventData</a></td><td class='docblock-short'><p>Represents all the details pertaining to an event.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetReportsRequest.html" title='google_analyticsreporting4::GetReportsRequest struct'>GetReportsRequest</a></td><td class='docblock-short'><p>The batch request containing multiple report request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GetReportsResponse.html" title='google_analyticsreporting4::GetReportsResponse struct'>GetReportsResponse</a></td><td class='docblock-short'><p>The main response class which holds the reports from the Reporting API
+<code>batchGet</code> call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoalData.html" title='google_analyticsreporting4::GoalData struct'>GoalData</a></td><td class='docblock-short'><p>Represents all the details pertaining to a goal.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoalSetData.html" title='google_analyticsreporting4::GoalSetData struct'>GoalSetData</a></td><td class='docblock-short'><p>Represents a set of goals that were reached in an activity.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_analyticsreporting4::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_analyticsreporting4::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Metric.html" title='google_analyticsreporting4::Metric struct'>Metric</a></td><td class='docblock-short'><p><a href="https://support.google.com/analytics/answer/1033861">Metrics</a>
+are the quantitative measurements. For example, the metric <code>ga:users</code>
+indicates the total number of users for the requested time period.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MetricFilter.html" title='google_analyticsreporting4::MetricFilter struct'>MetricFilter</a></td><td class='docblock-short'><p>MetricFilter specifies the filter on a metric.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MetricFilterClause.html" title='google_analyticsreporting4::MetricFilterClause struct'>MetricFilterClause</a></td><td class='docblock-short'><p>Represents a group of metric filters.
+Set the operator value to specify how the filters are logically combined.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MetricHeader.html" title='google_analyticsreporting4::MetricHeader struct'>MetricHeader</a></td><td class='docblock-short'><p>The headers for the metrics.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MetricHeaderEntry.html" title='google_analyticsreporting4::MetricHeaderEntry struct'>MetricHeaderEntry</a></td><td class='docblock-short'><p>Header for the metrics.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_analyticsreporting4::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrFiltersForSegment.html" title='google_analyticsreporting4::OrFiltersForSegment struct'>OrFiltersForSegment</a></td><td class='docblock-short'><p>A list of segment filters in the <code>OR</code> group are combined with the logical OR
+operator.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.OrderBy.html" title='google_analyticsreporting4::OrderBy struct'>OrderBy</a></td><td class='docblock-short'><p>Specifies the sorting options.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PageviewData.html" title='google_analyticsreporting4::PageviewData struct'>PageviewData</a></td><td class='docblock-short'><p>Represents details collected when the visitor views a page.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Pivot.html" title='google_analyticsreporting4::Pivot struct'>Pivot</a></td><td class='docblock-short'><p>The Pivot describes the pivot section in the request.
+The Pivot helps rearrange the information in the table for certain reports
+by pivoting your data on a second dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotHeader.html" title='google_analyticsreporting4::PivotHeader struct'>PivotHeader</a></td><td class='docblock-short'><p>The headers for each of the pivot sections defined in the request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotHeaderEntry.html" title='google_analyticsreporting4::PivotHeaderEntry struct'>PivotHeaderEntry</a></td><td class='docblock-short'><p>The headers for the each of the metric column corresponding to the metrics
+requested in the pivots section of the response.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PivotValueRegion.html" title='google_analyticsreporting4::PivotValueRegion struct'>PivotValueRegion</a></td><td class='docblock-short'><p>The metric values in the pivot region.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProductData.html" title='google_analyticsreporting4::ProductData struct'>ProductData</a></td><td class='docblock-short'><p>Details of the products in an e-commerce transaction.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_analyticsreporting4::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Report.html" title='google_analyticsreporting4::Report struct'>Report</a></td><td class='docblock-short'><p>The data response corresponding to the request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReportBatchGetCall.html" title='google_analyticsreporting4::ReportBatchGetCall struct'>ReportBatchGetCall</a></td><td class='docblock-short'><p>Returns the Analytics data.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReportData.html" title='google_analyticsreporting4::ReportData struct'>ReportData</a></td><td class='docblock-short'><p>The data part of the report.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReportMethods.html" title='google_analyticsreporting4::ReportMethods struct'>ReportMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>report</em> resources.
+It is not used directly, but through the <code>AnalyticsReporting</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReportRequest.html" title='google_analyticsreporting4::ReportRequest struct'>ReportRequest</a></td><td class='docblock-short'><p>The main request class which specifies the Reporting API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReportRow.html" title='google_analyticsreporting4::ReportRow struct'>ReportRow</a></td><td class='docblock-short'><p>A row in the report.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResourceQuotasRemaining.html" title='google_analyticsreporting4::ResourceQuotasRemaining struct'>ResourceQuotasRemaining</a></td><td class='docblock-short'><p>The resource quota tokens remaining for the property after the request is
+completed.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_analyticsreporting4::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ScreenviewData.html" title='google_analyticsreporting4::ScreenviewData struct'>ScreenviewData</a></td><td class='docblock-short'><p>There is no detailed description.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchUserActivityRequest.html" title='google_analyticsreporting4::SearchUserActivityRequest struct'>SearchUserActivityRequest</a></td><td class='docblock-short'><p>The request to fetch User Report from Reporting API <code>userActivity:get</code> call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchUserActivityResponse.html" title='google_analyticsreporting4::SearchUserActivityResponse struct'>SearchUserActivityResponse</a></td><td class='docblock-short'><p>The response from <code>userActivity:get</code> call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Segment.html" title='google_analyticsreporting4::Segment struct'>Segment</a></td><td class='docblock-short'><p>The segment definition, if the report needs to be segmented.
+A Segment is a subset of the Analytics data. For example, of the entire
+set of users, one Segment might be users from a particular country or city.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentDefinition.html" title='google_analyticsreporting4::SegmentDefinition struct'>SegmentDefinition</a></td><td class='docblock-short'><p>SegmentDefinition defines the segment to be a set of SegmentFilters which
+are combined together with a logical <code>AND</code> operation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentDimensionFilter.html" title='google_analyticsreporting4::SegmentDimensionFilter struct'>SegmentDimensionFilter</a></td><td class='docblock-short'><p>Dimension filter specifies the filtering options on a dimension.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentFilter.html" title='google_analyticsreporting4::SegmentFilter struct'>SegmentFilter</a></td><td class='docblock-short'><p>SegmentFilter defines the segment to be either a simple or a sequence
+segment. A simple segment condition contains dimension and metric conditions
+to select the sessions or users. A sequence segment condition can be used to
+select users or sessions based on sequential conditions.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentFilterClause.html" title='google_analyticsreporting4::SegmentFilterClause struct'>SegmentFilterClause</a></td><td class='docblock-short'><p>Filter Clause to be used in a segment definition, can be wither a metric or
+a dimension filter.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentMetricFilter.html" title='google_analyticsreporting4::SegmentMetricFilter struct'>SegmentMetricFilter</a></td><td class='docblock-short'><p>Metric filter to be used in a segment filter clause.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SegmentSequenceStep.html" title='google_analyticsreporting4::SegmentSequenceStep struct'>SegmentSequenceStep</a></td><td class='docblock-short'><p>A segment sequence definition.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SequenceSegment.html" title='google_analyticsreporting4::SequenceSegment struct'>SequenceSegment</a></td><td class='docblock-short'><p>Sequence conditions consist of one or more steps, where each step is defined
+by one or more dimension/metric conditions. Multiple steps can be combined
+with special sequence operators.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_analyticsreporting4::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_analyticsreporting4::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.SimpleSegment.html" title='google_analyticsreporting4::SimpleSegment struct'>SimpleSegment</a></td><td class='docblock-short'><p>A Simple segment conditions consist of one or more dimension/metric
+conditions that can be combined.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TransactionData.html" title='google_analyticsreporting4::TransactionData struct'>TransactionData</a></td><td class='docblock-short'><p>Represents details collected when the visitor performs a transaction on the
+page.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.User.html" title='google_analyticsreporting4::User struct'>User</a></td><td class='docblock-short'><p>Contains information to identify a particular user uniquely.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UserActivityMethods.html" title='google_analyticsreporting4::UserActivityMethods struct'>UserActivityMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>userActivity</em> resources.
+It is not used directly, but through the <code>AnalyticsReporting</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UserActivitySearchCall.html" title='google_analyticsreporting4::UserActivitySearchCall struct'>UserActivitySearchCall</a></td><td class='docblock-short'><p>Returns User Activity data.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.UserActivitySession.html" title='google_analyticsreporting4::UserActivitySession struct'>UserActivitySession</a></td><td class='docblock-short'><p>This represents a user session performed on a specific device at a certain
+time over a period of time.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_analyticsreporting4::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_analyticsreporting4::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_analyticsreporting4::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_analyticsreporting4::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_analyticsreporting4::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_analyticsreporting4::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_analyticsreporting4::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_analyticsreporting4::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_analyticsreporting4::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_analyticsreporting4::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_analyticsreporting4::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_analyticsreporting4::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_analyticsreporting4::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_analyticsreporting4::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_analyticsreporting4::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_analyticsreporting4::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_analyticsreporting4::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_analyticsreporting4";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

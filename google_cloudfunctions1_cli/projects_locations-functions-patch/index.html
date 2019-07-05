@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Functions Patch - Cloud Functions v1.0.8+20181002</title>
+  <title>Locations Functions Patch - Cloud Functions v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Functions v1.0.8+20181002</a>
+        <a href=".." class="icon icon-home"> Cloud Functions v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -97,6 +97,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-functions-get-iam-policy/">Locations Functions Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-functions-list/">Locations Functions List</a>
                 </li>
                 <li class=" current">
@@ -132,6 +136,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-functions-set-iam-policy/">Locations Functions Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-functions-test-iam-permissions/">Locations Functions Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-list/">Locations List</a>
                 </li>
     </ul>
@@ -147,7 +159,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Functions v1.0.8+20181002</a>
+        <a href="..">Cloud Functions v1.0.10+20190620</a>
       </nav>
 
       
@@ -219,21 +231,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   timeout: string
   update-time: string
   version-id: string
+  vpc-connector: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    available-memory-mb=84</code><ul>
+<li><code>-r .    available-memory-mb=60</code><ul>
 <li>The amount of memory in MB available for a function.
     Defaults to 256MB.</li>
 </ul>
 </li>
-<li><code>description=diam</code><ul>
+<li><code>description=ipsum</code><ul>
 <li>User-provided description of a function.</li>
 </ul>
 </li>
-<li><code>entry-point=ipsum</code><ul>
+<li><code>entry-point=lorem</code><ul>
 <li>The name of the function (as defined in source code) that will be
     executed. Defaults to the resource name suffix, if not specified. For
     backward compatibility, if function with given name is not found, then the
@@ -242,17 +255,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     in <code>source_location</code>.</li>
 </ul>
 </li>
+<li><code>environment-variables=key=et</code><ul>
+<li>Environment variables that shall be available during function execution.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
 <li>
-<p><code>environment-variables=key=lorem</code></p>
+<p><code>event-trigger    event-type=duo</code></p>
 <ul>
 <li>
-<p><strong>Beta Feature</strong></p>
-<p>Environment variables that shall be available during function execution.
-    - the value will be associated with the given <code>key</code>
-* <code>event-trigger    event-type=et</code>
-    - Required. The type of event to observe. For example:
-<code>providers/cloud.storage/eventTypes/object.change</code> and
-<code>providers/cloud.pubsub/eventTypes/topic.publish</code>.</p>
+<p>Required. The type of event to observe. For example:
+    <code>providers/cloud.storage/eventTypes/object.change</code> and
+    <code>providers/cloud.pubsub/eventTypes/topic.publish</code>.</p>
 <p>Event types match pattern <code>providers/*/eventTypes/*.*</code>.
 The pattern contains:</p>
 <ol>
@@ -263,7 +277,7 @@ The pattern contains:</p>
 <li>action: The action that generates the event. For example, action for
    a Google Cloud Storage Object is &#39;change&#39;.
 These parts are lower case.</li>
-<li><code>resource=duo</code><ul>
+<li><code>resource=aliquyam</code><ul>
 <li>Required. The resource(s) from which to observe events, for example,
 <code>projects/_/buckets/myBucket</code>.</li>
 </ul>
@@ -284,7 +298,7 @@ example:</p>
 <code>EventTrigger</code>. These will always be returned in the normalized &#34;long&#34;
 format.</p>
 <p>See each <em>service&#39;s</em> documentation for supported formats.
-* <code>service=aliquyam</code>
+* <code>service=sea</code>
     - The hostname of the service that should be observed.</p>
 <p>If no string is provided, the default service implementing the API will
 be used. For example, <code>storage.googleapis.com</code> is the default for all
@@ -293,31 +307,30 @@ event types in the <code>google.storage</code> namespace.</p>
 </ul>
 </li>
 <li>
-<p><code>..https-trigger    url=sea</code></p>
+<p><code>..https-trigger    url=lorem</code></p>
 <ul>
 <li>Output only. The deployed url for the function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    labels=key=lorem</code></p>
+<p><code>..    labels=key=eos</code></p>
 <ul>
 <li>Labels associated with this Cloud Function.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>max-instances=26</code><ul>
+<li><code>max-instances=20</code><ul>
 <li>The limit on the maximum number of function instances that may coexist at a
-    given time. This feature is currently in alpha, available only for
-    whitelisted users.</li>
+    given time.</li>
 </ul>
 </li>
-<li><code>name=erat</code><ul>
+<li><code>name=sadipscing</code><ul>
 <li>A user-defined name of the function. Function names must be unique
     globally and match pattern <code>projects/*/locations/*/functions/*</code></li>
 </ul>
 </li>
 <li>
-<p><code>network=sadipscing</code></p>
+<p><code>network=dolor</code></p>
 <ul>
 <li>
 <p>The VPC Network that this cloud function can connect to. It can be
@@ -328,25 +341,42 @@ event types in the <code>google.storage</code> namespace.</p>
     <code>projects/{project}/global/networks/{network}</code> or <code>{network}</code>, where
     {project} is a project id where the network is defined, and {network} is
     the short name of the network.</p>
+<p>This field is mutually exclusive with <code>vpc_connector</code> and will be replaced
+by it.</p>
 <p>See <a href="https://cloud.google.com/compute/docs/vpc">the VPC documentation</a> for
 more information on connecting Cloud projects.</p>
 <p>This feature is currently in alpha, available only for whitelisted users.
-<em> <code>runtime=dolor</code>
-    - The runtime in which the function is going to run. If empty, defaults to
-Node.js 6.
-</em> <code>service-account-email=eirmod</code>
-    - Output only. The email of the function&#39;s service account.
-<em> <code>source-archive-url=elitr</code>
-    - The Google Cloud Storage URL, starting with gs://, pointing to the zip
-archive which contains the function.
-</em> <code>source-repository    deployed-url=amet</code>
-    - Output only. The URL pointing to the hosted repository where the function
+* <code>runtime=eirmod</code>
+    - Required. The runtime in which the function is going to run. Choices:</p>
+<ul>
+<li><code>nodejs6</code>: Node.js 6</li>
+<li><code>nodejs8</code>: Node.js 8</li>
+<li><code>nodejs10</code>: Node.js 10</li>
+<li><code>python37</code>: Python 3.7</li>
+<li><code>go111</code>: Go 1.11</li>
+<li><code>service-account-email=elitr</code><ul>
+<li>The email of the function&#39;s service account. If empty, defaults to
+{project_id}@appspot.gserviceaccount.com.</li>
+</ul>
+</li>
+<li><code>source-archive-url=amet</code><ul>
+<li>The Google Cloud Storage URL, starting with gs://, pointing to the zip
+archive which contains the function.</li>
+</ul>
+</li>
+<li><code>source-repository    deployed-url=no</code><ul>
+<li>Output only. The URL pointing to the hosted repository where the function
 were defined at the time of deployment. It always points to a specific
-commit in the format described above.
-* <code>url=no</code>
-    - The URL pointing to the hosted repository where the function is defined.
+commit in the format described above.</li>
+</ul>
+</li>
+<li><code>url=labore</code><ul>
+<li>The URL pointing to the hosted repository where the function is defined.
 There are supported Cloud Source Repository URLs in the following
-formats:</p>
+formats:</li>
+</ul>
+</li>
+</ul>
 <p>To refer to a specific commit:
 <code>https://source.developers.google.com/projects/*/repos/*/revisions/*/paths/*</code>
 To refer to a moveable alias (branch):
@@ -359,30 +389,44 @@ To refer to a specific fixed alias (tag):
 </ul>
 </li>
 <li>
-<p><code>..    source-upload-url=labore</code></p>
+<p><code>..    source-upload-url=eirmod</code></p>
 <ul>
 <li>The Google Cloud Storage signed URL used for source uploading, generated
     by google.cloud.functions.v1.GenerateUploadUrl</li>
 </ul>
 </li>
-<li><code>status=eirmod</code><ul>
+<li><code>status=dolore</code><ul>
 <li>Output only. Status of the function deployment.</li>
 </ul>
 </li>
-<li><code>timeout=dolore</code><ul>
+<li><code>timeout=invidunt</code><ul>
 <li>The function execution timeout. Execution is considered failed and
     can be terminated if the function is not completed at the end of the
     timeout period. Defaults to 60 seconds.</li>
 </ul>
 </li>
-<li><code>update-time=invidunt</code><ul>
+<li><code>update-time=aliquyam</code><ul>
 <li>Output only. The last update timestamp of a Cloud Function.</li>
 </ul>
 </li>
-<li><code>version-id=aliquyam</code><ul>
+<li><code>version-id=accusam</code><ul>
 <li>Output only.
     The version identifier of the Cloud Function. Each deployment attempt
     results in a new version of a function being created.</li>
+</ul>
+</li>
+<li><code>vpc-connector=lorem</code><ul>
+<li>
+<p>The VPC Network Connector that this cloud function can connect to. It can
+    be either the fully-qualified URI, or the short name of the network
+    connector resource. The format of this field is
+    <code>projects/*/locations/*/connectors/*</code></p>
+<p>This field is mutually exclusive with <code>network</code> field and will eventually
+replace it.</p>
+<p>See <a href="https://cloud.google.com/compute/docs/vpc">the VPC documentation</a> for
+more information on connecting Cloud projects.</p>
+<p>This feature is currently in alpha, available only for whitelisted users.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -492,7 +536,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_locations-list/" class="btn btn-neutral float-right" title="Locations List">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_locations-functions-set-iam-policy/" class="btn btn-neutral float-right" title="Locations Functions Set Iam Policy">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../projects_locations-functions-list/" class="btn btn-neutral" title="Locations Functions List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -505,7 +549,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -528,7 +572,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <span><a href="../projects_locations-functions-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_locations-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_locations-functions-set-iam-policy/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

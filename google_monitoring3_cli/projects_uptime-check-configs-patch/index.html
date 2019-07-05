@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Uptime Check Configs Patch - Monitoring v1.0.8+20181009</title>
+  <title>Uptime Check Configs Patch - Monitoring v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -247,7 +247,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.8+20181009</a>
+        <a href="..">Monitoring v1.0.10+20190629</a>
       </nav>
 
       
@@ -307,7 +307,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     path: string
     port: integer
     use-ssl: boolean
-  is-internal: boolean
   monitored-resource:
     labels: { string: string }
     type: string
@@ -351,7 +350,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>path=takimata</code><ul>
-<li>The path to the page to run the check against. Will be combined with the host (specified within the MonitoredResource) and port to construct the full URL. Optional (defaults to &#34;/&#34;).</li>
+<li>The path to the page to run the check against. Will be combined with the host (specified within the MonitoredResource) and port to construct the full URL. Optional (defaults to &#34;/&#34;). If the provided path does not begin with &#34;/&#34;, it will be prepended automatically.</li>
 </ul>
 </li>
 <li><code>port=61</code><ul>
@@ -365,57 +364,53 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    is-internal=true</code></p>
+<p><code>..monitored-resource    labels=key=sanctus</code></p>
 <ul>
-<li>Denotes whether this is a check that egresses from InternalCheckers.</li>
-</ul>
-</li>
-<li><code>monitored-resource    labels=key=takimata</code><ul>
 <li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels &#34;project_id&#34;, &#34;instance_id&#34;, and &#34;zone&#34;.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>type=at</code></p>
+<p><code>type=takimata</code></p>
 <ul>
 <li>Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Compute Engine VM instance is gce_instance. For a list of types, see Monitoring resource types and Logging resource types.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=labore</code></p>
+<p><code>..    name=at</code></p>
 <ul>
 <li>A unique resource name for this UptimeCheckConfig. The format is:projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].This field should be omitted when creating the uptime check configuration; on create, the resource name is assigned by the server and included in the response.</li>
 </ul>
 </li>
-<li><code>period=invidunt</code><ul>
-<li>How often, in seconds, the uptime check is performed. Currently, the only supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes), and 900s (15 minutes). Optional, defaults to 300s.</li>
+<li><code>period=labore</code><ul>
+<li>How often, in seconds, the uptime check is performed. Currently, the only supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes), and 900s (15 minutes). Optional, defaults to 60s.</li>
 </ul>
 </li>
-<li><code>resource-group    group-id=ea</code><ul>
+<li><code>resource-group    group-id=invidunt</code><ul>
 <li>The group of resources being monitored. Should be only the group_id, not projects/&lt;project_id&gt;/groups/&lt;group_id&gt;.</li>
 </ul>
 </li>
 <li>
-<p><code>resource-type=sadipscing</code></p>
+<p><code>resource-type=ea</code></p>
 <ul>
 <li>The resource type of the group members.</li>
 </ul>
 </li>
 <li>
-<p><code>..    selected-regions=rebum.</code></p>
+<p><code>..    selected-regions=sadipscing</code></p>
 <ul>
-<li>The list of regions from which the check will be run. If this field is specified, enough regions to include a minimum of 3 locations must be provided, or an error message is returned. Not specifying this field will result in uptime checks running from all regions.</li>
+<li>The list of regions from which the check will be run. Some regions contain one location, and others contain more than one. If this field is specified, enough regions to include a minimum of 3 locations must be provided, or an error message is returned. Not specifying this field will result in uptime checks running from all regions.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>tcp-check    port=68</code></p>
+<p><code>tcp-check    port=35</code></p>
 <ul>
 <li>The port to the page to run the check against. Will be combined with host (specified within the MonitoredResource) to construct the full URL. Required.</li>
 </ul>
 </li>
 <li>
-<p><code>..    timeout=nonumy</code></p>
+<p><code>..    timeout=dolore</code></p>
 <ul>
 <li>The maximum amount of time to wait for the request to complete (must be between 1 and 60 seconds). Required.</li>
 </ul>
@@ -540,7 +535,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

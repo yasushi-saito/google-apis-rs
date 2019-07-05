@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get - Photos Library v1.0.8+20181004</title>
+  <title>Get - Photos Library v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Photos Library v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> Photos Library v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -62,6 +62,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../albums_batch-add-media-items/">Batch Add Media Items</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../albums_batch-remove-media-items/">Batch Remove Media Items</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../albums_create/">Create</a>
                 </li>
                 <li class="">
@@ -76,6 +84,10 @@
                     
     <a class="" href="../albums_share/">Share</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../albums_unshare/">Unshare</a>
+                </li>
     </ul>
 	    </li>
           
@@ -86,6 +98,10 @@
                 <li class="">
                     
     <a class="" href="../media-items_batch-create/">Batch Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../media-items_batch-get/">Batch Get</a>
                 </li>
                 <li class=" current">
                     
@@ -131,6 +147,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../shared-albums_leave/">Leave</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../shared-albums_list/">List</a>
                 </li>
     </ul>
@@ -146,7 +166,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Photos Library v1.0.8+20181004</a>
+        <a href="..">Photos Library v1.0.10+20190702</a>
       </nav>
 
       
@@ -175,7 +195,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns the media item for the specified media item <code>id</code>.</p>
+                <p>Returns the media item for the specified media item identifier.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -188,7 +208,7 @@ You can set the scope for this method like this: <code>photoslibrary1 --scope &l
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;media-item-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of media item to be requested.</li>
+<li>Identifier of the media item to be requested.</li>
 </ul>
 </li>
 </ul>
@@ -283,7 +303,7 @@ You can set the scope for this method like this: <code>photoslibrary1 --scope &l
         <a href="../media-items_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../media-items_batch-create/" class="btn btn-neutral" title="Batch Create"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../media-items_batch-get/" class="btn btn-neutral" title="Batch Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -293,7 +313,7 @@ You can set the scope for this method like this: <code>photoslibrary1 --scope &l
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -313,7 +333,7 @@ You can set the scope for this method like this: <code>photoslibrary1 --scope &l
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/photoslibrary1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../media-items_batch-create/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../media-items_batch-get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../media-items_list/" style="color: #fcfcfc">Next &raquo;</a></span>

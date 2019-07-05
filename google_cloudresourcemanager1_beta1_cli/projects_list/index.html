@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Cloud Resource Manager v1.0.8+20181008</title>
+  <title>List - Cloud Resource Manager v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -155,7 +155,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.8+20181008</a>
+        <a href="..">Cloud Resource Manager v1.0.10+20190701</a>
       </nav>
 
       
@@ -184,12 +184,20 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists Projects that are visible to the user and satisfy the
-specified filter. This method returns Projects in an unspecified order.
+                <p>Lists Projects that the caller has the <code>resourcemanager.projects.get</code>
+permission on and satisfy the specified filter.</p>
+<p>This method returns Projects in an unspecified order.
 This method is eventually consistent with project mutations; this means
 that a newly created project may not appear in the results or recent
 updates to an existing project may not be reflected in the results. To
-retrieve the latest state of a project, use the GetProjectmethod.</p>
+retrieve the latest state of a project, use the
+GetProject method.</p>
+<p>NOTE: If the request filter contains a <code>parent.type</code> and <code>parent.id</code> and
+the caller has the <code>resourcemanager.projects.list</code> permission on the
+parent, the results will be drawn from an alternate index which provides
+more consistent results. In future versions of this API, this List method
+will be split into List and Search to properly capture the behavorial
+difference.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -223,7 +231,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li><code>name</code></li>
 <li><code>id</code></li>
-<li>&lt;code&gt;labels.&lt;em&gt;key&lt;/em&gt;&lt;/code&gt; where <em>key</em> is the name of a label</li>
+<li><code>labels.&amp;lt;key&amp;gt;</code> (where <em>key</em> is the name of a label)</li>
+<li><code>parent.type</code></li>
+<li><code>parent.id</code></li>
 </ul>
 <p>Some examples of using labels as filters:</p>
 <table>
@@ -260,18 +270,22 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </tr>
 <tr>
 <td>labels.color:red&amp;nbsp;labels.size:big</td>
-<td>The project&#39;s label <code>color</code> has the value <code>red</code> and its label <code>size</code> has the value <code>big</code>.</td>
+<td>The project&#39;s label <code>color</code> has</td>
+</tr>
+<tr>
+<td>the value <code>red</code> and its label <code>size</code> has the value <code>big</code>.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>If you specify a filter that has both <code>parent.type</code> and <code>parent.id</code>, then
-the <code>resourcemanager.projects.list</code> permission is checked on the parent.
-If the user has this permission, all projects under the parent will be
-returned after remaining filters have been applied. If the user lacks this
-permission, then all projects for which the user has the
-<code>resourcemanager.projects.get</code> permission will be returned after remaining
-filters have been applied. If no filter is specified, the call will return
-projects for which the user has <code>resourcemanager.projects.get</code> permissions.</p>
+<p>If no filter is specified, the call will return projects for which the user
+has the <code>resourcemanager.projects.get</code> permission.</p>
+<p>NOTE: To perform a by-parent query (eg., what projects are directly in a
+Folder), the caller must have the <code>resourcemanager.projects.list</code>
+permission on the parent and the filter must contain both a <code>parent.type</code>
+and a <code>parent.id</code> restriction
+(example: &#34;parent.type:folder parent.id:123&#34;). In this case an alternate
+search index is used which provides more consistent results.</p>
 <p>Optional.</p>
 </li>
 </ul>
@@ -388,7 +402,7 @@ projects for which the user has <code>resourcemanager.projects.get</code> permis
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

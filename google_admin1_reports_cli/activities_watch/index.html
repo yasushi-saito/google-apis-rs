@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - reports v1.0.8+20180806</title>
+  <title>Watch - reports v1.0.10+20190521</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> reports v1.0.8+20180806</a>
+        <a href=".." class="icon icon-home"> reports v1.0.10+20190521</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -148,7 +148,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">reports v1.0.8+20180806</a>
+        <a href="..">reports v1.0.10+20190521</a>
       </nav>
 
       
@@ -226,7 +226,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>kind=sed</code><ul>
-<li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
+<li>Identifies this as a notification channel used to watch for changes to a resource, which is &#34;api#channel&#34;.</li>
 </ul>
 </li>
 <li><code>params=key=et</code><ul>
@@ -280,21 +280,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Number of activity records to be shown in each page.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filters=string</strong></p>
 <ul>
 <li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token to specify next page.</li>
 </ul>
 </li>
 <li>
@@ -304,15 +292,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p event-name=string</strong></p>
+<p><strong>-p start-time=string</strong></p>
 <ul>
-<li>Name of the event being queried.</li>
+<li>Return events which occurred at or after this time.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p end-time=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Return events which occurred at or before this time.</li>
+<li>Token to specify next page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Number of activity records to be shown in each page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p event-name=string</strong></p>
+<ul>
+<li>Name of the event being queried.</li>
 </ul>
 </li>
 <li>
@@ -322,9 +322,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-time=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>Return events which occurred at or after this time.</li>
+<li>Return events which occurred at or before this time.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p org-unit-id=string</strong></p>
+<ul>
+<li>the organizational unit&#39;s(OU) ID to filter activities from users belonging to a specific OU or one of its sub-OU(s)</li>
 </ul>
 </li>
 </ul>
@@ -394,7 +400,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

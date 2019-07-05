@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - digitalassetlinks v1.0.8+20181009</title>
+  <title>List - digitalassetlinks v1.0.10+20190619</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> digitalassetlinks v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> digitalassetlinks v1.0.10+20190619</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -96,7 +96,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">digitalassetlinks v1.0.8+20181009</a>
+        <a href="..">digitalassetlinks v1.0.10+20190619</a>
       </nav>
 
       
@@ -157,6 +157,25 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p relation=string</strong></p>
+<ul>
+<li>
+<p>Use only associations that match the specified relation.</p>
+<p>See the <a href="#Statement"><code>Statement</code></a> message for a detailed definition of
+relation strings.</p>
+<p>For a query to match a statement, one of the following must be true:</p>
+<ul>
+<li>both the query&#39;s and the statement&#39;s relation strings match exactly,
+     or</li>
+<li>the query&#39;s relation string is empty or missing.</li>
+</ul>
+<p>Example: A query with relation <code>delegate_permission/common.handle_all_urls</code>
+matches an asset link with relation
+<code>delegate_permission/common.handle_all_urls</code>.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p source-web-site=string</strong></p>
 <ul>
 <li>
@@ -214,25 +233,6 @@ SHA256 Fingerprint=14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64: \
 certificate into the DER format, compute the SHA-256 hash of that string
 and represent the result as a hexstring (that is, uppercase hexadecimal
 representations of each octet, separated by colons).</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p relation=string</strong></p>
-<ul>
-<li>
-<p>Use only associations that match the specified relation.</p>
-<p>See the <a href="#Statement"><code>Statement</code></a> message for a detailed definition of
-relation strings.</p>
-<p>For a query to match a statement, one of the following must be true:</p>
-<ul>
-<li>both the query&#39;s and the statement&#39;s relation strings match exactly,
-     or</li>
-<li>the query&#39;s relation string is empty or missing.</li>
-</ul>
-<p>Example: A query with relation <code>delegate_permission/common.handle_all_urls</code>
-matches an asset link with relation
-<code>delegate_permission/common.handle_all_urls</code>.</p>
 </li>
 </ul>
 </li>
@@ -334,7 +334,7 @@ matches an asset link with relation
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - storage v1.0.8+20180905</title>
+  <title>Update - storage v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
+        <a href=".." class="icon icon-home"> storage v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -318,6 +318,26 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_hmac-keys-create/">Hmac Keys Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-delete/">Hmac Keys Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-get/">Hmac Keys Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-list/">Hmac Keys List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-update/">Hmac Keys Update</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-account-get/">Service Account Get</a>
                 </li>
     </ul>
@@ -333,7 +353,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.8+20180905</a>
+        <a href="..">storage v1.0.10+20190624</a>
       </nav>
 
       
@@ -389,10 +409,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   encryption:
     default-kms-key-name: string
   etag: string
+  iam-configuration:
+    bucket-policy-only:
+      enabled: boolean
+      locked-time: string
+    uniform-bucket-level-access:
+      enabled: boolean
+      locked-time: string
   id: string
   kind: string
   labels: { string: string }
   location: string
+  location-type: string
   logging:
     log-bucket: string
     log-object-prefix: string
@@ -433,60 +461,88 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>encryption    default-kms-key-name=sanctus</code></p>
+<p><code>encryption    default-kms-key-name=sed</code></p>
 <ul>
 <li>A Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=takimata</code></p>
+<p><code>..    etag=aliquyam</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the bucket.</li>
 </ul>
 </li>
-<li><code>id=at</code><ul>
+<li><code>iam-configuration.bucket-policy-only    enabled=false</code><ul>
+<li>If set, access is controlled only by bucket-level or above IAM policies.</li>
+</ul>
+</li>
+<li>
+<p><code>locked-time=eirmod</code></p>
+<ul>
+<li>The deadline for changing iamConfiguration.bucketPolicyOnly.enabled from true to false in RFC 3339 format. iamConfiguration.bucketPolicyOnly.enabled may be changed from true to false until the locked time, after which the field is immutable.</li>
+</ul>
+</li>
+<li>
+<p><code>..uniform-bucket-level-access    enabled=true</code></p>
+<ul>
+<li>If set, access is controlled only by bucket-level or above IAM policies.</li>
+</ul>
+</li>
+<li>
+<p><code>locked-time=labore</code></p>
+<ul>
+<li>The deadline for changing iamConfiguration.uniformBucketLevelAccess.enabled from true to false in RFC 3339  format. iamConfiguration.uniformBucketLevelAccess.enabled may be changed from true to false until the locked time, after which the field is immutable.</li>
+</ul>
+</li>
+<li>
+<p><code>...    id=sed</code></p>
+<ul>
 <li>The ID of the bucket. For buckets, the id and name properties are the same.</li>
 </ul>
 </li>
-<li><code>kind=labore</code><ul>
+<li><code>kind=ea</code><ul>
 <li>The kind of item this is. For buckets, this is always storage#bucket.</li>
 </ul>
 </li>
-<li><code>labels=key=invidunt</code><ul>
+<li><code>labels=key=gubergren</code><ul>
 <li>User-provided labels, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>location=ea</code><ul>
+<li><code>location=aliquyam</code><ul>
 <li>The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer&#39;s guide for the authoritative list.</li>
 </ul>
 </li>
-<li><code>logging    log-bucket=sadipscing</code><ul>
+<li><code>location-type=eos</code><ul>
+<li>The type of the bucket location.</li>
+</ul>
+</li>
+<li><code>logging    log-bucket=tempor</code><ul>
 <li>The destination bucket where the current bucket&#39;s logs should be placed.</li>
 </ul>
 </li>
 <li>
-<p><code>log-object-prefix=rebum.</code></p>
+<p><code>log-object-prefix=sea</code></p>
 <ul>
 <li>A prefix for log object names.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metageneration=dolore</code></p>
+<p><code>..    metageneration=labore</code></p>
 <ul>
 <li>The metadata generation of this bucket.</li>
 </ul>
 </li>
-<li><code>name=nonumy</code><ul>
+<li><code>name=ipsum</code><ul>
 <li>The name of the bucket.</li>
 </ul>
 </li>
-<li><code>owner    entity=sed</code><ul>
+<li><code>owner    entity=aliquyam</code><ul>
 <li>The entity, in the form project-owner-projectId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=aliquyam</code></p>
+<p><code>entity-id=dolores</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
@@ -497,7 +553,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The project number of the project the bucket belongs to.</li>
 </ul>
 </li>
-<li><code>retention-policy    effective-time=eirmod</code><ul>
+<li><code>retention-policy    effective-time=diam</code><ul>
 <li>Server-determined value that indicates the time from which policy was enforced and effective. This value is in RFC 3339 format.</li>
 </ul>
 </li>
@@ -506,42 +562,42 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>retention-period=labore</code></p>
+<p><code>retention-period=justo</code></p>
 <ul>
 <li>The duration in seconds that objects need to be retained. Retention duration must be greater than zero and less than 100 years. Note that enforcement of retention periods less than a day is not guaranteed. Such periods should only be used for testing purposes.</li>
 </ul>
 </li>
 <li>
-<p><code>..    self-link=sed</code></p>
+<p><code>..    self-link=est</code></p>
 <ul>
 <li>The URI of this bucket.</li>
 </ul>
 </li>
-<li><code>storage-class=ea</code><ul>
+<li><code>storage-class=amet</code><ul>
 <li>The bucket&#39;s default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are stored and determines the SLA and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, and DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the bucket is created, it will default to STANDARD. For more information, see storage classes.</li>
 </ul>
 </li>
-<li><code>time-created=gubergren</code><ul>
+<li><code>time-created=accusam</code><ul>
 <li>The creation time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>updated=aliquyam</code><ul>
+<li><code>updated=clita</code><ul>
 <li>The modification time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
 <li>
-<p><code>versioning    enabled=true</code></p>
+<p><code>versioning    enabled=false</code></p>
 <ul>
 <li>While set to true, versioning is fully enabled for this bucket.</li>
 </ul>
 </li>
 <li>
-<p><code>..website    main-page-suffix=tempor</code></p>
+<p><code>..website    main-page-suffix=justo</code></p>
 <ul>
 <li>If the requested object path is missing, the service will ensure the path has a trailing &#39;/&#39;, append this suffix, and attempt to retrieve the resulting object. This allows the creation of index.html objects to represent directory pages.</li>
 </ul>
 </li>
-<li><code>not-found-page=sea</code><ul>
+<li><code>not-found-page=est</code><ul>
 <li>If the requested object path is missing, and any mainPageSuffix object is missing, if applicable, the service will return the named object from this bucket as the content for a 404 Not Found result.</li>
 </ul>
 </li>
@@ -571,21 +627,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p user-project=string</strong></p>
+<p><strong>-p provisional-user-project=string</strong></p>
 <ul>
-<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p predefined-acl=string</strong></p>
-<ul>
-<li>Apply a predefined set of access controls to this bucket.</li>
+<li>The project to be billed for this request if the target bucket is requester-pays bucket.</li>
 </ul>
 </li>
 <li>
@@ -595,15 +639,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p predefined-default-object-acl=string</strong></p>
+<p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
-<li>Apply a predefined set of default object access controls to this bucket.</li>
+<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration matches the given value.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
 <li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p predefined-default-object-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of default object access controls to this bucket.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to this bucket.</li>
 </ul>
 </li>
 </ul>
@@ -673,7 +735,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

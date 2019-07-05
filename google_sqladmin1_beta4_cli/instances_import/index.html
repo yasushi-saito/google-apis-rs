@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Import - SQL Admin v1.0.8+20180917</title>
+  <title>Import - SQL Admin v1.0.10+20190607</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> SQL Admin v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> SQL Admin v1.0.10+20190607</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -318,7 +318,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">SQL Admin v1.0.8+20180917</a>
+        <a href="..">SQL Admin v1.0.10+20190607</a>
       </nav>
 
       
@@ -382,39 +382,38 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .import-context.csv-import-options    columns=dolor</code><ul>
+<li><code>-r .import-context.csv-import-options    columns=consetetur</code><ul>
 <li>The columns to which CSV data is imported. If not specified, all columns of the database table are loaded with CSV data.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>table=et</code></p>
+<p><code>table=amet.</code></p>
 <ul>
 <li>The table to which CSV data is imported.</li>
 </ul>
 </li>
 <li>
-<p><code>..    database=consetetur</code></p>
+<p><code>..    database=voluptua.</code></p>
 <ul>
 <li>The target database for the import. If fileType is SQL, this field is required only if the import file does not specify a database, and is overridden by any database specification in the import file. If fileType is CSV, one database must be specified.</li>
 </ul>
 </li>
-<li><code>file-type=amet.</code><ul>
+<li><code>file-type=lorem</code><ul>
 <li>The file type for the specified uri.
     SQL: The file contains SQL statements.
-    CSV: The file contains CSV data.
-    Importing CSV data using the Cloud SQL Admin API is not supported for PostgreSQL instances.</li>
+    CSV: The file contains CSV data.</li>
 </ul>
 </li>
-<li><code>import-user=voluptua.</code><ul>
-<li>The PostgreSQL user for this import operation. Defaults to cloudsqlsuperuser. PostgreSQL instances only.</li>
+<li><code>import-user=gubergren</code><ul>
+<li>The PostgreSQL user for this import operation. PostgreSQL instances only.</li>
 </ul>
 </li>
-<li><code>kind=lorem</code><ul>
+<li><code>kind=justo</code><ul>
 <li>This is always sql#importContext.</li>
 </ul>
 </li>
-<li><code>uri=gubergren</code><ul>
+<li><code>uri=sit</code><ul>
 <li>Path to the import file in Cloud Storage, in the form gs://bucketName/fileName. Compressed gzip files (.gz) are supported when fileType is SQL. The instance must have write permissions to the bucket and read access to the file.</li>
 </ul>
 </li>
@@ -504,7 +503,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

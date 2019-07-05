@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - YouTube v1.0.8+20180511</title>
+  <title>Update - YouTube v1.0.10+20190513</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.8+20180511</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.10+20190513</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -549,7 +549,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.8+20180511</a>
+        <a href="..">YouTube v1.0.10+20190513</a>
       </nav>
 
       
@@ -621,15 +621,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    etag=aliquyam</code><ul>
+<li><code>-r .    etag=et</code><ul>
 <li>Etag of this resource.</li>
 </ul>
 </li>
-<li><code>id=nonumy</code><ul>
+<li><code>id=aliquyam</code><ul>
 <li>The ID that YouTube uses to uniquely identify the comment thread.</li>
 </ul>
 </li>
-<li><code>kind=sit</code><ul>
+<li><code>kind=nonumy</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;youtube#commentThread&#34;.</li>
 </ul>
 </li>
@@ -637,91 +637,91 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the current viewer of the thread can reply to it. This is viewer specific - other viewers may see a different value for this field.</li>
 </ul>
 </li>
-<li><code>channel-id=sadipscing</code><ul>
+<li><code>channel-id=aliquyam</code><ul>
 <li>The YouTube channel the comments in the thread refer to or the channel with the video the comments refer to. If video_id isn&#39;t set the comments refer to the channel itself.</li>
 </ul>
 </li>
-<li><code>is-public=true</code><ul>
+<li><code>is-public=false</code><ul>
 <li>Whether the thread (and therefore all its comments) is visible to all YouTube users.</li>
 </ul>
 </li>
-<li><code>top-level-comment    etag=gubergren</code><ul>
+<li><code>top-level-comment    etag=magna</code><ul>
 <li>Etag of this resource.</li>
 </ul>
 </li>
-<li><code>id=sit</code><ul>
+<li><code>id=gubergren</code><ul>
 <li>The ID that YouTube uses to uniquely identify the comment.</li>
 </ul>
 </li>
-<li><code>kind=gubergren</code><ul>
+<li><code>kind=sit</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;youtube#comment&#34;.</li>
 </ul>
 </li>
-<li><code>snippet    author-channel-url=sit</code><ul>
+<li><code>snippet    author-channel-url=gubergren</code><ul>
 <li>Link to the author&#39;s YouTube channel, if any.</li>
 </ul>
 </li>
-<li><code>author-display-name=amet</code><ul>
+<li><code>author-display-name=sit</code><ul>
 <li>The name of the user who posted the comment.</li>
 </ul>
 </li>
-<li><code>author-profile-image-url=eirmod</code><ul>
+<li><code>author-profile-image-url=amet</code><ul>
 <li>The URL for the avatar of the user who posted the comment.</li>
 </ul>
 </li>
-<li><code>can-rate=false</code><ul>
+<li><code>can-rate=true</code><ul>
 <li>Whether the current viewer can rate this comment.</li>
 </ul>
 </li>
-<li><code>channel-id=lorem</code><ul>
+<li><code>channel-id=sanctus</code><ul>
 <li>The id of the corresponding YouTube channel. In case of a channel comment this is the channel the comment refers to. In case of a video comment it&#39;s the video&#39;s channel.</li>
 </ul>
 </li>
-<li><code>like-count=100</code><ul>
+<li><code>like-count=46</code><ul>
 <li>The total number of likes this comment has received.</li>
 </ul>
 </li>
-<li><code>moderation-status=diam</code><ul>
+<li><code>moderation-status=amet.</code><ul>
 <li>The comment&#39;s moderation status. Will not be set if the comments were requested through the id filter.</li>
 </ul>
 </li>
-<li><code>parent-id=eirmod</code><ul>
+<li><code>parent-id=diam</code><ul>
 <li>The unique id of the parent comment, only set for replies.</li>
 </ul>
 </li>
-<li><code>published-at=sadipscing</code><ul>
+<li><code>published-at=eirmod</code><ul>
 <li>The date and time when the comment was orignally published. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.</li>
 </ul>
 </li>
-<li><code>text-display=lorem</code><ul>
+<li><code>text-display=sadipscing</code><ul>
 <li>The comment&#39;s text. The format is either plain text or HTML dependent on what has been requested. Even the plain text representation may differ from the text originally posted in that it may replace video links with video titles etc.</li>
 </ul>
 </li>
-<li><code>text-original=sed</code><ul>
+<li><code>text-original=lorem</code><ul>
 <li>The comment&#39;s original raw text as initially posted or last updated. The original text will only be returned if it is accessible to the viewer, which is only guaranteed if the viewer is the comment&#39;s author.</li>
 </ul>
 </li>
-<li><code>updated-at=sit</code><ul>
+<li><code>updated-at=sed</code><ul>
 <li>The date and time when was last updated . The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.</li>
 </ul>
 </li>
-<li><code>video-id=dolore</code><ul>
+<li><code>video-id=sit</code><ul>
 <li>The ID of the video the comment refers to, if any.</li>
 </ul>
 </li>
 <li>
-<p><code>viewer-rating=et</code></p>
+<p><code>viewer-rating=dolore</code></p>
 <ul>
 <li>The rating the viewer has given to this comment. For the time being this will never return RATE_TYPE_DISLIKE and instead return RATE_TYPE_NONE. This may change in the future.</li>
 </ul>
 </li>
 <li>
-<p><code>...    total-reply-count=75</code></p>
+<p><code>...    total-reply-count=77</code></p>
 <ul>
 <li>The total number of replies (not including the top level comment).</li>
 </ul>
 </li>
-<li><code>video-id=sit</code><ul>
+<li><code>video-id=at</code><ul>
 <li>The ID of the video the comments refer to, if any. No video_id implies a channel discussion comment.</li>
 </ul>
 </li>
@@ -811,7 +811,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

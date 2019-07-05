@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - storage v1.0.8+20180905</title>
+  <title>List - storage v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
+        <a href=".." class="icon icon-home"> storage v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -309,6 +309,26 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_hmac-keys-create/">Hmac Keys Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-delete/">Hmac Keys Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-get/">Hmac Keys Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-list/">Hmac Keys List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-update/">Hmac Keys Update</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-account-get/">Service Account Get</a>
                 </li>
     </ul>
@@ -324,7 +344,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.8+20180905</a>
+        <a href="..">storage v1.0.10+20190624</a>
       </nav>
 
       
@@ -389,39 +409,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p versions=boolean</strong></p>
-<ul>
-<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Set of properties to return. Defaults to noAcl.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p delimiter=string</strong></p>
+<p><strong>-p versions=boolean</strong></p>
 <ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A previously-returned page token representing part of the larger set of results to view.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p prefix=string</strong></p>
-<ul>
-<li>Filter results to objects whose names begin with this prefix.</li>
+<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
 </ul>
 </li>
 <li>
@@ -431,9 +427,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p delimiter=string</strong></p>
+<ul>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p include-trailing-delimiter=boolean</strong></p>
 <ul>
 <li>If true, objects that end in exactly one instance of delimiter will have their metadata included in items in addition to prefixes.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p prefix=string</strong></p>
+<ul>
+<li>Filter results to objects whose names begin with this prefix.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A previously-returned page token representing part of the larger set of results to view.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p provisional-user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request if the target bucket is requester-pays bucket.</li>
 </ul>
 </li>
 </ul>
@@ -503,7 +529,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

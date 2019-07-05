@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - drive v1.0.8+20181004</title>
+  <title>Update - drive v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> drive v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,41 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Drives</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../drives_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_hide/">Hide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_unhide/">Unhide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../drives_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -455,7 +490,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.8+20181004</a>
+        <a href="..">drive v1.0.10+20190620</a>
       </nav>
 
       
@@ -496,7 +531,7 @@ You can set the scope for this method like this: <code>drive2 --scope &lt;scope&
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;file-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID for the file or Team Drive.</li>
+<li>The ID for the file or shared drive.</li>
 </ul>
 </li>
 <li><strong>&lt;permission-id&gt;</strong> <em>(string)</em><ul>
@@ -530,12 +565,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    additional-roles=diam</code><ul>
+<li><code>-r .    additional-roles=kasd</code><ul>
 <li>Additional roles for this user. Only commenter is currently allowed, though more may be supported in the future.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>auth-key=sea</code><ul>
+<li><code>auth-key=stet</code><ul>
 <li>Deprecated.</li>
 </ul>
 </li>
@@ -543,19 +578,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the account associated with this permission has been deleted. This field only pertains to user and group permissions.</li>
 </ul>
 </li>
-<li><code>domain=sed</code><ul>
+<li><code>domain=erat</code><ul>
 <li>The domain name of the entity this permission refers to. This is an output-only field which is present when the permission type is user, group or domain.</li>
 </ul>
 </li>
-<li><code>email-address=amet.</code><ul>
+<li><code>email-address=et</code><ul>
 <li>The email address of the user or group this permission refers to. This is an output-only field which is present when the permission type is user or group.</li>
 </ul>
 </li>
-<li><code>etag=duo</code><ul>
+<li><code>etag=magna</code><ul>
 <li>The ETag of the permission.</li>
 </ul>
 </li>
-<li><code>expiration-date=sit</code><ul>
+<li><code>expiration-date=eirmod</code><ul>
 <li>The time at which this permission will expire (RFC 3339 date-time). Expiration dates have the following restrictions:  <ul>
 <li>They can only be set on user and group permissions </li>
 <li>The date must be in the future </li>
@@ -565,19 +600,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>id=at</code><ul>
+<li><code>id=tempor</code><ul>
 <li>The ID of the user this permission refers to, and identical to the permissionId in the About and Files resources. When making a drive.permissions.insert request, exactly one of the id or value fields must be specified unless the permission type is anyone, in which case both id and value are ignored.</li>
 </ul>
 </li>
-<li><code>kind=voluptua.</code><ul>
+<li><code>kind=sea</code><ul>
 <li>This is always drive#permission.</li>
 </ul>
 </li>
-<li><code>name=sed</code><ul>
+<li><code>name=vero</code><ul>
 <li>The name for this permission.</li>
 </ul>
 </li>
-<li><code>photo-link=sea</code><ul>
+<li><code>photo-link=vero</code><ul>
 <li>A link to the profile photo, if available.</li>
 </ul>
 </li>
@@ -592,11 +627,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>self-link=kasd</code><ul>
+<li><code>self-link=aliquyam</code><ul>
 <li>A link back to this permission.</li>
 </ul>
 </li>
-<li><code>type=at</code><ul>
+<li><code>type=sed</code><ul>
 <li>The account type. Allowed values are:  <ul>
 <li>user </li>
 <li>group </li>
@@ -606,11 +641,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>value=diam</code><ul>
+<li><code>value=et</code><ul>
 <li>The email address or domain name for the entity. This is used during inserts and is not populated in responses. When making a drive.permissions.insert request, exactly one of the id or value fields must be specified unless the permission type is anyone, in which case both id and value are ignored.</li>
 </ul>
 </li>
-<li><code>with-link=true</code><ul>
+<li><code>with-link=false</code><ul>
 <li>Whether the link is required for this permission.</li>
 </ul>
 </li>
@@ -640,12 +675,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p supports-team-drives=boolean</strong></p>
-<ul>
-<li>Whether the requesting application supports Team Drives.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p remove-expiration=boolean</strong></p>
 <ul>
 <li>Whether to remove the expiration date.</li>
@@ -658,9 +687,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Deprecated use supportsAllDrives instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-all-drives=boolean</strong></p>
+<ul>
+<li>Deprecated - Whether the requesting application supports both My Drives and shared drives. This parameter will only be effective until June 1, 2020. Afterwards all applications are assumed to support shared drives.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p use-domain-admin-access=boolean</strong></p>
 <ul>
-<li>Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.</li>
+<li>Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.</li>
 </ul>
 </li>
 </ul>
@@ -730,7 +771,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

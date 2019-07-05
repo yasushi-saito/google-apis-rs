@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Complete - Cloud Talent Solution v1.0.8+20181008</title>
+  <title>Complete - Cloud Talent Solution v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Talent Solution v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_client-events-create/">Client Events Create</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_companies-create/">Companies Create</a>
@@ -143,7 +147,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Talent Solution v1.0.8+20181008</a>
+        <a href="..">Cloud Talent Solution v1.0.10+20190702</a>
       </nav>
 
       
@@ -211,33 +215,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p language-code=string</strong></p>
+<p><strong>-p scope=string</strong></p>
 <ul>
 <li>
-<p>Required.</p>
-<p>The language of the query. This is
-the BCP-47 language code, such as &#34;en-US&#34; or &#34;sr-Latn&#34;.
-For more information, see
-<a href="https://tools.ietf.org/html/bcp47">Tags for Identifying Languages</a>.</p>
-<p>For CompletionType.JOB_TITLE type, only open jobs with same
-language_code are returned.</p>
-<p>For CompletionType.COMPANY_NAME type,
-only companies having open jobs with same language_code are
-returned.</p>
-<p>For CompletionType.COMBINED type, only open jobs with same
-language_code or companies having open jobs with same
-language_code are returned.</p>
-<p>The maximum number of allowed characters is 255.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>Required.</p>
-<p>Completion result count.</p>
-<p>The maximum allowed page size is 10.</p>
+<p>Optional.</p>
+<p>The scope of the completion. The defaults is CompletionScope.PUBLIC.</p>
 </li>
 </ul>
 </li>
@@ -247,15 +229,6 @@ language_code are returned.</p>
 <li>
 <p>Optional.</p>
 <p>The completion topic. The default is CompletionType.COMBINED.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p scope=string</strong></p>
-<ul>
-<li>
-<p>Optional.</p>
-<p>The scope of the completion. The defaults is CompletionScope.PUBLIC.</p>
 </li>
 </ul>
 </li>
@@ -277,6 +250,59 @@ language_code are returned.</p>
 <p>If provided, restricts completion to specified company.</p>
 <p>The format is &#34;projects/{project_id}/companies/{company_id}&#34;, for example,
 &#34;projects/api-test-project/companies/foo&#34;.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p language-codes=string</strong></p>
+<ul>
+<li>
+<p>Optional.</p>
+<p>The list of languages of the query. This is
+the BCP-47 language code, such as &#34;en-US&#34; or &#34;sr-Latn&#34;.
+For more information, see
+<a href="https://tools.ietf.org/html/bcp47">Tags for Identifying Languages</a>.</p>
+<p>For CompletionType.JOB_TITLE type, only open jobs with the same
+language_codes are returned.</p>
+<p>For CompletionType.COMPANY_NAME type,
+only companies having open jobs with the same language_codes are
+returned.</p>
+<p>For CompletionType.COMBINED type, only open jobs with the same
+language_codes or companies having open jobs with the same
+language_codes are returned.</p>
+<p>The maximum number of allowed characters is 255.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Required.</p>
+<p>Completion result count.</p>
+<p>The maximum allowed page size is 10.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p language-code=string</strong></p>
+<ul>
+<li>
+<p>Deprecated. Use language_codes instead.</p>
+<p>Optional.</p>
+<p>The language of the query. This is
+the BCP-47 language code, such as &#34;en-US&#34; or &#34;sr-Latn&#34;.
+For more information, see
+<a href="https://tools.ietf.org/html/bcp47">Tags for Identifying Languages</a>.</p>
+<p>For CompletionType.JOB_TITLE type, only open jobs with the same
+language_code are returned.</p>
+<p>For CompletionType.COMPANY_NAME type,
+only companies having open jobs with the same language_code are
+returned.</p>
+<p>For CompletionType.COMBINED type, only open jobs with the same
+language_code or companies having open jobs with the same
+language_code are returned.</p>
+<p>The maximum number of allowed characters is 255.</p>
 </li>
 </ul>
 </li>
@@ -371,7 +397,7 @@ language_code are returned.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

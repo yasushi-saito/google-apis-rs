@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Content Deidentify - DLP v1.0.8+20181009</title>
+  <title>Content Deidentify - DLP v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -236,6 +236,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_job-triggers-activate/">Job Triggers Activate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_job-triggers-create/">Job Triggers Create</a>
                 </li>
                 <li class="">
@@ -253,6 +257,10 @@
                 <li class="">
                     
     <a class="" href="../projects_job-triggers-patch/">Job Triggers Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-content-deidentify/">Locations Content Deidentify</a>
                 </li>
                 <li class="">
                     
@@ -287,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.8+20181009</a>
+        <a href="..">DLP v1.0.10+20190629</a>
       </nav>
 
       
@@ -354,6 +362,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       data: string
       type: string
     value: string
+  location: string
 
 </code></pre>
 
@@ -385,7 +394,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li><code>limits    max-findings-per-item=65</code><ul>
 <li>Max number of findings that will be returned for each item scanned.
     When set within <code>InspectDataSourceRequest</code>,
-    the maximum returned is 1000 regardless if this is set higher.
+    the maximum returned is 2000 regardless if this is set higher.
     When set within <code>InspectContentRequest</code>, this field is ignored.</li>
 </ul>
 </li>
@@ -393,7 +402,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>max-findings-per-request=85</code></p>
 <ul>
 <li>Max number of findings that will be returned per request/job.
-    When set within <code>InspectContentRequest</code>, the maximum returned is 1000
+    When set within <code>InspectContentRequest</code>, the maximum returned is 2000
     regardless if this is set higher.</li>
 </ul>
 </li>
@@ -429,6 +438,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>..    value=et</code></p>
 <ul>
 <li>String data to inspect or redact.</li>
+</ul>
+</li>
+<li>
+<p><code>..    location=consetetur</code></p>
+<ul>
+<li>The geographic location to process de-identification. Reserved for future
+    extensions.</li>
 </ul>
 </li>
 </ul>
@@ -541,7 +557,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

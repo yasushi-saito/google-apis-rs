@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - Cloud Resource Manager v1.0.8+20181008</title>
+  <title>Update - Cloud Resource Manager v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.8+20181008</a>
+        <a href="..">Cloud Resource Manager v1.0.10+20190701</a>
       </nav>
 
       
@@ -230,44 +230,45 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    create-time=justo</code></p>
+<p><code>-r .    create-time=et</code></p>
 <ul>
 <li>
 <p>Creation time.</p>
 <p>Read-only.
-* <code>labels=key=et</code>
+* <code>labels=key=diam</code>
     - The labels associated with this Project.</p>
 <p>Label keys must be between 1 and 63 characters long and must conform
 to the following regular expression: [a-z]([-a-z0-9]*[a-z0-9])?.</p>
 <p>Label values must be between 0 and 63 characters long and must conform
-to the regular expression ([a-z]([-a-z0-9]*[a-z0-9])?)?.</p>
+to the regular expression ([a-z]([-a-z0-9]*[a-z0-9])?)?. A label
+value can be empty.</p>
 <p>No more than 256 labels can be associated with a given resource.</p>
 <p>Clients should store labels in a representation such as JSON that does not
 depend on specific characters being disallowed.</p>
 <p>Example: &lt;code&gt;&#34;environment&#34; : &#34;dev&#34;&lt;/code&gt;
 Read-write.
     - the value will be associated with the given <code>key</code>
-* <code>lifecycle-state=et</code>
+* <code>lifecycle-state=ipsum</code>
     - The Project lifecycle state.</p>
 <p>Read-only.
-* <code>name=diam</code>
-    - The user-assigned display name of the Project.
-It must be 4 to 30 characters.
+* <code>name=lorem</code>
+    - The optional user-assigned display name of the Project.
+When present it must be between 4 to 30 characters.
 Allowed characters are: lowercase and uppercase letters, numbers,
 hyphen, single-quote, double-quote, space, and exclamation point.</p>
 <p>Example: &lt;code&gt;My Project&lt;/code&gt;
 Read-write.
-<em> <code>parent    id=ipsum</code>
+* <code>parent    id=et</code>
     - Required field for the type-specific id. This should correspond to the id
 used in the type-specific API&#39;s.
-</em> <code>type=lorem</code>
+* <code>type=duo</code>
     - Required field representing the resource type this id is for.
 At present, the valid types are &#34;project&#34;, &#34;folder&#34;, and &#34;organization&#34;.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    project-id=et</code></p>
+<p><code>..    project-id=aliquyam</code></p>
 <ul>
 <li>
 <p>The unique, user-assigned ID of the Project.
@@ -276,7 +277,7 @@ At present, the valid types are &#34;project&#34;, &#34;folder&#34;, and &#34;or
     Trailing hyphens are prohibited.</p>
 <p>Example: &lt;code&gt;tokyo-rain-123&lt;/code&gt;
 Read-only after creation.
-* <code>project-number=duo</code>
+* <code>project-number=sea</code>
     - The number uniquely identifying the project.</p>
 <p>Example: &lt;code&gt;415104041262&lt;/code&gt;
 Read-only.</p>
@@ -391,7 +392,7 @@ Read-only.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

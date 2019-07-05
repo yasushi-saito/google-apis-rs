@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Creatives Create - AdExchangeBuyerII v1.0.8+20181011</title>
+  <title>Creatives Create - AdExchangeBuyerII v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -228,10 +228,6 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../bidders_accounts-creatives-delete/">Accounts Creatives Delete</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../bidders_accounts-filter-sets-bid-metrics-list/">Accounts Filter Sets Bid Metrics List</a>
                 </li>
                 <li class="">
@@ -355,7 +351,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href="..">AdExchangeBuyerII v1.0.10+20190701</a>
       </nav>
 
       
@@ -406,6 +402,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>Creative:
   account-id: string
   ad-choices-destination-url: string
+  ad-technology-providers:
+    detected-provider-ids: [string]
+    has-unidentified-provider: boolean
   advertiser-name: string
   agency-id: string
   api-update-time: string
@@ -419,11 +418,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   detected-languages: [string]
   detected-product-categories: [integer]
   detected-sensitive-categories: [integer]
-  filtering-stats:
-    date:
-      day: integer
-      month: integer
-      year: integer
   html:
     height: integer
     snippet: string
@@ -475,19 +469,48 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The link to AdChoices destination page.</li>
 </ul>
 </li>
-<li><code>advertiser-name=lorem</code><ul>
+<li>
+<p><code>ad-technology-providers    detected-provider-ids=lorem</code></p>
+<ul>
+<li>
+<p>The detected ad technology provider IDs for this creative.
+    See https://storage.googleapis.com/adx-rtb-dictionaries/providers.csv for
+    mapping of provider ID to provided name, a privacy policy URL, and a list
+    of domains which can be attributed to the provider.</p>
+<p>If the creative contains provider IDs that are outside of those listed in
+the <code>BidRequest.adslot.consented_providers_settings.consented_providers</code>
+field on the (Google bid
+protocol)[https://developers.google.com/authorized-buyers/rtb/downloads/realtime-bidding-proto]
+and the
+<code>BidRequest.user.ext.consented_providers_settings.consented_providers</code>
+field on the (OpenRTB
+protocol)[https://developers.google.com/authorized-buyers/rtb/downloads/openrtb-adx-proto],
+and a bid is submitted with that creative for an impression that will
+serve to an EEA user, the bid will be filtered before the auction.
+    - Each invocation of this argument appends the given value to the array.
+* <code>has-unidentified-provider=true</code>
+    - Whether the creative contains an unidentified ad technology provider.</p>
+<p>If true for a given creative, any bid submitted with that creative for an
+impression that will serve to an EEA user will be filtered before the
+auction.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    advertiser-name=duo</code></p>
+<ul>
 <li>The name of the company being advertised in the creative.</li>
 </ul>
 </li>
-<li><code>agency-id=et</code><ul>
+<li><code>agency-id=aliquyam</code><ul>
 <li>The agency ID for this creative.</li>
 </ul>
 </li>
-<li><code>api-update-time=duo</code><ul>
-<li>@OutputOnly The last update timestamp of the creative via API.</li>
+<li><code>api-update-time=sea</code><ul>
+<li>Output only. The last update timestamp of the creative via API.</li>
 </ul>
 </li>
-<li><code>attributes=aliquyam</code><ul>
+<li><code>attributes=lorem</code><ul>
 <li>All attributes for the ads that may be shown from this creative.
     Can be used to filter the response of the
     creatives.list
@@ -495,20 +518,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>click-through-urls=sea</code><ul>
+<li><code>click-through-urls=eos</code><ul>
 <li>The set of destination URLs for the creative.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>creative-id=lorem</code><ul>
+<li><code>creative-id=erat</code><ul>
 <li>The buyer-defined creative ID of this creative.
     Can be used to filter the response of the
     creatives.list
     method.</li>
 </ul>
 </li>
-<li><code>deals-status=eos</code><ul>
-<li>@OutputOnly The top-level deals status of this creative.
+<li><code>deals-status=sadipscing</code><ul>
+<li>Output only. The top-level deals status of this creative.
     If disapproved, an entry for &#39;auctionType=DIRECT_DEALS&#39; (or &#39;ALL&#39;) in
     serving_restrictions will also exist. Note
     that this may be nuanced with other contextual restrictions, in which case,
@@ -518,91 +541,105 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     method.</li>
 </ul>
 </li>
-<li><code>declared-click-through-urls=erat</code><ul>
+<li><code>declared-click-through-urls=dolor</code><ul>
 <li>The set of declared destination URLs for the creative.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>detected-advertiser-ids=sadipscing</code><ul>
-<li>@OutputOnly Detected advertiser IDs, if any.</li>
+<li><code>detected-advertiser-ids=eirmod</code><ul>
+<li>Output only. Detected advertiser IDs, if any.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>detected-domains=dolor</code><ul>
-<li>@OutputOnly
-    The detected domains for this creative.</li>
+<li><code>detected-domains=elitr</code><ul>
+<li>Output only. The detected domains for this creative.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>detected-languages=eirmod</code><ul>
-<li>@OutputOnly
-    The detected languages for this creative. The order is arbitrary. The codes
-    are 2 or 5 characters and are documented at
+<li><code>detected-languages=amet</code><ul>
+<li>Output only. The detected languages for this creative. The order is
+    arbitrary. The codes are 2 or 5 characters and are documented at
     https://developers.google.com/adwords/api/docs/appendix/languagecodes.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>detected-product-categories=58</code><ul>
-<li>@OutputOnly Detected product categories, if any.
+<li><code>detected-product-categories=41</code><ul>
+<li>Output only. Detected product categories, if any.
     See the ad-product-categories.txt file in the technical documentation
     for a list of IDs.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>detected-sensitive-categories=4</code><ul>
-<li>@OutputOnly Detected sensitive categories, if any.
+<li><code>detected-sensitive-categories=65</code><ul>
+<li>Output only. Detected sensitive categories, if any.
     See the ad-sensitive-categories.txt file in the technical documentation for
     a list of IDs. You should use these IDs along with the
     excluded-sensitive-category field in the bid request to filter your bids.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>filtering-stats.date    day=41</code><ul>
-<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0
-    if specifying a year by itself or a year and month where the day is not
-    significant.</li>
-</ul>
-</li>
-<li><code>month=65</code><ul>
-<li>Month of year. Must be from 1 to 12, or 0 if specifying a year without a
-    month and day.</li>
-</ul>
-</li>
-<li>
-<p><code>year=62</code></p>
-<ul>
-<li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without
-    a year.</li>
-</ul>
-</li>
-<li>
-<p><code>...html    height=68</code></p>
-<ul>
+<li><code>html    height=62</code><ul>
 <li>The height of the HTML snippet in pixels.</li>
 </ul>
 </li>
-<li><code>snippet=invidunt</code><ul>
+<li><code>snippet=dolore</code><ul>
 <li>The HTML snippet that displays the ad when inserted in the web page.</li>
 </ul>
 </li>
 <li>
-<p><code>width=19</code></p>
+<p><code>width=64</code></p>
 <ul>
 <li>The width of the HTML snippet in pixels.</li>
 </ul>
 </li>
 <li>
-<p><code>..    impression-tracking-urls=accusam</code></p>
+<p><code>..    impression-tracking-urls=aliquyam</code></p>
 <ul>
 <li>The set of URLs to be called to record an impression.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>native    advertiser-name=lorem</code><ul>
+<li><code>native    advertiser-name=accusam</code><ul>
 <li>The name of the advertiser or sponsor, to be displayed in the ad creative.</li>
 </ul>
 </li>
-<li><code>app-icon    height=92</code><ul>
+<li><code>app-icon    height=45</code><ul>
+<li>Image height in pixels.</li>
+</ul>
+</li>
+<li><code>url=sea</code><ul>
+<li>The URL of the image.</li>
+</ul>
+</li>
+<li>
+<p><code>width=80</code></p>
+<ul>
+<li>Image width in pixels.</li>
+</ul>
+</li>
+<li>
+<p><code>..    body=duo</code></p>
+<ul>
+<li>A long description of the ad.</li>
+</ul>
+</li>
+<li><code>call-to-action=et</code><ul>
+<li>A label for the button that the user is supposed to click.</li>
+</ul>
+</li>
+<li><code>click-link-url=eirmod</code><ul>
+<li>The URL that the browser/SDK will load when the user clicks the ad.</li>
+</ul>
+</li>
+<li><code>click-tracking-url=sanctus</code><ul>
+<li>The URL to use for click tracking.</li>
+</ul>
+</li>
+<li><code>headline=et</code><ul>
+<li>A short title for the ad.</li>
+</ul>
+</li>
+<li><code>image    height=55</code><ul>
 <li>Image height in pixels.</li>
 </ul>
 </li>
@@ -611,59 +648,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>width=31</code></p>
+<p><code>width=56</code></p>
 <ul>
 <li>Image width in pixels.</li>
 </ul>
 </li>
 <li>
-<p><code>..    body=et</code></p>
-<ul>
-<li>A long description of the ad.</li>
-</ul>
-</li>
-<li><code>call-to-action=eirmod</code><ul>
-<li>A label for the button that the user is supposed to click.</li>
-</ul>
-</li>
-<li><code>click-link-url=sanctus</code><ul>
-<li>The URL that the browser/SDK will load when the user clicks the ad.</li>
-</ul>
-</li>
-<li><code>click-tracking-url=et</code><ul>
-<li>The URL to use for click tracking.</li>
-</ul>
-</li>
-<li><code>headline=amet</code><ul>
-<li>A short title for the ad.</li>
-</ul>
-</li>
-<li><code>image    height=78</code><ul>
-<li>Image height in pixels.</li>
-</ul>
-</li>
-<li><code>url=consetetur</code><ul>
-<li>The URL of the image.</li>
-</ul>
-</li>
-<li>
-<p><code>width=65</code></p>
-<ul>
-<li>Image width in pixels.</li>
-</ul>
-</li>
-<li>
-<p><code>..logo    height=85</code></p>
+<p><code>..logo    height=65</code></p>
 <ul>
 <li>Image height in pixels.</li>
 </ul>
 </li>
-<li><code>url=sed</code><ul>
+<li><code>url=ea</code><ul>
 <li>The URL of the image.</li>
 </ul>
 </li>
 <li>
-<p><code>width=98</code></p>
+<p><code>width=21</code></p>
 <ul>
 <li>Image width in pixels.</li>
 </ul>
@@ -674,24 +675,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The price of the promoted app including currency info.</li>
 </ul>
 </li>
-<li><code>star-rating=0.528448098786</code><ul>
+<li><code>star-rating=0.529075805297</code><ul>
 <li>The app rating in the app store. Must be in the range [0-5].</li>
 </ul>
 </li>
-<li><code>store-url=et</code><ul>
+<li><code>store-url=dolor</code><ul>
 <li>The URL to the app store to purchase/download the promoted app.</li>
 </ul>
 </li>
 <li>
-<p><code>video-url=consetetur</code></p>
+<p><code>video-url=et</code></p>
 <ul>
 <li>The URL to fetch a native video ad.</li>
 </ul>
 </li>
 <li>
-<p><code>..    open-auction-status=amet.</code></p>
+<p><code>..    open-auction-status=consetetur</code></p>
 <ul>
-<li>@OutputOnly The top-level open auction status of this creative.
+<li>Output only. The top-level open auction status of this creative.
     If disapproved, an entry for &#39;auctionType = OPEN_AUCTION&#39; (or &#39;ALL&#39;) in
     serving_restrictions will also exist. Note
     that this may be nuanced with other contextual restrictions, in which case,
@@ -701,27 +702,27 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     method.</li>
 </ul>
 </li>
-<li><code>restricted-categories=voluptua.</code><ul>
+<li><code>restricted-categories=amet.</code><ul>
 <li>All restricted categories for the ads that may be shown from this creative.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>vendor-ids=45</code><ul>
+<li><code>vendor-ids=74</code><ul>
 <li>All vendor IDs for the ads that may be shown from this creative.
     See https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt
     for possible values.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>version=90</code><ul>
-<li>@OutputOnly The version of this creative.</li>
+<li><code>version=45</code><ul>
+<li>Output only. The version of this creative.</li>
 </ul>
 </li>
-<li><code>video    video-url=justo</code><ul>
+<li><code>video    video-url=gubergren</code><ul>
 <li>The URL to fetch a video ad.</li>
 </ul>
 </li>
-<li><code>video-vast-xml=sit</code><ul>
+<li><code>video-vast-xml=justo</code><ul>
 <li>The contents of a VAST document for a video ad.
     This document should conform to the VAST 2.0 or 3.0 standard.</li>
 </ul>
@@ -847,7 +848,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

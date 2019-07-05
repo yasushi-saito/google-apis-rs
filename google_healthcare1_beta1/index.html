@@ -1,0 +1,513 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `google_healthcare1_beta1` crate."><meta name="keywords" content="rust, rustlang, rust-lang, google_healthcare1_beta1"><title>google_healthcare1_beta1 - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../google_healthcare1_beta1/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate google_healthcare1_beta1</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all google_healthcare1_beta1's items</p></a><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'google_healthcare1_beta1', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/google_healthcare1_beta1/lib.rs.html#5-27253' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>google_healthcare1_beta1</a></span></h1><div class='docblock'><p>This documentation was generated from <em>Cloud Healthcare</em> crate version <em>1.0.9+20190628</em>, where <em>20190628</em> is the exact revision of the <em>healthcare:v1beta1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v1.0.9</em>.</p>
+<p>Everything else about the <em>Cloud Healthcare</em> <em>v1_beta1</em> API can be found at the
+<a href="https://cloud.google.com/healthcare">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/healthcare1_beta1">on github</a>.</p>
+<h1 id="features" class="section-header"><a href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.CloudHealthcare.html">hub</a> ... </p>
+<ul>
+<li>projects</li>
+<li><a href="struct.ProjectLocationDatasetCreateCall.html"><em>locations datasets create</em></a>, <a href="struct.ProjectLocationDatasetDeidentifyCall.html"><em>locations datasets deidentify</em></a>, <a href="struct.ProjectLocationDatasetDeleteCall.html"><em>locations datasets delete</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreCreateCall.html"><em>locations datasets dicom stores create</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreDeleteCall.html"><em>locations datasets dicom stores delete</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreExportCall.html"><em>locations datasets dicom stores export</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreGetCall.html"><em>locations datasets dicom stores get</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreGetIamPolicyCall.html"><em>locations datasets dicom stores get iam policy</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreImportCall.html"><em>locations datasets dicom stores import</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreListCall.html"><em>locations datasets dicom stores list</em></a>, <a href="struct.ProjectLocationDatasetDicomStorePatchCall.html"><em>locations datasets dicom stores patch</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreSearchForInstanceCall.html"><em>locations datasets dicom stores search for instances</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreSearchForSeryCall.html"><em>locations datasets dicom stores search for series</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreSearchForStudyCall.html"><em>locations datasets dicom stores search for studies</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreSetIamPolicyCall.html"><em>locations datasets dicom stores set iam policy</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStoreInstanceCall.html"><em>locations datasets dicom stores store instances</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudyDeleteCall.html"><em>locations datasets dicom stores studies delete</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudyRetrieveMetadataCall.html"><em>locations datasets dicom stores studies retrieve metadata</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudyRetrieveStudyCall.html"><em>locations datasets dicom stores studies retrieve study</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySearchForInstanceCall.html"><em>locations datasets dicom stores studies search for instances</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySearchForSeryCall.html"><em>locations datasets dicom stores studies search for series</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryDeleteCall.html"><em>locations datasets dicom stores studies series delete</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceDeleteCall.html"><em>locations datasets dicom stores studies series instances delete</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveFrameCall.html"><em>locations datasets dicom stores studies series instances frames retrieve frames</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveRenderedCall.html"><em>locations datasets dicom stores studies series instances frames retrieve rendered</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveInstanceCall.html"><em>locations datasets dicom stores studies series instances retrieve instance</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveMetadataCall.html"><em>locations datasets dicom stores studies series instances retrieve metadata</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveRenderedCall.html"><em>locations datasets dicom stores studies series instances retrieve rendered</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryRetrieveMetadataCall.html"><em>locations datasets dicom stores studies series retrieve metadata</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySeryRetrieveSeryCall.html"><em>locations datasets dicom stores studies series retrieve series</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudySerySearchForInstanceCall.html"><em>locations datasets dicom stores studies series search for instances</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreStudyStoreInstanceCall.html"><em>locations datasets dicom stores studies store instances</em></a>, <a href="struct.ProjectLocationDatasetDicomStoreTestIamPermissionCall.html"><em>locations datasets dicom stores test iam permissions</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreCreateCall.html"><em>locations datasets fhir stores create</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreDeleteCall.html"><em>locations datasets fhir stores delete</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreExportCall.html"><em>locations datasets fhir stores export</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirObservationLastnCall.html"><em>locations datasets fhir stores fhir  observation-lastn</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirPatientEverythingCall.html"><em>locations datasets fhir stores fhir  patient-everything</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirResourcePurgeCall.html"><em>locations datasets fhir stores fhir  resource-purge</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirCapabilityCall.html"><em>locations datasets fhir stores fhir capabilities</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirConditionalDeleteCall.html"><em>locations datasets fhir stores fhir conditional delete</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirConditionalPatchCall.html"><em>locations datasets fhir stores fhir conditional patch</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirConditionalUpdateCall.html"><em>locations datasets fhir stores fhir conditional update</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirCreateCall.html"><em>locations datasets fhir stores fhir create</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirDeleteCall.html"><em>locations datasets fhir stores fhir delete</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirExecuteBundleCall.html"><em>locations datasets fhir stores fhir execute bundle</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirHistoryCall.html"><em>locations datasets fhir stores fhir history</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirPatchCall.html"><em>locations datasets fhir stores fhir patch</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirReadCall.html"><em>locations datasets fhir stores fhir read</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirSearchCall.html"><em>locations datasets fhir stores fhir search</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirUpdateCall.html"><em>locations datasets fhir stores fhir update</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreFhirVreadCall.html"><em>locations datasets fhir stores fhir vread</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreGetCall.html"><em>locations datasets fhir stores get</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreGetIamPolicyCall.html"><em>locations datasets fhir stores get iam policy</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreImportCall.html"><em>locations datasets fhir stores import</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreListCall.html"><em>locations datasets fhir stores list</em></a>, <a href="struct.ProjectLocationDatasetFhirStorePatchCall.html"><em>locations datasets fhir stores patch</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreSetIamPolicyCall.html"><em>locations datasets fhir stores set iam policy</em></a>, <a href="struct.ProjectLocationDatasetFhirStoreTestIamPermissionCall.html"><em>locations datasets fhir stores test iam permissions</em></a>, <a href="struct.ProjectLocationDatasetGetCall.html"><em>locations datasets get</em></a>, <a href="struct.ProjectLocationDatasetGetIamPolicyCall.html"><em>locations datasets get iam policy</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreCreateCall.html"><em>locations datasets hl7 v2 stores create</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreDeleteCall.html"><em>locations datasets hl7 v2 stores delete</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreGetCall.html"><em>locations datasets hl7 v2 stores get</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreGetIamPolicyCall.html"><em>locations datasets hl7 v2 stores get iam policy</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreListCall.html"><em>locations datasets hl7 v2 stores list</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessageCreateCall.html"><em>locations datasets hl7 v2 stores messages create</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessageDeleteCall.html"><em>locations datasets hl7 v2 stores messages delete</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessageGetCall.html"><em>locations datasets hl7 v2 stores messages get</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessageIngestCall.html"><em>locations datasets hl7 v2 stores messages ingest</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessageListCall.html"><em>locations datasets hl7 v2 stores messages list</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreMessagePatchCall.html"><em>locations datasets hl7 v2 stores messages patch</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StorePatchCall.html"><em>locations datasets hl7 v2 stores patch</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreSetIamPolicyCall.html"><em>locations datasets hl7 v2 stores set iam policy</em></a>, <a href="struct.ProjectLocationDatasetHl7V2StoreTestIamPermissionCall.html"><em>locations datasets hl7 v2 stores test iam permissions</em></a>, <a href="struct.ProjectLocationDatasetListCall.html"><em>locations datasets list</em></a>, <a href="struct.ProjectLocationDatasetOperationGetCall.html"><em>locations datasets operations get</em></a>, <a href="struct.ProjectLocationDatasetOperationListCall.html"><em>locations datasets operations list</em></a>, <a href="struct.ProjectLocationDatasetPatchCall.html"><em>locations datasets patch</em></a>, <a href="struct.ProjectLocationDatasetSetIamPolicyCall.html"><em>locations datasets set iam policy</em></a>, <a href="struct.ProjectLocationDatasetTestIamPermissionCall.html"><em>locations datasets test iam permissions</em></a>, <a href="struct.ProjectLocationGetCall.html"><em>locations get</em></a> and <a href="struct.ProjectLocationListCall.html"><em>locations list</em></a></li>
+</ul>
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="http://byron.github.io/google-apis-rs">documentation index</a>.</p>
+<h1 id="structure-of-this-library" class="section-header"><a href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+<ul>
+<li><strong><a href="struct.CloudHealthcare.html">Hub</a></strong>
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul>
+</li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul>
+</li>
+</ul>
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre><code class="language-Rust,ignore">let r = hub.resource().activity(...).doit()
+</code></pre>
+<p>Or specifically ...</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_history</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_search</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_search_for_studies</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_delete</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_patch</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_search_for_instances</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_instances_retrieve_rendered</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_instances_frames_retrieve_rendered</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_conditional_update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_retrieve_metadata</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_execute_bundle</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir__patient_everything</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_instances_frames_retrieve_frames</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_search_for_series</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_retrieve_study</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_store_instances</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_conditional_patch</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_update</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_search_for_instances</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_search_for_series</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir__observation_lastn</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_vread</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_instances_retrieve_metadata</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_search_for_instances</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_instances_retrieve_instance</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_retrieve_metadata</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_studies_series_retrieve_series</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_create</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_read</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_capabilities</span>(...).<span class="ident">doit</span>()
+<span class="kw">let</span> <span class="ident">r</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_dicom_stores_store_instances</span>(...).<span class="ident">doit</span>()</pre></div>
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+<h1 id="usage" class="section-header"><a href="#usage">Usage</a></h1><h2 id="setting-up-your-project" class="section-header"><a href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+<pre><code class="language-toml">[dependencies]
+google-healthcare1_beta1 = &quot;*&quot;
+# This project intentionally uses an old version of Hyper. See
+# https://github.com/Byron/google-apis-rs/issues/173 for more
+# information.
+hyper = &quot;^0.10&quot;
+hyper-rustls = &quot;^0.6&quot;
+serde = &quot;^1.0&quot;
+serde_json = &quot;^1.0&quot;
+yup-oauth2 = &quot;^1.0&quot;
+</code></pre>
+<h2 id="a-complete-example" class="section-header"><a href="#a-complete-example">A complete example</a></h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">hyper_rustls</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">yup_oauth2</span> <span class="kw">as</span> <span class="ident">oauth2</span>;
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">google_healthcare1_beta1</span> <span class="kw">as</span> <span class="ident">healthcare1_beta1</span>;
+<span class="kw">use</span> <span class="ident">healthcare1_beta1</span>::{<span class="prelude-ty">Result</span>, <span class="ident">Error</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">default</span>::<span class="ident">Default</span>;
+<span class="kw">use</span> <span class="ident">oauth2</span>::{<span class="ident">Authenticator</span>, <span class="ident">DefaultAuthenticatorDelegate</span>, <span class="ident">ApplicationSecret</span>, <span class="ident">MemoryStorage</span>};
+<span class="kw">use</span> <span class="ident">healthcare1_beta1</span>::<span class="ident">CloudHealthcare</span>;
+ 
+<span class="comment">// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class="comment">// `client_secret`, among other things.</span>
+<span class="kw">let</span> <span class="ident">secret</span>: <span class="ident">ApplicationSecret</span> <span class="op">=</span> <span class="ident">Default</span>::<span class="ident">default</span>();
+<span class="comment">// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class="comment">// unless you replace  `None` with the desired Flow.</span>
+<span class="comment">// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class="comment">// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class="comment">// retrieve them from storage.</span>
+<span class="kw">let</span> <span class="ident">auth</span> <span class="op">=</span> <span class="ident">Authenticator</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">secret</span>, <span class="ident">DefaultAuthenticatorDelegate</span>,
+                              <span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())),
+                              <span class="op">&lt;</span><span class="ident">MemoryStorage</span> <span class="kw">as</span> <span class="ident">Default</span><span class="op">&gt;</span>::<span class="ident">default</span>(), <span class="prelude-val">None</span>);
+<span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hub</span> <span class="op">=</span> <span class="ident">CloudHealthcare</span>::<span class="ident">new</span>(<span class="ident">hyper</span>::<span class="ident">Client</span>::<span class="ident">with_connector</span>(<span class="ident">hyper</span>::<span class="ident">net</span>::<span class="ident">HttpsConnector</span>::<span class="ident">new</span>(<span class="ident">hyper_rustls</span>::<span class="ident">TlsClient</span>::<span class="ident">new</span>())), <span class="ident">auth</span>);
+<span class="comment">// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class="comment">// execute the final call using `doit()`.</span>
+<span class="comment">// Values shown here are possibly random and not representative !</span>
+<span class="kw">let</span> <span class="ident">result</span> <span class="op">=</span> <span class="ident">hub</span>.<span class="ident">projects</span>().<span class="ident">locations_datasets_fhir_stores_fhir_history</span>(<span class="string">&quot;name&quot;</span>)
+             .<span class="ident">since</span>(<span class="string">&quot;kasd&quot;</span>)
+             .<span class="ident">page</span>(<span class="string">&quot;accusam&quot;</span>)
+             .<span class="ident">count</span>(<span class="op">-</span><span class="number">8</span>)
+             .<span class="ident">at</span>(<span class="string">&quot;justo&quot;</span>)
+             .<span class="ident">doit</span>();
+ 
+<span class="kw">match</span> <span class="ident">result</span> {
+    <span class="prelude-val">Err</span>(<span class="ident">e</span>) <span class="op">=&gt;</span> <span class="kw">match</span> <span class="ident">e</span> {
+        <span class="comment">// The Error enum provides details about what exactly happened.</span>
+        <span class="comment">// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class="ident">Error</span>::<span class="ident">HttpError</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingAPIKey</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">MissingToken</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Cancelled</span>
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">UploadSizeLimitExceeded</span>(<span class="kw">_</span>, <span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">Failure</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">BadRequest</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">FieldClash</span>(<span class="kw">_</span>)
+        <span class="op">|</span><span class="ident">Error</span>::<span class="ident">JsonDecodeError</span>(<span class="kw">_</span>, <span class="kw">_</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">e</span>),
+    },
+    <span class="prelude-val">Ok</span>(<span class="ident">res</span>) <span class="op">=&gt;</span> <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Success: {:?}&quot;</span>, <span class="ident">res</span>),
+}</pre></div>
+<h2 id="handling-errors" class="section-header"><a href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="https://docs.rs/yup-oauth2/*/yup_oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+<h2 id="uploads-and-downloads" class="section-header"><a href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+<h2 id="customization-and-callbacks" class="section-header"><a href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+<h2 id="optional-parts-in-server-requests" class="section-header"><a href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+<h2 id="builder-arguments" class="section-header"><a href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it's methods.
+These will always take a single argument, for which the following statements are true.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr class='module-item'><td><a class="struct" href="struct.AuditConfig.html" title='google_healthcare1_beta1::AuditConfig struct'>AuditConfig</a></td><td class='docblock-short'><p>Specifies the audit configuration for a service.
+The configuration determines which permission types are logged, and what
+identities, if any, are exempted from logging.
+An AuditConfig must have one or more AuditLogConfigs.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.AuditLogConfig.html" title='google_healthcare1_beta1::AuditLogConfig struct'>AuditLogConfig</a></td><td class='docblock-short'><p>Provides the configuration for logging a type of permissions.
+Example:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Binding.html" title='google_healthcare1_beta1::Binding struct'>Binding</a></td><td class='docblock-short'><p>Associates <code>members</code> with a <code>role</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CharacterMaskConfig.html" title='google_healthcare1_beta1::CharacterMaskConfig struct'>CharacterMaskConfig</a></td><td class='docblock-short'><p>Mask a string by replacing its characters with a fixed character.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Chunk.html" title='google_healthcare1_beta1::Chunk struct'>Chunk</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.CloudHealthcare.html" title='google_healthcare1_beta1::CloudHealthcare struct'>CloudHealthcare</a></td><td class='docblock-short'><p>Central instance to access all CloudHealthcare related resource activities</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ContentRange.html" title='google_healthcare1_beta1::ContentRange struct'>ContentRange</a></td><td class='docblock-short'><p>Implements the Content-Range header, for serialization only</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CreateMessageRequest.html" title='google_healthcare1_beta1::CreateMessageRequest struct'>CreateMessageRequest</a></td><td class='docblock-short'><p>Creates a new message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.CryptoHashConfig.html" title='google_healthcare1_beta1::CryptoHashConfig struct'>CryptoHashConfig</a></td><td class='docblock-short'><p>Pseudonymization method that generates surrogates via cryptographic hashing.
+Uses SHA-256.
+Outputs a base64-encoded representation of the hashed output
+(for example, <code>L7k0BHmF1ha5U3NfGykjro4xWi1MPVQPjhMAZbSV9mM=</code>).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Dataset.html" title='google_healthcare1_beta1::Dataset struct'>Dataset</a></td><td class='docblock-short'><p>A message representing a health dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DateShiftConfig.html" title='google_healthcare1_beta1::DateShiftConfig struct'>DateShiftConfig</a></td><td class='docblock-short'><p>Shift a date forward or backward in time by a random amount which is
+consistent for a given patient and crypto key combination.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DefaultDelegate.html" title='google_healthcare1_beta1::DefaultDelegate struct'>DefaultDelegate</a></td><td class='docblock-short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeidentifyConfig.html" title='google_healthcare1_beta1::DeidentifyConfig struct'>DeidentifyConfig</a></td><td class='docblock-short'><p>Configures de-id options specific to different types of content.
+Each submessage customizes the handling of an
+https://tools.ietf.org/html/rfc6838 media type or subtype. Configs are
+applied in a nested manner at runtime.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DeidentifyDatasetRequest.html" title='google_healthcare1_beta1::DeidentifyDatasetRequest struct'>DeidentifyDatasetRequest</a></td><td class='docblock-short'><p>Redacts identifying information from the specified dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DicomConfig.html" title='google_healthcare1_beta1::DicomConfig struct'>DicomConfig</a></td><td class='docblock-short'><p>Specifies the parameters needed for de-identification of DICOM stores.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DicomStore.html" title='google_healthcare1_beta1::DicomStore struct'>DicomStore</a></td><td class='docblock-short'><p>Represents a DICOM store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.DummyNetworkStream.html" title='google_healthcare1_beta1::DummyNetworkStream struct'>DummyNetworkStream</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.Empty.html" title='google_healthcare1_beta1::Empty struct'>Empty</a></td><td class='docblock-short'><p>A generic empty message that you can re-use to avoid defining duplicated
+empty messages in your APIs. A typical example is to use it as the request
+or the response type of an API method. For instance:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ErrorResponse.html" title='google_healthcare1_beta1::ErrorResponse struct'>ErrorResponse</a></td><td class='docblock-short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ExportDicomDataRequest.html" title='google_healthcare1_beta1::ExportDicomDataRequest struct'>ExportDicomDataRequest</a></td><td class='docblock-short'><p>Exports data from the specified DICOM store.
+If a given resource (e.g., a DICOM object with the same SOPInstance UID)
+already exists in the output, it is overwritten with the version
+in the source dataset.
+Exported DICOM data will persist when the DICOM store from which it was
+exported is deleted.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ExportResourcesRequest.html" title='google_healthcare1_beta1::ExportResourcesRequest struct'>ExportResourcesRequest</a></td><td class='docblock-short'><p>Request to export resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Expr.html" title='google_healthcare1_beta1::Expr struct'>Expr</a></td><td class='docblock-short'><p>Represents an expression text. Example:</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FhirConfig.html" title='google_healthcare1_beta1::FhirConfig struct'>FhirConfig</a></td><td class='docblock-short'><p>Specifies how de-identification of a FHIR store should be handled.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FhirStore.html" title='google_healthcare1_beta1::FhirStore struct'>FhirStore</a></td><td class='docblock-short'><p>Represents a FHIR store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.FieldMetadata.html" title='google_healthcare1_beta1::FieldMetadata struct'>FieldMetadata</a></td><td class='docblock-short'><p>Specifies FHIR paths to match, and how to handle de-identification of
+matching fields.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1DicomGcsDestination.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1DicomGcsDestination struct'>GoogleCloudHealthcareV1beta1DicomGcsDestination</a></td><td class='docblock-short'><p>The Cloud Storage location where the output should be written, and the export
+configuration.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1DicomBigQueryDestination.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1DicomBigQueryDestination struct'>GoogleCloudHealthcareV1beta1DicomBigQueryDestination</a></td><td class='docblock-short'><p>The BigQuery table where the output should be written.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1FhirRestGcsDestination.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1FhirRestGcsDestination struct'>GoogleCloudHealthcareV1beta1FhirRestGcsDestination</a></td><td class='docblock-short'><p>The configuration for exporting to Cloud Storage.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1DicomGcsSource.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1DicomGcsSource struct'>GoogleCloudHealthcareV1beta1DicomGcsSource</a></td><td class='docblock-short'><p>Specifies the configuration for importing data from Cloud Storage.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1FhirBigQueryDestination.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1FhirBigQueryDestination struct'>GoogleCloudHealthcareV1beta1FhirBigQueryDestination</a></td><td class='docblock-short'><p>The configuration for exporting to BigQuery.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.GoogleCloudHealthcareV1beta1FhirRestGcsSource.html" title='google_healthcare1_beta1::GoogleCloudHealthcareV1beta1FhirRestGcsSource struct'>GoogleCloudHealthcareV1beta1FhirRestGcsSource</a></td><td class='docblock-short'><p>Specifies the configuration for importing data from Cloud Storage.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Hl7V2Store.html" title='google_healthcare1_beta1::Hl7V2Store struct'>Hl7V2Store</a></td><td class='docblock-short'><p>Represents an HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.HttpBody.html" title='google_healthcare1_beta1::HttpBody struct'>HttpBody</a></td><td class='docblock-short'><p>Message that represents an arbitrary HTTP body. It should only be used for
+payload formats that can't be represented as JSON, such as raw binary or
+an HTML page.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ImageConfig.html" title='google_healthcare1_beta1::ImageConfig struct'>ImageConfig</a></td><td class='docblock-short'><p>Specifies how de-identification of image pixel should be handled.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ImportDicomDataRequest.html" title='google_healthcare1_beta1::ImportDicomDataRequest struct'>ImportDicomDataRequest</a></td><td class='docblock-short'><p>Imports data into the specified DICOM store.
+Returns an error if any of the files to import are not DICOM files. This
+API will accept duplicate DICOM instances, by simply ignoring the newly
+pushed instance (it will not overwrite).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ImportResourcesRequest.html" title='google_healthcare1_beta1::ImportResourcesRequest struct'>ImportResourcesRequest</a></td><td class='docblock-short'><p>Request to import resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.InfoTypeTransformation.html" title='google_healthcare1_beta1::InfoTypeTransformation struct'>InfoTypeTransformation</a></td><td class='docblock-short'><p>A transformation to apply to text that is identified as a specific
+info_type.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.IngestMessageRequest.html" title='google_healthcare1_beta1::IngestMessageRequest struct'>IngestMessageRequest</a></td><td class='docblock-short'><p>Ingests a message into the specified HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.IngestMessageResponse.html" title='google_healthcare1_beta1::IngestMessageResponse struct'>IngestMessageResponse</a></td><td class='docblock-short'><p>Acknowledges that a message has been ingested into the specified
+HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.JsonServerError.html" title='google_healthcare1_beta1::JsonServerError struct'>JsonServerError</a></td><td class='docblock-short'><p>A utility type which can decode a server response that indicates error</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListDatasetsResponse.html" title='google_healthcare1_beta1::ListDatasetsResponse struct'>ListDatasetsResponse</a></td><td class='docblock-short'><p>Lists the available datasets.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListDicomStoresResponse.html" title='google_healthcare1_beta1::ListDicomStoresResponse struct'>ListDicomStoresResponse</a></td><td class='docblock-short'><p>Lists the DICOM stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListFhirStoresResponse.html" title='google_healthcare1_beta1::ListFhirStoresResponse struct'>ListFhirStoresResponse</a></td><td class='docblock-short'><p>Lists the FHIR stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListHl7V2StoresResponse.html" title='google_healthcare1_beta1::ListHl7V2StoresResponse struct'>ListHl7V2StoresResponse</a></td><td class='docblock-short'><p>Lists the HL7v2 stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListLocationsResponse.html" title='google_healthcare1_beta1::ListLocationsResponse struct'>ListLocationsResponse</a></td><td class='docblock-short'><p>The response message for Locations.ListLocations.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListMessagesResponse.html" title='google_healthcare1_beta1::ListMessagesResponse struct'>ListMessagesResponse</a></td><td class='docblock-short'><p>Lists the messages in the specified HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ListOperationsResponse.html" title='google_healthcare1_beta1::ListOperationsResponse struct'>ListOperationsResponse</a></td><td class='docblock-short'><p>The response message for Operations.ListOperations.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Location.html" title='google_healthcare1_beta1::Location struct'>Location</a></td><td class='docblock-short'><p>A resource that represents Google Cloud Platform location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Message.html" title='google_healthcare1_beta1::Message struct'>Message</a></td><td class='docblock-short'><p>A complete HL7v2 message.
+See http://www.hl7.org/implement/standards/index.cfm?ref=common for details
+on the standard.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MethodInfo.html" title='google_healthcare1_beta1::MethodInfo struct'>MethodInfo</a></td><td class='docblock-short'><p>Contains information about an API request.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.MultiPartReader.html" title='google_healthcare1_beta1::MultiPartReader struct'>MultiPartReader</a></td><td class='docblock-short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.NotificationConfig.html" title='google_healthcare1_beta1::NotificationConfig struct'>NotificationConfig</a></td><td class='docblock-short'><p>Specifies where notifications should be sent upon changes to a data store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Operation.html" title='google_healthcare1_beta1::Operation struct'>Operation</a></td><td class='docblock-short'><p>This resource represents a long-running operation that is the result of a
+network API call.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParsedData.html" title='google_healthcare1_beta1::ParsedData struct'>ParsedData</a></td><td class='docblock-short'><p>The content of a HL7v2 message in a structured format.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ParserConfig.html" title='google_healthcare1_beta1::ParserConfig struct'>ParserConfig</a></td><td class='docblock-short'><p>The configuration for the parser. It determines how the server parses the
+messages.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.PatientId.html" title='google_healthcare1_beta1::PatientId struct'>PatientId</a></td><td class='docblock-short'><p>A patient identifier and associated type.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Policy.html" title='google_healthcare1_beta1::Policy struct'>Policy</a></td><td class='docblock-short'><p>Defines an Identity and Access Management (IAM) policy. It is used to
+specify access control policies for Cloud Platform resources.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetCreateCall struct'>ProjectLocationDatasetCreateCall</a></td><td class='docblock-short'><p>Creates a new health dataset. Results are returned through the
+Operation interface which returns either an
+<code>Operation.response</code> which contains a Dataset or
+<code>Operation.error</code>. The metadata
+field type is OperationMetadata.
+A Google Cloud Platform project can contain up to 500 datasets across all
+regions.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDeidentifyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDeidentifyCall struct'>ProjectLocationDatasetDeidentifyCall</a></td><td class='docblock-short'><p>Creates a new dataset containing de-identified data from the source
+dataset. The metadata field type
+is OperationMetadata.
+If the request is successful, the
+response field type is
+DeidentifySummary.
+If errors occur,
+details field type is
+DeidentifyErrorDetails.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDeleteCall struct'>ProjectLocationDatasetDeleteCall</a></td><td class='docblock-short'><p>Deletes the specified health dataset and all data contained in the dataset.
+Deleting a dataset does not affect the sources from which the dataset was
+imported (if any).</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreCreateCall struct'>ProjectLocationDatasetDicomStoreCreateCall</a></td><td class='docblock-short'><p>Creates a new DICOM store within the parent dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreDeleteCall struct'>ProjectLocationDatasetDicomStoreDeleteCall</a></td><td class='docblock-short'><p>Deletes the specified DICOM store and removes all images that are contained
+within it.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreExportCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreExportCall struct'>ProjectLocationDatasetDicomStoreExportCall</a></td><td class='docblock-short'><p>Exports data to the specified destination by copying it from the DICOM
+store.
+The metadata field type is
+OperationMetadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreGetCall struct'>ProjectLocationDatasetDicomStoreGetCall</a></td><td class='docblock-short'><p>Gets the specified DICOM store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreGetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreGetIamPolicyCall struct'>ProjectLocationDatasetDicomStoreGetIamPolicyCall</a></td><td class='docblock-short'><p>Gets the access control policy for a resource.
+Returns an empty policy if the resource exists and does not have a policy
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreImportCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreImportCall struct'>ProjectLocationDatasetDicomStoreImportCall</a></td><td class='docblock-short'><p>Imports data into the DICOM store by copying it from the specified source.
+For errors, the Operation will be populated with error details (in the form
+of ImportDicomDataErrorDetails in error.details), which will hold
+finer-grained error information.
+The metadata field type is
+OperationMetadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreListCall struct'>ProjectLocationDatasetDicomStoreListCall</a></td><td class='docblock-short'><p>Lists the DICOM stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStorePatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStorePatchCall struct'>ProjectLocationDatasetDicomStorePatchCall</a></td><td class='docblock-short'><p>Updates the specified DICOM store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreSearchForInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreSearchForInstanceCall struct'>ProjectLocationDatasetDicomStoreSearchForInstanceCall</a></td><td class='docblock-short'><p>SearchForInstances returns a list of matching instances. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreSearchForSeryCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreSearchForSeryCall struct'>ProjectLocationDatasetDicomStoreSearchForSeryCall</a></td><td class='docblock-short'><p>SearchForSeries returns a list of matching series. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreSearchForStudyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreSearchForStudyCall struct'>ProjectLocationDatasetDicomStoreSearchForStudyCall</a></td><td class='docblock-short'><p>SearchForStudies returns a list of matching studies. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreSetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreSetIamPolicyCall struct'>ProjectLocationDatasetDicomStoreSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStoreInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStoreInstanceCall struct'>ProjectLocationDatasetDicomStoreStoreInstanceCall</a></td><td class='docblock-short'><p>StoreInstances stores DICOM instances associated with study instance unique
+identifiers (SUID). See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudyDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudyDeleteCall struct'>ProjectLocationDatasetDicomStoreStudyDeleteCall</a></td><td class='docblock-short'><p>DeleteStudy deletes all instances within the given study. Delete requests
+are equivalent to the GET requests specified in the WADO-RS standard.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudyRetrieveMetadataCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudyRetrieveMetadataCall struct'>ProjectLocationDatasetDicomStoreStudyRetrieveMetadataCall</a></td><td class='docblock-short'><p>RetrieveStudyMetadata returns instance associated with the given study
+presented as metadata with the bulk data removed. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudyRetrieveStudyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudyRetrieveStudyCall struct'>ProjectLocationDatasetDicomStoreStudyRetrieveStudyCall</a></td><td class='docblock-short'><p>RetrieveStudy returns all instances within the given study. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySearchForInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySearchForInstanceCall struct'>ProjectLocationDatasetDicomStoreStudySearchForInstanceCall</a></td><td class='docblock-short'><p>SearchForInstances returns a list of matching instances. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySearchForSeryCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySearchForSeryCall struct'>ProjectLocationDatasetDicomStoreStudySearchForSeryCall</a></td><td class='docblock-short'><p>SearchForSeries returns a list of matching series. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryDeleteCall struct'>ProjectLocationDatasetDicomStoreStudySeryDeleteCall</a></td><td class='docblock-short'><p>DeleteSeries deletes all instances within the given study and series.
+Delete requests are equivalent to the GET requests specified in the WADO-RS
+standard.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceDeleteCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceDeleteCall</a></td><td class='docblock-short'><p>DeleteInstance deletes an instance associated with the given study, series,
+and SOP Instance UID. Delete requests are equivalent to the GET requests
+specified in the WADO-RS standard.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveFrameCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveFrameCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveFrameCall</a></td><td class='docblock-short'><p>RetrieveFrames returns instances associated with the given study, series,
+SOP Instance UID and frame numbers. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveRenderedCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveRenderedCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceFrameRetrieveRenderedCall</a></td><td class='docblock-short'><p>RetrieveRenderedFrames returns instances associated with the given study,
+series, SOP Instance UID and frame numbers in an acceptable Rendered Media
+Type. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveInstanceCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveInstanceCall</a></td><td class='docblock-short'><p>RetrieveInstance returns instance associated with the given study, series,
+and SOP Instance UID. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveMetadataCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveMetadataCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveMetadataCall</a></td><td class='docblock-short'><p>RetrieveInstanceMetadata returns instance associated with the given study,
+series, and SOP Instance UID presented as metadata with the bulk data
+removed. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveRenderedCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveRenderedCall struct'>ProjectLocationDatasetDicomStoreStudySeryInstanceRetrieveRenderedCall</a></td><td class='docblock-short'><p>RetrieveRenderedInstance returns instance associated with the given study,
+series, and SOP Instance UID in an acceptable Rendered Media Type. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryRetrieveMetadataCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryRetrieveMetadataCall struct'>ProjectLocationDatasetDicomStoreStudySeryRetrieveMetadataCall</a></td><td class='docblock-short'><p>RetrieveSeriesMetadata returns instance associated with the given study and
+series, presented as metadata with the bulk data removed. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySeryRetrieveSeryCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySeryRetrieveSeryCall struct'>ProjectLocationDatasetDicomStoreStudySeryRetrieveSeryCall</a></td><td class='docblock-short'><p>RetrieveSeries returns all instances within the given study and series. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudySerySearchForInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudySerySearchForInstanceCall struct'>ProjectLocationDatasetDicomStoreStudySerySearchForInstanceCall</a></td><td class='docblock-short'><p>SearchForInstances returns a list of matching instances. See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreStudyStoreInstanceCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreStudyStoreInstanceCall struct'>ProjectLocationDatasetDicomStoreStudyStoreInstanceCall</a></td><td class='docblock-short'><p>StoreInstances stores DICOM instances associated with study instance unique
+identifiers (SUID). See
+http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetDicomStoreTestIamPermissionCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetDicomStoreTestIamPermissionCall struct'>ProjectLocationDatasetDicomStoreTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified resource.
+If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreCreateCall struct'>ProjectLocationDatasetFhirStoreCreateCall</a></td><td class='docblock-short'><p>Creates a new FHIR store within the parent dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreDeleteCall struct'>ProjectLocationDatasetFhirStoreDeleteCall</a></td><td class='docblock-short'><p>Deletes the specified FHIR store and removes all resources within it.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreExportCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreExportCall struct'>ProjectLocationDatasetFhirStoreExportCall</a></td><td class='docblock-short'><p>Export resources from the FHIR store to the specified destination.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirCapabilityCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirCapabilityCall struct'>ProjectLocationDatasetFhirStoreFhirCapabilityCall</a></td><td class='docblock-short'><p>Gets the FHIR <a href="http://hl7.org/implement/standards/fhir/STU3/capabilitystatement.html">capability
+statement</a>
+for the store, which contains a description of functionality supported by
+the server.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirConditionalDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirConditionalDeleteCall struct'>ProjectLocationDatasetFhirStoreFhirConditionalDeleteCall</a></td><td class='docblock-short'><p>Deletes FHIR resources that match a search query.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirConditionalPatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirConditionalPatchCall struct'>ProjectLocationDatasetFhirStoreFhirConditionalPatchCall</a></td><td class='docblock-short'><p>If a resource is found based on the search criteria specified in the query
+parameters, updates part of that resource by applying the operations
+specified in a <a href="http://jsonpatch.com/">JSON Patch</a> document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirConditionalUpdateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirConditionalUpdateCall struct'>ProjectLocationDatasetFhirStoreFhirConditionalUpdateCall</a></td><td class='docblock-short'><p>If a resource is found based on the search criteria specified in the query
+parameters, updates the entire contents of that resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirCreateCall struct'>ProjectLocationDatasetFhirStoreFhirCreateCall</a></td><td class='docblock-short'><p>Creates a FHIR resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirDeleteCall struct'>ProjectLocationDatasetFhirStoreFhirDeleteCall</a></td><td class='docblock-short'><p>Deletes a FHIR resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirExecuteBundleCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirExecuteBundleCall struct'>ProjectLocationDatasetFhirStoreFhirExecuteBundleCall</a></td><td class='docblock-short'><p>Executes all the requests in the given Bundle.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirHistoryCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirHistoryCall struct'>ProjectLocationDatasetFhirStoreFhirHistoryCall</a></td><td class='docblock-short'><p>Lists all the versions of a resource (including the current version and
+deleted versions) from the FHIR store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirObservationLastnCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirObservationLastnCall struct'>ProjectLocationDatasetFhirStoreFhirObservationLastnCall</a></td><td class='docblock-short'><p>Retrieves the N most recent <code>Observation</code> resources for a subject matching
+search criteria specified as query parameters, grouped by
+<code>Observation.code</code>, sorted from most recent to oldest.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirPatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirPatchCall struct'>ProjectLocationDatasetFhirStoreFhirPatchCall</a></td><td class='docblock-short'><p>Updates part of an existing resource by applying the operations specified
+in a <a href="http://jsonpatch.com/">JSON Patch</a> document.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirPatientEverythingCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirPatientEverythingCall struct'>ProjectLocationDatasetFhirStoreFhirPatientEverythingCall</a></td><td class='docblock-short'><p>Retrieves all the resources in the patient compartment for a <code>Patient</code>
+resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirReadCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirReadCall struct'>ProjectLocationDatasetFhirStoreFhirReadCall</a></td><td class='docblock-short'><p>Gets the contents of a FHIR resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirResourcePurgeCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirResourcePurgeCall struct'>ProjectLocationDatasetFhirStoreFhirResourcePurgeCall</a></td><td class='docblock-short'><p>Deletes all the historical versions of a resource (excluding the current
+version) from the FHIR store. To remove all versions of a resource, first
+delete the current version and then call this method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirSearchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirSearchCall struct'>ProjectLocationDatasetFhirStoreFhirSearchCall</a></td><td class='docblock-short'><p>Searches for resources in the given FHIR store according to criteria
+specified as query parameters.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirUpdateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirUpdateCall struct'>ProjectLocationDatasetFhirStoreFhirUpdateCall</a></td><td class='docblock-short'><p>Updates the entire contents of a resource.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreFhirVreadCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreFhirVreadCall struct'>ProjectLocationDatasetFhirStoreFhirVreadCall</a></td><td class='docblock-short'><p>Gets the contents of a version (current or historical) of a FHIR resource
+by version ID.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreGetCall struct'>ProjectLocationDatasetFhirStoreGetCall</a></td><td class='docblock-short'><p>Gets the configuration of the specified FHIR store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreGetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreGetIamPolicyCall struct'>ProjectLocationDatasetFhirStoreGetIamPolicyCall</a></td><td class='docblock-short'><p>Gets the access control policy for a resource.
+Returns an empty policy if the resource exists and does not have a policy
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreImportCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreImportCall struct'>ProjectLocationDatasetFhirStoreImportCall</a></td><td class='docblock-short'><p>Import resources to the FHIR store by loading data from the specified
+sources. Each resource must have a client-supplied ID, which is retained
+by the server.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreListCall struct'>ProjectLocationDatasetFhirStoreListCall</a></td><td class='docblock-short'><p>Lists the FHIR stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStorePatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStorePatchCall struct'>ProjectLocationDatasetFhirStorePatchCall</a></td><td class='docblock-short'><p>Updates the configuration of the specified FHIR store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreSetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreSetIamPolicyCall struct'>ProjectLocationDatasetFhirStoreSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetFhirStoreTestIamPermissionCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetFhirStoreTestIamPermissionCall struct'>ProjectLocationDatasetFhirStoreTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified resource.
+If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetGetCall struct'>ProjectLocationDatasetGetCall</a></td><td class='docblock-short'><p>Gets any metadata associated with a dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetGetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetGetIamPolicyCall struct'>ProjectLocationDatasetGetIamPolicyCall</a></td><td class='docblock-short'><p>Gets the access control policy for a resource.
+Returns an empty policy if the resource exists and does not have a policy
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessageIngestCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessageIngestCall struct'>ProjectLocationDatasetHl7V2StoreMessageIngestCall</a></td><td class='docblock-short'><p>Ingests a new HL7v2 message from the hospital and sends a notification to
+the Cloud Pub/Sub topic. Return is an HL7v2 ACK message if the message was
+successfully stored. Otherwise an error is returned.  If an identical
+HL7v2 message is created twice only one resource is created on the server
+and no error is reported.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessageDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessageDeleteCall struct'>ProjectLocationDatasetHl7V2StoreMessageDeleteCall</a></td><td class='docblock-short'><p>Deletes an HL7v2 message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreDeleteCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreDeleteCall struct'>ProjectLocationDatasetHl7V2StoreDeleteCall</a></td><td class='docblock-short'><p>Deletes the specified HL7v2 store and removes all messages that are
+contained within it.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StorePatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StorePatchCall struct'>ProjectLocationDatasetHl7V2StorePatchCall</a></td><td class='docblock-short'><p>Updates the HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessageListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessageListCall struct'>ProjectLocationDatasetHl7V2StoreMessageListCall</a></td><td class='docblock-short'><p>Lists all the messages in the given HL7v2 store with support for filtering.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreCreateCall struct'>ProjectLocationDatasetHl7V2StoreCreateCall</a></td><td class='docblock-short'><p>Creates a new HL7v2 store within the parent dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessagePatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessagePatchCall struct'>ProjectLocationDatasetHl7V2StoreMessagePatchCall</a></td><td class='docblock-short'><p>Update the message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreGetCall struct'>ProjectLocationDatasetHl7V2StoreGetCall</a></td><td class='docblock-short'><p>Gets the specified HL7v2 store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreListCall struct'>ProjectLocationDatasetHl7V2StoreListCall</a></td><td class='docblock-short'><p>Lists the HL7v2 stores in the given dataset.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreSetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreSetIamPolicyCall struct'>ProjectLocationDatasetHl7V2StoreSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreGetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreGetIamPolicyCall struct'>ProjectLocationDatasetHl7V2StoreGetIamPolicyCall</a></td><td class='docblock-short'><p>Gets the access control policy for a resource.
+Returns an empty policy if the resource exists and does not have a policy
+set.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessageGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessageGetCall struct'>ProjectLocationDatasetHl7V2StoreMessageGetCall</a></td><td class='docblock-short'><p>Gets an HL7v2 message.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreTestIamPermissionCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreTestIamPermissionCall struct'>ProjectLocationDatasetHl7V2StoreTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified resource.
+If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetHl7V2StoreMessageCreateCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetHl7V2StoreMessageCreateCall struct'>ProjectLocationDatasetHl7V2StoreMessageCreateCall</a></td><td class='docblock-short'><p>Creates a message and sends a notification to the Cloud Pub/Sub topic. If
+configured, the MLLP adapter listens to messages created by this method and
+sends those back to the hospital. A successful response indicates the
+message has been persisted to storage and a Cloud Pub/Sub notification has
+been sent. Sending to the hospital by the MLLP adapter happens
+asynchronously.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetListCall struct'>ProjectLocationDatasetListCall</a></td><td class='docblock-short'><p>Lists the health datasets in the current project.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetOperationGetCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetOperationGetCall struct'>ProjectLocationDatasetOperationGetCall</a></td><td class='docblock-short'><p>Gets the latest state of a long-running operation.  Clients can use this
+method to poll the operation result at intervals as recommended by the API
+service.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetOperationListCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetOperationListCall struct'>ProjectLocationDatasetOperationListCall</a></td><td class='docblock-short'><p>Lists operations that match the specified filter in the request. If the
+server doesn't support this method, it returns <code>UNIMPLEMENTED</code>.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetPatchCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetPatchCall struct'>ProjectLocationDatasetPatchCall</a></td><td class='docblock-short'><p>Updates dataset metadata.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetSetIamPolicyCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetSetIamPolicyCall struct'>ProjectLocationDatasetSetIamPolicyCall</a></td><td class='docblock-short'><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationDatasetTestIamPermissionCall.html" title='google_healthcare1_beta1::ProjectLocationDatasetTestIamPermissionCall struct'>ProjectLocationDatasetTestIamPermissionCall</a></td><td class='docblock-short'><p>Returns permissions that a caller has on the specified resource.
+If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationGetCall.html" title='google_healthcare1_beta1::ProjectLocationGetCall struct'>ProjectLocationGetCall</a></td><td class='docblock-short'><p>Gets information about a location.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectLocationListCall.html" title='google_healthcare1_beta1::ProjectLocationListCall struct'>ProjectLocationListCall</a></td><td class='docblock-short'><p>Lists information about the supported locations for this service.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ProjectMethods.html" title='google_healthcare1_beta1::ProjectMethods struct'>ProjectMethods</a></td><td class='docblock-short'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>CloudHealthcare</code> hub.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.RangeResponseHeader.html" title='google_healthcare1_beta1::RangeResponseHeader struct'>RangeResponseHeader</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.RedactConfig.html" title='google_healthcare1_beta1::RedactConfig struct'>RedactConfig</a></td><td class='docblock-short'><p>Define how to redact sensitive values. Default behaviour is erase,
+e.g. &quot;My name is Jake.&quot; becomes &quot;My name is .&quot;</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ReplaceWithInfoTypeConfig.html" title='google_healthcare1_beta1::ReplaceWithInfoTypeConfig struct'>ReplaceWithInfoTypeConfig</a></td><td class='docblock-short'><p>When using the INSPECT_AND_TRANSFORM action, each match is replaced with
+the name of the info_type. For example, &quot;My name is Jake&quot; becomes &quot;My name is
+[PERSON_NAME].&quot; The TRANSFORM action is equivalent to redacting.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ResumableUploadHelper.html" title='google_healthcare1_beta1::ResumableUploadHelper struct'>ResumableUploadHelper</a></td><td class='docblock-short'><p>A utility type to perform a resumable upload from start to end.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SchemaConfig.html" title='google_healthcare1_beta1::SchemaConfig struct'>SchemaConfig</a></td><td class='docblock-short'><p>Configuration for the FHIR BigQuery schema. Determines how the server
+generates the schema.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.SearchResourcesRequest.html" title='google_healthcare1_beta1::SearchResourcesRequest struct'>SearchResourcesRequest</a></td><td class='docblock-short'><p>Request to search the resources in the specified FHIR store.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Segment.html" title='google_healthcare1_beta1::Segment struct'>Segment</a></td><td class='docblock-short'><p>A segment in a structured format.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerError.html" title='google_healthcare1_beta1::ServerError struct'>ServerError</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.ServerMessage.html" title='google_healthcare1_beta1::ServerMessage struct'>ServerMessage</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="struct" href="struct.SetIamPolicyRequest.html" title='google_healthcare1_beta1::SetIamPolicyRequest struct'>SetIamPolicyRequest</a></td><td class='docblock-short'><p>Request message for <code>SetIamPolicy</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.Status.html" title='google_healthcare1_beta1::Status struct'>Status</a></td><td class='docblock-short'><p>The <code>Status</code> type defines a logical error model that is suitable for
+different programming environments, including REST APIs and RPC APIs. It is
+used by <a href="https://github.com/grpc">gRPC</a>. Each <code>Status</code> message contains
+three pieces of data: error code, error message, and error details.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TagFilterList.html" title='google_healthcare1_beta1::TagFilterList struct'>TagFilterList</a></td><td class='docblock-short'><p>List of tags to be filtered.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TestIamPermissionsRequest.html" title='google_healthcare1_beta1::TestIamPermissionsRequest struct'>TestIamPermissionsRequest</a></td><td class='docblock-short'><p>Request message for <code>TestIamPermissions</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TestIamPermissionsResponse.html" title='google_healthcare1_beta1::TestIamPermissionsResponse struct'>TestIamPermissionsResponse</a></td><td class='docblock-short'><p>Response message for <code>TestIamPermissions</code> method.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.TextConfig.html" title='google_healthcare1_beta1::TextConfig struct'>TextConfig</a></td><td class='docblock-short'><p>There is no detailed description.</p>
+</td></tr><tr class='module-item'><td><a class="struct" href="struct.XUploadContentType.html" title='google_healthcare1_beta1::XUploadContentType struct'>XUploadContentType</a></td><td class='docblock-short'><p>The <code>X-Upload-Content-Type</code> header.</p>
+</td></tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table><tr class='module-item'><td><a class="enum" href="enum.Error.html" title='google_healthcare1_beta1::Error enum'>Error</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="enum" href="enum.Scope.html" title='google_healthcare1_beta1::Scope enum'>Scope</a></td><td class='docblock-short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td></tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table><tr class='module-item'><td><a class="trait" href="trait.CallBuilder.html" title='google_healthcare1_beta1::CallBuilder trait'>CallBuilder</a></td><td class='docblock-short'><p>Identifies types which represent builders for a particular resource method</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Delegate.html" title='google_healthcare1_beta1::Delegate trait'>Delegate</a></td><td class='docblock-short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Hub.html" title='google_healthcare1_beta1::Hub trait'>Hub</a></td><td class='docblock-short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.MethodsBuilder.html" title='google_healthcare1_beta1::MethodsBuilder trait'>MethodsBuilder</a></td><td class='docblock-short'><p>Identifies types for building methods of a particular resource type</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NestedType.html" title='google_healthcare1_beta1::NestedType trait'>NestedType</a></td><td class='docblock-short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Part.html" title='google_healthcare1_beta1::Part trait'>Part</a></td><td class='docblock-short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ReadSeek.html" title='google_healthcare1_beta1::ReadSeek trait'>ReadSeek</a></td><td class='docblock-short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.RequestValue.html" title='google_healthcare1_beta1::RequestValue trait'>RequestValue</a></td><td class='docblock-short'><p>Identifies types which are used in API requests.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Resource.html" title='google_healthcare1_beta1::Resource trait'>Resource</a></td><td class='docblock-short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ResponseResult.html" title='google_healthcare1_beta1::ResponseResult trait'>ResponseResult</a></td><td class='docblock-short'><p>Identifies types which are used in API responses.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.ToParts.html" title='google_healthcare1_beta1::ToParts trait'>ToParts</a></td><td class='docblock-short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.UnusedType.html" title='google_healthcare1_beta1::UnusedType trait'>UnusedType</a></td><td class='docblock-short'><p>Identifies types which are not actually used by the API
+This might be a bug within the google API schema.</p>
+</td></tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table><tr class='module-item'><td><a class="fn" href="fn.remove_json_null_values.html" title='google_healthcare1_beta1::remove_json_null_values fn'>remove_json_null_values</a></td><td class='docblock-short'></td></tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table><tr class='module-item'><td><a class="type" href="type.Result.html" title='google_healthcare1_beta1::Result type'>Result</a></td><td class='docblock-short'><p>A universal result type used as return for all calls.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g., <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g., <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g., <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "google_healthcare1_beta1";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

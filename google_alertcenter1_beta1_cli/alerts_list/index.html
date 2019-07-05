@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - AlertCenter v1.0.8+20181011</title>
+  <title>List - AlertCenter v1.0.10+20190628</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AlertCenter v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> AlertCenter v1.0.10+20190628</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -77,24 +77,38 @@
     <a class="current" href="./">List</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
+
     <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
     
 
     <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#expressions">Expressions</a></li>
-        
-            <li><a class="toctree-l4" href="#joining-expressions">Joining expressions</a></li>
-        
-        </ul>
     
 
     <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../alerts_undelete/">Undelete</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Methods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../methods_get-settings/">Get Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../methods_update-settings/">Update Settings</a>
                 </li>
     </ul>
 	    </li>
@@ -109,7 +123,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AlertCenter v1.0.8+20181011</a>
+        <a href="..">AlertCenter v1.0.10+20190628</a>
       </nav>
 
       
@@ -138,7 +152,11 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists all the alerts for the current user and application.</p>
+                <p>Lists the alerts.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/apps.alerts</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/apps.alerts</em>.
+You can set the scope for this method like this: <code>alertcenter1-beta1 --scope &lt;scope&gt; alerts list ...</code></p>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
 <ul>
@@ -156,85 +174,48 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Optional. A token identifying a page of results the server should return.
+    If empty, a new iteration is started. To continue an iteration, pass in
+    the value from the previous ListAlertsResponse&#39;s
+    next_page_token field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p customer-id=string</strong></p>
 <ul>
-<li>Optional. The unique identifier of the Google account of the customer the
-    alerts are associated with. This is obfuscated and not the plain
-    customer ID as stored internally. Inferred from the caller identity if not
-    provided.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>
-<p>Optional. Query string for filtering alert results.
-    This string must be specified as an expression or list of expressions,
-    using the following grammar:</p>
-<h3 id="expressions">Expressions</h3>
-<p>An expression has the general form <code>&amp;lt;field&amp;gt; &amp;lt;operator&amp;gt; &amp;lt;value&amp;gt;</code>.</p>
-<p>A field or value which contains a space or a colon must be enclosed by
-double quotes.</p>
-<h4 id="operators">Operators</h4>
-<p>Operators follow the BNF specification:</p>
-<p><code>&amp;lt;equalityOperator&amp;gt; ::= &amp;#34;=&amp;#34; | &amp;#34;:&amp;#34;</code></p>
-<p><code>&amp;lt;relationalOperator&amp;gt; ::= &amp;#34;&amp;lt;&amp;#34; | &amp;#34;&amp;gt;&amp;#34; | &amp;#34;&amp;lt;=&amp;#34; | &amp;#34;&amp;gt;=&amp;#34;</code></p>
-<p>Relational operators are defined only for timestamp fields. Equality
-operators are defined only for string fields.</p>
-<h4 id="timestamp-fields">Timestamp fields</h4>
-<p>The value supplied for a timestamp field must be an
-<a href="https://tools.ietf.org/html/rfc3339">RFC 3339</a> date-time string.</p>
-<p>Supported timestamp fields are <code>create_time</code>, <code>start_time</code>, and <code>end_time</code>.</p>
-<h4 id="string-fields">String fields</h4>
-<p>The value supplied for a string field may be an arbitrary string.</p>
-<h4 id="examples">Examples</h4>
-<p>To query for all alerts created on or after April 5, 2018:</p>
-<p><code>create_time &amp;gt;= &amp;#34;2018-04-05T00:00:00Z&amp;#34;</code></p>
-<p>To query for all alerts from the source &#34;Gmail phishing&#34;:</p>
-<p><code>source:&amp;#34;Gmail phishing&amp;#34;</code></p>
-<h3 id="joining-expressions">Joining expressions</h3>
-<p>Expressions may be joined to form a more complex query. The BNF
-specification is:</p>
-<p><code>&amp;lt;expressionList&amp;gt; ::= &amp;lt;expression&amp;gt; | &amp;lt;expressionList&amp;gt; &amp;lt;conjunction&amp;gt;
-&amp;lt;expressionList&amp;gt; | &amp;lt;negation&amp;gt; &amp;lt;expressionList&amp;gt;</code>
-<code>&amp;lt;conjunction&amp;gt; ::= &amp;#34;AND&amp;#34; | &amp;#34;OR&amp;#34; | &amp;#34;&amp;#34;</code>
-<code>&amp;lt;negation&amp;gt; ::= &amp;#34;NOT&amp;#34;</code></p>
-<p>Using the empty string as a conjunction acts as an implicit AND.</p>
-<p>The precedence of joining operations, from highest to lowest, is NOT, AND,
-OR.</p>
-<h4 id="examples_1">Examples</h4>
-<p>To query for all alerts which started in 2017:</p>
-<p><code>start_time &amp;gt;= &amp;#34;2017-01-01T00:00:00Z&amp;#34; AND start_time &amp;lt;
-&amp;#34;2018-01-01T00:00:00Z&amp;#34;</code></p>
-<p>To query for all user reported phishing alerts from the source
-&#34;Gmail phishing&#34;:</p>
-<p><code>type:&amp;#34;User reported phishing&amp;#34; source:&amp;#34;Gmail phishing&amp;#34;</code></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Optional. Requested page size. Server may return fewer items than
-    requested. If unspecified, server will pick an appropriate default.</li>
+<li>Optional. The unique identifier of the G Suite organization account of the
+    customer the alerts are associated with.
+    Inferred from the caller identity if not provided.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Optional. Sort the list results by a certain order.
+<li>Optional. The sort order of the list results.
     If not specified results may be returned in arbitrary order.
-    You can sort the results in a descending order based on the creation
-    timestamp using order_by=&#34;create_time desc&#34;.
-    Currently, only sorting by create_time desc is supported.</li>
+    You can sort the results in descending order based on the creation
+    timestamp using <code>order_by=&amp;#34;create_time desc&amp;#34;</code>.
+    Currently, supported sorting are <code>create_time asc</code>, <code>create_time desc</code>,
+    <code>update_time desc</code></li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>Optional. A token identifying a page of results the server should return.
-    If empty, a new iteration is started. To continue an iteration, pass in
-    the value from the previous ListAlertsResponse&#39;s next_page_token field.</li>
+<li>Optional. A query string for filtering alert results.
+    For more details, see <a href="../admin-sdk/alertcenter/guides/query-filters">Query
+    filters</a> and <a href="../admin-sdk/alertcenter/reference/filter-fields#alerts.list">Supported
+    query filter
+    fields</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Optional. The requested page size. Server may return fewer items than
+    requested. If unspecified, server picks an appropriate default.</li>
 </ul>
 </li>
 </ul>
@@ -315,6 +296,8 @@ OR.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../alerts_undelete/" class="btn btn-neutral float-right" title="Undelete">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
       
         <a href="../alerts_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
@@ -326,7 +309,7 @@ OR.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -348,6 +331,8 @@ OR.</p>
       
         <span><a href="../alerts_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../alerts_undelete/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

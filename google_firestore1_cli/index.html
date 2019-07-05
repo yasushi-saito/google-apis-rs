@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Firestore (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Firestore v1.0.8+20181002</title>
+  <title>Home - Firestore v1.0.10+20190419</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Firestore v1.0.8+20181002</a>
+        <a href="." class="icon icon-home"> Firestore v1.0.10+20190419</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,6 +79,94 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="projects_databases-collection-groups-fields-get/">Databases Collection Groups Fields Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-fields-list/">Databases Collection Groups Fields List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-fields-patch/">Databases Collection Groups Fields Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-indexes-create/">Databases Collection Groups Indexes Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-indexes-delete/">Databases Collection Groups Indexes Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-indexes-get/">Databases Collection Groups Indexes Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-collection-groups-indexes-list/">Databases Collection Groups Indexes List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-batch-get/">Databases Documents Batch Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-begin-transaction/">Databases Documents Begin Transaction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-commit/">Databases Documents Commit</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-create-document/">Databases Documents Create Document</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-delete/">Databases Documents Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-get/">Databases Documents Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-list/">Databases Documents List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-list-collection-ids/">Databases Documents List Collection Ids</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-listen/">Databases Documents Listen</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-patch/">Databases Documents Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-rollback/">Databases Documents Rollback</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-run-query/">Databases Documents Run Query</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-documents-write/">Databases Documents Write</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-export-documents/">Databases Export Documents</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_databases-import-documents/">Databases Import Documents</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_databases-operations-cancel/">Databases Operations Cancel</a>
                 </li>
                 <li class="">
@@ -114,7 +202,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Firestore v1.0.8+20181002</a>
+        <a href=".">Firestore v1.0.10+20190419</a>
       </nav>
 
       
@@ -158,9 +246,31 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/firestore1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Firestore</em> API at revision <em>20181002</em>. The CLI is at version <em>1.0.8</em>.</p>
+<p>This documentation was generated from the <em>Firestore</em> API at revision <em>20190419</em>. The CLI is at version <em>1.0.10</em>.</p>
 <pre><code class="bash">firestore1 [options]
         projects
+                databases-collection-groups-fields-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-fields-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-fields-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-indexes-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-indexes-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-indexes-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-collection-groups-indexes-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-batch-get &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-begin-transaction &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-commit &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-create-document &lt;parent&gt; &lt;collection-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-list &lt;parent&gt; &lt;collection-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-list-collection-ids &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-listen &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-rollback &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-run-query &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-documents-write &lt;database&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-export-documents &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                databases-import-documents &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 databases-operations-cancel &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 databases-operations-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 databases-operations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -231,7 +341,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="projects_databases-operations-cancel/" class="btn btn-neutral float-right" title="Databases Operations Cancel">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="projects_databases-collection-groups-fields-get/" class="btn btn-neutral float-right" title="Databases Collection Groups Fields Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -242,7 +352,7 @@ issue at hand.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -263,7 +373,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="projects_databases-operations-cancel/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="projects_databases-collection-groups-fields-get/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -274,5 +384,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-11-24 15:51:34
+Build Date UTC : 2019-07-05 11:14:49
 -->

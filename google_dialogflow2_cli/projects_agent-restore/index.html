@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Agent Restore - Dialogflow v1.0.8+20181009</title>
+  <title>Agent Restore - Dialogflow v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dialogflow v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Dialogflow v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_agent/">Agent</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_agent-entity-types-batch-delete/">Agent Entity Types Batch Delete</a>
@@ -218,6 +222,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_delete-agent/">Delete Agent</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_get-agent/">Get Agent</a>
                 </li>
                 <li class="">
@@ -237,7 +245,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dialogflow v1.0.8+20181009</a>
+        <a href="..">Dialogflow v1.0.10+20190629</a>
       </nav>
 
       
@@ -269,10 +277,13 @@
                 <p>Restores the specified agent from a ZIP file.</p>
 <p>Replaces the current agent version with a new one. All the intents and
 entity types in the older version are deleted.</p>
-<p>Operation &lt;response: google.protobuf.Empty,
-           metadata: google.protobuf.Struct&gt;</p>
+<p>Operation &lt;response: google.protobuf.Empty&gt;</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/dialogflow</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>dialogflow2 --scope &lt;scope&gt; projects agent-restore ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
@@ -295,7 +306,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    agent-content=duo</code><ul>
+<li><code>-r .    agent-content=dolor</code><ul>
 <li>
 <p>The agent to restore.</p>
 <p>Example for how to restore an agent via the command line:
@@ -310,7 +321,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
    --data-binary &#34;{
        &#39;agentContent&#39;: &#39;$(cat &amp;lt;agent zip file&amp;gt; | base64 -w 0)&#39;
    }&#34;&lt;/pre&gt;
-* <code>agent-uri=et</code>
+* <code>agent-uri=dolor</code>
     - The URI to a Google Cloud Storage file containing the agent to restore.
 Note: The URI must start with &#34;gs://&#34;.</p>
 </li>
@@ -426,7 +437,7 @@ Note: The URI must start with &#34;gs://&#34;.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

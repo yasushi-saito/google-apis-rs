@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Account Get - storage v1.0.8+20180905</title>
+  <title>Service Account Get - storage v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
+        <a href=".." class="icon icon-home"> storage v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -289,6 +289,26 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-create/">Hmac Keys Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-delete/">Hmac Keys Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-get/">Hmac Keys Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-list/">Hmac Keys List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-update/">Hmac Keys Update</a>
+                </li>
                 <li class=" current">
                     
     <a class="current" href="./">Service Account Get</a>
@@ -324,7 +344,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.8+20180905</a>
+        <a href="..">storage v1.0.10+20190624</a>
       </nav>
 
       
@@ -388,7 +408,15 @@ You can set the scope for this method like this: <code>storage1 --scope &lt;scop
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li><strong>-p user-project=string</strong><ul>
+<li>
+<p><strong>-p provisional-user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request if the target bucket is requester-pays bucket.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
 <li>The project to be billed for this request.</li>
 </ul>
 </li>
@@ -447,7 +475,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../objects_watch-all/" class="btn btn-neutral" title="Watch All"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_hmac-keys-update/" class="btn btn-neutral" title="Hmac Keys Update"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -457,7 +485,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -477,7 +505,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/storage1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../objects_watch-all/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_hmac-keys-update/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

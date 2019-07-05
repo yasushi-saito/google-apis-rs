@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Holds Update - Vault v1.0.8+20180827</title>
+  <title>Holds Update - Vault v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Vault v1.0.8+20180827</a>
+        <a href=".." class="icon icon-home"> Vault v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -170,6 +170,22 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../matters_saved-queries-create/">Saved Queries Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-delete/">Saved Queries Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-get/">Saved Queries Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../matters_saved-queries-list/">Saved Queries List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../matters_undelete/">Undelete</a>
                 </li>
                 <li class="">
@@ -189,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Vault v1.0.8+20180827</a>
+        <a href="..">Vault v1.0.10+20190614</a>
       </nav>
 
       
@@ -249,6 +265,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     org-unit-id: string
   query:
     drive-query:
+      include-shared-drive-files: boolean
       include-team-drive-files: boolean
     groups-query:
       end-time: string
@@ -266,78 +283,84 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    corpus=et</code><ul>
+<li><code>-r .    corpus=consetetur</code><ul>
 <li>The corpus to be searched.</li>
 </ul>
 </li>
-<li><code>hold-id=consetetur</code><ul>
+<li><code>hold-id=amet.</code><ul>
 <li>The unique immutable ID of the hold. Assigned during creation.</li>
 </ul>
 </li>
-<li><code>name=ut</code><ul>
+<li><code>name=voluptua.</code><ul>
 <li>The name of the hold.</li>
 </ul>
 </li>
-<li><code>org-unit    hold-time=ea</code><ul>
+<li><code>org-unit    hold-time=lorem</code><ul>
 <li>When the org unit was put on hold. This property is immutable.</li>
 </ul>
 </li>
 <li>
-<p><code>org-unit-id=sed</code></p>
+<p><code>org-unit-id=gubergren</code></p>
 <ul>
 <li>The org unit&#39;s immutable ID as provided by the Admin SDK.</li>
 </ul>
 </li>
 <li>
-<p><code>..query.drive-query    include-team-drive-files=true</code></p>
+<p><code>..query.drive-query    include-shared-drive-files=true</code></p>
+<ul>
+<li>If true, include files in shared drives in the hold.</li>
+</ul>
+</li>
+<li>
+<p><code>include-team-drive-files=false</code></p>
 <ul>
 <li>If true, include files in Team Drives in the hold.</li>
 </ul>
 </li>
 <li>
-<p><code>..groups-query    end-time=dolor</code></p>
+<p><code>..groups-query    end-time=vero</code></p>
 <ul>
 <li>The end time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
-<li><code>start-time=dolor</code><ul>
+<li><code>start-time=diam</code><ul>
 <li>The start time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
 <li>
-<p><code>terms=et</code></p>
+<p><code>terms=rebum.</code></p>
 <ul>
 <li>The search terms for the hold.</li>
 </ul>
 </li>
 <li>
-<p><code>..hangouts-chat-query    include-rooms=false</code></p>
+<p><code>..hangouts-chat-query    include-rooms=true</code></p>
 <ul>
 <li>If true, include rooms the user has participated in.</li>
 </ul>
 </li>
 <li>
-<p><code>..mail-query    end-time=amet.</code></p>
+<p><code>..mail-query    end-time=sadipscing</code></p>
 <ul>
 <li>The end time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
-<li><code>start-time=voluptua.</code><ul>
+<li><code>start-time=vero</code><ul>
 <li>The start time range for the search query. These timestamps are in GMT and
     rounded down to the start of the given date.</li>
 </ul>
 </li>
 <li>
-<p><code>terms=lorem</code></p>
+<p><code>terms=sadipscing</code></p>
 <ul>
 <li>The search terms for the hold.</li>
 </ul>
 </li>
 <li>
-<p><code>...    update-time=gubergren</code></p>
+<p><code>...    update-time=invidunt</code></p>
 <ul>
 <li>The last time this hold was modified.</li>
 </ul>
@@ -452,7 +475,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

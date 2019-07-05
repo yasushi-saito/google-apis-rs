@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - storage v1.0.8+20180905</title>
+  <title>Insert - storage v1.0.10+20190624</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
+        <a href=".." class="icon icon-home"> storage v1.0.10+20190624</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -318,6 +318,26 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_hmac-keys-create/">Hmac Keys Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-delete/">Hmac Keys Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-get/">Hmac Keys Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-list/">Hmac Keys List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_hmac-keys-update/">Hmac Keys Update</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-account-get/">Service Account Get</a>
                 </li>
     </ul>
@@ -333,7 +353,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.8+20180905</a>
+        <a href="..">storage v1.0.10+20190624</a>
       </nav>
 
       
@@ -407,19 +427,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    bucket=et</code><ul>
+<li><code>-r .    bucket=no</code><ul>
 <li>The name of the bucket.</li>
 </ul>
 </li>
-<li><code>domain=vero</code><ul>
+<li><code>domain=invidunt</code><ul>
 <li>The domain associated with the entity, if any.</li>
 </ul>
 </li>
-<li><code>email=ut</code><ul>
+<li><code>email=rebum.</code><ul>
 <li>The email address associated with the entity, if any.</li>
 </ul>
 </li>
-<li><code>entity=sed</code><ul>
+<li><code>entity=labore</code><ul>
 <li>The entity holding the permission, in one of the following forms: <ul>
 <li>user-userId </li>
 <li>user-email </li>
@@ -436,47 +456,47 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>entity-id=et</code><ul>
+<li><code>entity-id=aliquyam</code><ul>
 <li>The ID for the entity, if any.</li>
 </ul>
 </li>
-<li><code>etag=ipsum</code><ul>
+<li><code>etag=elitr</code><ul>
 <li>HTTP 1.1 Entity tag for the access-control entry.</li>
 </ul>
 </li>
-<li><code>generation=justo</code><ul>
+<li><code>generation=consetetur</code><ul>
 <li>The content generation of the object, if applied to an object.</li>
 </ul>
 </li>
-<li><code>id=dolore</code><ul>
+<li><code>id=sea</code><ul>
 <li>The ID of the access-control entry.</li>
 </ul>
 </li>
-<li><code>kind=vero</code><ul>
+<li><code>kind=elitr</code><ul>
 <li>The kind of item this is. For object access control entries, this is always storage#objectAccessControl.</li>
 </ul>
 </li>
-<li><code>object=dolor</code><ul>
+<li><code>object=at</code><ul>
 <li>The name of the object, if applied to an object.</li>
 </ul>
 </li>
-<li><code>project-team    project-number=takimata</code><ul>
+<li><code>project-team    project-number=sea</code><ul>
 <li>The project number.</li>
 </ul>
 </li>
 <li>
-<p><code>team=et</code></p>
+<p><code>team=consetetur</code></p>
 <ul>
 <li>The team.</li>
 </ul>
 </li>
 <li>
-<p><code>..    role=nonumy</code></p>
+<p><code>..    role=diam</code></p>
 <ul>
 <li>The access permission for the entity.</li>
 </ul>
 </li>
-<li><code>self-link=et</code><ul>
+<li><code>self-link=accusam</code><ul>
 <li>The link to this access-control entry.</li>
 </ul>
 </li>
@@ -515,6 +535,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p generation=string</strong></p>
 <ul>
 <li>If present, selects a specific revision of this object (as opposed to the latest version, the default).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p provisional-user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request if the target bucket is requester-pays bucket.</li>
 </ul>
 </li>
 </ul>
@@ -584,7 +610,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

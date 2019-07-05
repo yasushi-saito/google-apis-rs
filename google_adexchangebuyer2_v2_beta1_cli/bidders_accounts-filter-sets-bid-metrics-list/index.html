@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Accounts Filter Sets Bid Metrics List - AdExchangeBuyerII v1.0.8+20181011</title>
+  <title>Accounts Filter Sets Bid Metrics List - AdExchangeBuyerII v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -199,10 +199,6 @@
 		
     <span class="caption-text">Bidders</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../bidders_accounts-creatives-delete/">Accounts Creatives Delete</a>
-                </li>
                 <li class=" current">
                     
     <a class="current" href="./">Accounts Filter Sets Bid Metrics List</a>
@@ -346,7 +342,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href="..">AdExchangeBuyerII v1.0.10+20190701</a>
       </nav>
 
       
@@ -421,6 +417,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. The server may return fewer results than requested.
+    If unspecified, the server will pick an appropriate default.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A token identifying a page of results the server should return.
@@ -428,13 +431,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     ListBidMetricsResponse.nextPageToken
     returned from the previous call to the bidMetrics.list
     method.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. The server may return fewer results than requested.
-    If unspecified, the server will pick an appropriate default.</li>
 </ul>
 </li>
 </ul>
@@ -518,7 +514,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../bidders_accounts-filter-sets-bid-response-errors-list/" class="btn btn-neutral float-right" title="Accounts Filter Sets Bid Response Errors List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../bidders_accounts-creatives-delete/" class="btn btn-neutral" title="Accounts Creatives Delete"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../accounts_publisher-profiles-list/" class="btn btn-neutral" title="Publisher Profiles List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -528,7 +524,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -548,7 +544,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/adexchangebuyer2_v2_beta1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../bidders_accounts-creatives-delete/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../accounts_publisher-profiles-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../bidders_accounts-filter-sets-bid-response-errors-list/" style="color: #fcfcfc">Next &raquo;</a></span>

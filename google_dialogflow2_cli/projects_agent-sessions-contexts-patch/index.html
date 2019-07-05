@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Agent Sessions Contexts Patch - Dialogflow v1.0.8+20181009</title>
+  <title>Agent Sessions Contexts Patch - Dialogflow v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Dialogflow v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> Dialogflow v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_agent/">Agent</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_agent-entity-types-batch-delete/">Agent Entity Types Batch Delete</a>
@@ -221,6 +225,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_delete-agent/">Delete Agent</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_get-agent/">Get Agent</a>
                 </li>
                 <li class="">
@@ -240,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Dialogflow v1.0.8+20181009</a>
+        <a href="..">Dialogflow v1.0.10+20190629</a>
       </nav>
 
       
@@ -271,18 +279,26 @@
               
                 <p>Updates the specified context.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/dialogflow</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>dialogflow2 --scope &lt;scope&gt; projects agent-sessions-contexts-patch ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>Required. The unique identifier of the context. Format:
-    <code>projects/&amp;lt;Project ID&amp;gt;/agent/sessions/&amp;lt;Session ID&amp;gt;/contexts/&amp;lt;Context ID&amp;gt;</code>.</li>
+<li>
+<p>Required. The unique identifier of the context. Format:
+    <code>projects/&amp;lt;Project ID&amp;gt;/agent/sessions/&amp;lt;Session ID&amp;gt;/contexts/&amp;lt;Context ID&amp;gt;</code>.</p>
+<p>The <code>Context ID</code> is always converted to lowercase, may only contain
+characters in [a-zA-Z0-9_-%] and may be at most 250 bytes long.</p>
+<h1 id="required-request-value">Required Request Value</h1>
+</li>
 </ul>
 </li>
 </ul>
-<h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
@@ -294,16 +310,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    lifespan-count=79</code><ul>
+<li><code>-r .    lifespan-count=49</code><ul>
 <li>Optional. The number of conversational query requests after which the
     context expires. If set to <code>0</code> (the default) the context expires
-    immediately. Contexts expire automatically after 20 minutes even if there
+    immediately. Contexts expire automatically after 20 minutes if there
     are no matching queries.</li>
 </ul>
 </li>
-<li><code>name=amet</code><ul>
-<li>Required. The unique identifier of the context. Format:
-    <code>projects/&amp;lt;Project ID&amp;gt;/agent/sessions/&amp;lt;Session ID&amp;gt;/contexts/&amp;lt;Context ID&amp;gt;</code>.</li>
+<li><code>name=voluptua.</code><ul>
+<li>
+<p>Required. The unique identifier of the context. Format:
+    <code>projects/&amp;lt;Project ID&amp;gt;/agent/sessions/&amp;lt;Session ID&amp;gt;/contexts/&amp;lt;Context ID&amp;gt;</code>.</p>
+<p>The <code>Context ID</code> is always converted to lowercase, may only contain
+characters in [a-zA-Z0-9_-%] and may be at most 250 bytes long.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -426,7 +446,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

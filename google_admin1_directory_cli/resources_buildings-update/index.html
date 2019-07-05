@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Buildings Update - directory v1.0.8+20180917</title>
+  <title>Buildings Update - directory v1.0.10+20190214</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.8+20180917</a>
+        <a href=".." class="icon icon-home"> directory v1.0.10+20190214</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -410,6 +410,9 @@
     <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
     
 
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
+
     <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
     
 
@@ -678,7 +681,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.8+20180917</a>
+        <a href="..">directory v1.0.10+20190214</a>
       </nav>
 
       
@@ -728,6 +731,14 @@ You can set the scope for this method like this: <code>admin1-directory --scope 
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>Building:
+  address:
+    address-lines: [string]
+    administrative-area: string
+    language-code: string
+    locality: string
+    postal-code: string
+    region-code: string
+    sublocality: string
   building-id: string
   building-name: string
   coordinates:
@@ -742,40 +753,73 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    building-id=tempor</code><ul>
+<li><code>-r .address    address-lines=sed</code><ul>
+<li>Unstructured address lines describing the lower levels of an address.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>administrative-area=diam</code><ul>
+<li>Optional. Highest administrative subdivision which is used for postal addresses of a country or region.</li>
+</ul>
+</li>
+<li><code>language-code=magna</code><ul>
+<li>Optional. BCP-47 language code of the contents of this address (if known).</li>
+</ul>
+</li>
+<li><code>locality=dolor</code><ul>
+<li>Optional. Generally refers to the city/town portion of the address. Examples: US city, IT comune, UK post town. In regions of the world where localities are not well defined or do not fit into this structure well, leave locality empty and use addressLines.</li>
+</ul>
+</li>
+<li><code>postal-code=lorem</code><ul>
+<li>Optional. Postal code of the address.</li>
+</ul>
+</li>
+<li><code>region-code=dolor</code><ul>
+<li>Required. CLDR region code of the country/region of the address.</li>
+</ul>
+</li>
+<li>
+<p><code>sublocality=vero</code></p>
+<ul>
+<li>Optional. Sublocality of the address.</li>
+</ul>
+</li>
+<li>
+<p><code>..    building-id=nonumy</code></p>
+<ul>
 <li>Unique identifier for the building. The maximum length is 100 characters.</li>
 </ul>
 </li>
-<li><code>building-name=gubergren</code><ul>
+<li><code>building-name=takimata</code><ul>
 <li>The building name as seen by users in Calendar. Must be unique for the customer. For example, &#34;NYC-CHEL&#34;. The maximum length is 100 characters.</li>
 </ul>
 </li>
-<li><code>coordinates    latitude=0.173728600234</code><ul>
+<li><code>coordinates    latitude=0.321401799332</code><ul>
 <li>Latitude in decimal degrees.</li>
 </ul>
 </li>
 <li>
-<p><code>longitude=0.496736921128</code></p>
+<p><code>longitude=0.0517042800544</code></p>
 <ul>
 <li>Longitude in decimal degrees.</li>
 </ul>
 </li>
 <li>
-<p><code>..    description=dolore</code></p>
+<p><code>..    description=erat</code></p>
 <ul>
 <li>A brief description of the building. For example, &#34;Chelsea Market&#34;.</li>
 </ul>
 </li>
-<li><code>etags=magna</code><ul>
+<li><code>etags=amet.</code><ul>
 <li>ETag of the resource.</li>
 </ul>
 </li>
-<li><code>floor-names=elitr</code><ul>
+<li><code>floor-names=dolores</code><ul>
 <li>The display names for all floors in this building. The floors are expected to be sorted in ascending order, from lowest floor to highest floor. For example, [&#34;B2&#34;, &#34;B1&#34;, &#34;L&#34;, &#34;1&#34;, &#34;2&#34;, &#34;2M&#34;, &#34;3&#34;, &#34;PH&#34;] Must contain at least one entry.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>kind=magna</code><ul>
+<li><code>kind=dolores</code><ul>
 <li>Kind of resource this is.</li>
 </ul>
 </li>
@@ -796,6 +840,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   It will be a JSON-encoded structure.
   The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
   If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p coordinates-source=string</strong><ul>
+<li>Source from which Building.coordinates are derived.</li>
 </ul>
 </li>
 </ul>
@@ -865,7 +919,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

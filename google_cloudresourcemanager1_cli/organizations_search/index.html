@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - Cloud Resource Manager v1.0.8+20181008</title>
+  <title>Search - Cloud Resource Manager v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -270,7 +270,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.8+20181008</a>
+        <a href="..">Cloud Resource Manager v1.0.10+20190701</a>
       </nav>
 
       
@@ -326,39 +326,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    filter=lorem</code><ul>
+<li><code>-r .    filter=eos</code><ul>
 <li>
 <p>An optional query string used to filter the Organizations to return in
     the response. Filter rules are case-insensitive.</p>
 <p>Organizations may be filtered by <code>owner.directoryCustomerId</code> or by
 <code>domain</code>, where the domain is a G Suite domain, for example:</p>
-<table>
-<thead>
-<tr>
-<th>Filter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>owner.directorycustomerid:123456789</td>
-<td>Organizations with</td>
-</tr>
-<tr>
-<td><code>owner.directory_customer_id</code> equal to <code>123456789</code>.</td>
-<td></td>
-</tr>
-<tr>
-<td>domain:google.com</td>
-<td>Organizations corresponding to the domain <code>google.com</code>.</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Filter <code>owner.directorycustomerid:123456789</code> returns Organization
+resources with <code>owner.directory_customer_id</code> equal to <code>123456789</code>.</li>
+<li>Filter <code>domain:google.com</code> returns Organization resources corresponding
+to the domain <code>google.com</code>.</li>
+</ul>
 <p>This field is optional.
-<em> <code>page-size=26</code>
+* <code>page-size=20</code>
     - The maximum number of Organizations to return in the response.
 This field is optional.
-</em> <code>page-token=erat</code>
+* <code>page-token=sadipscing</code>
     - A pagination token returned from a previous call to <code>SearchOrganizations</code>
 that indicates from where listing should continue.
 This field is optional.</p>
@@ -475,7 +459,7 @@ This field is optional.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

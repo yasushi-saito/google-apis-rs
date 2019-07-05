@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Accounts Filter Sets Create - AdExchangeBuyerII v1.0.8+20181011</title>
+  <title>Accounts Filter Sets Create - AdExchangeBuyerII v1.0.10+20190701</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.10+20190701</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -201,10 +201,6 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../bidders_accounts-creatives-delete/">Accounts Creatives Delete</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../bidders_accounts-filter-sets-bid-metrics-list/">Accounts Filter Sets Bid Metrics List</a>
                 </li>
                 <li class="">
@@ -355,7 +351,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AdExchangeBuyerII v1.0.8+20181011</a>
+        <a href="..">AdExchangeBuyerII v1.0.10+20190701</a>
       </nav>
 
       
@@ -426,6 +422,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       day: integer
       month: integer
       year: integer
+  breakdown-dimensions: [string]
   creative-id: string
   deal-id: string
   environment: string
@@ -445,65 +442,72 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .absolute-date-range.end-date    day=64</code><ul>
+<li><code>-r .absolute-date-range.end-date    day=59</code><ul>
 <li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0
     if specifying a year by itself or a year and month where the day is not
     significant.</li>
 </ul>
 </li>
-<li><code>month=50</code><ul>
+<li><code>month=65</code><ul>
 <li>Month of year. Must be from 1 to 12, or 0 if specifying a year without a
     month and day.</li>
 </ul>
 </li>
 <li>
-<p><code>year=1</code></p>
+<p><code>year=64</code></p>
 <ul>
 <li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without
     a year.</li>
 </ul>
 </li>
 <li>
-<p><code>..start-date    day=14</code></p>
+<p><code>..start-date    day=50</code></p>
 <ul>
 <li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0
     if specifying a year by itself or a year and month where the day is not
     significant.</li>
 </ul>
 </li>
-<li><code>month=98</code><ul>
+<li><code>month=1</code><ul>
 <li>Month of year. Must be from 1 to 12, or 0 if specifying a year without a
     month and day.</li>
 </ul>
 </li>
 <li>
-<p><code>year=92</code></p>
+<p><code>year=14</code></p>
 <ul>
 <li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without
     a year.</li>
 </ul>
 </li>
 <li>
-<p><code>...    creative-id=ut</code></p>
+<p><code>...    breakdown-dimensions=dolor</code></p>
 <ul>
+<li>The set of dimensions along which to break down the response; may be empty.
+    If multiple dimensions are requested, the breakdown is along the Cartesian
+    product of the requested dimensions.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>creative-id=sea</code><ul>
 <li>The ID of the creative on which to filter; optional. This field may be set
     only for a filter set that accesses account-level troubleshooting data,
     i.e., one whose name matches the <code>bidders/*/accounts/*/filterSets/*</code>
     pattern.</li>
 </ul>
 </li>
-<li><code>deal-id=eirmod</code><ul>
+<li><code>deal-id=ut</code><ul>
 <li>The ID of the deal on which to filter; optional. This field may be set
     only for a filter set that accesses account-level troubleshooting data,
     i.e., one whose name matches the <code>bidders/*/accounts/*/filterSets/*</code>
     pattern.</li>
 </ul>
 </li>
-<li><code>environment=sanctus</code><ul>
+<li><code>environment=eirmod</code><ul>
 <li>The environment on which to filter; optional.</li>
 </ul>
 </li>
-<li><code>formats=voluptua.</code><ul>
+<li><code>formats=sanctus</code><ul>
 <li>The list of formats on which to filter; may be empty. The filters
     represented by multiple formats are ORed together (i.e., if non-empty,
     results must match any one of the formats).</li>
@@ -511,7 +515,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>name=dolor</code></p>
+<p><code>name=voluptua.</code></p>
 <ul>
 <li>
 <p>A user-defined name of the filter set. Filter set names must be unique
@@ -523,38 +527,38 @@ data)</li>
 troubleshooting data)</li>
 </ul>
 <p>This field is required in create operations.
-<em> <code>platforms=et</code>
+* <code>platforms=dolor</code>
     - The list of platforms on which to filter; may be empty. The filters
 represented by multiple platforms are ORed together (i.e., if non-empty,
 results must match any one of the platforms).
     - Each invocation of this argument appends the given value to the array.
-</em> <code>publisher-identifiers=et</code>
+* <code>publisher-identifiers=et</code>
     - For Open Bidding partners only.
 The list of publisher identifiers on which to filter; may be empty.
 The filters represented by multiple publisher identifiers are ORed
 together.
     - Each invocation of this argument appends the given value to the array.
-* <code>realtime-time-range    start-timestamp=vero</code>
+* <code>realtime-time-range    start-timestamp=et</code>
     - The start timestamp of the real-time RTB metrics aggregation.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..relative-date-range    duration-days=65</code></p>
+<p><code>..relative-date-range    duration-days=75</code></p>
 <ul>
 <li>The number of days in the requested date range, e.g., for a range spanning
     today: 1. For a range spanning the last 7 days: 7.</li>
 </ul>
 </li>
 <li>
-<p><code>offset-days=71</code></p>
+<p><code>offset-days=65</code></p>
 <ul>
 <li>The end date of the filter set, specified as the number of days before
     today, e.g., for a range where the last date is today: 0.</li>
 </ul>
 </li>
 <li>
-<p><code>..    seller-network-ids=80</code></p>
+<p><code>..    seller-network-ids=71</code></p>
 <ul>
 <li>For Authorized Buyers only.
     The list of IDs of the seller (publisher) networks on which to filter;
@@ -566,7 +570,7 @@ together.
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>time-series-granularity=ipsum</code><ul>
+<li><code>time-series-granularity=et</code><ul>
 <li>The granularity of time intervals if a time series breakdown is desired;
     optional.</li>
 </ul>
@@ -693,7 +697,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

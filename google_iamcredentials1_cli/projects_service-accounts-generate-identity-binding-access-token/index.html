@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Generate Identity Binding Access Token - IAM Credentials v1.0.8+20181004</title>
+  <title>Service Accounts Generate Identity Binding Access Token - IAM Credentials v1.0.10+20190620</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> IAM Credentials v1.0.8+20181004</a>
+        <a href=".." class="icon icon-home"> IAM Credentials v1.0.10+20190620</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -110,7 +110,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">IAM Credentials v1.0.8+20181004</a>
+        <a href="..">IAM Credentials v1.0.10+20190620</a>
       </nav>
 
       
@@ -144,7 +144,8 @@
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
 <li>The resource name of the service account for which the credentials
     are requested, in the following format:
-    <code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>.</li>
+    <code>projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}</code>. The <code>-</code> wildcard
+    character is required; replacing it with a project ID is invalid.</li>
 </ul>
 </li>
 </ul>
@@ -201,7 +202,8 @@ Example payload:
   &#34;iss&#34;: &#34;https://accounts.google.com&#34;,
   &#34;iat&#34;: 1517963104,
   &#34;exp&#34;: 1517966704,
-  &#34;aud&#34;: &#34;https://iamcredentials.googleapis.com/google.iam.credentials.v1.CloudGaia&#34;,
+  &#34;aud&#34;:
+  &#34;https://iamcredentials.googleapis.com/google.iam.credentials.v1.CloudGaia&#34;,
   &#34;sub&#34;: &#34;113475438248934895348&#34;,
   &#34;my_claims&#34;: {
     &#34;additional_claim&#34;: &#34;value&#34;
@@ -326,7 +328,7 @@ At least one value required.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Registries Devices Create - Cloud Iot v1.0.8+20181002</title>
+  <title>Locations Registries Devices Create - Cloud Iot v1.0.10+20190618</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Iot v1.0.8+20181002</a>
+        <a href=".." class="icon icon-home"> Cloud Iot v1.0.10+20190618</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-bind-device-to-gateway/">Locations Registries Bind Device To Gateway</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_locations-registries-create/">Locations Registries Create</a>
@@ -134,31 +138,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../projects_locations-registries-groups-devices-config-versions-list/">Locations Registries Groups Devices Config Versions List</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../projects_locations-registries-groups-devices-get/">Locations Registries Groups Devices Get</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../projects_locations-registries-groups-devices-list/">Locations Registries Groups Devices List</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../projects_locations-registries-groups-devices-modify-cloud-to-device-config/">Locations Registries Groups Devices Modify Cloud To Device Config</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../projects_locations-registries-groups-devices-patch/">Locations Registries Groups Devices Patch</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../projects_locations-registries-groups-devices-send-command-to-device/">Locations Registries Groups Devices Send Command To Device</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../projects_locations-registries-groups-devices-states-list/">Locations Registries Groups Devices States List</a>
                 </li>
                 <li class="">
                     
@@ -188,6 +168,10 @@
                     
     <a class="" href="../projects_locations-registries-test-iam-permissions/">Locations Registries Test Iam Permissions</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-unbind-device-from-gateway/">Locations Registries Unbind Device From Gateway</a>
+                </li>
     </ul>
 	    </li>
           
@@ -201,7 +185,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Iot v1.0.8+20181002</a>
+        <a href="..">Cloud Iot v1.0.10+20190618</a>
       </nav>
 
       
@@ -259,6 +243,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     cloud-update-time: string
     device-ack-time: string
     version: string
+  gateway-config:
+    gateway-auth-method: string
+    gateway-type: string
+    last-accessed-gateway-id: string
+    last-accessed-gateway-time: string
   id: string
   last-config-ack-time: string
   last-config-send-time: string
@@ -281,22 +270,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    blocked=false</code><ul>
+<li><code>-r .    blocked=true</code><ul>
 <li>If a device is blocked, connections or requests from this device will fail.
     Can be used to temporarily prevent the device from connecting if, for
     example, the sensor is generating bad data and needs maintenance.</li>
 </ul>
 </li>
-<li><code>config    binary-data=accusam</code><ul>
+<li><code>config    binary-data=justo</code><ul>
 <li>The device configuration data.</li>
 </ul>
 </li>
-<li><code>cloud-update-time=takimata</code><ul>
+<li><code>cloud-update-time=amet.</code><ul>
 <li>[Output only] The time at which this configuration version was updated in
     Cloud IoT Core. This timestamp is set by the server.</li>
 </ul>
 </li>
-<li><code>device-ack-time=justo</code><ul>
+<li><code>device-ack-time=erat</code><ul>
 <li>[Output only] The time at which Cloud IoT Core received the
     acknowledgment from the device, indicating that the device has received
     this configuration version. If this field is not present, the device has
@@ -309,7 +298,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>version=amet.</code></p>
+<p><code>version=labore</code></p>
 <ul>
 <li>[Output only] The version of this update. The version number is assigned by
     the server, and is always greater than 0 after device creation. The
@@ -318,29 +307,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    id=erat</code></p>
+<p><code>..gateway-config    gateway-auth-method=sea</code></p>
+<ul>
+<li>Indicates how to authorize and/or authenticate devices to access the
+    gateway.</li>
+</ul>
+</li>
+<li><code>gateway-type=nonumy</code><ul>
+<li>Indicates whether the device is a gateway.</li>
+</ul>
+</li>
+<li><code>last-accessed-gateway-id=dolores</code><ul>
+<li>[Output only] The ID of the gateway the device accessed most recently.</li>
+</ul>
+</li>
+<li>
+<p><code>last-accessed-gateway-time=gubergren</code></p>
+<ul>
+<li>[Output only] The most recent time at which the device accessed the gateway
+    specified in <code>last_accessed_gateway</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>..    id=sadipscing</code></p>
 <ul>
 <li>The user-defined device identifier. The device ID must be unique
     within a device registry.</li>
 </ul>
 </li>
-<li><code>last-config-ack-time=labore</code><ul>
+<li><code>last-config-ack-time=aliquyam</code><ul>
 <li>[Output only] The last time a cloud-to-device config version acknowledgment
     was received from the device. This field is only for configurations
     sent through MQTT.</li>
 </ul>
 </li>
-<li><code>last-config-send-time=sea</code><ul>
+<li><code>last-config-send-time=ea</code><ul>
 <li>[Output only] The last time a cloud-to-device config version was sent to
     the device.</li>
 </ul>
 </li>
-<li><code>last-error-status    code=11</code><ul>
+<li><code>last-error-status    code=40</code><ul>
 <li>The status code, which should be an enum value of google.rpc.Code.</li>
 </ul>
 </li>
 <li>
-<p><code>message=dolores</code></p>
+<p><code>message=justo</code></p>
 <ul>
 <li>A developer-facing error message, which should be in English. Any
     user-facing error message should be localized and sent in the
@@ -348,20 +359,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    last-error-time=gubergren</code></p>
+<p><code>..    last-error-time=justo</code></p>
 <ul>
 <li>[Output only] The time the most recent error occurred, such as a failure to
     publish to Cloud Pub/Sub. This field is the timestamp of
     &#39;last_error_status&#39;.</li>
 </ul>
 </li>
-<li><code>last-event-time=sadipscing</code><ul>
+<li><code>last-event-time=et</code><ul>
 <li>[Output only] The last time a telemetry event was received. Timestamps are
     periodically collected and written to storage; they may be stale by a few
     minutes.</li>
 </ul>
 </li>
-<li><code>last-heartbeat-time=aliquyam</code><ul>
+<li><code>last-heartbeat-time=et</code><ul>
 <li>[Output only] The last time an MQTT <code>PINGREQ</code> was received. This field
     applies only to devices connecting through MQTT. MQTT clients usually only
     send <code>PINGREQ</code> messages if the connection is idle, and no other messages
@@ -369,18 +380,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     storage; they may be stale by a few minutes.</li>
 </ul>
 </li>
-<li><code>last-state-time=ea</code><ul>
+<li><code>last-state-time=diam</code><ul>
 <li>[Output only] The last time a state event was received. Timestamps are
     periodically collected and written to storage; they may be stale by a few
     minutes.</li>
 </ul>
 </li>
-<li><code>log-level=no</code><ul>
+<li><code>log-level=ipsum</code><ul>
 <li>
 <p><strong>Beta Feature</strong></p>
 <p>The logging verbosity for device activity. If unspecified,
 DeviceRegistry.log_level will be used.
-* <code>metadata=key=justo</code>
+* <code>metadata=key=lorem</code>
     - The metadata key-value pairs assigned to the device. This metadata is not
 interpreted or indexed by Cloud IoT Core. It can be used to add contextual
 information for the device.</p>
@@ -391,18 +402,18 @@ KB in size.</p>
 <p>The total size of all keys and values must be less than 256 KB, and the
 maximum number of key-value pairs is 500.
     - the value will be associated with the given <code>key</code>
-<em> <code>name=justo</code>
+* <code>name=et</code>
     - The resource path name. For example,
 <code>projects/p1/locations/us-central1/registries/registry0/devices/dev0</code> or
 <code>projects/p1/locations/us-central1/registries/registry0/devices/{num_id}</code>.
 When <code>name</code> is populated as a response from the service, it always ends
 in the device numeric ID.
-</em> <code>num-id=et</code>
+* <code>num-id=duo</code>
     - [Output only] A server-defined unique numeric ID for the device. This is a
 more compact way to identify devices, and it is globally unique.
-<em> <code>state    binary-data=et</code>
+* <code>state    binary-data=aliquyam</code>
     - The device state data.
-</em> <code>update-time=diam</code>
+* <code>update-time=sea</code>
     - [Output only] The time at which this state version was updated in Cloud
 IoT Core.</p>
 </li>
@@ -518,7 +529,7 @@ IoT Core.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

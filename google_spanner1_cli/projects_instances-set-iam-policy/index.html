@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances Set Iam Policy - Spanner v1.0.8+20180920</title>
+  <title>Instances Set Iam Policy - Spanner v1.0.10+20190613</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.8+20180920</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.10+20190613</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -123,6 +123,10 @@
                 <li class="">
                     
     <a class="" href="../projects_instances-databases-sessions-delete/">Instances Databases Sessions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_instances-databases-sessions-execute-batch-dml/">Instances Databases Sessions Execute Batch Dml</a>
                 </li>
                 <li class="">
                     
@@ -253,7 +257,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.8+20180920</a>
+        <a href="..">Spanner v1.0.10+20190613</a>
       </nav>
 
       
@@ -314,7 +318,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .policy    etag=at</code><ul>
+<li><code>-r .policy    etag=amet.</code><ul>
 <li>
 <p><code>etag</code> is used for optimistic concurrency control as a way to help
     prevent simultaneous updates of a policy from overwriting each other.
@@ -325,7 +329,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     ensure that their change will be applied to the same version of the policy.</p>
 <p>If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing
 policy is overwritten blindly.
-* <code>version=5</code>
+* <code>version=1</code>
     - Deprecated.</p>
 </li>
 </ul>
@@ -440,7 +444,7 @@ policy is overwritten blindly.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

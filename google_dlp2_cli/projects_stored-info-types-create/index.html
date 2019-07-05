@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Stored Info Types Create - DLP v1.0.8+20181009</title>
+  <title>Stored Info Types Create - DLP v1.0.10+20190629</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.10+20190629</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -212,6 +212,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_job-triggers-activate/">Job Triggers Activate</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_job-triggers-create/">Job Triggers Create</a>
                 </li>
                 <li class="">
@@ -229,6 +233,10 @@
                 <li class="">
                     
     <a class="" href="../projects_job-triggers-patch/">Job Triggers Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-content-deidentify/">Locations Content Deidentify</a>
                 </li>
                 <li class=" current">
                     
@@ -287,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.8+20181009</a>
+        <a href="..">DLP v1.0.10+20190629</a>
       </nav>
 
       
@@ -357,57 +365,57 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .config    description=elitr</code><ul>
+<li><code>-r .config    description=dolor</code><ul>
 <li>Description of the StoredInfoType (max 256 characters).</li>
 </ul>
 </li>
-<li><code>display-name=magna</code><ul>
+<li><code>display-name=vero</code><ul>
 <li>Display name of the StoredInfoType (max 256 characters).</li>
 </ul>
 </li>
 <li>
-<p><code>large-custom-dictionary.big-query-field.field    name=ipsum</code></p>
+<p><code>large-custom-dictionary.big-query-field.field    name=nonumy</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>..table    dataset-id=invidunt</code></p>
+<p><code>..table    dataset-id=takimata</code></p>
 <ul>
 <li>Dataset ID of the table.</li>
 </ul>
 </li>
-<li><code>project-id=accusam</code><ul>
+<li><code>project-id=dolores</code><ul>
 <li>The Google Cloud Platform project ID of the project containing the table.
     If omitted, project ID is inferred from the API call.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=labore</code></p>
+<p><code>table-id=consetetur</code></p>
 <ul>
 <li>Name of the table.</li>
 </ul>
 </li>
 <li>
-<p><code>...cloud-storage-file-set    url=diam</code></p>
+<p><code>...cloud-storage-file-set    url=erat</code></p>
 <ul>
 <li>The url, in the format <code>gs://&amp;lt;bucket&amp;gt;/&amp;lt;path&amp;gt;</code>. Trailing wildcard in the
     path is allowed.</li>
 </ul>
 </li>
 <li>
-<p><code>..output-path    path=nonumy</code></p>
+<p><code>..output-path    path=amet.</code></p>
 <ul>
 <li>A url representing a file or path (no wildcards) in Cloud Storage.
     Example: gs://[BUCKET_NAME]/dictionary.txt</li>
 </ul>
 </li>
 <li>
-<p><code>....    stored-info-type-id=sed</code></p>
+<p><code>....    stored-info-type-id=dolores</code></p>
 <ul>
 <li>The storedInfoType ID can contain uppercase and lowercase letters,
     numbers, and hyphens; that is, it must match the regular
-    expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
+    expression: <code>[a-zA-Z\\d-_]+</code>. The maximum length is 100
     characters. Can be empty to allow the system to generate one.</li>
 </ul>
 </li>
@@ -511,7 +519,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../projects_stored-info-types-delete/" class="btn btn-neutral float-right" title="Stored Info Types Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_job-triggers-patch/" class="btn btn-neutral" title="Job Triggers Patch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-content-deidentify/" class="btn btn-neutral" title="Locations Content Deidentify"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -521,7 +529,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -541,7 +549,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/dlp2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_job-triggers-patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-content-deidentify/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects_stored-info-types-delete/" style="color: #fcfcfc">Next &raquo;</a></span>

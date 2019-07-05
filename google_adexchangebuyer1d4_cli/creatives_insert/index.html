@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Ad Exchange Buyer v1.0.8+20180823</title>
+  <title>Insert - Ad Exchange Buyer v1.0.10+20190614</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.10+20190614</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -319,7 +319,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v1.0.8+20180823</a>
+        <a href="..">Ad Exchange Buyer v1.0.10+20190614</a>
       </nav>
 
       
@@ -361,6 +361,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   html-snippet: string
   account-id: integer
   ad-choices-destination-url: string
+  ad-technology-providers:
+    detected-provider-ids: [string]
+    has-unidentified-provider: boolean
   advertiser-id: [string]
   advertiser-name: string
   agency-id: string
@@ -399,7 +402,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       width: integer
     price: string
     star-rating: number
-    store: string
     video-url: string
   open-auction-status: string
   product-categories: [integer]
@@ -427,85 +429,98 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The link to the Ad Preferences page. This is only supported for native ads.</li>
 </ul>
 </li>
-<li><code>advertiser-id=sea</code><ul>
+<li><code>ad-technology-providers    detected-provider-ids=sea</code><ul>
+<li>No description provided.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>has-unidentified-provider=false</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..    advertiser-id=eos</code></p>
+<ul>
 <li>Detected advertiser id, if any. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>advertiser-name=lorem</code><ul>
+<li><code>advertiser-name=erat</code><ul>
 <li>The name of the company being advertised in the creative. The value provided must exist in the advertisers.txt file.</li>
 </ul>
 </li>
-<li><code>agency-id=eos</code><ul>
+<li><code>agency-id=sadipscing</code><ul>
 <li>The agency id for this creative.</li>
 </ul>
 </li>
-<li><code>api-upload-timestamp=erat</code><ul>
+<li><code>api-upload-timestamp=dolor</code><ul>
 <li>The last upload timestamp of this creative if it was uploaded via API. Read-only. The value of this field is generated, and will be ignored for uploads. (formatted RFC 3339 timestamp).</li>
 </ul>
 </li>
-<li><code>attribute=6</code><ul>
+<li><code>attribute=62</code><ul>
 <li>List of buyer selectable attributes for the ads that may be shown from this snippet. Each attribute is represented by an integer as defined in  buyer-declarable-creative-attributes.txt.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>buyer-creative-id=dolor</code><ul>
+<li><code>buyer-creative-id=elitr</code><ul>
 <li>A buyer-specific id identifying the creative in this ad.</li>
 </ul>
 </li>
-<li><code>click-through-url=eirmod</code><ul>
+<li><code>click-through-url=amet</code><ul>
 <li>The set of destination urls for the snippet.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>creative-status-identity-type=elitr</code><ul>
+<li><code>creative-status-identity-type=no</code><ul>
 <li>Creative status identity type that the creative item applies to. Ad Exchange real-time bidding is migrating to the sizeless creative verification. Originally, Ad Exchange assigned creative verification status to a unique combination of a buyer creative ID and creative dimensions. Post-migration, a single verification status will be assigned at the buyer creative ID level. This field allows to distinguish whether a given creative status applies to a unique combination of a buyer creative ID and creative dimensions, or to a buyer creative ID as a whole.</li>
 </ul>
 </li>
-<li><code>deals-status=amet</code><ul>
+<li><code>deals-status=labore</code><ul>
 <li>Top-level deals status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=DIRECT_DEALS (or ALL) in servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from servingRestrictions directly.</li>
 </ul>
 </li>
-<li><code>detected-domains=no</code><ul>
+<li><code>detected-domains=eirmod</code><ul>
 <li>Detected domains for this creative. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>filtering-reasons    date=labore</code></p>
+<p><code>filtering-reasons    date=dolore</code></p>
 <ul>
 <li>The date in ISO 8601 format for the data. The data is collected from 00:00:00 to 23:59:59 in PST.</li>
 </ul>
 </li>
 <li>
-<p><code>..    height=62</code></p>
+<p><code>..    height=64</code></p>
 <ul>
 <li>Ad height.</li>
 </ul>
 </li>
-<li><code>impression-tracking-url=dolore</code><ul>
+<li><code>impression-tracking-url=aliquyam</code><ul>
 <li>The set of urls to be called to record an impression.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>kind=invidunt</code><ul>
+<li><code>kind=accusam</code><ul>
 <li>Resource type.</li>
 </ul>
 </li>
-<li><code>languages=aliquyam</code><ul>
+<li><code>languages=lorem</code><ul>
 <li>Detected languages for this creative. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>native-ad    advertiser=accusam</code><ul>
+<li><code>native-ad    advertiser=sea</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>app-icon    height=45</code><ul>
+<li><code>app-icon    height=80</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=sea</code><ul>
+<li><code>url=duo</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
@@ -516,20 +531,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    body=duo</code></p>
+<p><code>..    body=eirmod</code></p>
 <ul>
 <li>A long description of the ad.</li>
 </ul>
 </li>
-<li><code>call-to-action=et</code><ul>
+<li><code>call-to-action=sanctus</code><ul>
 <li>A label for the button that the user is supposed to click.</li>
 </ul>
 </li>
-<li><code>click-link-url=eirmod</code><ul>
+<li><code>click-link-url=et</code><ul>
 <li>The URL that the browser/SDK will load when the user clicks the ad.</li>
 </ul>
 </li>
-<li><code>click-tracking-url=sanctus</code><ul>
+<li><code>click-tracking-url=amet</code><ul>
 <li>The URL to use for click tracking.</li>
 </ul>
 </li>
@@ -537,100 +552,96 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A short title for the ad.</li>
 </ul>
 </li>
-<li><code>image    height=55</code><ul>
+<li><code>image    height=56</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=et</code><ul>
+<li><code>url=ut</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>width=56</code></p>
+<p><code>width=85</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    impression-tracking-url=ut</code></p>
+<p><code>..    impression-tracking-url=sed</code></p>
 <ul>
 <li>The URLs are called when the impression is rendered.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>logo    height=85</code><ul>
+<li><code>logo    height=98</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>url=sed</code><ul>
+<li><code>url=dolor</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>width=98</code></p>
+<p><code>width=53</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    price=dolor</code></p>
+<p><code>..    price=et</code></p>
 <ul>
 <li>The price of the promoted app including the currency info.</li>
 </ul>
 </li>
-<li><code>star-rating=0.528448098786</code><ul>
+<li><code>star-rating=0.0504342224178</code><ul>
 <li>The app rating in the app store. Must be in the range [0-5].</li>
 </ul>
 </li>
-<li><code>store=et</code><ul>
-<li>The URL to the app store to purchase/download the promoted app.</li>
-</ul>
-</li>
 <li>
-<p><code>video-url=consetetur</code></p>
+<p><code>video-url=amet.</code></p>
 <ul>
 <li>The URL of the XML VAST for a native ad. Note this is a separate field from resource.video_url.</li>
 </ul>
 </li>
 <li>
-<p><code>..    open-auction-status=amet.</code></p>
+<p><code>..    open-auction-status=voluptua.</code></p>
 <ul>
 <li>Top-level open auction status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL) in servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from ServingRestrictions directly.</li>
 </ul>
 </li>
-<li><code>product-categories=74</code><ul>
+<li><code>product-categories=45</code><ul>
 <li>Detected product categories, if any. Each category is represented by an integer as defined in  ad-product-categories.txt. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>restricted-categories=45</code><ul>
+<li><code>restricted-categories=90</code><ul>
 <li>All restricted categories for the ads that may be shown from this snippet. Each category is represented by an integer as defined in the  ad-restricted-categories.txt.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>sensitive-categories=90</code><ul>
+<li><code>sensitive-categories=81</code><ul>
 <li>Detected sensitive categories, if any. Each category is represented by an integer as defined in  ad-sensitive-categories.txt. Read-only. This field should not be set in requests.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>vendor-type=81</code><ul>
+<li><code>vendor-type=49</code><ul>
 <li>List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>version=49</code><ul>
+<li><code>version=75</code><ul>
 <li>The version for this creative. Read-only. This field should not be set in requests.</li>
 </ul>
 </li>
-<li><code>video-url=vero</code><ul>
+<li><code>video-url=diam</code><ul>
 <li>The URL to fetch a video ad. If set, HTMLSnippet, videoVastXML, and nativeAd should not be set. Note, this is different from resource.native_ad.video_url above.</li>
 </ul>
 </li>
-<li><code>video-vast-xml=diam</code><ul>
+<li><code>video-vast-xml=rebum.</code><ul>
 <li>The contents of a VAST document for a video ad. This document should conform to the VAST 2.0 or 3.0 standard. If set, HTMLSnippet, videoURL, and nativeAd and should not be set.</li>
 </ul>
 </li>
-<li><code>width=35</code><ul>
+<li><code>width=56</code><ul>
 <li>Ad width.</li>
 </ul>
 </li>
@@ -720,7 +731,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

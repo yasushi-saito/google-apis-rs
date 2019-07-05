@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - proximitybeacon v1.0.8+20181008</title>
+  <title>List - proximitybeacon v1.0.10+20190323</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.8+20181008</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.10+20190323</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -173,7 +173,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.8+20181008</a>
+        <a href="..">proximitybeacon v1.0.10+20190323</a>
       </nav>
 
       
@@ -228,21 +228,6 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>The maximum number of records to return for this request, up to a
-    server-defined upper limit.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p project-id=string</strong></p>
-<ul>
-<li>The project id to list beacons under. If not present then the project
-    credential that made the request is used as the project.
-    Optional.</li>
-</ul>
-</li>
 <li>
 <p><strong>-p q=string</strong></p>
 <ul>
@@ -313,6 +298,21 @@ be URL-encoded.</p>
 <p>Example REST request:
 <code>GET /v1beta1/beacons?q=status:active%20lat:51.123%20lng:-1.095%20radius:1000</code></p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>The maximum number of records to return for this request, up to a
+    server-defined upper limit.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p project-id=string</strong></p>
+<ul>
+<li>The project id to list beacons under. If not present then the project
+    credential that made the request is used as the project.
+    Optional.</li>
 </ul>
 </li>
 <li>
@@ -412,7 +412,7 @@ be URL-encoded.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

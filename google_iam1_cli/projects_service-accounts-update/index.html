@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Update - iam v1.0.8+20181005</title>
+  <title>Service Accounts Update - iam v1.0.10+20190627</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.8+20181005</a>
+        <a href=".." class="icon icon-home"> iam v1.0.10+20190627</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -147,6 +147,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-disable/">Service Accounts Disable</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-enable/">Service Accounts Enable</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-get/">Service Accounts Get</a>
                 </li>
                 <li class="">
@@ -175,6 +183,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_service-accounts-patch/">Service Accounts Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_service-accounts-set-iam-policy/">Service Accounts Set Iam Policy</a>
                 </li>
                 <li class="">
@@ -188,6 +200,10 @@
                 <li class="">
                     
     <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_service-accounts-undelete/">Service Accounts Undelete</a>
                 </li>
                 <li class=" current">
                     
@@ -249,7 +265,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.8+20181005</a>
+        <a href="..">iam v1.0.10+20190627</a>
       </nav>
 
       
@@ -278,10 +294,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates a ServiceAccount.</p>
+                <p>PatchServiceAccount instead.</p>
+<p>Updates a ServiceAccount.</p>
 <p>Currently, only the following fields are updatable:
-<code>display_name</code> .
-The <code>etag</code> is mandatory.</p>
+<code>display_name</code> and <code>description</code>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -306,6 +322,8 @@ address or the <code>unique_id</code> of the service account.</p>
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>ServiceAccount:
+  description: string
+  disabled: boolean
   display-name: string
   email: string
   etag: string
@@ -318,21 +336,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    display-name=consetetur</code><ul>
+<li><code>-r .    description=vero</code><ul>
+<li>Optional. A user-specified opaque description of the service account.
+    Must be less than or equal to 256 UTF-8 bytes.</li>
+</ul>
+</li>
+<li><code>disabled=false</code><ul>
+<li>@OutputOnly A bool indicate if the service account is disabled.
+    The field is currently in alpha phase.</li>
+</ul>
+</li>
+<li><code>display-name=invidunt</code><ul>
 <li>Optional. A user-specified name for the service account.
     Must be less than or equal to 100 UTF-8 bytes.</li>
 </ul>
 </li>
-<li><code>email=amet.</code><ul>
+<li><code>email=consetetur</code><ul>
 <li>@OutputOnly The email address of the service account.</li>
 </ul>
 </li>
-<li><code>etag=voluptua.</code><ul>
+<li><code>etag=dolore</code><ul>
 <li>Optional. Note: <code>etag</code> is an inoperable legacy field that is only returned
     for backwards compatibility.</li>
 </ul>
 </li>
-<li><code>name=lorem</code><ul>
+<li><code>name=duo</code><ul>
 <li>
 <p>The resource name of the service account in the following format:
     <code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.</p>
@@ -341,13 +369,13 @@ project from the <code>account</code> and the <code>ACCOUNT</code> value can be 
 address or the <code>unique_id</code> of the service account.</p>
 <p>In responses the resource name will always be in the format
 <code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.
-<em> <code>oauth2-client-id=gubergren</code>
+* <code>oauth2-client-id=aliquyam</code>
     - @OutputOnly The OAuth2 client id for the service account.
 This is used in conjunction with the OAuth2 clientconfig API to make
 three legged OAuth2 (3LO) flows to access the data of Google users.
-</em> <code>project-id=justo</code>
+* <code>project-id=lorem</code>
     - @OutputOnly The id of the project that owns the service account.
-* <code>unique-id=sit</code>
+* <code>unique-id=et</code>
     - @OutputOnly The unique and stable id of the service account.</p>
 </li>
 </ul>
@@ -452,7 +480,7 @@ three legged OAuth2 (3LO) flows to access the data of Google users.
         <a href="../roles_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_service-accounts-test-iam-permissions/" class="btn btn-neutral" title="Service Accounts Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_service-accounts-undelete/" class="btn btn-neutral" title="Service Accounts Undelete"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -462,7 +490,7 @@ three legged OAuth2 (3LO) flows to access the data of Google users.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -482,7 +510,7 @@ three legged OAuth2 (3LO) flows to access the data of Google users.
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/iam1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_service-accounts-test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_service-accounts-undelete/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../roles_get/" style="color: #fcfcfc">Next &raquo;</a></span>

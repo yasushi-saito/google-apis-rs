@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Annotate - Cloud Video Intelligence v1.0.8+20180920</title>
+  <title>Annotate - Cloud Video Intelligence v1.0.10+20190626</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Video Intelligence v1.0.8+20180920</a>
+        <a href=".." class="icon icon-home"> Cloud Video Intelligence v1.0.10+20190626</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,7 +70,38 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../operations_list/">List</a>
+    <a class="" href="../operations_projects-locations-operations-cancel/">Projects Locations Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operations_projects-locations-operations-delete/">Projects Locations Operations Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operations_projects-locations-operations-get/">Projects Locations Operations Get</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-cancel/">Locations Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-delete/">Locations Operations Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-get/">Locations Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-operations-list/">Locations Operations List</a>
                 </li>
     </ul>
 	    </li>
@@ -117,7 +148,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Video Intelligence v1.0.8+20180920</a>
+        <a href="..">Cloud Video Intelligence v1.0.10+20190626</a>
       </nav>
 
       
@@ -168,10 +199,26 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     explicit-content-detection-config:
       model: string
     label-detection-config:
+      frame-confidence-threshold: number
       label-detection-mode: string
       model: string
       stationary-camera: boolean
+      video-confidence-threshold: number
+    object-tracking-config:
+      model: string
     shot-change-detection-config:
+      model: string
+    speech-transcription-config:
+      audio-tracks: [integer]
+      diarization-speaker-count: integer
+      enable-automatic-punctuation: boolean
+      enable-speaker-diarization: boolean
+      enable-word-confidence: boolean
+      filter-profanity: boolean
+      language-code: string
+      max-alternatives: integer
+    text-detection-config:
+      language-hints: [string]
       model: string
 
 </code></pre>
@@ -226,33 +273,140 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..label-detection-config    label-detection-mode=kasd</code></p>
+<p><code>..label-detection-config    frame-confidence-threshold=0.383704808614</code></p>
 <ul>
+<li>The confidence threshold we perform filtering on the labels from
+    frame-level detection. If not set, it is set to 0.4 by default. The valid
+    range for this threshold is [0.1, 0.9]. Any value set outside of this
+    range will be clipped.
+    Note: for best results please follow the default threshold. We will update
+    the default threshold everytime when we release a new model.</li>
+</ul>
+</li>
+<li><code>label-detection-mode=accusam</code><ul>
 <li>What labels should be detected with LABEL_DETECTION, in addition to
     video-level labels or segment-level labels.
     If unspecified, defaults to <code>SHOT_MODE</code>.</li>
 </ul>
 </li>
-<li><code>model=accusam</code><ul>
+<li><code>model=takimata</code><ul>
 <li>Model to use for label detection.
     Supported values: &#34;builtin/stable&#34; (the default if unset) and
     &#34;builtin/latest&#34;.</li>
 </ul>
 </li>
-<li>
-<p><code>stationary-camera=true</code></p>
-<ul>
+<li><code>stationary-camera=false</code><ul>
 <li>Whether the video has been shot from a stationary (i.e. non-moving) camera.
     When set to true, might improve detection accuracy for moving objects.
     Should be used with <code>SHOT_AND_FRAME_MODE</code> enabled.</li>
 </ul>
 </li>
 <li>
-<p><code>..shot-change-detection-config    model=justo</code></p>
+<p><code>video-confidence-threshold=0.992247072586</code></p>
+<ul>
+<li>The confidence threshold we perform filtering on the labels from
+    video-level and shot-level detections. If not set, it is set to 0.3 by
+    default. The valid range for this threshold is [0.1, 0.9]. Any value set
+    outside of this range will be clipped.
+    Note: for best results please follow the default threshold. We will update
+    the default threshold everytime when we release a new model.</li>
+</ul>
+</li>
+<li>
+<p><code>..object-tracking-config    model=erat</code></p>
+<ul>
+<li>Model to use for object tracking.
+    Supported values: &#34;builtin/stable&#34; (the default if unset) and
+    &#34;builtin/latest&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>..shot-change-detection-config    model=labore</code></p>
 <ul>
 <li>Model to use for shot change detection.
     Supported values: &#34;builtin/stable&#34; (the default if unset) and
     &#34;builtin/latest&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>..speech-transcription-config    audio-tracks=92</code></p>
+<ul>
+<li><em>Optional</em> For file formats, such as MXF or MKV, supporting multiple audio
+    tracks, specify up to two tracks. Default: track 0.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>diarization-speaker-count=11</code><ul>
+<li><em>Optional</em>
+    If set, specifies the estimated number of speakers in the conversation.
+    If not set, defaults to &#39;2&#39;.
+    Ignored unless enable_speaker_diarization is set to true.</li>
+</ul>
+</li>
+<li><code>enable-automatic-punctuation=true</code><ul>
+<li><em>Optional</em> If &#39;true&#39;, adds punctuation to recognition result hypotheses.
+    This feature is only available in select languages. Setting this for
+    requests in other languages has no effect at all. The default &#39;false&#39; value
+    does not add punctuation to result hypotheses. NOTE: &#34;This is currently
+    offered as an experimental service, complimentary to all users. In the
+    future this may be exclusively available as a premium feature.&#34;</li>
+</ul>
+</li>
+<li><code>enable-speaker-diarization=false</code><ul>
+<li><em>Optional</em> If &#39;true&#39;, enables speaker detection for each recognized word in
+    the top alternative of the recognition result using a speaker_tag provided
+    in the WordInfo.
+    Note: When this is true, we send all the words from the beginning of the
+    audio for the top alternative in every consecutive responses.
+    This is done in order to improve our speaker tags as our models learn to
+    identify the speakers in the conversation over time.</li>
+</ul>
+</li>
+<li><code>enable-word-confidence=false</code><ul>
+<li><em>Optional</em> If <code>true</code>, the top result includes a list of words and the
+    confidence for those words. If <code>false</code>, no word-level confidence
+    information is returned. The default is <code>false</code>.</li>
+</ul>
+</li>
+<li><code>filter-profanity=true</code><ul>
+<li><em>Optional</em> If set to <code>true</code>, the server will attempt to filter out
+    profanities, replacing all but the initial character in each filtered word
+    with asterisks, e.g. &#34;f***&#34;. If set to <code>false</code> or omitted, profanities
+    won&#39;t be filtered out.</li>
+</ul>
+</li>
+<li><code>language-code=ea</code><ul>
+<li><em>Required</em> The language of the supplied audio as a
+    <a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP-47</a> language tag.
+    Example: &#34;en-US&#34;.
+    See <a href="https://cloud.google.com/speech/docs/languages">Language Support</a>
+    for a list of the currently supported language codes.</li>
+</ul>
+</li>
+<li>
+<p><code>max-alternatives=40</code></p>
+<ul>
+<li><em>Optional</em> Maximum number of recognition hypotheses to be returned.
+    Specifically, the maximum number of <code>SpeechRecognitionAlternative</code> messages
+    within each <code>SpeechTranscription</code>. The server may return fewer than
+    <code>max_alternatives</code>. Valid values are <code>0</code>-<code>30</code>. A value of <code>0</code> or <code>1</code> will
+    return a maximum of one. If omitted, will return a maximum of one.</li>
+</ul>
+</li>
+<li>
+<p><code>..text-detection-config    language-hints=justo</code></p>
+<ul>
+<li>
+<p>Language hint can be specified if the language to be detected is known a
+    priori. It can increase the accuracy of the detection. Language hint must
+    be language code in BCP-47 format.</p>
+<p>Automatic language detection is performed if no hint is provided.
+    - Each invocation of this argument appends the given value to the array.
+* <code>model=justo</code>
+    - Model to use for text detection.
+Supported values: &#34;builtin/stable&#34; (the default if unset) and
+&#34;builtin/latest&#34;.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -353,7 +507,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../operations_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-operations-list/" class="btn btn-neutral" title="Locations Operations List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -363,7 +517,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
@@ -383,7 +537,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/videointelligence1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../operations_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-operations-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

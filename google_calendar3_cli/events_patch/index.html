@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - calendar v1.0.8+20181009</title>
+  <title>Patch - calendar v1.0.10+20190702</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.10+20190702</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.8+20181009</a>
+        <a href="..">calendar v1.0.10+20190702</a>
       </nav>
 
       
@@ -530,7 +530,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>...    signature=et</code></p>
 <ul>
 <li>The signature of the conference data.
-    Genereated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
+    Generated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
     Unset for a conference with a failed create request.
     Optional for a conference with a pending create request.</li>
 </ul>
@@ -848,27 +848,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p send-updates=string</strong></p>
+<ul>
+<li>Guests who should receive notifications about the event update (for example, title changes, etc.).</li>
+</ul>
+</li>
+<li>
 <p><strong>-p conference-data-version=integer</strong></p>
 <ul>
 <li>Version number of conference data supported by the API client. Version 0 assumes no conference data support and ignores conference data in the event&#39;s body. Version 1 enables support for copying of ConferenceData as well as for creating new conferences using the createRequest field of conferenceData. The default is 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p supports-attachments=boolean</strong></p>
-<ul>
-<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p always-include-email=boolean</strong></p>
-<ul>
-<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-attendees=integer</strong></p>
-<ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
 </ul>
 </li>
 <li>
@@ -881,9 +869,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p send-updates=string</strong></p>
+<p><strong>-p max-attendees=integer</strong></p>
 <ul>
-<li>Guests who should receive notifications about the event update (for example, title changes, etc.).</li>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-attachments=boolean</strong></p>
+<ul>
+<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p always-include-email=boolean</strong></p>
+<ul>
+<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
 </ul>
 </li>
 </ul>
@@ -953,7 +953,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 

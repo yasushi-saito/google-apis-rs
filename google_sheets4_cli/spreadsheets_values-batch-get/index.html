@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Values Batch Get - Sheets v1.0.8+20181010</title>
+  <title>Values Batch Get - Sheets v1.0.10+20190625</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Sheets v1.0.8+20181010</a>
+        <a href=".." class="icon icon-home"> Sheets v1.0.10+20190625</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -155,7 +155,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Sheets v1.0.8+20181010</a>
+        <a href="..">Sheets v1.0.10+20190625</a>
       </nav>
 
       
@@ -221,25 +221,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p value-render-option=string</strong></p>
-<ul>
-<li>How values should be represented in the output.
-    The default render option is ValueRenderOption.FORMATTED_VALUE.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p date-time-render-option=string</strong></p>
 <ul>
 <li>How dates, times, and durations should be represented in the output.
     This is ignored if value_render_option is
     FORMATTED_VALUE.
     The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ranges=string</strong></p>
-<ul>
-<li>The A1 notation of the values to retrieve.</li>
 </ul>
 </li>
 <li>
@@ -253,6 +240,19 @@ then requesting <code>range=A1:B2,majorDimension=ROWS</code> will return
 whereas requesting <code>range=A1:B2,majorDimension=COLUMNS</code> will return
 <code>[[1,3],[2,4]]</code>.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p value-render-option=string</strong></p>
+<ul>
+<li>How values should be represented in the output.
+    The default render option is ValueRenderOption.FORMATTED_VALUE.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ranges=string</strong></p>
+<ul>
+<li>The A1 notation of the values to retrieve.</li>
 </ul>
 </li>
 </ul>
@@ -346,7 +346,7 @@ whereas requesting <code>range=A1:B2,majorDimension=COLUMNS</code> will return
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+      <p>Copyright &copy; 2015-2019, `Sebastian Thiel`</p>
     
   </div>
 
