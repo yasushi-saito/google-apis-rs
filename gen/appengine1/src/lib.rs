@@ -1941,11 +1941,11 @@ pub struct AppMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for AppMethods<'a, C, A> {}
 
 impl<'a, C, A> AppMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the instances of a version.Tip: To aggregate details about instances over time, see the Stackdriver Monitoring API (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeSeries/list).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Version resource. Example: apps/myapp/services/default/versions/v1.
@@ -1960,15 +1960,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists all domains the user is authorized to administer.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
@@ -1979,15 +1980,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the specified SSL certificate. To renew a certificate and maintain its existing domain mappings, update certificate_data with a new certificate. The new certificate must be applicable to the same domains as the original certificate. The certificate display_name may also be updated.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2001,15 +2003,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _authorized_certificates_id: authorized_certificates_id.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the domain mappings on an application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
@@ -2020,15 +2023,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the specified firewall rule.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the Firewall resource to delete. Example: apps/myapp/firewall/ingressRules/100.
@@ -2039,15 +2043,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _ingress_rules_id: ingress_rules_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets instance information.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default/versions/v1/instances/instance-1.
@@ -2062,15 +2067,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _versions_id: versions_id.to_string(),
             _instances_id: instances_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists operations that match the specified filter in the request. If the server doesn't support this method, it returns UNIMPLEMENTED.NOTE: the name binding allows API services to override the binding to use different resource name schemes, such as users/*/operations. To override the binding, API services can add a binding such as "/v1/{name=users/*}/operations" to their service configuration. For backwards compatibility, the default name includes the operations collection id, however overriding users must ensure the name binding is the parent resource, without the operations collection id.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. The name of the operation's parent resource.
@@ -2082,15 +2088,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the firewall rules of an application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the Firewall collection to retrieve. Example: apps/myapp/firewall/ingressRules.
@@ -2102,15 +2109,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_size: Default::default(),
             _matching_address: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets information about an application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the Application resource to get. Example: apps/myapp.
@@ -2119,15 +2127,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             hub: self.hub,
             _apps_id: apps_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the specified domain mapping.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/domainMappings/example.com.
@@ -2138,15 +2147,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _domain_mappings_id: domain_mappings_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the specified Version resource. By default, only a BASIC_VIEW will be returned. Specify the FULL_VIEW parameter to get the full resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default/versions/v1.
@@ -2160,15 +2170,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _versions_id: versions_id.to_string(),
             _view: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the specified firewall rule.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2182,15 +2193,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _ingress_rules_id: ingress_rules_id.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists all the services in the application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
@@ -2201,15 +2213,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deploys code and resource files to a new version.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2222,17 +2235,18 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _services_id: services_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the specified Application resource. You can update the following fields:
     /// auth_domain - Google authentication domain for controlling user access to the application.
     /// default_cookie_expiration - Cookie expiration policy for the application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2244,15 +2258,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists all SSL certificates the user is authorized to administer.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
@@ -2264,15 +2279,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Stops a running instance.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default/versions/v1/instances/instance-1.
@@ -2287,11 +2303,12 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _versions_id: versions_id.to_string(),
             _instances_id: instances_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the specified Version resource. You can specify the following fields depending on the App Engine environment and type of scaling that the version resource uses:Standard environment
@@ -2308,7 +2325,7 @@ impl<'a, C, A> AppMethods<'a, C, A> {
     /// automatic_scaling.max_total_instances (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#Version.FIELDS.automatic_scaling)
     /// automatic_scaling.cool_down_period_sec (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#Version.FIELDS.automatic_scaling)
     /// automatic_scaling.cpu_utilization.target_utilization (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#Version.FIELDS.automatic_scaling)
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2324,15 +2341,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _versions_id: versions_id.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the versions of a service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `parent`. Name of the parent Service resource. Example: apps/myapp/services/default.
@@ -2346,15 +2364,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates a firewall rule for the application.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2365,15 +2384,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _request: request,
             _apps_id: apps_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Replaces the entire firewall ruleset in one bulk operation. This overrides and replaces the rules of an existing firewall with the new rules.If the final rule does not match traffic with the '*' wildcard IP range, then an "allow all" rule is explicitly added to the end of the list.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2384,15 +2404,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _request: request,
             _apps_id: apps_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Recreates the required App Engine features for the specified App Engine application, for example a Cloud Storage bucket or App Engine service account. Use this method if you receive an error message about a missing feature, for example, Error retrieving the App Engine service account. If you have deleted your App Engine service account, this will not be able to recreate it. Instead, you should attempt to use the IAM undelete API if possible at https://cloud.google.com/iam/reference/rest/v1/projects.serviceAccounts/undelete?apix_params=%7B"name"%3A"projects%2F-%2FserviceAccounts%2Funique_id"%2C"resource"%3A%7B%7D%7D . If the deletion was recent, the numeric ID can be found in the Cloud Console Activity Log.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2403,15 +2424,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _request: request,
             _apps_id: apps_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes an existing Version resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default/versions/v1.
@@ -2424,15 +2446,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _services_id: services_id.to_string(),
             _versions_id: versions_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Uploads the specified SSL certificate.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2443,15 +2466,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _request: request,
             _apps_id: apps_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Enables debugging on a VM instance. This allows you to use the SSH command to connect to the virtual machine where the instance lives. While in "debug mode", the instance continues to serve live traffic. You should delete the instance when you are done debugging and then allow the system to take over and determine if another instance should be started.Only applicable for instances in App Engine flexible environment.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2468,15 +2492,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _versions_id: versions_id.to_string(),
             _instances_id: instances_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the current configuration of the specified service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
@@ -2487,15 +2512,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _services_id: services_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the specified SSL certificate.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource to delete. Example: apps/myapp/authorizedCertificates/12345.
@@ -2506,15 +2532,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _authorized_certificates_id: authorized_certificates_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Maps a domain to an application. A user must be authorized to administer a domain in order to map it to an application. For a list of available authorized domains, see AuthorizedDomains.ListAuthorizedDomains.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2526,15 +2553,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _override_strategy: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the specified domain mapping. To map an SSL certificate to a domain mapping, update certificate_id to point to an AuthorizedCertificate resource. A user must be authorized to administer the associated domain in order to update a DomainMapping resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2548,15 +2576,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _domain_mappings_id: domain_mappings_id.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. The name of the operation resource.
@@ -2567,15 +2596,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _operations_id: operations_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists information about the supported locations for this service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. The resource that owns the locations collection, if applicable.
@@ -2587,15 +2617,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the specified domain mapping. A user must be authorized to administer the associated domain in order to delete a DomainMapping resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource to delete. Example: apps/myapp/domainMappings/example.com.
@@ -2606,15 +2637,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _domain_mappings_id: domain_mappings_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the configuration of the specified service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2629,15 +2661,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _update_mask: Default::default(),
             _migrate_traffic: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the specified service and all enclosed versions.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
@@ -2648,17 +2681,18 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _services_id: services_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates an App Engine application for a Google Cloud Platform project. Required fields:
     /// id - The ID of the target Cloud Platform project.
     /// location - The region (https://cloud.google.com/appengine/docs/locations) where you want the App Engine application located.For more information about App Engine applications, see Managing Projects, Applications, and Billing (https://cloud.google.com/appengine/docs/standard/python/console/).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2667,15 +2701,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the specified SSL certificate.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the resource requested. Example: apps/myapp/authorizedCertificates/12345.
@@ -2687,15 +2722,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _authorized_certificates_id: authorized_certificates_id.to_string(),
             _view: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the specified firewall rule.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Name of the Firewall resource to retrieve. Example: apps/myapp/firewall/ingressRules/100.
@@ -2706,15 +2742,16 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _ingress_rules_id: ingress_rules_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets information about a location.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `appsId` - Part of `name`. Resource name for the location.
@@ -2725,8 +2762,9 @@ impl<'a, C, A> AppMethods<'a, C, A> {
             _apps_id: apps_id.to_string(),
             _locations_id: locations_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2783,6 +2821,7 @@ pub struct AppServiceVersionInstanceListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2872,9 +2911,9 @@ impl<'a, C, A> AppServiceVersionInstanceListCall<'a, C, A> where C: BorrowMut<hy
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3005,6 +3044,19 @@ impl<'a, C, A> AppServiceVersionInstanceListCall<'a, C, A> where C: BorrowMut<hy
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionInstanceListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3073,6 +3125,7 @@ pub struct AppAuthorizedDomainListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3160,9 +3213,9 @@ impl<'a, C, A> AppAuthorizedDomainListCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3273,6 +3326,19 @@ impl<'a, C, A> AppAuthorizedDomainListCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedDomainListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3347,6 +3413,7 @@ pub struct AppAuthorizedCertificatePatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3444,12 +3511,12 @@ impl<'a, C, A> AppAuthorizedCertificatePatchCall<'a, C, A> where C: BorrowMut<hy
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3572,6 +3639,19 @@ impl<'a, C, A> AppAuthorizedCertificatePatchCall<'a, C, A> where C: BorrowMut<hy
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedCertificatePatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3640,6 +3720,7 @@ pub struct AppDomainMappingListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3727,9 +3808,9 @@ impl<'a, C, A> AppDomainMappingListCall<'a, C, A> where C: BorrowMut<hyper::Clie
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3840,6 +3921,19 @@ impl<'a, C, A> AppDomainMappingListCall<'a, C, A> where C: BorrowMut<hyper::Clie
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppDomainMappingListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3905,6 +3999,7 @@ pub struct AppFirewallIngressRuleDeleteCall<'a, C, A>
     _ingress_rules_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3987,9 +4082,9 @@ impl<'a, C, A> AppFirewallIngressRuleDeleteCall<'a, C, A> where C: BorrowMut<hyp
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4096,6 +4191,19 @@ impl<'a, C, A> AppFirewallIngressRuleDeleteCall<'a, C, A> where C: BorrowMut<hyp
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRuleDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4163,6 +4271,7 @@ pub struct AppServiceVersionInstanceGetCall<'a, C, A>
     _instances_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4247,9 +4356,9 @@ impl<'a, C, A> AppServiceVersionInstanceGetCall<'a, C, A> where C: BorrowMut<hyp
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4376,6 +4485,19 @@ impl<'a, C, A> AppServiceVersionInstanceGetCall<'a, C, A> where C: BorrowMut<hyp
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionInstanceGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4446,6 +4568,7 @@ pub struct AppOperationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4536,9 +4659,9 @@ impl<'a, C, A> AppOperationListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4656,6 +4779,19 @@ impl<'a, C, A> AppOperationListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppOperationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4726,6 +4862,7 @@ pub struct AppFirewallIngressRuleListCall<'a, C, A>
     _matching_address: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4816,9 +4953,9 @@ impl<'a, C, A> AppFirewallIngressRuleListCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4936,6 +5073,19 @@ impl<'a, C, A> AppFirewallIngressRuleListCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRuleListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5000,6 +5150,7 @@ pub struct AppGetCall<'a, C, A>
     _apps_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5081,9 +5232,9 @@ impl<'a, C, A> AppGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oauth2
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5180,6 +5331,19 @@ impl<'a, C, A> AppGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oauth2
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5245,6 +5409,7 @@ pub struct AppDomainMappingGetCall<'a, C, A>
     _domain_mappings_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5327,9 +5492,9 @@ impl<'a, C, A> AppDomainMappingGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5436,6 +5601,19 @@ impl<'a, C, A> AppDomainMappingGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppDomainMappingGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5504,6 +5682,7 @@ pub struct AppServiceVersionGetCall<'a, C, A>
     _view: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5590,9 +5769,9 @@ impl<'a, C, A> AppServiceVersionGetCall<'a, C, A> where C: BorrowMut<hyper::Clie
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5716,6 +5895,19 @@ impl<'a, C, A> AppServiceVersionGetCall<'a, C, A> where C: BorrowMut<hyper::Clie
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5790,6 +5982,7 @@ pub struct AppFirewallIngressRulePatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5887,12 +6080,12 @@ impl<'a, C, A> AppFirewallIngressRulePatchCall<'a, C, A> where C: BorrowMut<hype
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6015,6 +6208,19 @@ impl<'a, C, A> AppFirewallIngressRulePatchCall<'a, C, A> where C: BorrowMut<hype
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRulePatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6083,6 +6289,7 @@ pub struct AppServiceListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6170,9 +6377,9 @@ impl<'a, C, A> AppServiceListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6283,6 +6490,19 @@ impl<'a, C, A> AppServiceListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6355,6 +6575,7 @@ pub struct AppServiceVersionCreateCall<'a, C, A>
     _services_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6449,12 +6670,12 @@ impl<'a, C, A> AppServiceVersionCreateCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6570,6 +6791,19 @@ impl<'a, C, A> AppServiceVersionCreateCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6645,6 +6879,7 @@ pub struct AppPatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6741,12 +6976,12 @@ impl<'a, C, A> AppPatchCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oaut
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6859,6 +7094,19 @@ impl<'a, C, A> AppPatchCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oaut
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppPatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6929,6 +7177,7 @@ pub struct AppAuthorizedCertificateListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -7019,9 +7268,9 @@ impl<'a, C, A> AppAuthorizedCertificateListCall<'a, C, A> where C: BorrowMut<hyp
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7139,6 +7388,19 @@ impl<'a, C, A> AppAuthorizedCertificateListCall<'a, C, A> where C: BorrowMut<hyp
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedCertificateListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -7206,6 +7468,7 @@ pub struct AppServiceVersionInstanceDeleteCall<'a, C, A>
     _instances_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -7290,9 +7553,9 @@ impl<'a, C, A> AppServiceVersionInstanceDeleteCall<'a, C, A> where C: BorrowMut<
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7419,6 +7682,19 @@ impl<'a, C, A> AppServiceVersionInstanceDeleteCall<'a, C, A> where C: BorrowMut<
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionInstanceDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -7507,6 +7783,7 @@ pub struct AppServiceVersionPatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -7605,12 +7882,12 @@ impl<'a, C, A> AppServiceVersionPatchCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7743,6 +8020,19 @@ impl<'a, C, A> AppServiceVersionPatchCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionPatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -7814,6 +8104,7 @@ pub struct AppServiceVersionListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -7905,9 +8196,9 @@ impl<'a, C, A> AppServiceVersionListCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -8035,6 +8326,19 @@ impl<'a, C, A> AppServiceVersionListCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -8106,6 +8410,7 @@ pub struct AppFirewallIngressRuleCreateCall<'a, C, A>
     _apps_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -8199,12 +8504,12 @@ impl<'a, C, A> AppFirewallIngressRuleCreateCall<'a, C, A> where C: BorrowMut<hyp
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -8310,6 +8615,19 @@ impl<'a, C, A> AppFirewallIngressRuleCreateCall<'a, C, A> where C: BorrowMut<hyp
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRuleCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -8381,6 +8699,7 @@ pub struct AppFirewallIngressRuleBatchUpdateCall<'a, C, A>
     _apps_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -8474,12 +8793,12 @@ impl<'a, C, A> AppFirewallIngressRuleBatchUpdateCall<'a, C, A> where C: BorrowMu
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -8585,6 +8904,19 @@ impl<'a, C, A> AppFirewallIngressRuleBatchUpdateCall<'a, C, A> where C: BorrowMu
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRuleBatchUpdateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -8656,6 +8988,7 @@ pub struct AppRepairCall<'a, C, A>
     _apps_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -8749,12 +9082,12 @@ impl<'a, C, A> AppRepairCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -8860,6 +9193,19 @@ impl<'a, C, A> AppRepairCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppRepairCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -8926,6 +9272,7 @@ pub struct AppServiceVersionDeleteCall<'a, C, A>
     _versions_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -9009,9 +9356,9 @@ impl<'a, C, A> AppServiceVersionDeleteCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -9128,6 +9475,19 @@ impl<'a, C, A> AppServiceVersionDeleteCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -9199,6 +9559,7 @@ pub struct AppAuthorizedCertificateCreateCall<'a, C, A>
     _apps_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -9292,12 +9653,12 @@ impl<'a, C, A> AppAuthorizedCertificateCreateCall<'a, C, A> where C: BorrowMut<h
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -9403,6 +9764,19 @@ impl<'a, C, A> AppAuthorizedCertificateCreateCall<'a, C, A> where C: BorrowMut<h
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedCertificateCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -9477,6 +9851,7 @@ pub struct AppServiceVersionInstanceDebugCall<'a, C, A>
     _instances_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -9573,12 +9948,12 @@ impl<'a, C, A> AppServiceVersionInstanceDebugCall<'a, C, A> where C: BorrowMut<h
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -9714,6 +10089,19 @@ impl<'a, C, A> AppServiceVersionInstanceDebugCall<'a, C, A> where C: BorrowMut<h
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceVersionInstanceDebugCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -9779,6 +10167,7 @@ pub struct AppServiceGetCall<'a, C, A>
     _services_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -9861,9 +10250,9 @@ impl<'a, C, A> AppServiceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -9970,6 +10359,19 @@ impl<'a, C, A> AppServiceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -10035,6 +10437,7 @@ pub struct AppAuthorizedCertificateDeleteCall<'a, C, A>
     _authorized_certificates_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -10117,9 +10520,9 @@ impl<'a, C, A> AppAuthorizedCertificateDeleteCall<'a, C, A> where C: BorrowMut<h
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -10226,6 +10629,19 @@ impl<'a, C, A> AppAuthorizedCertificateDeleteCall<'a, C, A> where C: BorrowMut<h
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedCertificateDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -10299,6 +10715,7 @@ pub struct AppDomainMappingCreateCall<'a, C, A>
     _override_strategy: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -10395,12 +10812,12 @@ impl<'a, C, A> AppDomainMappingCreateCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -10513,6 +10930,19 @@ impl<'a, C, A> AppDomainMappingCreateCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppDomainMappingCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -10587,6 +11017,7 @@ pub struct AppDomainMappingPatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -10684,12 +11115,12 @@ impl<'a, C, A> AppDomainMappingPatchCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -10812,6 +11243,19 @@ impl<'a, C, A> AppDomainMappingPatchCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppDomainMappingPatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -10877,6 +11321,7 @@ pub struct AppOperationGetCall<'a, C, A>
     _operations_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -10959,9 +11404,9 @@ impl<'a, C, A> AppOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -11068,6 +11513,19 @@ impl<'a, C, A> AppOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppOperationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -11138,6 +11596,7 @@ pub struct AppLocationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -11228,9 +11687,9 @@ impl<'a, C, A> AppLocationListCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -11348,6 +11807,19 @@ impl<'a, C, A> AppLocationListCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppLocationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -11413,6 +11885,7 @@ pub struct AppDomainMappingDeleteCall<'a, C, A>
     _domain_mappings_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -11495,9 +11968,9 @@ impl<'a, C, A> AppDomainMappingDeleteCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -11604,6 +12077,19 @@ impl<'a, C, A> AppDomainMappingDeleteCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppDomainMappingDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -11680,6 +12166,7 @@ pub struct AppServicePatchCall<'a, C, A>
     _migrate_traffic: Option<bool>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -11780,12 +12267,12 @@ impl<'a, C, A> AppServicePatchCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -11915,6 +12402,19 @@ impl<'a, C, A> AppServicePatchCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServicePatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -11980,6 +12480,7 @@ pub struct AppServiceDeleteCall<'a, C, A>
     _services_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -12062,9 +12563,9 @@ impl<'a, C, A> AppServiceDeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -12171,6 +12672,19 @@ impl<'a, C, A> AppServiceDeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppServiceDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -12243,6 +12757,7 @@ pub struct AppCreateCall<'a, C, A>
     _request: Application,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -12314,12 +12829,12 @@ impl<'a, C, A> AppCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -12415,6 +12930,19 @@ impl<'a, C, A> AppCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -12482,6 +13010,7 @@ pub struct AppAuthorizedCertificateGetCall<'a, C, A>
     _view: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -12567,9 +13096,9 @@ impl<'a, C, A> AppAuthorizedCertificateGetCall<'a, C, A> where C: BorrowMut<hype
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -12683,6 +13212,19 @@ impl<'a, C, A> AppAuthorizedCertificateGetCall<'a, C, A> where C: BorrowMut<hype
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppAuthorizedCertificateGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -12748,6 +13290,7 @@ pub struct AppFirewallIngressRuleGetCall<'a, C, A>
     _ingress_rules_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -12830,9 +13373,9 @@ impl<'a, C, A> AppFirewallIngressRuleGetCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -12939,6 +13482,19 @@ impl<'a, C, A> AppFirewallIngressRuleGetCall<'a, C, A> where C: BorrowMut<hyper:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppFirewallIngressRuleGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -13004,6 +13560,7 @@ pub struct AppLocationGetCall<'a, C, A>
     _locations_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -13086,9 +13643,9 @@ impl<'a, C, A> AppLocationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -13192,6 +13749,19 @@ impl<'a, C, A> AppLocationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
     pub fn param<T>(mut self, name: T, value: T) -> AppLocationGetCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AppLocationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

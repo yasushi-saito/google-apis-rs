@@ -1399,7 +1399,7 @@ pub struct OperationMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for OperationMethods<'a, C, A> {}
 
 impl<'a, C, A> OperationMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Wait for an execution operation to complete. When the client initially
@@ -1408,7 +1408,7 @@ impl<'a, C, A> OperationMethods<'a, C, A> {
     /// operation completes, and then respond with the completed operation. The
     /// server MAY choose to stream additional updates as execution progresses,
     /// such as to provide an update as to the state of the execution.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1420,8 +1420,9 @@ impl<'a, C, A> OperationMethods<'a, C, A> {
             _request: request,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1466,7 +1467,7 @@ pub struct ActionResultMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ActionResultMethods<'a, C, A> {}
 
 impl<'a, C, A> ActionResultMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieve a cached execution result.
@@ -1481,7 +1482,7 @@ impl<'a, C, A> ActionResultMethods<'a, C, A> {
     /// Errors:
     /// 
     /// * `NOT_FOUND`: The requested `ActionResult` is not in the cache.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `instanceName` - The instance of the execution system to operate against. A server may
@@ -1502,11 +1503,12 @@ impl<'a, C, A> ActionResultMethods<'a, C, A> {
             _inline_stderr: Default::default(),
             _inline_output_files: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Upload a new execution result.
@@ -1525,7 +1527,7 @@ impl<'a, C, A> ActionResultMethods<'a, C, A> {
     ///   action result, such as a missing command or action.
     /// * `RESOURCE_EXHAUSTED`: There is insufficient storage space to add the
     ///   entry to the cache.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1546,8 +1548,9 @@ impl<'a, C, A> ActionResultMethods<'a, C, A> {
             _size_bytes: size_bytes.to_string(),
             _results_cache_policy_priority: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1592,7 +1595,7 @@ pub struct BlobMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for BlobMethods<'a, C, A> {}
 
 impl<'a, C, A> BlobMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Determine if blobs are present in the CAS.
@@ -1601,7 +1604,7 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
     /// already present in the CAS and do not need to be uploaded again.
     /// 
     /// There are no method-specific errors.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1616,11 +1619,12 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
             _request: request,
             _instance_name: instance_name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Upload many blobs at once.
@@ -1647,7 +1651,7 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
     /// * `INVALID_ARGUMENT`: The
     /// Digest does not match the
     /// provided data.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1662,11 +1666,12 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
             _request: request,
             _instance_name: instance_name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Download many blobs at once.
@@ -1689,7 +1694,7 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
     /// 
     /// Every error on individual read will be returned in the corresponding digest
     /// status.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1704,11 +1709,12 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
             _request: request,
             _instance_name: instance_name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Fetch the entire directory tree rooted at a node.
@@ -1732,7 +1738,7 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
     /// portion present and omit the rest.
     /// 
     /// * `NOT_FOUND`: The requested tree root is not present in the CAS.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `instanceName` - The instance of the execution system to operate against. A server may
@@ -1752,8 +1758,9 @@ impl<'a, C, A> BlobMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1798,7 +1805,7 @@ pub struct ActionMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ActionMethods<'a, C, A> {}
 
 impl<'a, C, A> ActionMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Execute an action remotely.
@@ -1864,7 +1871,7 @@ impl<'a, C, A> ActionMethods<'a, C, A> {
     /// where, for each requested blob not present in the CAS, there is a
     /// `Violation` with a `type` of `MISSING` and a `subject` of
     /// `"blobs/{hash}/{size}"` indicating the digest of the missing blob.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1879,8 +1886,9 @@ impl<'a, C, A> ActionMethods<'a, C, A> {
             _request: request,
             _instance_name: instance_name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1925,7 +1933,7 @@ pub struct MethodMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for MethodMethods<'a, C, A> {}
 
 impl<'a, C, A> MethodMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// GetCapabilities returns the server capabilities configuration of the
@@ -1936,7 +1944,7 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
     ///   CacheCapabilities and ExecutionCapabilities.
     /// * Execution only endpoints should return ExecutionCapabilities.
     /// * CAS + Action Cache only endpoints should return CacheCapabilities.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `instanceName` - The instance of the execution system to operate against. A server may
@@ -1949,8 +1957,9 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
             hub: self.hub,
             _instance_name: instance_name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2013,6 +2022,7 @@ pub struct OperationWaitExecutionCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2110,12 +2120,12 @@ impl<'a, C, A> OperationWaitExecutionCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2222,6 +2232,19 @@ impl<'a, C, A> OperationWaitExecutionCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OperationWaitExecutionCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2305,6 +2328,7 @@ pub struct ActionResultGetCall<'a, C, A>
     _inline_output_files: Vec<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2403,9 +2427,9 @@ impl<'a, C, A> ActionResultGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2553,6 +2577,19 @@ impl<'a, C, A> ActionResultGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ActionResultGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2643,6 +2680,7 @@ pub struct ActionResultUpdateCall<'a, C, A>
     _results_cache_policy_priority: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2745,12 +2783,12 @@ impl<'a, C, A> ActionResultUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Put, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2895,6 +2933,19 @@ impl<'a, C, A> ActionResultUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ActionResultUpdateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2971,6 +3022,7 @@ pub struct BlobFindMissingCall<'a, C, A>
     _instance_name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3068,12 +3120,12 @@ impl<'a, C, A> BlobFindMissingCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3183,6 +3235,19 @@ impl<'a, C, A> BlobFindMissingCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> BlobFindMissingCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3277,6 +3342,7 @@ pub struct BlobBatchUpdateCall<'a, C, A>
     _instance_name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3374,12 +3440,12 @@ impl<'a, C, A> BlobBatchUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3489,6 +3555,19 @@ impl<'a, C, A> BlobBatchUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> BlobBatchUpdateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3579,6 +3658,7 @@ pub struct BlobBatchReadCall<'a, C, A>
     _instance_name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3676,12 +3756,12 @@ impl<'a, C, A> BlobBatchReadCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3791,6 +3871,19 @@ impl<'a, C, A> BlobBatchReadCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> BlobBatchReadCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3881,6 +3974,7 @@ pub struct BlobGetTreeCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3974,9 +4068,9 @@ impl<'a, C, A> BlobGetTreeCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4117,6 +4211,19 @@ impl<'a, C, A> BlobGetTreeCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> BlobGetTreeCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4250,6 +4357,7 @@ pub struct ActionExecuteCall<'a, C, A>
     _instance_name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4347,12 +4455,12 @@ impl<'a, C, A> ActionExecuteCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4462,6 +4570,19 @@ impl<'a, C, A> ActionExecuteCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ActionExecuteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4533,6 +4654,7 @@ pub struct MethodGetCapabilityCall<'a, C, A>
     _instance_name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4618,9 +4740,9 @@ impl<'a, C, A> MethodGetCapabilityCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4718,6 +4840,19 @@ impl<'a, C, A> MethodGetCapabilityCall<'a, C, A> where C: BorrowMut<hyper::Clien
     pub fn param<T>(mut self, name: T, value: T) -> MethodGetCapabilityCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> MethodGetCapabilityCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

@@ -811,11 +811,11 @@ pub struct ZoneOperationMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ZoneOperationMethods<'a, C, A> {}
 
 impl<'a, C, A> ZoneOperationMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves the list of operation resources contained within the specified zone.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - Name of the project scoping this request.
@@ -829,15 +829,16 @@ impl<'a, C, A> ZoneOperationMethods<'a, C, A> {
             _max_results: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves the specified zone-specific operation resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - Name of the project scoping this request.
@@ -850,8 +851,9 @@ impl<'a, C, A> ZoneOperationMethods<'a, C, A> {
             _zone: zone.to_string(),
             _operation: operation.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -896,11 +898,11 @@ pub struct InstanceGroupManagerMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for InstanceGroupManagerMethods<'a, C, A> {}
 
 impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Modifies the target pools to which all new instances in this group are assigned. Existing instances in the group are not affected.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -915,15 +917,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves the list of Instance Group Manager resources contained within the specified zone.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - The Google Developers Console project name.
@@ -937,15 +940,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _max_results: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates an instance group manager, as well as the instance group and the specified number of instances.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -960,15 +964,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _size: size,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns the specified Instance Group Manager resource.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - The Google Developers Console project name.
@@ -981,15 +986,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Removes the specified instances from the managed instance group, and from any target pools of which they were members, without deleting the instances.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1004,15 +1010,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Recreates the specified instances. The instances are deleted, then recreated using the instance group manager's current instance template.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1027,15 +1034,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the instance group manager and all instances contained within. If you'd like to delete the manager without deleting the instances, you must first abandon the instances to remove them from the group.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - The Google Developers Console project name.
@@ -1048,15 +1056,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Sets the instance template to use when creating new instances in this group. Existing instances are not affected.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1071,15 +1080,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Resizes the managed instance group up or down. If resized up, new instances are created using the current instance template. If resized down, instances are removed in the order outlined in Resizing a managed instance group.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - The Google Developers Console project name.
@@ -1094,15 +1104,16 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _instance_group_manager: instance_group_manager.to_string(),
             _size: size,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes the specified instances. The instances are deleted, then removed from the instance group and any target pools of which they were a member. The targetSize of the instance group manager is reduced by the number of instances deleted.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1117,8 +1128,9 @@ impl<'a, C, A> InstanceGroupManagerMethods<'a, C, A> {
             _zone: zone.to_string(),
             _instance_group_manager: instance_group_manager.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1176,6 +1188,7 @@ pub struct ZoneOperationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1267,9 +1280,9 @@ impl<'a, C, A> ZoneOperationListCall<'a, C, A> where C: BorrowMut<hyper::Client>
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1393,6 +1406,19 @@ impl<'a, C, A> ZoneOperationListCall<'a, C, A> where C: BorrowMut<hyper::Client>
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ZoneOperationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -1459,6 +1485,7 @@ pub struct ZoneOperationGetCall<'a, C, A>
     _operation: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1542,9 +1569,9 @@ impl<'a, C, A> ZoneOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1657,6 +1684,19 @@ impl<'a, C, A> ZoneOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ZoneOperationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -1730,6 +1770,7 @@ pub struct InstanceGroupManagerSetTargetPoolCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1825,12 +1866,12 @@ impl<'a, C, A> InstanceGroupManagerSetTargetPoolCall<'a, C, A> where C: BorrowMu
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1952,6 +1993,19 @@ impl<'a, C, A> InstanceGroupManagerSetTargetPoolCall<'a, C, A> where C: BorrowMu
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerSetTargetPoolCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2023,6 +2077,7 @@ pub struct InstanceGroupManagerListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2114,9 +2169,9 @@ impl<'a, C, A> InstanceGroupManagerListCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2240,6 +2295,19 @@ impl<'a, C, A> InstanceGroupManagerListCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2313,6 +2381,7 @@ pub struct InstanceGroupManagerInsertCall<'a, C, A>
     _size: i32,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2408,12 +2477,12 @@ impl<'a, C, A> InstanceGroupManagerInsertCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2535,6 +2604,19 @@ impl<'a, C, A> InstanceGroupManagerInsertCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerInsertCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2601,6 +2683,7 @@ pub struct InstanceGroupManagerGetCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2684,9 +2767,9 @@ impl<'a, C, A> InstanceGroupManagerGetCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2799,6 +2882,19 @@ impl<'a, C, A> InstanceGroupManagerGetCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2872,6 +2968,7 @@ pub struct InstanceGroupManagerAbandonInstanceCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2967,12 +3064,12 @@ impl<'a, C, A> InstanceGroupManagerAbandonInstanceCall<'a, C, A> where C: Borrow
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3094,6 +3191,19 @@ impl<'a, C, A> InstanceGroupManagerAbandonInstanceCall<'a, C, A> where C: Borrow
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerAbandonInstanceCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3167,6 +3277,7 @@ pub struct InstanceGroupManagerRecreateInstanceCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3262,12 +3373,12 @@ impl<'a, C, A> InstanceGroupManagerRecreateInstanceCall<'a, C, A> where C: Borro
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3389,6 +3500,19 @@ impl<'a, C, A> InstanceGroupManagerRecreateInstanceCall<'a, C, A> where C: Borro
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerRecreateInstanceCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3455,6 +3579,7 @@ pub struct InstanceGroupManagerDeleteCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3538,9 +3663,9 @@ impl<'a, C, A> InstanceGroupManagerDeleteCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3653,6 +3778,19 @@ impl<'a, C, A> InstanceGroupManagerDeleteCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3726,6 +3864,7 @@ pub struct InstanceGroupManagerSetInstanceTemplateCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3821,12 +3960,12 @@ impl<'a, C, A> InstanceGroupManagerSetInstanceTemplateCall<'a, C, A> where C: Bo
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3948,6 +4087,19 @@ impl<'a, C, A> InstanceGroupManagerSetInstanceTemplateCall<'a, C, A> where C: Bo
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerSetInstanceTemplateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4015,6 +4167,7 @@ pub struct InstanceGroupManagerResizeCall<'a, C, A>
     _size: i32,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4099,9 +4252,9 @@ impl<'a, C, A> InstanceGroupManagerResizeCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4224,6 +4377,19 @@ impl<'a, C, A> InstanceGroupManagerResizeCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerResizeCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4297,6 +4463,7 @@ pub struct InstanceGroupManagerDeleteInstanceCall<'a, C, A>
     _instance_group_manager: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4392,12 +4559,12 @@ impl<'a, C, A> InstanceGroupManagerDeleteInstanceCall<'a, C, A> where C: BorrowM
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4516,6 +4683,19 @@ impl<'a, C, A> InstanceGroupManagerDeleteInstanceCall<'a, C, A> where C: BorrowM
     pub fn param<T>(mut self, name: T, value: T) -> InstanceGroupManagerDeleteInstanceCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InstanceGroupManagerDeleteInstanceCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

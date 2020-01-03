@@ -2610,12 +2610,12 @@ pub struct ContentMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ContentMethods<'a, C, A> {}
 
 impl<'a, C, A> ContentMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Redacts potentially sensitive info from a list of strings.
     /// This method has limits on input size, processing time, and output size.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2624,16 +2624,17 @@ impl<'a, C, A> ContentMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// De-identifies potentially sensitive info from a list of strings.
     /// This method has limits on input size and output size.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2642,16 +2643,17 @@ impl<'a, C, A> ContentMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Finds potentially sensitive info in a list of strings.
     /// This method has limits on input size, processing time, and output size.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2660,8 +2662,9 @@ impl<'a, C, A> ContentMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2706,11 +2709,11 @@ pub struct RootCategoryMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for RootCategoryMethods<'a, C, A> {}
 
 impl<'a, C, A> RootCategoryMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns sensitive information types for given category.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `category` - Category name as returned by ListRootCategories.
@@ -2720,11 +2723,12 @@ impl<'a, C, A> RootCategoryMethods<'a, C, A> {
             _category: category.to_string(),
             _language_code: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns the list of root categories of sensitive information.
@@ -2733,8 +2737,9 @@ impl<'a, C, A> RootCategoryMethods<'a, C, A> {
             hub: self.hub,
             _language_code: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2779,12 +2784,12 @@ pub struct InspectMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for InspectMethods<'a, C, A> {}
 
 impl<'a, C, A> InspectMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Schedules a job scanning content in a Google Cloud Platform data
     /// repository.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2793,15 +2798,16 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Fetches the list of long running operations.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation's parent resource.
@@ -2813,17 +2819,18 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the latest state of a long-running operation.  Clients can use this
     /// method to poll the operation result at intervals as recommended by the API
     /// service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation resource.
@@ -2832,15 +2839,16 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Cancels an operation. Use the `inspect.operations.get` to check whether the cancellation succeeded or the operation completed despite cancellation.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2851,15 +2859,16 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             _request: request,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// This method is not supported and the server returns `UNIMPLEMENTED`.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation resource to be deleted.
@@ -2868,15 +2877,16 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns list of results for given inspect operation result set id.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - Identifier of the results set returned as metadata of
@@ -2890,8 +2900,9 @@ impl<'a, C, A> InspectMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2936,11 +2947,11 @@ pub struct RiskAnalysiMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for RiskAnalysiMethods<'a, C, A> {}
 
 impl<'a, C, A> RiskAnalysiMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// This method is not supported and the server returns `UNIMPLEMENTED`.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation resource to be deleted.
@@ -2949,15 +2960,16 @@ impl<'a, C, A> RiskAnalysiMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Fetches the list of long running operations.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation's parent resource.
@@ -2969,17 +2981,18 @@ impl<'a, C, A> RiskAnalysiMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the latest state of a long-running operation.  Clients can use this
     /// method to poll the operation result at intervals as recommended by the API
     /// service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation resource.
@@ -2988,15 +3001,16 @@ impl<'a, C, A> RiskAnalysiMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Cancels an operation. Use the `inspect.operations.get` to check whether the cancellation succeeded or the operation completed despite cancellation.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -3007,8 +3021,9 @@ impl<'a, C, A> RiskAnalysiMethods<'a, C, A> {
             _request: request,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -3053,12 +3068,12 @@ pub struct DataSourceMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for DataSourceMethods<'a, C, A> {}
 
 impl<'a, C, A> DataSourceMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Schedules a job to compute risk analysis metrics over content in a Google
     /// Cloud Platform repository.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -3067,8 +3082,9 @@ impl<'a, C, A> DataSourceMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -3126,6 +3142,7 @@ pub struct ContentRedactCall<'a, C, A>
     _request: GooglePrivacyDlpV2beta1RedactContentRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3197,12 +3214,12 @@ impl<'a, C, A> ContentRedactCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3300,6 +3317,19 @@ impl<'a, C, A> ContentRedactCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ContentRedactCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3371,6 +3401,7 @@ pub struct ContentDeidentifyCall<'a, C, A>
     _request: GooglePrivacyDlpV2beta1DeidentifyContentRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3442,12 +3473,12 @@ impl<'a, C, A> ContentDeidentifyCall<'a, C, A> where C: BorrowMut<hyper::Client>
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3545,6 +3576,19 @@ impl<'a, C, A> ContentDeidentifyCall<'a, C, A> where C: BorrowMut<hyper::Client>
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ContentDeidentifyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3616,6 +3660,7 @@ pub struct ContentInspectCall<'a, C, A>
     _request: GooglePrivacyDlpV2beta1InspectContentRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3687,12 +3732,12 @@ impl<'a, C, A> ContentInspectCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3790,6 +3835,19 @@ impl<'a, C, A> ContentInspectCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ContentInspectCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3856,6 +3914,7 @@ pub struct RootCategoryInfoTypeListCall<'a, C, A>
     _language_code: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3944,9 +4003,9 @@ impl<'a, C, A> RootCategoryInfoTypeListCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4054,6 +4113,19 @@ impl<'a, C, A> RootCategoryInfoTypeListCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RootCategoryInfoTypeListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4119,6 +4191,7 @@ pub struct RootCategoryListCall<'a, C, A>
     _language_code: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4181,9 +4254,9 @@ impl<'a, C, A> RootCategoryListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4281,6 +4354,19 @@ impl<'a, C, A> RootCategoryListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RootCategoryListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4352,6 +4438,7 @@ pub struct InspectOperationCreateCall<'a, C, A>
     _request: GooglePrivacyDlpV2beta1CreateInspectOperationRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4423,12 +4510,12 @@ impl<'a, C, A> InspectOperationCreateCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4526,6 +4613,19 @@ impl<'a, C, A> InspectOperationCreateCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectOperationCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4596,6 +4696,7 @@ pub struct InspectOperationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4690,9 +4791,9 @@ impl<'a, C, A> InspectOperationListCall<'a, C, A> where C: BorrowMut<hyper::Clie
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4812,6 +4913,19 @@ impl<'a, C, A> InspectOperationListCall<'a, C, A> where C: BorrowMut<hyper::Clie
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectOperationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4878,6 +4992,7 @@ pub struct InspectOperationGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4963,9 +5078,9 @@ impl<'a, C, A> InspectOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5064,6 +5179,19 @@ impl<'a, C, A> InspectOperationGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectOperationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5135,6 +5263,7 @@ pub struct InspectOperationCancelCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5232,12 +5361,12 @@ impl<'a, C, A> InspectOperationCancelCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5345,6 +5474,19 @@ impl<'a, C, A> InspectOperationCancelCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectOperationCancelCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5409,6 +5551,7 @@ pub struct InspectOperationDeleteCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5494,9 +5637,9 @@ impl<'a, C, A> InspectOperationDeleteCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5595,6 +5738,19 @@ impl<'a, C, A> InspectOperationDeleteCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectOperationDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5665,6 +5821,7 @@ pub struct InspectResultFindingListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5759,9 +5916,9 @@ impl<'a, C, A> InspectResultFindingListCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5894,6 +6051,19 @@ impl<'a, C, A> InspectResultFindingListCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> InspectResultFindingListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5958,6 +6128,7 @@ pub struct RiskAnalysiOperationDeleteCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6043,9 +6214,9 @@ impl<'a, C, A> RiskAnalysiOperationDeleteCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6144,6 +6315,19 @@ impl<'a, C, A> RiskAnalysiOperationDeleteCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RiskAnalysiOperationDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6214,6 +6398,7 @@ pub struct RiskAnalysiOperationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6308,9 +6493,9 @@ impl<'a, C, A> RiskAnalysiOperationListCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6430,6 +6615,19 @@ impl<'a, C, A> RiskAnalysiOperationListCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RiskAnalysiOperationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6496,6 +6694,7 @@ pub struct RiskAnalysiOperationGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6581,9 +6780,9 @@ impl<'a, C, A> RiskAnalysiOperationGetCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6682,6 +6881,19 @@ impl<'a, C, A> RiskAnalysiOperationGetCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RiskAnalysiOperationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -6753,6 +6965,7 @@ pub struct RiskAnalysiOperationCancelCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -6850,12 +7063,12 @@ impl<'a, C, A> RiskAnalysiOperationCancelCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6963,6 +7176,19 @@ impl<'a, C, A> RiskAnalysiOperationCancelCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> RiskAnalysiOperationCancelCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -7034,6 +7260,7 @@ pub struct DataSourceAnalyzeCall<'a, C, A>
     _request: GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -7105,12 +7332,12 @@ impl<'a, C, A> DataSourceAnalyzeCall<'a, C, A> where C: BorrowMut<hyper::Client>
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7205,6 +7432,19 @@ impl<'a, C, A> DataSourceAnalyzeCall<'a, C, A> where C: BorrowMut<hyper::Client>
     pub fn param<T>(mut self, name: T, value: T) -> DataSourceAnalyzeCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> DataSourceAnalyzeCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

@@ -1130,13 +1130,13 @@ pub struct OrganizationMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for OrganizationMethods<'a, C, A> {}
 
 impl<'a, C, A> OrganizationMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Sets the access control policy on an Organization resource. Replaces any
     /// existing policy. The `resource` field should be the organization's resource
     /// name, e.g. "organizations/123".
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1148,17 +1148,18 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the access control policy for an Organization resource. May be empty
     /// if no such policy or resource exists. The `resource` field should be the
     /// organization's resource name, e.g. "organizations/123".
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1170,17 +1171,18 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns permissions that a caller has on the specified Organization.
     /// The `resource` field should be the organization's resource name,
     /// e.g. "organizations/123".
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1192,15 +1194,16 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Fetches an Organization resource identified by the specified resource name.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The resource name of the Organization to fetch. This is the organization's
@@ -1212,15 +1215,16 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _name: name.to_string(),
             _organization_id: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates an Organization resource identified by the specified resource name.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1233,11 +1237,12 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _request: request,
             _name: name.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists Organization resources that are visible to the user and satisfy
@@ -1250,8 +1255,9 @@ impl<'a, C, A> OrganizationMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1296,11 +1302,11 @@ pub struct ProjectMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ProjectMethods<'a, C, A> {}
 
 impl<'a, C, A> ProjectMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns permissions that a caller has on the specified Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1312,11 +1318,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Restores the Project identified by the specified
@@ -1326,7 +1333,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// After deletion starts, the Project cannot be restored.
     /// 
     /// The caller must have modify permissions for this Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1338,11 +1345,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _project_id: project_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates a Project resource.
@@ -1360,7 +1368,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// You can set or update the billing account associated with a project using
     /// the [`projects.updateBillingInfo`]
     /// (/billing/reference/rest/v1/projects/updateBillingInfo) method.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1370,11 +1378,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _use_legacy_stack: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Sets the IAM access control policy for the specified Project. Overwrites
@@ -1416,7 +1425,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// can render services completely inoperable. It is important to understand
     /// how the service account is being used before removing or updating its
     /// roles.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1428,18 +1437,19 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves the Project identified by the specified
     /// `project_id` (for example, `my-project-123`).
     /// 
     /// The caller must have read permissions for this Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `projectId` - The Project ID (for example, `my-project-123`).
@@ -1449,18 +1459,19 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             hub: self.hub,
             _project_id: project_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets a list of ancestors in the resource hierarchy for the Project
     /// identified by the specified `project_id` (for example, `my-project-123`).
     /// 
     /// The caller must have read permissions for this Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1472,18 +1483,19 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _project_id: project_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the attributes of the Project identified by the specified
     /// `project_id` (for example, `my-project-123`).
     /// 
     /// The caller must have modify permissions for this Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1495,11 +1507,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _project_id: project_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns the IAM access control policy for the specified Project.
@@ -1507,7 +1520,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// 
     /// For additional information about resource structure and identification,
     /// see [Resource Names](/apis/design/resource_names).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1519,11 +1532,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Marks the Project identified by the specified
@@ -1548,7 +1562,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// methods.
     /// 
     /// The caller must have modify permissions for this Project.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `projectId` - The Project ID (for example, `foo-bar-123`).
@@ -1558,11 +1572,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             hub: self.hub,
             _project_id: project_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists Projects that the caller has the `resourcemanager.projects.get`
@@ -1588,8 +1603,9 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _page_size: Default::default(),
             _filter: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1649,6 +1665,7 @@ pub struct OrganizationSetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1746,12 +1763,12 @@ impl<'a, C, A> OrganizationSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1858,6 +1875,19 @@ impl<'a, C, A> OrganizationSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationSetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -1931,6 +1961,7 @@ pub struct OrganizationGetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2028,12 +2059,12 @@ impl<'a, C, A> OrganizationGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2140,6 +2171,19 @@ impl<'a, C, A> OrganizationGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationGetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2213,6 +2257,7 @@ pub struct OrganizationTestIamPermissionCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2310,12 +2355,12 @@ impl<'a, C, A> OrganizationTestIamPermissionCall<'a, C, A> where C: BorrowMut<hy
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2422,6 +2467,19 @@ impl<'a, C, A> OrganizationTestIamPermissionCall<'a, C, A> where C: BorrowMut<hy
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationTestIamPermissionCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2488,6 +2546,7 @@ pub struct OrganizationGetCall<'a, C, A>
     _organization_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2576,9 +2635,9 @@ impl<'a, C, A> OrganizationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2685,6 +2744,19 @@ impl<'a, C, A> OrganizationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2756,6 +2828,7 @@ pub struct OrganizationUpdateCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2853,12 +2926,12 @@ impl<'a, C, A> OrganizationUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Put, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2966,6 +3039,19 @@ impl<'a, C, A> OrganizationUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationUpdateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3037,6 +3123,7 @@ pub struct OrganizationListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3105,9 +3192,9 @@ impl<'a, C, A> OrganizationListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3230,6 +3317,19 @@ impl<'a, C, A> OrganizationListCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OrganizationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3301,6 +3401,7 @@ pub struct ProjectTestIamPermissionCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3394,12 +3495,12 @@ impl<'a, C, A> ProjectTestIamPermissionCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3506,6 +3607,19 @@ impl<'a, C, A> ProjectTestIamPermissionCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectTestIamPermissionCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3583,6 +3697,7 @@ pub struct ProjectUndeleteCall<'a, C, A>
     _project_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3676,12 +3791,12 @@ impl<'a, C, A> ProjectUndeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3789,6 +3904,19 @@ impl<'a, C, A> ProjectUndeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectUndeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3875,6 +4003,7 @@ pub struct ProjectCreateCall<'a, C, A>
     _use_legacy_stack: Option<bool>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3949,12 +4078,12 @@ impl<'a, C, A> ProjectCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4054,6 +4183,19 @@ impl<'a, C, A> ProjectCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
     pub fn param<T>(mut self, name: T, value: T) -> ProjectCreateCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 
@@ -4166,6 +4308,7 @@ pub struct ProjectSetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4259,12 +4402,12 @@ impl<'a, C, A> ProjectSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4371,6 +4514,19 @@ impl<'a, C, A> ProjectSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectSetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4438,6 +4594,7 @@ pub struct ProjectGetCall<'a, C, A>
     _project_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4519,9 +4676,9 @@ impl<'a, C, A> ProjectGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oa
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4620,6 +4777,19 @@ impl<'a, C, A> ProjectGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oa
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4694,6 +4864,7 @@ pub struct ProjectGetAncestryCall<'a, C, A>
     _project_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -4787,12 +4958,12 @@ impl<'a, C, A> ProjectGetAncestryCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4900,6 +5071,19 @@ impl<'a, C, A> ProjectGetAncestryCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectGetAncestryCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -4974,6 +5158,7 @@ pub struct ProjectUpdateCall<'a, C, A>
     _project_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5067,12 +5252,12 @@ impl<'a, C, A> ProjectUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Put, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5180,6 +5365,19 @@ impl<'a, C, A> ProjectUpdateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectUpdateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5255,6 +5453,7 @@ pub struct ProjectGetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5348,12 +5547,12 @@ impl<'a, C, A> ProjectGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5460,6 +5659,19 @@ impl<'a, C, A> ProjectGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectGetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5545,6 +5757,7 @@ pub struct ProjectDeleteCall<'a, C, A>
     _project_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5626,9 +5839,9 @@ impl<'a, C, A> ProjectDeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5727,6 +5940,19 @@ impl<'a, C, A> ProjectDeleteCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -5811,6 +6037,7 @@ pub struct ProjectListCall<'a, C, A>
     _filter: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -5879,9 +6106,9 @@ impl<'a, C, A> ProjectListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6025,6 +6252,19 @@ impl<'a, C, A> ProjectListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
     pub fn param<T>(mut self, name: T, value: T) -> ProjectListCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

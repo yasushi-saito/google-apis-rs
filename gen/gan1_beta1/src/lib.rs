@@ -1191,11 +1191,11 @@ pub struct PublisherMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for PublisherMethods<'a, C, A> {}
 
 impl<'a, C, A> PublisherMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves data about all publishers that the requesting advertiser/publisher has access to.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1213,14 +1213,15 @@ impl<'a, C, A> PublisherMethods<'a, C, A> {
             _min_ninety_day_epc: Default::default(),
             _max_results: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves data about a single advertiser if that the requesting advertiser/publisher has access to it. Only advertisers can look up publishers. Publishers can request information about themselves by omitting the publisherId query parameter.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1232,6 +1233,7 @@ impl<'a, C, A> PublisherMethods<'a, C, A> {
             _role_id: role_id.to_string(),
             _publisher_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1277,11 +1279,11 @@ pub struct LinkMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for LinkMethods<'a, C, A> {}
 
 impl<'a, C, A> LinkMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Inserts a new link.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1294,14 +1296,15 @@ impl<'a, C, A> LinkMethods<'a, C, A> {
             _role: role.to_string(),
             _role_id: role_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves data about a single link if the requesting advertiser/publisher has access to it. Advertisers can look up their own links. Publishers can look up visible links or links belonging to advertisers they are in a relationship with.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1314,14 +1317,15 @@ impl<'a, C, A> LinkMethods<'a, C, A> {
             _role_id: role_id.to_string(),
             _link_id: link_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves all links that match the query parameters.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1345,6 +1349,7 @@ impl<'a, C, A> LinkMethods<'a, C, A> {
             _asset_size: Default::default(),
             _advertiser_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1390,11 +1395,11 @@ pub struct ReportMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ReportMethods<'a, C, A> {}
 
 impl<'a, C, A> ReportMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves a report of the specified type.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1418,6 +1423,7 @@ impl<'a, C, A> ReportMethods<'a, C, A> {
             _calculate_totals: Default::default(),
             _advertiser_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1463,11 +1469,11 @@ pub struct CcOfferMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for CcOfferMethods<'a, C, A> {}
 
 impl<'a, C, A> CcOfferMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves credit card offers for the given publisher.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `publisher` - The ID of the publisher in question.
@@ -1478,6 +1484,7 @@ impl<'a, C, A> CcOfferMethods<'a, C, A> {
             _projection: Default::default(),
             _advertiser: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1523,11 +1530,11 @@ pub struct AdvertiserMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for AdvertiserMethods<'a, C, A> {}
 
 impl<'a, C, A> AdvertiserMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves data about a single advertiser if that the requesting advertiser/publisher has access to it. Only publishers can lookup advertisers. Advertisers can request information about themselves by omitting the advertiserId query parameter.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1539,14 +1546,15 @@ impl<'a, C, A> AdvertiserMethods<'a, C, A> {
             _role_id: role_id.to_string(),
             _advertiser_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves data about all advertisers that the requesting advertiser/publisher has access to.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1564,6 +1572,7 @@ impl<'a, C, A> AdvertiserMethods<'a, C, A> {
             _max_results: Default::default(),
             _advertiser_category: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1609,11 +1618,11 @@ pub struct EventMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for EventMethods<'a, C, A> {}
 
 impl<'a, C, A> EventMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves event data for a given advertiser/publisher.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `role` - The role of the requester. Valid values: 'advertisers' or 'publishers'.
@@ -1640,6 +1649,7 @@ impl<'a, C, A> EventMethods<'a, C, A> {
             _charge_type: Default::default(),
             _advertiser_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1706,6 +1716,7 @@ pub struct PublisherListCall<'a, C, A>
     _max_results: Option<u32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PublisherListCall<'a, C, A> {}
@@ -1804,8 +1815,8 @@ impl<'a, C, A> PublisherListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1957,6 +1968,19 @@ impl<'a, C, A> PublisherListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PublisherListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2001,6 +2025,7 @@ pub struct PublisherGetCall<'a, C, A>
     _publisher_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PublisherGetCall<'a, C, A> {}
@@ -2081,8 +2106,8 @@ impl<'a, C, A> PublisherGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2192,6 +2217,19 @@ impl<'a, C, A> PublisherGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PublisherGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2241,6 +2279,7 @@ pub struct LinkInsertCall<'a, C, A>
     _role_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for LinkInsertCall<'a, C, A> {}
@@ -2330,11 +2369,11 @@ impl<'a, C, A> LinkInsertCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oa
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2446,6 +2485,19 @@ impl<'a, C, A> LinkInsertCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oa
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> LinkInsertCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2489,6 +2541,7 @@ pub struct LinkGetCall<'a, C, A>
     _link_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for LinkGetCall<'a, C, A> {}
@@ -2567,8 +2620,8 @@ impl<'a, C, A> LinkGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oauth
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2681,6 +2734,19 @@ impl<'a, C, A> LinkGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oauth
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> LinkGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2749,6 +2815,7 @@ pub struct LinkListCall<'a, C, A>
     _advertiser_id: Vec<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for LinkListCall<'a, C, A> {}
@@ -2871,8 +2938,8 @@ impl<'a, C, A> LinkListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oaut
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3069,6 +3136,19 @@ impl<'a, C, A> LinkListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oaut
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> LinkListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3134,6 +3214,7 @@ pub struct ReportGetCall<'a, C, A>
     _advertiser_id: Vec<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ReportGetCall<'a, C, A> {}
@@ -3253,8 +3334,8 @@ impl<'a, C, A> ReportGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3448,6 +3529,19 @@ impl<'a, C, A> ReportGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ReportGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3493,6 +3587,7 @@ pub struct CcOfferListCall<'a, C, A>
     _advertiser: Vec<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CcOfferListCall<'a, C, A> {}
@@ -3577,8 +3672,8 @@ impl<'a, C, A> CcOfferListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3686,6 +3781,19 @@ impl<'a, C, A> CcOfferListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: o
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CcOfferListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3730,6 +3838,7 @@ pub struct AdvertiserGetCall<'a, C, A>
     _advertiser_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for AdvertiserGetCall<'a, C, A> {}
@@ -3810,8 +3919,8 @@ impl<'a, C, A> AdvertiserGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3921,6 +4030,19 @@ impl<'a, C, A> AdvertiserGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AdvertiserGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3977,6 +4099,7 @@ pub struct AdvertiserListCall<'a, C, A>
     _advertiser_category: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for AdvertiserListCall<'a, C, A> {}
@@ -4075,8 +4198,8 @@ impl<'a, C, A> AdvertiserListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4228,6 +4351,19 @@ impl<'a, C, A> AdvertiserListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AdvertiserListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -4302,6 +4438,7 @@ pub struct EventListCall<'a, C, A>
     _advertiser_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for EventListCall<'a, C, A> {}
@@ -4427,8 +4564,8 @@ impl<'a, C, A> EventListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4640,6 +4777,19 @@ impl<'a, C, A> EventListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: oau
     pub fn param<T>(mut self, name: T, value: T) -> EventListCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> EventListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

@@ -1356,13 +1356,13 @@ pub struct OperationMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for OperationMethods<'a, C, A> {}
 
 impl<'a, C, A> OperationMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the latest state of a long-running operation.  Clients can use this
     /// method to poll the operation result at intervals as recommended by the API
     /// service.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - The name of the operation resource.
@@ -1371,6 +1371,7 @@ impl<'a, C, A> OperationMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1416,14 +1417,14 @@ pub struct PartnerMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for PartnerMethods<'a, C, A> {}
 
 impl<'a, C, A> PartnerMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates the reseller metadata attached to a batch of devices. This method
     /// updates devices asynchronously and returns an `Operation` that can be used
     /// to track progress. Read [Long‑running batch
     /// operations](/zero-touch/guides/how-it-works#operations).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1434,14 +1435,15 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets a device.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - Required. The device API resource name in the format
@@ -1451,17 +1453,18 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Finds devices claimed for customers. The results only contain devices
     /// registered to the reseller that's identified by the `partnerId` argument.
     /// The customer's devices purchased from other resellers don't appear in the
     /// results.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1472,16 +1475,17 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the customers that are enrolled to the reseller identified by the
     /// `partnerId` argument. This list includes customers that the reseller
     /// created and customers that enrolled themselves using the portal.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `partnerId` - Required. The ID of the reseller partner.
@@ -1492,14 +1496,15 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Finds devices by hardware identifiers, such as IMEI.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1510,14 +1515,15 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the customers of the vendor.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `parent` - Required. The resource name in the format
@@ -1529,14 +1535,15 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the vendors of the partner.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `parent` - Required. The resource name in the format `partners/[PARTNER_ID]`.
@@ -1547,16 +1554,17 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Claims a batch of devices for a customer asynchronously. Adds the devices
     /// to zero-touch enrollment. To learn more, read [Long‑running batch
     /// operations](/zero-touch/guides/how-it-works#operations).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1567,15 +1575,16 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Claims a device for a customer and adds it to zero-touch enrollment. If the
     /// device is already claimed by another customer, the call returns an error.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1586,16 +1595,17 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Unclaims a batch of devices for a customer asynchronously. Removes the
     /// devices from zero-touch enrollment. To learn more, read [Long‑running batch
     /// operations](/zero-touch/guides/how-it-works#operations).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1606,14 +1616,15 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates reseller metadata associated with the device.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1626,10 +1637,11 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _metadata_owner_id: metadata_owner_id.to_string(),
             _device_id: device_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates a customer for zero-touch enrollment. After the method returns
@@ -1637,7 +1649,7 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
     /// by calling API methods or using their zero-touch enrollment portal.
     /// The customer receives an email that welcomes them to zero-touch enrollment
     /// and explains how to sign into the portal.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1649,15 +1661,16 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Unclaims a device from a customer and removes it from zero-touch
     /// enrollment.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1668,6 +1681,7 @@ impl<'a, C, A> PartnerMethods<'a, C, A> {
             _request: request,
             _partner_id: partner_id.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1713,11 +1727,11 @@ pub struct CustomerMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for CustomerMethods<'a, C, A> {}
 
 impl<'a, C, A> CustomerMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Removes a configuration from device.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1729,14 +1743,15 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _request: request,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Updates a configuration's field values.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1750,14 +1765,15 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _name: name.to_string(),
             _update_mask: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the details of a device.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - Required. The device to get. An API resource name in the format
@@ -1767,16 +1783,17 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Applies a Configuration to the device to register the device for zero-touch
     /// enrollment. After applying a configuration to a device, the device
     /// automatically provisions itself on first boot, or next factory reset.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1788,14 +1805,15 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _request: request,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the details of a configuration.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - Required. The configuration to get. An API resource name in the format
@@ -1805,15 +1823,16 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Deletes an unused configuration. The API call fails if the customer has
     /// devices with the configuration applied.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `name` - Required. The configuration to delete. An API resource name in the format
@@ -1824,14 +1843,15 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             hub: self.hub,
             _name: name.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists a customer's devices.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `parent` - Required. The customer managing the devices. An API resource name in the
@@ -1843,10 +1863,11 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the user's customer accounts.
@@ -1856,10 +1877,11 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _page_token: Default::default(),
             _page_size: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Unclaims a device from a customer and removes it from zero-touch
@@ -1867,7 +1889,7 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
     /// 
     /// After removing a device, a customer must contact their reseller to register
     /// the device into zero-touch enrollment again.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1879,15 +1901,16 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _request: request,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the DPCs (device policy controllers) that support zero-touch
     /// enrollment.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `parent` - Required. The customer that can use the DPCs in configurations. An API
@@ -1897,14 +1920,15 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             hub: self.hub,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists a customer's configurations.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `parent` - Required. The customer that manages the listed configurations. An API
@@ -1914,15 +1938,16 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             hub: self.hub,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates a new configuration. Once created, a customer can apply the
     /// configuration to devices.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1934,6 +1959,7 @@ impl<'a, C, A> CustomerMethods<'a, C, A> {
             _request: request,
             _parent: parent.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1987,6 +2013,7 @@ pub struct OperationGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for OperationGetCall<'a, C, A> {}
@@ -2067,8 +2094,8 @@ impl<'a, C, A> OperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2165,6 +2192,19 @@ impl<'a, C, A> OperationGetCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> OperationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2216,6 +2256,7 @@ pub struct PartnerDeviceUpdateMetadataAsyncCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceUpdateMetadataAsyncCall<'a, C, A> {}
@@ -2308,11 +2349,11 @@ impl<'a, C, A> PartnerDeviceUpdateMetadataAsyncCall<'a, C, A> where C: BorrowMut
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2418,6 +2459,19 @@ impl<'a, C, A> PartnerDeviceUpdateMetadataAsyncCall<'a, C, A> where C: BorrowMut
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceUpdateMetadataAsyncCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2459,6 +2513,7 @@ pub struct PartnerDeviceGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceGetCall<'a, C, A> {}
@@ -2539,8 +2594,8 @@ impl<'a, C, A> PartnerDeviceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2638,6 +2693,19 @@ impl<'a, C, A> PartnerDeviceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2689,6 +2757,7 @@ pub struct PartnerDeviceFindByOwnerCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceFindByOwnerCall<'a, C, A> {}
@@ -2781,11 +2850,11 @@ impl<'a, C, A> PartnerDeviceFindByOwnerCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2891,6 +2960,19 @@ impl<'a, C, A> PartnerDeviceFindByOwnerCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceFindByOwnerCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2938,6 +3020,7 @@ pub struct PartnerCustomerListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerCustomerListCall<'a, C, A> {}
@@ -3024,8 +3107,8 @@ impl<'a, C, A> PartnerCustomerListCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3137,6 +3220,19 @@ impl<'a, C, A> PartnerCustomerListCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerCustomerListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3185,6 +3281,7 @@ pub struct PartnerDeviceFindByIdentifierCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceFindByIdentifierCall<'a, C, A> {}
@@ -3277,11 +3374,11 @@ impl<'a, C, A> PartnerDeviceFindByIdentifierCall<'a, C, A> where C: BorrowMut<hy
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3387,6 +3484,19 @@ impl<'a, C, A> PartnerDeviceFindByIdentifierCall<'a, C, A> where C: BorrowMut<hy
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceFindByIdentifierCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3432,6 +3542,7 @@ pub struct PartnerVendorCustomerListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerVendorCustomerListCall<'a, C, A> {}
@@ -3518,8 +3629,8 @@ impl<'a, C, A> PartnerVendorCustomerListCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3631,6 +3742,19 @@ impl<'a, C, A> PartnerVendorCustomerListCall<'a, C, A> where C: BorrowMut<hyper:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerVendorCustomerListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3676,6 +3800,7 @@ pub struct PartnerVendorListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerVendorListCall<'a, C, A> {}
@@ -3762,8 +3887,8 @@ impl<'a, C, A> PartnerVendorListCall<'a, C, A> where C: BorrowMut<hyper::Client>
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3874,6 +3999,19 @@ impl<'a, C, A> PartnerVendorListCall<'a, C, A> where C: BorrowMut<hyper::Client>
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerVendorListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -3924,6 +4062,7 @@ pub struct PartnerDeviceClaimAsyncCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceClaimAsyncCall<'a, C, A> {}
@@ -4016,11 +4155,11 @@ impl<'a, C, A> PartnerDeviceClaimAsyncCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4126,6 +4265,19 @@ impl<'a, C, A> PartnerDeviceClaimAsyncCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceClaimAsyncCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -4175,6 +4327,7 @@ pub struct PartnerDeviceClaimCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceClaimCall<'a, C, A> {}
@@ -4267,11 +4420,11 @@ impl<'a, C, A> PartnerDeviceClaimCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4377,6 +4530,19 @@ impl<'a, C, A> PartnerDeviceClaimCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceClaimCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -4427,6 +4593,7 @@ pub struct PartnerDeviceUnclaimAsyncCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceUnclaimAsyncCall<'a, C, A> {}
@@ -4519,11 +4686,11 @@ impl<'a, C, A> PartnerDeviceUnclaimAsyncCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4629,6 +4796,19 @@ impl<'a, C, A> PartnerDeviceUnclaimAsyncCall<'a, C, A> where C: BorrowMut<hyper:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceUnclaimAsyncCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -4678,6 +4858,7 @@ pub struct PartnerDeviceMetadataCall<'a, C, A>
     _device_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceMetadataCall<'a, C, A> {}
@@ -4771,11 +4952,11 @@ impl<'a, C, A> PartnerDeviceMetadataCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -4891,6 +5072,19 @@ impl<'a, C, A> PartnerDeviceMetadataCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceMetadataCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -4943,6 +5137,7 @@ pub struct PartnerCustomerCreateCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerCustomerCreateCall<'a, C, A> {}
@@ -5035,11 +5230,11 @@ impl<'a, C, A> PartnerCustomerCreateCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5146,6 +5341,19 @@ impl<'a, C, A> PartnerCustomerCreateCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerCustomerCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -5195,6 +5403,7 @@ pub struct PartnerDeviceUnclaimCall<'a, C, A>
     _partner_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for PartnerDeviceUnclaimCall<'a, C, A> {}
@@ -5287,11 +5496,11 @@ impl<'a, C, A> PartnerDeviceUnclaimCall<'a, C, A> where C: BorrowMut<hyper::Clie
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5397,6 +5606,19 @@ impl<'a, C, A> PartnerDeviceUnclaimCall<'a, C, A> where C: BorrowMut<hyper::Clie
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> PartnerDeviceUnclaimCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -5445,6 +5667,7 @@ pub struct CustomerDeviceRemoveConfigurationCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDeviceRemoveConfigurationCall<'a, C, A> {}
@@ -5537,11 +5760,11 @@ impl<'a, C, A> CustomerDeviceRemoveConfigurationCall<'a, C, A> where C: BorrowMu
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5648,6 +5871,19 @@ impl<'a, C, A> CustomerDeviceRemoveConfigurationCall<'a, C, A> where C: BorrowMu
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDeviceRemoveConfigurationCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -5698,6 +5934,7 @@ pub struct CustomerConfigurationPatchCall<'a, C, A>
     _update_mask: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerConfigurationPatchCall<'a, C, A> {}
@@ -5793,11 +6030,11 @@ impl<'a, C, A> CustomerConfigurationPatchCall<'a, C, A> where C: BorrowMut<hyper
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Patch, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -5915,6 +6152,19 @@ impl<'a, C, A> CustomerConfigurationPatchCall<'a, C, A> where C: BorrowMut<hyper
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerConfigurationPatchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -5956,6 +6206,7 @@ pub struct CustomerDeviceGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDeviceGetCall<'a, C, A> {}
@@ -6036,8 +6287,8 @@ impl<'a, C, A> CustomerDeviceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6135,6 +6386,19 @@ impl<'a, C, A> CustomerDeviceGetCall<'a, C, A> where C: BorrowMut<hyper::Client>
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDeviceGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -6185,6 +6449,7 @@ pub struct CustomerDeviceApplyConfigurationCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDeviceApplyConfigurationCall<'a, C, A> {}
@@ -6277,11 +6542,11 @@ impl<'a, C, A> CustomerDeviceApplyConfigurationCall<'a, C, A> where C: BorrowMut
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6388,6 +6653,19 @@ impl<'a, C, A> CustomerDeviceApplyConfigurationCall<'a, C, A> where C: BorrowMut
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDeviceApplyConfigurationCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -6429,6 +6707,7 @@ pub struct CustomerConfigurationGetCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerConfigurationGetCall<'a, C, A> {}
@@ -6509,8 +6788,8 @@ impl<'a, C, A> CustomerConfigurationGetCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6608,6 +6887,19 @@ impl<'a, C, A> CustomerConfigurationGetCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerConfigurationGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -6650,6 +6942,7 @@ pub struct CustomerConfigurationDeleteCall<'a, C, A>
     _name: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerConfigurationDeleteCall<'a, C, A> {}
@@ -6730,8 +7023,8 @@ impl<'a, C, A> CustomerConfigurationDeleteCall<'a, C, A> where C: BorrowMut<hype
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Delete, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -6830,6 +7123,19 @@ impl<'a, C, A> CustomerConfigurationDeleteCall<'a, C, A> where C: BorrowMut<hype
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerConfigurationDeleteCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -6875,6 +7181,7 @@ pub struct CustomerDeviceListCall<'a, C, A>
     _page_size: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDeviceListCall<'a, C, A> {}
@@ -6961,8 +7268,8 @@ impl<'a, C, A> CustomerDeviceListCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7075,6 +7382,19 @@ impl<'a, C, A> CustomerDeviceListCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDeviceListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -7119,6 +7439,7 @@ pub struct CustomerListCall<'a, C, A>
     _page_size: Option<i32>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerListCall<'a, C, A> {}
@@ -7179,8 +7500,8 @@ impl<'a, C, A> CustomerListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7282,6 +7603,19 @@ impl<'a, C, A> CustomerListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A: 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -7334,6 +7668,7 @@ pub struct CustomerDeviceUnclaimCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDeviceUnclaimCall<'a, C, A> {}
@@ -7426,11 +7761,11 @@ impl<'a, C, A> CustomerDeviceUnclaimCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7537,6 +7872,19 @@ impl<'a, C, A> CustomerDeviceUnclaimCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDeviceUnclaimCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -7579,6 +7927,7 @@ pub struct CustomerDpcListCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerDpcListCall<'a, C, A> {}
@@ -7659,8 +8008,8 @@ impl<'a, C, A> CustomerDpcListCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7758,6 +8107,19 @@ impl<'a, C, A> CustomerDpcListCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerDpcListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -7799,6 +8161,7 @@ pub struct CustomerConfigurationListCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerConfigurationListCall<'a, C, A> {}
@@ -7879,8 +8242,8 @@ impl<'a, C, A> CustomerConfigurationListCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -7978,6 +8341,19 @@ impl<'a, C, A> CustomerConfigurationListCall<'a, C, A> where C: BorrowMut<hyper:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerConfigurationListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -8027,6 +8403,7 @@ pub struct CustomerConfigurationCreateCall<'a, C, A>
     _parent: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for CustomerConfigurationCreateCall<'a, C, A> {}
@@ -8119,11 +8496,11 @@ impl<'a, C, A> CustomerConfigurationCreateCall<'a, C, A> where C: BorrowMut<hype
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -8227,6 +8604,19 @@ impl<'a, C, A> CustomerConfigurationCreateCall<'a, C, A> where C: BorrowMut<hype
     pub fn param<T>(mut self, name: T, value: T) -> CustomerConfigurationCreateCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> CustomerConfigurationCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

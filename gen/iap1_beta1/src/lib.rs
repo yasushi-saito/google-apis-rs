@@ -664,14 +664,14 @@ pub struct MethodMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for MethodMethods<'a, C, A> {}
 
 impl<'a, C, A> MethodMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the access control policy for an Identity-Aware Proxy protected
     /// resource.
     /// More information about managing access via IAP can be found at:
     /// https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -683,11 +683,12 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Returns permissions that a caller has on the Identity-Aware Proxy protected
@@ -696,7 +697,7 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
     /// will be returned.
     /// More information about managing access via IAP can be found at:
     /// https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -708,18 +709,19 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Sets the access control policy for an Identity-Aware Proxy protected
     /// resource. Replaces any existing policy.
     /// More information about managing access via IAP can be found at:
     /// https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -731,8 +733,9 @@ impl<'a, C, A> MethodMethods<'a, C, A> {
             _request: request,
             _resource: resource.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -793,6 +796,7 @@ pub struct MethodGetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -890,12 +894,12 @@ impl<'a, C, A> MethodGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1002,6 +1006,19 @@ impl<'a, C, A> MethodGetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Client
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> MethodGetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -1078,6 +1095,7 @@ pub struct MethodTestIamPermissionCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1175,12 +1193,12 @@ impl<'a, C, A> MethodTestIamPermissionCall<'a, C, A> where C: BorrowMut<hyper::C
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1287,6 +1305,19 @@ impl<'a, C, A> MethodTestIamPermissionCall<'a, C, A> where C: BorrowMut<hyper::C
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> MethodTestIamPermissionCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -1361,6 +1392,7 @@ pub struct MethodSetIamPolicyCall<'a, C, A>
     _resource: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -1458,12 +1490,12 @@ impl<'a, C, A> MethodSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Client
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1567,6 +1599,19 @@ impl<'a, C, A> MethodSetIamPolicyCall<'a, C, A> where C: BorrowMut<hyper::Client
     pub fn param<T>(mut self, name: T, value: T) -> MethodSetIamPolicyCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> MethodSetIamPolicyCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

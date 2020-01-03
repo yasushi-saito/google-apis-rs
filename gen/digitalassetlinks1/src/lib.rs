@@ -656,7 +656,7 @@ pub struct AssetlinkMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for AssetlinkMethods<'a, C, A> {}
 
 impl<'a, C, A> AssetlinkMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Determines whether the specified (directional) relationship exists between
@@ -693,6 +693,7 @@ impl<'a, C, A> AssetlinkMethods<'a, C, A> {
             _source_android_app_certificate_sha256_fingerprint: Default::default(),
             _relation: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -738,7 +739,7 @@ pub struct StatementMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for StatementMethods<'a, C, A> {}
 
 impl<'a, C, A> StatementMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Retrieves a list of all statements from a given source that match the
@@ -766,6 +767,7 @@ impl<'a, C, A> StatementMethods<'a, C, A> {
             _source_android_app_certificate_sha256_fingerprint: Default::default(),
             _relation: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -852,6 +854,7 @@ pub struct AssetlinkCheckCall<'a, C, A>
     _relation: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for AssetlinkCheckCall<'a, C, A> {}
@@ -927,8 +930,8 @@ impl<'a, C, A> AssetlinkCheckCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1197,6 +1200,19 @@ impl<'a, C, A> AssetlinkCheckCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> AssetlinkCheckCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -1261,6 +1277,7 @@ pub struct StatementListCall<'a, C, A>
     _relation: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for StatementListCall<'a, C, A> {}
@@ -1327,8 +1344,8 @@ impl<'a, C, A> StatementListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1512,6 +1529,19 @@ impl<'a, C, A> StatementListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
     pub fn param<T>(mut self, name: T, value: T) -> StatementListCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> StatementListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

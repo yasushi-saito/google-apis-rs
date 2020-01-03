@@ -10,6 +10,7 @@
                       CALL_BUILDER_MARKERT_TRAIT, pass_through, markdown_rust_block, parts_from_params,
                       DELEGATE_PROPERTY_NAME, struct_type_bounds_s, scope_url_to_variant,
                       re_find_replacements, ADD_PARAM_FN, ADD_PARAM_MEDIA_EXAMPLE, upload_action_fn, METHODS_RESOURCE,
+                      ADD_HEADER_FN,
                       method_name_to_variant, unique_type_name, size_to_bytes, method_default_scope,
                       is_repeated_property, setter_fn_name, ADD_SCOPE_FN, rust_doc_sanitize)
 
@@ -45,6 +46,7 @@
     ThisType = mb_type(resource, method) + mb_tparams
 
     params, request_value = build_all_params(c, m)
+
     alt_param = None
     for p in params:
         if p.name == 'alt':
@@ -124,6 +126,8 @@ pub struct ${ThisType}
 % endfor
 ## A generic map for additinal parameters. Sometimes you can set some that are documented online only
     ${api.properties.params}: HashMap<String, String>,
+## Additional HTTP headers. For example, "Range:" header to request subrange for GCS Get.
+    ${api.properties.headers}: hyper::header::Headers,
     % if method_default_scope(m):
 ## We need the scopes sorted, to not unnecessarily query new tokens
     ${api.properties.scopes}: BTreeMap<String, ()>
@@ -158,6 +162,19 @@ ${self._setter_fn(resource, method, m, p, part_prop, ThisType, c)}\
     pub fn ${ADD_PARAM_FN}<T>(mut self, name: T, value: T) -> ${ThisType}
                                                         where T: AsRef<str> {
         self.${api.properties.params}.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn ${ADD_HEADER_FN}<H>(mut self, header: H) -> ${ThisType}
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self.${api.properties.headers}.set(header);
         self
     }
 
@@ -729,6 +746,7 @@ else {
             % endif
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(${method_name_to_variant(m.httpMethod)}, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))\
                     % if default_scope:
 
@@ -761,7 +779,6 @@ else {
                     req = req.header(cmn::XUploadContentType(reader_mime_type.clone()));
                 }
                 % endif
-
                 dlg.pre_request();
                 req.send()
 </%block>\

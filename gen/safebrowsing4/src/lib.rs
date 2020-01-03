@@ -1026,11 +1026,11 @@ pub struct EncodedFullHasheMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for EncodedFullHasheMethods<'a, C, A> {}
 
 impl<'a, C, A> EncodedFullHasheMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// 
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `encodedRequest` - A serialized FindFullHashesRequest proto.
@@ -1041,6 +1041,7 @@ impl<'a, C, A> EncodedFullHasheMethods<'a, C, A> {
             _client_version: Default::default(),
             _client_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1086,11 +1087,11 @@ pub struct FullHasheMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for FullHasheMethods<'a, C, A> {}
 
 impl<'a, C, A> FullHasheMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Finds the full hashes that match the requested hash prefixes.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1099,6 +1100,7 @@ impl<'a, C, A> FullHasheMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1144,12 +1146,12 @@ pub struct ThreatListUpdateMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ThreatListUpdateMethods<'a, C, A> {}
 
 impl<'a, C, A> ThreatListUpdateMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Fetches the most recent threat list updates. A client can request updates
     /// for multiple lists at once.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1158,6 +1160,7 @@ impl<'a, C, A> ThreatListUpdateMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1203,11 +1206,11 @@ pub struct EncodedUpdateMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for EncodedUpdateMethods<'a, C, A> {}
 
 impl<'a, C, A> EncodedUpdateMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// 
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `encodedRequest` - A serialized FetchThreatListUpdatesRequest proto.
@@ -1218,6 +1221,7 @@ impl<'a, C, A> EncodedUpdateMethods<'a, C, A> {
             _client_version: Default::default(),
             _client_id: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1263,7 +1267,7 @@ pub struct ThreatListMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ThreatListMethods<'a, C, A> {}
 
 impl<'a, C, A> ThreatListMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Lists the Safe Browsing threat lists available for download.
@@ -1271,6 +1275,7 @@ impl<'a, C, A> ThreatListMethods<'a, C, A> {
         ThreatListListCall {
             hub: self.hub,
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1316,11 +1321,11 @@ pub struct ThreatMatcheMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ThreatMatcheMethods<'a, C, A> {}
 
 impl<'a, C, A> ThreatMatcheMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Finds the threat entries that match the Safe Browsing lists.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1329,6 +1334,7 @@ impl<'a, C, A> ThreatMatcheMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1374,12 +1380,12 @@ pub struct ThreatHitMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ThreatHitMethods<'a, C, A> {}
 
 impl<'a, C, A> ThreatHitMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Reports a Safe Browsing threat list hit to Google. Only projects with
     /// TRUSTED_REPORTER visibility can use this method.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1388,6 +1394,7 @@ impl<'a, C, A> ThreatHitMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -1443,6 +1450,7 @@ pub struct EncodedFullHasheGetCall<'a, C, A>
     _client_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for EncodedFullHasheGetCall<'a, C, A> {}
@@ -1525,8 +1533,8 @@ impl<'a, C, A> EncodedFullHasheGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1638,6 +1646,19 @@ impl<'a, C, A> EncodedFullHasheGetCall<'a, C, A> where C: BorrowMut<hyper::Clien
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> EncodedFullHasheGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -1685,6 +1706,7 @@ pub struct FullHasheFindCall<'a, C, A>
     _request: FindFullHashesRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for FullHasheFindCall<'a, C, A> {}
@@ -1751,11 +1773,11 @@ impl<'a, C, A> FullHasheFindCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1851,6 +1873,19 @@ impl<'a, C, A> FullHasheFindCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> FullHasheFindCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -1899,6 +1934,7 @@ pub struct ThreatListUpdateFetchCall<'a, C, A>
     _request: FetchThreatListUpdatesRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ThreatListUpdateFetchCall<'a, C, A> {}
@@ -1965,11 +2001,11 @@ impl<'a, C, A> ThreatListUpdateFetchCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2065,6 +2101,19 @@ impl<'a, C, A> ThreatListUpdateFetchCall<'a, C, A> where C: BorrowMut<hyper::Cli
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ThreatListUpdateFetchCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2110,6 +2159,7 @@ pub struct EncodedUpdateGetCall<'a, C, A>
     _client_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for EncodedUpdateGetCall<'a, C, A> {}
@@ -2192,8 +2242,8 @@ impl<'a, C, A> EncodedUpdateGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2305,6 +2355,19 @@ impl<'a, C, A> EncodedUpdateGetCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> EncodedUpdateGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2345,6 +2408,7 @@ pub struct ThreatListListCall<'a, C, A>
     hub: &'a Safebrowsing<C, A>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ThreatListListCall<'a, C, A> {}
@@ -2399,8 +2463,8 @@ impl<'a, C, A> ThreatListListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2487,6 +2551,19 @@ impl<'a, C, A> ThreatListListCall<'a, C, A> where C: BorrowMut<hyper::Client>, A
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ThreatListListCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2534,6 +2611,7 @@ pub struct ThreatMatcheFindCall<'a, C, A>
     _request: FindThreatMatchesRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ThreatMatcheFindCall<'a, C, A> {}
@@ -2600,11 +2678,11 @@ impl<'a, C, A> ThreatMatcheFindCall<'a, C, A> where C: BorrowMut<hyper::Client>,
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2700,6 +2778,19 @@ impl<'a, C, A> ThreatMatcheFindCall<'a, C, A> where C: BorrowMut<hyper::Client>,
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ThreatMatcheFindCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -2748,6 +2839,7 @@ pub struct ThreatHitCreateCall<'a, C, A>
     _request: ThreatHit,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ThreatHitCreateCall<'a, C, A> {}
@@ -2814,11 +2906,11 @@ impl<'a, C, A> ThreatHitCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2911,6 +3003,19 @@ impl<'a, C, A> ThreatHitCreateCall<'a, C, A> where C: BorrowMut<hyper::Client>, 
     pub fn param<T>(mut self, name: T, value: T) -> ThreatHitCreateCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ThreatHitCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

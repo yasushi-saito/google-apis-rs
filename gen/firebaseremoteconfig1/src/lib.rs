@@ -522,13 +522,13 @@ pub struct ProjectMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ProjectMethods<'a, C, A> {}
 
 impl<'a, C, A> ProjectMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Get the latest version Remote Configuration for a project.
     /// Returns the RemoteConfig as the payload, and also the eTag as a
     /// response header.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `project` - The GMP project identifier. Required.
@@ -538,10 +538,11 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             hub: self.hub,
             _project: project.to_string(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Update a RemoteConfig. We treat this as an always-existing
@@ -562,7 +563,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// is specified but does does not match the current eTag.
     /// * Internal error (HTTP status 500) for Database problems or other internal
     /// errors.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -575,6 +576,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _project: project.to_string(),
             _validate_only: Default::default(),
             _delegate: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
         }
     }
@@ -628,6 +630,7 @@ pub struct ProjectGetRemoteConfigCall<'a, C, A>
     _project: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ProjectGetRemoteConfigCall<'a, C, A> {}
@@ -708,8 +711,8 @@ impl<'a, C, A> ProjectGetRemoteConfigCall<'a, C, A> where C: BorrowMut<hyper::Cl
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()));
-
                 dlg.pre_request();
                 req.send()
             };
@@ -809,6 +812,19 @@ impl<'a, C, A> ProjectGetRemoteConfigCall<'a, C, A> where C: BorrowMut<hyper::Cl
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectGetRemoteConfigCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
 }
 
 
@@ -876,6 +892,7 @@ pub struct ProjectUpdateRemoteConfigCall<'a, C, A>
     _validate_only: Option<bool>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
 }
 
 impl<'a, C, A> CallBuilder for ProjectUpdateRemoteConfigCall<'a, C, A> {}
@@ -971,11 +988,11 @@ impl<'a, C, A> ProjectUpdateRemoteConfigCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Put, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -1094,6 +1111,19 @@ impl<'a, C, A> ProjectUpdateRemoteConfigCall<'a, C, A> where C: BorrowMut<hyper:
     pub fn param<T>(mut self, name: T, value: T) -> ProjectUpdateRemoteConfigCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectUpdateRemoteConfigCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

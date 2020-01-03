@@ -1896,7 +1896,7 @@ pub struct TestEnvironmentCatalogMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for TestEnvironmentCatalogMethods<'a, C, A> {}
 
 impl<'a, C, A> TestEnvironmentCatalogMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the catalog of supported test environments.
@@ -1906,7 +1906,7 @@ impl<'a, C, A> TestEnvironmentCatalogMethods<'a, C, A> {
     /// - INVALID_ARGUMENT - if the request is malformed
     /// - NOT_FOUND - if the environment type does not exist
     /// - INTERNAL - if an internal error occurred
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `environmentType` - Required. The type of environment that should be listed.
@@ -1916,8 +1916,9 @@ impl<'a, C, A> TestEnvironmentCatalogMethods<'a, C, A> {
             _environment_type: environment_type.to_string(),
             _project_id: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -1962,11 +1963,11 @@ pub struct ApplicationDetailServiceMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ApplicationDetailServiceMethods<'a, C, A> {}
 
 impl<'a, C, A> ApplicationDetailServiceMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Gets the details of an Android application APK.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -1975,8 +1976,9 @@ impl<'a, C, A> ApplicationDetailServiceMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2021,7 +2023,7 @@ pub struct ProjectMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for ProjectMethods<'a, C, A> {}
 
 impl<'a, C, A> ProjectMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Creates and runs a matrix of tests according to the given specifications.
@@ -2033,7 +2035,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// * PERMISSION_DENIED - if the user is not authorized to write to project
     /// * INVALID_ARGUMENT - if the request is malformed or if the matrix expands
     ///   to more than 200 supported executions
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -2045,11 +2047,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _project_id: project_id.to_string(),
             _request_id: Default::default(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Cancels unfinished test executions in a test matrix.
@@ -2061,7 +2064,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// - PERMISSION_DENIED - if the user is not authorized to read project
     /// - INVALID_ARGUMENT - if the request is malformed
     /// - NOT_FOUND - if the Test Matrix does not exist
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `projectId` - Cloud project that owns the test.
@@ -2072,11 +2075,12 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _project_id: project_id.to_string(),
             _test_matrix_id: test_matrix_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Checks the status of a test matrix.
@@ -2086,7 +2090,7 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
     /// - PERMISSION_DENIED - if the user is not authorized to read project
     /// - INVALID_ARGUMENT - if the request is malformed
     /// - NOT_FOUND - if the Test Matrix does not exist
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `projectId` - Cloud project that owns the test matrix.
@@ -2097,8 +2101,9 @@ impl<'a, C, A> ProjectMethods<'a, C, A> {
             _project_id: project_id.to_string(),
             _test_matrix_id: test_matrix_id.to_string(),
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -2157,6 +2162,7 @@ pub struct TestEnvironmentCatalogGetCall<'a, C, A>
     _project_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2241,9 +2247,9 @@ impl<'a, C, A> TestEnvironmentCatalogGetCall<'a, C, A> where C: BorrowMut<hyper:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2347,6 +2353,19 @@ impl<'a, C, A> TestEnvironmentCatalogGetCall<'a, C, A> where C: BorrowMut<hyper:
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> TestEnvironmentCatalogGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2417,6 +2436,7 @@ pub struct ApplicationDetailServiceGetApkDetailCall<'a, C, A>
     _request: FileReference,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2488,12 +2508,12 @@ impl<'a, C, A> ApplicationDetailServiceGetApkDetailCall<'a, C, A> where C: Borro
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2589,6 +2609,19 @@ impl<'a, C, A> ApplicationDetailServiceGetApkDetailCall<'a, C, A> where C: Borro
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ApplicationDetailServiceGetApkDetailCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2670,6 +2703,7 @@ pub struct ProjectTestMatriceCreateCall<'a, C, A>
     _request_id: Option<String>,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -2766,12 +2800,12 @@ impl<'a, C, A> ProjectTestMatriceCreateCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -2889,6 +2923,19 @@ impl<'a, C, A> ProjectTestMatriceCreateCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectTestMatriceCreateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -2962,6 +3009,7 @@ pub struct ProjectTestMatriceCancelCall<'a, C, A>
     _test_matrix_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3044,9 +3092,9 @@ impl<'a, C, A> ProjectTestMatriceCancelCall<'a, C, A> where C: BorrowMut<hyper::
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3153,6 +3201,19 @@ impl<'a, C, A> ProjectTestMatriceCancelCall<'a, C, A> where C: BorrowMut<hyper::
         self
     }
 
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectTestMatriceCancelCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
+        self
+    }
+
     /// Identifies the authorization scope for the method you are building.
     ///
     /// Use this method to actively specify which scope should be used, instead the default `Scope` variant
@@ -3224,6 +3285,7 @@ pub struct ProjectTestMatriceGetCall<'a, C, A>
     _test_matrix_id: String,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -3306,9 +3368,9 @@ impl<'a, C, A> ProjectTestMatriceGetCall<'a, C, A> where C: BorrowMut<hyper::Cli
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Get, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone());
-
                 dlg.pre_request();
                 req.send()
             };
@@ -3412,6 +3474,19 @@ impl<'a, C, A> ProjectTestMatriceGetCall<'a, C, A> where C: BorrowMut<hyper::Cli
     pub fn param<T>(mut self, name: T, value: T) -> ProjectTestMatriceGetCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> ProjectTestMatriceGetCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 

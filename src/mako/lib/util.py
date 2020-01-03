@@ -57,6 +57,7 @@ METHODS_RESOURCE = 'methods'
 
 ADD_PARAM_FN = 'param'
 ADD_SCOPE_FN = 'add_scope'
+ADD_HEADER_FN = 'header'
 ADD_PARAM_MEDIA_EXAMPLE = "." + ADD_PARAM_FN + '("alt", "media")'
 
 SPACES_PER_TAB = 4
@@ -855,10 +856,10 @@ def to_extern_crate_name(crate_name):
 
 def docs_rs_url(base_url, crate_name, version):
     return base_url + '/' + crate_name + '/' + version
-    
+
 def crate_name(name, version, make):
     return library_to_crate_name(library_name(name, version), make.target_suffix)
-    
+
 def gen_crate_dir(name, version, ti):
     return to_extern_crate_name(library_to_crate_name(library_name(name, version), ti.target_suffix))
 

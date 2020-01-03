@@ -3,6 +3,8 @@ api:
   properties:
     # additional fields specified by the user
     params: '_additional_params'
+    # additional HTTP headers specified by the user
+    headers: '_additional_headers'
     # custom scopes for authentication
     scopes: '_scopes'
 make:

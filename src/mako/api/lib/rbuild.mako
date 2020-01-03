@@ -1,10 +1,10 @@
 <%!
     from util import (put_and, rust_test_fn_invisible, rust_doc_test_norun, rust_doc_comment,
                       rb_type, singular, hub_type, mangle_ident, mb_type, property,
-                      to_fqan, indent_all_but_first_by, 
-                      activity_input_type, TREF, IO_REQUEST, schema_to_required_property, 
+                      to_fqan, indent_all_but_first_by,
+                      activity_input_type, TREF, IO_REQUEST, schema_to_required_property,
                       rust_copy_value_s, organize_params, REQUEST_VALUE_PROPERTY_NAME,
-                      build_all_params, rb_type_params_s, hub_type_params_s, mb_type_params_s, mb_additional_type_params, 
+                      build_all_params, rb_type_params_s, hub_type_params_s, mb_type_params_s, mb_additional_type_params,
                       struct_type_bounds_s, METHODS_RESOURCE, SPACES_PER_TAB, prefix_all_but_first_with,
                       METHODS_BUILDER_MARKER_TRAIT, remove_empty_lines, method_default_scope, rust_doc_sanitize)
 %>\
@@ -15,7 +15,7 @@
 ###############################################################################################
 ###############################################################################################
 <%def name="new(resource, c)">\
-<% 
+<%
     hub_type_name = hub_type(schemas, util.canonical_name())
     rb_params = rb_type_params_s(resource, c)
     ThisType = rb_type(resource) + rb_params
@@ -70,20 +70,20 @@ impl${rb_params} ${ThisType} {
     mb_tparams = mb_type_params_s(m)
     # we would could have information about data requirements for each property in it's dict.
     # for now, we just hardcode it, and treat the entries as way to easily change param names
-    assert len(api.properties) == 2, "Hardcoded for now, thanks to scope requirements"
+    assert len(api.properties) == 3, "Hardcoded for now, thanks to scope requirements"
 
     type_params = ''
     if mb_additional_type_params(m):
         type_params = '<%s>' % ', '.join(mb_additional_type_params(m))
 %>\
-    
+
     % if 'description' in m:
     /// Create a builder to help you perform the following task:
     ///
     ${m.description | rust_doc_sanitize, rust_doc_comment, indent_all_but_first_by(1)}
     % endif
     % if required_props:
-    /// 
+    ///
     /// # Arguments
     ///
     % for p in required_props:
@@ -112,6 +112,11 @@ impl${rb_params} ${ThisType} {
             % endfor
 % for prop_key, custom_name in api.properties.iteritems():
             % if prop_key == 'scopes' and not method_default_scope(m):
+<% continue %>\
+            % elif prop_key == 'headers':
+            ## Remove the this codeblock once google-apis-rs is updated to hyper >= 0.11.
+            ## Newer hyper implements Default::default() for Headers.
+            ${custom_name}: hyper::header::Headers::new(),
 <% continue %>\
             % endif
             ${custom_name}: Default::default(),

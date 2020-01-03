@@ -625,14 +625,14 @@ pub struct VideoMethods<'a, C, A>
 impl<'a, C, A> MethodsBuilder for VideoMethods<'a, C, A> {}
 
 impl<'a, C, A> VideoMethods<'a, C, A> {
-    
+
     /// Create a builder to help you perform the following task:
     ///
     /// Performs asynchronous video annotation. Progress and results can be
     /// retrieved through the `google.longrunning.Operations` interface.
     /// `Operation.metadata` contains `AnnotateVideoProgress` (progress).
     /// `Operation.response` contains `AnnotateVideoResponse` (results).
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `request` - No description provided.
@@ -641,8 +641,9 @@ impl<'a, C, A> VideoMethods<'a, C, A> {
             hub: self.hub,
             _request: request,
             _delegate: Default::default(),
-            _scopes: Default::default(),
+            _additional_headers: hyper::header::Headers::new(),
             _additional_params: Default::default(),
+            _scopes: Default::default(),
         }
     }
 }
@@ -702,6 +703,7 @@ pub struct VideoAnnotateCall<'a, C, A>
     _request: GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest,
     _delegate: Option<&'a mut Delegate>,
     _additional_params: HashMap<String, String>,
+    _additional_headers: hyper::header::Headers,
     _scopes: BTreeMap<String, ()>
 }
 
@@ -773,12 +775,12 @@ impl<'a, C, A> VideoAnnotateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
             let mut req_result = {
                 let mut client = &mut *self.hub.client.borrow_mut();
                 let mut req = client.borrow_mut().request(hyper::method::Method::Post, url.clone())
+                    .headers(self._additional_headers.clone())
                     .header(UserAgent(self.hub._user_agent.clone()))
                     .header(auth_header.clone())
                     .header(ContentType(json_mime_type.clone()))
                     .header(ContentLength(request_size as u64))
                     .body(&mut request_value_reader);
-
                 dlg.pre_request();
                 req.send()
             };
@@ -873,6 +875,19 @@ impl<'a, C, A> VideoAnnotateCall<'a, C, A> where C: BorrowMut<hyper::Client>, A:
     pub fn param<T>(mut self, name: T, value: T) -> VideoAnnotateCall<'a, C, A>
                                                         where T: AsRef<str> {
         self._additional_params.insert(name.as_ref().to_string(), value.as_ref().to_string());
+        self
+    }
+
+    /// Sets an additional HTTP header to be sent in the request.
+    /// For example the following example adds `Range: 10-20` to the request.
+    ///
+    /// ```ignore
+    /// use hyper::header;
+    /// req = req.header(header::Range::Bytes(vec![header::ByteRangeSpec::FromTo(10,20)]));
+    /// ```
+    pub fn header<H>(mut self, header: H) -> VideoAnnotateCall<'a, C, A>
+                                                        where H: hyper::header::Header+hyper::header::HeaderFormat {
+        self._additional_headers.set(header);
         self
     }
 
